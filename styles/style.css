@@ -1,0 +1,36 @@
+@import "reset.css";
+@import "mentor.css";
+@import "test.css";
+@import "simple.css";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(247, 247, 247);
+}
+
+.body {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* 모바일 */
+@media screen and (min-width: 500px) {
+  .body {
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
