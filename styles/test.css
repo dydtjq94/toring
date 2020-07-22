@@ -4,8 +4,6 @@
 }
 
 .fadeout {
-  transform: translateY(-15px);
-
   opacity: 0.1;
   transition: all 0.3s;
 }
@@ -26,9 +24,13 @@
   animation: fadeIn 0.3s forwards;
 }
 
+.trans2 {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
 .fadeIn {
   opacity: 1;
-
   transition: all 0.3s;
 }
 
@@ -120,12 +122,11 @@
 .button3:active {
   opacity: 0.3;
 }
-/* 
+
 .selected {
-  background-color: #4055af;
-  color: white;
-  border: none;
-} */
+  color: #4055af;
+  border: 1px solid #4055af;
+}
 
 .button1:hover,
 .button2:hover,
@@ -139,8 +140,10 @@
   width: 70%;
 }
 
-.first__title {
-  font-size: 16px;
+.first__title,
+.second__title,
+.third__title {
+  font-size: 14px;
   margin-bottom: 10px;
 }
 

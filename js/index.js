@@ -84,7 +84,7 @@ function handleFirstClick(e) {
     secondOne.classList.add("trans");
   }, 300);
   console.dir(e.target);
-  // e.target.classList.add("selected");
+  e.target.classList.add("selected");
   move1();
   forResult.push(parseInt(e.target.name, 10));
   console.log(forResult);
@@ -105,7 +105,7 @@ function handleSecondClick(e) {
   }, 300);
   move2();
   console.log("click");
-  // e.target.classList.add("selected");
+  e.target.classList.add("selected");
 
   forResult.push(parseInt(e.target.name, 10));
   console.log(forResult);
@@ -151,7 +151,7 @@ function handleResult(e) {
 
   forResult.push(parseInt(e.target.name, 10));
   console.log(forResult);
-  // e.target.classList.add("selected");
+  e.target.classList.add("selected");
 
   setTimeout(function () {
     progress.classList.add("none");
@@ -164,7 +164,7 @@ function handleResult(e) {
   if (forResult[0] === 1 && forResult[1] === 1 && forResult[2] === 1) {
     setTimeout(function () {
       result1.classList.remove("none");
-      result1.classList.add("trans");
+      result1.classList.add("trans2");
       // result1.classList.add("fadeIn");
       loadingWrap.classList.add("none");
       testTitle.classList.add("none");
@@ -172,7 +172,7 @@ function handleResult(e) {
   } else {
     setTimeout(function () {
       result2.classList.remove("none");
-      result2.classList.add("trans");
+      result2.classList.add("trans2");
       // result1.classList.add("fadeIn");
       loadingWrap.classList.add("none");
       testTitle.classList.add("none");
