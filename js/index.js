@@ -6,10 +6,19 @@ const third = document.querySelector(".third");
 const forth = document.querySelector(".forth");
 const result1 = document.querySelector(".result1");
 const result2 = document.querySelector(".result2");
+const result3 = document.querySelector(".result3");
+const result4 = document.querySelector(".result4");
+const result5 = document.querySelector(".result5");
+const result6 = document.querySelector(".result6");
+const result7 = document.querySelector(".result7");
+const result8 = document.querySelector(".result8");
+const result9 = document.querySelector(".result9");
+const result10 = document.querySelector(".result10");
+const result11 = document.querySelector(".result11");
+const result12 = document.querySelector(".result12");
 const button1 = document.querySelectorAll(".button1");
 const button2 = document.querySelectorAll(".button2");
 const button3 = document.querySelectorAll(".button3");
-const button4 = document.querySelectorAll(".button4");
 const progress = document.querySelector("#myProgress");
 const find = document.querySelector("#find");
 const loadingWrap = document.querySelector(".loading__wrap");
@@ -169,10 +178,90 @@ function handleResult(e) {
       loadingWrap.classList.add("none");
       testTitle.classList.add("none");
     }, 5301);
-  } else {
+  } else if (forResult[0] === 1 && forResult[1] === 1 && forResult[2] === 2) {
     setTimeout(function () {
       result2.classList.remove("none");
       result2.classList.add("trans2");
+      // result1.classList.add("fadeIn");
+      loadingWrap.classList.add("none");
+      testTitle.classList.add("none");
+    }, 5301);
+  } else if (forResult[0] === 1 && forResult[1] === 1 && forResult[2] === 3) {
+    setTimeout(function () {
+      result3.classList.remove("none");
+      result3.classList.add("trans2");
+      // result1.classList.add("fadeIn");
+      loadingWrap.classList.add("none");
+      testTitle.classList.add("none");
+    }, 5301);
+  } else if (forResult[0] === 1 && forResult[1] === 2 && forResult[2] === 1) {
+    setTimeout(function () {
+      result4.classList.remove("none");
+      result4.classList.add("trans2");
+      // result1.classList.add("fadeIn");
+      loadingWrap.classList.add("none");
+      testTitle.classList.add("none");
+    }, 5301);
+  } else if (forResult[0] === 1 && forResult[1] === 2 && forResult[2] === 2) {
+    setTimeout(function () {
+      result5.classList.remove("none");
+      result5.classList.add("trans2");
+      // result1.classList.add("fadeIn");
+      loadingWrap.classList.add("none");
+      testTitle.classList.add("none");
+    }, 5301);
+  } else if (forResult[0] === 1 && forResult[1] === 2 && forResult[2] === 3) {
+    setTimeout(function () {
+      result6.classList.remove("none");
+      result6.classList.add("trans2");
+      // result1.classList.add("fadeIn");
+      loadingWrap.classList.add("none");
+      testTitle.classList.add("none");
+    }, 5301);
+  } else if (forResult[0] === 2 && forResult[1] === 1 && forResult[2] === 1) {
+    setTimeout(function () {
+      result7.classList.remove("none");
+      result7.classList.add("trans2");
+      // result1.classList.add("fadeIn");
+      loadingWrap.classList.add("none");
+      testTitle.classList.add("none");
+    }, 5301);
+  } else if (forResult[0] === 2 && forResult[1] === 1 && forResult[2] === 2) {
+    setTimeout(function () {
+      result8.classList.remove("none");
+      result8.classList.add("trans2");
+      // result1.classList.add("fadeIn");
+      loadingWrap.classList.add("none");
+      testTitle.classList.add("none");
+    }, 5301);
+  } else if (forResult[0] === 2 && forResult[1] === 1 && forResult[2] === 3) {
+    setTimeout(function () {
+      result9.classList.remove("none");
+      result9.classList.add("trans2");
+      // result1.classList.add("fadeIn");
+      loadingWrap.classList.add("none");
+      testTitle.classList.add("none");
+    }, 5301);
+  } else if (forResult[0] === 2 && forResult[1] === 2 && forResult[2] === 1) {
+    setTimeout(function () {
+      result10.classList.remove("none");
+      result10.classList.add("trans2");
+      // result1.classList.add("fadeIn");
+      loadingWrap.classList.add("none");
+      testTitle.classList.add("none");
+    }, 5301);
+  } else if (forResult[0] === 2 && forResult[1] === 2 && forResult[2] === 2) {
+    setTimeout(function () {
+      result11.classList.remove("none");
+      result11.classList.add("trans2");
+      // result1.classList.add("fadeIn");
+      loadingWrap.classList.add("none");
+      testTitle.classList.add("none");
+    }, 5301);
+  } else if (forResult[0] === 2 && forResult[1] === 2 && forResult[2] === 3) {
+    setTimeout(function () {
+      result12.classList.remove("none");
+      result12.classList.add("trans2");
       // result1.classList.add("fadeIn");
       loadingWrap.classList.add("none");
       testTitle.classList.add("none");
