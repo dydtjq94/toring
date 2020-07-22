@@ -12,6 +12,8 @@ const button3 = document.querySelectorAll(".button3");
 const button4 = document.querySelectorAll(".button4");
 const progress = document.querySelector("#myProgress");
 const find = document.querySelector("#find");
+const loadingWrap = document.querySelector(".loading__wrap");
+const testTitle = document.querySelector(".test__title");
 
 const forResult = [];
 
@@ -155,6 +157,8 @@ function handleResult(e) {
     progress.classList.add("none");
     // progress.classList.add("fadeout");
     find.classList.add("none");
+    loadingWrap.classList.add("none");
+    loadingWrap.classList.remove("none");
   }, 3301);
 
   if (forResult[0] === 1 && forResult[1] === 1 && forResult[2] === 1) {
@@ -162,13 +166,17 @@ function handleResult(e) {
       result1.classList.remove("none");
       result1.classList.add("trans");
       // result1.classList.add("fadeIn");
-    }, 3302);
+      loadingWrap.classList.add("none");
+      testTitle.classList.add("none");
+    }, 5301);
   } else {
     setTimeout(function () {
       result2.classList.remove("none");
       result2.classList.add("trans");
       // result1.classList.add("fadeIn");
-    }, 3302);
+      loadingWrap.classList.add("none");
+      testTitle.classList.add("none");
+    }, 5301);
   }
 }
 function init() {
