@@ -5,6 +5,7 @@ const secondThree = document.querySelector(".second__three");
 const third = document.querySelector(".third");
 const forth = document.querySelector(".forth");
 const result1 = document.querySelector(".result1");
+const result2 = document.querySelector(".result2");
 const button1 = document.querySelectorAll(".button1");
 const button2 = document.querySelectorAll(".button2");
 const button3 = document.querySelectorAll(".button3");
@@ -160,6 +161,12 @@ function handleResult(e) {
     setTimeout(function () {
       result1.classList.remove("none");
       result1.classList.add("trans");
+      // result1.classList.add("fadeIn");
+    }, 3302);
+  } else {
+    setTimeout(function () {
+      result2.classList.remove("none");
+      result2.classList.add("trans");
       // result1.classList.add("fadeIn");
     }, 3302);
   }

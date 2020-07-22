@@ -121,16 +121,16 @@
   justify-items: center;
   align-items: center;
   font-size: 14px;
-  margin: 8px 0;
+  margin-bottom: 16px;
 }
 
 .add {
   display: flex;
   width: 100%;
   justify-items: center;
-  align-items: center;
+  align-items: flex-start;
   font-size: 14px;
-  margin: 4px 0;
+  margin-bottom: 4px;
 }
 
 .left .left__menu {
@@ -143,8 +143,11 @@
 .left .left__content {
   width: 70%;
   line-height: 20px;
+  font-size: 14px;
 }
 .add .left__menu {
+  line-height: 20px;
+
   width: 30%;
   font-size: 14px;
   color: #0123b4;
