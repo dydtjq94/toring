@@ -58,6 +58,32 @@
   background-color: rgb(196, 196, 196);
 }
 
+.test__title {
+  width: 70%;
+  margin-top: 30px;
+  border-bottom: 1px solid rgb(94, 94, 94);
+  padding-bottom: 20px;
+}
+
+.test__title .main {
+  color: #0123b4;
+  font-size: 16px;
+}
+
+.test__title .sub {
+  margin-top: 10px;
+
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.test__title .detail {
+  margin-top: 10px;
+  line-height: 20px;
+  font-size: 14px;
+  color: rgb(94, 94, 94);
+}
+
 #myBar {
   width: 33%;
   height: 25px;
