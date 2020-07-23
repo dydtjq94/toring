@@ -150,12 +150,18 @@
   color: rgb(58, 58, 58);
 }
 
+.page__word .bold {
+  font-weight: 700;
+  color: black;
+}
+
 .all {
   margin-top: 20px;
   padding: 10px 20px;
   background-color: transparent;
   border: 1px solid #0123b4;
   border-radius: 10px;
+  outline: none;
 }
 
 .all a:link {
@@ -171,6 +177,7 @@
   background-color: transparent;
   border: 1px solid #0123b4;
   border-radius: 10px;
+  outline: none;
 }
 
 .all2 a:link {
