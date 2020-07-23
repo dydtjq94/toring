@@ -23,6 +23,7 @@ const progress = document.querySelector("#myProgress");
 const find = document.querySelector("#find");
 const loadingWrap = document.querySelector(".loading__wrap");
 const testTitle = document.querySelector(".test__title");
+const resultPage = document.querySelector(".result__page__wrap");
 
 const forResult = [];
 
@@ -174,6 +175,8 @@ function handleResult(e) {
     setTimeout(function () {
       result1.classList.remove("none");
       result1.classList.add("trans2");
+      resultPage.classList.remove("none");
+      resultPage.classList.add("trans2");
       // result1.classList.add("fadeIn");
       loadingWrap.classList.add("none");
       testTitle.classList.add("none");
@@ -182,6 +185,8 @@ function handleResult(e) {
     setTimeout(function () {
       result2.classList.remove("none");
       result2.classList.add("trans2");
+      resultPage.classList.remove("none");
+      resultPage.classList.add("trans2");
       // result1.classList.add("fadeIn");
       loadingWrap.classList.add("none");
       testTitle.classList.add("none");
@@ -190,6 +195,8 @@ function handleResult(e) {
     setTimeout(function () {
       result3.classList.remove("none");
       result3.classList.add("trans2");
+      resultPage.classList.remove("none");
+      resultPage.classList.add("trans2");
       // result1.classList.add("fadeIn");
       loadingWrap.classList.add("none");
       testTitle.classList.add("none");
@@ -198,6 +205,8 @@ function handleResult(e) {
     setTimeout(function () {
       result4.classList.remove("none");
       result4.classList.add("trans2");
+      resultPage.classList.remove("none");
+      resultPage.classList.add("trans2");
       // result1.classList.add("fadeIn");
       loadingWrap.classList.add("none");
       testTitle.classList.add("none");
@@ -206,6 +215,8 @@ function handleResult(e) {
     setTimeout(function () {
       result5.classList.remove("none");
       result5.classList.add("trans2");
+      resultPage.classList.remove("none");
+      resultPage.classList.add("trans2");
       // result1.classList.add("fadeIn");
       loadingWrap.classList.add("none");
       testTitle.classList.add("none");
@@ -214,6 +225,8 @@ function handleResult(e) {
     setTimeout(function () {
       result6.classList.remove("none");
       result6.classList.add("trans2");
+      resultPage.classList.remove("none");
+      resultPage.classList.add("trans2");
       // result1.classList.add("fadeIn");
       loadingWrap.classList.add("none");
       testTitle.classList.add("none");
@@ -222,6 +235,8 @@ function handleResult(e) {
     setTimeout(function () {
       result7.classList.remove("none");
       result7.classList.add("trans2");
+      resultPage.classList.remove("none");
+      resultPage.classList.add("trans2");
       // result1.classList.add("fadeIn");
       loadingWrap.classList.add("none");
       testTitle.classList.add("none");
@@ -230,6 +245,8 @@ function handleResult(e) {
     setTimeout(function () {
       result8.classList.remove("none");
       result8.classList.add("trans2");
+      resultPage.classList.remove("none");
+      resultPage.classList.add("trans2");
       // result1.classList.add("fadeIn");
       loadingWrap.classList.add("none");
       testTitle.classList.add("none");
@@ -238,6 +255,8 @@ function handleResult(e) {
     setTimeout(function () {
       result9.classList.remove("none");
       result9.classList.add("trans2");
+      resultPage.classList.remove("none");
+      resultPage.classList.add("trans2");
       // result1.classList.add("fadeIn");
       loadingWrap.classList.add("none");
       testTitle.classList.add("none");
@@ -246,6 +265,8 @@ function handleResult(e) {
     setTimeout(function () {
       result10.classList.remove("none");
       result10.classList.add("trans2");
+      resultPage.classList.remove("none");
+      resultPage.classList.add("trans2");
       // result1.classList.add("fadeIn");
       loadingWrap.classList.add("none");
       testTitle.classList.add("none");
@@ -254,6 +275,8 @@ function handleResult(e) {
     setTimeout(function () {
       result11.classList.remove("none");
       result11.classList.add("trans2");
+      resultPage.classList.remove("none");
+      resultPage.classList.add("trans2");
       // result1.classList.add("fadeIn");
       loadingWrap.classList.add("none");
       testTitle.classList.add("none");
@@ -262,6 +285,8 @@ function handleResult(e) {
     setTimeout(function () {
       result12.classList.remove("none");
       result12.classList.add("trans2");
+      resultPage.classList.remove("none");
+      resultPage.classList.add("trans2");
       // result1.classList.add("fadeIn");
       loadingWrap.classList.add("none");
       testTitle.classList.add("none");
