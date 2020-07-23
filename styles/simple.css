@@ -34,6 +34,7 @@
   display: flex;
   width: 100%;
   position: relative;
+  text-decoration: none;
 }
 
 .simple__content {
