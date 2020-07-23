@@ -27,6 +27,7 @@
 
 .body .simple__a:visited {
   color: rgb(39, 39, 39);
+  text-decoration: none;
 }
 
 .simple {
