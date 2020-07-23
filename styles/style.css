@@ -8,15 +8,21 @@
 }
 
 .header {
-  font-size: 18px;
+  font-size: 24px;
   font-weight: 700;
   width: 100%;
-  height: 60px;
-  background-color: #0123b4;
-  color: white;
+  height: 80px;
+  background-color: white;
+  color: #0123b4;
   display: flex;
   align-items: center;
-  padding-left: 10px;
+  padding-left: 20px;
+  border-bottom: 0.5px solid gray;
+}
+
+.header a {
+  text-decoration: none;
+  color: #0123b4;
 }
 
 body {
