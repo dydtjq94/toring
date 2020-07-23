@@ -158,7 +158,26 @@
   border-radius: 10px;
 }
 
+.all a:link {
+  text-decoration: none;
+}
+
 .all a span {
+  color: #0123b4;
+}
+.all2 {
+  margin-bottom: 40px;
+  padding: 10px 20px;
+  background-color: transparent;
+  border: 1px solid #0123b4;
+  border-radius: 10px;
+}
+
+.all2 a:link {
+  text-decoration: none;
+}
+
+.all2 a span {
   color: #0123b4;
 }
 
@@ -206,9 +225,20 @@
 }
 
 .result1,
-.result2 {
+.result2,
+.result3,
+.result4,
+.result5,
+.result6,
+.result7,
+.result8,
+.result9,
+.result10,
+.result11,
+.result12 {
   width: 90%;
   margin-top: 30px;
+  text-decoration: none;
 }
 
 .result1 a .simple {
