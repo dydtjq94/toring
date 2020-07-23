@@ -25,6 +25,11 @@
     0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
 }
 
+.body .simple__a:link {
+  color: rgb(39, 39, 39);
+  text-decoration: none;
+}
+
 .body .simple__a:visited {
   color: rgb(39, 39, 39);
   text-decoration: none;
