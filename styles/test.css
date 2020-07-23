@@ -148,6 +148,7 @@
 .page__word span {
   font-size: 14px;
   color: rgb(58, 58, 58);
+  text-align: justify;
 }
 
 .page__word .bold {

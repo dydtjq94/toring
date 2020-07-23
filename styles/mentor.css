@@ -273,6 +273,11 @@
   color: #0123b4;
 }
 
+.price__button a {
+  background-color: transparent;
+  text-decoration: none;
+}
+
 .price__button:hover {
   cursor: pointer;
 }
