@@ -25,6 +25,10 @@
   color: #0123b4;
 }
 
+.header a:link {
+  text-decoration: none;
+}
+
 body {
   width: 100%;
   display: flex;
