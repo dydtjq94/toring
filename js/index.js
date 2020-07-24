@@ -362,6 +362,7 @@ function handleResult(e) {
     }, 5301);
   }
 }
+
 function init() {
   //   first.addEventListener("click", handleFirstClick);
   button1.forEach((e) => e.addEventListener("click", handleFirstClick));
