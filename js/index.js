@@ -71,7 +71,43 @@ function resultMove() {
     i = 1;
     var elem = document.getElementById("myBar");
     var width = 0;
+    var id = setInterval(frame, 50);
+    function frame() {
+      if (width >= 33) {
+        clearInterval(id);
+        i = 0;
+      } else {
+        width++;
+        elem.style.width = width + "%";
+        elem.innerHTML = width + "%";
+      }
+    }
+  }
+}
+function resultMove2() {
+  if (i == 0) {
+    i = 1;
+    var elem = document.getElementById("myBar");
+    var width = 34;
     var id = setInterval(frame, 30);
+    function frame() {
+      if (width >= 66) {
+        clearInterval(id);
+        i = 0;
+      } else {
+        width++;
+        elem.style.width = width + "%";
+        elem.innerHTML = width + "%";
+      }
+    }
+  }
+}
+function resultMove3() {
+  if (i == 0) {
+    i = 1;
+    var elem = document.getElementById("myBar");
+    var width = 67;
+    var id = setInterval(frame, 10);
     function frame() {
       if (width >= 100) {
         clearInterval(id);
@@ -159,6 +195,14 @@ function handleResult(e) {
     resultMove();
     find.classList.remove("none");
   }, 300);
+
+  setTimeout(function () {
+    resultMove2();
+  }, 2010);
+
+  setTimeout(function () {
+    resultMove3();
+  }, 3020);
 
   forResult.push(parseInt(e.target.name, 10));
   console.log(forResult);
