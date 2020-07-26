@@ -71,7 +71,7 @@ function resultMove() {
     i = 1;
     var elem = document.getElementById("myBar");
     var width = 0;
-    var id = setInterval(frame, 50);
+    var id = setInterval(frame, 40);
     function frame() {
       if (width >= 33) {
         clearInterval(id);
@@ -198,15 +198,16 @@ function handleResult(e) {
 
   setTimeout(function () {
     resultMove2();
-  }, 2010);
+  }, 1910);
 
   setTimeout(function () {
     resultMove3();
   }, 3020);
 
   forResult.push(parseInt(e.target.name, 10));
-  console.log(forResult);
   e.target.classList.add("selected");
+
+  console.log(forResult);
 
   setTimeout(function () {
     progress.classList.add("none");
@@ -216,151 +217,151 @@ function handleResult(e) {
     loadingWrap.classList.remove("none");
   }, 3301);
 
-  if (forResult[0] === 1 && forResult[1] === 1 && forResult[2] === 1) {
-    setTimeout(function () {
-      result1.classList.remove("none");
-      result1.classList.add("trans2");
-      resultPage.classList.remove("none");
-      resultPage.classList.add("trans2");
-      all2.classList.remove("none");
-      all2.classList.add("trans2");
-      // result1.classList.add("fadeIn");
-      loadingWrap.classList.add("none");
-      testTitle.classList.add("none");
-    }, 5301);
-  } else if (forResult[0] === 1 && forResult[1] === 1 && forResult[2] === 2) {
-    setTimeout(function () {
-      result2.classList.remove("none");
-      result2.classList.add("trans2");
-      resultPage.classList.remove("none");
-      resultPage.classList.add("trans2");
-      all2.classList.remove("none");
-      all2.classList.add("trans2");
-      // result1.classList.add("fadeIn");
-      loadingWrap.classList.add("none");
-      testTitle.classList.add("none");
-    }, 5301);
-  } else if (forResult[0] === 1 && forResult[1] === 1 && forResult[2] === 3) {
-    setTimeout(function () {
-      result3.classList.remove("none");
-      result3.classList.add("trans2");
-      resultPage.classList.remove("none");
-      resultPage.classList.add("trans2");
-      all2.classList.remove("none");
-      all2.classList.add("trans2");
-      // result1.classList.add("fadeIn");
-      loadingWrap.classList.add("none");
-      testTitle.classList.add("none");
-    }, 5301);
-  } else if (forResult[0] === 1 && forResult[1] === 2 && forResult[2] === 1) {
-    setTimeout(function () {
-      result4.classList.remove("none");
-      result4.classList.add("trans2");
-      resultPage.classList.remove("none");
-      resultPage.classList.add("trans2");
-      all2.classList.remove("none");
-      all2.classList.add("trans2");
-      // result1.classList.add("fadeIn");
-      loadingWrap.classList.add("none");
-      testTitle.classList.add("none");
-    }, 5301);
-  } else if (forResult[0] === 1 && forResult[1] === 2 && forResult[2] === 2) {
-    setTimeout(function () {
-      result5.classList.remove("none");
-      result5.classList.add("trans2");
-      resultPage.classList.remove("none");
-      resultPage.classList.add("trans2");
-      all2.classList.remove("none");
-      all2.classList.add("trans2");
-      // result1.classList.add("fadeIn");
-      loadingWrap.classList.add("none");
-      testTitle.classList.add("none");
-    }, 5301);
-  } else if (forResult[0] === 1 && forResult[1] === 2 && forResult[2] === 3) {
-    setTimeout(function () {
-      result6.classList.remove("none");
-      result6.classList.add("trans2");
-      resultPage.classList.remove("none");
-      resultPage.classList.add("trans2");
-      all2.classList.remove("none");
-      all2.classList.add("trans2");
-      // result1.classList.add("fadeIn");
-      loadingWrap.classList.add("none");
-      testTitle.classList.add("none");
-    }, 5301);
-  } else if (forResult[0] === 2 && forResult[1] === 1 && forResult[2] === 1) {
-    setTimeout(function () {
-      result7.classList.remove("none");
-      result7.classList.add("trans2");
-      resultPage.classList.remove("none");
-      resultPage.classList.add("trans2");
-      all2.classList.remove("none");
-      all2.classList.add("trans2");
-      // result1.classList.add("fadeIn");
-      loadingWrap.classList.add("none");
-      testTitle.classList.add("none");
-    }, 5301);
-  } else if (forResult[0] === 2 && forResult[1] === 1 && forResult[2] === 2) {
-    setTimeout(function () {
-      result8.classList.remove("none");
-      result8.classList.add("trans2");
-      resultPage.classList.remove("none");
-      resultPage.classList.add("trans2");
-      all2.classList.remove("none");
-      all2.classList.add("trans2");
-      // result1.classList.add("fadeIn");
-      loadingWrap.classList.add("none");
-      testTitle.classList.add("none");
-    }, 5301);
-  } else if (forResult[0] === 2 && forResult[1] === 1 && forResult[2] === 3) {
-    setTimeout(function () {
-      result9.classList.remove("none");
-      result9.classList.add("trans2");
-      resultPage.classList.remove("none");
-      resultPage.classList.add("trans2");
-      all2.classList.remove("none");
-      all2.classList.add("trans2");
-      // result1.classList.add("fadeIn");
-      loadingWrap.classList.add("none");
-      testTitle.classList.add("none");
-    }, 5301);
-  } else if (forResult[0] === 2 && forResult[1] === 2 && forResult[2] === 1) {
-    setTimeout(function () {
-      result10.classList.remove("none");
-      result10.classList.add("trans2");
-      resultPage.classList.remove("none");
-      resultPage.classList.add("trans2");
-      all2.classList.remove("none");
-      all2.classList.add("trans2");
-      // result1.classList.add("fadeIn");
-      loadingWrap.classList.add("none");
-      testTitle.classList.add("none");
-    }, 5301);
-  } else if (forResult[0] === 2 && forResult[1] === 2 && forResult[2] === 2) {
-    setTimeout(function () {
-      result11.classList.remove("none");
-      result11.classList.add("trans2");
-      resultPage.classList.remove("none");
-      resultPage.classList.add("trans2");
-      all2.classList.remove("none");
-      all2.classList.add("trans2");
-      // result1.classList.add("fadeIn");
-      loadingWrap.classList.add("none");
-      testTitle.classList.add("none");
-    }, 5301);
-  } else if (forResult[0] === 2 && forResult[1] === 2 && forResult[2] === 3) {
-    setTimeout(function () {
-      result12.classList.remove("none");
-      result12.classList.add("trans2");
-      resultPage.classList.remove("none");
-      resultPage.classList.add("trans2");
-      all2.classList.remove("none");
-      all2.classList.add("trans2");
-      // result1.classList.add("fadeIn");
-      loadingWrap.classList.add("none");
-      testTitle.classList.add("none");
-    }, 5301);
-  }
+  console.log(forResult.join(""), [1, 1, 1]);
+
+  const name = "select";
+
+  setTimeout(function () {
+    location.href = "result.html?" + name + ":" + forResult.join("");
+  }, 5301);
+
+  // if (parseInt(forResult.join("")) === 111) {
+  //   setTimeout(function () {
+  //     result1.classList.remove("none");
+  //     result1.classList.add("trans2");
+  //     resultPage.classList.remove("none");
+  //     resultPage.classList.add("trans2");
+  //     all2.classList.remove("none");
+  //     all2.classList.add("trans2");
+  //     loadingWrap.classList.add("none");
+  //     testTitle.classList.add("none");
+  //   }, 5301);
+  // } else if (parseInt(forResult.join("")) === 112) {
+  //   setTimeout(function () {
+  //     result2.classList.remove("none");
+  //     result2.classList.add("trans2");
+  //     resultPage.classList.remove("none");
+  //     resultPage.classList.add("trans2");
+  //     all2.classList.remove("none");
+  //     all2.classList.add("trans2");
+  //     loadingWrap.classList.add("none");
+  //     testTitle.classList.add("none");
+  //   }, 5301);
+  // } else if (parseInt(forResult.join("")) === 113) {
+  //   setTimeout(function () {
+  //     result3.classList.remove("none");
+  //     result3.classList.add("trans2");
+  //     resultPage.classList.remove("none");
+  //     resultPage.classList.add("trans2");
+  //     all2.classList.remove("none");
+  //     all2.classList.add("trans2");
+  //     loadingWrap.classList.add("none");
+  //     testTitle.classList.add("none");
+  //   }, 5301);
+  // } else if (parseInt(forResult.join("")) === 121) {
+  //   setTimeout(function () {
+  //     result4.classList.remove("none");
+  //     result4.classList.add("trans2");
+  //     resultPage.classList.remove("none");
+  //     resultPage.classList.add("trans2");
+  //     all2.classList.remove("none");
+  //     all2.classList.add("trans2");
+  //     loadingWrap.classList.add("none");
+  //     testTitle.classList.add("none");
+  //   }, 5301);
+  // } else if (parseInt(forResult.join("")) === 122) {
+  //   setTimeout(function () {
+  //     result5.classList.remove("none");
+  //     result5.classList.add("trans2");
+  //     resultPage.classList.remove("none");
+  //     resultPage.classList.add("trans2");
+  //     all2.classList.remove("none");
+  //     all2.classList.add("trans2");
+  //     loadingWrap.classList.add("none");
+  //     testTitle.classList.add("none");
+  //   }, 5301);
+  // } else if (parseInt(forResult.join("")) === 123) {
+  //   setTimeout(function () {
+  //     result6.classList.remove("none");
+  //     result6.classList.add("trans2");
+  //     resultPage.classList.remove("none");
+  //     resultPage.classList.add("trans2");
+  //     all2.classList.remove("none");
+  //     all2.classList.add("trans2");
+  //     loadingWrap.classList.add("none");
+  //     testTitle.classList.add("none");
+  //   }, 5301);
+  // } else if (parseInt(forResult.join("")) === 211) {
+  //   setTimeout(function () {
+  //     result7.classList.remove("none");
+  //     result7.classList.add("trans2");
+  //     resultPage.classList.remove("none");
+  //     resultPage.classList.add("trans2");
+  //     all2.classList.remove("none");
+  //     all2.classList.add("trans2");
+  //     loadingWrap.classList.add("none");
+  //     testTitle.classList.add("none");
+  //   }, 5301);
+  // } else if (parseInt(forResult.join("")) === 212) {
+  //   setTimeout(function () {
+  //     result8.classList.remove("none");
+  //     result8.classList.add("trans2");
+  //     resultPage.classList.remove("none");
+  //     resultPage.classList.add("trans2");
+  //     all2.classList.remove("none");
+  //     all2.classList.add("trans2");
+  //     loadingWrap.classList.add("none");
+  //     testTitle.classList.add("none");
+  //   }, 5301);
+  // } else if (parseInt(forResult.join("")) === 213) {
+  //   setTimeout(function () {
+  //     result9.classList.remove("none");
+  //     result9.classList.add("trans2");
+  //     resultPage.classList.remove("none");
+  //     resultPage.classList.add("trans2");
+  //     all2.classList.remove("none");
+  //     all2.classList.add("trans2");
+  //     loadingWrap.classList.add("none");
+  //     testTitle.classList.add("none");
+  //   }, 5301);
+  // } else if (parseInt(forResult.join("")) === 221) {
+  //   setTimeout(function () {
+  //     result10.classList.remove("none");
+  //     result10.classList.add("trans2");
+  //     resultPage.classList.remove("none");
+  //     resultPage.classList.add("trans2");
+  //     all2.classList.remove("none");
+  //     all2.classList.add("trans2");
+  //     loadingWrap.classList.add("none");
+  //     testTitle.classList.add("none");
+  //   }, 5301);
+  // } else if (parseInt(forResult.join("")) === 222) {
+  //   setTimeout(function () {
+  //     result11.classList.remove("none");
+  //     result11.classList.add("trans2");
+  //     resultPage.classList.remove("none");
+  //     resultPage.classList.add("trans2");
+  //     all2.classList.remove("none");
+  //     all2.classList.add("trans2");
+  //     loadingWrap.classList.add("none");
+  //     testTitle.classList.add("none");
+  //   }, 5301);
+  // } else if (parseInt(forResult.join("")) === 223) {
+  //   setTimeout(function () {
+  //     result12.classList.remove("none");
+  //     result12.classList.add("trans2");
+  //     resultPage.classList.remove("none");
+  //     resultPage.classList.add("trans2");
+  //     all2.classList.remove("none");
+  //     all2.classList.add("trans2");
+  //     loadingWrap.classList.add("none");
+  //     testTitle.classList.add("none");
+  //   }, 5301);
+  // }
+}
+
+function handlePush() {
+  console.log(forResult);
 }
 
 function init() {
