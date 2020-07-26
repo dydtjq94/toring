@@ -4,18 +4,6 @@ const secondTwo = document.querySelector(".second__two");
 const secondThree = document.querySelector(".second__three");
 const third = document.querySelector(".third");
 const forth = document.querySelector(".forth");
-const result1 = document.querySelector(".result1");
-const result2 = document.querySelector(".result2");
-const result3 = document.querySelector(".result3");
-const result4 = document.querySelector(".result4");
-const result5 = document.querySelector(".result5");
-const result6 = document.querySelector(".result6");
-const result7 = document.querySelector(".result7");
-const result8 = document.querySelector(".result8");
-const result9 = document.querySelector(".result9");
-const result10 = document.querySelector(".result10");
-const result11 = document.querySelector(".result11");
-const result12 = document.querySelector(".result12");
 const button1 = document.querySelectorAll(".button1");
 const button2 = document.querySelectorAll(".button2");
 const button3 = document.querySelectorAll(".button3");
@@ -23,8 +11,6 @@ const progress = document.querySelector("#myProgress");
 const find = document.querySelector("#find");
 const loadingWrap = document.querySelector(".loading__wrap");
 const testTitle = document.querySelector(".test__title");
-const resultPage = document.querySelector(".result__page__wrap");
-const all2 = document.querySelector(".all2");
 
 const forResult = [];
 
@@ -219,153 +205,13 @@ function handleResult(e) {
 
   console.log(forResult.join(""), [1, 1, 1]);
 
-  const name = "select";
-
+  const name = "mentor";
   setTimeout(function () {
     location.href = "result.html?" + name + ":" + forResult.join("");
   }, 5301);
-
-  // if (parseInt(forResult.join("")) === 111) {
-  //   setTimeout(function () {
-  //     result1.classList.remove("none");
-  //     result1.classList.add("trans2");
-  //     resultPage.classList.remove("none");
-  //     resultPage.classList.add("trans2");
-  //     all2.classList.remove("none");
-  //     all2.classList.add("trans2");
-  //     loadingWrap.classList.add("none");
-  //     testTitle.classList.add("none");
-  //   }, 5301);
-  // } else if (parseInt(forResult.join("")) === 112) {
-  //   setTimeout(function () {
-  //     result2.classList.remove("none");
-  //     result2.classList.add("trans2");
-  //     resultPage.classList.remove("none");
-  //     resultPage.classList.add("trans2");
-  //     all2.classList.remove("none");
-  //     all2.classList.add("trans2");
-  //     loadingWrap.classList.add("none");
-  //     testTitle.classList.add("none");
-  //   }, 5301);
-  // } else if (parseInt(forResult.join("")) === 113) {
-  //   setTimeout(function () {
-  //     result3.classList.remove("none");
-  //     result3.classList.add("trans2");
-  //     resultPage.classList.remove("none");
-  //     resultPage.classList.add("trans2");
-  //     all2.classList.remove("none");
-  //     all2.classList.add("trans2");
-  //     loadingWrap.classList.add("none");
-  //     testTitle.classList.add("none");
-  //   }, 5301);
-  // } else if (parseInt(forResult.join("")) === 121) {
-  //   setTimeout(function () {
-  //     result4.classList.remove("none");
-  //     result4.classList.add("trans2");
-  //     resultPage.classList.remove("none");
-  //     resultPage.classList.add("trans2");
-  //     all2.classList.remove("none");
-  //     all2.classList.add("trans2");
-  //     loadingWrap.classList.add("none");
-  //     testTitle.classList.add("none");
-  //   }, 5301);
-  // } else if (parseInt(forResult.join("")) === 122) {
-  //   setTimeout(function () {
-  //     result5.classList.remove("none");
-  //     result5.classList.add("trans2");
-  //     resultPage.classList.remove("none");
-  //     resultPage.classList.add("trans2");
-  //     all2.classList.remove("none");
-  //     all2.classList.add("trans2");
-  //     loadingWrap.classList.add("none");
-  //     testTitle.classList.add("none");
-  //   }, 5301);
-  // } else if (parseInt(forResult.join("")) === 123) {
-  //   setTimeout(function () {
-  //     result6.classList.remove("none");
-  //     result6.classList.add("trans2");
-  //     resultPage.classList.remove("none");
-  //     resultPage.classList.add("trans2");
-  //     all2.classList.remove("none");
-  //     all2.classList.add("trans2");
-  //     loadingWrap.classList.add("none");
-  //     testTitle.classList.add("none");
-  //   }, 5301);
-  // } else if (parseInt(forResult.join("")) === 211) {
-  //   setTimeout(function () {
-  //     result7.classList.remove("none");
-  //     result7.classList.add("trans2");
-  //     resultPage.classList.remove("none");
-  //     resultPage.classList.add("trans2");
-  //     all2.classList.remove("none");
-  //     all2.classList.add("trans2");
-  //     loadingWrap.classList.add("none");
-  //     testTitle.classList.add("none");
-  //   }, 5301);
-  // } else if (parseInt(forResult.join("")) === 212) {
-  //   setTimeout(function () {
-  //     result8.classList.remove("none");
-  //     result8.classList.add("trans2");
-  //     resultPage.classList.remove("none");
-  //     resultPage.classList.add("trans2");
-  //     all2.classList.remove("none");
-  //     all2.classList.add("trans2");
-  //     loadingWrap.classList.add("none");
-  //     testTitle.classList.add("none");
-  //   }, 5301);
-  // } else if (parseInt(forResult.join("")) === 213) {
-  //   setTimeout(function () {
-  //     result9.classList.remove("none");
-  //     result9.classList.add("trans2");
-  //     resultPage.classList.remove("none");
-  //     resultPage.classList.add("trans2");
-  //     all2.classList.remove("none");
-  //     all2.classList.add("trans2");
-  //     loadingWrap.classList.add("none");
-  //     testTitle.classList.add("none");
-  //   }, 5301);
-  // } else if (parseInt(forResult.join("")) === 221) {
-  //   setTimeout(function () {
-  //     result10.classList.remove("none");
-  //     result10.classList.add("trans2");
-  //     resultPage.classList.remove("none");
-  //     resultPage.classList.add("trans2");
-  //     all2.classList.remove("none");
-  //     all2.classList.add("trans2");
-  //     loadingWrap.classList.add("none");
-  //     testTitle.classList.add("none");
-  //   }, 5301);
-  // } else if (parseInt(forResult.join("")) === 222) {
-  //   setTimeout(function () {
-  //     result11.classList.remove("none");
-  //     result11.classList.add("trans2");
-  //     resultPage.classList.remove("none");
-  //     resultPage.classList.add("trans2");
-  //     all2.classList.remove("none");
-  //     all2.classList.add("trans2");
-  //     loadingWrap.classList.add("none");
-  //     testTitle.classList.add("none");
-  //   }, 5301);
-  // } else if (parseInt(forResult.join("")) === 223) {
-  //   setTimeout(function () {
-  //     result12.classList.remove("none");
-  //     result12.classList.add("trans2");
-  //     resultPage.classList.remove("none");
-  //     resultPage.classList.add("trans2");
-  //     all2.classList.remove("none");
-  //     all2.classList.add("trans2");
-  //     loadingWrap.classList.add("none");
-  //     testTitle.classList.add("none");
-  //   }, 5301);
-  // }
-}
-
-function handlePush() {
-  console.log(forResult);
 }
 
 function init() {
-  //   first.addEventListener("click", handleFirstClick);
   button1.forEach((e) => e.addEventListener("click", handleFirstClick));
 }
 
