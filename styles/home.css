@@ -31,7 +31,7 @@
 }
 
 .catch__phrase {
-  margin-top: 180px;
+  margin-top: 140px;
   font-size: 30px;
   width: 210px;
   line-height: 40px;
@@ -86,4 +86,7 @@
     transform: translateY(0);
     opacity: 1;
   }
+}
+
+.toring__site {
 }
