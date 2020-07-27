@@ -119,7 +119,7 @@ const mentors = [
     onePick: "수능 수학 • 영어 만점",
     eng: "minha",
     mentoring: [1, 2, 3],
-    oneWord: "성향에 맞는 학습법을 같이 고민하고 찾아주는 민하 멘토님",
+    oneWord: "학습법을 같이 고민하고 찾아주는 민하 멘토님",
   },
 ];
 
