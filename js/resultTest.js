@@ -133,7 +133,7 @@ const mentorLen = mentors.length;
 
 const temp = location.href.split("?");
 const forResult = parseInt(temp[1].split(":")[1], 10);
-let resultNum = 0;
+const resultNum = 0;
 
 if (forResult === 111) {
   resultNum = 0;
@@ -161,142 +161,125 @@ if (forResult === 111) {
   resultNum = 11;
 }
 
-let randomNum1 = Math.floor(Math.random() * mentorLen);
+const randomNum1 = Math.floor(Math.random() * mentorLen);
 let randomNum2 = Math.floor(Math.random() * mentorLen);
-
-if (resultNum === randomNum1) {
-  console.log(resultNum, randomNum1, randomNum2);
-  randomNum1 = Math.floor(Math.random() * mentorLen);
-}
-
-if (resultNum === randomNum2) {
-  console.log(resultNum, randomNum1, randomNum2);
-  randomNum2 = Math.floor(Math.random() * mentorLen);
-}
-
 if (randomNum1 === randomNum2) {
-  console.log(resultNum, randomNum1, randomNum2);
-  randomNum2 = Math.floor(Math.random() * mentorLen);
-}
-
-for (var i = 0; i < 20; i++) {
-  if (randomNum1 !== randomNum2) {
-    console.log(resultNum, randomNum1, randomNum2);
-    break;
-  }
+  console.log(randomNum1, randomNum2);
   randomNum2 = Math.floor(Math.random() * mentorLen);
 }
 
 const a = Math.random() * mentorLen;
 
+console.log(randomNum1, randomNum2);
+
 function handleResult() {
   result.innerHTML = `<div class="result__comment">toring이 추천하는 아이에 맞는 멘토님</div>
-    <a class="simple__a" href="${mentors[resultNum].eng}.html">
-      <div class="simple">
-        <div class="simple__img">
-          <img src="img/${mentors[resultNum].eng}.jpeg" class="rec__img" />
+  <a class="simple__a" href="${mentors[resultNum].eng}.html">
+    <div class="simple">
+      <div class="simple__img">
+        <img src="img/${mentors[resultNum].eng}.jpeg" class="rec__img" />
+      </div>
+      <div class="simple__content">
+        <div class="simple__badge">
+          <div class="simple__pro">pro</div>
         </div>
-        <div class="simple__content">
-          <div class="simple__badge">
-            <div class="simple__pro">pro</div>
+        <div class="simple__badge">
+          <div class="simple__study">
+            학습방법
           </div>
-          <div class="simple__badge">
-            <div class="simple__study">
-              학습방법
-            </div>
-            <div class="simple__consult">입시상담</div>
-          </div>
-    
-          <div class="content__column">${mentors[resultNum].name} 멘토님 (${mentors[resultNum].gender})</div>
-          <div class="content__column">
-            <i class="fas fa-graduation-cap"></i>${mentors[resultNum].univ}
-          </div>
-          <div class="content__column">
-            <i class="fas fa-school"></i>${mentors[resultNum].high}
-          </div>
-          <div class="content__column">
-            <i class="fas fa-book-open"></i>${mentors[resultNum].onePick}
-          </div>
+          <div class="simple__consult">입시상담</div>
         </div>
-        <div class="content__column__detail">
-          자세히 보기 <i class="fas fa-chevron-right"></i>
+  
+        <div class="content__column">${mentors[resultNum].name} 멘토님 (${mentors[resultNum].gender})</div>
+        <div class="content__column">
+          <i class="fas fa-graduation-cap"></i>${mentors[resultNum].univ}
+        </div>
+        <div class="content__column">
+          <i class="fas fa-school"></i>${mentors[resultNum].high}
+        </div>
+        <div class="content__column">
+          <i class="fas fa-book-open"></i>${mentors[resultNum].onePick}
         </div>
       </div>
-    </a>
-    <div class="select1"></div>
-    <div class="select2"></div>`;
+      <div class="content__column__detail">
+        자세히 보기 <i class="fas fa-chevron-right"></i>
+      </div>
+    </div>
+  </a>
+  <div class="select1"></div>
+  <div class="select2"></div>`;
 
   const select1 = document.querySelector(".select1");
   const select2 = document.querySelector(".select2");
   console.log(select1);
 
   select1.innerHTML = `<div class="result__comment">${mentors[randomNum1].oneWord}</div>
-    <a class="simple__a" href="${mentors[randomNum1].eng}.html">
-      <div class="simple">
-        <div class="simple__img">
-          <img src="img/${mentors[randomNum1].eng}.jpeg" class="rec__img" />
+  <a class="simple__a" href="${mentors[randomNum1].eng}.html">
+    <div class="simple">
+      <div class="simple__img">
+        <img src="img/${mentors[randomNum1].eng}.jpeg" class="rec__img" />
+      </div>
+      <div class="simple__content">
+        <div class="simple__badge">
+          <div class="simple__pro">pro</div>
         </div>
-        <div class="simple__content">
-          <div class="simple__badge">
-            <div class="simple__pro">pro</div>
+        <div class="simple__badge">
+          <div class="simple__study">
+            학습방법
           </div>
-          <div class="simple__badge">
-            <div class="simple__study">
-              학습방법
-            </div>
-            <div class="simple__consult">입시상담</div>
-          </div>
-    
-          <div class="content__column">${mentors[randomNum1].name} 멘토님 (${mentors[randomNum1].gender})</div>
-          <div class="content__column">
-            <i class="fas fa-graduation-cap"></i>${mentors[randomNum1].univ}
-          </div>
-          <div class="content__column">
-            <i class="fas fa-school"></i>${mentors[randomNum1].high}
-          </div>
-          <div class="content__column">
-            <i class="fas fa-book-open"></i>${mentors[randomNum1].onePick}
-          </div>
+          <div class="simple__consult">입시상담</div>
         </div>
-        <div class="content__column__detail">
-          자세히 보기 <i class="fas fa-chevron-right"></i>
+  
+        <div class="content__column">${mentors[randomNum1].name} 멘토님 (${mentors[randomNum1].gender})</div>
+        <div class="content__column">
+          <i class="fas fa-graduation-cap"></i>${mentors[randomNum1].univ}
+        </div>
+        <div class="content__column">
+          <i class="fas fa-school"></i>${mentors[randomNum1].high}
+        </div>
+        <div class="content__column">
+          <i class="fas fa-book-open"></i>${mentors[randomNum1].onePick}
         </div>
       </div>
-    </a>`;
+      <div class="content__column__detail">
+        자세히 보기 <i class="fas fa-chevron-right"></i>
+      </div>
+    </div>
+  </a>`;
 
   select2.innerHTML = `<div class="result__comment">${mentors[randomNum2].oneWord}</div>
-    <a class="simple__a" href="${mentors[randomNum2].eng}.html">
-      <div class="simple">
-        <div class="simple__img">
-          <img src="img/${mentors[randomNum2].eng}.jpeg" class="rec__img" />
+  <a class="simple__a" href="${mentors[randomNum2].eng}.html">
+    <div class="simple">
+      <div class="simple__img">
+        <img src="img/${mentors[randomNum2].eng}.jpeg" class="rec__img" />
+      </div>
+      <div class="simple__content">
+        <div class="simple__badge">
+          <div class="simple__pro">pro</div>
         </div>
-        <div class="simple__content">
-          <div class="simple__badge">
-            <div class="simple__pro">pro</div>
+        <div class="simple__badge">
+          <div class="simple__study">
+            학습방법
           </div>
-          <div class="simple__badge">
-            <div class="simple__study">
-              학습방법
-            </div>
-            <div class="simple__consult">입시상담</div>
-          </div>
-    
-          <div class="content__column">${mentors[randomNum2].name} 멘토님 (${mentors[randomNum2].gender})</div>
-          <div class="content__column">
-            <i class="fas fa-graduation-cap"></i>${mentors[randomNum2].univ}
-          </div>
-          <div class="content__column">
-            <i class="fas fa-school"></i>${mentors[randomNum2].high}
-          </div>
-          <div class="content__column">
-            <i class="fas fa-book-open"></i>${mentors[randomNum2].onePick}
-          </div>
+          <div class="simple__consult">입시상담</div>
         </div>
-        <div class="content__column__detail">
-          자세히 보기 <i class="fas fa-chevron-right"></i>
+  
+        <div class="content__column">${mentors[randomNum2].name} 멘토님 (${mentors[randomNum2].gender})</div>
+        <div class="content__column">
+          <i class="fas fa-graduation-cap"></i>${mentors[randomNum2].univ}
+        </div>
+        <div class="content__column">
+          <i class="fas fa-school"></i>${mentors[randomNum2].high}
+        </div>
+        <div class="content__column">
+          <i class="fas fa-book-open"></i>${mentors[randomNum2].onePick}
         </div>
       </div>
-    </a>`;
+      <div class="content__column__detail">
+        자세히 보기 <i class="fas fa-chevron-right"></i>
+      </div>
+    </div>
+  </a>`;
 
   handleResultAni();
 }
