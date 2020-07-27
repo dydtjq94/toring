@@ -37,6 +37,8 @@
   line-height: 40px;
   color: rgb(42, 42, 42);
   margin-bottom: 10px;
+  transform: translateY(40px);
+  animation: homeFadeIn 1s forwards;
 }
 
 .catch__phrase span {
@@ -44,10 +46,12 @@
 }
 
 .catch__des {
-  text-align: center;
   line-height: 20px;
   margin-bottom: 10px;
   color: rgb(42, 42, 42);
+  opacity: 0;
+  transform: translateY(40px);
+  animation: homeFadeIn 1s forwards 0.5s;
 }
 
 .catch__des span {
@@ -63,10 +67,23 @@
   border-radius: 20px;
   font-size: 20px;
   margin-bottom: 10px;
+  opacity: 0;
+  transform: translateY(40px);
+  animation: homeFadeIn 1s forwards 1s;
 }
 
 .main__button:visited {
   text-decoration: none;
   color: white;
   background-color: #0123b4;
+}
+
+@keyframes homeFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
