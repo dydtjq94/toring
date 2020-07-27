@@ -89,4 +89,14 @@
 }
 
 .toring__site {
+  position: absolute;
+  bottom: 10px;
+  text-decoration: underline;
+  color: #0123b4;
+  padding: 20px;
+}
+
+.toring__site:visited {
+  color: #0123b4;
+  text-decoration: underline;
 }
