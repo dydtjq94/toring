@@ -76,12 +76,13 @@
 }
 
 .mentor__title {
-  font-size: 24px;
+  font-size: 20px;
   padding: 0 20px;
 
   margin-top: 16px;
   text-align: center;
   color: rgb(34, 34, 34);
+  line-height: 28px;
 }
 
 .badge {
@@ -177,6 +178,7 @@
 }
 
 .detail__title {
+  margin-top: 20px;
   line-height: 25px;
   font-size: 20px;
 }
@@ -186,14 +188,14 @@
   display: flex;
   justify-content: space-around;
   width: 100%;
-  background-color: #e1faff;
+  background-color: #f1f7eb;
 }
 
 .certify__content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: #1c2c79;
+  color: #65c32a;
   padding: 20px;
   font-size: 12px;
 }
@@ -404,7 +406,8 @@
 
 .curri__content__column i {
   margin-right: 8px;
-  line-height: 30px;
+  line-height: 20px;
+  font-size: 16px;
 }
 
 .curri__content__des__semi {
@@ -427,7 +430,7 @@
 .curri__content__des__column i {
   font-size: 20px;
   margin-right: 8px;
-  line-height: 30px;
+  line-height: 26px;
 }
 
 .des__column__content {
@@ -435,4 +438,58 @@
   line-height: 18px;
   margin-bottom: 16px;
   color: #272727;
+}
+
+.method {
+  width: 90%;
+  margin-top: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgb(54, 54, 54);
+}
+
+.review {
+  width: 90%;
+  margin-top: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgb(54, 54, 54);
+}
+
+.other {
+  width: 90%;
+  margin-top: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgb(54, 54, 54);
+  margin-bottom: 60px;
+}
+
+.buy {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+}
+
+.buy__toring {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35%;
+  padding: 10px 20px;
+  padding-top: 12px;
+  text-align: center;
+  background-color: #d3d3d3;
+  color: #0123b4;
+  border: none;
+}
+
+.buy__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 65%;
+  padding: 10px 20px;
+  text-align: center;
+  border: none;
+  background-color: #0123b4;
+  color: white;
 }
