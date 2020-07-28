@@ -1,0 +1,107 @@
+.main__dis {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  height: 90vh;
+  position: relative;
+}
+
+.bg__img1,
+.bg__img2,
+.bg__img3 {
+  position: absolute;
+  z-index: -99;
+  opacity: 0.3;
+  width: 180px;
+}
+
+.bg__img1 {
+  left: -40px;
+}
+
+.bg__img2 {
+  right: -40px;
+  top: 200px;
+}
+
+.bg__img3 {
+  left: -40px;
+  top: 400px;
+}
+
+.catch__phrase {
+  margin-top: 140px;
+  font-size: 30px;
+  width: 210px;
+  line-height: 40px;
+  color: rgb(42, 42, 42);
+  margin-bottom: 10px;
+  transform: translateY(40px);
+  animation: homeFadeIn 1s forwards;
+}
+
+.catch__phrase span {
+  font-weight: 700;
+}
+
+.catch__des {
+  line-height: 20px;
+  margin-bottom: 10px;
+  color: rgb(42, 42, 42);
+  opacity: 0;
+  transform: translateY(40px);
+  animation: homeFadeIn 1s forwards 0.5s;
+}
+
+.catch__des span {
+  font-weight: 700;
+}
+
+.main__button {
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.16);
+  text-decoration: none;
+  color: white;
+  background-color: #0123b4;
+  padding: 15px 30px;
+  border-radius: 20px;
+  font-size: 20px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  opacity: 0;
+  transform: translateY(40px);
+  animation: homeFadeIn 1s forwards 1s;
+}
+
+.main__button:visited {
+  text-decoration: none;
+  color: white;
+  background-color: #0123b4;
+}
+
+@keyframes homeFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.toring__site {
+  position: absolute;
+<<<<<<< Updated upstream
+  bottom: 10px;
+=======
+  bottom: 12px;
+>>>>>>> Stashed changes
+  text-decoration: underline;
+  color: #0123b4;
+  padding: 20px;
+}
+
+.toring__site:visited {
+  color: #0123b4;
+  text-decoration: underline;
+}

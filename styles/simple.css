@@ -13,10 +13,10 @@
 
 .simple__img {
   width: 50%;
-  height: 250px;
+  height: 230px;
 }
 
-.body a {
+.body .simple__a {
   width: 90%;
   margin-bottom: 30px;
   text-decoration: none;
@@ -25,14 +25,21 @@
     0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
 }
 
-.body a:visited {
+.body .simple__a:link {
   color: rgb(39, 39, 39);
+  text-decoration: none;
+}
+
+.body .simple__a:visited {
+  color: rgb(39, 39, 39);
+  text-decoration: none;
 }
 
 .simple {
   display: flex;
   width: 100%;
   position: relative;
+  text-decoration: none;
 }
 
 .simple__content {
@@ -61,8 +68,8 @@
   padding: 4px 8px;
   padding-top: 6px;
   background-color: #b4a201;
-  margin: 4px 4px;
-  margin-left: 15px;
+  margin: 4px 0;
+  margin-left: 10px;
 }
 
 .simple__motive {
@@ -71,7 +78,8 @@
   padding: 4px 8px;
   padding-top: 6px;
   background-color: #0190b4;
-  margin: 4px 4px;
+  margin: 4px 0;
+  margin-left: 10px;
 }
 
 .simple__consult {
@@ -80,7 +88,8 @@
   color: white;
   padding: 4px 8px;
   padding-top: 6px;
-  margin: 4px 4px;
+  margin: 4px 0;
+  margin-left: 10px;
 }
 
 .content__column {
