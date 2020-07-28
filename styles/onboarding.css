@@ -17,8 +17,8 @@
     opacity: 0;
     transform: translateX(375px);
   }
-  1% {
-    opacity: 1;
+  20% {
+    opacity: 0;
   }
   100% {
     opacity: 1;
@@ -32,8 +32,8 @@
     transform: translateX(0);
   }
 
-  99% {
-    opacity: 1;
+  20% {
+    opacity: 0;
   }
   100% {
     opacity: 0;
@@ -78,20 +78,3 @@
   flex-direction: column;
   align-items: center;
 }
-
-@keyframes onFadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-
-/* 
-.body__onboarding {
-  opacity: 1;
-  transform: translateX(100px);
-  animation: onFadeIn 1s forwards;
-} */
