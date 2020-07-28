@@ -1,0 +1,97 @@
+.on__img {
+  width: 100%;
+}
+
+.leftOut {
+  /* transform: translateX(-375px); */
+  animation: leftOut 0.5s forwards;
+}
+
+.rightIn {
+  opacity: 0;
+  animation: rightIn 0.5s forwards;
+}
+
+@keyframes rightIn {
+  0% {
+    opacity: 0;
+    transform: translateX(375px);
+  }
+  1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes leftOut {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  99% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-375px);
+  }
+}
+
+.onboarding1 {
+  position: fixed;
+  top: 120px;
+}
+.onboarding2,
+.onboarding3 {
+  opacity: 0;
+  position: fixed;
+  top: 120px;
+}
+
+.button__onboarding {
+  position: absolute;
+  bottom: 80px;
+  border: none;
+  background-color: #0123b4;
+  color: white;
+  font-size: 24px;
+  padding: 15px 30px;
+  border-radius: 20px;
+  outline: none;
+  width: 200px;
+  font-weight: 700;
+}
+
+.onbo__count {
+  position: absolute;
+  bottom: 55px;
+}
+
+.onboarding1,
+.onboarding2,
+.onboarding3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@keyframes onFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* 
+.body__onboarding {
+  opacity: 1;
+  transform: translateX(100px);
+  animation: onFadeIn 1s forwards;
+} */
