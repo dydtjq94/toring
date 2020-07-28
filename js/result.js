@@ -20,6 +20,7 @@ const mentors = [
     eng: "kyumin",
     mentoring: [1, 2, 3],
     oneWord: "최상위권을 위한 서울 의대 수석 규민 멘토님",
+    title: "고등학교 1학년부터 공부해서 서울대 의대 수석이 되는 방법",
   },
   {
     name: "김태경",
@@ -191,7 +192,9 @@ const a = Math.random() * mentorLen;
 
 function handleResult() {
   result.innerHTML = `<div class="result__comment">toring이 추천하는 아이에 맞는 멘토님</div>
-    <a class="simple__a" href="${mentors[resultNum].eng}.html">
+    <a class="simple__a" href="${mentors[resultNum].eng}.html?${
+    "name" + ":" + mentors[resultNum].eng
+  }">
       <div class="simple">
         <div class="simple__img">
           <img src="img/${mentors[resultNum].eng}.jpeg" class="rec__img" />
@@ -207,7 +210,9 @@ function handleResult() {
             <div class="simple__consult">입시상담</div>
           </div>
     
-          <div class="content__column">${mentors[resultNum].name} 멘토님 (${mentors[resultNum].gender})</div>
+          <div class="content__column">${mentors[resultNum].name} 멘토님 (${
+    mentors[resultNum].gender
+  })</div>
           <div class="content__column">
             <i class="fas fa-graduation-cap"></i>${mentors[resultNum].univ}
           </div>

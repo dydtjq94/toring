@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="토링" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://dydtjq94.github.io/toring/" />
+    <meta property="og:image" content="https://ifh.cc/v-8fKzVU" />
+
+    <link rel="stylesheet" href="styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <title>토링 멘토링 신청</title>
+  </head>
+  <header class="header">
+    <a href="home.html"> toring </a>
+  </header>
+  <body>
+    <div class="passbook">
+      무통장입금
+      <br />
+      야미구 (주)<br />기업은행 066-095403-04-016
+    </div>
+    <div class="submitForm">
+      <div class="submit__mentor"></div>
+      <form
+        action="https://script.google.com/macros/s/AKfycbzMJEI0x4Mxzyfd2a5RNo-rh69KxHdtW-6Z2c-QEonOg6L5zso/exec"
+        class="gform"
+        method="POST"
+        data-email="example@email.net"
+      >
+        <input type="radio" name="name" value="대학교 캠퍼스" /> 캠퍼스
+        <input type="radio" name="name" value="장소 협의" /> 장소 협의
+        <input type="text" name="message" placeholder="학생 이름" />
+        <input
+          type="tel"
+          name="email"
+          pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}"
+          placeholder="부모님 전화번호"
+        />
+        <input type="submit" value="멘토링 신청" />
+        <div style="display: none;" class="thankyou_message">
+          <!-- You can customize the thankyou message by editing the code below -->
+          <h2>
+            <em>Thanks</em> for contacting us! We will get back to you soon!
+          </h2>
+        </div>
+      </form>
+    </div>
+  </body>
+  <script
+    data-cfasync="false"
+    type="text/javascript"
+    src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"
+  ></script>
+  <script src="js/submit.js"></script>
+</html>
