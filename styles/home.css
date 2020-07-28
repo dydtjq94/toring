@@ -67,6 +67,7 @@
   border-radius: 20px;
   font-size: 20px;
   margin-bottom: 10px;
+  margin-top: 20px;
   opacity: 0;
   transform: translateY(40px);
   animation: homeFadeIn 1s forwards 1s;

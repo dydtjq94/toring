@@ -224,10 +224,12 @@ function handleResult() {
       </div>
     </a>
     <div class="select1"></div>
-    <div class="select2"></div>`;
+    <div class="select2"></div>
+    <div class="select3"></div>`;
 
   const select1 = document.querySelector(".select1");
   const select2 = document.querySelector(".select2");
+  const select3 = document.querySelector(".select3");
   console.log(select1);
 
   select1.innerHTML = `<div class="result__comment">${mentors[randomNum1].oneWord}</div>
@@ -298,6 +300,40 @@ function handleResult() {
       </div>
     </a>`;
 
+  select3.innerHTML = `<div class="result__comment">${mentors[1].oneWord}</div>
+    <a class="simple__a" href="${mentors[1].eng}.html">
+      <div class="simple">
+        <div class="simple__img">
+          <img src="img/${mentors[1].eng}.jpeg" class="rec__img" />
+        </div>
+        <div class="simple__content">
+          <div class="simple__badge">
+            <div class="simple__pro">pro</div>
+          </div>
+          <div class="simple__badge">
+            <div class="simple__study">
+              학습방법
+            </div>
+            <div class="simple__consult">입시상담</div>
+          </div>
+    
+          <div class="content__column">${mentors[1].name} 멘토님 (${mentors[1].gender})</div>
+          <div class="content__column">
+            <i class="fas fa-graduation-cap"></i>${mentors[1].univ}
+          </div>
+          <div class="content__column">
+            <i class="fas fa-school"></i>${mentors[1].high}
+          </div>
+          <div class="content__column">
+            <i class="fas fa-book-open"></i>${mentors[1].onePick}
+          </div>
+        </div>
+        <div class="content__column__detail">
+          자세히 보기 <i class="fas fa-chevron-right"></i>
+        </div>
+      </div>
+    </a>`;
+
   handleResultAni();
 }
 
@@ -307,8 +343,8 @@ function handleResultAni() {
     result.classList.add("trans2");
     resultPage.classList.remove("none");
     resultPage.classList.add("trans2");
-    all2.classList.remove("none");
-    all2.classList.add("trans2");
+    // all2.classList.remove("none");
+    // all2.classList.add("trans2");
   }, 200);
 }
 
