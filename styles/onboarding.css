@@ -54,7 +54,7 @@
 
 .button__onboarding {
   position: absolute;
-  bottom: 80px;
+  bottom: 40px;
   border: none;
   background-color: #0123b4;
   color: white;
@@ -77,7 +77,7 @@
 
 .onbo__count {
   position: absolute;
-  bottom: 55px;
+  bottom: 20px;
   font-size: 14px;
   color: rgb(63, 63, 63);
 }
