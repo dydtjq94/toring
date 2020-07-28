@@ -1,5 +1,5 @@
 .on__img {
-  width: 100%;
+  width: 300px;
 }
 
 .leftOut {
@@ -58,17 +58,28 @@
   border: none;
   background-color: #0123b4;
   color: white;
-  font-size: 24px;
+  font-size: 20px;
   padding: 15px 30px;
-  border-radius: 20px;
+  border-radius: 30px;
   outline: none;
   width: 200px;
   font-weight: 700;
+  z-index: 99;
+}
+
+.button__onboarding:hover {
+  cursor: pointer;
+}
+
+.button__onboarding:active {
+  opacity: 0.5;
 }
 
 .onbo__count {
   position: absolute;
   bottom: 55px;
+  font-size: 14px;
+  color: rgb(63, 63, 63);
 }
 
 .onboarding1,
@@ -77,4 +88,17 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.on__title {
+  color: rgb(63, 63, 63);
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.on__title .bold {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #364baa;
 }
