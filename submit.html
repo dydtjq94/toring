@@ -21,6 +21,12 @@
     <a href="home.html"> toring </a>
   </header>
   <body>
+    <div class="black__loading">
+      • • • <br />
+      잠시만 기다려주세요!
+    </div>
+    <div class="snackbar" id="snackbar">계좌가 복사되었어요!</div>
+
     <div class="body">
       <div class="submitForm">
         <div class="passbook__title">멘토링 무통장 입금</div>
@@ -35,8 +41,16 @@
             <div class="passbook__column">
               <div class="passbook__num__title">입금 계좌</div>
               <div class="passbook__num__content">
-                <div class="num__content">066-095403-04-016</div>
-                <button class="num__copy">복사하기</button>
+                <input
+                  type="text"
+                  class="num__content"
+                  id="target"
+                  value="066-095403-04-016"
+                  readonly
+                />
+                <div class="num__copy" id="btn">
+                  복사하기
+                </div>
               </div>
             </div>
             <div class="passbook__column">
@@ -89,10 +103,14 @@
               </div>
             </div>
           </div>
+          <div style="display: none;" class="thankyou_message">
+            <h2 class="guide__m">
+              멘토링 신청이 완료되었습니다. <br />감사합니다!
+            </h2>
+          </div>
           <div class="warning">
             <div class="warning__title">
               <i class="fas fa-check"></i>
-
               입금 방법 안내
             </div>
             <div class="warning__text">
@@ -117,11 +135,6 @@
             value="멘토링 신청하기"
             class="passbook__submit"
           />
-          <div style="display: none;" class="thankyou_message">
-            <h2 class="guide__m">
-              멘토링 신청이 완료되었습니다. <br />감사합니다!
-            </h2>
-          </div>
         </form>
       </div>
     </div>

@@ -1,11 +1,28 @@
 const form = document.querySelector(".submitForm");
 
+const btn = document.querySelector(`#btn`);
+const target = document.querySelector(`#target`);
+const snackBar = document.querySelector(`#snackbar`);
+
 const temp = decodeURI(location.href);
 const name = temp.split(":")[2];
 const major = parseInt(temp.split(":")[1].split("?")[1], 10);
 console.log(name, major);
 
+const handleCopy = (e) => {
+  console.log(e);
+  console.log(target);
+  target.select();
+  document.execCommand("Copy");
+  snackBar.style.opacity = 1;
+  setTimeout(function () {
+    console.log(`gg`);
+    snackBar.style.opacity = 0;
+  }, 1000);
+};
+
 function init() {
+  btn.addEventListener("click", handleCopy);
   //   form.innerHTML = `
   //   <div class="passbook">
   //         무통장입금
