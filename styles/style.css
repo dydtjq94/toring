@@ -71,3 +71,7 @@ body {
   font-weight: 700;
   color: black;
 }
+
+input[type="submit"] {
+  -webkit-appearance: none;
+}
