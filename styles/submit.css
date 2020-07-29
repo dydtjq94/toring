@@ -1,0 +1,201 @@
+.submitForm {
+  margin-top: 20px;
+  width: 90%;
+}
+
+.gform {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.passbook__title {
+  font-size: 24px;
+  color: #2a2a2a;
+}
+
+.passbook {
+  margin-top: 20px;
+  padding: 20px 20px;
+  border-radius: 10px;
+  background-color: #3b52b6;
+  margin-bottom: 20px;
+}
+
+.passbook__num__title,
+.info__bank__title,
+.info__name__title {
+  font-size: 14px;
+  color: #cccccc;
+  margin-bottom: 10px;
+}
+
+.passbook__num__content {
+  display: flex;
+  align-self: center;
+  font-size: 20px;
+}
+
+.num__content {
+  margin-top: 5px;
+  margin-right: 20px;
+  color: white;
+  font-weight: 700;
+}
+
+.info__bank__content,
+.info__name__content {
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.num__copy {
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 10px;
+  color: white;
+  padding: 5px 10px;
+}
+
+.passbook__column:nth-child(1) {
+  width: 100%;
+  padding-bottom: 20px;
+}
+.passbook__column:nth-child(2) {
+  display: flex;
+  width: 100%;
+  padding-bottom: 20px;
+}
+.passbook__column:nth-child(2) {
+  display: flex;
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.passbook__info {
+  width: 50%;
+}
+
+.passbook__column:nth-child(3) {
+  padding-top: 20px;
+  border-top: 1px solid white;
+  display: flex;
+  width: 100%;
+}
+
+.passbook__column:nth-child(4) {
+  padding-top: 20px;
+  display: flex;
+  width: 100%;
+}
+
+.passbook__price {
+  width: 50%;
+}
+
+.info__price__content {
+  color: #fec645;
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 14px;
+}
+
+.passbook__mentor {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: #fec645;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.user__name__title {
+  font-size: 20px;
+  color: #2a2a2a;
+  margin-bottom: 5px;
+}
+
+.user__name__des {
+  margin-left: 5px;
+  font-size: 14px;
+  color: #999999;
+}
+
+.user__name,
+.user__tel {
+  font-size: 16px;
+  width: 95%;
+  color: #fec645;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #fec645;
+  padding-bottom: 10px;
+  outline: none;
+}
+
+.user__name::placeholder {
+  color: #fec645;
+  opacity: 0.8;
+  font-size: 16px;
+}
+.user__tel::placeholder {
+  color: #fec645;
+  opacity: 0.8;
+
+  font-size: 16px;
+}
+
+.passbook__submit {
+  font-size: 20px;
+  background-color: #0123b4;
+  border: 1px solid #0123b4;
+  color: white;
+  border-radius: 16px;
+  padding: 10px 20px;
+
+  margin-bottom: 40px;
+}
+
+.passbook__submit:hover {
+  cursor: pointer;
+}
+
+.guide__m {
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+  position: fixed;
+}
+
+@keyframes submitAni {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.warning {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.warning__title {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.warning__text {
+  font-size: 14px;
+  color: #494949;
+  margin: 10px 0;
+  margin-left: 10px;
+}
+
+.warning__text__add {
+  font-size: 18px;
+  width: 100%;
+  text-align: center;
+}

@@ -11,17 +11,7 @@ const mentors = [
     mentoring: [1, 2, 3],
     oneWord: "과목별 학습방법을 완벽하게 알려주는 나영 멘토님",
   },
-  {
-    name: "김규민",
-    gender: "남",
-    univ: "서울대 의예과 19학번",
-    high: "백영고 (일반고) 졸",
-    onePick: "서울대 의대 수시 수석 입학",
-    eng: "kyumin",
-    mentoring: [1, 2, 3],
-    oneWord: "최상위권을 위한 서울 의대 수석 규민 멘토님",
-    title: "고등학교 1학년부터 공부해서 서울대 의대 수석이 되는 방법",
-  },
+
   {
     name: "김태경",
     gender: "여",
@@ -122,7 +112,28 @@ const mentors = [
     mentoring: [1, 2, 3],
     oneWord: "학습법을 같이 고민하고 찾아주는 민하 멘토님",
   },
+  {
+    name: "오상흔",
+    gender: "여",
+    univ: "고려대 경영학과 19학번",
+    high: "비평준화 일반고 졸",
+    onePick: "수시 • 정시 모두 준비 가능",
+    eng: "sangheun",
+    mentoring: [1, 2, 3],
+    oneWord: "짧은 시간에 100% 성적을 올려주는 상흔 멘토님",
+  },
 ];
+
+const kyumin = {
+  name: "김규민",
+  gender: "남",
+  univ: "서울대 의예과 19학번",
+  high: "백영고 (일반고) 졸",
+  onePick: "서울대 의대 수시 수석 입학",
+  eng: "kyumin",
+  mentoring: [1, 2, 3],
+  oneWord: "운동선수에서 서울대 의대 수석이 된 규민 멘토님",
+};
 
 // 멘토 리스트
 
@@ -165,36 +176,30 @@ if (forResult === 111) {
 let randomNum1 = Math.floor(Math.random() * mentorLen);
 let randomNum2 = Math.floor(Math.random() * mentorLen);
 
-if (resultNum === randomNum1) {
-  console.log(resultNum, randomNum1, randomNum2);
-  randomNum1 = Math.floor(Math.random() * mentorLen);
-}
-
-if (resultNum === randomNum2) {
-  console.log(resultNum, randomNum1, randomNum2);
-  randomNum2 = Math.floor(Math.random() * mentorLen);
-}
-
-if (randomNum1 === randomNum2) {
-  console.log(resultNum, randomNum1, randomNum2);
-  randomNum2 = Math.floor(Math.random() * mentorLen);
-}
-
 for (var i = 0; i < 20; i++) {
-  if (randomNum1 !== randomNum2) {
+  if (
+    randomNum1 !== randomNum2 &&
+    resultNum !== randomNum2 &&
+    resultNum !== randomNum1
+  ) {
     console.log(resultNum, randomNum1, randomNum2);
     break;
   }
+  console.log(resultNum, randomNum1, randomNum2);
   randomNum2 = Math.floor(Math.random() * mentorLen);
+  randomNum1 = Math.floor(Math.random() * mentorLen);
+  console.log(resultNum, randomNum1, randomNum2);
 }
 
 const a = Math.random() * mentorLen;
 
 function handleResult() {
-  result.innerHTML = `<div class="result__comment">toring이 추천하는 아이에 맞는 멘토님</div>
-    <a class="simple__a" href="${mentors[resultNum].eng}.html?${
-    "name" + ":" + mentors[resultNum].eng
-  }">
+  result.innerHTML = `
+  <div class="result__title">테스트 추천 멘토에요!</div>
+  <div class="result__comment">${mentors[resultNum].oneWord}</div>
+    <a class="simple__a" href="mentordetail.html?${
+      "name" + ":" + mentors[resultNum].eng
+    }">
       <div class="simple">
         <div class="simple__img">
           <img src="img/${mentors[resultNum].eng}.jpeg" class="rec__img" />
@@ -228,17 +233,25 @@ function handleResult() {
         </div>
       </div>
     </a>
+  <div class="result__title">토링 대표 멘토에요!</div>
+
+    <div class="select3"></div>
+  <div class="result__title">이런 멘토는 어때요?</div>
+
     <div class="select1"></div>
-    <div class="select2"></div>
-    <div class="select3"></div>`;
+    <div class="select2"></div>`;
 
   const select1 = document.querySelector(".select1");
   const select2 = document.querySelector(".select2");
   const select3 = document.querySelector(".select3");
   console.log(select1);
 
-  select1.innerHTML = `<div class="result__comment">${mentors[randomNum1].oneWord}</div>
-    <a class="simple__a" href="${mentors[randomNum1].eng}.html">
+  select1.innerHTML = `<div class="result__comment">${
+    mentors[randomNum1].oneWord
+  }</div>
+  <a class="simple__a" href="mentordetail.html?${
+    "name" + ":" + mentors[randomNum1].eng
+  }">
       <div class="simple">
         <div class="simple__img">
           <img src="img/${mentors[randomNum1].eng}.jpeg" class="rec__img" />
@@ -254,7 +267,9 @@ function handleResult() {
             <div class="simple__consult">입시상담</div>
           </div>
     
-          <div class="content__column">${mentors[randomNum1].name} 멘토님 (${mentors[randomNum1].gender})</div>
+          <div class="content__column">${mentors[randomNum1].name} 멘토님 (${
+    mentors[randomNum1].gender
+  })</div>
           <div class="content__column">
             <i class="fas fa-graduation-cap"></i>${mentors[randomNum1].univ}
           </div>
@@ -271,8 +286,12 @@ function handleResult() {
       </div>
     </a>`;
 
-  select2.innerHTML = `<div class="result__comment">${mentors[randomNum2].oneWord}</div>
-    <a class="simple__a" href="${mentors[randomNum2].eng}.html">
+  select2.innerHTML = `<div class="result__comment">${
+    mentors[randomNum2].oneWord
+  }</div>
+  <a class="simple__a" href="mentordetail.html?${
+    "name" + ":" + mentors[randomNum2].eng
+  }">
       <div class="simple">
         <div class="simple__img">
           <img src="img/${mentors[randomNum2].eng}.jpeg" class="rec__img" />
@@ -288,7 +307,9 @@ function handleResult() {
             <div class="simple__consult">입시상담</div>
           </div>
     
-          <div class="content__column">${mentors[randomNum2].name} 멘토님 (${mentors[randomNum2].gender})</div>
+          <div class="content__column">${mentors[randomNum2].name} 멘토님 (${
+    mentors[randomNum2].gender
+  })</div>
           <div class="content__column">
             <i class="fas fa-graduation-cap"></i>${mentors[randomNum2].univ}
           </div>
@@ -305,11 +326,11 @@ function handleResult() {
       </div>
     </a>`;
 
-  select3.innerHTML = `<div class="result__comment">${mentors[1].oneWord}</div>
-    <a class="simple__a" href="${mentors[1].eng}.html">
+  select3.innerHTML = `<div class="result__comment">${kyumin.oneWord}</div>
+  <a class="simple__a" href="mentordetail.html?${"name" + ":" + kyumin.eng}">
       <div class="simple">
         <div class="simple__img">
-          <img src="img/${mentors[1].eng}.jpeg" class="rec__img" />
+          <img src="img/${kyumin.eng}.jpeg" class="rec__img" />
         </div>
         <div class="simple__content">
           <div class="simple__badge">
@@ -322,15 +343,17 @@ function handleResult() {
             <div class="simple__consult">입시상담</div>
           </div>
     
-          <div class="content__column">${mentors[1].name} 멘토님 (${mentors[1].gender})</div>
+          <div class="content__column">${kyumin.name} 멘토님 (${
+    kyumin.gender
+  })</div>
           <div class="content__column">
-            <i class="fas fa-graduation-cap"></i>${mentors[1].univ}
+            <i class="fas fa-graduation-cap"></i>${kyumin.univ}
           </div>
           <div class="content__column">
-            <i class="fas fa-school"></i>${mentors[1].high}
+            <i class="fas fa-school"></i>${kyumin.high}
           </div>
           <div class="content__column">
-            <i class="fas fa-book-open"></i>${mentors[1].onePick}
+            <i class="fas fa-book-open"></i>${kyumin.onePick}
           </div>
         </div>
         <div class="content__column__detail">

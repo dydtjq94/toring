@@ -21,36 +21,109 @@
     <a href="home.html"> toring </a>
   </header>
   <body>
-    <div class="passbook">
-      무통장입금
-      <br />
-      야미구 (주)<br />기업은행 066-095403-04-016
-    </div>
-    <div class="submitForm">
-      <div class="submit__mentor"></div>
-      <form
-        action="https://script.google.com/macros/s/AKfycbzMJEI0x4Mxzyfd2a5RNo-rh69KxHdtW-6Z2c-QEonOg6L5zso/exec"
-        class="gform"
-        method="POST"
-        data-email="example@email.net"
-      >
-        <input type="radio" name="name" value="대학교 캠퍼스" /> 캠퍼스
-        <input type="radio" name="name" value="장소 협의" /> 장소 협의
-        <input type="text" name="message" placeholder="학생 이름" />
-        <input
-          type="tel"
-          name="email"
-          pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}"
-          placeholder="부모님 전화번호"
-        />
-        <input type="submit" value="멘토링 신청" />
-        <div style="display: none;" class="thankyou_message">
-          <!-- You can customize the thankyou message by editing the code below -->
-          <h2>
-            <em>Thanks</em> for contacting us! We will get back to you soon!
-          </h2>
-        </div>
-      </form>
+    <div class="body">
+      <div class="submitForm">
+        <div class="passbook__title">멘토링 무통장 입금</div>
+
+        <form
+          action="https://script.google.com/macros/s/AKfycbzMJEI0x4Mxzyfd2a5RNo-rh69KxHdtW-6Z2c-QEonOg6L5zso/exec"
+          class="gform"
+          method="POST"
+          data-email="example@email.net"
+        >
+          <div class="passbook">
+            <div class="passbook__column">
+              <div class="passbook__num__title">입금 계좌</div>
+              <div class="passbook__num__content">
+                <div class="num__content">066-095403-04-016</div>
+                <button class="num__copy">복사하기</button>
+              </div>
+            </div>
+            <div class="passbook__column">
+              <div class="passbook__info">
+                <div class="info__bank__title">입금 은행</div>
+                <div class="info__bank__content">기업은행</div>
+              </div>
+              <div class="passbook__info">
+                <div class="info__name__title">예금주</div>
+                <div class="info__name__content">야미구 (주)</div>
+              </div>
+            </div>
+            <div class="passbook__column">
+              <div class="passbook__price">
+                <div class="info__name__title">멘토링 진행 멘토</div>
+                <input
+                  type="text"
+                  name="name"
+                  class="passbook__mentor"
+                  placeholder="학생 이름"
+                  value="김규민 멘토님"
+                  readonly
+                />
+              </div>
+              <div class="passbook__price">
+                <div class="info__bank__title">입금 금액</div>
+                <div class="info__price__content">149,000원</div>
+              </div>
+            </div>
+            <div class="passbook__column">
+              <div class="passbook__price">
+                <div class="info__name__title">입금자명 작성</div>
+                <input
+                  type="text"
+                  class="user__name"
+                  name="message"
+                  placeholder="ex) 김미선"
+                  required
+                />
+              </div>
+              <div class="passbook__price">
+                <div class="info__bank__title">학부모님 전화번호</div>
+                <input
+                  type="tel"
+                  name="email"
+                  class="user__tel"
+                  placeholder="ex) 01071899943"
+                  required
+                />
+              </div>
+            </div>
+          </div>
+          <div class="warning">
+            <div class="warning__title">
+              <i class="fas fa-check"></i>
+
+              입금 방법 안내
+            </div>
+            <div class="warning__text">
+              (1) 입금자명 작성 (반드시 확인해 주세요.)
+            </div>
+            <div class="warning__text">
+              (2) 연락 가능한 학부모님 전화번호 작성
+            </div>
+            <div class="warning__text">
+              (3) 아래 멘토링 신청하기 버튼 클릭 (3초정도 걸려요.)
+            </div>
+            <div class="warning__text">
+              (4) 신청 완료 메세지 확인 후 멘토링 비용 입금
+            </div>
+            <div class="warning__text">
+              * 입금이 확인되면 24시간 이내로 연락드려요! 😁
+            </div>
+          </div>
+
+          <input
+            type="submit"
+            value="멘토링 신청하기"
+            class="passbook__submit"
+          />
+          <div style="display: none;" class="thankyou_message">
+            <h2 class="guide__m">
+              멘토링 신청이 완료되었습니다. <br />감사합니다!
+            </h2>
+          </div>
+        </form>
+      </div>
     </div>
   </body>
   <script

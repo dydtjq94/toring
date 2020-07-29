@@ -4,6 +4,7 @@
 @import "simple.css";
 @import "home.css";
 @import "onboarding.css";
+@import "submit.css";
 
 * {
   box-sizing: border-box;
