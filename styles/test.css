@@ -63,12 +63,12 @@
 #myProgress {
   border-radius: 20px;
   margin: 20px 0;
-  width: 70%;
+  width: 80%;
   background-color: rgb(196, 196, 196);
 }
 
 .test__title {
-  width: 70%;
+  width: 80%;
   margin-top: 30px;
   border-bottom: 1px solid rgb(94, 94, 94);
   padding-bottom: 20px;
@@ -76,20 +76,20 @@
 
 .test__title .main {
   color: #0123b4;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .test__title .sub {
-  margin-top: 10px;
+  margin-top: 12px;
 
   font-weight: 700;
-  font-size: 20px;
+  font-size: 22px;
 }
 
 .test__title .detail {
-  margin-top: 10px;
-  line-height: 20px;
-  font-size: 14px;
+  margin-top: 12px;
+  line-height: 22px;
+  font-size: 16px;
   color: rgb(94, 94, 94);
 }
 
@@ -241,7 +241,7 @@
 .first,
 .second__one,
 .third {
-  width: 70%;
+  width: 80%;
 }
 
 .first__title,

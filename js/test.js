@@ -59,7 +59,7 @@ function resultMove() {
     var width = 0;
     var id = setInterval(frame, 30);
     function frame() {
-      if (width >= 100) {
+      if (width >= 50) {
         clearInterval(id);
         i = 0;
       } else {
@@ -74,10 +74,10 @@ function resultMove2() {
   if (i == 0) {
     i = 1;
     var elem = document.getElementById("myBar");
-    var width = 34;
-    var id = setInterval(frame, 30);
+    var width = 51;
+    var id = setInterval(frame, 20);
     function frame() {
-      if (width >= 66) {
+      if (width >= 80) {
         clearInterval(id);
         i = 0;
       } else {
@@ -92,7 +92,7 @@ function resultMove3() {
   if (i == 0) {
     i = 1;
     var elem = document.getElementById("myBar");
-    var width = 67;
+    var width = 81;
     var id = setInterval(frame, 10);
     function frame() {
       if (width >= 100) {
@@ -184,11 +184,11 @@ function handleResult(e) {
 
   setTimeout(function () {
     resultMove2();
-  }, 1910);
+  }, 1950);
 
   setTimeout(function () {
     resultMove3();
-  }, 3020);
+  }, 2670);
 
   forResult.push(parseInt(e.target.name, 10));
   e.target.classList.add("selected");

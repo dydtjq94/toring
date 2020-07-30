@@ -551,17 +551,20 @@
 }
 
 .buy {
+  background-color: white;
   width: 100%;
   position: fixed;
   bottom: 0;
   display: flex;
+  padding: 8px;
+  justify-content: space-between;
 }
 
 .buy__toring {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 35%;
+  width: 34%;
   padding: 10px 20px;
   padding-top: 12px;
   text-align: center;
@@ -570,18 +573,20 @@
   color: #0123b4;
   border: none;
   line-height: 18px;
+  border-radius: 10px;
 }
 
 .buy__content {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 65%;
+  width: 64%;
   padding: 10px 20px;
   text-align: center;
   border: none;
   background-color: #0123b4;
   color: white;
+  border-radius: 10px;
 }
 
 .buy:hover {

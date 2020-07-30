@@ -36,7 +36,7 @@ function handleOnboarding2() {
 }
 
 function handleGoHome() {
-  location.href = "home.html";
+  location.href = "index.html";
 }
 
 function init() {
