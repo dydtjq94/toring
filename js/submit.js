@@ -218,28 +218,6 @@ submitCon.addEventListener("click", handleConClick);
 
 console.dir(thx.style.display);
 
-setInterval(function () {
-  if (thx.style.display === "block") {
-    blackLoading.style.opacity = 0;
-    setTimeout(function () {
-      blackLoading.classList.add("none");
-    }, 310);
-
-    setTimeout(function () {
-      location.href =
-        "passbook.html?" +
-        ":" +
-        "parent" +
-        ":" +
-        s1 +
-        ":" +
-        mentorsSubmit[resultNum].majorNum +
-        ":" +
-        name;
-    }, 312);
-  }
-}, 200);
-
 function handleSubmit() {
   setTimeout(function () {
     blackLoading.classList.remove("none");
@@ -252,6 +230,28 @@ function handleSubmit() {
   setTimeout(function () {
     blackLoading.classList.add("none");
   }, 10000);
+
+  setInterval(function () {
+    if (thx.style.display === "block") {
+      blackLoading.style.opacity = 0;
+      setTimeout(function () {
+        blackLoading.classList.add("none");
+      }, 310);
+
+      setTimeout(function () {
+        location.href =
+          "passbook.html?" +
+          ":" +
+          "parent" +
+          ":" +
+          s1 +
+          ":" +
+          mentorsSubmit[resultNum].majorNum +
+          ":" +
+          name;
+      }, 400);
+    }
+  }, 200);
 }
 
 function init() {

@@ -44,8 +44,9 @@
 }
 
 .submit__column {
-  width: 100%;
+  width: 90%;
   padding-bottom: 20px;
+  text-align: justify;
 }
 
 .submit__upper {
@@ -91,6 +92,7 @@
   font-weight: 700;
   font-size: 20px;
 }
+
 .submit__class {
   border: none;
   outline: none;
@@ -223,8 +225,8 @@
   position: fixed;
   width: 100%;
   text-align: center;
-  color: black;
-  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
   transform: translateY(-200px);
   padding: 10000px 0;
   transition: 0.5s all;
