@@ -44,7 +44,7 @@
 }
 
 .submit__column {
-  width: 90%;
+  width: 100%;
   padding-bottom: 20px;
   text-align: justify;
 }
@@ -52,6 +52,10 @@
 .submit__upper {
   display: flex;
   align-items: flex-start;
+}
+
+.submit__upper__column .submit__column {
+  width: 90%;
 }
 
 .submit__upper2 {

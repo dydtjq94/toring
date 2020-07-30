@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-174046756-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-174046756-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  gtag('config', 'UA-174046756-1');
-</script>
+      gtag("config", "UA-174046756-1");
+    </script>
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -28,7 +32,7 @@
     <title>토링 멘토링 신청</title>
   </head>
   <header class="header">
-    <a href="javascript:history.back()" class="header__back">
+    <a href="javascript:history.back()" class="transparent">
       <i class="fas fa-chevron-left" style="user-select: auto;"></i>
     </a>
 
@@ -36,7 +40,6 @@
     <a href="javascript:location.reload()" class="transparent">
       <i class="fas fa-chevron-left" style="user-select: auto;"></i>
     </a>
-  </header>
   </header>
   <body>
     <div class="snackbar" id="snackbar">계좌가 복사되었어요!</div>
