@@ -195,7 +195,7 @@ const a = Math.random() * mentorLen;
 
 function handleResult() {
   result.innerHTML = `
-  <div class="result__title">테스트 추천 멘토에요!</div>
+  <div class="result__title">토링이 추천하는 멘토에요!</div>
   <div class="result__comment">${mentors[resultNum].oneWord}</div>
     <a class="simple__a" href="mentordetail.html?${
       "name" + ":" + mentors[resultNum].eng
