@@ -1,4 +1,6 @@
 const form = document.querySelector(".submitForm");
+const submitBtn = document.querySelector(".passbook__submit");
+const blackLoading = document.querySelector(".black__loading");
 
 const btn = document.querySelector(`#btn`);
 const target = document.querySelector(`#target`);
@@ -21,8 +23,23 @@ const handleCopy = (e) => {
   }, 1000);
 };
 
+function handleSubmit(e) {
+  console.log(e);
+  setTimeout(function () {
+    blackLoading.classList.remove("none");
+    console.log(blackLoading.classList);
+  }, 1);
+  setTimeout(function () {
+    blackLoading.style.opacity = 1;
+  }, 10);
+  setTimeout(function () {
+    blackLoading.style.opacity = 0;
+  }, 4000);
+}
+
 function init() {
   btn.addEventListener("click", handleCopy);
+  submitBtn.addEventListener("click", handleSubmit);
   //   form.innerHTML = `
   //   <div class="passbook">
   //         무통장입금
