@@ -26,10 +26,11 @@
       신청중입니다! <br />
       잠시만 기다려주세요!
     </div>
+    <div class="snackbar" id="snackbar">계좌가 복사되었어요!</div>
 
     <div class="body">
       <div class="submitForm">
-        <div class="submit__title">멘토링 신청</div>
+        <div class="passbook__title">멘토링 무통장 입금</div>
 
         <form
           action="https://script.google.com/macros/s/AKfycbzMJEI0x4Mxzyfd2a5RNo-rh69KxHdtW-6Z2c-QEonOg6L5zso/exec"
@@ -37,93 +38,79 @@
           method="POST"
           data-email="example@email.net"
         >
-          <div class="submit">
-            <div class="submit__column">
-              <div class="submit__price">
-                <div class="submit__name__title">멘토링 진행 멘토</div>
+          <div class="passbook">
+            <div class="passbook__column">
+              <div class="passbook__num__title">입금 계좌</div>
+              <div class="passbook__num__content">
+                <input
+                  type="text"
+                  class="num__content"
+                  id="target"
+                  value="530402-01-226704"
+                  readonly
+                />
+                <div class="num__copy" id="btn">
+                  복사하기
+                </div>
+              </div>
+            </div>
+            <div class="passbook__column">
+              <div class="passbook__info">
+                <div class="info__bank__title">입금 은행</div>
+                <div class="info__bank__content">국민은행</div>
+              </div>
+              <div class="passbook__info">
+                <div class="info__name__title">예금주</div>
+                <div class="info__name__content">지현준</div>
+              </div>
+            </div>
+            <div class="passbook__column">
+              <div class="passbook__price">
+                <div class="info__name__title">멘토링 진행 멘토</div>
                 <input
                   type="text"
                   name="name"
-                  class="submit__mentor"
+                  class="passbook__mentor"
                   placeholder="학생 이름"
                   value="김규민 멘토님"
                   readonly
                 />
               </div>
-            </div>
-            <div class="submit__column">
-              <div class="submit__price">
-                <div class="submit__name__title">멘토링 클래스</div>
-                <div class="submit__class">
-                  고등학교 1학년부터 공부해서 서울대 의대 수석이 되는 방법
-                </div>
+              <div class="passbook__price">
+                <div class="info__bank__title">입금 금액</div>
+                <div class="info__price__content">149,000원</div>
               </div>
             </div>
-            <div class="submit__column">
-              <div class="submit__price">
-                <div class="submit__name__title">학부모님 성함 *</div>
+            <div class="passbook__column">
+              <div class="passbook__price">
+                <div class="info__name__title">입금자명 작성</div>
                 <input
                   type="text"
-                  class="submit__name"
+                  class="user__name"
                   name="message"
                   placeholder="ex) 김미선"
                   required
                   autofocus
                 />
               </div>
-            </div>
-            <div class="submit__column">
-              <div class="submit__price">
-                <div class="submit__bank__title">학부모님 전화번호 *</div>
+              <div class="passbook__price">
+                <div class="info__bank__title">학부모님 전화번호</div>
                 <input
-                  type="number"
+                  type="tel"
                   name="email"
-                  class="submit__tel"
+                  class="user__tel"
                   placeholder="ex) 01071899943"
                   required
                 />
               </div>
             </div>
-            <div class="submit__column">
-              <div class="submit__price">
-                <div class="submit__bank__title">
-                  학생 정보 (이름 / 학년 / 지역) *
-                </div>
-                <input
-                  type="text"
-                  name="student"
-                  class="submit__student"
-                  placeholder="ex) 윤지훈 / 중3 / 대치동"
-                  required
-                />
-              </div>
-            </div>
-            <div class="submit__column">
-              <div class="submit__price">
-                <div class="submit__bank__title">
-                  멘토님에게 전하고 싶은 말 *
-                </div>
-                <textarea
-                  name="content"
-                  cols="10"
-                  rows="4"
-                  class="submit__content"
-                  placeholder="멘토링 준비를 위해 고민 또는 아이에 대해 간단히 소개해주세요!"
-                  required
-                ></textarea>
-              </div>
-            </div>
           </div>
-
-          <input type="submit" value="멘토링 신청하기" class="submit__submit" />
-
           <div style="display: none;" class="thankyou_message" id="thx">
             <h2 class="guide__m">
               멘토링 신청이 완료되었습니다. <br />감사합니다!
               <div class="back__button">토링으로 돌아가기</div>
             </h2>
           </div>
-
           <div class="warning">
             <div class="warning__title">
               <i class="fas fa-check"></i>
@@ -147,6 +134,12 @@
               * 입금이 확인되면 24시간 이내로 연락드려요! 😁
             </div>
           </div>
+
+          <input
+            type="submit"
+            value="멘토링 신청하기"
+            class="passbook__submit"
+          />
         </form>
       </div>
     </div>
@@ -156,5 +149,5 @@
     type="text/javascript"
     src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"
   ></script>
-  <script src="js/submit.js"></script>
+  <script src="js/passbook.js"></script>
 </html>

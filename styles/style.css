@@ -5,6 +5,7 @@
 @import "home.css";
 @import "onboarding.css";
 @import "submit.css";
+@import "passbook.css";
 
 * {
   box-sizing: border-box;
@@ -75,3 +76,17 @@ body {
 input[type="submit"] {
   -webkit-appearance: none;
 }
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* 
+input:required {
+  background-color: yellow;
+}
+
+textarea:required {
+  background-color: yellow;
+} */
