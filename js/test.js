@@ -20,7 +20,7 @@ function move1() {
     i = 1;
     var elem = document.getElementById("myBar");
     var width = 33;
-    var id = setInterval(frame, 10);
+    var id = setInterval(frame, 8);
     function frame() {
       if (width >= 66) {
         clearInterval(id);
@@ -39,7 +39,7 @@ function move2() {
     i = 1;
     var elem = document.getElementById("myBar");
     var width = 66;
-    var id = setInterval(frame, 10);
+    var id = setInterval(frame, 8);
     function frame() {
       if (width >= 100) {
         clearInterval(id);
@@ -57,9 +57,9 @@ function resultMove() {
     i = 1;
     var elem = document.getElementById("myBar");
     var width = 0;
-    var id = setInterval(frame, 40);
+    var id = setInterval(frame, 30);
     function frame() {
-      if (width >= 33) {
+      if (width >= 100) {
         clearInterval(id);
         i = 0;
       } else {

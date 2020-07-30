@@ -16,11 +16,13 @@ const handleCopy = (e) => {
   console.log(target);
   target.select();
   document.execCommand("Copy");
-  snackBar.style.opacity = 1;
+  //   snackBar.style.opacity = 1;
+  snackBar.classList.add("snackbar__anim");
   setTimeout(function () {
     console.log(`gg`);
-    snackBar.style.opacity = 0;
-  }, 1000);
+    // snackBar.style.opacity = 0;
+    snackBar.classList.remove("snackbar__anim");
+  }, 3000);
 };
 
 function handleSubmit(e) {
