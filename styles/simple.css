@@ -42,6 +42,14 @@
   text-decoration: none;
 }
 
+.simple__a:hover {
+  cursor: pointer;
+}
+
+.simple__a:active {
+  opacity: 0;
+}
+
 .simple {
   display: flex;
   width: 100%;

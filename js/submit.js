@@ -121,11 +121,9 @@ submitUpper.innerHTML = `<div class="submit__upper__column">
       name="mentor"
       class="submit__mentor"
       placeholder="학생 이름"
-      value="${mentorsSubmit[resultNum].name}"
+      value="${mentorsSubmit[resultNum].name} 멘토님"
       readonly
-    /><span class="submit__class">
-      멘토님
-    </span>
+    />
   </div>
 </div>
 <div class="submit__column">

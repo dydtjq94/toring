@@ -18,136 +18,51 @@
     <title>토링 멘토링 신청</title>
   </head>
   <header class="header">
-    <a href="home.html"> toring </a>
+    <a href="index.html"> toring </a>
   </header>
   <body>
-    <div class="black__loading none">
-      • • • <br />
-      신청중입니다! <br />
-      잠시만 기다려주세요!
-    </div>
     <div class="snackbar" id="snackbar">계좌가 복사되었어요!</div>
-
     <div class="body">
       <div class="submitForm">
-        <div class="passbook__title">멘토링 무통장 입금</div>
+        <div class="user__differ">
+          <i class="fas fa-exclamation"></i>
+          <div class="user__differ__ment">
+            입금자가 다르다면
+            <span class="differ__button">여기</span>
+            로 문의주세요.
+          </div>
+        </div>
+      </div>
+      <div class="warning">
+        <div class="warning__title">
+          <i class="fas fa-check"></i>
+          꼭 확인하세요!
+        </div>
+        <div class="warning__text">
+          - <span class="bold">입금자명</span> 반드시 확인
+        </div>
+        <div class="warning__text">
+          - 멘토링을 진행하지 않았다면 <span class="bold">100% 환불 가능</span>
+        </div>
+        <div class="warning__text">
+          - 추가 멘토링 또는 지속 과외는 <span class="bold">토링에게 문의</span>
+        </div>
+        <div class="warning__text">
+          - 입금 완료되면 12시간 이내로
+          <span class="bold">확인 문자</span>
+        </div>
+        <div class="warning__text">
+          - 확인 문자 이후 24시간 이내로
+          <span class="bold">상담 시작</span>
+        </div>
+      </div>
 
-        <form
-          action="https://script.google.com/macros/s/AKfycbzMJEI0x4Mxzyfd2a5RNo-rh69KxHdtW-6Z2c-QEonOg6L5zso/exec"
-          class="gform"
-          method="POST"
-          data-email="example@email.net"
-        >
-          <div class="passbook">
-            <div class="passbook__column">
-              <div class="passbook__num__title">입금 계좌</div>
-              <div class="passbook__num__content">
-                <input
-                  type="text"
-                  class="num__content"
-                  id="target"
-                  value="530402-01-226704"
-                  readonly
-                />
-                <div class="num__copy" id="btn">
-                  복사하기
-                </div>
-              </div>
-            </div>
-            <div class="passbook__column">
-              <div class="passbook__info">
-                <div class="info__bank__title">입금 은행</div>
-                <div class="info__bank__content">국민은행</div>
-              </div>
-              <div class="passbook__info">
-                <div class="info__name__title">예금주</div>
-                <div class="info__name__content">지현준</div>
-              </div>
-            </div>
-            <div class="passbook__column">
-              <div class="passbook__price">
-                <div class="info__name__title">멘토링 진행 멘토</div>
-                <input
-                  type="text"
-                  name="name"
-                  class="passbook__mentor"
-                  placeholder="학생 이름"
-                  value="김규민 멘토님"
-                  readonly
-                />
-              </div>
-              <div class="passbook__price">
-                <div class="info__bank__title">입금 금액</div>
-                <div class="info__price__content">149,000원</div>
-              </div>
-            </div>
-            <div class="passbook__column">
-              <div class="passbook__price">
-                <div class="info__name__title">입금자명 작성</div>
-                <input
-                  type="text"
-                  class="user__name"
-                  name="message"
-                  placeholder="ex) 김미선"
-                  required
-                  autofocus
-                />
-              </div>
-              <div class="passbook__price">
-                <div class="info__bank__title">학부모님 전화번호</div>
-                <input
-                  type="tel"
-                  name="email"
-                  class="user__tel"
-                  placeholder="ex) 01071899943"
-                  required
-                />
-              </div>
-            </div>
-          </div>
-          <div style="display: none;" class="thankyou_message" id="thx">
-            <h2 class="guide__m">
-              멘토링 신청이 완료되었습니다. <br />감사합니다!
-              <div class="back__button">토링으로 돌아가기</div>
-            </h2>
-          </div>
-          <div class="warning">
-            <div class="warning__title">
-              <i class="fas fa-check"></i>
-              멘토링 신청 안내
-            </div>
-            <div class="warning__text">
-              (1) <span class="bold">입금자명</span> 작성 (반드시 확인해
-              주세요.)
-            </div>
-            <div class="warning__text">
-              (2) 연락 가능한 <span class="bold">학부모님 전화번호</span> 작성
-            </div>
-            <div class="warning__text">
-              (3) 아래 <span class="bold">멘토링 신청하기</span> 버튼 클릭
-            </div>
-            <div class="warning__text">
-              (4) 신청 완료 메세지 확인 후
-              <span class="bold">멘토링 비용 입금</span>
-            </div>
-            <div class="warning__text">
-              * 입금이 확인되면 24시간 이내로 연락드려요! 😁
-            </div>
-          </div>
-
-          <input
-            type="submit"
-            value="멘토링 신청하기"
-            class="passbook__submit"
-          />
-        </form>
+      <div class="passbook__button">
+        <div class="passbook__button__kakao">토링에게 1:1 문의</div>
+        <div class="passbook__button__home">홈화면으로</div>
       </div>
     </div>
   </body>
-  <script
-    data-cfasync="false"
-    type="text/javascript"
-    src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"
-  ></script>
+
   <script src="js/passbook.js"></script>
 </html>
