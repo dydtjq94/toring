@@ -33,6 +33,7 @@
 .passbook__num__content {
   display: flex;
   align-self: center;
+  justify-content: space-between;
   font-size: 20px;
 }
 
@@ -66,8 +67,8 @@
 .num__copy {
   background-color: transparent;
   border: 1px solid white;
-  padding: 8px 16px;
-  padding-top: 10px;
+  padding: 6px 12px;
+  padding-top: 9px;
   color: white;
   font-size: 14px;
 }
@@ -158,9 +159,10 @@
 .user__tel {
   border: none;
   border-bottom: 2px solid #fec645;
+  border-radius: 0;
   opacity: 1;
   font-size: 16px;
-  width: 90%;
+  width: 95%;
   color: #fec645;
   background-color: transparent;
   padding-bottom: 10px;
