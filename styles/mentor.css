@@ -1,7 +1,6 @@
 .mentor {
   opacity: 0;
   transform: translateY(50px);
-
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -40,7 +39,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 80px;
+  margin-top: 50px;
   margin-bottom: 10px;
 }
 
@@ -54,8 +53,8 @@
 }
 
 .mentor__face {
-  width: 150px;
-  height: 150px;
+  width: 180px;
+  height: 180px;
   object-fit: cover;
   border-radius: 50%;
   /* position: relative; */
@@ -76,13 +75,13 @@
 }
 
 .mentor__title {
-  font-size: 20px;
+  font-size: 22px;
   padding: 0 20px;
-
+  font-weight: 700;
   margin-top: 16px;
   text-align: center;
   color: rgb(34, 34, 34);
-  line-height: 28px;
+  line-height: 30px;
 }
 
 .badge {
@@ -210,12 +209,12 @@
 
 .detail__content__column {
   margin-top: 20px;
-  font-size: 14px;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .detail__content {
   margin-bottom: 10px;
-  line-height: 20px;
   display: flex;
 }
 
@@ -240,12 +239,13 @@
   display: flex;
   flex-direction: column;
   margin-top: 20px;
-  font-size: 14px;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .special__content {
   margin-bottom: 10px;
-  line-height: 20px;
+
   display: flex;
 }
 
@@ -318,8 +318,8 @@
 .story__content__description {
   margin-top: 10px;
   margin-bottom: 20px;
-  font-size: 14px;
-  line-height: 21px;
+  font-size: 16px;
+  line-height: 24px;
   color: #585858;
   text-align: justify;
 }
@@ -513,8 +513,8 @@
 
 .review__content {
   padding: 0 20px;
-  font-size: 14px;
-  line-height: 21px;
+  font-size: 16px;
+  line-height: 24px;
   text-align: justify;
   align-self: center;
 }
@@ -541,13 +541,16 @@
 }
 
 .other__content .simple {
-  box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
-    0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+  background-color: white;
+  box-shadow: 3px 0px 10px -5px rgba(50, 50, 93, 0.25),
+    -3px 0px 10px -5px rgba(50, 50, 93, 0.25);
 }
 
 .other__content2 .simple {
-  box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
-    0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+  background-color: white;
+
+  box-shadow: 3px 0px 10px -5px rgba(50, 50, 93, 0.25),
+    -3px 0px 10px -5px rgba(50, 50, 93, 0.25);
 }
 
 .buy {

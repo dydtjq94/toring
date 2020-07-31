@@ -19,6 +19,25 @@ function move1() {
   if (i == 0) {
     i = 1;
     var elem = document.getElementById("myBar");
+    var width = 0;
+    var id = setInterval(frame, 8);
+    function frame() {
+      if (width >= 33) {
+        clearInterval(id);
+        i = 0;
+      } else {
+        width++;
+        elem.style.width = width + "%";
+        elem.innerHTML = "";
+      }
+    }
+  }
+}
+
+function move2() {
+  if (i == 0) {
+    i = 1;
+    var elem = document.getElementById("myBar");
     var width = 33;
     var id = setInterval(frame, 8);
     function frame() {
@@ -28,13 +47,12 @@ function move1() {
       } else {
         width++;
         elem.style.width = width + "%";
-        elem.innerHTML = "Q2";
+        elem.innerHTML = "";
       }
     }
   }
 }
-
-function move2() {
+function move3() {
   if (i == 0) {
     i = 1;
     var elem = document.getElementById("myBar");
@@ -47,11 +65,12 @@ function move2() {
       } else {
         width++;
         elem.style.width = width + "%";
-        elem.innerHTML = "Q3";
+        elem.innerHTML = "";
       }
     }
   }
 }
+
 function resultMove() {
   if (i == 0) {
     i = 1;
@@ -145,50 +164,32 @@ function handleSecondClick(e) {
   button3.forEach((e) => e.addEventListener("click", handleResult));
 }
 
-// function handleThirdClick(e) {
-//   setTimeout(function () {
-//     third.classList.add("none");
-//   }, 300);
-//   setTimeout(function () {
-//     third.classList.add("fadeout");
-//   }, 20);
-//   third.classList.remove("trans");
-
-//   setTimeout(function () {
-//     forth.classList.remove("none");
-//     forth.classList.add("trans");
-//   }, 300);
-//   console.log("click");
-//   forResult.push(parseInt(e.target.name, 10));
-//   console.log(forResult);
-//   button4.forEach((e) => e.addEventListener("click", handleResult));
-// }
-
 function handleResult(e) {
+  move3();
   setTimeout(function () {
     third.classList.add("none");
     progress.classList.add("none");
-  }, 300);
+  }, 600);
   third.classList.remove("trans");
   setTimeout(function () {
     third.classList.add("fadeout");
     progress.classList.add("fadeout");
-  }, 1);
+  }, 301);
 
   setTimeout(function () {
     progress.classList.remove("none");
     progress.classList.remove("fadeout");
     resultMove();
     find.classList.remove("none");
-  }, 300);
+  }, 600);
 
   setTimeout(function () {
     resultMove2();
-  }, 1950);
+  }, 2250);
 
   setTimeout(function () {
     resultMove3();
-  }, 2670);
+  }, 2970);
 
   forResult.push(parseInt(e.target.name, 10));
   e.target.classList.add("selected");
@@ -201,14 +202,14 @@ function handleResult(e) {
     find.classList.add("none");
     loadingWrap.classList.add("none");
     loadingWrap.classList.remove("none");
-  }, 3301);
+  }, 3601);
 
   console.log(forResult.join(""), [1, 1, 1]);
 
   const name = "mentor";
   setTimeout(function () {
     location.href = "result.html?" + name + ":" + forResult.join("");
-  }, 5301);
+  }, 5601);
 }
 
 function init() {

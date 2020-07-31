@@ -94,7 +94,7 @@
 }
 
 #myBar {
-  width: 33%;
+  width: 0%;
   height: 25px;
   font-size: 12px;
   font-weight: 700;
@@ -271,112 +271,6 @@
   text-decoration: none;
 }
 
-.result a .simple {
-  width: 100%;
-  margin-bottom: 30px;
-  text-decoration: none;
-  color: rgb(39, 39, 39);
-  box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
-    0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
-}
-.result1 a .simple {
-  width: 100%;
-  margin-bottom: 30px;
-  text-decoration: none;
-  color: rgb(39, 39, 39);
-  box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
-    0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
-}
-
-.result2 a .simple {
-  width: 100%;
-  margin-bottom: 30px;
-  text-decoration: none;
-  color: rgb(39, 39, 39);
-  box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
-    0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
-}
-.result3 a .simple {
-  width: 100%;
-  margin-bottom: 30px;
-  text-decoration: none;
-  color: rgb(39, 39, 39);
-  box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
-    0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
-}
-.result4 a .simple {
-  width: 100%;
-  margin-bottom: 30px;
-  text-decoration: none;
-  color: rgb(39, 39, 39);
-  box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
-    0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
-}
-.result5 a .simple {
-  width: 100%;
-  margin-bottom: 30px;
-  text-decoration: none;
-  color: rgb(39, 39, 39);
-  box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
-    0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
-}
-.result6 a .simple {
-  width: 100%;
-  margin-bottom: 30px;
-  text-decoration: none;
-  color: rgb(39, 39, 39);
-  box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
-    0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
-}
-.result7 a .simple {
-  width: 100%;
-  margin-bottom: 30px;
-  text-decoration: none;
-  color: rgb(39, 39, 39);
-  box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
-    0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
-}
-.result8 a .simple {
-  width: 100%;
-  margin-bottom: 30px;
-  text-decoration: none;
-  color: rgb(39, 39, 39);
-  box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
-    0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
-}
-.result9 a .simple {
-  width: 100%;
-  margin-bottom: 30px;
-  text-decoration: none;
-  color: rgb(39, 39, 39);
-  box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
-    0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
-}
-.result10 a .simple {
-  width: 100%;
-  margin-bottom: 30px;
-  text-decoration: none;
-  color: rgb(39, 39, 39);
-  box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
-    0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
-}
-.result11 a .simple {
-  width: 100%;
-  margin-bottom: 30px;
-  text-decoration: none;
-  color: rgb(39, 39, 39);
-  box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
-    0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
-}
-.result12 a .simple {
-  width: 100%;
-  margin-bottom: 30px;
-  text-decoration: none;
-  color: rgb(39, 39, 39);
-  box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
-    0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
-}
-
 .result__comment {
   margin-bottom: 10px;
   margin-left: 4px;
@@ -396,6 +290,20 @@
 .loading {
   display: flex;
   align-items: center;
+}
+
+#find {
+  margin-top: 16px;
+  color: rgb(44, 44, 44);
+}
+
+@keyframes findAnim {
+  from {
+    transform: translateY(-100px);
+  }
+  to {
+    transform: none;
+  }
 }
 
 .bar {
