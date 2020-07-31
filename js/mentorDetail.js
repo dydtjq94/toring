@@ -1446,7 +1446,8 @@ otherMentor.innerHTML = `<div class="result__comment">${
             <div class="simple__study">
               학습방법
             </div>
-            <div class="simple__consult">입시상담</div>
+            <div class="simple__motive">동기부여</div>
+
           </div>
     
           <div class="content__column">${mentors[randomNum1].name} 멘토님 (${
@@ -1483,10 +1484,10 @@ otherMentor2.innerHTML = `<div class="result__comment">${
             <div class="simple__pro">pro</div>
           </div>
           <div class="simple__badge">
-            <div class="simple__study">
-              학습방법
-            </div>
+          
             <div class="simple__consult">입시상담</div>
+            <div class="simple__motive">동기부여</div>
+
           </div>
     
           <div class="content__column">${mentors[randomNum2].name} 멘토님 (${

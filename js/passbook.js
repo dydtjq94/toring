@@ -121,7 +121,7 @@ submitForm.innerHTML = `
       </div>
       <div class="price__left">
         <div class="price__left__content2">
-          학교 생활 열심히 해서 학생부 100%로 연세대 수석입학하는 비법
+        ${mentorsSubmit[resultNum].title}
         </div>
       </div>
     </div>

@@ -88,6 +88,11 @@ body {
   color: black;
 }
 
+.blue__bold {
+  color: #4055af;
+  font-weight: 700;
+}
+
 input[type="submit"] {
   -webkit-appearance: none;
 }

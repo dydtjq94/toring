@@ -162,13 +162,13 @@
 }
 
 .add__consult {
-  margin-top: 20px;
-  font-size: 12px;
+  margin-top: 10px;
+  font-size: 14px;
   color: rgb(87, 87, 87);
 }
 
 .all {
-  margin-top: 5px;
+  margin-top: 25px;
   padding: 10px 20px;
   background-color: transparent;
   border: 1px solid #0123b4;
@@ -242,13 +242,15 @@
 .second__one,
 .third {
   width: 80%;
+  margin-bottom: 120px;
 }
 
 .first__title,
 .second__title,
 .third__title {
-  font-size: 14px;
+  font-size: 18px;
   margin-bottom: 10px;
+  line-height: 22px;
 }
 
 .result1,

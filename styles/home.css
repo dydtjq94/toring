@@ -17,16 +17,16 @@
 }
 
 .bg__img1 {
-  left: -40px;
+  left: 0px;
 }
 
 .bg__img2 {
-  right: -40px;
+  right: 0px;
   top: 200px;
 }
 
 .bg__img3 {
-  left: -40px;
+  left: 0px;
   top: 400px;
 }
 
@@ -91,8 +91,7 @@
 }
 
 .toring__site {
-  position: absolute;
-  bottom: 10px;
+  margin-top: 120px;
   text-decoration: underline;
   color: #0123b4;
   padding: 20px;

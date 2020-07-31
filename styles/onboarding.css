@@ -52,9 +52,15 @@
   top: 120px;
 }
 
+.onbo__button {
+  position: fixed;
+  top: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .button__onboarding {
-  position: absolute;
-  bottom: 40px;
   border: none;
   background-color: #0123b4;
   color: white;
@@ -62,9 +68,10 @@
   padding: 15px 30px;
   border-radius: 30px;
   outline: none;
-  width: 200px;
+  width: 240px;
   font-weight: 700;
   z-index: 99;
+  margin-bottom: 10px;
 }
 
 .button__onboarding:hover {
@@ -76,10 +83,8 @@
 }
 
 .onbo__count {
-  position: absolute;
-  bottom: 20px;
-  font-size: 14px;
-  color: rgb(63, 63, 63);
+  font-size: 16px;
+  color: #6170b3;
 }
 
 .onboarding1,

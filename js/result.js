@@ -212,7 +212,7 @@ function handleResult() {
             <div class="simple__study">
               학습방법
             </div>
-            <div class="simple__consult">입시상담</div>
+            <div class="simple__motive">동기부여</div>
           </div>
     
           <div class="content__column">${mentors[resultNum].name} 멘토님 (${
@@ -229,7 +229,7 @@ function handleResult() {
           </div>
         </div>
         <div class="content__column__detail">
-          자세히 보기 <i class="fas fa-chevron-right"></i>
+          멘토링 자세히 보기 <i class="fas fa-chevron-right"></i>
         </div>
       </div>
     </a>
@@ -261,9 +261,8 @@ function handleResult() {
             <div class="simple__pro">pro</div>
           </div>
           <div class="simple__badge">
-            <div class="simple__study">
-              학습방법
-            </div>
+          <div class="simple__motive">동기부여</div>
+
             <div class="simple__consult">입시상담</div>
           </div>
     
@@ -281,7 +280,7 @@ function handleResult() {
           </div>
         </div>
         <div class="content__column__detail">
-          자세히 보기 <i class="fas fa-chevron-right"></i>
+          멘토링 자세히 보기 <i class="fas fa-chevron-right"></i>
         </div>
       </div>
     </a>`;
@@ -301,10 +300,12 @@ function handleResult() {
             <div class="simple__pro">pro</div>
           </div>
           <div class="simple__badge">
+          <div class="simple__motive">동기부여</div>
+
             <div class="simple__study">
               학습방법
             </div>
-            <div class="simple__consult">입시상담</div>
+
           </div>
     
           <div class="content__column">${mentors[randomNum2].name} 멘토님 (${
@@ -321,7 +322,7 @@ function handleResult() {
           </div>
         </div>
         <div class="content__column__detail">
-          자세히 보기 <i class="fas fa-chevron-right"></i>
+          멘토링 자세히 보기 <i class="fas fa-chevron-right"></i>
         </div>
       </div>
     </a>`;
@@ -340,7 +341,8 @@ function handleResult() {
             <div class="simple__study">
               학습방법
             </div>
-            <div class="simple__consult">입시상담</div>
+            <div class="simple__motive">동기부여</div>
+
           </div>
     
           <div class="content__column">${kyumin.name} 멘토님 (${
@@ -357,7 +359,7 @@ function handleResult() {
           </div>
         </div>
         <div class="content__column__detail">
-          자세히 보기 <i class="fas fa-chevron-right"></i>
+          멘토링 자세히 보기 <i class="fas fa-chevron-right"></i>
         </div>
       </div>
     </a>`;
