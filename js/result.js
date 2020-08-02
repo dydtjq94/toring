@@ -262,6 +262,7 @@ function handleResult() {
         </div>
 </div>
     </div>
+    <button class="test__button">제발되라</button>
   <div class="result__title">토링 대표 멘토링이에요!</div>
 
     <div class="select3"></div>
@@ -408,12 +409,12 @@ function handleResult() {
 
   handleResultAni();
 
-  setTimeout(function () {
-    location.href =
-      "mentordetail.html?" + "name" + ":" + mentors[resultNum].eng;
-  }, 1000);
+  // setTimeout(function () {
+  //   location.href =
+  //     "mentordetail.html?" + "name" + ":" + mentors[resultNum].eng;
+  // }, 1000);
 
-  const testResult = document.querySelector(`.simple__a`);
+  const testResult = document.querySelector(`.test__button`);
   console.log(testResult);
   testResult.addEventListener("click", handleTestResult);
   function handleTestResult() {
