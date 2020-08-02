@@ -421,10 +421,11 @@ function handleResultAni() {
 }
 
 function handleTestResult() {
+  console.log("click");
   setTimeout(function () {
     location.href =
       "mentordetail.html?" + "name" + ":" + mentors[resultNum].eng;
-  }, 100);
+  }, 2000);
 }
 
 function init() {
