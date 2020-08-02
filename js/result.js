@@ -407,11 +407,17 @@ function handleResult() {
     </a>`;
 
   handleResultAni();
-  setTimeout(function () {
-    location.href =
-      // "mentordetail.html?" + "name" + ":" + mentors[resultNum].eng;
-      "index.html";
-  }, 1000);
+
+  const testResult = document.querySelector(`.simple__a`);
+  console.log(testResult);
+  testResult.addEventListener("click", handleTestResult);
+  function handleTestResult() {
+    console.log("click");
+    setTimeout(function () {
+      location.href =
+        "mentordetail.html?" + "name" + ":" + mentors[resultNum].eng;
+    }, 1000);
+  }
 }
 
 function handleResultAni() {
@@ -425,22 +431,8 @@ function handleResultAni() {
   }, 200);
 }
 
-function handleTestResult() {
-  console.log("click");
-  setTimeout(function () {
-    location.href =
-      // "mentordetail.html?" + "name" + ":" + mentors[resultNum].eng;
-      "index.html";
-  }, 1000);
-}
-
 function init() {
   handleResult();
-
-  const testResult = document.querySelector(`.simple__a`);
-  console.log(testResult);
-
-  testResult.addEventListener("click", handleTestResult);
 }
 
 init();
