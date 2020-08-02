@@ -408,6 +408,11 @@ function handleResult() {
 
   handleResultAni();
 
+  setTimeout(function () {
+    location.href =
+      "mentordetail.html?" + "name" + ":" + mentors[resultNum].eng;
+  }, 1000);
+
   const testResult = document.querySelector(`.simple__a`);
   console.log(testResult);
   testResult.addEventListener("click", handleTestResult);
