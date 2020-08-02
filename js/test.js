@@ -145,11 +145,6 @@ function handleFirstClick(e) {
 
 function handleSecondClick(e) {
   setTimeout(function () {
-    location.href =
-      // "mentordetail.html?" + "name" + ":" + mentors[resultNum].eng;
-      "index.html";
-  }, 1000);
-  setTimeout(function () {
     secondOne.classList.add("none");
   }, 300);
   secondOne.classList.remove("trans");
