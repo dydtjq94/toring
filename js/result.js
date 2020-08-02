@@ -407,6 +407,11 @@ function handleResult() {
     </a>`;
 
   handleResultAni();
+  setTimeout(function () {
+    location.href =
+      // "mentordetail.html?" + "name" + ":" + mentors[resultNum].eng;
+      "index.html";
+  }, 1000);
 }
 
 function handleResultAni() {
