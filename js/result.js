@@ -422,8 +422,20 @@ function handleResultAni() {
   }, 200);
 }
 
+function handleTestResult() {
+  setTimeout(function () {
+    location.href =
+      "mentordetail.html?" + "name" + ":" + mentors[resultNum].eng;
+  }, 100);
+}
+
 function init() {
   handleResult();
+
+  const testResult = document.querySelector(`.simple__a`);
+  console.log(testResult);
+
+  testResult.addEventListener("click", handleTestResult);
 }
 
 init();
