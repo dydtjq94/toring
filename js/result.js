@@ -415,8 +415,12 @@ function handleResult() {
   // }, 1000);
 
   const testResult = document.querySelector(`.mentor__class__title`);
+  const testResult2 = document.querySelector(`.simple__img`);
+  const testResult3 = document.querySelector(`.simple__content`);
   console.log(testResult);
   testResult.addEventListener("click", handleTestResult);
+  testResult2.addEventListener("click", handleTestResult);
+  testResult3.addEventListener("click", handleTestResult);
   function handleTestResult() {
     location.href =
       "mentordetail.html?" + "name" + ":" + mentors[resultNum].eng;
