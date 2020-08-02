@@ -422,10 +422,11 @@ function handleResultAni() {
 
 function handleTestResult() {
   console.log("click");
-  const name = "mentor";
   setTimeout(function () {
-    location.href = "result.html?" + name + ":" + 111;
-  }, 5601);
+    location.href =
+      // "mentordetail.html?" + "name" + ":" + mentors[resultNum].eng;
+      "index.html";
+  }, 1000);
 }
 
 function init() {
