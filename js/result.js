@@ -233,9 +233,9 @@ function handleResult() {
         <div class="simple__content">
 
     
-          <div class="content__column">${mentors[resultNum].name} 멘토님 (${
-    mentors[resultNum].gender
-  })</div>
+          <div class="content__column">${
+            mentors[resultNum].name
+          } 멘토님 테스트 (${mentors[resultNum].gender})</div>
           <div class="content__column">
             <i class="fas fa-graduation-cap"></i>${mentors[resultNum].univ}
           </div>
