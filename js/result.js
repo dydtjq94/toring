@@ -414,7 +414,7 @@ function handleResult() {
   //     "mentordetail.html?" + "name" + ":" + mentors[resultNum].eng;
   // }, 1000);
 
-  const testResult = document.querySelector(`.test__button`);
+  const testResult = document.querySelector(`.simple`);
   console.log(testResult);
   testResult.addEventListener("click", handleTestResult);
   function handleTestResult() {
