@@ -223,9 +223,7 @@ function handleResult() {
   result.innerHTML = `
   <div class="result__title">아이와 가장 잘 맞는 멘토링이에요!</div>
   <div class="result__comment">${mentors[resultNum].oneWord}</div>
-    <a class="simple__a" href="mentordetail.html?${
-      "name" + ":" + mentors[resultNum].eng
-    }">
+    <div class="simple__a" >
       <div class="simple">
         <div class="simple__img">
           <img src="img/${mentors[resultNum].eng}.jpeg" class="rec__img" />
@@ -263,7 +261,7 @@ function handleResult() {
           멘토링 자세히 보기 <i class="fas fa-chevron-right"></i>
         </div>
 </div>
-    </a>
+    </div>
   <div class="result__title">토링 대표 멘토링이에요!</div>
 
     <div class="select3"></div>
