@@ -392,7 +392,7 @@
   background-color: rgba(64, 85, 175, 1);
   color: white;
   transform: translateY(-320px);
-  transition: 0.7s all;
+  transition: 0.7s transform;
 }
 
 .snackbar__result__button {
