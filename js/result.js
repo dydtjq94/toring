@@ -475,7 +475,7 @@ function handleSnackBar() {
     all.style.borderColor = "black";
     all.children[0].children[0].style.color = "black";
     addConsult.style.color = "black";
-  }, 3000);
+  }, 4000);
 
   snackBarButton.addEventListener("click", handleSnackRemove);
 

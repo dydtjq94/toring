@@ -6,13 +6,14 @@
 @import "onboarding.css";
 @import "submit.css";
 @import "passbook.css";
+@import "https://cdn.rawgit.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css";
 
 * {
   box-sizing: border-box;
 }
 
 .header {
-  font-size: 24px;
+  font: 24px "Gilroy", sans-serif;
   font-weight: 700;
   width: 100%;
   height: 60px;
