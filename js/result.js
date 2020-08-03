@@ -464,24 +464,39 @@ function handleSnackBar() {
   const addConsult = document.querySelector(".add__consult");
 
   const RESULT_LS = "result";
-  const loadedResult = localStorage.getItem(RESULT_LS);
+  // const loadedResult = localStorage.getItem(RESULT_LS);
 
-  if (loadedResult !== "experience") {
-    setTimeout(function () {
-      snackBarResult.classList.add("snackbar__anim__result");
-      body.style.backgroundColor = "black";
-      snackBarResultTitle.forEach((e) => {
-        e.style.color = "black";
-      });
-      snackBarResultComment.forEach((e) => {
-        e.style.color = "white";
-      });
-      all.style.borderColor = "black";
-      all.children[0].style.color = "black";
-      addConsult.style.color = "black";
-      localStorage.setItem(RESULT_LS, "experience");
-    }, 7000);
-  }
+  setTimeout(function () {
+    snackBarResult.classList.add("snackbar__anim__result");
+    body.style.backgroundColor = "black";
+    snackBarResultTitle.forEach((e) => {
+      e.style.color = "black";
+    });
+    snackBarResultComment.forEach((e) => {
+      e.style.color = "white";
+    });
+    all.style.borderColor = "black";
+    all.children[0].style.color = "black";
+    addConsult.style.color = "black";
+    localStorage.setItem(RESULT_LS, "experience");
+  }, 6000);
+
+  // if (loadedResult !== "experience") {
+  //   setTimeout(function () {
+  //     snackBarResult.classList.add("snackbar__anim__result");
+  //     body.style.backgroundColor = "black";
+  //     snackBarResultTitle.forEach((e) => {
+  //       e.style.color = "black";
+  //     });
+  //     snackBarResultComment.forEach((e) => {
+  //       e.style.color = "white";
+  //     });
+  //     all.style.borderColor = "black";
+  //     all.children[0].style.color = "black";
+  //     addConsult.style.color = "black";
+  //     localStorage.setItem(RESULT_LS, "experience");
+  //   }, 6000);
+  // }
 
   snackBarButton.addEventListener("click", handleSnackRemove);
 
