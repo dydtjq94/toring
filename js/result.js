@@ -220,7 +220,7 @@ const a = Math.random() * mentorLen;
 
 function handleResult() {
   result.innerHTML = `
-  <div class="result__title">아이와 가장 잘 맞는 멘토링이에요!</div>
+  <div class="result__title">우리 아이와 가장 잘 맞는 멘토링</div>
   <div class="result__comment">${mentors[resultNum].oneWord}</div>
     <a class="simple__a" >
       <div class="simple">
@@ -261,7 +261,7 @@ function handleResult() {
         </div>
 </div>
     </a>
-  <div class="result__title">토링 대표 멘토링이에요!</div>
+  <div class="result__title">토링이 보장하는 대표 멘토링</div>
 
     <div class="select3"></div>
   <div class="result__title">이런 멘토링은 어때요?</div>
