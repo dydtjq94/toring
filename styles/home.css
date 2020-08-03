@@ -52,7 +52,7 @@
   color: rgb(42, 42, 42);
   opacity: 0;
   transform: translateY(40px);
-  animation: homeFadeIn 1s forwards 0.5s;
+  animation: homeFadeIn 1s forwards 0.4s;
 }
 
 .catch__des span {
@@ -71,7 +71,7 @@
   margin-top: 30px;
   opacity: 0;
   transform: translateY(40px);
-  animation: homeFadeIn 1s forwards 1s;
+  animation: homeFadeIn 1s forwards 0.8s;
 }
 
 .main__button:visited {
@@ -91,10 +91,13 @@
 }
 
 .toring__site {
-  margin-top: 120px;
+  opacity: 0;
+  transform: translateY(40px);
+  margin-top: 60px;
   text-decoration: underline;
   color: #0123b4;
   padding: 20px;
+  animation: homeFadeIn 1s forwards 1.2s;
 }
 
 .toring__site:visited {

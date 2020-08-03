@@ -12,7 +12,7 @@
 }
 
 .header {
-  font: 24px "Gilroy", sans-serif;
+  font-size: 24px;
   font-weight: 700;
   width: 100%;
   height: 60px;
