@@ -142,6 +142,7 @@ const submitTel = document.querySelector(`.submit__tel`);
 const submitStu = document.querySelector(`.submit__student`);
 const submitCon = document.querySelector(`.submit__content`);
 const submitBtn = document.querySelector(".submit__submit");
+const submitBtnPar = document.querySelector(`.submit__button`);
 const blackLoading = document.querySelector(".black__loading");
 const thx = document.querySelector(`#thx`);
 
@@ -255,7 +256,7 @@ function handleSubmit() {
 }
 
 function init() {
-  submitBtn.addEventListener("click", handleSubmit);
+  submitBtnPar.addEventListener("click", handleSubmit);
 }
 
 init();
