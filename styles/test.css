@@ -167,7 +167,6 @@
 }
 
 .all {
-  color: #0123b4;
   font-size: 16px;
   margin-top: 10px;
   padding: 10px 20px;
@@ -175,6 +174,7 @@
   border: 1px solid #0123b4;
   border-radius: 10px;
   outline: none;
+  color: #0123b4;
 }
 
 .all:hover {
