@@ -474,7 +474,7 @@ function handleSnackBar() {
         e.style.color = "black";
       });
       snackBarResultComment.forEach((e) => {
-        e.style.color = "black";
+        e.style.color = "white";
       });
       all.style.borderColor = "black";
       all.children[0].style.color = "black";
