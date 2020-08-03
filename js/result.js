@@ -477,7 +477,7 @@ function handleSnackBar() {
         e.style.color = "white";
       });
       all.style.borderColor = "black";
-      all.children[0].children[0].style.color = "black";
+      all.children[0].style.color = "black";
       addConsult.style.color = "black";
       localStorage.setItem(RESULT_LS, "experience");
     }, 7000);
@@ -495,7 +495,7 @@ function handleSnackBar() {
       e.style.color = "#272727";
     });
     all.style.borderColor = "#0123b4";
-    all.children[0].children[0].style.color = "#0123b4";
+    all.children[0].style.color = "#0123b4";
     addConsult.style.color = "#575757";
   }
 }
