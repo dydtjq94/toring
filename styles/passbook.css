@@ -144,10 +144,6 @@
   cursor: pointer;
 }
 
-.num__copy:active {
-  opacity: 0;
-}
-
 .passbook__column:nth-child(1) {
   width: 100%;
   padding-bottom: 20px;
