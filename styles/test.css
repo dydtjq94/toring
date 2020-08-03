@@ -150,7 +150,7 @@
   object-fit: cover;
 }
 
-.page__word span {
+.page__word {
   font-size: 14px;
   color: rgb(58, 58, 58);
   text-align: justify;
