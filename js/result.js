@@ -449,6 +449,11 @@ function handleResultAni() {
     resultPage.classList.add("trans2");
   }, 200);
 }
+const all = document.querySelector(".all");
+
+function handleCall() {
+  window.location.href = "tel:010-8313-9943";
+}
 
 function handleSnackBar() {
   const snackBarResult = document.querySelector(`#snackbar__result`);
@@ -456,7 +461,6 @@ function handleSnackBar() {
   const snackBarButton = document.querySelector(`.snackbar__result__button`);
   const snackBarResultTitle = document.querySelectorAll(`.result__title`);
   const snackBarResultComment = document.querySelectorAll(`.result__comment`);
-  const all = document.querySelector(".all");
   const addConsult = document.querySelector(".add__consult");
 
   const RESULT_LS = "result";
@@ -499,6 +503,7 @@ function handleSnackBar() {
 function init() {
   handleResult();
   handleSnackBar();
+  all.addEventListener("click", handleCall);
 }
 
 init();
