@@ -450,53 +450,53 @@ function handleResultAni() {
   }, 200);
 }
 
-// function handleSnackBar() {
-//   const snackBarResult = document.querySelector(`#snackbar__result`);
-//   const body = document.querySelector(`.body`);
-//   const snackBarButton = document.querySelector(`.snackbar__result__button`);
-//   const snackBarResultTitle = document.querySelectorAll(`.result__title`);
-//   const snackBarResultComment = document.querySelectorAll(`.result__comment`);
-//   const all = document.querySelector(".all");
-//   const addConsult = document.querySelector(".add__consult");
+function handleSnackBar() {
+  const snackBarResult = document.querySelector(`#snackbar__result`);
+  const body = document.querySelector(`.body`);
+  const snackBarButton = document.querySelector(`.snackbar__result__button`);
+  const snackBarResultTitle = document.querySelectorAll(`.result__title`);
+  const snackBarResultComment = document.querySelectorAll(`.result__comment`);
+  const all = document.querySelector(".all");
+  const addConsult = document.querySelector(".add__consult");
 
-//   console.dir(all);
+  console.dir(all);
 
-//   console.dir(body);
+  console.dir(body);
 
-//   setTimeout(function () {
-//     snackBarResult.classList.add("snackbar__anim__result");
-//     body.style.backgroundColor = "black";
-//     snackBarResultTitle.forEach((e) => {
-//       e.style.color = "white";
-//     });
-//     snackBarResultComment.forEach((e) => {
-//       e.style.color = "white";
-//     });
-//     all.style.borderColor = "black";
-//     all.children[0].children[0].style.color = "black";
-//     addConsult.style.color = "black";
-//   }, 3000);
+  setTimeout(function () {
+    snackBarResult.classList.add("snackbar__anim__result");
+    body.style.backgroundColor = "black";
+    snackBarResultTitle.forEach((e) => {
+      e.style.color = "white";
+    });
+    snackBarResultComment.forEach((e) => {
+      e.style.color = "white";
+    });
+    all.style.borderColor = "black";
+    all.children[0].children[0].style.color = "black";
+    addConsult.style.color = "black";
+  }, 3000);
 
-//   snackBarButton.addEventListener("click", handleSnackRemove);
+  snackBarButton.addEventListener("click", handleSnackRemove);
 
-//   function handleSnackRemove() {
-//     snackBarResult.classList.remove("snackbar__anim__result");
-//     body.style.backgroundColor = "#f7f7f7";
-//     snackBarResultTitle.forEach((e) => {
-//       e.style.color = "#4055af";
-//     });
-//     snackBarResultComment.forEach((e) => {
-//       e.style.color = "#272727";
-//     });
-//     all.style.borderColor = "#0123b4";
-//     all.children[0].children[0].style.color = "#0123b4";
-//     addConsult.style.color = "#575757";
-//   }
-// }
+  function handleSnackRemove() {
+    snackBarResult.classList.remove("snackbar__anim__result");
+    body.style.backgroundColor = "#f7f7f7";
+    snackBarResultTitle.forEach((e) => {
+      e.style.color = "#4055af";
+    });
+    snackBarResultComment.forEach((e) => {
+      e.style.color = "#272727";
+    });
+    all.style.borderColor = "#0123b4";
+    all.children[0].children[0].style.color = "#0123b4";
+    addConsult.style.color = "#575757";
+  }
+}
 
 function init() {
   handleResult();
-  // handleSnackBar();
+  handleSnackBar();
 }
 
 init();
