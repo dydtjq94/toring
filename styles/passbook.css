@@ -297,22 +297,10 @@
   cursor: pointer;
 }
 
-.passbook__button__kakao:active {
-  opacity: 0;
-}
-
 .passbook__button__home:hover {
   cursor: pointer;
 }
 
-.passbook__button__home:active {
-  opacity: 0;
-}
-
 .differ__button:hover {
   cursor: pointer;
-}
-
-.differ__button:active {
-  opacity: 0;
 }

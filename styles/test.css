@@ -181,10 +181,6 @@
   cursor: pointer;
 }
 
-.all:active {
-  /* opacity: 0; */
-}
-
 .all a:link {
   text-decoration: none;
 }
