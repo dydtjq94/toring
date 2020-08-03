@@ -428,8 +428,7 @@ function handleResult() {
       "mentordetail.html?" + "name" + ":" + mentors[resultNum].eng;
   }
   function handleKyumin() {
-    location.href =
-      "mentordetail.html?" + "name" + ":" + mentors[randomNum1].eng;
+    location.href = "mentordetail.html?" + "name" + ":" + kyumin.eng;
   }
   function handleRandomFirst() {
     location.href =
