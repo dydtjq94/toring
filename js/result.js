@@ -175,7 +175,7 @@ let resultNum = 0;
 if (forResult === 111) {
   resultNum = 0;
 } else if (forResult === 112) {
-  resultNum = 7;
+  resultNum = 5;
 } else if (forResult === 113) {
   resultNum = 1;
 } else if (forResult === 121) {
@@ -193,9 +193,9 @@ if (forResult === 111) {
 } else if (forResult === 221) {
   resultNum = 9;
 } else if (forResult === 222) {
-  resultNum = 10;
-} else if (forResult === 223) {
   resultNum = 11;
+} else if (forResult === 223) {
+  resultNum = 10;
 }
 
 let randomNum1 = Math.floor(Math.random() * mentorLen);
