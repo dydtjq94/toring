@@ -201,7 +201,7 @@ submitForm.innerHTML = `
 
 const differButton = document.querySelector(`.differ__button`);
 const kakaoButton = document.querySelector(`.passbook__button__kakao`);
-const homeButton = document.querySelector(`.passbook__button__home`);
+// const homeButton = document.querySelector(`.passbook__button__home`);
 
 const btn = document.querySelector(`#btn`);
 const target = document.querySelector(`#target`);
@@ -233,7 +233,7 @@ function init() {
   btn.addEventListener("click", handleCopy);
   differButton.addEventListener("click", handleDiffer);
   kakaoButton.addEventListener("click", handleDiffer);
-  homeButton.addEventListener("click", handleHome);
+  // homeButton.addEventListener("click", handleHome);
 }
 
 init();
