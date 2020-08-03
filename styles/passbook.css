@@ -134,7 +134,7 @@
 .num__copy {
   background-color: transparent;
   border: 1px solid white;
-  padding: 6px 12px;
+  padding: 6px 12px 0 6px;
   padding-bottom: 0;
   color: white;
   font-size: 14px;
