@@ -57,7 +57,6 @@ body {
   justify-content: center;
   align-items: center;
   background-color: rgb(247, 247, 247);
-  transition: 1s all;
 }
 
 .body,
@@ -68,7 +67,6 @@ body {
   align-items: center;
   flex-direction: column;
   background-color: #f7f7f7;
-  transition: 1s all;
 }
 
 /* 모바일 */
@@ -81,7 +79,6 @@ body {
     align-items: center;
     flex-direction: column;
     background-color: rgb(247, 247, 247);
-    transition: 1s all;
 
     border-right: 0.3px solid rgba(107, 107, 107, 0.2);
     border-left: 0.3px solid rgba(107, 107, 107, 0.2);
