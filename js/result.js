@@ -262,7 +262,6 @@ function handleResult() {
         </div>
 </div>
     </a>
-    <button class="test__button">제발되라</button>
   <div class="result__title">토링 대표 멘토링이에요!</div>
 
     <div class="select3"></div>
@@ -414,21 +413,37 @@ function handleResult() {
   //     "mentordetail.html?" + "name" + ":" + mentors[resultNum].eng;
   // }, 1000);
 
-  const testResult = document.querySelector(`.mentor__class__title`);
-  const testResult2 = document.querySelector(`.simple__img`);
-  const testResult3 = document.querySelector(`.simple__content`);
+  const testResult = document.querySelectorAll(`.mentor__class__title`);
+  const testResult2 = document.querySelectorAll(`.simple__img`);
+  const testResult3 = document.querySelectorAll(`.simple__content`);
   console.log(testResult);
-  testResult.addEventListener("click", handleTestResult);
-  testResult2.addEventListener("click", handleTestResult);
-  testResult3.addEventListener("click", handleTestResult);
+  testResult[0].addEventListener("click", handleTestResult);
+  testResult2[0].addEventListener("click", handleTestResult);
+  testResult3[0].addEventListener("click", handleTestResult);
+  testResult[1].addEventListener("click", handleKyumin);
+  testResult2[1].addEventListener("click", handleKyumin);
+  testResult3[1].addEventListener("click", handleKyumin);
+  testResult[2].addEventListener("click", handleRandomFirst);
+  testResult2[2].addEventListener("click", handleRandomFirst);
+  testResult3[2].addEventListener("click", handleRandomFirst);
+  testResult[3].addEventListener("click", handleRandomSecond);
+  testResult2[3].addEventListener("click", handleRandomSecond);
+  testResult3[3].addEventListener("click", handleRandomSecond);
   function handleTestResult() {
     location.href =
       "mentordetail.html?" + "name" + ":" + mentors[resultNum].eng;
-    console.log("click");
-    // setTimeout(function () {
-    //   location.href =
-    //     "mentordetail.html?" + "name" + ":" + mentors[resultNum].eng;
-    // }, 1000);
+  }
+  function handleKyumin() {
+    location.href =
+      "mentordetail.html?" + "name" + ":" + mentors[randomNum1].eng;
+  }
+  function handleRandomFirst() {
+    location.href =
+      "mentordetail.html?" + "name" + ":" + mentors[randomNum1].eng;
+  }
+  function handleRandomSecond() {
+    location.href =
+      "mentordetail.html?" + "name" + ":" + mentors[randomNum2].eng;
   }
 }
 
