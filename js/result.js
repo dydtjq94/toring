@@ -471,10 +471,10 @@ function handleSnackBar() {
       snackBarResult.classList.add("snackbar__anim__result");
       body.style.backgroundColor = "black";
       snackBarResultTitle.forEach((e) => {
-        e.style.color = "white";
+        e.style.color = "black";
       });
       snackBarResultComment.forEach((e) => {
-        e.style.color = "white";
+        e.style.color = "black";
       });
       all.style.borderColor = "black";
       all.children[0].style.color = "black";

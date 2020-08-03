@@ -380,7 +380,7 @@
 
 .snackbar__result {
   width: 100%;
-  height: 280px;
+  height: 320px;
   z-index: 100;
   opacity: 0;
   position: fixed;
@@ -391,15 +391,15 @@
   align-items: center;
   background-color: rgba(64, 85, 175, 1);
   color: white;
-  /* transition: 0.7s all; */
+  transition: 0.7s transform;
   transform: translateY(-280px);
 }
 
 .snackbar__result__button {
-  font-size: 20px;
+  font-size: 24px;
   outline: none;
   width: 100%;
-  height: 25%;
+  height: 22%;
   background-color: white;
   border: none;
   border-top: 1px solid white;
@@ -409,7 +409,7 @@
 
 .snackbar__result__ment {
   font-size: 28px;
-  height: 75%;
+  height: 78%;
   font-weight: 700;
   line-height: 36px;
   display: flex;
