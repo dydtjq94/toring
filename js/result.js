@@ -165,7 +165,6 @@ const kyumin = {
 
 const result = document.querySelector(".result");
 const resultPage = document.querySelector(".result__page__wrap");
-const all2 = document.querySelector(".all2");
 
 const mentorLen = mentors.length;
 
@@ -399,7 +398,7 @@ function handleResult() {
       : `<div class="title__mentoring__end">마감</div>`
   }
 </div>
-      [1:1 멘토링] ${kyumin.title}
+      ${kyumin.title}
       <div class="content__column__detail">
           멘토링 자세히 보기 <i class="fas fa-chevron-right"></i>
         </div>
@@ -408,15 +407,10 @@ function handleResult() {
 
   handleResultAni();
 
-  // setTimeout(function () {
-  //   location.href =
-  //     "mentordetail.html?" + "name" + ":" + mentors[resultNum].eng;
-  // }, 1000);
-
   const testResult = document.querySelectorAll(`.mentor__class__title`);
   const testResult2 = document.querySelectorAll(`.simple__img`);
   const testResult3 = document.querySelectorAll(`.simple__content`);
-  console.log(testResult);
+
   testResult[0].addEventListener("click", handleTestResult);
   testResult2[0].addEventListener("click", handleTestResult);
   testResult3[0].addEventListener("click", handleTestResult);
@@ -453,13 +447,56 @@ function handleResultAni() {
     result.classList.add("trans2");
     resultPage.classList.remove("none");
     resultPage.classList.add("trans2");
-    // all2.classList.remove("none");
-    // all2.classList.add("trans2");
   }, 200);
+}
+
+function handleSnackBar() {
+  const snackBarResult = document.querySelector(`#snackbar__result`);
+  const body = document.querySelector(`.body`);
+  const snackBarButton = document.querySelector(`.snackbar__result__button`);
+  const snackBarResultTitle = document.querySelectorAll(`.result__title`);
+  const snackBarResultComment = document.querySelectorAll(`.result__comment`);
+  const all = document.querySelector(".all");
+  const addConsult = document.querySelector(".add__consult");
+
+  console.dir(all);
+
+  console.dir(body);
+
+  setTimeout(function () {
+    snackBarResult.classList.add("snackbar__anim__result");
+    body.style.backgroundColor = "black";
+    snackBarResultTitle.forEach((e) => {
+      e.style.color = "white";
+    });
+    snackBarResultComment.forEach((e) => {
+      e.style.color = "white";
+    });
+    all.style.borderColor = "black";
+    all.children[0].children[0].style.color = "black";
+    addConsult.style.color = "black";
+  }, 3000);
+
+  snackBarButton.addEventListener("click", handleSnackRemove);
+
+  function handleSnackRemove() {
+    snackBarResult.classList.remove("snackbar__anim__result");
+    body.style.backgroundColor = "#f7f7f7";
+    snackBarResultTitle.forEach((e) => {
+      e.style.color = "#4055af";
+    });
+    snackBarResultComment.forEach((e) => {
+      e.style.color = "#272727";
+    });
+    all.style.borderColor = "#0123b4";
+    all.children[0].children[0].style.color = "#0123b4";
+    addConsult.style.color = "#575757";
+  }
 }
 
 function init() {
   handleResult();
+  handleSnackBar();
 }
 
 init();

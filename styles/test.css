@@ -112,7 +112,7 @@
 .result__page__wrap {
   width: 80%;
   padding-bottom: 20px;
-  border-bottom: 1px solid rgb(114, 114, 114);
+  border-bottom: 1px solid rgb(0, 0, 0);
 }
 
 .result__page {
@@ -162,13 +162,14 @@
 }
 
 .add__consult {
-  margin-top: 10px;
+  margin-top: 20px;
   font-size: 14px;
-  color: rgb(87, 87, 87);
+  color: #575757;
 }
 
 .all {
-  margin-top: 25px;
+  font-size: 16px;
+  margin-top: 10px;
   padding: 10px 20px;
   background-color: transparent;
   border: 1px solid #0123b4;
@@ -375,7 +376,60 @@
   100% {
   }
 }
+
 .rotate {
   display: flex;
   animation: rotate 1s ease-in-out infinite;
+}
+
+.snackbar__result {
+  width: 100%;
+  height: 280px;
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(64, 85, 175, 1);
+  color: white;
+  transition: 1s all;
+  transform: translateY(-280px);
+  /* opacity: 0; */
+}
+
+.snackbar__result__button {
+  font-size: 20px;
+  outline: none;
+  width: 100%;
+  height: 25%;
+  background-color: white;
+  border: none;
+  border-top: 1px solid white;
+  color: #4055af;
+  font-weight: 700;
+}
+
+.snackbar__result__ment {
+  font-size: 28px;
+  height: 75%;
+  font-weight: 700;
+  line-height: 36px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.snackbar__result__button:hover {
+  cursor: pointer;
+}
+
+.yellow {
+  color: #fec645;
+}
+
+.snackbar__anim__result {
+  transform: translateY(0);
+  opacity: 1;
 }

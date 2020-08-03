@@ -12,7 +12,7 @@
 }
 
 .header {
-  font-size: 24px;
+  font: 24px "Gilroy", sans-serif;
   font-weight: 700;
   width: 100%;
   height: 60px;
@@ -20,7 +20,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 0.5px solid gray;
   box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
   z-index: 99;
   padding: 0 20px;
@@ -58,6 +57,7 @@ body {
   justify-content: center;
   align-items: center;
   background-color: rgb(247, 247, 247);
+  transition: 1s all;
 }
 
 .body,
@@ -68,6 +68,7 @@ body {
   align-items: center;
   flex-direction: column;
   background-color: #f7f7f7;
+  transition: 1s all;
 }
 
 /* 모바일 */
@@ -80,6 +81,26 @@ body {
     align-items: center;
     flex-direction: column;
     background-color: rgb(247, 247, 247);
+    transition: 1s all;
+
+    border-right: 0.3px solid rgba(107, 107, 107, 0.2);
+    border-left: 0.3px solid rgba(107, 107, 107, 0.2);
+  }
+
+  .buy {
+    width: 500px;
+  }
+
+  .header {
+    width: 500px;
+  }
+
+  .snackbar__result {
+    width: 500px;
+  }
+
+  .black__loading {
+    width: 500px;
   }
 }
 
