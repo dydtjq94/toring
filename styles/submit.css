@@ -177,10 +177,6 @@
   cursor: pointer;
 }
 
-.submit__submit:active {
-  opacity: 0.5;
-}
-
 .submit__button {
   width: 100%;
   text-align: center;

@@ -23,7 +23,7 @@ function handleOnboarding2() {
     onboard2.classList.remove("rightIn");
     onboard2.classList.add("leftOut");
     onboCount.innerHTML = "3/3";
-    buttonOnboard.innerHTML = "시작하기";
+    buttonOnboard.innerHTML = "우리 아이 멘토 찾기";
   }, 3);
 
   setTimeout(function () {
