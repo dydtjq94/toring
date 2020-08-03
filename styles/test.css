@@ -391,8 +391,8 @@
   align-items: center;
   background-color: rgba(64, 85, 175, 1);
   color: white;
-  transform: translateY(-280px);
-  transition: 0.7s transform;
+  transform: translateY(-320px);
+  transition: 0.7s all;
 }
 
 .snackbar__result__button {
