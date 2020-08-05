@@ -47,7 +47,7 @@ const mentors = [
     eng: "hyunseo",
     mentoring: [1, 2, 3],
     oneWord: "영재고에서 일반고로 경험이 풍부한 현서 멘토님",
-    title: "고등학교가 고민될 땐 영재고와 일반고를 모두 다녀본 저에게 오세요",
+    title: "공부 태도를 교정해 단기간에 성적을 올리는 비법",
     label: 1,
   },
   {
