@@ -175,7 +175,7 @@ let resultNum = 0;
 if (forResult === 111) {
   resultNum = 0;
 } else if (forResult === 112) {
-  resultNum = 5;
+  resultNum = 2;
 } else if (forResult === 113) {
   resultNum = 1;
 } else if (forResult === 121) {
