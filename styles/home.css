@@ -12,7 +12,7 @@
 .bg__img3 {
   position: absolute;
   z-index: -99;
-  opacity: 0.3;
+  opacity: 0.2;
   width: 180px;
 }
 
@@ -47,7 +47,8 @@
 }
 
 .catch__des {
-  line-height: 20px;
+  font-size: 18px;
+  line-height: 24px;
   margin-bottom: 10px;
   color: rgb(42, 42, 42);
   opacity: 0;
@@ -60,7 +61,7 @@
 }
 
 .main__button {
-  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.16);
+  box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.4);
   text-decoration: none;
   color: white;
   background-color: #0123b4;

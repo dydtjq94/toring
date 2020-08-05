@@ -34,7 +34,7 @@ const mentors = [
     onePick: "완벽한 준비로 서류 100%전형 수석 입학",
     eng: "dawon",
     mentoring: [1, 2, 3],
-    oneWord: "하나하나 꼼꼼하게 챙겨주는 다원 멘토님",
+    oneWord: "친언니처럼 다정하게 신경써주는 다원 멘토님",
     title: "학교 생활 열심히 해서 학생부 100%로 연세대 수석입학하는 비법",
     label: 0,
   },
