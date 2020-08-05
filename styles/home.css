@@ -31,9 +31,9 @@
 }
 
 .catch__phrase {
-  margin-top: 140px;
+  margin-top: 120px;
   font-size: 30px;
-  width: 210px;
+  /* width: 210px; */
   line-height: 40px;
   color: rgb(42, 42, 42);
   margin-bottom: 10px;
@@ -67,7 +67,6 @@
   padding: 15px 30px;
   border-radius: 20px;
   font-size: 20px;
-  margin-bottom: 10px;
   margin-top: 30px;
   opacity: 0;
   transform: translateY(40px);
@@ -91,6 +90,7 @@
 }
 
 .toring__site {
+  font-size: 18px;
   opacity: 0;
   transform: translateY(40px);
   margin-top: 30px;
