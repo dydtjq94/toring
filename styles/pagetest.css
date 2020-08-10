@@ -103,6 +103,18 @@
   padding: 20px 0;
   margin: 10px 0;
 }
+
+.loading__bar3 {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  border-radius: 20px;
+  background-color: rgb(189, 189, 189);
+  color: white;
+  padding: 20px 0;
+  margin: 10px 0;
+  margin-bottom: 3000px;
+}
 .loading__bar2 {
   display: flex;
   justify-content: center;
