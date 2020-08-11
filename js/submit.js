@@ -9,7 +9,7 @@ const mentorsSubmit = [
     name: "이현서",
     nameEng: "hyunseo",
     majorNum: 0, //0이면 의예과 1이면 일반학과
-    title: "고등학교가 고민될 땐 영재고와 일반고를 모두 다녀본 저에게 오세요",
+    title: "공부 태도를 교정해 단기간에 성적을 올리는 비법",
   },
   {
     name: "허다원",
