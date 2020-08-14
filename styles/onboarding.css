@@ -46,7 +46,8 @@
   top: 120px;
 }
 .onboarding2,
-.onboarding3 {
+.onboarding3,
+.onboarding4 {
   opacity: 0;
   position: fixed;
   top: 120px;
