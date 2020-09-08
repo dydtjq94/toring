@@ -107,8 +107,8 @@
 }
 
 .submit__mentor {
-  border: none;
   outline: none;
+  border: none;
   background-color: transparent;
   color: #202020;
   font-weight: 700;

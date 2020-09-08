@@ -245,16 +245,7 @@ function handleSubmit() {
         blackLoading.classList.add("none");
       }, 310);
       setTimeout(function () {
-        location.href =
-          "passbook.html?" +
-          ":" +
-          "parent" +
-          ":" +
-          s1 +
-          ":" +
-          mentorsSubmit[resultNum].majorNum +
-          ":" +
-          name;
+        location.href = "thankyou.html?" + name;
       }, 400);
       clearInterval(link);
     }

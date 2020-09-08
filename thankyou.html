@@ -41,7 +41,7 @@
     <title>토링 | 감사합니다.</title>
   </head>
   <header class="header">
-    <a href="javascript:history.back()" class="header__back">
+    <a href="javascript:history.back()" class="transparent">
       <i class="fas fa-chevron-left" style="user-select: auto"></i>
     </a>
 
@@ -66,32 +66,115 @@
     </div>
 
     <div class="body">
-      <div class="submit__title">
-        <span class="span__title">감사합니다!</span>
-      </div>
-      <div class="thankyou">asdfafdsafdsafashdfkas</div>
       <div class="warning">
+        <div class="thankyou">
+          감사합니다. <br /><span class="bold">신청이 완료되었습니다!</span>
+        </div>
         <div class="warning__title">
           <i class="fas fa-check"></i>
-          멘토링 신청 안내
+          멘토링 안내 사항
         </div>
         <div class="warning__text">
-          (1) <span class="bold">입금자명</span> 작성 (반드시 확인해 주세요.)
+          <div class="warning__text__left">(1)</div>
+          <div class="warning__text__right">
+            <span class="bold">6시간 이내</span> 멘토링 신청 접수가 완료됩니다.
+          </div>
         </div>
         <div class="warning__text">
-          (2) 연락 가능한 <span class="bold">학부모님 전화번호</span> 작성
+          <div class="warning__text__left">(2)</div>
+          <div class="warning__text__right">
+            접수 완료 이후 <span class="bold">학부모님 전화번호</span>로 멘토링
+            진행 연락을 드립니다.
+          </div>
         </div>
         <div class="warning__text">
-          (3) 아래 <span class="bold">멘토링 신청하기</span> 버튼 클릭
+          <div class="warning__text__left">(3)</div>
+          <div class="warning__text__right">
+            연락 기준 <span class="bold">2일 이내로</span> 온라인 멘토링 진행
+            날짜와 시간을 정합니다.
+          </div>
         </div>
         <div class="warning__text">
-          (4) 신청 완료 메세지 확인 후
-          <span class="bold">멘토링 비용 입금</span>
+          <div class="warning__text__left">(4)</div>
+          <div class="warning__text__right">
+            선택하신 <span class="blue__bold">김규민 멘토님</span>이 직접
+            30분동안 <span class="bold">무료 멘토링을</span> 진행합니다.
+          </div>
         </div>
         <div class="warning__text">
-          * 입금이 확인되면 24시간 이내로 연락드려요! 😁
+          <div class="warning__text__left">*</div>
+          <div class="warning__text__right">
+            무료 멘토링 진행 이후에
+            <span class="bold">아래 PLAN 중 선택</span>하여 멘토링을 더 받으실
+            수 있습니다 :)
+          </div>
         </div>
       </div>
+      <div class="select__plan">
+        이후 선택 가능 <span class="bold">PLAN</span>
+      </div>
+      <div class="final__price">
+        <div class="final__column">
+          <div class="final__title">
+            계속 할인 받을 수 있는 <br />한달 PLAN이에요!
+            <div class="extra__time__final">평생 할인</div>
+          </div>
+          <div class="final__sub">
+            한달 기준 <span class="bold">4회</span> (회당 100분)
+          </div>
+          <div class="final__price__column">
+            <div class="final__left">정가</div>
+            <div class="final__right">350,000원</div>
+          </div>
+          <div class="final__price__column">
+            <div class="final__left">총 할인 금액</div>
+            <div class="final__right">-50,000원</div>
+          </div>
+          <div class="final__price__column">
+            <div class="final__left">최종 금액</div>
+            <div class="final__right">300,000원</div>
+          </div>
+          <div class="final__price__column">
+            <div class="final__left2">1회당 가격</div>
+            <div class="final__right2">37,500원</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="final__price2">
+        <div class="final__column">
+          <div class="final__title">
+            지금 할인 받을 수 있는<br />한학기 PLAN이에요!
+            <div class="extra__time__final" id="extra__time2">
+              6일 17:13:38 남음
+            </div>
+          </div>
+          <div class="final__sub">
+            한학기 기준 <span class="bold">12회</span> (회당 100분)
+          </div>
+          <div class="final__price__column">
+            <div class="final__left">정가</div>
+            <div class="final__right">1,050,000원</div>
+          </div>
+          <div class="final__price__column">
+            <div class="final__left">총 할인 금액</div>
+            <div class="final__right">-290,000원</div>
+          </div>
+          <div class="final__price__column">
+            <div class="final__left">최종 금액</div>
+            <div class="final__right">760,000원</div>
+          </div>
+          <div class="final__price__column">
+            <div class="final__left2">1회당 가격</div>
+            <div class="final__right2">31,666원</div>
+          </div>
+        </div>
+      </div>
+      <div class="extra__place"></div>
+      <!-- <div class="passbook__button">
+        <div class="passbook__button__kakao">토링에게 1:1 문의</div>
+        <div class="passbook__button__home">홈 화면으로</div>
+      </div> -->
     </div>
   </body>
 
@@ -100,5 +183,5 @@
     type="text/javascript"
     src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"
   ></script>
-  <script src="js/submit.js"></script>
+  <script src="js/thankyou.js"></script>
 </html>

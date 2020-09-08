@@ -144,3 +144,7 @@ input:required {
 textarea:required {
   background-color: yellow;
 } */
+
+.extra__place {
+  height: 60px;
+}

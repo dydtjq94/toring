@@ -1,8 +1,11 @@
 .thankyou {
   width: 90%;
+  font-size: 24px;
+  line-height: 32px;
 }
 
 .warning {
+  margin-top: 20px;
   padding: 20px 20px;
   width: 100%;
   color: #494949;
@@ -10,9 +13,13 @@
 }
 
 .warning__title {
+  padding-top: 20px;
+
   margin-top: 10px;
   font-size: 20px;
   font-weight: 700;
+  color: rgb(221, 0, 0);
+  border-top: 1px solid #494949;
 }
 
 .warning__title i {
@@ -20,14 +27,27 @@
 }
 
 .warning__text {
-  font-size: 16px;
+  text-align: justify;
+  line-height: 24px;
+  font-size: 18px;
   color: #494949;
   margin: 10px 0;
   margin-left: 10px;
+  display: flex;
+}
+
+.warning__text__left {
+  margin-right: 5px;
 }
 
 .warning__text__add {
   font-size: 18px;
   width: 100%;
   text-align: center;
+}
+
+.select__plan {
+  width: 90%;
+  margin-top: 20px;
+  font-size: 24px;
 }
