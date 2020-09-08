@@ -26,6 +26,10 @@
   padding: 0 20px;
 }
 
+.semi__logo {
+  font-size: 16px;
+}
+
 .header__back {
   color: #0123b4;
 
@@ -116,6 +120,10 @@ body {
 .blue__bold {
   color: #4055af;
   font-weight: 700;
+}
+
+.under {
+  text-decoration: underline;
 }
 
 input[type="submit"] {

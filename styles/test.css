@@ -110,9 +110,14 @@
 }
 
 .result__page__wrap {
-  width: 80%;
+  width: 85%;
   padding-bottom: 20px;
-  border-bottom: 1px solid rgb(0, 0, 0);
+  border-bottom: 1px solid #313131;
+}
+
+.result__title:nth-child(2) {
+  border-top: 1px solid #313131;
+  padding-top: 30px;
 }
 
 .result__page {
@@ -127,6 +132,8 @@
   color: rgb(58, 58, 58);
   font-weight: 700;
   margin: 15px 0;
+  line-height: 28px;
+  text-align: center;
 }
 
 .page__word {
@@ -151,7 +158,7 @@
 }
 
 .page__word {
-  font-size: 14px;
+  font-size: 16px;
   color: rgb(58, 58, 58);
   text-align: justify;
 }
@@ -380,7 +387,7 @@
 
 .snackbar__result {
   width: 100%;
-  height: 320px;
+  height: 380px;
   z-index: 100;
   opacity: 0;
   position: fixed;
@@ -391,12 +398,12 @@
   align-items: center;
   background-color: rgba(64, 85, 175, 1);
   color: white;
-  transform: translateY(-320px);
+  transform: translateY(-380px);
   transition: 0.7s transform;
 }
 
 .snackbar__result__button {
-  font-size: 24px;
+  font-size: 28px;
   outline: none;
   width: 100%;
   height: 22%;
@@ -408,10 +415,10 @@
 }
 
 .snackbar__result__ment {
-  font-size: 28px;
+  font-size: 32px;
   height: 78%;
   font-weight: 700;
-  line-height: 36px;
+  line-height: 40px;
   display: flex;
   flex-direction: column;
   justify-content: center;
