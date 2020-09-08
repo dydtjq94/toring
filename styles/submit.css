@@ -1,5 +1,4 @@
 .submitForm {
-  margin-top: 40px;
   width: 90%;
 }
 
@@ -11,11 +10,20 @@
 
 .submit__title {
   font-size: 24px;
-  color: #2a2a2a;
+  color: white;
+  font-weight: 700;
+  width: 100%;
+  background-color: #0123b4;
+  display: flex;
+  justify-content: center;
+  padding: 30px 0;
+}
+
+.span__title {
+  width: 90%;
 }
 
 .submit {
-  margin-top: 20px;
   width: 100%;
   padding: 0px 10px;
   border-radius: 10px;
@@ -47,6 +55,16 @@
   width: 100%;
   padding-bottom: 20px;
   text-align: justify;
+}
+
+.submit__univ {
+  width: 100%;
+  padding-bottom: 20px;
+  display: flex;
+}
+
+.submit__school {
+  width: 50%;
 }
 
 .submit__upper {
@@ -82,8 +100,8 @@
 
 .submit__mentor__img {
   border-radius: 50%;
-  width: 80px;
-  height: 80px;
+  width: 90px;
+  height: 90px;
   object-fit: cover;
   margin-right: 20px;
 }
@@ -103,7 +121,7 @@
   background-color: transparent;
   color: #202020;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 20px;
   width: 100%;
   line-height: 24px;
 }
@@ -134,7 +152,8 @@
   background-color: transparent;
   padding-bottom: 10px;
   outline: none;
-  border-radius: 16px;
+  border-radius: 10px;
+  text-align: justify;
 }
 
 .submit__name::placeholder {
@@ -151,7 +170,6 @@
 }
 .submit__content::placeholder {
   color: #000000;
-
   opacity: 0.6;
   font-size: 16px;
 }
@@ -166,7 +184,7 @@
   background-color: rgb(102, 102, 102);
   border: none;
   color: white;
-  border-radius: 16px;
+  border-radius: 10px;
   padding: 10px 20px;
   width: 95%;
   outline: none;
@@ -180,36 +198,6 @@
   width: 100%;
   text-align: center;
   margin-bottom: 200px;
-}
-
-.warning {
-  padding: 20px 20px;
-  width: 100%;
-  color: #494949;
-  background-color: #ececec;
-}
-
-.warning__title {
-  margin-top: 10px;
-  font-size: 20px;
-  font-weight: 700;
-}
-
-.warning__title i {
-  margin-right: 5px;
-}
-
-.warning__text {
-  font-size: 16px;
-  color: #494949;
-  margin: 10px 0;
-  margin-left: 10px;
-}
-
-.warning__text__add {
-  font-size: 18px;
-  width: 100%;
-  text-align: center;
 }
 
 .guide__m {

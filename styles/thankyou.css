@@ -1,0 +1,33 @@
+.thankyou {
+  width: 90%;
+}
+
+.warning {
+  padding: 20px 20px;
+  width: 100%;
+  color: #494949;
+  background-color: #ececec;
+}
+
+.warning__title {
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.warning__title i {
+  margin-right: 5px;
+}
+
+.warning__text {
+  font-size: 16px;
+  color: #494949;
+  margin: 10px 0;
+  margin-left: 10px;
+}
+
+.warning__text__add {
+  font-size: 18px;
+  width: 100%;
+  text-align: center;
+}

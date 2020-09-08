@@ -9,7 +9,7 @@ const mentors = [
     method: "정시 전형",
     eng: "jinho",
     oneWord: "휘문고에서 내신과 정시를 완벽하게 준비한 진호 멘토님",
-    label: 0,
+    label: 1,
   },
 
   {

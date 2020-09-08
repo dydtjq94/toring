@@ -126,11 +126,17 @@ submitUpper.innerHTML = `<div class="submit__upper__column">
     />
   </div>
 </div>
-<div class="submit__column">
-  <div class="submit__price">
-    <div class="submit__name__title">멘토링 클래스</div>
+<div class="submit__univ">
+  <div class="submit__school">
+    <div class="submit__name__title">멘토님 대학교</div>
     <div class="submit__class">
-      ${mentorsSubmit[resultNum].title}
+연세대
+    </div>
+  </div>
+  <div class="submit__school">
+    <div class="submit__name__title">출신 고등학교</div>
+    <div class="submit__class">
+휘문고 졸
     </div>
   </div>
 </div>
