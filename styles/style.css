@@ -14,7 +14,8 @@
 }
 
 .header {
-  font: 24px "Gilroy", sans-serif;
+  font-size: 24px;
+  font-family: "Gilroy", sans-serif;
   font-weight: 700;
   width: 100%;
   height: 60px;
@@ -33,7 +34,6 @@
 
 .header__back {
   color: #0123b4;
-
   text-decoration: none;
 }
 
@@ -63,6 +63,7 @@ body {
   justify-content: center;
   align-items: center;
   background-color: rgb(247, 247, 247);
+  font-family: "Gilroy", sans-serif;
 }
 
 .body,

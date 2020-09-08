@@ -241,12 +241,14 @@ function handleSubmit() {
   let link = setInterval(function () {
     if (thx.style.display === "block") {
       blackLoading.style.opacity = 0;
+      submitBtnPar.style.opacity = 0;
+
       setTimeout(function () {
         blackLoading.classList.add("none");
       }, 310);
       setTimeout(function () {
         location.href = "thankyou.html?" + name;
-      }, 400);
+      }, 500);
       clearInterval(link);
     }
   }, 200);

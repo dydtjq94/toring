@@ -278,6 +278,19 @@
   border-radius: 10px;
 }
 
+.passbook__button__kakao2 {
+  text-align: center;
+  width: 100%;
+  background-color: #0123b4;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  padding: 16px 20px;
+  outline: none;
+  margin-bottom: 6px;
+}
+
 .passbook__button__home {
   border-radius: 10px;
 
