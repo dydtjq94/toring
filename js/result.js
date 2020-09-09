@@ -302,7 +302,7 @@ gaepo.shuffle();
 jinsunW.shuffle();
 otherH.shuffle();
 
-let whimoonResult = `<div class="result__title"><span class="blue__bold">휘문고 출신 멘토들 보기</div>`;
+let whimoonResult = `<div class="result__title"><span class="blue__bold">휘문고 출신</span> 멘토들 보기</div>`;
 let sookmyungWResult = `<div class="result__title"><span class="blue__bold">숙명여고 출신</span> 멘토들 보기</div>`;
 let dandaeResult = `<div class="result__title"><span class="blue__bold">단대부고 출신</span> 멘토들 보기</div>`;
 let gaepoResult = `<div class="result__title"><span class="blue__bold">개포고 출신</span> 멘토들 보기</div>`;
@@ -685,7 +685,6 @@ console.log(nrUpper, mentorSimple);
 
 for (let c = 0; c < mentorSimple.length; c++) {
   function handleResultClick() {
-    console.dir(nrUpper[c]);
     location.href =
       "mentordetail.html?" + "name" + ":" + nrUpper[c].classList[1];
   }
