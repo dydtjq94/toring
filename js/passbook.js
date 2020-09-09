@@ -97,13 +97,13 @@ console.log(parentName, mentorName, major);
 let resultNum = 0;
 let i = 0;
 
-for (;;) {
-  if (mentorsSubmit[i].name === mentorName) {
-    resultNum = i;
-    break;
-  }
-  i++;
-}
+// for (;;) {
+//   if (mentorsSubmit[i].name === mentorName) {
+//     resultNum = i;
+//     break;
+//   }
+//   i++;
+// }
 
 submitForm.innerHTML = `
 <div class="passbook__title">멘토링 결제 금액</div>
@@ -116,17 +116,17 @@ submitForm.innerHTML = `
     <div class="price__mentor__content">
       <div class="price__left">
         <div class="price__left__content">
-        ${mentorsSubmit[resultNum].name} 멘토님
+        김규민 멘토님
         </div>
       </div>
       <div class="price__left">
         <div class="price__left__content2">
-        ${mentorsSubmit[resultNum].title}
+        토링 타이틀입니다
         </div>
       </div>
     </div>
     <div class="before__price">
-    ${major === 0 ? `199,000원` : `149,000원`}
+    ${0 === 0 ? `199,000원` : `149,000원`}
     </div>
   </div>
   <div class="total__price__column">
@@ -134,7 +134,7 @@ submitForm.innerHTML = `
   </div>
   <div class="total__price__column">
     <div class="off__content">DSchool 이벤트 ${
-      major === 0 ? `30%` : `34%`
+      0 === 0 ? `30%` : `34%`
     } 할인</div>
     <div class="off__content__price">-50,000원</div>
   </div>
@@ -144,7 +144,7 @@ submitForm.innerHTML = `
     </div>
   </div>
   <div class="total__price__column">
-    <div class="after__price">${major === 0 ? `149,000원` : `99,000원`}</div>
+    <div class="after__price">${0 === 0 ? `149,000원` : `99,000원`}</div>
   </div>
 </div>
 
@@ -180,13 +180,10 @@ submitForm.innerHTML = `
     <div class="passbook__price">
       <div class="info__bank__title">입금액</div>
       <div class="info__price__content">${
-        major === 0 ? `149,000원` : `99,000원`
+        0 === 0 ? `149,000원` : `99,000원`
       }</div>
     </div>
-    <div class="passbook__price">
-      <div class="info__name__title">입금자명</div>
-      <div class="info__price__content">${parentName}</div>
-    </div>
+    
   </div>
 </div>
 <div class="user__differ">

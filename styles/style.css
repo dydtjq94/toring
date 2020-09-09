@@ -1,7 +1,7 @@
 @import "reset.css";
 @import "mentor.css";
 @import "test.css";
-@import "simple.css";
+@import "result.css";
 @import "home.css";
 @import "onboarding.css";
 @import "submit.css";
@@ -86,7 +86,6 @@ body {
     align-items: center;
     flex-direction: column;
     background-color: rgb(247, 247, 247);
-
     border-right: 0.3px solid rgba(107, 107, 107, 0.2);
     border-left: 0.3px solid rgba(107, 107, 107, 0.2);
   }

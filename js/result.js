@@ -9,7 +9,13 @@ const mentors = [
     method: "정시 전형",
     eng: "jinho",
     oneWord: "휘문고에서 내신과 정시를 완벽하게 준비한 진호 멘토님",
+    mentoring: ["수시 정시 동시", "학습법 전문", "슬럼프 극복"],
+    // label 0: 모집중, 1: 마감임박
     label: 1,
+    //labelNum 몇자리 남았어요에 들어가는 숫자 (모집중이나 마감임박이나 다 써줘야함)
+    labelNum: 4,
+    // sort 1:휘문고, 2:숙명여고, 3:단대부고, 4:개포고, 5:진선여고, 6:그외
+    sort: 1,
   },
 
   {
@@ -20,7 +26,10 @@ const mentors = [
     method: "특기자 전형",
     eng: "hyunwoo",
     oneWord: "학생부를 완벽하게 준비한 현우 멘토님",
+    mentoring: ["멘탈 관리", "진로 설정", "수시 전문"],
     label: 0,
+    labelNum: 7,
+    sort: 6,
   },
 
   {
@@ -31,7 +40,10 @@ const mentors = [
     method: "수시 일반 전형",
     eng: "sunbin",
     oneWord: "학생을 진심으로 도와주는 선빈 멘토님",
-    label: 0,
+    mentoring: ["과목별 공부법", "멘탈 관리", "진선여고 내신"],
+    label: 1,
+    labelNum: 3,
+    sort: 5,
   },
 
   {
@@ -42,7 +54,10 @@ const mentors = [
     method: "학생부 종합 전형",
     eng: "yena",
     oneWord: "스스로 공부하는 습관으로 전교 3등으로 졸업한 예나 멘토님",
-    label: 0,
+    mentoring: ["경기여고 내신", "진로 설정", "슬럼프 극복"],
+    label: 1,
+    labelNum: 2,
+    sort: 6,
   },
 
   {
@@ -53,7 +68,10 @@ const mentors = [
     method: "논술 전형",
     eng: "taehyung",
     oneWord: "급격한 성적 상승을 약속하는 태형 멘토님",
-    label: 0,
+    mentoring: ["논술 전문", "성적 상승", "학습 습관 관리"],
+    label: 1,
+    labelNum: 3,
+    sort: 1,
   },
 
   {
@@ -65,7 +83,10 @@ const mentors = [
     eng: "yeeun",
     oneWord:
       "스스로 학생부를 채워 서울대 연세대 고려대를 동시 합격한 예은 멘토님",
+    mentoring: ["SKY 동시 합격", "은광여고 내신", "진로 설정"],
     label: 0,
+    labelNum: 4,
+    sort: 6,
   },
 
   {
@@ -76,7 +97,10 @@ const mentors = [
     method: "정시 전형",
     eng: "chaehyun",
     oneWord: "냉정하게 현실을 알려주지만 누구보다 따뜻한 채현 멘토님",
+    mentoring: ["엄격한 코치", "성적 상승", "전문적인"],
     label: 0,
+    labelNum: 5,
+    sort: 4,
   },
 
   {
@@ -87,7 +111,10 @@ const mentors = [
     method: "학교장 추천 전형",
     eng: "minyoung",
     oneWord: "부모님 도움 없이 스스로 입시를 해낸 민영 멘토님",
+    mentoring: ["자기 주도 학습", "숙명여고 내신", "동기 부여"],
     label: 0,
+    labelNum: 4,
+    sort: 2,
   },
 
   {
@@ -98,7 +125,10 @@ const mentors = [
     method: "수시 일반 전형",
     eng: "hyunjin",
     oneWord: "효율적인 공부법으로 서울대와 카이스트를 동시 합격한 현진 멘토님",
-    label: 0,
+    mentoring: ["숙명여고 이과", "진로 설정", "효율적인 공부"],
+    label: 1,
+    labelNum: 3,
+    sort: 2,
   },
 
   {
@@ -110,7 +140,10 @@ const mentors = [
     eng: "hayeon",
     oneWord:
       "고등학교 생활을 후회없이, 성공적으로 보낼 수 있도록 도와주는 하연 멘토님",
+    mentoring: ["성적 상승", "숙명여고 정시", "학교 생활"],
     label: 0,
+    labelNum: 3,
+    sort: 2,
   },
 
   {
@@ -121,7 +154,10 @@ const mentors = [
     method: "논술 전형",
     eng: "dayoung",
     oneWord: "방향성과 지름길을 알려주는 다영 멘토님",
-    label: 0,
+    mentoring: ["이과 문과 전향", "효율적인 공부", "언니 같은 멘토"],
+    label: 1,
+    labelNum: 2,
+    sort: 2,
   },
 
   {
@@ -132,7 +168,10 @@ const mentors = [
     method: "학생부 종합 전형",
     eng: "nayeon",
     oneWord: "코로나로 인한 슬럼프를 극복하게 해주는 나연 멘토님",
-    label: 0,
+    mentoring: ["슬럼프 극복", "진선여고 내신", "성적 급상승"],
+    label: 1,
+    labelNum: 3,
+    sort: 5,
   },
 
   {
@@ -144,7 +183,10 @@ const mentors = [
     eng: "jiyoon",
     oneWord:
       "선택과 집중으로 1학년 내신 2.87이었던 개포고 학생부를 완벽하게 해결한 지윤 멘토님",
+    mentoring: ["개포고 내신", "성적 급상승", "학생부 전문"],
     label: 0,
+    labelNum: 4,
+    sort: 4,
   },
 
   {
@@ -155,18 +197,24 @@ const mentors = [
     method: "정시 전형",
     eng: "siyeon",
     oneWord: "모든 과목 공부법을 완벽하게 알려주는 시연 멘토님",
+    mentoring: ["과목별 공부법", "중산고 내신", "성적 상승 곡선"],
     label: 0,
+    labelNum: 4,
+    sort: 6,
   },
 
   {
     name: "고혜준",
     gender: "여",
     univ: "서울대 의예과 20학번",
-    high: "중대부고등학교 졸업",
+    high: "대부고등학교 졸업",
     method: "학생부 종합 전형",
     eng: "hyejun",
     oneWord: "슬럼프를 극복해 서울대 의대에 진학한 혜준 멘토님",
-    label: 0,
+    mentoring: ["서울대 의대", "슬럼프 극복", "과목별 공부법"],
+    label: 1,
+    labelNum: 2,
+    sort: 6,
   },
 
   {
@@ -177,7 +225,10 @@ const mentors = [
     method: "학생부 종합 전형",
     eng: "seotack",
     oneWord: "단대부고의 내신과 학생부를 완벽하게 해결해주는 서택 멘토님",
-    label: 0,
+    mentoring: ["단대부고 내신", "학생부 전문", "친 형 같은"],
+    label: 1,
+    labelNum: 2,
+    sort: 3,
   },
 
   {
@@ -188,7 +239,10 @@ const mentors = [
     method: "학생부 종합 전형",
     eng: "seunghwan",
     oneWord: "친근한 형처럼 다가가지만, 확실하게 알려주는 승환 멘토님",
-    label: 0,
+    mentoring: ["정시 수시 동시", "단대부고 내신", "과목별 학습법"],
+    label: 1,
+    labelNum: 1,
+    sort: 3,
   },
 
   {
@@ -199,990 +253,510 @@ const mentors = [
     method: "정시 전형",
     eng: "sangha",
     oneWord: "휘문고에서 정시와 수시 모두로 의예과에 진학한 상하 멘토님",
-    label: 0,
+    mentoring: ["연세대 의대", "정시 수시 동시", "학습 습관 관리"],
+    label: 1,
+    labelNum: 3,
+    sort: 1,
   },
 ];
 
 // 멘토 리스트
+let whimoon = [];
+let sookmyungW = [];
+let dandae = [];
+let gaepo = [];
+let jinsunW = [];
+let otherH = [];
+
+for (let k = 0; k < 18; k++) {
+  if (mentors[k].sort === 1) {
+    whimoon.push(mentors[k]);
+  } else if (mentors[k].sort === 2) {
+    sookmyungW.push(mentors[k]);
+  } else if (mentors[k].sort === 3) {
+    dandae.push(mentors[k]);
+  } else if (mentors[k].sort === 4) {
+    gaepo.push(mentors[k]);
+  } else if (mentors[k].sort === 5) {
+    jinsunW.push(mentors[k]);
+  } else if (mentors[k].sort === 6) {
+    otherH.push(mentors[k]);
+  }
+}
+
+Array.prototype.shuffle = function () {
+  var length = this.length;
+  while (length) {
+    var index = Math.floor(length-- * Math.random());
+    var temp = this[length];
+    this[length] = this[index];
+    this[index] = temp;
+  }
+  return this;
+};
+
+whimoon.shuffle();
+sookmyungW.shuffle();
+dandae.shuffle();
+gaepo.shuffle();
+jinsunW.shuffle();
+otherH.shuffle();
+
+let whimoonResult = `<div class="result__title">휘문고 출신 멘토들 보기</div>`;
+let sookmyungWResult = `<div class="result__title">숙명여고 출신 멘토들 보기</div>`;
+let dandaeResult = `<div class="result__title">단대부고 출신 멘토들 보기</div>`;
+let gaepoResult = `<div class="result__title">개포고 출신 멘토들 보기</div>`;
+let jinsunWResult = `<div class="result__title">진선여고 출신 멘토들 보기</div>`;
+let otherHResult = `<div class="result__title">다른 대치동 출신 멘토들 보기</div>`;
+
+let schoolMentorList = [
+  "whimoon",
+  "sookmyungW",
+  "dandae",
+  "gaepo",
+  "jinsunW",
+  "otherH",
+];
+
+for (let q = 0; q < whimoon.length; q++) {
+  whimoonResult =
+    whimoonResult +
+    `
+<div class="mentor__simple">
+${
+  whimoon[q].label === 0
+    ? `<div class="label__style1">
+    모집중
+  </div>`
+    : `<div class="label__style2">
+    마감임박! <span class="label__extra">${whimoon[q].labelNum}자리 남았어요!</span>
+  </div>`
+}
+  <div class="nr__upper ${whimoon[q].eng}">
+    <div class="nr__column">
+      <img src="./img/${whimoon[q].eng}.jpeg" class="nr__img" />
+    </div>
+    <div class="nr__column">
+      <div class="nr__info__name">${whimoon[q].name} 멘토님 (${
+      whimoon[q].gender
+    })</div>
+      <div class="nr__info__uni">
+        <i class="fas fa-graduation-cap"></i> ${whimoon[q].univ}
+      </div>
+      <div class="nr__info__sch">
+        <i class="fas fa-school"></i> ${whimoon[q].high}
+      </div>
+      <div class="nr__info__sch">
+        <i class="fas fa-book-open"></i> ${whimoon[q].method}
+      </div>
+    </div>
+  </div>
+  <div class="nr__lower">
+    <div class="mentor__class__title">
+      <div class="mentor__class__title__upper">
+        <div class="title__upper__title">
+        ${whimoon[q].oneWord}
+        </div>
+        <div class="title__upper__mentoring">
+          <span class="mentoring__style"># ${whimoon[q].mentoring[0]}</span>
+          <span class="mentoring__style"># ${whimoon[q].mentoring[1]}</span>
+          <span class="mentoring__style"># ${whimoon[q].mentoring[2]}</span>
+        </div>
+      </div>
+      <div class="content__column__detail">
+        멘토님 이력 자세히 보기 <i class="fas fa-chevron-right"></i>
+      </div>
+    </div>
+  </div>
+</div>`;
+}
+for (let q = 0; q < sookmyungW.length; q++) {
+  sookmyungWResult =
+    sookmyungWResult +
+    `
+<div class="mentor__simple">
+${
+  sookmyungW[q].label === 0
+    ? `<div class="label__style1">
+    모집중
+  </div>`
+    : `<div class="label__style2">
+    마감임박! <span class="label__extra">${sookmyungW[q].labelNum}자리 남았어요!</span>
+  </div>`
+}
+  <div class="nr__upper ${sookmyungW[q].eng}">
+    <div class="nr__column">
+      <img src="./img/${sookmyungW[q].eng}.jpeg" class="nr__img" />
+    </div>
+    <div class="nr__column">
+      <div class="nr__info__name">${sookmyungW[q].name} 멘토님 (${
+      sookmyungW[q].gender
+    })</div>
+      <div class="nr__info__uni">
+        <i class="fas fa-graduation-cap"></i> ${sookmyungW[q].univ}
+      </div>
+      <div class="nr__info__sch">
+        <i class="fas fa-school"></i> ${sookmyungW[q].high}
+      </div>
+      <div class="nr__info__sch">
+        <i class="fas fa-book-open"></i> ${sookmyungW[q].method}
+      </div>
+    </div>
+  </div>
+  <div class="nr__lower">
+    <div class="mentor__class__title">
+      <div class="mentor__class__title__upper">
+        <div class="title__upper__title">
+        ${sookmyungW[q].oneWord}
+        </div>
+        <div class="title__upper__mentoring">
+          <span class="mentoring__style"># ${sookmyungW[q].mentoring[0]}</span>
+          <span class="mentoring__style"># ${sookmyungW[q].mentoring[1]}</span>
+          <span class="mentoring__style"># ${sookmyungW[q].mentoring[2]}</span>
+        </div>
+      </div>
+      <div class="content__column__detail">
+        멘토님 이력 자세히 보기 <i class="fas fa-chevron-right"></i>
+      </div>
+    </div>
+  </div>
+</div>`;
+}
+for (let q = 0; q < dandae.length; q++) {
+  dandaeResult =
+    dandaeResult +
+    `
+<div class="mentor__simple">
+${
+  dandae[q].label === 0
+    ? `<div class="label__style1">
+    모집중
+  </div>`
+    : `<div class="label__style2">
+    마감임박! <span class="label__extra">${dandae[q].labelNum}자리 남았어요!</span>
+  </div>`
+}
+  <div class="nr__upper ${dandae[q].eng}">
+    <div class="nr__column">
+      <img src="./img/${dandae[q].eng}.jpeg" class="nr__img" />
+    </div>
+    <div class="nr__column">
+      <div class="nr__info__name">${dandae[q].name} 멘토님 (${
+      dandae[q].gender
+    })</div>
+      <div class="nr__info__uni">
+        <i class="fas fa-graduation-cap"></i> ${dandae[q].univ}
+      </div>
+      <div class="nr__info__sch">
+        <i class="fas fa-school"></i> ${dandae[q].high}
+      </div>
+      <div class="nr__info__sch">
+        <i class="fas fa-book-open"></i> ${dandae[q].method}
+      </div>
+    </div>
+  </div>
+  <div class="nr__lower">
+    <div class="mentor__class__title">
+      <div class="mentor__class__title__upper">
+        <div class="title__upper__title">
+        ${dandae[q].oneWord}
+        </div>
+        <div class="title__upper__mentoring">
+          <span class="mentoring__style"># ${dandae[q].mentoring[0]}</span>
+          <span class="mentoring__style"># ${dandae[q].mentoring[1]}</span>
+          <span class="mentoring__style"># ${dandae[q].mentoring[2]}</span>
+        </div>
+      </div>
+      <div class="content__column__detail">
+        멘토님 이력 자세히 보기 <i class="fas fa-chevron-right"></i>
+      </div>
+    </div>
+  </div>
+</div>`;
+}
+for (let q = 0; q < gaepo.length; q++) {
+  gaepoResult =
+    gaepoResult +
+    `
+<div class="mentor__simple">
+${
+  gaepo[q].label === 0
+    ? `<div class="label__style1">
+    모집중
+  </div>`
+    : `<div class="label__style2">
+    마감임박! <span class="label__extra">${gaepo[q].labelNum}자리 남았어요!</span>
+  </div>`
+}
+  <div class="nr__upper ${gaepo[q].eng}">
+    <div class="nr__column">
+      <img src="./img/${gaepo[q].eng}.jpeg" class="nr__img" />
+    </div>
+    <div class="nr__column">
+      <div class="nr__info__name">${gaepo[q].name} 멘토님 (${
+      gaepo[q].gender
+    })</div>
+      <div class="nr__info__uni">
+        <i class="fas fa-graduation-cap"></i> ${gaepo[q].univ}
+      </div>
+      <div class="nr__info__sch">
+        <i class="fas fa-school"></i> ${gaepo[q].high}
+      </div>
+      <div class="nr__info__sch">
+        <i class="fas fa-book-open"></i> ${gaepo[q].method}
+      </div>
+    </div>
+  </div>
+  <div class="nr__lower">
+    <div class="mentor__class__title">
+      <div class="mentor__class__title__upper">
+        <div class="title__upper__title">
+        ${gaepo[q].oneWord}
+        </div>
+        <div class="title__upper__mentoring">
+          <span class="mentoring__style"># ${gaepo[q].mentoring[0]}</span>
+          <span class="mentoring__style"># ${gaepo[q].mentoring[1]}</span>
+          <span class="mentoring__style"># ${gaepo[q].mentoring[2]}</span>
+        </div>
+      </div>
+      <div class="content__column__detail">
+        멘토님 이력 자세히 보기 <i class="fas fa-chevron-right"></i>
+      </div>
+    </div>
+  </div>
+</div>`;
+}
+for (let q = 0; q < jinsunW.length; q++) {
+  jinsunWResult =
+    jinsunWResult +
+    `
+<div class="mentor__simple">
+${
+  jinsunW[q].label === 0
+    ? `<div class="label__style1">
+    모집중
+  </div>`
+    : `<div class="label__style2">
+    마감임박! <span class="label__extra">${jinsunW[q].labelNum}자리 남았어요!</span>
+  </div>`
+}
+  <div class="nr__upper ${jinsunW[q].eng}">
+    <div class="nr__column">
+      <img src="./img/${jinsunW[q].eng}.jpeg" class="nr__img" />
+    </div>
+    <div class="nr__column">
+      <div class="nr__info__name">${jinsunW[q].name} 멘토님 (${
+      jinsunW[q].gender
+    })</div>
+      <div class="nr__info__uni">
+        <i class="fas fa-graduation-cap"></i> ${jinsunW[q].univ}
+      </div>
+      <div class="nr__info__sch">
+        <i class="fas fa-school"></i> ${jinsunW[q].high}
+      </div>
+      <div class="nr__info__sch">
+        <i class="fas fa-book-open"></i> ${jinsunW[q].method}
+      </div>
+    </div>
+  </div>
+  <div class="nr__lower">
+    <div class="mentor__class__title">
+      <div class="mentor__class__title__upper">
+        <div class="title__upper__title">
+        ${jinsunW[q].oneWord}
+        </div>
+        <div class="title__upper__mentoring">
+          <span class="mentoring__style"># ${jinsunW[q].mentoring[0]}</span>
+          <span class="mentoring__style"># ${jinsunW[q].mentoring[1]}</span>
+          <span class="mentoring__style"># ${jinsunW[q].mentoring[2]}</span>
+        </div>
+      </div>
+      <div class="content__column__detail">
+        멘토님 이력 자세히 보기 <i class="fas fa-chevron-right"></i>
+      </div>
+    </div>
+  </div>
+</div>`;
+}
+for (let q = 0; q < otherH.length; q++) {
+  otherHResult =
+    otherHResult +
+    `
+<div class="mentor__simple">
+${
+  otherH[q].label === 0
+    ? `<div class="label__style1">
+    모집중
+  </div>`
+    : `<div class="label__style2">
+    마감임박! <span class="label__extra">${otherH[q].labelNum}자리 남았어요!</span>
+  </div>`
+}
+  <div class="nr__upper ${otherH[q].eng}">
+    <div class="nr__column">
+      <img src="./img/${otherH[q].eng}.jpeg" class="nr__img" />
+    </div>
+    <div class="nr__column">
+      <div class="nr__info__name">${otherH[q].name} 멘토님 (${
+      otherH[q].gender
+    })</div>
+      <div class="nr__info__uni">
+        <i class="fas fa-graduation-cap"></i> ${otherH[q].univ}
+      </div>
+      <div class="nr__info__sch">
+        <i class="fas fa-school"></i> ${otherH[q].high}
+      </div>
+      <div class="nr__info__sch">
+        <i class="fas fa-book-open"></i> ${otherH[q].method}
+      </div>
+    </div>
+  </div>
+  <div class="nr__lower">
+    <div class="mentor__class__title">
+      <div class="mentor__class__title__upper">
+        <div class="title__upper__title">
+        ${otherH[q].oneWord}
+        </div>
+        <div class="title__upper__mentoring">
+          <span class="mentoring__style"># ${otherH[q].mentoring[0]}</span>
+          <span class="mentoring__style"># ${otherH[q].mentoring[1]}</span>
+          <span class="mentoring__style"># ${otherH[q].mentoring[2]}</span>
+        </div>
+      </div>
+      <div class="content__column__detail">
+        멘토님 이력 자세히 보기 <i class="fas fa-chevron-right"></i>
+      </div>
+    </div>
+  </div>
+</div>`;
+}
+
+const resultList = [
+  whimoonResult,
+  sookmyungWResult,
+  dandaeResult,
+  gaepoResult,
+  jinsunWResult,
+  otherHResult,
+];
 
 const result = document.querySelector(".result");
 const resultPage = document.querySelector(".result__page__wrap");
-
 const mentorLen = mentors.length;
 
 const temp = location.href.split("?");
-const forResult = parseInt(temp[1].split(":")[1], 10);
-let resultNum = 0;
 const school = temp[1].split(":")[1];
 const schoolResult = parseInt(school.split(``)[0], 10);
 
-let resultTemp = "";
-let resultNum3 = "";
-let resultNum2 = "";
-let resultNum1 = "";
+console.log(schoolResult);
+
+let resultSchoolNum = 0;
 
 if (schoolResult === 1) {
-  resultTemp = 3;
-  resultSchool = "휘문고";
-  resultNum1 = 0;
-  resultNum2 = 4;
-  resultNum3 = 17;
-} else if (schoolResult === 3) {
-  resultTemp = 0;
-  resultSchool = "단대부고";
-  resultNum1 = 15;
-  resultNum2 = 16;
-} else if (schoolResult === 4) {
-  resultTemp = 0;
-  resultSchool = "개포고";
-  resultNum1 = 6;
-  resultNum2 = 12;
-} else if (schoolResult === 5) {
-  resultTemp = 0;
-  resultSchool = "진선여고";
-  resultNum1 = 2;
-  resultNum2 = 11;
+  resultSchoolNum = 0;
 } else if (schoolResult === 2) {
-  resultTemp = 1;
-  resultSchool = "숙명여고";
-  resultNum1 = 8;
-  resultNum2 = 10;
-  resultNum3 = 9;
-  resultNum4 = 7;
+  resultSchoolNum = 1;
+} else if (schoolResult === 3) {
+  resultSchoolNum = 2;
+} else if (schoolResult === 4) {
+  resultSchoolNum = 3;
+} else if (schoolResult === 5) {
+  resultSchoolNum = 4;
 } else if (schoolResult === 6) {
-  resultTemp = 2;
+  resultSchoolNum = 5;
 }
 
-let randomNum1 = Math.floor(Math.random() * mentorLen);
-let randomNum2 = Math.floor(Math.random() * mentorLen);
-let randomNum3 = Math.floor(Math.random() * mentorLen);
-let randomNum4 = Math.floor(Math.random() * mentorLen);
+let resultListLength = resultList.length;
 
-for (var i = 0; i < 40; i++) {
-  if (
-    randomNum1 !== randomNum2 &&
-    resultNum1 !== randomNum2 &&
-    resultNum1 !== randomNum1 &&
-    resultNum2 !== randomNum2 &&
-    resultNum2 !== randomNum1 &&
-    resultNum3 !== randomNum1 &&
-    resultNum3 !== randomNum2 &&
-    randomNum1 !== randomNum3 &&
-    randomNum1 !== randomNum4 &&
-    randomNum2 !== randomNum3 &&
-    randomNum2 !== randomNum4 &&
-    randomNum3 !== randomNum4
-  ) {
-    console.log(
-      resultNum1,
-      resultNum2,
-      resultNum3,
-      randomNum1,
-      randomNum2,
-      randomNum3,
-      randomNum4
-    );
+let randomNum = Math.floor(Math.random() * resultListLength);
+
+for (var i = 0; i < 10; i++) {
+  if (resultSchoolNum !== randomNum) {
     break;
   }
-  randomNum2 = Math.floor(Math.random() * mentorLen);
-  randomNum1 = Math.floor(Math.random() * mentorLen);
-  randomNum3 = Math.floor(Math.random() * mentorLen);
-  randomNum4 = Math.floor(Math.random() * mentorLen);
-  console.log(
-    resultNum1,
-    resultNum2,
-    resultNum3,
-    randomNum1,
-    randomNum2,
-    randomNum3,
-    randomNum4
-  );
+  randomNum = Math.floor(Math.random() * resultListLength);
 }
 
-const a = Math.random() * mentorLen;
+result.innerHTML = resultList[resultSchoolNum] + resultList[randomNum];
 
-function handleResult() {
-  if (resultTemp === 0) {
-    result.innerHTML = `
-    <div class="new__result">
-    <div class="result__title">${resultSchool} 출신 멘토들</div>
-    <div class="result__comment">
-${mentors[resultNum1].oneWord}
-    </div>
-    <div class="nr__upper ${mentors[resultNum1].eng}">
-      <div class="nr__column">
-        <img src="./img/${
-          mentors[resultNum1].eng
-        }.jpeg" alt="" class="nr__img" />
-      </div>
-      <div class="nr__column">
-        <div class="nr__info__name">${mentors[resultNum1].name} 멘토님 (${
-      mentors[resultNum1].gender
-    })</div>
-        <div class="nr__info__uni">
-          <i class="fas fa-graduation-cap"></i> ${mentors[resultNum1].univ}
-        </div>
-        <div class="nr__info__sch">
-          <i class="fas fa-school"></i> ${mentors[resultNum1].high}
-        </div>
-        <div class="nr__info__sch">
-          <i class="fas fa-book-open"></i> ${mentors[resultNum1].method}
-        </div>
-      </div>
-    </div>
-    <div class="mentor__class__title">
-      <div class="mentor__class__title__upper">
-        <span class="title__mentoring">[작심삼일 1:1 멘토링]</span>
-        ${
-          mentors[resultNum1].label === 0
-            ? `<div class="title__mentoring__ing">모집중</div>`
-            : mentors[resultNum1].label === 1
-            ? `<div class="title__mentoring__complete">마감임박</div>`
-            : `<div class="title__mentoring__end">마감</div>`
-        }
-      </div>
-      3일마다 <공부 습관, 학생부, 동기부여> 온라인 관리
-      <div class="content__column__detail">
-        멘토님 이력 자세히 보기 <i class="fas fa-chevron-right"></i>
-      </div>
-    </div>
-    <div class="result__comment ">
-${mentors[resultNum2].oneWord}
-    </div>
-    <div class="nr__upper ${mentors[resultNum2].eng}">
-      <div class="nr__column">
-        <img src="./img/${
-          mentors[resultNum2].eng
-        }.jpeg" alt="" class="nr__img" />
-      </div>
-      <div class="nr__column">
-        <div class="nr__info__name">${mentors[resultNum2].name} 멘토님 (${
-      mentors[resultNum2].gender
-    })</div>
-        <div class="nr__info__uni">
-          <i class="fas fa-graduation-cap"></i> ${mentors[resultNum2].univ}
-        </div>
-        <div class="nr__info__sch">
-          <i class="fas fa-school"></i> ${mentors[resultNum2].high}
-        </div>
-        <div class="nr__info__sch">
-          <i class="fas fa-book-open"></i> ${mentors[resultNum2].method}
-        </div>
-      </div>
-    </div>
-    <div class="mentor__class__title">
-      <div class="mentor__class__title__upper">
-        <span class="title__mentoring">[작심삼일 1:1 멘토링]</span>
-        ${
-          mentors[resultNum2].label === 0
-            ? `<div class="title__mentoring__ing">모집중</div>`
-            : mentors[resultNum2].label === 1
-            ? `<div class="title__mentoring__complete">마감임박</div>`
-            : `<div class="title__mentoring__end">마감</div>`
-        }
-      </div>
-      3일마다 <공부 습관, 학생부, 동기부여> 온라인 관리
-      <div class="content__column__detail">
-        멘토님 이력 자세히 보기 <i class="fas fa-chevron-right"></i>
-      </div>
-    </div>
-    
-  </div>
-  <div class="result__title">강남 8학군 출신 멘토들</div>
-  <div class="select1"></div>
-  <div class="select2"></div>
-  <div class="result__title">서울대 의대 수석 멘토</div>
-  <div class="result__comment">
-    운동선수에서 서울대 의대 수석이 된 규민 멘토님
-  </div>
-  <div class="nr__upper kyumin.eng}">
-    <div class="nr__column">
-      <img src="./img/kyumin.jpeg" alt="" class="nr__img" />
-    </div>
-    <div class="nr__column">
-      <div class="nr__info__name">김규민 멘토님 (남)</div>
-      <div class="nr__info__uni">
-        <i class="fas fa-graduation-cap"></i> 서울대 의예과 19학번
-      </div>
-      <div class="nr__info__sch">
-        <i class="fas fa-school"></i> 백영고 (일반고) 졸
-      </div>
-      <div class="nr__info__sch">
-        <i class="fas fa-book-open"></i> 수시 수석 입학
-      </div>
-    </div>
-  </div>
-  <div class="mentor__class__title">
-    <div class="mentor__class__title__upper">
-      <span class="title__mentoring">[작심삼일 1:1 멘토링]</span>
-      <div class="title__mentoring__ing">모집중</div>
-    </div>
-    3일마다 <공부 습관, 학생부, 동기부여> 온라인 관리
-    <div class="content__column__detail">
-      멘토님 이력 자세히 보기 <i class="fas fa-chevron-right"></i>
-    </div>
-  </div>
-`;
-  } else if (resultTemp === 1) {
-    result.innerHTML = `
-    <div class="new__result">
-    <div class="result__title">${resultSchool} 출신 멘토들</div>
-    <div class="result__comment">
-${mentors[resultNum1].oneWord}
-    </div>
-    <div class="nr__upper ${mentors[resultNum1].eng}">
-      <div class="nr__column">
-        <img src="./img/${
-          mentors[resultNum1].eng
-        }.jpeg" alt="" class="nr__img" />
-      </div>
-      <div class="nr__column">
-        <div class="nr__info__name">${mentors[resultNum1].name} 멘토님 (${
-      mentors[resultNum1].gender
-    })</div>
-        <div class="nr__info__uni">
-          <i class="fas fa-graduation-cap"></i> ${mentors[resultNum1].univ}
-        </div>
-        <div class="nr__info__sch">
-          <i class="fas fa-school"></i> ${mentors[resultNum1].high}
-        </div>
-        <div class="nr__info__sch">
-          <i class="fas fa-book-open"></i> ${mentors[resultNum1].method}
-        </div>
-      </div>
-    </div>
-    <div class="mentor__class__title">
-      <div class="mentor__class__title__upper">
-        <span class="title__mentoring">[작심삼일 1:1 멘토링]</span>
-        ${
-          mentors[resultNum1].label === 0
-            ? `<div class="title__mentoring__ing">모집중</div>`
-            : mentors[resultNum1].label === 1
-            ? `<div class="title__mentoring__complete">마감임박</div>`
-            : `<div class="title__mentoring__end">마감</div>`
-        }
-      </div>
-      3일마다 <공부 습관, 학생부, 동기부여> 온라인 관리
-      <div class="content__column__detail">
-        멘토님 이력 자세히 보기 <i class="fas fa-chevron-right"></i>
-      </div>
-    </div>
-    <div class="result__comment">
-${mentors[resultNum2].oneWord}
-    </div>
-    <div class="nr__upper ${mentors[resultNum2].eng}">
-      <div class="nr__column">
-        <img src="./img/${
-          mentors[resultNum2].eng
-        }.jpeg" alt="" class="nr__img" />
-      </div>
-      <div class="nr__column">
-        <div class="nr__info__name">${mentors[resultNum2].name} 멘토님 (${
-      mentors[resultNum2].gender
-    })</div>
-        <div class="nr__info__uni">
-          <i class="fas fa-graduation-cap"></i> ${mentors[resultNum2].univ}
-        </div>
-        <div class="nr__info__sch">
-          <i class="fas fa-school"></i> ${mentors[resultNum2].high}
-        </div>
-        <div class="nr__info__sch">
-          <i class="fas fa-book-open"></i> ${mentors[resultNum2].method}
-        </div>
-      </div>
-    </div>
-    <div class="mentor__class__title">
-      <div class="mentor__class__title__upper">
-        <span class="title__mentoring">[작심삼일 1:1 멘토링]</span>
-        ${
-          mentors[resultNum2].label === 0
-            ? `<div class="title__mentoring__ing">모집중</div>`
-            : mentors[resultNum2].label === 1
-            ? `<div class="title__mentoring__complete">마감임박</div>`
-            : `<div class="title__mentoring__end">마감</div>`
-        }
-      </div>
-      3일마다 <공부 습관, 학생부, 동기부여> 온라인 관리
-      <div class="content__column__detail">
-        멘토님 이력 자세히 보기 <i class="fas fa-chevron-right"></i>
-      </div>
-    </div>
-    <div class="result__comment">
-${mentors[resultNum3].oneWord}
-    </div>
-    <div class="nr__upper ${mentors[resultNum3].eng}">
-      <div class="nr__column">
-        <img src="./img/${
-          mentors[resultNum3].eng
-        }.jpeg" alt="" class="nr__img" />
-      </div>
-      <div class="nr__column">
-        <div class="nr__info__name">${mentors[resultNum3].name} 멘토님 (${
-      mentors[resultNum3].gender
-    })</div>
-        <div class="nr__info__uni">
-          <i class="fas fa-graduation-cap"></i> ${mentors[resultNum3].univ}
-        </div>
-        <div class="nr__info__sch">
-          <i class="fas fa-school"></i> ${mentors[resultNum3].high}
-        </div>
-        <div class="nr__info__sch">
-          <i class="fas fa-book-open"></i> ${mentors[resultNum3].method}
-        </div>
-      </div>
-    </div>
-    <div class="mentor__class__title">
-      <div class="mentor__class__title__upper">
-        <span class="title__mentoring">[작심삼일 1:1 멘토링]</span>
-        ${
-          mentors[resultNum3].label === 0
-            ? `<div class="title__mentoring__ing">모집중</div>`
-            : mentors[resultNum3].label === 1
-            ? `<div class="title__mentoring__complete">마감임박</div>`
-            : `<div class="title__mentoring__end">마감</div>`
-        }
-      </div>
-      3일마다 <공부 습관, 학생부, 동기부여> 온라인 관리
-      <div class="content__column__detail">
-        멘토님 이력 자세히 보기 <i class="fas fa-chevron-right"></i>
-      </div>
-    </div>
-    <div class="result__comment">
-${mentors[resultNum4].oneWord}
-    </div>
-    <div class="nr__upper ${mentors[resultNum4].eng}">
-      <div class="nr__column">
-        <img src="./img/${
-          mentors[resultNum4].eng
-        }.jpeg" alt="" class="nr__img" />
-      </div>
-      <div class="nr__column">
-        <div class="nr__info__name">${mentors[resultNum4].name} 멘토님 (${
-      mentors[resultNum4].gender
-    })</div>
-        <div class="nr__info__uni">
-          <i class="fas fa-graduation-cap"></i> ${mentors[resultNum4].univ}
-        </div>
-        <div class="nr__info__sch">
-          <i class="fas fa-school"></i> ${mentors[resultNum4].high}
-        </div>
-        <div class="nr__info__sch">
-          <i class="fas fa-book-open"></i> ${mentors[resultNum4].method}
-        </div>
-      </div>
-    </div>
-    <div class="mentor__class__title">
-      <div class="mentor__class__title__upper">
-        <span class="title__mentoring">[작심삼일 1:1 멘토링]</span>
-        ${
-          mentors[resultNum4].label === 0
-            ? `<div class="title__mentoring__ing">모집중</div>`
-            : mentors[resultNum4].label === 1
-            ? `<div class="title__mentoring__complete">마감임박</div>`
-            : `<div class="title__mentoring__end">마감</div>`
-        }
-      </div>
-      3일마다 <공부 습관, 학생부, 동기부여> 온라인 관리
-      <div class="content__column__detail">
-        멘토님 이력 자세히 보기 <i class="fas fa-chevron-right"></i>
-      </div>
-    </div>
-    <div class="result__title">서울대 의대 수석 멘토</div>
-    <div class="result__comment">
-      운동선수에서 서울대 의대 수석이 된 규민 멘토님
-    </div>
-    <div class="nr__upper kyumin.eng}">
-      <div class="nr__column">
-        <img src="./img/kyumin.jpeg" alt="" class="nr__img" />
-      </div>
-      <div class="nr__column">
-        <div class="nr__info__name">김규민 멘토님 (남)</div>
-        <div class="nr__info__uni">
-          <i class="fas fa-graduation-cap"></i> 서울대 의예과 19학번
-        </div>
-        <div class="nr__info__sch">
-          <i class="fas fa-school"></i> 백영고 (일반고) 졸
-        </div>
-        <div class="nr__info__sch">
-          <i class="fas fa-book-open"></i> 수시 수석 입학
-        </div>
-      </div>
-    </div>
-    <div class="mentor__class__title">
-      <div class="mentor__class__title__upper">
-        <span class="title__mentoring">[작심삼일 1:1 멘토링]</span>
-        <div class="title__mentoring__ing">모집중</div>
-      </div>
-      3일마다 <공부 습관, 학생부, 동기부여> 온라인 관리
-      <div class="content__column__detail">
-        멘토님 이력 자세히 보기 <i class="fas fa-chevron-right"></i>
-      </div>
-    </div>`;
-  } else if (resultTemp === 2) {
-    result.innerHTML = `
-    <div class="new__result">
-    <div class="result__title">강남 8학군 출신 멘토들</div>
-    <div class="result__comment">
-    ${mentors[randomNum1].oneWord}
-        </div>
-        <div class="nr__upper ${mentors[randomNum1].eng}">
-          <div class="nr__column">
-            <img src="./img/${
-              mentors[randomNum1].eng
-            }.jpeg" alt="" class="nr__img" />
-          </div>
-          <div class="nr__column">
-            <div class="nr__info__name">${mentors[randomNum1].name} 멘토님 (${
-      mentors[randomNum1].gender
-    })</div>
-            <div class="nr__info__uni">
-              <i class="fas fa-graduation-cap"></i> ${mentors[randomNum1].univ}
-            </div>
-            <div class="nr__info__sch">
-              <i class="fas fa-school"></i> ${mentors[randomNum1].high}
-            </div>
-            <div class="nr__info__sch">
-              <i class="fas fa-book-open"></i> ${mentors[randomNum1].method}
-            </div>
-          </div>
-        </div>
-        <div class="mentor__class__title">
-          <div class="mentor__class__title__upper">
-            <span class="title__mentoring">[작심삼일 1:1 멘토링]</span>
-            ${
-              mentors[randomNum1].label === 0
-                ? `<div class="title__mentoring__ing">모집중</div>`
-                : mentors[randomNum1].label === 1
-                ? `<div class="title__mentoring__complete">마감임박</div>`
-                : `<div class="title__mentoring__end">마감</div>`
-            }
-          </div>
-          3일마다 <공부 습관, 학생부, 동기부여> 온라인 관리
-          <div class="content__column__detail">
-            멘토님 이력 자세히 보기 <i class="fas fa-chevron-right"></i>
-          </div>
-        </div>
-        <div class="result__comment">
-    ${mentors[randomNum2].oneWord}
-        </div>
-        <div class="nr__upper ${mentors[randomNum2].eng}">
-          <div class="nr__column">
-            <img src="./img/${
-              mentors[randomNum2].eng
-            }.jpeg" alt="" class="nr__img" />
-          </div>
-          <div class="nr__column">
-            <div class="nr__info__name">${mentors[randomNum2].name} 멘토님 (${
-      mentors[randomNum2].gender
-    })</div>
-            <div class="nr__info__uni">
-              <i class="fas fa-graduation-cap"></i> ${mentors[randomNum2].univ}
-            </div>
-            <div class="nr__info__sch">
-              <i class="fas fa-school"></i> ${mentors[randomNum2].high}
-            </div>
-            <div class="nr__info__sch">
-              <i class="fas fa-book-open"></i> ${mentors[randomNum2].method}
-            </div>
-          </div>
-        </div>
-        <div class="mentor__class__title">
-          <div class="mentor__class__title__upper">
-            <span class="title__mentoring">[작심삼일 1:1 멘토링]</span>
-            ${
-              mentors[randomNum2].label === 0
-                ? `<div class="title__mentoring__ing">모집중</div>`
-                : mentors[randomNum2].label === 1
-                ? `<div class="title__mentoring__complete">마감임박</div>`
-                : `<div class="title__mentoring__end">마감</div>`
-            }
-          </div>
-          3일마다 <공부 습관, 학생부, 동기부여> 온라인 관리
-          <div class="content__column__detail">
-            멘토님 이력 자세히 보기 <i class="fas fa-chevron-right"></i>
-          </div>
-        </div>
-        <div class="result__comment">
-    ${mentors[randomNum3].oneWord}
-        </div>
-        <div class="nr__upper ${mentors[randomNum3].eng}">
-          <div class="nr__column">
-            <img src="./img/${
-              mentors[randomNum3].eng
-            }.jpeg" alt="" class="nr__img" />
-          </div>
-          <div class="nr__column">
-            <div class="nr__info__name">${mentors[randomNum3].name} 멘토님 (${
-      mentors[randomNum3].gender
-    })</div>
-            <div class="nr__info__uni">
-              <i class="fas fa-graduation-cap"></i> ${mentors[randomNum3].univ}
-            </div>
-            <div class="nr__info__sch">
-              <i class="fas fa-school"></i> ${mentors[randomNum3].high}
-            </div>
-            <div class="nr__info__sch">
-              <i class="fas fa-book-open"></i> ${mentors[randomNum3].method}
-            </div>
-          </div>
-        </div>
-        <div class="mentor__class__title">
-          <div class="mentor__class__title__upper">
-            <span class="title__mentoring">[작심삼일 1:1 멘토링]</span>
-            ${
-              mentors[randomNum3].label === 0
-                ? `<div class="title__mentoring__ing">모집중</div>`
-                : mentors[randomNum3].label === 1
-                ? `<div class="title__mentoring__complete">마감임박</div>`
-                : `<div class="title__mentoring__end">마감</div>`
-            }
-          </div>
-          3일마다 <공부 습관, 학생부, 동기부여> 온라인 관리
-          <div class="content__column__detail">
-            멘토님 이력 자세히 보기 <i class="fas fa-chevron-right"></i>
-          </div>
-        </div>
-        <div class="result__comment">
-    ${mentors[randomNum4].oneWord}
-        </div>
-        <div class="nr__upper ${mentors[randomNum4].eng}">
-          <div class="nr__column">
-            <img src="./img/${
-              mentors[randomNum4].eng
-            }.jpeg" alt="" class="nr__img" />
-          </div>
-          <div class="nr__column">
-            <div class="nr__info__name">${mentors[randomNum4].name} 멘토님 (${
-      mentors[randomNum4].gender
-    })</div>
-            <div class="nr__info__uni">
-              <i class="fas fa-graduation-cap"></i> ${mentors[randomNum4].univ}
-            </div>
-            <div class="nr__info__sch">
-              <i class="fas fa-school"></i> ${mentors[randomNum4].high}
-            </div>
-            <div class="nr__info__sch">
-              <i class="fas fa-book-open"></i> ${mentors[randomNum4].method}
-            </div>
-          </div>
-        </div>
-        <div class="mentor__class__title">
-          <div class="mentor__class__title__upper">
-            <span class="title__mentoring">[작심삼일 1:1 멘토링]</span>
-            ${
-              mentors[randomNum4].label === 0
-                ? `<div class="title__mentoring__ing">모집중</div>`
-                : mentors[randomNum4].label === 1
-                ? `<div class="title__mentoring__complete">마감임박</div>`
-                : `<div class="title__mentoring__end">마감</div>`
-            }
-          </div>
-          3일마다 <공부 습관, 학생부, 동기부여> 온라인 관리
-          <div class="content__column__detail">
-            멘토님 이력 자세히 보기 <i class="fas fa-chevron-right"></i>
-          </div>
-        </div>
-        <div class="result__title">서울대 의대 수석 멘토</div>
-        <div class="result__comment">
-          운동선수에서 서울대 의대 수석이 된 규민 멘토님
-        </div>
-        <div class="nr__upper kyumin.eng}">
-          <div class="nr__column">
-            <img src="./img/kyumin.jpeg" alt="" class="nr__img" />
-          </div>
-          <div class="nr__column">
-            <div class="nr__info__name">김규민 멘토님 (남)</div>
-            <div class="nr__info__uni">
-              <i class="fas fa-graduation-cap"></i> 서울대 의예과 19학번
-            </div>
-            <div class="nr__info__sch">
-              <i class="fas fa-school"></i> 백영고 (일반고) 졸
-            </div>
-            <div class="nr__info__sch">
-              <i class="fas fa-book-open"></i> 수시 수석 입학
-            </div>
-          </div>
-        </div>
-        <div class="mentor__class__title">
-          <div class="mentor__class__title__upper">
-            <span class="title__mentoring">[작심삼일 1:1 멘토링]</span>
-            <div class="title__mentoring__ing">모집중</div>
-          </div>
-          3일마다 <공부 습관, 학생부, 동기부여> 온라인 관리
-          <div class="content__column__detail">
-            멘토님 이력 자세히 보기 <i class="fas fa-chevron-right"></i>
-          </div>
-        </div>`;
-  } else if (resultTemp === 3) {
-    result.innerHTML = `
-    <div class="new__result">
-    <div class="result__title">${resultSchool} 출신 멘토들</div>
-    <div class="result__comment">
-${mentors[resultNum1].oneWord}
-    </div>
-    <div class="nr__upper ${mentors[resultNum1].eng}">
-      <div class="nr__column">
-        <img src="./img/${
-          mentors[resultNum1].eng
-        }.jpeg" alt="" class="nr__img" />
-      </div>
-      <div class="nr__column">
-        <div class="nr__info__name">${mentors[resultNum1].name} 멘토님 (${
-      mentors[resultNum1].gender
-    })</div>
-        <div class="nr__info__uni">
-          <i class="fas fa-graduation-cap"></i> ${mentors[resultNum1].univ}
-        </div>
-        <div class="nr__info__sch">
-          <i class="fas fa-school"></i> ${mentors[resultNum1].high}
-        </div>
-        <div class="nr__info__sch">
-          <i class="fas fa-book-open"></i> ${mentors[resultNum1].method}
-        </div>
-      </div>
-    </div>
-    <div class="mentor__class__title">
-      <div class="mentor__class__title__upper">
-        <span class="title__mentoring">[작심삼일 1:1 멘토링]</span>
-        ${
-          mentors[resultNum1].label === 0
-            ? `<div class="title__mentoring__ing">모집중</div>`
-            : mentors[resultNum1].label === 1
-            ? `<div class="title__mentoring__complete">마감임박</div>`
-            : `<div class="title__mentoring__end">마감</div>`
-        }
-      </div>
-      3일마다 <공부 습관, 학생부, 동기부여> 온라인 관리
-      <div class="content__column__detail">
-        멘토님 이력 자세히 보기 <i class="fas fa-chevron-right"></i>
-      </div>
-    </div>
-    <div class="result__comment">
-${mentors[resultNum2].oneWord}
-    </div>
-    <div class="nr__upper ${mentors[resultNum2].eng}">
-      <div class="nr__column">
-        <img src="./img/${
-          mentors[resultNum2].eng
-        }.jpeg" alt="" class="nr__img" />
-      </div>
-      <div class="nr__column">
-        <div class="nr__info__name">${mentors[resultNum2].name} 멘토님 (${
-      mentors[resultNum2].gender
-    })</div>
-        <div class="nr__info__uni">
-          <i class="fas fa-graduation-cap"></i> ${mentors[resultNum2].univ}
-        </div>
-        <div class="nr__info__sch">
-          <i class="fas fa-school"></i> ${mentors[resultNum2].high}
-        </div>
-        <div class="nr__info__sch">
-          <i class="fas fa-book-open"></i> ${mentors[resultNum2].method}
-        </div>
-      </div>
-    </div>
-    <div class="mentor__class__title">
-      <div class="mentor__class__title__upper">
-        <span class="title__mentoring">[작심삼일 1:1 멘토링]</span>
-        ${
-          mentors[resultNum2].label === 0
-            ? `<div class="title__mentoring__ing">모집중</div>`
-            : mentors[resultNum2].label === 1
-            ? `<div class="title__mentoring__complete">마감임박</div>`
-            : `<div class="title__mentoring__end">마감</div>`
-        }
-      </div>
-      3일마다 <공부 습관, 학생부, 동기부여> 온라인 관리
-      <div class="content__column__detail">
-        멘토님 이력 자세히 보기 <i class="fas fa-chevron-right"></i>
-      </div>
-    </div>
-    <div class="result__comment">
-${mentors[resultNum3].oneWord}
-    </div>
-    <div class="nr__upper ${mentors[resultNum3].eng}">
-      <div class="nr__column">
-        <img src="./img/${
-          mentors[resultNum3].eng
-        }.jpeg" alt="" class="nr__img" />
-      </div>
-      <div class="nr__column">
-        <div class="nr__info__name">${mentors[resultNum3].name} 멘토님 (${
-      mentors[resultNum3].gender
-    })</div>
-        <div class="nr__info__uni">
-          <i class="fas fa-graduation-cap"></i> ${mentors[resultNum3].univ}
-        </div>
-        <div class="nr__info__sch">
-          <i class="fas fa-school"></i> ${mentors[resultNum3].high}
-        </div>
-        <div class="nr__info__sch">
-          <i class="fas fa-book-open"></i> ${mentors[resultNum3].method}
-        </div>
-      </div>
-    </div>
-    <div class="mentor__class__title">
-      <div class="mentor__class__title__upper">
-        <span class="title__mentoring">[작심삼일 1:1 멘토링]</span>
-        ${
-          mentors[resultNum3].label === 0
-            ? `<div class="title__mentoring__ing">모집중</div>`
-            : mentors[resultNum3].label === 1
-            ? `<div class="title__mentoring__complete">마감임박</div>`
-            : `<div class="title__mentoring__end">마감</div>`
-        }
-      </div>
-      3일마다 <공부 습관, 학생부, 동기부여> 온라인 관리
-      <div class="content__column__detail">
-        멘토님 이력 자세히 보기 <i class="fas fa-chevron-right"></i>
-      </div>
-    </div>
-  <div class="result__title">강남 8학군 출신 멘토들</div>
+const nrUpper = document.querySelectorAll(`.nr__upper`);
+const mentorSimple = document.querySelectorAll(`.mentor__simple`);
+console.log(nrUpper, mentorSimple);
 
-    <div class="select3"></div>`;
-  }
-  const select1 = document.querySelector(".select1");
-  const select2 = document.querySelector(".select2");
-  const select3 = document.querySelector(".select3");
-
-  if (select3) {
-    select3.innerHTML = `<div class="result__comment">
-    ${mentors[randomNum1].oneWord}
-        </div>
-        <div class="nr__upper ${mentors[randomNum1].eng}">
-          <div class="nr__column">
-            <img src="./img/${
-              mentors[randomNum1].eng
-            }.jpeg" alt="" class="nr__img" />
-          </div>
-          <div class="nr__column">
-            <div class="nr__info__name">${mentors[randomNum1].name} 멘토님 (${
-      mentors[randomNum1].gender
-    })</div>
-            <div class="nr__info__uni">
-              <i class="fas fa-graduation-cap"></i> ${mentors[randomNum1].univ}
-            </div>
-            <div class="nr__info__sch">
-              <i class="fas fa-school"></i> ${mentors[randomNum1].high}
-            </div>
-            <div class="nr__info__sch">
-              <i class="fas fa-book-open"></i> ${mentors[randomNum1].method}
-            </div>
-          </div>
-        </div>
-        <div class="mentor__class__title">
-          <div class="mentor__class__title__upper">
-            <span class="title__mentoring">[작심삼일 1:1 멘토링]</span>
-            ${
-              mentors[randomNum1].label === 0
-                ? `<div class="title__mentoring__ing">모집중</div>`
-                : mentors[randomNum1].label === 1
-                ? `<div class="title__mentoring__complete">마감임박</div>`
-                : `<div class="title__mentoring__end">마감</div>`
-            }
-          </div>
-          3일마다 <공부 습관, 학생부, 동기부여> 온라인 관리
-          <div class="content__column__detail">
-            멘토님 이력 자세히 보기 <i class="fas fa-chevron-right"></i>
-          </div>
-        </div>`;
-  }
-  if (select1 && select2) {
-    console.log(select1);
-
-    select1.innerHTML = `<div class="result__comment">
-    ${mentors[randomNum1].oneWord}
-        </div>
-        <div class="nr__upper ${mentors[randomNum1].eng}">
-          <div class="nr__column">
-            <img src="./img/${
-              mentors[randomNum1].eng
-            }.jpeg" alt="" class="nr__img" />
-          </div>
-          <div class="nr__column">
-            <div class="nr__info__name">${mentors[randomNum1].name} 멘토님 (${
-      mentors[randomNum1].gender
-    })</div>
-            <div class="nr__info__uni">
-              <i class="fas fa-graduation-cap"></i> ${mentors[randomNum1].univ}
-            </div>
-            <div class="nr__info__sch">
-              <i class="fas fa-school"></i> ${mentors[randomNum1].high}
-            </div>
-            <div class="nr__info__sch">
-              <i class="fas fa-book-open"></i> ${mentors[randomNum1].method}
-            </div>
-          </div>
-        </div>
-        <div class="mentor__class__title">
-          <div class="mentor__class__title__upper">
-            <span class="title__mentoring">[작심삼일 1:1 멘토링]</span>
-            ${
-              mentors[randomNum1].label === 0
-                ? `<div class="title__mentoring__ing">모집중</div>`
-                : mentors[randomNum1].label === 1
-                ? `<div class="title__mentoring__complete">마감임박</div>`
-                : `<div class="title__mentoring__end">마감</div>`
-            }
-          </div>
-          3일마다 <공부 습관, 학생부, 동기부여> 온라인 관리
-          <div class="content__column__detail">
-            멘토님 이력 자세히 보기 <i class="fas fa-chevron-right"></i>
-          </div>
-        </div>`;
-
-    select2.innerHTML = `<div class="result__comment">
-    ${mentors[randomNum2].oneWord}
-        </div>
-        <div class="nr__upper ${mentors[randomNum2].eng}">
-          <div class="nr__column">
-            <img src="./img/${
-              mentors[randomNum2].eng
-            }.jpeg" alt="" class="nr__img" />
-          </div>
-          <div class="nr__column">
-            <div class="nr__info__name">${mentors[randomNum2].name} 멘토님 (${
-      mentors[randomNum2].gender
-    })</div>
-            <div class="nr__info__uni">
-              <i class="fas fa-graduation-cap"></i> ${mentors[randomNum2].univ}
-            </div>
-            <div class="nr__info__sch">
-              <i class="fas fa-school"></i> ${mentors[randomNum2].high}
-            </div>
-            <div class="nr__info__sch">
-              <i class="fas fa-book-open"></i> ${mentors[randomNum2].method}
-            </div>
-          </div>
-        </div>
-        <div class="mentor__class__title">
-          <div class="mentor__class__title__upper">
-            <span class="title__mentoring">[작심삼일 1:1 멘토링]</span>
-            ${
-              mentors[randomNum2].label === 0
-                ? `<div class="title__mentoring__ing">모집중</div>`
-                : mentors[randomNum2].label === 1
-                ? `<div class="title__mentoring__complete">마감임박</div>`
-                : `<div class="title__mentoring__end">마감</div>`
-            }
-          </div>
-          3일마다 <공부 습관, 학생부, 동기부여> 온라인 관리
-          <div class="content__column__detail">
-            멘토님 이력 자세히 보기 <i class="fas fa-chevron-right"></i>
-          </div>
-        </div>`;
-  }
-  handleResultAni();
-
-  const testResult = document.querySelectorAll(`.mentor__class__title`);
-  const testResult2 = document.querySelectorAll(`.nr__upper`);
-  console.dir(testResult2[0].classList[1]);
-
-  testResult[0].addEventListener("click", handleTestResult);
-  testResult2[0].addEventListener("click", handleTestResult);
-  testResult[1].addEventListener("click", handleTestResult2);
-  testResult2[1].addEventListener("click", handleTestResult2);
-  testResult[2].addEventListener("click", handleTestResult3);
-  testResult2[2].addEventListener("click", handleTestResult3);
-  testResult[3].addEventListener("click", handleTestResult4);
-  testResult2[3].addEventListener("click", handleTestResult4);
-
-  function handleTestResult() {
+for (let c = 0; c < mentorSimple.length; c++) {
+  function handleResultClick() {
+    console.dir(nrUpper[c]);
     location.href =
-      "mentordetail.html?" + "name" + ":" + testResult2[0].classList[1];
+      "mentordetail.html?" + "name" + ":" + nrUpper[c].classList[1];
   }
-  function handleTestResult2() {
-    location.href =
-      "mentordetail.html?" + "name" + ":" + testResult2[1].classList[1];
-  }
-  function handleTestResult3() {
-    location.href =
-      "mentordetail.html?" + "name" + ":" + testResult2[2].classList[1];
-  }
-  function handleTestResult4() {
-    location.href =
-      "mentordetail.html?" + "name" + ":" + testResult2[3].classList[1];
-  }
+  mentorSimple[c].addEventListener("click", handleResultClick);
 }
 
-function handleResultAni() {
-  setTimeout(function () {
-    result.classList.remove("none");
-    result.classList.add("trans2");
-    resultPage.classList.remove("none");
-    resultPage.classList.add("trans2");
-  }, 200);
-}
 const all = document.querySelector(".all");
-
 function handleCall() {
   window.location.href = "tel:010-8313-9943";
 }
 
-function handleSnackBar() {
-  const snackBarResult = document.querySelector(`#snackbar__result`);
-  const body = document.querySelector(`.body`);
-  const snackBarButton = document.querySelector(`.snackbar__result__button`);
-  const snackBarResultTitle = document.querySelectorAll(`.result__title`);
-  const snackBarResultComment = document.querySelectorAll(`.result__comment`);
-  const addConsult = document.querySelector(".add__consult");
+// function handleSnackBar() {
+//   const snackBarResult = document.querySelector(`#snackbar__result`);
+//   const body = document.querySelector(`.body`);
+//   const snackBarButton = document.querySelector(`.snackbar__result__button`);
+//   const snackBarResultTitle = document.querySelectorAll(`.result__title`);
+//   const snackBarResultComment = document.querySelectorAll(`.result__comment`);
+//   const addConsult = document.querySelector(".add__consult");
 
-  const RESULT_LS = "result";
-  // const loadedResult = localStorage.getItem(RESULT_LS);
+//   const RESULT_LS = "result";
+//   // const loadedResult = localStorage.getItem(RESULT_LS);
 
-  setTimeout(function () {
-    snackBarResult.classList.add("snackbar__anim__result");
-    body.style.backgroundColor = "#313131";
-    snackBarResultTitle.forEach((e) => {
-      e.style.color = "white";
-    });
-    snackBarResultComment.forEach((e) => {
-      e.style.color = "white";
-    });
-    all.style.borderColor = "#313131";
-    all.children[0].style.color = "#313131";
-    addConsult.style.color = "#313131";
-    localStorage.setItem(RESULT_LS, "experience");
-  }, 6000);
+//   setTimeout(function () {
+//     snackBarResult.classList.add("snackbar__anim__result");
+//     body.style.backgroundColor = "#313131";
+//     snackBarResultTitle.forEach((e) => {
+//       e.style.color = "white";
+//     });
+//     snackBarResultComment.forEach((e) => {
+//       e.style.color = "white";
+//     });
+//     all.style.borderColor = "#313131";
+//     all.children[0].style.color = "#313131";
+//     addConsult.style.color = "#313131";
+//     localStorage.setItem(RESULT_LS, "experience");
+//   }, 6000);
 
-  // if (loadedResult !== "experience") {
-  //   setTimeout(function () {
-  //     snackBarResult.classList.add("snackbar__anim__result");
-  //     body.style.backgroundColor = "#313131";
-  //     snackBarResultTitle.forEach((e) => {
-  //       e.style.color = "#313131";
-  //     });
-  //     snackBarResultComment.forEach((e) => {
-  //       e.style.color = "white";
-  //     });
-  //     all.style.borderColor = "#313131";
-  //     all.children[0].style.color = "#313131";
-  //     addConsult.style.color = "#313131";
-  //     localStorage.setItem(RESULT_LS, "experience");
-  //   }, 6000);
-  // }
+//   // if (loadedResult !== "experience") {
+//   //   setTimeout(function () {
+//   //     snackBarResult.classList.add("snackbar__anim__result");
+//   //     body.style.backgroundColor = "#313131";
+//   //     snackBarResultTitle.forEach((e) => {
+//   //       e.style.color = "#313131";
+//   //     });
+//   //     snackBarResultComment.forEach((e) => {
+//   //       e.style.color = "white";
+//   //     });
+//   //     all.style.borderColor = "#313131";
+//   //     all.children[0].style.color = "#313131";
+//   //     addConsult.style.color = "#313131";
+//   //     localStorage.setItem(RESULT_LS, "experience");
+//   //   }, 6000);
+//   // }
 
-  snackBarButton.addEventListener("click", handleSnackRemove);
+//   snackBarButton.addEventListener("click", handleSnackRemove);
 
-  function handleSnackRemove() {
-    snackBarResult.classList.remove("snackbar__anim__result");
-    body.style.backgroundColor = "#f7f7f7";
-    snackBarResultTitle.forEach((e) => {
-      e.style.color = "#4055af";
-    });
-    snackBarResultComment.forEach((e) => {
-      e.style.color = "#272727";
-    });
-    all.style.borderColor = "#0123b4";
-    all.children[0].style.color = "#0123b4";
-    addConsult.style.color = "#575757";
-  }
-}
+//   function handleSnackRemove() {
+//     snackBarResult.classList.remove("snackbar__anim__result");
+//     body.style.backgroundColor = "#f7f7f7";
+//     snackBarResultTitle.forEach((e) => {
+//       e.style.color = "#4055af";
+//     });
+//     snackBarResultComment.forEach((e) => {
+//       e.style.color = "#272727";
+//     });
+//     all.style.borderColor = "#0123b4";
+//     all.children[0].style.color = "#0123b4";
+//     addConsult.style.color = "#575757";
+//   }
+// }
 
-function init() {
-  handleResult();
-  handleSnackBar();
-  all.addEventListener("click", handleCall);
-}
+function init() {}
 
 init();

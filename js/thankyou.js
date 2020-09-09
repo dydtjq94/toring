@@ -3,7 +3,6 @@ const passbookButton = document.querySelector(`.passbook__button__kakao2`);
 
 function getTime() {
   const currentTime = new Date();
-  // Don't delete this.
   const extraDay = new Date("2020-09-17:00:00:00+0900");
   const days = Math.floor((extraDay - currentTime) / 86400000);
   const hours = Math.floor(((extraDay - currentTime) % 86400000) / 3600000);
