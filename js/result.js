@@ -391,7 +391,37 @@ ${mentors[resultNum2].oneWord}
   <div class="result__title">강남 8학군 출신 멘토들</div>
   <div class="select1"></div>
   <div class="select2"></div>
-
+  <div class="result__title">서울대 의대 수석 멘토</div>
+  <div class="result__comment">
+    운동선수에서 서울대 의대 수석이 된 규민 멘토님
+  </div>
+  <div class="nr__upper kyumin.eng}">
+    <div class="nr__column">
+      <img src="./img/kyumin.jpeg" alt="" class="nr__img" />
+    </div>
+    <div class="nr__column">
+      <div class="nr__info__name">김규민 멘토님 (남)</div>
+      <div class="nr__info__uni">
+        <i class="fas fa-graduation-cap"></i> 서울대 의예과 19학번
+      </div>
+      <div class="nr__info__sch">
+        <i class="fas fa-school"></i> 백영고 (일반고) 졸
+      </div>
+      <div class="nr__info__sch">
+        <i class="fas fa-book-open"></i> 수시 수석 입학
+      </div>
+    </div>
+  </div>
+  <div class="mentor__class__title">
+    <div class="mentor__class__title__upper">
+      <span class="title__mentoring">[작심삼일 1:1 멘토링]</span>
+      <div class="title__mentoring__ing">모집중</div>
+    </div>
+    3일마다 <공부 습관, 학생부, 동기부여> 온라인 관리
+    <div class="content__column__detail">
+      멘토님 이력 자세히 보기 <i class="fas fa-chevron-right"></i>
+    </div>
+  </div>
 `;
   } else if (resultTemp === 1) {
     result.innerHTML = `
@@ -556,6 +586,37 @@ ${mentors[resultNum4].oneWord}
       <div class="content__column__detail">
         멘토님 이력 자세히 보기 <i class="fas fa-chevron-right"></i>
       </div>
+    </div>
+    <div class="result__title">서울대 의대 수석 멘토</div>
+    <div class="result__comment">
+      운동선수에서 서울대 의대 수석이 된 규민 멘토님
+    </div>
+    <div class="nr__upper kyumin.eng}">
+      <div class="nr__column">
+        <img src="./img/kyumin.jpeg" alt="" class="nr__img" />
+      </div>
+      <div class="nr__column">
+        <div class="nr__info__name">김규민 멘토님 (남)</div>
+        <div class="nr__info__uni">
+          <i class="fas fa-graduation-cap"></i> 서울대 의예과 19학번
+        </div>
+        <div class="nr__info__sch">
+          <i class="fas fa-school"></i> 백영고 (일반고) 졸
+        </div>
+        <div class="nr__info__sch">
+          <i class="fas fa-book-open"></i> 수시 수석 입학
+        </div>
+      </div>
+    </div>
+    <div class="mentor__class__title">
+      <div class="mentor__class__title__upper">
+        <span class="title__mentoring">[작심삼일 1:1 멘토링]</span>
+        <div class="title__mentoring__ing">모집중</div>
+      </div>
+      3일마다 <공부 습관, 학생부, 동기부여> 온라인 관리
+      <div class="content__column__detail">
+        멘토님 이력 자세히 보기 <i class="fas fa-chevron-right"></i>
+      </div>
     </div>`;
   } else if (resultTemp === 2) {
     result.innerHTML = `
@@ -715,6 +776,37 @@ ${mentors[resultNum4].oneWord}
                 ? `<div class="title__mentoring__complete">마감임박</div>`
                 : `<div class="title__mentoring__end">마감</div>`
             }
+          </div>
+          3일마다 <공부 습관, 학생부, 동기부여> 온라인 관리
+          <div class="content__column__detail">
+            멘토님 이력 자세히 보기 <i class="fas fa-chevron-right"></i>
+          </div>
+        </div>
+        <div class="result__title">서울대 의대 수석 멘토</div>
+        <div class="result__comment">
+          운동선수에서 서울대 의대 수석이 된 규민 멘토님
+        </div>
+        <div class="nr__upper kyumin.eng}">
+          <div class="nr__column">
+            <img src="./img/kyumin.jpeg" alt="" class="nr__img" />
+          </div>
+          <div class="nr__column">
+            <div class="nr__info__name">김규민 멘토님 (남)</div>
+            <div class="nr__info__uni">
+              <i class="fas fa-graduation-cap"></i> 서울대 의예과 19학번
+            </div>
+            <div class="nr__info__sch">
+              <i class="fas fa-school"></i> 백영고 (일반고) 졸
+            </div>
+            <div class="nr__info__sch">
+              <i class="fas fa-book-open"></i> 수시 수석 입학
+            </div>
+          </div>
+        </div>
+        <div class="mentor__class__title">
+          <div class="mentor__class__title__upper">
+            <span class="title__mentoring">[작심삼일 1:1 멘토링]</span>
+            <div class="title__mentoring__ing">모집중</div>
           </div>
           3일마다 <공부 습관, 학생부, 동기부여> 온라인 관리
           <div class="content__column__detail">

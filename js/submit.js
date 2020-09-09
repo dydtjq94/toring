@@ -1,96 +1,214 @@
 const mentorsSubmit = [
   {
-    name: "김규민",
-    nameEng: "kyumin",
-    majorNum: 0, //0이면 의예과 1이면 일반학과
-    title: "고등학교 1학년부터 공부해서 서울대 의대 수석이 되는 방법",
+    name: "정진호",
+    gender: "남",
+    univ: "서울대 생명과학부 20학번",
+    high: "휘문고등학교 졸업",
+    method: "정시 전형",
+    eng: "jinho",
+    oneWord: "휘문고에서 내신과 정시를 완벽하게 준비한 진호 멘토님",
+    label: 1,
   },
-  {
-    name: "이현서",
-    nameEng: "hyunseo",
-    majorNum: 0, //0이면 의예과 1이면 일반학과
-    title: "공부 태도를 교정해 단기간에 성적을 올리는 비법",
-  },
-  {
-    name: "허다원",
-    nameEng: "dawon",
-    majorNum: 1, //0이면 의예과 1이면 일반학과
-    title: "학교 생활 열심히 해서 학생부 100%로 연세대 수석입학하는 비법",
-  },
-  {
-    name: "김태경",
-    nameEng: "taekyung",
-    majorNum: 1, //0이면 의예과 1이면 일반학과
-    title: "학습, 진로, 동기부여 세 가지를 한번에 잡는 자기 성찰 공부법",
-  },
-  {
-    name: "박나영",
-    nameEng: "nayoung",
 
-    majorNum: 1, //0이면 의예과 1이면 일반학과
-    title: "교육청도 궁금해하는 가장 쉽게 공부하는 공부법",
-  },
   {
-    name: "장세민",
-    nameEng: "saemin",
+    name: "유현우",
+    gender: "남",
+    univ: "연세대 도시공학과 20학번",
+    high: "현대고등학교 졸업",
+    method: "특기자 전형",
+    eng: "hyunwoo",
+    oneWord: "학생부를 완벽하게 준비한 현우 멘토님",
+    label: 0,
+  },
 
-    majorNum: 1, //0이면 의예과 1이면 일반학과
-    title: "중하위권에서 상위권 성적 상승은 무조건 저만 믿고 오시면 됩니다",
-  },
   {
-    name: "유승연",
-    nameEng: "seungyeon",
+    name: "오선빈",
+    gender: "여",
+    univ: "서울대 수의예과 19학번",
+    high: "진선여자고등학교 졸업",
+    method: "수시 일반 전형",
+    eng: "sunbin",
+    oneWord: "학생을 진심으로 도와주는 선빈 멘토님",
+    label: 0,
+  },
 
-    majorNum: 1, //0이면 의예과 1이면 일반학과
-    title: "치열한 환경 속에서 꾸준하게 슬럼프를 이겨내는 방법",
-  },
   {
-    name: "김태린",
-    nameEng: "taelin",
+    name: "김예나",
+    gender: "여",
+    univ: "연세대 건축공학과 18학번",
+    high: "경기여자고등학교 졸업",
+    method: "학생부 종합 전형",
+    eng: "yena",
+    oneWord: "스스로 공부하는 습관으로 전교 3등으로 졸업한 예나 멘토님",
+    label: 0,
+  },
 
-    majorNum: 1, //0이면 의예과 1이면 일반학과
-    title: "꼴지가 서울대에 갈 수 있었던 방법",
-  },
   {
-    name: "김시원",
-    nameEng: "siwon",
+    name: "김태형",
+    gender: "남",
+    univ: "연세대 전기전자공학부 20학번",
+    high: "휘문고등학교 졸업",
+    method: "논술 전형",
+    eng: "taehyung",
+    oneWord: "급격한 성적 상승을 약속하는 태형 멘토님",
+    label: 0,
+  },
 
-    majorNum: 1, //0이면 의예과 1이면 일반학과
-    title: "남들보다 시간이 부족한 사람에게 적절한 가장 효율적인 공부법",
-  },
   {
-    name: "이승지",
-    nameEng: "seungji",
-    majorNum: 1, //0이면 의예과 1이면 일반학과
-    title: "공부의 목적을 찾고 꿈을 찾아 평범한 중학생에서 전교 1등 되기",
+    name: "조예은",
+    gender: "여",
+    univ: "서울대 미학과 19학번",
+    high: "은광여자고등학교 졸업",
+    method: "수시 일반 전형",
+    eng: "yeeun",
+    oneWord:
+      "스스로 학생부를 채워 서울대 연세대 고려대를 동시 합격한 예은 멘토님",
+    label: 0,
   },
-  {
-    name: "지현준",
-    nameEng: "hyunjun",
 
-    majorNum: 1, //0이면 의예과 1이면 일반학과
-    title: "중학교 52%로 졸업해 연세대학교 수석으로 입학하는 비법",
-  },
   {
-    name: "김민하",
-    nameEng: "minha",
-    majorNum: 1, //0이면 의예과 1이면 일반학과
-    title: "각자 성향에 맞는 학습법을 찾고 서울대에 진학하기",
+    name: "임채현",
+    gender: "남",
+    univ: "연세대 중어중문학과 20학번",
+    high: "개포고등학교 졸업",
+    method: "정시 전형",
+    eng: "chaehyun",
+    oneWord: "냉정하게 현실을 알려주지만 누구보다 따뜻한 채현 멘토님",
+    label: 0,
   },
+
   {
-    name: "오상흔",
-    nameEng: "sangheun",
-    majorNum: 1, //0이면 의예과 1이면 일반학과
-    title: "수시와 정시 두 마리 토끼를 모두 잡는 비법",
+    name: "김민영",
+    gender: "여",
+    univ: "고려대 경영학과 20학번",
+    high: "숙명여자고등학교 졸업",
+    method: "학교장 추천 전형",
+    eng: "minyoung",
+    oneWord: "부모님 도움 없이 스스로 입시를 해낸 민영 멘토님",
+    label: 0,
+  },
+
+  {
+    name: "정현진",
+    gender: "여",
+    univ: "서울대 기계항공공학부 19학번",
+    high: "숙명여자고등학교 졸업",
+    method: "수시 일반 전형",
+    eng: "hyunjin",
+    oneWord: "효율적인 공부법으로 서울대와 카이스트를 동시 합격한 현진 멘토님",
+    label: 0,
+  },
+
+  {
+    name: "장하연",
+    gender: "여",
+    univ: "연세대 실내건축학과 19학번",
+    high: "숙명여자고등학교 졸업",
+    method: "정시 전형",
+    eng: "hayeon",
+    oneWord:
+      "고등학교 생활을 후회없이, 성공적으로 보낼 수 있도록 도와주는 하연 멘토님",
+    label: 0,
+  },
+
+  {
+    name: "유다영",
+    gender: "여",
+    univ: "연세대 경제학과 19학번",
+    high: "숙명여자고등학교 졸업",
+    method: "논술 전형",
+    eng: "dayoung",
+    oneWord: "방향성과 지름길을 알려주는 다영 멘토님",
+    label: 0,
+  },
+
+  {
+    name: "허나연",
+    gender: "여",
+    univ: "고려대 한문학과 20학번",
+    high: "진선여자고등학교 졸업",
+    method: "학생부 종합 전형",
+    eng: "nayeon",
+    oneWord: "코로나로 인한 슬럼프를 극복하게 해주는 나연 멘토님",
+    label: 0,
+  },
+
+  {
+    name: "염지윤",
+    gender: "여",
+    univ: "서울대 윤리교육과 20학번",
+    high: "개포고등학교 졸업",
+    method: "학생부 교과 전형",
+    eng: "jiyoon",
+    oneWord:
+      "선택과 집중으로 1학년 내신 2.87이었던 개포고 학생부를 완벽하게 해결한 지윤 멘토님",
+    label: 0,
+  },
+
+  {
+    name: "이시연",
+    gender: "남",
+    univ: "서울대 농경제사회학부 20학번",
+    high: "중산고등학교 졸업",
+    method: "정시 전형",
+    eng: "siyeon",
+    oneWord: "모든 과목 공부법을 완벽하게 알려주는 시연 멘토님",
+    label: 0,
+  },
+
+  {
+    name: "고혜준",
+    gender: "여",
+    univ: "서울대 의예과 20학번",
+    high: "중대부고등학교 졸업",
+    method: "학생부 종합 전형",
+    eng: "hyejun",
+    oneWord: "슬럼프를 극복해 서울대 의대에 진학한 혜준 멘토님",
+    label: 0,
+  },
+
+  {
+    name: "이서택",
+    gender: "남",
+    univ: "고려대 경영학과 20학번",
+    high: "단대부고등학교 졸업",
+    method: "학생부 종합 전형",
+    eng: "seotack",
+    oneWord: "단대부고의 내신과 학생부를 완벽하게 해결해주는 서택 멘토님",
+    label: 0,
+  },
+
+  {
+    name: "옥승환",
+    gender: "남",
+    univ: "연세대 경영학과 20학번",
+    high: "단대부고등학교 졸업",
+    method: "학생부 종합 전형",
+    eng: "seunghwan",
+    oneWord: "친근한 형처럼 다가가지만, 확실하게 알려주는 승환 멘토님",
+    label: 0,
+  },
+
+  {
+    name: "박상하",
+    gender: "남",
+    univ: "연세대 의예과 20학번",
+    high: "휘문고등학교 졸업",
+    method: "정시 전형",
+    eng: "sangha",
+    oneWord: "휘문고에서 정시와 수시 모두로 의예과에 진학한 상하 멘토님",
+    label: 0,
   },
 ];
 
 const submitUpper = document.querySelector(`.submit__upper`);
 
 const temp = decodeURI(location.href);
+console.log(temp);
 const name = temp.split(":")[2];
+console.log(name);
+
 const major = parseInt(temp.split(":")[1].split("?")[1], 10);
-console.log(name, major);
 
 let resultNum = 0;
 let i = 0;
@@ -108,7 +226,7 @@ console.log(resultNum);
 submitUpper.innerHTML = `<div class="submit__upper__column">
 <img
   class="submit__mentor__img"
-  src="./img/${mentorsSubmit[resultNum].nameEng}.jpeg"
+  src="./img/${mentorsSubmit[resultNum].eng}.jpeg"
   alt=""
 />
 </div>

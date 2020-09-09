@@ -819,10 +819,11 @@
 }
 
 .other__title {
-  color: #585858;
+  color: #3f3f3f;
   font-size: 20px;
   line-height: 25px;
   margin-bottom: 20px;
+  font-weight: 700;
 }
 
 .other__content {

@@ -49,4 +49,38 @@
   width: 90%;
   margin-top: 20px;
   font-size: 24px;
+  line-height: 32px;
+}
+
+.thankyou__one {
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.passbook__button2 {
+  margin-top: 20px;
+  width: 90%;
+}
+
+.passbook__button__kakao2 {
+  text-align: center;
+  width: 100%;
+  background-color: #0123b4;
+  border-radius: 10px;
+  color: white;
+  font-size: 20px;
+  border: none;
+  padding: 20px 20px;
+  outline: none;
+  margin-bottom: 6px;
+}
+
+.passbook__button2:hover {
+  cursor: pointer;
+}
+
+.extra__place {
+  font-size: 14px;
+  color: #2c2c2c;
+  margin-bottom: 40px;
 }
