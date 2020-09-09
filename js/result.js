@@ -640,6 +640,15 @@ const resultList = [
   otherHResult,
 ];
 
+const koreanResult = [
+  "휘문고",
+  "숙명여고",
+  "단대부고",
+  "개포고",
+  "진선여고",
+  "대치동",
+];
+
 const result = document.querySelector(".result");
 const resultPage = document.querySelector(".result__page__wrap");
 const mentorLen = mentors.length;
@@ -680,12 +689,18 @@ for (var i = 0; i < 10; i++) {
 result.innerHTML = resultList[resultSchoolNum] + resultList[randomNum];
 
 const mentorSimple = document.querySelectorAll(`.mentor__simple`);
+const oneWord = document.querySelector(`.one__word`);
+const twoWord = document.querySelector(`.two__word`);
 
 mentorSimple.forEach((e) =>
   e.addEventListener("click", function handleResultClick() {
     location.href = "mentordetail.html?" + "name" + ":" + e.classList[1];
   })
 );
+
+oneWord.innerHTML = `"${koreanResult[resultSchoolNum]} 출신에게 받는 <br />가장 특별한 멘토링"`;
+twoWord.innerHTML = `${koreanResult[resultSchoolNum]} 출신만이 알고 있는 ${koreanResult[resultSchoolNum]} 내신 관리, 학생부 준비부터
+동기부여와 멘탈 관리까지 한번에!`;
 
 // for (let c = 0; c < mentorSimple.length; c++) {
 //   function handleResultClick() {
