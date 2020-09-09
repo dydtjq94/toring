@@ -322,7 +322,7 @@ for (let q = 0; q < whimoon.length; q++) {
   whimoonResult =
     whimoonResult +
     `
-<div class="mentor__simple">
+<div class="mentor__simple ${whimoon[q].eng}">
 ${
   whimoon[q].label === 0
     ? `<div class="label__style1">
@@ -332,7 +332,7 @@ ${
     마감임박! <span class="label__extra">${whimoon[q].labelNum}자리 남았어요!</span>
   </div>`
 }
-  <div class="nr__upper ${whimoon[q].eng}">
+  <div class="nr__upper ">
     <div class="nr__column">
       <img src="./img/${whimoon[q].eng}.jpeg" class="nr__img" />
     </div>
@@ -374,7 +374,7 @@ for (let q = 0; q < sookmyungW.length; q++) {
   sookmyungWResult =
     sookmyungWResult +
     `
-<div class="mentor__simple">
+<div class="mentor__simple ${sookmyungW[q].eng}">
 ${
   sookmyungW[q].label === 0
     ? `<div class="label__style1">
@@ -384,7 +384,7 @@ ${
     마감임박! <span class="label__extra">${sookmyungW[q].labelNum}자리 남았어요!</span>
   </div>`
 }
-  <div class="nr__upper ${sookmyungW[q].eng}">
+  <div class="nr__upper ">
     <div class="nr__column">
       <img src="./img/${sookmyungW[q].eng}.jpeg" class="nr__img" />
     </div>
@@ -426,7 +426,7 @@ for (let q = 0; q < dandae.length; q++) {
   dandaeResult =
     dandaeResult +
     `
-<div class="mentor__simple">
+<div class="mentor__simple ${dandae[q].eng}">
 ${
   dandae[q].label === 0
     ? `<div class="label__style1">
@@ -436,7 +436,7 @@ ${
     마감임박! <span class="label__extra">${dandae[q].labelNum}자리 남았어요!</span>
   </div>`
 }
-  <div class="nr__upper ${dandae[q].eng}">
+  <div class="nr__upper ">
     <div class="nr__column">
       <img src="./img/${dandae[q].eng}.jpeg" class="nr__img" />
     </div>
@@ -478,7 +478,7 @@ for (let q = 0; q < gaepo.length; q++) {
   gaepoResult =
     gaepoResult +
     `
-<div class="mentor__simple">
+<div class="mentor__simple ${gaepo[q].eng}">
 ${
   gaepo[q].label === 0
     ? `<div class="label__style1">
@@ -488,7 +488,7 @@ ${
     마감임박! <span class="label__extra">${gaepo[q].labelNum}자리 남았어요!</span>
   </div>`
 }
-  <div class="nr__upper ${gaepo[q].eng}">
+  <div class="nr__upper ">
     <div class="nr__column">
       <img src="./img/${gaepo[q].eng}.jpeg" class="nr__img" />
     </div>
@@ -530,7 +530,7 @@ for (let q = 0; q < jinsunW.length; q++) {
   jinsunWResult =
     jinsunWResult +
     `
-<div class="mentor__simple">
+<div class="mentor__simple ${jinsunW[q].eng}">
 ${
   jinsunW[q].label === 0
     ? `<div class="label__style1">
@@ -540,7 +540,7 @@ ${
     마감임박! <span class="label__extra">${jinsunW[q].labelNum}자리 남았어요!</span>
   </div>`
 }
-  <div class="nr__upper ${jinsunW[q].eng}">
+  <div class="nr__upper ">
     <div class="nr__column">
       <img src="./img/${jinsunW[q].eng}.jpeg" class="nr__img" />
     </div>
@@ -582,7 +582,7 @@ for (let q = 0; q < otherH.length; q++) {
   otherHResult =
     otherHResult +
     `
-<div class="mentor__simple">
+<div class="mentor__simple ${otherH[q].eng}">
 ${
   otherH[q].label === 0
     ? `<div class="label__style1">
@@ -592,7 +592,7 @@ ${
     마감임박! <span class="label__extra">${otherH[q].labelNum}자리 남았어요!</span>
   </div>`
 }
-  <div class="nr__upper ${otherH[q].eng}">
+  <div class="nr__upper ">
     <div class="nr__column">
       <img src="./img/${otherH[q].eng}.jpeg" class="nr__img" />
     </div>
@@ -679,17 +679,23 @@ for (var i = 0; i < 10; i++) {
 
 result.innerHTML = resultList[resultSchoolNum] + resultList[randomNum];
 
-const nrUpper = document.querySelectorAll(`.nr__upper`);
 const mentorSimple = document.querySelectorAll(`.mentor__simple`);
-console.log(nrUpper, mentorSimple);
 
-for (let c = 0; c < mentorSimple.length; c++) {
-  function handleResultClick() {
-    location.href =
-      "mentordetail.html?" + "name" + ":" + nrUpper[c].classList[1];
-  }
-  mentorSimple[c].addEventListener("click", handleResultClick);
-}
+mentorSimple.forEach((e) =>
+  e.addEventListener("click", function handleResultClick() {
+    location.href = "mentordetail.html?" + "name" + ":" + e.classList[1];
+  })
+);
+
+// for (let c = 0; c < mentorSimple.length; c++) {
+//   function handleResultClick() {
+//     setTimeout(function () {
+//       location.href =
+//         "mentordetail.html?" + "name" + ":" + nrUpper[c].classList[1];
+//     }, 5);
+//   }
+//   mentorSimple[c].addEventListener("click", handleResultClick);
+// }
 
 const all = document.querySelector(".all");
 function handleCall() {
