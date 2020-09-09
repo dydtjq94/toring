@@ -302,12 +302,12 @@ gaepo.shuffle();
 jinsunW.shuffle();
 otherH.shuffle();
 
-let whimoonResult = `<div class="result__title">휘문고 출신 멘토들 보기</div>`;
-let sookmyungWResult = `<div class="result__title">숙명여고 출신 멘토들 보기</div>`;
-let dandaeResult = `<div class="result__title">단대부고 출신 멘토들 보기</div>`;
-let gaepoResult = `<div class="result__title">개포고 출신 멘토들 보기</div>`;
-let jinsunWResult = `<div class="result__title">진선여고 출신 멘토들 보기</div>`;
-let otherHResult = `<div class="result__title">다른 대치동 출신 멘토들 보기</div>`;
+let whimoonResult = `<div class="result__title"><span class="blue__bold">휘문고 출신 멘토들 보기</div>`;
+let sookmyungWResult = `<div class="result__title"><span class="blue__bold">숙명여고 출신</span> 멘토들 보기</div>`;
+let dandaeResult = `<div class="result__title"><span class="blue__bold">단대부고 출신</span> 멘토들 보기</div>`;
+let gaepoResult = `<div class="result__title"><span class="blue__bold">개포고 출신</span> 멘토들 보기</div>`;
+let jinsunWResult = `<div class="result__title"><span class="blue__bold">진선여고 출신</span> 멘토들 보기</div>`;
+let otherHResult = `<div class="result__title"><span class="blue__bold">다른 대치동 출신</span> 멘토들 보기</div>`;
 
 let schoolMentorList = [
   "whimoon",
@@ -358,9 +358,9 @@ ${
         ${whimoon[q].oneWord}
         </div>
         <div class="title__upper__mentoring">
-          <span class="mentoring__style"># ${whimoon[q].mentoring[0]}</span>
-          <span class="mentoring__style"># ${whimoon[q].mentoring[1]}</span>
-          <span class="mentoring__style"># ${whimoon[q].mentoring[2]}</span>
+          <div class="mentoring__style"># ${whimoon[q].mentoring[0]}</div>
+          <div class="mentoring__style"># ${whimoon[q].mentoring[1]}</div>
+          <div class="mentoring__style"># ${whimoon[q].mentoring[2]}</div>
         </div>
       </div>
       <div class="content__column__detail">
@@ -410,9 +410,9 @@ ${
         ${sookmyungW[q].oneWord}
         </div>
         <div class="title__upper__mentoring">
-          <span class="mentoring__style"># ${sookmyungW[q].mentoring[0]}</span>
-          <span class="mentoring__style"># ${sookmyungW[q].mentoring[1]}</span>
-          <span class="mentoring__style"># ${sookmyungW[q].mentoring[2]}</span>
+          <div class="mentoring__style"># ${sookmyungW[q].mentoring[0]}</div>
+          <div class="mentoring__style"># ${sookmyungW[q].mentoring[1]}</div>
+          <div class="mentoring__style"># ${sookmyungW[q].mentoring[2]}</div>
         </div>
       </div>
       <div class="content__column__detail">
@@ -462,9 +462,9 @@ ${
         ${dandae[q].oneWord}
         </div>
         <div class="title__upper__mentoring">
-          <span class="mentoring__style"># ${dandae[q].mentoring[0]}</span>
-          <span class="mentoring__style"># ${dandae[q].mentoring[1]}</span>
-          <span class="mentoring__style"># ${dandae[q].mentoring[2]}</span>
+          <div class="mentoring__style"># ${dandae[q].mentoring[0]}</div>
+          <div class="mentoring__style"># ${dandae[q].mentoring[1]}</div>
+          <div class="mentoring__style"># ${dandae[q].mentoring[2]}</div>
         </div>
       </div>
       <div class="content__column__detail">
@@ -514,9 +514,9 @@ ${
         ${gaepo[q].oneWord}
         </div>
         <div class="title__upper__mentoring">
-          <span class="mentoring__style"># ${gaepo[q].mentoring[0]}</span>
-          <span class="mentoring__style"># ${gaepo[q].mentoring[1]}</span>
-          <span class="mentoring__style"># ${gaepo[q].mentoring[2]}</span>
+          <div class="mentoring__style"># ${gaepo[q].mentoring[0]}</div>
+          <div class="mentoring__style"># ${gaepo[q].mentoring[1]}</div>
+          <div class="mentoring__style"># ${gaepo[q].mentoring[2]}</div>
         </div>
       </div>
       <div class="content__column__detail">
@@ -566,9 +566,9 @@ ${
         ${jinsunW[q].oneWord}
         </div>
         <div class="title__upper__mentoring">
-          <span class="mentoring__style"># ${jinsunW[q].mentoring[0]}</span>
-          <span class="mentoring__style"># ${jinsunW[q].mentoring[1]}</span>
-          <span class="mentoring__style"># ${jinsunW[q].mentoring[2]}</span>
+          <div class="mentoring__style"># ${jinsunW[q].mentoring[0]}</div>
+          <div class="mentoring__style"># ${jinsunW[q].mentoring[1]}</div>
+          <div class="mentoring__style"># ${jinsunW[q].mentoring[2]}</div>
         </div>
       </div>
       <div class="content__column__detail">
@@ -618,9 +618,9 @@ ${
         ${otherH[q].oneWord}
         </div>
         <div class="title__upper__mentoring">
-          <span class="mentoring__style"># ${otherH[q].mentoring[0]}</span>
-          <span class="mentoring__style"># ${otherH[q].mentoring[1]}</span>
-          <span class="mentoring__style"># ${otherH[q].mentoring[2]}</span>
+          <div class="mentoring__style"># ${otherH[q].mentoring[0]}</div>
+          <div class="mentoring__style"># ${otherH[q].mentoring[1]}</div>
+          <div class="mentoring__style"># ${otherH[q].mentoring[2]}</div>
         </div>
       </div>
       <div class="content__column__detail">

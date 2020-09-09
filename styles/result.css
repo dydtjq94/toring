@@ -135,6 +135,10 @@
   margin-bottom: 40px;
 }
 
+.mentor__simple:hover {
+  cursor: pointer;
+}
+
 .label__style1 {
   font-size: 14px;
   font-weight: 700;
@@ -219,11 +223,13 @@
   font-weight: 700;
   margin-bottom: 10px;
   line-height: 28px;
+  text-align: justify;
 }
 
 .title__upper__mentoring {
   width: 100%;
   margin-bottom: 10px;
+  display: flex;
 }
 
 .mentoring__style {
