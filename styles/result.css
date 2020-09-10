@@ -1,7 +1,7 @@
 .result__page__wrap {
   width: 100%;
   padding: 30px 0;
-  background-color: #ede7f1;
+  background-color: #edf0fe;
   display: flex;
   justify-content: center;
   margin-bottom: 30px;
@@ -144,7 +144,7 @@
   font-weight: 700;
   position: absolute;
   border-radius: 8px 8px 0 0;
-  background-color: #60a9d7;
+  background-color: rgb(42, 159, 255);
   width: 100%;
   color: white;
   padding: 10px 0;
@@ -156,7 +156,8 @@
   font-weight: 700;
   position: absolute;
   border-radius: 8px 8px 0 0;
-  background-color: #de8059;
+  background-color: rgb(255, 98, 50);
+
   width: 100%;
   color: white;
   padding: 10px 0;
