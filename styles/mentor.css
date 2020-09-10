@@ -169,7 +169,7 @@
   width: 100%;
   background-color: #ebebeb;
   border-top: 1px solid rgb(190, 190, 190);
-  margin-bottom: 10px;
+
   padding: 30px 10px;
 }
 
@@ -726,7 +726,7 @@
 }
 
 .curri__content__des {
-  margin: 20px 0;
+  margin: 16px 0;
   width: 90%;
 }
 
@@ -734,7 +734,7 @@
   display: flex;
   color: #3b3b3b;
   font-size: 16px;
-  margin: 10px 0;
+
   text-align: justify;
   line-height: 24px;
 }
