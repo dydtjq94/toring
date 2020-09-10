@@ -2443,6 +2443,13 @@ setInterval(getTime, 500);
 const other = document.querySelector(`.other`);
 other.innerHTML = resultList[randomNum];
 
+const mentorSimple = document.querySelectorAll(`.mentor__simple`);
+
+mentorSimple.forEach((e) =>
+  e.addEventListener("click", function handleResultClick() {
+    location.href = "mentordetail.html?" + "name" + ":" + e.classList[1];
+  })
+);
 function init() {
   priceButton.addEventListener("click", handlePriceButton);
   toringButton.addEventListener("click", handleToringButton);
