@@ -1352,6 +1352,398 @@ const mentors = [
   },
 ];
 
+// 멘토 리스트
+let whimoon = [];
+let sookmyungW = [];
+let dandae = [];
+let gaepo = [];
+let jinsunW = [];
+let otherH = [];
+
+for (let k = 0; k < 18; k++) {
+  if (mentors[k].sort === 1) {
+    whimoon.push(mentors[k]);
+  } else if (mentors[k].sort === 2) {
+    sookmyungW.push(mentors[k]);
+  } else if (mentors[k].sort === 3) {
+    dandae.push(mentors[k]);
+  } else if (mentors[k].sort === 4) {
+    gaepo.push(mentors[k]);
+  } else if (mentors[k].sort === 5) {
+    jinsunW.push(mentors[k]);
+  } else if (mentors[k].sort === 6) {
+    otherH.push(mentors[k]);
+  }
+}
+
+Array.prototype.shuffle = function () {
+  var length = this.length;
+  while (length) {
+    var index = Math.floor(length-- * Math.random());
+    var temp = this[length];
+    this[length] = this[index];
+    this[index] = temp;
+  }
+  return this;
+};
+
+whimoon.shuffle();
+sookmyungW.shuffle();
+dandae.shuffle();
+gaepo.shuffle();
+jinsunW.shuffle();
+otherH.shuffle();
+
+let whimoonResult = `<div class="result__title"><span class="blue__bold">휘문고 출신</span> 멘토들 보기</div>`;
+let sookmyungWResult = `<div class="result__title"><span class="blue__bold">숙명여고 출신</span> 멘토들 보기</div>`;
+let dandaeResult = `<div class="result__title"><span class="blue__bold">단대부고 출신</span> 멘토들 보기</div>`;
+let gaepoResult = `<div class="result__title"><span class="blue__bold">개포고 출신</span> 멘토들 보기</div>`;
+let jinsunWResult = `<div class="result__title"><span class="blue__bold">진선여고 출신</span> 멘토들 보기</div>`;
+let otherHResult = `<div class="result__title"><span class="blue__bold">다른 대치동 출신</span> 멘토들 보기</div>`;
+
+let schoolMentorList = [
+  "whimoon",
+  "sookmyungW",
+  "dandae",
+  "gaepo",
+  "jinsunW",
+  "otherH",
+];
+
+for (let q = 0; q < whimoon.length; q++) {
+  whimoonResult =
+    whimoonResult +
+    `
+<div class="mentor__simple ${whimoon[q].eng}">
+${
+  whimoon[q].label === 0
+    ? `<div class="label__style1">
+    모집중
+  </div>`
+    : `<div class="label__style2">
+    마감임박! <span class="label__extra">${whimoon[q].labelNum}자리 남았어요!</span>
+  </div>`
+}
+  <div class="nr__upper ">
+    <div class="nr__column">
+      <img src="./img/${whimoon[q].eng}.jpeg" class="nr__img" />
+    </div>
+    <div class="nr__column">
+      <div class="nr__info__name">${whimoon[q].name} 멘토님 (${
+      whimoon[q].gender
+    })</div>
+      <div class="nr__info__uni">
+        <i class="fas fa-graduation-cap"></i> ${whimoon[q].univ}
+      </div>
+      <div class="nr__info__sch">
+        <i class="fas fa-school"></i> ${whimoon[q].high}
+      </div>
+      <div class="nr__info__sch">
+        <i class="fas fa-book-open"></i> ${whimoon[q].method}
+      </div>
+    </div>
+  </div>
+  <div class="nr__lower">
+    <div class="mentor__class__title">
+      <div class="mentor__class__title__upper">
+        <div class="title__upper__title">
+        ${whimoon[q].oneWord}
+        </div>
+        <div class="title__upper__mentoring">
+          <div class="mentoring__style"># ${whimoon[q].mentoring[0]}</div>
+          <div class="mentoring__style"># ${whimoon[q].mentoring[1]}</div>
+          <div class="mentoring__style"># ${whimoon[q].mentoring[2]}</div>
+        </div>
+      </div>
+      <div class="content__column__detail">
+        멘토님 이력 자세히 보기 <i class="fas fa-chevron-right"></i>
+      </div>
+    </div>
+  </div>
+</div>`;
+}
+for (let q = 0; q < sookmyungW.length; q++) {
+  sookmyungWResult =
+    sookmyungWResult +
+    `
+<div class="mentor__simple ${sookmyungW[q].eng}">
+${
+  sookmyungW[q].label === 0
+    ? `<div class="label__style1">
+    모집중
+  </div>`
+    : `<div class="label__style2">
+    마감임박! <span class="label__extra">${sookmyungW[q].labelNum}자리 남았어요!</span>
+  </div>`
+}
+  <div class="nr__upper ">
+    <div class="nr__column">
+      <img src="./img/${sookmyungW[q].eng}.jpeg" class="nr__img" />
+    </div>
+    <div class="nr__column">
+      <div class="nr__info__name">${sookmyungW[q].name} 멘토님 (${
+      sookmyungW[q].gender
+    })</div>
+      <div class="nr__info__uni">
+        <i class="fas fa-graduation-cap"></i> ${sookmyungW[q].univ}
+      </div>
+      <div class="nr__info__sch">
+        <i class="fas fa-school"></i> ${sookmyungW[q].high}
+      </div>
+      <div class="nr__info__sch">
+        <i class="fas fa-book-open"></i> ${sookmyungW[q].method}
+      </div>
+    </div>
+  </div>
+  <div class="nr__lower">
+    <div class="mentor__class__title">
+      <div class="mentor__class__title__upper">
+        <div class="title__upper__title">
+        ${sookmyungW[q].oneWord}
+        </div>
+        <div class="title__upper__mentoring">
+          <div class="mentoring__style"># ${sookmyungW[q].mentoring[0]}</div>
+          <div class="mentoring__style"># ${sookmyungW[q].mentoring[1]}</div>
+          <div class="mentoring__style"># ${sookmyungW[q].mentoring[2]}</div>
+        </div>
+      </div>
+      <div class="content__column__detail">
+        멘토님 이력 자세히 보기 <i class="fas fa-chevron-right"></i>
+      </div>
+    </div>
+  </div>
+</div>`;
+}
+for (let q = 0; q < dandae.length; q++) {
+  dandaeResult =
+    dandaeResult +
+    `
+<div class="mentor__simple ${dandae[q].eng}">
+${
+  dandae[q].label === 0
+    ? `<div class="label__style1">
+    모집중
+  </div>`
+    : `<div class="label__style2">
+    마감임박! <span class="label__extra">${dandae[q].labelNum}자리 남았어요!</span>
+  </div>`
+}
+  <div class="nr__upper ">
+    <div class="nr__column">
+      <img src="./img/${dandae[q].eng}.jpeg" class="nr__img" />
+    </div>
+    <div class="nr__column">
+      <div class="nr__info__name">${dandae[q].name} 멘토님 (${
+      dandae[q].gender
+    })</div>
+      <div class="nr__info__uni">
+        <i class="fas fa-graduation-cap"></i> ${dandae[q].univ}
+      </div>
+      <div class="nr__info__sch">
+        <i class="fas fa-school"></i> ${dandae[q].high}
+      </div>
+      <div class="nr__info__sch">
+        <i class="fas fa-book-open"></i> ${dandae[q].method}
+      </div>
+    </div>
+  </div>
+  <div class="nr__lower">
+    <div class="mentor__class__title">
+      <div class="mentor__class__title__upper">
+        <div class="title__upper__title">
+        ${dandae[q].oneWord}
+        </div>
+        <div class="title__upper__mentoring">
+          <div class="mentoring__style"># ${dandae[q].mentoring[0]}</div>
+          <div class="mentoring__style"># ${dandae[q].mentoring[1]}</div>
+          <div class="mentoring__style"># ${dandae[q].mentoring[2]}</div>
+        </div>
+      </div>
+      <div class="content__column__detail">
+        멘토님 이력 자세히 보기 <i class="fas fa-chevron-right"></i>
+      </div>
+    </div>
+  </div>
+</div>`;
+}
+for (let q = 0; q < gaepo.length; q++) {
+  gaepoResult =
+    gaepoResult +
+    `
+<div class="mentor__simple ${gaepo[q].eng}">
+${
+  gaepo[q].label === 0
+    ? `<div class="label__style1">
+    모집중
+  </div>`
+    : `<div class="label__style2">
+    마감임박! <span class="label__extra">${gaepo[q].labelNum}자리 남았어요!</span>
+  </div>`
+}
+  <div class="nr__upper ">
+    <div class="nr__column">
+      <img src="./img/${gaepo[q].eng}.jpeg" class="nr__img" />
+    </div>
+    <div class="nr__column">
+      <div class="nr__info__name">${gaepo[q].name} 멘토님 (${
+      gaepo[q].gender
+    })</div>
+      <div class="nr__info__uni">
+        <i class="fas fa-graduation-cap"></i> ${gaepo[q].univ}
+      </div>
+      <div class="nr__info__sch">
+        <i class="fas fa-school"></i> ${gaepo[q].high}
+      </div>
+      <div class="nr__info__sch">
+        <i class="fas fa-book-open"></i> ${gaepo[q].method}
+      </div>
+    </div>
+  </div>
+  <div class="nr__lower">
+    <div class="mentor__class__title">
+      <div class="mentor__class__title__upper">
+        <div class="title__upper__title">
+        ${gaepo[q].oneWord}
+        </div>
+        <div class="title__upper__mentoring">
+          <div class="mentoring__style"># ${gaepo[q].mentoring[0]}</div>
+          <div class="mentoring__style"># ${gaepo[q].mentoring[1]}</div>
+          <div class="mentoring__style"># ${gaepo[q].mentoring[2]}</div>
+        </div>
+      </div>
+      <div class="content__column__detail">
+        멘토님 이력 자세히 보기 <i class="fas fa-chevron-right"></i>
+      </div>
+    </div>
+  </div>
+</div>`;
+}
+for (let q = 0; q < jinsunW.length; q++) {
+  jinsunWResult =
+    jinsunWResult +
+    `
+<div class="mentor__simple ${jinsunW[q].eng}">
+${
+  jinsunW[q].label === 0
+    ? `<div class="label__style1">
+    모집중
+  </div>`
+    : `<div class="label__style2">
+    마감임박! <span class="label__extra">${jinsunW[q].labelNum}자리 남았어요!</span>
+  </div>`
+}
+  <div class="nr__upper ">
+    <div class="nr__column">
+      <img src="./img/${jinsunW[q].eng}.jpeg" class="nr__img" />
+    </div>
+    <div class="nr__column">
+      <div class="nr__info__name">${jinsunW[q].name} 멘토님 (${
+      jinsunW[q].gender
+    })</div>
+      <div class="nr__info__uni">
+        <i class="fas fa-graduation-cap"></i> ${jinsunW[q].univ}
+      </div>
+      <div class="nr__info__sch">
+        <i class="fas fa-school"></i> ${jinsunW[q].high}
+      </div>
+      <div class="nr__info__sch">
+        <i class="fas fa-book-open"></i> ${jinsunW[q].method}
+      </div>
+    </div>
+  </div>
+  <div class="nr__lower">
+    <div class="mentor__class__title">
+      <div class="mentor__class__title__upper">
+        <div class="title__upper__title">
+        ${jinsunW[q].oneWord}
+        </div>
+        <div class="title__upper__mentoring">
+          <div class="mentoring__style"># ${jinsunW[q].mentoring[0]}</div>
+          <div class="mentoring__style"># ${jinsunW[q].mentoring[1]}</div>
+          <div class="mentoring__style"># ${jinsunW[q].mentoring[2]}</div>
+        </div>
+      </div>
+      <div class="content__column__detail">
+        멘토님 이력 자세히 보기 <i class="fas fa-chevron-right"></i>
+      </div>
+    </div>
+  </div>
+</div>`;
+}
+for (let q = 0; q < otherH.length; q++) {
+  otherHResult =
+    otherHResult +
+    `
+<div class="mentor__simple ${otherH[q].eng}">
+${
+  otherH[q].label === 0
+    ? `<div class="label__style1">
+    모집중
+  </div>`
+    : `<div class="label__style2">
+    마감임박! <span class="label__extra">${otherH[q].labelNum}자리 남았어요!</span>
+  </div>`
+}
+  <div class="nr__upper ">
+    <div class="nr__column">
+      <img src="./img/${otherH[q].eng}.jpeg" class="nr__img" />
+    </div>
+    <div class="nr__column">
+      <div class="nr__info__name">${otherH[q].name} 멘토님 (${
+      otherH[q].gender
+    })</div>
+      <div class="nr__info__uni">
+        <i class="fas fa-graduation-cap"></i> ${otherH[q].univ}
+      </div>
+      <div class="nr__info__sch">
+        <i class="fas fa-school"></i> ${otherH[q].high}
+      </div>
+      <div class="nr__info__sch">
+        <i class="fas fa-book-open"></i> ${otherH[q].method}
+      </div>
+    </div>
+  </div>
+  <div class="nr__lower">
+    <div class="mentor__class__title">
+      <div class="mentor__class__title__upper">
+        <div class="title__upper__title">
+        ${otherH[q].oneWord}
+        </div>
+        <div class="title__upper__mentoring">
+          <div class="mentoring__style"># ${otherH[q].mentoring[0]}</div>
+          <div class="mentoring__style"># ${otherH[q].mentoring[1]}</div>
+          <div class="mentoring__style"># ${otherH[q].mentoring[2]}</div>
+        </div>
+      </div>
+      <div class="content__column__detail">
+        멘토님 이력 자세히 보기 <i class="fas fa-chevron-right"></i>
+      </div>
+    </div>
+  </div>
+</div>`;
+}
+
+const resultList = [
+  whimoonResult,
+  sookmyungWResult,
+  dandaeResult,
+  gaepoResult,
+  jinsunWResult,
+  otherHResult,
+];
+
+const koreanResult = [
+  "휘문고",
+  "숙명여고",
+  "단대부고",
+  "개포고",
+  "진선여고",
+  "대치동",
+];
+
+let resultListLength = resultList.length;
+let randomNum = Math.floor(Math.random() * resultListLength);
+
 const mentorWrite = document.querySelector(".mentor");
 const priceButton = document.querySelector(".buy__content");
 const toringButton = document.querySelector(".buy__toring");
@@ -1985,7 +2377,13 @@ mentorWrite.innerHTML = `<div class="logo">
     <div class="final__right2">74,917원</div>
   </div>
 </div>
-</div>`;
+</div>
+<div class="other__wrap">
+          <div class="other__title">대치동 주변 다른 학교 멘토들</div>
+          <div class="other"></div>
+        </div>
+
+`;
 
 function handlePriceButton() {
   const a = document.querySelector(".mentor__name");
@@ -1999,9 +2397,6 @@ function handleToringButton() {
 }
 
 const mentorLen = mentors.length;
-
-const otherMentor = document.querySelector(".other__content");
-const otherMentor2 = document.querySelector(".other__content2");
 
 const a = document.querySelector(".mentor__name");
 const mentorName = a.innerText.split(" ")[0];
@@ -2024,102 +2419,6 @@ for (var ii = 0; ii < 20; ii++) {
   randomNum1 = Math.floor(Math.random() * mentorLen);
   console.log(mentorName, mentors[randomNum2].name, mentors[randomNum1].name);
 }
-
-otherMentor.innerHTML = `<div class="result__comment">${
-  mentors[randomNum1].oneWord
-}</div>
-  <a class="simple__a" href="mentordetail.html?${
-    "name" + ":" + mentors[randomNum1].eng
-  }">
-      <div class="simple">
-        <div class="simple__img">
-          <img src="img/${mentors[randomNum1].eng}.jpeg" class="rec__img" />
-        </div>
-        <div class="simple__content">
-
-  
-    
-          <div class="content__column">${mentors[randomNum1].name} 멘토님 (${
-  mentors[randomNum1].gender
-})</div>
-          <div class="content__column">
-            <i class="fas fa-graduation-cap"></i>${mentors[randomNum1].univ}
-          </div>
-          <div class="content__column">
-            <i class="fas fa-school"></i>${mentors[randomNum1].high}
-          </div>
-          <div class="content__column">
-            <i class="fas fa-book-open"></i>${mentors[randomNum1].onePick}
-          </div>
-        </div>
-        
-      </div>
-      <div class="mentor__class__title">
-      <div class="mentor__class__title__upper">
-  <span class="title__mentoring">[1:1 멘토링]</span>
-  ${
-    mentors[randomNum1].label === 0
-      ? `<div class="title__mentoring__ing">모집중</div>`
-      : mentors[randomNum1].label === 1
-      ? `<div class="title__mentoring__complete">마감임박</div>`
-      : `<div class="title__mentoring__end">마감</div>`
-  }
-</div>
-      ${mentors[randomNum1].title}
-      <div class="content__column__detail">
-          멘토링 자세히 보기 <i class="fas fa-chevron-right"></i>
-        </div>
-</div>
-    </a>`;
-
-otherMentor2.innerHTML = `<div class="result__comment">${
-  mentors[randomNum2].oneWord
-}</div>
-  <a class="simple__a" href="mentordetail.html?${
-    "name" + ":" + mentors[randomNum2].eng
-  }">
-      <div class="simple">
-        <div class="simple__img">
-          <img src="img/${mentors[randomNum2].eng}.jpeg" class="rec__img" />
-        </div>
-        <div class="simple__content">
-
-       
-    
-          <div class="content__column">${mentors[randomNum2].name} 멘토님 (${
-  mentors[randomNum2].gender
-})</div>
-          <div class="content__column">
-            <i class="fas fa-graduation-cap"></i>${mentors[randomNum2].univ}
-          </div>
-          <div class="content__column">
-            <i class="fas fa-school"></i>${mentors[randomNum2].high}
-          </div>
-          <div class="content__column">
-            <i class="fas fa-book-open"></i>${mentors[randomNum2].onePick}
-          </div>
-        </div>
-       
-      </div>
-      <div class="mentor__class__title">
-      <div class="mentor__class__title__upper">
-  <span class="title__mentoring">[1:1 멘토링]</span>
-  ${
-    mentors[randomNum2].label === 0
-      ? `<div class="title__mentoring__ing">모집중</div>`
-      : mentors[randomNum2].label === 1
-      ? `<div class="title__mentoring__complete">마감임박</div>`
-      : `<div class="title__mentoring__end">마감</div>`
-  }
-
-</div>
-
-      ${mentors[randomNum2].title}
-      <div class="content__column__detail">
-          멘토링 자세히 보기 <i class="fas fa-chevron-right"></i>
-        </div>
-</div>
-    </a>`;
 
 const time1 = document.querySelector(`#extra__time`);
 const time2 = document.querySelector(`#extra__time2`);
@@ -2152,6 +2451,9 @@ function getTime() {
 }
 getTime();
 setInterval(getTime, 500);
+
+const other = document.querySelector(`.other`);
+other.innerHTML = resultList[randomNum];
 
 function init() {
   priceButton.addEventListener("click", handlePriceButton);
