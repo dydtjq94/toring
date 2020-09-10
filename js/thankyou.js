@@ -19,7 +19,8 @@ function getTime() {
 }
 
 function handlePassButton() {
-  location.href = "http://pf.kakao.com/_WMMxgxb/chat";
+  var newWindow = window.open("about:blank");
+  newWindow.location.href = "http://pf.kakao.com/_WMMxgxb/chat";
 }
 
 function init() {

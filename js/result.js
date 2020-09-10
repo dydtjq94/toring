@@ -691,6 +691,7 @@ result.innerHTML = resultList[resultSchoolNum] + resultList[randomNum];
 const mentorSimple = document.querySelectorAll(`.mentor__simple`);
 const oneWord = document.querySelector(`.one__word`);
 const twoWord = document.querySelector(`.two__word`);
+const footerLeftButton = document.querySelector(`.footer__left__button`);
 
 mentorSimple.forEach((e) =>
   e.addEventListener("click", function handleResultClick() {
@@ -702,15 +703,12 @@ oneWord.innerHTML = `"${koreanResult[resultSchoolNum]} 출신에게 받는 <br /
 twoWord.innerHTML = `${koreanResult[resultSchoolNum]} 출신만이 알고 있는 ${koreanResult[resultSchoolNum]} 내신 관리, 학생부 준비부터
 동기부여와 멘탈 관리까지 한번에!`;
 
-// for (let c = 0; c < mentorSimple.length; c++) {
-//   function handleResultClick() {
-//     setTimeout(function () {
-//       location.href =
-//         "mentordetail.html?" + "name" + ":" + nrUpper[c].classList[1];
-//     }, 5);
-//   }
-//   mentorSimple[c].addEventListener("click", handleResultClick);
-// }
+function handleKakao() {
+  var newWindow = window.open("about:blank");
+  newWindow.location.href = "http://pf.kakao.com/_WMMxgxb/chat";
+}
+
+footerLeftButton.addEventListener("click", handleKakao);
 
 const all = document.querySelector(".all");
 function handleCall() {

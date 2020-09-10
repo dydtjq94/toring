@@ -62,7 +62,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgb(247, 247, 247);
+  background-color: #f7f7f7;
   font-family: "Gilroy", sans-serif;
 }
 
@@ -125,6 +125,12 @@ body {
 
 .under {
   text-decoration: underline;
+}
+
+.orange__underline {
+  text-decoration: none;
+  border-bottom: 3px solid rgba(245, 78, 0, 0.7);
+  padding-bottom: 0px;
 }
 
 input[type="submit"] {
