@@ -1405,12 +1405,12 @@ gaepo.shuffle();
 jinsunW.shuffle();
 otherH.shuffle();
 
-let whimoonResult = ``;
-let sookmyungWResult = ``;
-let dandaeResult = ``;
-let gaepoResult = ``;
-let jinsunWResult = ``;
-let otherHResult = ``;
+let whimoonResult = `<div class="result__title"></div>`;
+let sookmyungWResult = `<div class="result__title"></div>`;
+let dandaeResult = `<div class="result__title"></div>`;
+let gaepoResult = `<div class="result__title"></div>`;
+let jinsunWResult = `<div class="result__title"></div>`;
+let otherHResult = `<div class="result__title"></div>`;
 
 let schoolMentorList = [
   "whimoon",
@@ -1762,6 +1762,8 @@ const toringButton = document.querySelector(".buy__toring");
 const temp = location.href.split("?");
 const forResult = temp[1].split(":")[1];
 
+console.log(forResult);
+
 let resultNum = 0;
 let i = 0;
 
@@ -1772,6 +1774,18 @@ for (;;) {
   }
   i++;
 }
+
+let j = 0;
+
+for (;;) {
+  if (koreanResult[j] === mentorsDetail[i].school) {
+    resultSchoolNum = j;
+    break;
+  }
+  j++;
+}
+
+console.log(resultNum, resultSchoolNum);
 
 let mentorExp = "";
 
@@ -1832,7 +1846,7 @@ mentorWrite.innerHTML = `
             </div>
           </div>
           <div class="mentor__title">
-            "${mentorsDetail[resultNum].title}"
+            ${mentorsDetail[resultNum].title}
           </div>
           <div class="mentoring__badge">
             <div class="mentoring__badge__style"># ${
@@ -2399,7 +2413,7 @@ mentorWrite.innerHTML = `
           </div>
         </div>
         <div class="other__wrap">
-          <div class="other__title">대치동 주변 <br/>다른 학교 멘토들</div>
+
           <div class="other"></div>
         </div>
 
@@ -2454,7 +2468,9 @@ getTime();
 setInterval(getTime, 500);
 
 const other = document.querySelector(`.other`);
-other.innerHTML = resultList[randomNum];
+other.innerHTML = resultList[resultSchoolNum];
+const resultTitle = document.querySelector(`.result__title`);
+resultTitle.innerHTML = `다른 <span class="blue__bold">${koreanResult[resultSchoolNum]} 출신</span> 멘토들 `;
 
 const mentorSimple = document.querySelectorAll(`.mentor__simple`);
 
