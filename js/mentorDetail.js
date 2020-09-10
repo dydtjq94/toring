@@ -2438,7 +2438,7 @@ function getTime() {
   }:${seconds < 10 ? `0${seconds}` : seconds}후 종료`;
 }
 getTime();
-setInterval(getTime, 500);
+setInterval(getTime, 6000);
 
 const other = document.querySelector(`.other`);
 other.innerHTML = resultList[randomNum];
