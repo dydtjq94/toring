@@ -61,13 +61,13 @@
   object-fit: cover;
   z-index: 2;
   margin-top: 30px;
+  border: 1px solid white;
 }
 
 .logo__right {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  align-self: flex-start;
 }
 
 .logo__school {
@@ -92,7 +92,7 @@
 
 .simple__info {
   background-color: white;
-  margin-top: -20px;
+  margin-top: -40px;
   border-radius: 20px 20px 0 0;
   padding-top: 16px;
   width: 100%;
@@ -106,10 +106,10 @@
   font-size: 24px;
   color: #313131;
   width: 90%;
-  margin-bottom: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 4px;
 }
 
 .mentor__label1 {
@@ -118,7 +118,8 @@
   border-radius: 6px;
   background-color: rgb(0, 140, 255);
   color: white;
-  padding: 10px 20px;
+  padding: 6px 12px;
+  padding-top: 9px;
   text-align: center;
 }
 
@@ -128,7 +129,9 @@
   font-weight: 700;
   border-radius: 6px;
   color: white;
-  padding: 10px 20px;
+  padding: 6px 12px;
+  padding-top: 9px;
+
   text-align: center;
 }
 
@@ -142,16 +145,17 @@
 
 .mentor__uni {
   margin-top: 5px;
-  font-size: 18px;
-  color: rgb(80, 80, 80);
+  font-size: 16px;
+  color: rgb(46, 46, 46);
   width: 90%;
   display: flex;
   align-items: center;
+  font-weight: 600;
 }
 
 .mentor__uni__mark {
-  width: 18px;
-  height: 18px;
+  width: 16px;
+  height: 16px;
   object-fit: cover;
   margin-right: 5px;
   margin-bottom: 3px;

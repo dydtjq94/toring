@@ -1,5 +1,8 @@
 .submitForm {
-  width: 90%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
 }
 
 .gform {
@@ -10,32 +13,35 @@
 
 .submit__title {
   font-size: 24px;
-  color: white;
   font-weight: 700;
   width: 100%;
-  background-color: #0123b4;
   display: flex;
   justify-content: center;
-  padding: 30px 0;
+  padding-top: 30px;
 }
 
 .span__title {
   width: 90%;
 }
 
-.submit {
-  width: 100%;
-  padding: 0px 10px;
-  border-radius: 10px;
-  background-color: transparent;
+.on__bold {
+  color: #0123b4;
+  font-size: 32px;
 }
 
-.submit__num__title,
-.submit__bank__title,
+.submit {
+  width: 100%;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .submit__name__title {
-  font-size: 14px;
-  color: #6b6b6b;
-  margin-bottom: 10px;
+  font-size: 12px;
+  color: #494949;
+  margin-bottom: 8px;
+  font-weight: 700;
 }
 
 .submit__num__content {
@@ -52,73 +58,110 @@
 }
 
 .submit__column {
-  width: 100%;
   padding-bottom: 20px;
   text-align: justify;
 }
 
+.submit__mentor__name {
+  margin-bottom: 10px;
+}
+
 .submit__univ {
-  width: 100%;
-  padding-bottom: 20px;
   display: flex;
 }
 
 .submit__school {
-  width: 50%;
+  margin-right: 16px;
+}
+
+.submit__class {
+  font-weight: 700;
+}
+
+.submit__upper__wrap {
+  width: 90%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 20px;
+  background-color: white;
+  -webkit-box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.75);
+  padding: 0 18px;
+  margin-bottom: 30px;
+  padding-top: 20px;
+  padding-bottom: 16px;
 }
 
 .submit__upper {
+  width: 100%;
   display: flex;
-  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 200px;
 }
 
-.submit__upper__column .submit__column {
-  width: 90%;
+.submit__lower__column {
+  width: 100%;
+  position: relative;
 }
 
 .submit__upper2 {
-  align-items: flex-start;
-  border-bottom: 1px solid #666666;
-  margin-bottom: 20px;
+  width: 100%;
+  position: absolute;
+  z-index: -7;
+  bottom: -180px;
+  background-color: #ebe7f0;
+  display: flex;
+  justify-content: center;
 }
 
-.submit__upper .submit__image {
-  width: 30%;
+.submit__column {
+  width: 90%;
 }
 
 .submit__text {
+  width: 80%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 20px;
   font-size: 16px;
-  width: 100%;
-  padding: 0 20px;
+  padding: 40px 0;
+  padding-bottom: 20px;
   text-align: justify;
+  font-weight: 700;
   line-height: 22px;
-  background-color: #d6deff;
-  border-radius: 30px 5px 5px 5px;
+  border-bottom: 1px solid rgb(190, 190, 190);
+
   color: #494949;
 }
 
+.submit__center {
+  width: 90%;
+}
+
 .fa-quote-left {
-  color: #0123b4;
-  font-size: 12px;
+  color: #a0a0a0;
+  font-size: 24px;
   margin-top: 16px;
   margin-bottom: 12px;
+  align-self: flex-start;
 }
 
 .fa-quote-right {
-  font-size: 12px;
-  color: #0123b4;
+  font-size: 24px;
+  color: #a0a0a0;
   margin-top: 8px;
   margin-bottom: 16px;
+  align-self: flex-end;
 }
 
 .submit__mentor__img {
-  border-radius: 50%;
-  width: 90px;
-  height: 90px;
+  border-radius: 20px;
+  width: 100px;
+  height: 100px;
   object-fit: cover;
   margin-right: 20px;
 }
@@ -130,17 +173,7 @@
   color: #202020;
   font-weight: 700;
   font-size: 20px;
-}
-
-.submit__class {
-  border: none;
-  outline: none;
-  background-color: transparent;
-  color: #202020;
-  font-weight: 500;
-  font-size: 20px;
-  width: 100%;
-  line-height: 24px;
+  width: 160px;
 }
 
 .user__name__title {
@@ -201,7 +234,7 @@
   color: white;
   border-radius: 10px;
   padding: 16px 20px;
-  width: 95%;
+  width: 90%;
   outline: none;
   margin-bottom: 6px;
 }
@@ -213,7 +246,7 @@
 .submit__button {
   width: 100%;
   text-align: center;
-  margin-bottom: 200px;
+  margin-bottom: 160px;
 }
 
 .submit__submit__ment {
@@ -226,11 +259,12 @@
   font-size: 20px;
   width: 100%;
   line-height: 24px;
-  background-color: #203aac;
-  color: white;
+  border-top: 1px solid #203aac;
+  border-bottom: 1px solid #203aac;
+
+  color: #203aac;
   padding: 20px 0;
   margin-bottom: 20px;
-  border-radius: 15px;
 }
 
 .black__loading {
