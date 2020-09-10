@@ -1116,7 +1116,7 @@ const mentors = [
     // label 0: 모집중, 1: 마감임박
     label: 1,
     //labelNum 몇자리 남았어요에 들어가는 숫자 (모집중이나 마감임박이나 다 써줘야함)
-    labelNum: 4,
+    labelNum: 2,
     // sort 1:휘문고, 2:숙명여고, 3:단대부고, 4:개포고, 5:진선여고, 6:그외
     sort: 1,
   },
@@ -1145,7 +1145,7 @@ const mentors = [
     oneWord: "학생을 진심으로 도와주는 선빈 멘토님",
     mentoring: ["과목별 공부법", "멘탈 관리", "진선여고 내신"],
     label: 1,
-    labelNum: 3,
+    labelNum: 2,
     sort: 5,
   },
 
@@ -1173,7 +1173,7 @@ const mentors = [
     oneWord: "급격한 성적 상승을 약속하는 태형 멘토님",
     mentoring: ["논술 전문", "성적 상승", "학습 습관 관리"],
     label: 1,
-    labelNum: 3,
+    labelNum: 1,
     sort: 1,
   },
 
@@ -1216,7 +1216,7 @@ const mentors = [
     oneWord: "부모님 도움 없이 스스로 입시를 해낸 민영 멘토님",
     mentoring: ["자기 주도 학습", "숙명여고 내신", "동기 부여"],
     label: 0,
-    labelNum: 4,
+    labelNum: 3,
     sort: 2,
   },
 
@@ -1230,7 +1230,7 @@ const mentors = [
     oneWord: "효율적인 공부법으로 서울대와 카이스트를 동시 합격한 현진 멘토님",
     mentoring: ["숙명여고 이과", "진로 설정", "효율적인 공부"],
     label: 1,
-    labelNum: 3,
+    labelNum: 2,
     sort: 2,
   },
 
@@ -1272,7 +1272,7 @@ const mentors = [
     eng: "nayeon",
     oneWord: "코로나로 인한 슬럼프를 극복하게 해주는 나연 멘토님",
     mentoring: ["슬럼프 극복", "진선여고 내신", "성적 급상승"],
-    label: 1,
+    label: 0,
     labelNum: 3,
     sort: 5,
   },
@@ -1287,8 +1287,8 @@ const mentors = [
     oneWord:
       "선택과 집중으로 1학년 내신 2.87이었던 개포고 학생부를 완벽하게 해결한 지윤 멘토님",
     mentoring: ["개포고 내신", "성적 급상승", "학생부 전문"],
-    label: 0,
-    labelNum: 4,
+    label: 1,
+    labelNum: 1,
     sort: 4,
   },
 
@@ -1301,8 +1301,8 @@ const mentors = [
     eng: "siyeon",
     oneWord: "모든 과목 공부법을 완벽하게 알려주는 시연 멘토님",
     mentoring: ["과목별 공부법", "중산고 내신", "성적 상승 곡선"],
-    label: 0,
-    labelNum: 4,
+    label: 1,
+    labelNum: 3,
     sort: 6,
   },
 
@@ -1316,7 +1316,7 @@ const mentors = [
     oneWord: "슬럼프를 극복해 서울대 의대에 진학한 혜준 멘토님",
     mentoring: ["서울대 의대", "슬럼프 극복", "과목별 공부법"],
     label: 1,
-    labelNum: 2,
+    labelNum: 1,
     sort: 6,
   },
 
@@ -1330,7 +1330,7 @@ const mentors = [
     oneWord: "단대부고의 내신과 학생부를 완벽하게 해결해주는 서택 멘토님",
     mentoring: ["단대부고 내신", "학생부 전문", "친 형 같은"],
     label: 1,
-    labelNum: 2,
+    labelNum: 1,
     sort: 3,
   },
 
@@ -1344,7 +1344,7 @@ const mentors = [
     oneWord: "친근한 형처럼 다가가지만, 확실하게 알려주는 승환 멘토님",
     mentoring: ["정시 수시 동시", "단대부고 내신", "과목별 학습법"],
     label: 1,
-    labelNum: 1,
+    labelNum: 2,
     sort: 3,
   },
 
@@ -1357,7 +1357,7 @@ const mentors = [
     eng: "sangha",
     oneWord: "휘문고에서 정시와 수시 모두로 의예과에 진학한 상하 멘토님",
     mentoring: ["연세대 의대", "정시 수시 동시", "학습 습관 관리"],
-    label: 1,
+    label: 0,
     labelNum: 3,
     sort: 1,
   },
