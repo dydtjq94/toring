@@ -62,7 +62,7 @@
 
 .main__button {
   position: fixed;
-  bottom: 80px;
+  bottom: 100px;
   box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.4);
   text-decoration: none;
   color: white;
