@@ -1774,11 +1774,15 @@ for (let u = 0; u < mentorsDetail[resultNum].experience.length; u++) {
 mentorWrite.innerHTML = `
 
 <div class="logo">
-          <img src="img/${mentorsDetail[resultNum].univEng}campus.png" class="mentor__background" />
+          <img src="img/${
+            mentorsDetail[resultNum].univEng
+          }campus.png" class="mentor__background" />
         </div>
         <div class="simple__info">
           <div class="mentor__simple__info">
-            <img src="img/${mentorsDetail[resultNum].nameEng}.jpeg" class="mentor__face" />
+            <img src="img/${
+              mentorsDetail[resultNum].nameEng
+            }.jpeg" class="mentor__face" />
             <div class="logo__right">
               <div class="logo__school">${mentorsDetail[resultNum].school}</div>
               <div class="logo__line"></div>
@@ -1786,21 +1790,47 @@ mentorWrite.innerHTML = `
             </div>
           </div>
           <div class="mentor__name">
-            <span class="bold">${mentorsDetail[resultNum].name}</span> 멘토님 (${mentorsDetail[resultNum].gender})
+          <div class="mentor__name__name">
+          <span class="bold">${mentorsDetail[resultNum].name}</span> 멘토님 (${
+  mentorsDetail[resultNum].gender
+})
+            </div>
+            ${
+              mentors[resultNum].label === 0
+                ? `<div class="mentor__label1">
+                모집중
+              </div>`
+                : `<div class="mentor__label2">
+                마감임박!
+              </div>`
+            }
+
+
+            
           </div>
           <div class="mentor__uni__wrap">
             <div class="mentor__uni">
-              <img src="img/${mentorsDetail[resultNum].univEng}.png" class="mentor__uni__mark" />
-              ${mentorsDetail[resultNum].univ}학교 ${mentorsDetail[resultNum].major} ${mentorsDetail[resultNum].year} • ${mentorsDetail[resultNum].method}
+              <img src="img/${
+                mentorsDetail[resultNum].univEng
+              }.png" class="mentor__uni__mark" />
+              ${mentorsDetail[resultNum].univ}학교 ${
+  mentorsDetail[resultNum].major
+} ${mentorsDetail[resultNum].year} • ${mentorsDetail[resultNum].method}
             </div>
           </div>
           <div class="mentor__title">
             "${mentorsDetail[resultNum].title}"
           </div>
           <div class="mentoring__badge">
-            <div class="mentoring__badge__style"># ${mentorsDetail[resultNum].mentoring[0]}</div>
-            <div class="mentoring__badge__style"># ${mentorsDetail[resultNum].mentoring[1]}</div>
-            <div class="mentoring__badge__style"># ${mentorsDetail[resultNum].mentoring[2]}</div>
+            <div class="mentoring__badge__style"># ${
+              mentorsDetail[resultNum].mentoring[0]
+            }</div>
+            <div class="mentoring__badge__style"># ${
+              mentorsDetail[resultNum].mentoring[1]
+            }</div>
+            <div class="mentoring__badge__style"># ${
+              mentorsDetail[resultNum].mentoring[2]
+            }</div>
           </div>
         </div>
         <div class="price">
@@ -1850,7 +1880,9 @@ mentorWrite.innerHTML = `
             멘토님과 잘 맞을지 모르겠다면
           </div>
           <div class="free__ment">
-            <span class="bold">${mentorsDetail[resultNum].name} 멘토님</span>에게 직접 받는<br /><span
+            <span class="bold">${
+              mentorsDetail[resultNum].name
+            } 멘토님</span>에게 직접 받는<br /><span
               class="blue__bold"
               >30분 무료 온라인 멘토링</span
             >
@@ -1868,7 +1900,9 @@ mentorWrite.innerHTML = `
               <i class="fas fa-gift"></i> 플래너 세트
             </div>
             <div class="benefit__column">
-              <i class="fas fa-plus-circle"></i> ${mentorsDetail[resultNum].school} 추가 할인
+              <i class="fas fa-plus-circle"></i> ${
+                mentorsDetail[resultNum].school
+              } 추가 할인
             </div>
             <div class="benefit__column">
               <i class="fas fa-thumbs-up"></i> 학습 상승 100%
@@ -1895,7 +1929,9 @@ mentorWrite.innerHTML = `
         <div class="service__info">
           <div class="service__column">
             <div class="service__title">
-            ${mentorsDetail[resultNum].school} 선배가 직접 해주는 <br /><span class="bold"
+            ${
+              mentorsDetail[resultNum].school
+            } 선배가 직접 해주는 <br /><span class="bold"
                 >토링 <span class="under">멘토링</span> 프로그램</span
               >
             </div>
@@ -1986,11 +2022,15 @@ mentorWrite.innerHTML = `
         <div class="worry">
           <div class="worry__title">
             <span class="bold">${mentorsDetail[resultNum].school}</span>에서
-            <span class="bold">${mentorsDetail[resultNum].univ}</span>에 간다고 <br />마음은 단단히
+            <span class="bold">${
+              mentorsDetail[resultNum].univ
+            }</span>에 간다고 <br />마음은 단단히
             먹었는데...
           </div>
           <div class="special__content">
-            <img src="./img/${mentorsDetail[resultNum].univEng}campus.png" alt="" class="campus" />
+            <img src="./img/${
+              mentorsDetail[resultNum].univEng
+            }campus.png" alt="" class="campus" />
           </div>
           <div class="worry__column">
             <div class="worry__content">
@@ -2026,10 +2066,14 @@ mentorWrite.innerHTML = `
           <div class="mentor__suggest">
             <div class="mentor__suggest__ment">
               이제 걱정하지 말고 <br />
-              <span class="bold">${mentorsDetail[resultNum].name} 멘토님</span>에게 관리받아 보세요.<br />
+              <span class="bold">${
+                mentorsDetail[resultNum].name
+              } 멘토님</span>에게 관리받아 보세요.<br />
               <span class="bold"
                 >${mentorsDetail[resultNum].school} 학생은<br />
-                <span class="orange__underline">${mentorsDetail[resultNum].school} 선배</span>가 가장 잘
+                <span class="orange__underline">${
+                  mentorsDetail[resultNum].school
+                } 선배</span>가 가장 잘
                 아니까요.</span
               >
             </div>
@@ -2040,7 +2084,9 @@ mentorWrite.innerHTML = `
           <div class="mentor__story">
             <div class="story__title">
               <span class="bold">
-                <span class="orange__underline">${mentorsDetail[resultNum].name} 멘토님</span>께
+                <span class="orange__underline">${
+                  mentorsDetail[resultNum].name
+                } 멘토님</span>께
                 물어봤어요</span
               >
             </div>
@@ -2060,7 +2106,9 @@ mentorWrite.innerHTML = `
                 <div class="story__content__title">
                   <div class="num">2.</div>
                   <div class="story__content__wrap">
-                    멘토님과 같은 고등학교(${mentorsDetail[resultNum].school})를 다니고 있습니다. 혹시
+                    멘토님과 같은 고등학교(${
+                      mentorsDetail[resultNum].school
+                    })를 다니고 있습니다. 혹시
                     우리 학교 내신이나 학생부는 어떤 식으로 준비해야 하나요?
                     <div class="story__content__description">
                     ${mentorsDetail[resultNum].special[1].detail}
@@ -2214,33 +2262,28 @@ mentorWrite.innerHTML = `
             <div class="method__column">
               <div class="method__content">
                 <div class="num">1.</div>
-                멘토님이 학생이 필요한 부분에 도움을 줄 수 있는지 수업 소개를
-                읽어보세요
+                멘토님이 학생이 필요한 부분에 도움을 줄 수 있는지 수업 소개를 읽어보세요.
               </div>
               <div class="method__content">
                 <div class="num">2.</div>
                 <div class="method__cancel">
-                  멘토링 신청하기 버튼을 눌러서 멘토링 희망 날짜와 플랜을 선택
-                  후 결제를 진행해주세요.
+                30분 무료 멘토링 신청하기 버튼을 눌러서 기본적인 신청 사항 및 멘토링 희망 시간을 적어주세요.
                   <div class="cancel">
-                    희망 날짜와 플랜은 언제든지 변경할 수 있습니다.
+                  인기 많으신 멘토님의 경우 무료 멘토링 신청 후 결제까지 하셔야 대기 없이 바로 멘토링 받으실 수 있습니다!
                   </div>
                 </div>
               </div>
               <div class="method__content">
                 <div class="num">3.</div>
-                결제 바로 다음 주부터 멘토링이 진행됩니다. 멘토링 시간은
-                멘토님과 협의 하에 정해주세요.
+                30분 무료 멘토링을 신청하신 시간에 온라인 무료 멘토링을 할 수 있는 줌(ZOOM) 링크를 발송합니다.
               </div>
               <div class="method__content">
                 <div class="num">4.</div>
-                멘토링 당일 멘토가 온라인 멘토링이 가능한 줌 링크를 발송해
-                멘토링을 진행합니다.
+                30분 무료 멘토링 이 후, 멘토님이 작성한 멘토링 계획과 멘토링 플랜을 선택할 수 있는 링크를 통해 멘토링 기간을 선택합니다.
               </div>
               <div class="method__content">
                 <div class="num">5.</div>
-                멘토의 멘토링이 마음에 들지 않을 시, 동일 학교 출신의 다른
-                멘토로 언제든지 변경 가능합니다.
+                학생에게 개인화된 정기적인 멘토링을 받습니다. 멘토의 멘토링이 마음에 들지 않을 시, 동일 학교 출신의 다른 멘토로 언제든지 변경 가능합니다.
               </div>
             </div>
           </div>
