@@ -2415,7 +2415,7 @@ const time3 = document.querySelector(`#extra__time3`);
 function getTime() {
   const currentTime = new Date();
   // Don't delete this.
-  const extraDay = new Date("2020-09-19:00:00:00+0900");
+  const extraDay = new Date("2020-09-19");
   const days = Math.floor((extraDay - currentTime) / 86400000);
   const hours = Math.floor(((extraDay - currentTime) % 86400000) / 3600000);
   const minutes = Math.floor(
@@ -2438,7 +2438,7 @@ function getTime() {
   }:${seconds < 10 ? `0${seconds}` : seconds}후 종료`;
 }
 getTime();
-setInterval(getTime, 6000);
+setInterval(getTime, 500);
 
 const other = document.querySelector(`.other`);
 other.innerHTML = resultList[randomNum];
