@@ -302,12 +302,12 @@ gaepo.shuffle();
 jinsunW.shuffle();
 otherH.shuffle();
 
-let whimoonResult = `<div class="result__title"><span class="blue__bold">휘문고 출신</span> 멘토들 </div>`;
-let sookmyungWResult = `<div class="result__title"><span class="blue__bold">숙명여고 출신</span> 멘토들 </div>`;
-let dandaeResult = `<div class="result__title"><span class="blue__bold">단대부고 출신</span> 멘토들 </div>`;
-let gaepoResult = `<div class="result__title"><span class="blue__bold">개포고 출신</span> 멘토들 </div>`;
-let jinsunWResult = `<div class="result__title"><span class="blue__bold">진선여고 출신</span> 멘토들 </div>`;
-let otherHResult = `<div class="result__title"><span class="blue__bold">다른 대치동 출신</span> 멘토들 </div>`;
+let whimoonResult = `<div class="result__title"></div>`;
+let sookmyungWResult = `<div class="result__title"></div>`;
+let dandaeResult = `<div class="result__title"></div>`;
+let gaepoResult = `<div class="result__title"></div>`;
+let jinsunWResult = `<div class="result__title"></div>`;
+let otherHResult = `<div class="result__title"></div>`;
 
 let schoolMentorList = [
   "whimoon",
@@ -687,6 +687,10 @@ for (var i = 0; i < 10; i++) {
 }
 
 result.innerHTML = resultList[resultSchoolNum] + resultList[randomNum];
+
+const resultTitle = document.querySelectorAll(`.result__title`);
+resultTitle[0].innerHTML = `<span class="blue__bold">${koreanResult[resultSchoolNum]} 출신</span> 멘토들 `;
+resultTitle[1].innerHTML = `<span class="blue__bold">다른 대치동 출신</span> 멘토들 `;
 
 const mentorSimple = document.querySelectorAll(`.mentor__simple`);
 const oneWord = document.querySelector(`.one__word`);

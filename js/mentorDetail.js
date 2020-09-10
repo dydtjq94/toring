@@ -1392,12 +1392,12 @@ gaepo.shuffle();
 jinsunW.shuffle();
 otherH.shuffle();
 
-let whimoonResult = `<div class="result__title"><span class="blue__bold">휘문고 출신</span> 멘토들 </div>`;
-let sookmyungWResult = `<div class="result__title"><span class="blue__bold">숙명여고 출신</span> 멘토들 </div>`;
-let dandaeResult = `<div class="result__title"><span class="blue__bold">단대부고 출신</span> 멘토들 </div>`;
-let gaepoResult = `<div class="result__title"><span class="blue__bold">개포고 출신</span> 멘토들 </div>`;
-let jinsunWResult = `<div class="result__title"><span class="blue__bold">진선여고 출신</span> 멘토들 </div>`;
-let otherHResult = `<div class="result__title"><span class="blue__bold">다른 대치동 출신</span> 멘토들 </div>`;
+let whimoonResult = ``;
+let sookmyungWResult = ``;
+let dandaeResult = ``;
+let gaepoResult = ``;
+let jinsunWResult = ``;
+let otherHResult = ``;
 
 let schoolMentorList = [
   "whimoon",
@@ -1752,8 +1752,6 @@ const forResult = temp[1].split(":")[1];
 let resultNum = 0;
 let i = 0;
 
-console.log(forResult);
-
 for (;;) {
   if (mentorsDetail[i].nameEng === forResult) {
     resultNum = i;
@@ -1762,7 +1760,6 @@ for (;;) {
   i++;
 }
 
-console.log(mentorsDetail[resultNum].experience.length);
 let mentorExp = "";
 
 for (let u = 0; u < mentorsDetail[resultNum].experience.length; u++) {
@@ -1774,8 +1771,6 @@ for (let u = 0; u < mentorsDetail[resultNum].experience.length; u++) {
 </div>`;
 }
 
-console.log(resultNum);
-console.log(mentorExp);
 mentorWrite.innerHTML = `
 
 <div class="logo">
@@ -2348,7 +2343,7 @@ mentorWrite.innerHTML = `
           </div>
         </div>
         <div class="other__wrap">
-          <div class="other__title">대치동 주변 다른 학교 멘토들</div>
+          <div class="other__title">대치동 주변 <br/>다른 학교 멘토들</div>
           <div class="other"></div>
         </div>
 
@@ -2377,7 +2372,7 @@ const time3 = document.querySelector(`#extra__time3`);
 function getTime() {
   const currentTime = new Date();
   // Don't delete this.
-  const extraDay = new Date("2020-09-17:00:00:00+0900");
+  const extraDay = new Date("2020-09-19:00:00:00+0900");
   const days = Math.floor((extraDay - currentTime) / 86400000);
   const hours = Math.floor(((extraDay - currentTime) % 86400000) / 3600000);
   const minutes = Math.floor(
