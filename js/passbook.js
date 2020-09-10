@@ -105,96 +105,95 @@ let i = 0;
 //   i++;
 // }
 
-submitForm.innerHTML = `
-<div class="passbook__title">멘토링 결제 금액</div>
+// submitForm.innerHTML = `
+// <div class="passbook__title">멘토링 결제 금액</div>
+// <div class="total__price">
+//   <div class="total__price__column">
+//     <div class="before__price__title">금액</div>
+//   </div>
+//   <div class="total__price__column">
+//     <div class="price__mentor__content">
+//       <div class="price__left">
+//         <div class="price__left__content">
+//         김규민 멘토님
+//         </div>
+//       </div>
+//       <div class="price__left">
+//         <div class="price__left__content2">
+//         토링 타이틀입니다
+//         </div>
+//       </div>
+//     </div>
+//     <div class="before__price">
+//     ${0 === 0 ? `199,000원` : `149,000원`}
+//     </div>
+//   </div>
+//   <div class="total__price__column">
+//     <div class="off__title">할인</div>
+//   </div>
+//   <div class="total__price__column">
+//     <div class="off__content">DSchool 이벤트 ${
+//       0 === 0 ? `30%` : `34%`
+//     } 할인</div>
+//     <div class="off__content__price">-50,000원</div>
+//   </div>
+//   <div class="total__price__column">
+//     <div class="after__price__title">
+//       최종 결제 금액
+//     </div>
+//   </div>
+//   <div class="total__price__column">
+//     <div class="after__price">${0 === 0 ? `149,000원` : `99,000원`}</div>
+//   </div>
+// </div>
 
-<div class="total__price">
-  <div class="total__price__column">
-    <div class="before__price__title">금액</div>
-  </div>
-  <div class="total__price__column">
-    <div class="price__mentor__content">
-      <div class="price__left">
-        <div class="price__left__content">
-        김규민 멘토님
-        </div>
-      </div>
-      <div class="price__left">
-        <div class="price__left__content2">
-        토링 타이틀입니다
-        </div>
-      </div>
-    </div>
-    <div class="before__price">
-    ${0 === 0 ? `199,000원` : `149,000원`}
-    </div>
-  </div>
-  <div class="total__price__column">
-    <div class="off__title">할인</div>
-  </div>
-  <div class="total__price__column">
-    <div class="off__content">DSchool 이벤트 ${
-      0 === 0 ? `30%` : `34%`
-    } 할인</div>
-    <div class="off__content__price">-50,000원</div>
-  </div>
-  <div class="total__price__column">
-    <div class="after__price__title">
-      최종 결제 금액
-    </div>
-  </div>
-  <div class="total__price__column">
-    <div class="after__price">${0 === 0 ? `149,000원` : `99,000원`}</div>
-  </div>
-</div>
+// <div class="passbook__title">무통장 입금 안내</div>
 
-<div class="passbook__title">무통장 입금 안내</div>
+// <div class="passbook">
+//   <div class="passbook__column">
+//     <div class="passbook__num__title">입금 계좌</div>
+//     <div class="passbook__num__content">
+//       <input
+//         type="text"
+//         class="num__content"
+//         id="target"
+//         value="530402-01-226704"
+//         readonly
+//       />
+//       <div class="num__copy" id="btn">
+//         복사하기
+//       </div>
+//     </div>
+//   </div>
+//   <div class="passbook__column">
+//     <div class="passbook__info">
+//       <div class="info__bank__title">입금 은행</div>
+//       <div class="info__bank__content">국민은행</div>
+//     </div>
+//     <div class="passbook__info">
+//       <div class="info__name__title">예금주</div>
+//       <div class="info__name__content">지현준</div>
+//     </div>
+//   </div>
+//   <div class="passbook__column">
+//     <div class="passbook__price">
+//       <div class="info__bank__title">입금액</div>
+//       <div class="info__price__content">${
+//         0 === 0 ? `149,000원` : `99,000원`
+//       }</div>
+//     </div>
 
-<div class="passbook">
-  <div class="passbook__column">
-    <div class="passbook__num__title">입금 계좌</div>
-    <div class="passbook__num__content">
-      <input
-        type="text"
-        class="num__content"
-        id="target"
-        value="530402-01-226704"
-        readonly
-      />
-      <div class="num__copy" id="btn">
-        복사하기
-      </div>
-    </div>
-  </div>
-  <div class="passbook__column">
-    <div class="passbook__info">
-      <div class="info__bank__title">입금 은행</div>
-      <div class="info__bank__content">국민은행</div>
-    </div>
-    <div class="passbook__info">
-      <div class="info__name__title">예금주</div>
-      <div class="info__name__content">지현준</div>
-    </div>
-  </div>
-  <div class="passbook__column">
-    <div class="passbook__price">
-      <div class="info__bank__title">입금액</div>
-      <div class="info__price__content">${
-        0 === 0 ? `149,000원` : `99,000원`
-      }</div>
-    </div>
-    
-  </div>
-</div>
-<div class="user__differ">
-  <i class="fas fa-exclamation"></i>
-  <div class="user__differ__ment">
-    입금자가 다르다면
-    <span class="differ__button">여기</span>
-    로 문의주세요.
-  </div>
-</div>
-`;
+//   </div>
+// </div>
+// <div class="user__differ">
+//   <i class="fas fa-exclamation"></i>
+//   <div class="user__differ__ment">
+//     입금자가 다르다면
+//     <span class="differ__button">여기</span>
+//     로 문의주세요.
+//   </div>
+// </div>
+// `;
 
 const differButton = document.querySelector(`.differ__button`);
 const kakaoButton = document.querySelector(`.passbook__button__kakao`);
