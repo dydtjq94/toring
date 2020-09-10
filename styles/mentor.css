@@ -125,7 +125,6 @@
   width: 90%;
   display: flex;
   align-items: center;
-  border-bottom: ;
 }
 
 .mentor__uni__mark {
@@ -699,8 +698,9 @@
 .curri__title {
   color: black;
   font-size: 20px;
-  line-height: 25px;
+  line-height: 30px;
   margin-bottom: 20px;
+  font-weight: 700;
 }
 
 .curri__column__title {
@@ -790,7 +790,7 @@
 .method__title {
   color: black;
   font-size: 20px;
-  line-height: 25px;
+  line-height: 30px;
   margin-bottom: 20px;
   font-weight: 700;
 }
@@ -805,7 +805,8 @@
 .method__content {
   display: flex;
   margin: 10px 0;
-  line-height: 20px;
+  line-height: 24px;
+
   text-align: justify;
 }
 
@@ -814,26 +815,35 @@
   font-size: 14px;
 }
 
+.review__wrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  border-top: 1px solid rgb(190, 190, 190);
+}
+
 .review {
   width: 90%;
-  margin-top: 30px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid rgb(177, 177, 177);
+  margin-top: 20px;
 }
 
 .review__title {
-  color: #585858;
+  color: black;
   font-size: 20px;
-  line-height: 25px;
+  line-height: 30px;
   margin-bottom: 30px;
 }
 
 .review__column {
+  border-radius: 20px;
   margin-bottom: 30px;
-  border-bottom: 1px solid rgba(88, 88, 88, 0.2);
-  padding-bottom: 30px;
+  padding: 30px;
   display: flex;
   flex-direction: column;
+  -webkit-box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.75);
 }
 
 .review__user {
@@ -849,7 +859,7 @@
 }
 
 .review__content {
-  padding: 0 20px;
+  width: 100%;
   font-size: 16px;
   line-height: 24px;
   text-align: justify;
@@ -933,14 +943,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 100px;
+  margin-bottom: 120px;
 }
 
 .other__title {
-  font-size: 22px;
-  font-weight: 700;
-  color: rgb(34, 34, 34);
+  color: black;
+  font-size: 20px;
   line-height: 30px;
+  margin-bottom: 30px;
+  font-weight: 700;
   width: 90%;
   margin-bottom: 20px;
 }
@@ -972,7 +983,7 @@
 .buy__button {
   display: flex;
   width: 100%;
-  padding: 8px;
+  padding: 20px 10px;
   justify-content: space-between;
 }
 
@@ -988,7 +999,7 @@
   color: #0123b4;
   border: none;
   line-height: 18px;
-  border-radius: 10px;
+  border-radius: 6px;
 }
 
 .buy__content {
@@ -1001,7 +1012,7 @@
   border: none;
   background-color: #0123b4;
   color: white;
-  border-radius: 10px;
+  border-radius: 6px;
 }
 
 .buy:hover {
