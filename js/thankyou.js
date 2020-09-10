@@ -1,9 +1,17 @@
 const time2 = document.querySelector(`#extra__time2`);
 const passbookButton = document.querySelector(`.passbook__button__kakao2`);
+const mentorName = document.querySelector(`.mentor__naming`);
+
+const temp = decodeURI(location.href);
+console.log(temp);
+const name = temp.split("?")[1];
+console.log(name);
+
+mentorName.innerHTML = `${name} 멘토님`;
 
 function getTime() {
   const currentTime = new Date();
-  const extraDay = new Date("2020-09-17:00:00:00+0900");
+  const extraDay = new Date("2020-09-17");
   const days = Math.floor((extraDay - currentTime) / 86400000);
   const hours = Math.floor(((extraDay - currentTime) % 86400000) / 3600000);
   const minutes = Math.floor(
