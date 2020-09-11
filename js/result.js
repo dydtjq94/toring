@@ -738,7 +738,6 @@ function handleSnackBar() {
   setTimeout(function () {
     snackBarResult.classList.add("snackbar__anim__result");
     snackBarResult.classList.remove("snackbar__anim__up");
-    autoResult.innerHTML = `5초 후 자동으로 ${firstMentorName} 멘토님 이야기로 넘어갑니다.`;
     body.style.backgroundColor = "#313131";
     resultPageWrap.style.backgroundColor = "#313131";
     snackBarResultTitle.forEach((e) => {
@@ -751,7 +750,20 @@ function handleSnackBar() {
     all.style.color = "#313131";
     addMent.style.color = "#313131";
     localStorage.setItem(RESULT_LS, "experience");
-  }, 2000);
+
+    let a = 6;
+    function minusNum() {
+      a = a - 1;
+      autoResult.innerHTML = `${a}초 후 자동으로 ${firstMentorName} 멘토님 이야기로 넘어갑니다.`;
+    }
+    minusNum();
+    setInterval(minusNum, 1000);
+
+    setTimeoutId = setTimeout(function () {
+      location.href =
+        "mentordetail.html?" + "name" + ":" + mentorSimple[0].classList[1];
+    }, 5700);
+  }, 6000);
 
   //   // if (loadedResult !== "experience") {
   //   //   setTimeout(function () {
@@ -773,6 +785,7 @@ function handleSnackBar() {
   snackBarButton.addEventListener("click", handleSnackRemove);
 
   function handleSnackRemove() {
+    clearTimeout(setTimeoutId);
     snackBarResult.classList.remove("snackbar__anim__result");
     snackBarResult.classList.add("snackbar__anim__up");
 

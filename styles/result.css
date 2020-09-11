@@ -255,7 +255,7 @@
 
 .snackbar__result {
   width: 100%;
-  height: 380px;
+  height: 340px;
   z-index: 100;
   opacity: 0;
   position: fixed;
@@ -266,7 +266,18 @@
   align-items: center;
   background-color: rgba(64, 85, 175, 1);
   color: white;
-  transition: 0.5s all;
+  transition: 0.5s transform;
+  transform: translateY(-340px);
+}
+
+.snackbar__anim__result {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.snackbar__anim__up {
+  opacity: 1;
+  transform: translateY(-340px);
 }
 
 .snackbar__result__button {
@@ -303,14 +314,4 @@
 
 .yellow {
   color: #fec645;
-}
-
-.snackbar__anim__result {
-  transform: translateY(0);
-  opacity: 1;
-}
-
-.snackbar__anim__up {
-  transform: translateY(-380px);
-  opacity: 1;
 }
