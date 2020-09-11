@@ -416,7 +416,7 @@ ${
         </div>
       </div>
       <div class="content__column__detail">
-        멘토님 이야기 자세히 보기 <i class="fas fa-chevron-right"></i>
+        멘토님 대치동 이야기 자세히 보기 <i class="fas fa-chevron-right"></i>
       </div>
     </div>
   </div>
@@ -468,7 +468,7 @@ ${
         </div>
       </div>
       <div class="content__column__detail">
-        멘토님 이야기 자세히 보기 <i class="fas fa-chevron-right"></i>
+        멘토님 대치동 이야기 자세히 보기 <i class="fas fa-chevron-right"></i>
       </div>
     </div>
   </div>
@@ -520,7 +520,7 @@ ${
         </div>
       </div>
       <div class="content__column__detail">
-        멘토님 이야기 자세히 보기 <i class="fas fa-chevron-right"></i>
+        멘토님 대치동 이야기 자세히 보기 <i class="fas fa-chevron-right"></i>
       </div>
     </div>
   </div>
@@ -572,7 +572,7 @@ ${
         </div>
       </div>
       <div class="content__column__detail">
-        멘토님 이야기 자세히 보기 <i class="fas fa-chevron-right"></i>
+        멘토님 대치동 이야기 자세히 보기 <i class="fas fa-chevron-right"></i>
       </div>
     </div>
   </div>
@@ -624,7 +624,7 @@ ${
         </div>
       </div>
       <div class="content__column__detail">
-        멘토님 이야기 자세히 보기 <i class="fas fa-chevron-right"></i>
+        멘토님 대치동 이야기 자세히 보기 <i class="fas fa-chevron-right"></i>
       </div>
     </div>
   </div>
@@ -698,7 +698,9 @@ const twoWord = document.querySelector(`.two__word`);
 const footerLeftButton = document.querySelector(`.footer__left__button`);
 
 const nrInfoName = document.querySelectorAll(`.nr__info__name`);
-console.log(nrInfoName[0].innerHTML.split(" ")[0]);
+const nrInfoSchool = document.querySelectorAll(`.nr__info__sch`);
+const aaaa = nrInfoSchool[0].innerHTML.split("</i>")[1];
+
 const firstMentorName = nrInfoName[0].innerHTML.split(" ")[0];
 
 const autoResult = document.querySelector(`.auto__result`);
@@ -719,15 +721,22 @@ function handleKakao() {
 }
 
 const all = document.querySelector(".all");
+
 all.addEventListener("click", handleCall);
+
 function handleCall() {
   window.location.href = "tel:010-8313-9943";
+}
+const addMent = document.querySelector(`.footer__left__ment`);
+
+if (schoolResult === 6) {
+  addMent.innerHTML = `찾으시는 고등학교가 없으면 아래로 문의주세요.`;
+  all.innerHTML = `1:1로 무료 문의하기`;
 }
 
 function handleSnackBar() {
   const snackBarResult = document.querySelector(`#snackbar__result`);
   const body = document.querySelector(`.body`);
-  const addMent = document.querySelector(`.footer__left__ment`);
   const resultPageWrap = document.querySelector(`.result__page__wrap`);
   const snackBarButton = document.querySelector(`.snackbar__result__button`);
   const snackBarResultTitle = document.querySelectorAll(`.result__title`);
@@ -754,7 +763,10 @@ function handleSnackBar() {
     let a = 11;
     function minusNum() {
       a = a - 1;
-      autoResult.innerHTML = `${a}초 후 자동으로 ${firstMentorName} 멘토님 이야기로 넘어갑니다.`;
+      autoResult.innerHTML = `
+      ${
+        aaaa.split("등")[0]
+      } 출신 ${firstMentorName} 멘토님 이야기가 궁금하신가요?<br/> ${a}초 후 자동으로 넘어갑니다.`;
     }
     minusNum();
     setInterval(minusNum, 1000);
