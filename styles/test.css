@@ -88,9 +88,10 @@
 
 .test__title .detail {
   margin-top: 12px;
-  line-height: 22px;
+  line-height: 24px;
   font-size: 16px;
   color: rgb(94, 94, 94);
+  text-align: justify;
 }
 
 #myBar {
