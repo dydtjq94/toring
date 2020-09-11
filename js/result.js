@@ -750,7 +750,6 @@ function handleSnackBar() {
     all.style.borderColor = "#313131";
     all.style.color = "#313131";
     addMent.style.color = "#313131";
-
     localStorage.setItem(RESULT_LS, "experience");
   }, 2000);
 
