@@ -2327,7 +2327,7 @@ mentorWrite.innerHTML = `
             <div class="method__column">
               <div class="method__content">
                 <div class="num">1.</div>
-                멘토님이 학생이 필요한 부분에 도움을 줄 수 있는지 수업 소개를 읽어보세요.
+                멘토님이 학생이 필요한 부분에 도움을 줄 수 있는지 멘토님 이야기를 읽어보세요.
               </div>
               <div class="method__content">
                 <div class="num">2.</div>
