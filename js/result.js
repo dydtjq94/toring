@@ -751,7 +751,7 @@ function handleSnackBar() {
     addMent.style.color = "#313131";
     localStorage.setItem(RESULT_LS, "experience");
 
-    let a = 6;
+    let a = 11;
     function minusNum() {
       a = a - 1;
       autoResult.innerHTML = `${a}초 후 자동으로 ${firstMentorName} 멘토님 이야기로 넘어갑니다.`;
@@ -762,8 +762,8 @@ function handleSnackBar() {
     setTimeoutId = setTimeout(function () {
       location.href =
         "mentordetail.html?" + "name" + ":" + mentorSimple[0].classList[1];
-    }, 5700);
-  }, 6000);
+    }, 10700);
+  }, 5000);
 
   //   // if (loadedResult !== "experience") {
   //   //   setTimeout(function () {

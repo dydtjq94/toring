@@ -2513,8 +2513,8 @@ const other2 = document.querySelector(`.other2`);
 other.innerHTML = resultList[resultSchoolNum];
 other2.innerHTML = resultList[randomResultNum];
 const resultTitle = document.querySelectorAll(`.result__title`);
-resultTitle[0].innerHTML = `다른 <span class="blue__bold">${koreanResult[resultSchoolNum]} 출신</span> 멘토들 `;
-resultTitle[1].innerHTML = `<span class="blue__bold">${koreanResult[randomResultNum]} 출신</span> 멘토들 `;
+resultTitle[0].innerHTML = `<span class="blue__bold">다른 ${koreanResult[resultSchoolNum]} 출신</span> 멘토들 `;
+resultTitle[1].innerHTML = `<span class="blue__bold">다른 대치동 출신</span> 멘토들 `;
 
 const mentorSimple = document.querySelectorAll(`.mentor__simple`);
 
