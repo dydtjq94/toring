@@ -760,24 +760,24 @@ function handleSnackBar() {
     addMent.style.color = "#313131";
     localStorage.setItem(RESULT_LS, "experience");
 
-    let a = 11;
-    function minusNum() {
-      a = a - 1;
-      autoResult.innerHTML = `
-      ${
-        aaaa.split("등")[0]
-      } 출신 ${firstMentorName} 멘토님 이야기가 궁금하신가요?<br/> ${a}초 후 자동으로 넘어갑니다.`;
-    }
-    minusNum();
-    setInterval(minusNum, 1000);
-    if (a == 0) {
-      clearTimeout(setTimeoutId);
-    }
+    // let a = 11;
+    // function minusNum() {
+    //   a = a - 1;
+    //   autoResult.innerHTML = `
+    //   ${
+    //     aaaa.split("등")[0]
+    //   } 출신 ${firstMentorName} 멘토님 이야기가 궁금하신가요?<br/> ${a}초 후 자동으로 넘어갑니다.`;
+    // }
+    // minusNum();
+    // setInterval(minusNum, 1000);
+    // if (a == 0) {
+    //   clearTimeout(setTimeoutId);
+    // }
 
-    setTimeoutId = setTimeout(function () {
-      location.href =
-        "mentordetail.html?" + "name" + ":" + mentorSimple[0].classList[1];
-    }, 10700);
+    // setTimeoutId = setTimeout(function () {
+    //   location.href =
+    //     "mentordetail.html?" + "name" + ":" + mentorSimple[0].classList[1];
+    // }, 10700);
   }, 5000);
 
   //   // if (loadedResult !== "experience") {
@@ -800,7 +800,7 @@ function handleSnackBar() {
   snackBarButton.addEventListener("click", handleSnackRemove);
 
   function handleSnackRemove() {
-    clearTimeout(setTimeoutId);
+    // clearTimeout(setTimeoutId);
     snackBarResult.classList.remove("snackbar__anim__result");
     snackBarResult.classList.add("snackbar__anim__up");
 

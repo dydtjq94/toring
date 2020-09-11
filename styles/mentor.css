@@ -712,6 +712,7 @@
 
 .curri__column__title i {
   margin-right: 8px;
+  margin-bottom: 2px;
   color: #0123b4;
   width: 10%;
 }
@@ -743,6 +744,10 @@
   align-items: center;
   color: #0123b4;
   font-weight: 700;
+}
+
+.curri__content__title {
+  margin-top: 2px;
 }
 
 .curri__column {
@@ -961,13 +966,13 @@
 }
 
 .final__left2 {
-  color: #f54e00;
+  color: #fec645;
   font-size: 20px;
   font-weight: 700;
 }
 
 .final__right2 {
-  color: #f54e00;
+  color: #fec645;
   font-weight: 700;
   font-size: 24px;
 }
