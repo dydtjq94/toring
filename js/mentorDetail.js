@@ -1753,7 +1753,6 @@ const koreanResult = [
 ];
 
 let resultListLength = resultList.length;
-let randomNum = Math.floor(Math.random() * resultListLength);
 
 const mentorWrite = document.querySelector(".mentor");
 const priceButton = document.querySelector(".buy__content");
@@ -1785,7 +1784,26 @@ for (;;) {
   j++;
 }
 
-console.log(resultNum, resultSchoolNum);
+let randomNum = Math.floor(Math.random() * resultListLength);
+
+for (let k = 0; k < 20; k++) {
+  if (koreanResult[randomNum] !== koreanResult[resultSchoolNum]) {
+    randomResultNum = randomNum;
+    break;
+  }
+
+  k++;
+  randomNum = Math.floor(Math.random() * resultListLength);
+}
+
+console.log(
+  koreanResult[resultSchoolNum],
+  mentorsDetail[randomNum].school,
+  resultNum,
+  resultSchoolNum,
+  randomNum,
+  randomResultNum
+);
 
 let mentorExp = "";
 
@@ -2415,6 +2433,7 @@ mentorWrite.innerHTML = `
         <div class="other__wrap">
 
           <div class="other"></div>
+          <div class="other2"></div>
         </div>
 
 `;
@@ -2468,9 +2487,12 @@ getTime();
 setInterval(getTime, 500);
 
 const other = document.querySelector(`.other`);
+const other2 = document.querySelector(`.other2`);
 other.innerHTML = resultList[resultSchoolNum];
-const resultTitle = document.querySelector(`.result__title`);
-resultTitle.innerHTML = `다른 <span class="blue__bold">${koreanResult[resultSchoolNum]} 출신</span> 멘토들 `;
+other2.innerHTML = resultList[randomResultNum];
+const resultTitle = document.querySelectorAll(`.result__title`);
+resultTitle[0].innerHTML = `다른 <span class="blue__bold">${koreanResult[resultSchoolNum]} 출신</span> 멘토들 `;
+resultTitle[1].innerHTML = `<span class="blue__bold">${koreanResult[randomResultNum]} 출신</span> 멘토들 `;
 
 const mentorSimple = document.querySelectorAll(`.mentor__simple`);
 
