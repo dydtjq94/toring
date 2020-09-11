@@ -14,35 +14,66 @@
 
 .passbook__title2 {
   margin-top: 20px;
-  font-size: 24px;
+  font-size: 20px;
   color: #2a2a2a;
   font-weight: 700;
+  line-height: 32px;
 }
 
 .passbook__select__wrap {
   display: flex;
+  flex-direction: column;
   width: 100%;
+}
+
+.passbook__line {
+  width: 100%;
+  height: 2px;
+  background-color: #bebebe;
+  position: relative;
+}
+
+.passbook__selected__line {
+  position: absolute;
+  left: 50%;
+  height: 5px;
+  bottom: -1px;
+  width: 50%;
+  background-color: #0123b4;
+  transition: all 0.2s linear;
+}
+
+.passbook__select__button {
+  width: 100%;
+  display: flex;
   justify-content: space-around;
-  border-bottom: 1px solid #999999;
-  padding-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .passbook__select__month {
-  color: white;
+  color: #bebebe;
   text-align: center;
-  padding: 20px 0;
-  width: 48%;
-  background-color: #002be9;
-  border-radius: 10px;
+  width: 50%;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 6px;
 }
 
 .passbook__select__semester {
-  color: white;
+  color: #0123b4;
   text-align: center;
-  width: 48%;
-  padding: 20px 0;
-  background-color: #949494;
-  border-radius: 10px;
+  width: 50%;
+  font-weight: 700;
+  line-height: 24px;
+  margin-bottom: 6px;
+}
+
+.passbook__select__month:hover {
+  cursor: pointer;
+}
+
+.passbook__select__semester:hover {
+  cursor: pointer;
 }
 
 .total__price {
@@ -77,6 +108,7 @@
 .price__left__content {
   color: #626262;
   line-height: 20px;
+  font-weight: 700;
 }
 
 .price__left__content2 {
@@ -168,7 +200,7 @@
 .num__copy {
   background-color: transparent;
   border: 1px solid white;
-  padding: 12px 12px 0px 12px;
+  padding: 6px 12px 6px 12px;
   color: white;
   font-size: 14px;
 }
@@ -289,10 +321,6 @@
   font-size: 16px;
 }
 
-.warning__title i {
-  margin-right: 5px;
-}
-
 .passbook__button {
   width: 90%;
   display: flex;
@@ -314,7 +342,6 @@
 
 .passbook__button__home {
   border-radius: 10px;
-
   text-align: center;
   padding: 20px 0;
   width: 48%;
