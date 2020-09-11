@@ -255,19 +255,18 @@
 
 .snackbar__result {
   width: 100%;
-  height: 320px;
+  height: 340px;
   z-index: 100;
   opacity: 0;
   position: fixed;
   top: 0;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  background-color: rgba(64, 85, 175, 1);
+  background-color: #de8059;
   color: white;
   transition: 0.5s transform;
-  transform: translateY(-320px);
+  transform: translateY(-340px);
 }
 
 .snackbar__anim__result {
@@ -277,37 +276,42 @@
 
 .snackbar__anim__up {
   opacity: 1;
-  transform: translateY(-320px);
-}
-
-.snackbar__result__button {
-  font-size: 28px;
-  outline: none;
-  width: 100%;
-  height: 22%;
-  background-color: white;
-  border: none;
-  border-top: 1px solid white;
-  color: #4055af;
-  font-weight: 700;
+  transform: translateY(-340px);
 }
 
 .auto__result {
-  font-size: 16px;
-  margin-bottom: 12px;
+  font-size: 20px;
+  margin-top: 40px;
   font-weight: 700;
   line-height: 24px;
   text-align: center;
 }
 
 .snackbar__result__ment {
-  font-size: 32px;
-  height: 78%;
+  font-size: 28px;
+  height: 82%;
   font-weight: 700;
   line-height: 40px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.snackbar__bold {
+  color: #0123b4;
+  font-weight: 700;
+}
+
+.snackbar__result__button {
+  font-size: 20px;
+  outline: none;
+  width: 100%;
+  height: 18%;
+  background-color: white;
+  border: none;
+  border-top: 1px solid white;
+  color: #0123b4;
+  font-weight: 700;
 }
 
 .snackbar__result__button:hover {

@@ -741,61 +741,66 @@ function handleSnackBar() {
   const snackBarButton = document.querySelector(`.snackbar__result__button`);
   const snackBarResultTitle = document.querySelectorAll(`.result__title`);
   const snackBarResultComment = document.querySelectorAll(`.result__comment`);
+  const threeWord = document.querySelector(`.three__word`);
   const RESULT_LS = "result";
-  // const loadedResult = localStorage.getItem(RESULT_LS);
+  const loadedResult = sessionStorage.getItem(RESULT_LS);
 
-  setTimeout(function () {
-    snackBarResult.classList.add("snackbar__anim__result");
-    snackBarResult.classList.remove("snackbar__anim__up");
-    body.style.backgroundColor = "#313131";
-    resultPageWrap.style.backgroundColor = "#313131";
-    snackBarResultTitle.forEach((e) => {
-      e.style.color = "white";
-    });
-    snackBarResultComment.forEach((e) => {
-      e.style.color = "white";
-    });
-    all.style.borderColor = "#313131";
-    all.style.color = "#313131";
-    addMent.style.color = "#313131";
-    localStorage.setItem(RESULT_LS, "experience");
+  // setTimeout(function () {
+  //   snackBarResult.classList.add("snackbar__anim__result");
+  //   snackBarResult.classList.remove("snackbar__anim__up");
+  //   body.style.backgroundColor = "#313131";
+  //   resultPageWrap.style.backgroundColor = "#313131";
+  //   snackBarResultTitle.forEach((e) => {
+  //     e.style.color = "white";
+  //   });
+  //   snackBarResultComment.forEach((e) => {
+  //     e.style.color = "white";
+  //   });
+  //   threeWord.style.color = "#313131";
+  //   all.style.borderColor = "#313131";
+  //   all.style.color = "#313131";
+  //   addMent.style.color = "#313131";
+  //   sessionStorage.setItem(RESULT_LS, "experience");
 
-    // let a = 11;
-    // function minusNum() {
-    //   a = a - 1;
-    //   autoResult.innerHTML = `
-    //   ${
-    //     aaaa.split("등")[0]
-    //   } 출신 ${firstMentorName} 멘토님 이야기가 궁금하신가요?<br/> ${a}초 후 자동으로 넘어갑니다.`;
-    // }
-    // minusNum();
-    // setInterval(minusNum, 1000);
-    // if (a == 0) {
-    //   clearTimeout(setTimeoutId);
-    // }
-
-    // setTimeoutId = setTimeout(function () {
-    //   location.href =
-    //     "mentordetail.html?" + "name" + ":" + mentorSimple[0].classList[1];
-    // }, 10700);
-  }, 5000);
-
-  //   // if (loadedResult !== "experience") {
-  //   //   setTimeout(function () {
-  //   //     snackBarResult.classList.add("snackbar__anim__result");
-  //   //     body.style.backgroundColor = "#313131";
-  //   //     snackBarResultTitle.forEach((e) => {
-  //   //       e.style.color = "#313131";
-  //   //     });
-  //   //     snackBarResultComment.forEach((e) => {
-  //   //       e.style.color = "white";
-  //   //     });
-  //   //     all.style.borderColor = "#313131";
-  //   //     all.children[0].style.color = "#313131";
-  //   //     addConsult.style.color = "#313131";
-  //   //     localStorage.setItem(RESULT_LS, "experience");
-  //   //   }, 6000);
+  //   // let a = 11;
+  //   // function minusNum() {
+  //   //   a = a - 1;
+  //   //   autoResult.innerHTML = `
+  //   //   ${
+  //   //     aaaa.split("등")[0]
+  //   //   } 출신 ${firstMentorName} 멘토님 이야기가 궁금하신가요?<br/> ${a}초 후 자동으로 넘어갑니다.`;
   //   // }
+  //   // minusNum();
+  //   // setInterval(minusNum, 1000);
+  //   // if (a == 0) {
+  //   //   clearTimeout(setTimeoutId);
+  //   // }
+
+  //   // setTimeoutId = setTimeout(function () {
+  //   //   location.href =
+  //   //     "mentordetail.html?" + "name" + ":" + mentorSimple[0].classList[1];
+  //   // }, 10700);
+  // }, 6000);
+
+  if (loadedResult !== "experience") {
+    setTimeout(function () {
+      snackBarResult.classList.add("snackbar__anim__result");
+      snackBarResult.classList.remove("snackbar__anim__up");
+      body.style.backgroundColor = "#313131";
+      resultPageWrap.style.backgroundColor = "#313131";
+      snackBarResultTitle.forEach((e) => {
+        e.style.color = "white";
+      });
+      snackBarResultComment.forEach((e) => {
+        e.style.color = "white";
+      });
+      threeWord.style.color = "#313131";
+      all.style.borderColor = "#313131";
+      all.style.color = "#313131";
+      addMent.style.color = "#313131";
+      sessionStorage.setItem(RESULT_LS, "experience");
+    }, 6000);
+  }
 
   snackBarButton.addEventListener("click", handleSnackRemove);
 
@@ -813,6 +818,8 @@ function handleSnackBar() {
     snackBarResultComment.forEach((e) => {
       e.style.color = "#272727";
     });
+    threeWord.style.color = "#474747";
+
     all.style.borderColor = "#0123b4";
     all.style.color = "#0123b4";
     addMent.style.color = "#0123b4";

@@ -150,3 +150,51 @@ input:required {
 textarea:required {
   background-color: yellow;
 } */
+
+.dschool__event {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-weight: 700;
+}
+
+.dschool__red {
+  color: #cf0020;
+  font-size: 20px;
+}
+
+.event {
+  color: white;
+  text-shadow: 0 0 10px #0123b4, 0 0 15px #0123b4, 0 0 30px #0123b4;
+}
+
+@keyframes dschool {
+  from {
+  }
+  to {
+  }
+}
+
+@keyframes findAnim {
+  from {
+    transform: translateY(-100px);
+  }
+  to {
+    transform: none;
+  }
+}
+
+.neon-effect:nth-of-type(2) {
+}
+
+@keyframes neon-shine {
+  0% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    color: #232323;
+  }
+}
