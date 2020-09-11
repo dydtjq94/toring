@@ -364,7 +364,7 @@ ${
         </div>
       </div>
       <div class="content__column__detail">
-        멘토님 이력 자세히 보기 <i class="fas fa-chevron-right"></i>
+        멘토님 이야기 자세히 보기 <i class="fas fa-chevron-right"></i>
       </div>
     </div>
   </div>
@@ -416,7 +416,7 @@ ${
         </div>
       </div>
       <div class="content__column__detail">
-        멘토님 이력 자세히 보기 <i class="fas fa-chevron-right"></i>
+        멘토님 이야기 자세히 보기 <i class="fas fa-chevron-right"></i>
       </div>
     </div>
   </div>
@@ -468,7 +468,7 @@ ${
         </div>
       </div>
       <div class="content__column__detail">
-        멘토님 이력 자세히 보기 <i class="fas fa-chevron-right"></i>
+        멘토님 이야기 자세히 보기 <i class="fas fa-chevron-right"></i>
       </div>
     </div>
   </div>
@@ -520,7 +520,7 @@ ${
         </div>
       </div>
       <div class="content__column__detail">
-        멘토님 이력 자세히 보기 <i class="fas fa-chevron-right"></i>
+        멘토님 이야기 자세히 보기 <i class="fas fa-chevron-right"></i>
       </div>
     </div>
   </div>
@@ -572,7 +572,7 @@ ${
         </div>
       </div>
       <div class="content__column__detail">
-        멘토님 이력 자세히 보기 <i class="fas fa-chevron-right"></i>
+        멘토님 이야기 자세히 보기 <i class="fas fa-chevron-right"></i>
       </div>
     </div>
   </div>
@@ -624,7 +624,7 @@ ${
         </div>
       </div>
       <div class="content__column__detail">
-        멘토님 이력 자세히 보기 <i class="fas fa-chevron-right"></i>
+        멘토님 이야기 자세히 보기 <i class="fas fa-chevron-right"></i>
       </div>
     </div>
   </div>
@@ -689,13 +689,19 @@ for (var i = 0; i < 10; i++) {
 result.innerHTML = resultList[resultSchoolNum] + resultList[randomNum];
 
 const resultTitle = document.querySelectorAll(`.result__title`);
-resultTitle[0].innerHTML = `<span class="blue__bold">${koreanResult[resultSchoolNum]} 출신</span> 멘토들 `;
-resultTitle[1].innerHTML = `<span class="blue__bold">다른 대치동 출신</span> 멘토들 `;
+resultTitle[0].innerHTML = `<span class="bold">${koreanResult[resultSchoolNum]} 출신</span> 멘토들 `;
+resultTitle[1].innerHTML = `<span class="bold">다른 대치동 출신</span> 멘토들 `;
 
 const mentorSimple = document.querySelectorAll(`.mentor__simple`);
 const oneWord = document.querySelector(`.one__word`);
 const twoWord = document.querySelector(`.two__word`);
 const footerLeftButton = document.querySelector(`.footer__left__button`);
+
+const nrInfoName = document.querySelectorAll(`.nr__info__name`);
+console.log(nrInfoName[0].innerHTML.split(" ")[0]);
+const firstMentorName = nrInfoName[0].innerHTML.split(" ")[0];
+
+const autoResult = document.querySelector(`.auto__result`);
 
 mentorSimple.forEach((e) =>
   e.addEventListener("click", function handleResultClick() {
@@ -712,73 +718,82 @@ function handleKakao() {
   newWindow.location.href = "http://pf.kakao.com/_WMMxgxb/chat";
 }
 
-footerLeftButton.addEventListener("click", handleKakao);
-
 const all = document.querySelector(".all");
+all.addEventListener("click", handleCall);
 function handleCall() {
   window.location.href = "tel:010-8313-9943";
 }
 
-// function handleSnackBar() {
-//   const snackBarResult = document.querySelector(`#snackbar__result`);
-//   const body = document.querySelector(`.body`);
-//   const snackBarButton = document.querySelector(`.snackbar__result__button`);
-//   const snackBarResultTitle = document.querySelectorAll(`.result__title`);
-//   const snackBarResultComment = document.querySelectorAll(`.result__comment`);
-//   const addConsult = document.querySelector(".add__consult");
+function handleSnackBar() {
+  const snackBarResult = document.querySelector(`#snackbar__result`);
+  const body = document.querySelector(`.body`);
+  const addMent = document.querySelector(`.footer__left__ment`);
+  const resultPageWrap = document.querySelector(`.result__page__wrap`);
+  const snackBarButton = document.querySelector(`.snackbar__result__button`);
+  const snackBarResultTitle = document.querySelectorAll(`.result__title`);
+  const snackBarResultComment = document.querySelectorAll(`.result__comment`);
+  const RESULT_LS = "result";
+  // const loadedResult = localStorage.getItem(RESULT_LS);
 
-//   const RESULT_LS = "result";
-//   // const loadedResult = localStorage.getItem(RESULT_LS);
+  setTimeout(function () {
+    snackBarResult.classList.add("snackbar__anim__result");
+    snackBarResult.classList.remove("snackbar__anim__up");
+    autoResult.innerHTML = `5초 후 자동으로 ${firstMentorName} 멘토님 이야기로 넘어갑니다.`;
+    body.style.backgroundColor = "#313131";
+    resultPageWrap.style.backgroundColor = "#313131";
+    snackBarResultTitle.forEach((e) => {
+      e.style.color = "white";
+    });
+    snackBarResultComment.forEach((e) => {
+      e.style.color = "white";
+    });
+    all.style.borderColor = "#313131";
+    all.style.color = "#313131";
+    addMent.style.color = "#313131";
 
-//   setTimeout(function () {
-//     snackBarResult.classList.add("snackbar__anim__result");
-//     body.style.backgroundColor = "#313131";
-//     snackBarResultTitle.forEach((e) => {
-//       e.style.color = "white";
-//     });
-//     snackBarResultComment.forEach((e) => {
-//       e.style.color = "white";
-//     });
-//     all.style.borderColor = "#313131";
-//     all.children[0].style.color = "#313131";
-//     addConsult.style.color = "#313131";
-//     localStorage.setItem(RESULT_LS, "experience");
-//   }, 6000);
+    localStorage.setItem(RESULT_LS, "experience");
+  }, 2000);
 
-//   // if (loadedResult !== "experience") {
-//   //   setTimeout(function () {
-//   //     snackBarResult.classList.add("snackbar__anim__result");
-//   //     body.style.backgroundColor = "#313131";
-//   //     snackBarResultTitle.forEach((e) => {
-//   //       e.style.color = "#313131";
-//   //     });
-//   //     snackBarResultComment.forEach((e) => {
-//   //       e.style.color = "white";
-//   //     });
-//   //     all.style.borderColor = "#313131";
-//   //     all.children[0].style.color = "#313131";
-//   //     addConsult.style.color = "#313131";
-//   //     localStorage.setItem(RESULT_LS, "experience");
-//   //   }, 6000);
-//   // }
+  //   // if (loadedResult !== "experience") {
+  //   //   setTimeout(function () {
+  //   //     snackBarResult.classList.add("snackbar__anim__result");
+  //   //     body.style.backgroundColor = "#313131";
+  //   //     snackBarResultTitle.forEach((e) => {
+  //   //       e.style.color = "#313131";
+  //   //     });
+  //   //     snackBarResultComment.forEach((e) => {
+  //   //       e.style.color = "white";
+  //   //     });
+  //   //     all.style.borderColor = "#313131";
+  //   //     all.children[0].style.color = "#313131";
+  //   //     addConsult.style.color = "#313131";
+  //   //     localStorage.setItem(RESULT_LS, "experience");
+  //   //   }, 6000);
+  //   // }
 
-//   snackBarButton.addEventListener("click", handleSnackRemove);
+  snackBarButton.addEventListener("click", handleSnackRemove);
 
-//   function handleSnackRemove() {
-//     snackBarResult.classList.remove("snackbar__anim__result");
-//     body.style.backgroundColor = "#f7f7f7";
-//     snackBarResultTitle.forEach((e) => {
-//       e.style.color = "#4055af";
-//     });
-//     snackBarResultComment.forEach((e) => {
-//       e.style.color = "#272727";
-//     });
-//     all.style.borderColor = "#0123b4";
-//     all.children[0].style.color = "#0123b4";
-//     addConsult.style.color = "#575757";
-//   }
-// }
+  function handleSnackRemove() {
+    snackBarResult.classList.remove("snackbar__anim__result");
+    snackBarResult.classList.add("snackbar__anim__up");
 
-function init() {}
+    body.style.backgroundColor = "#f7f7f7";
+    resultPageWrap.style.backgroundColor = "#edf0fe";
+
+    snackBarResultTitle.forEach((e) => {
+      e.style.color = "#4055af";
+    });
+    snackBarResultComment.forEach((e) => {
+      e.style.color = "#272727";
+    });
+    all.style.borderColor = "#0123b4";
+    all.style.color = "#0123b4";
+    addMent.style.color = "#0123b4";
+  }
+}
+
+function init() {
+  handleSnackBar();
+}
 
 init();

@@ -1882,38 +1882,58 @@ mentorWrite.innerHTML = `
           <div class="price__column__wrap">
             <div class="price__column">
               <div class="price__month">
-                <div class="price__month__left">한 달 4회 PLAN</div>
+                <div class="price__month__left price__big">한 달 4회 PLAN (400분)</div>
+              </div>
+              <div class="price__month">
+                <div class="price__month__left price__gray">정가</div>
                 <div class="price__month__right">
-                  <span class="price__red">13%</span>
-                  <span class="price__black">회당 87,250원</span>
+                  <span class="price__gray">399,000원</span>
                 </div>
               </div>
               <div class="price__month">
-                <div class="price__month__left">
+                <div class="price__month__left price__gray">
                   총 할인액 <span class="extra__time">평생</span>
                 </div>
                 <div class="price__month__right">
                   <span class="price__red">-50,000원</span>
                 </div>
               </div>
+              <div class="price__month">
+                <div class="price__month__left price__gray">최종 금액</div>
+                <div class="price__month__right">
+                  <span class="price__black">349,000원</span>
+                </div>
+              </div>
             </div>
             <div class="price__column">
               <div class="price__semester">
-                <div class="price__semester__left">한 학기 12회 PLAN</div>
-                <div class="price__semester__right">
-                  <span class="price__red">25%</span>
-                  <span class="price__black">회당 74,917원</span>
+                <div class="price__semester__left price__big">
+                  한 학기 12회 PLAN (1200분) <span class="extra__time"
+                  >event</span
+                >
                 </div>
               </div>
               <div class="price__semester">
-                <div class="price__semester__left">
+                <div class="price__semester__left price__gray">정가</div>
+                <div class="price__semester__right">
+                  <span class="price__gray">1,199,000원</span>
+                </div>
+              </div>
+              <div class="price__semester">
+                <div class="price__semester__left price__gray">
                   총 할인액
                   <span class="extra__time" id="extra__time"
-                    ></span
+                    >6일 17:13:38 남음</span
                   >
                 </div>
                 <div class="price__semester__right">
                   <span class="price__red">-300,000원</span>
+                </div>
+              </div>
+              <div class="price__semester">
+                <div class="price__semester__left price__gray">최종 금액</div>
+                <div class="price__semester__right">
+                  <span class="price__black">899,000원</span>
                 </div>
               </div>
             </div>
@@ -2458,6 +2478,8 @@ const time1 = document.querySelector(`#extra__time`);
 const time2 = document.querySelector(`#extra__time2`);
 const time3 = document.querySelector(`#extra__time3`);
 
+const freeButton = document.querySelector(`.free__button`);
+
 function getTime() {
   const currentTime = new Date();
   // Don't delete this.
@@ -2503,6 +2525,7 @@ mentorSimple.forEach((e) =>
 );
 function init() {
   priceButton.addEventListener("click", handlePriceButton);
+  freeButton.addEventListener("click", handlePriceButton);
   toringButton.addEventListener("click", handleToringButton);
 }
 

@@ -231,6 +231,10 @@
   justify-content: space-between;
 }
 
+.price__gray {
+  color: #9c9c9c;
+}
+
 .price__red {
   font-weight: 700;
   color: #f54e00;
@@ -241,11 +245,14 @@
   font-size: 18px;
 }
 
+.price__big {
+  font-size: 18px;
+}
+
 .extra__time {
   color: #f54e00;
-
   font-size: 12px;
-  margin-left: 8px;
+  margin-left: 4px;
 }
 
 .price__semester {
@@ -954,13 +961,13 @@
 }
 
 .final__left2 {
-  color: #708bff;
+  color: #f54e00;
   font-size: 20px;
   font-weight: 700;
 }
 
 .final__right2 {
-  color: #708bff;
+  color: #f54e00;
   font-weight: 700;
   font-size: 24px;
 }

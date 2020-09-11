@@ -123,7 +123,6 @@
   font-size: 24px;
   line-height: 25px;
   margin-bottom: 20px;
-  font-weight: 700;
 }
 .mentor__simple {
   border-radius: 8px;
@@ -175,7 +174,9 @@
   display: flex;
   padding-top: 50px;
   align-items: center;
-  margin: 10px 0;
+  padding-bottom: 10px;
+  background-color: #f7f7f7;
+  border-radius: 10px 10px 0 0;
 }
 
 .nr__img {
@@ -256,7 +257,6 @@
   width: 100%;
   height: 380px;
   z-index: 100;
-  opacity: 0;
   position: fixed;
   top: 0;
   display: flex;
@@ -265,8 +265,7 @@
   align-items: center;
   background-color: rgba(64, 85, 175, 1);
   color: white;
-  transform: translateY(-380px);
-  transition: 0.7s transform;
+  transition: 0.5s all;
 }
 
 .snackbar__result__button {
@@ -278,6 +277,12 @@
   border: none;
   border-top: 1px solid white;
   color: #4055af;
+  font-weight: 700;
+}
+
+.auto__result {
+  font-size: 16px;
+  margin-bottom: 12px;
   font-weight: 700;
 }
 
@@ -301,5 +306,10 @@
 
 .snackbar__anim__result {
   transform: translateY(0);
+  opacity: 1;
+}
+
+.snackbar__anim__up {
+  transform: translateY(-380px);
   opacity: 1;
 }
