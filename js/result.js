@@ -770,6 +770,9 @@ function handleSnackBar() {
     }
     minusNum();
     setInterval(minusNum, 1000);
+    if (a == 0) {
+      clearTimeout(setTimeoutId);
+    }
 
     setTimeoutId = setTimeout(function () {
       location.href =
