@@ -1774,14 +1774,13 @@ for (;;) {
   i++;
 }
 
-let j = 0;
-
-for (;;) {
+for (let j = 0; j < 6; j++) {
   if (koreanResult[j] === mentorsDetail[i].school) {
     resultSchoolNum = j;
     break;
+  } else {
+    resultSchoolNum = 5;
   }
-  j++;
 }
 
 let randomNum = Math.floor(Math.random() * resultListLength);
