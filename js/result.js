@@ -416,7 +416,7 @@ ${
         </div>
       </div>
       <div class="content__column__detail">
-        멘토님 대치동 이야기 자세히 보기 <i class="fas fa-chevron-right"></i>
+        멘토님 이야기 자세히 보기 <i class="fas fa-chevron-right"></i>
       </div>
     </div>
   </div>
@@ -468,7 +468,7 @@ ${
         </div>
       </div>
       <div class="content__column__detail">
-        멘토님 대치동 이야기 자세히 보기 <i class="fas fa-chevron-right"></i>
+        멘토님 이야기 자세히 보기 <i class="fas fa-chevron-right"></i>
       </div>
     </div>
   </div>
@@ -520,7 +520,7 @@ ${
         </div>
       </div>
       <div class="content__column__detail">
-        멘토님 대치동 이야기 자세히 보기 <i class="fas fa-chevron-right"></i>
+        멘토님 이야기 자세히 보기 <i class="fas fa-chevron-right"></i>
       </div>
     </div>
   </div>
@@ -572,7 +572,7 @@ ${
         </div>
       </div>
       <div class="content__column__detail">
-        멘토님 대치동 이야기 자세히 보기 <i class="fas fa-chevron-right"></i>
+        멘토님 이야기 자세히 보기 <i class="fas fa-chevron-right"></i>
       </div>
     </div>
   </div>
@@ -624,7 +624,7 @@ ${
         </div>
       </div>
       <div class="content__column__detail">
-        멘토님 대치동 이야기 자세히 보기 <i class="fas fa-chevron-right"></i>
+        멘토님 이야기 자세히 보기 <i class="fas fa-chevron-right"></i>
       </div>
     </div>
   </div>
