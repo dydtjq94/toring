@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-174046756-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-174046756-1");
+    </script>
+    <link rel="shortcut icon" href="./img/favicon.ico" />
+    <link rel="icon" href="./img/favicon.ico" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="토링 | SKY 대학생 멘토링 서비스" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:description"
+      content="꿈을 찾아 공부의 이유를 만들어주는 멘토링 토링입니다. 멘토링을 통한 변화를 지금 경험해보세요!"
+    />
+    <meta property="og:url" content="https://www.toring.me/" />
+    <meta
+      property="og:image"
+      content="https://i.ibb.co/9yRcmbF/welcome-logo.png"
+    />
+
+    <link rel="stylesheet" href="styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <title>토링 | 관심 선택</title>
+  </head>
+  <header class="header">
+    <a href="index.html" class="header__back">
+      <i class="fas fa-chevron-left" style="user-select: auto"></i>
+    </a>
+
+    <a href="index.html" class="header__toring">
+      toring <span class="semi__logo">대치</span></a
+    >
+    <a href="javascript:location.reload()" class="transparent">
+      <i class="fas fa-chevron-left" style="user-select: auto"></i>
+    </a>
+  </header>
+  <body>
+    <div class="body">
+      <div class="test__title">
+        <div class="main">우리 아이와 같은 학교 멘토는?</div>
+        <div class="sub">멘토 먼저 추천 받아 보세요</div>
+        <div class="detail">
+          코로나 때문에 아이가 나태해졌나요? 상황에 따라 이것저것 물어볼 멘토가
+          필요한가요?
+          <br /><span class="blue__bold"
+            >대치동 출신 SKY 대학생 멘토에게 직접 코칭 받으세요.</span
+          >
+          <br />
+          비슷한 환경에서 성공적으로 입시를 마친 멘토는 가장 현실적인 도움을 줄
+          수 있습니다.
+        </div>
+      </div>
+      <div id="myProgress">
+        <div id="myBar"></div>
+      </div>
+      <div id="find" class="mentor__find none">
+        대치동 출신 토링 멘토를 불러오는중...
+      </div>
+      <div class="tag__wrap">
+        <div class="tag__title"></div>
+        <div class="tag__column">
+          <div class="tag__content">1</div>
+          <div class="tag__content">2</div>
+          <div class="tag__content">3</div>
+          <div class="tag__content">4</div>
+          <div class="tag__content">5</div>
+          <div class="tag__content">6</div>
+          <div class="tag__content">7</div>
+          <div class="tag__content">8</div>
+          <div class="tag__content">9</div>
+          <div class="tag__content">10</div>
+          <div class="tag__content">11</div>
+          <div class="tag__content">12</div>
+        </div>
+      </div>
+      <div class="loading__wrap none">
+        <div class="rotate-background">
+          <div class="rotate">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="js/select.js"></script>
+</html>

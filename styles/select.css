@@ -1,0 +1,18 @@
+.tag__wrap {
+  width: 90%;
+}
+
+.tag__column {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.tag__content {
+  font-size: 24px;
+  margin-right: 12px;
+  margin-bottom: 8px;
+  padding: 10px 36px;
+  background-color: white;
+  border: 1px solid gray;
+}

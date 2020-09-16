@@ -1118,6 +1118,17 @@ const menties = [
     final:
       "나연 학생이 고민하고 있는 국어 과목은 영리하게 공부해야 하는 과목입니다. 내가 부족한 부분이 무엇이며 이를 어떻게 보완해 나갈 것인지에 대해 스스로 파악하는 것이 필요하고, 이에 기반하여 계획적으로 공부하는 습관이 필요합니다.  또한 코로나로 인해 긴장감이 느슨해지는 상황에서 계획을 세워 공부하는 것은 자기 페이스를 유지하며 공부하는 데 큰 도움이 됩니다. 정기적인 학습 방향성 코칭과 동기 부여로 환경에 영향 받지 않고 자기 페이스를 유지하며 공부할 수 있도록 도움을 드리겠습니다. 또한 수의예과를 목표로 하는 학생의 생기부는 1학년때부터 어떻게 채워나가야 하는지, 독서나 과목별 세특과 같은 디테일한 부분까지 전년도 입시 경험을 바탕으로 멘토링을 해드리겠습니다.",
   },
+  {
+    mentorName: "염지윤",
+    mentiName: "김리향",
+    first:
+      "내신에 대한 고민이 많은 학생이었고, 학업적 스트레스가 있는 것 같았습니다. 다만 학생 스스로 잘 해내고자 하는 의지가 많아서 멘토링을 통해 훨씬 더 나은 학업생활을 할 수 있을 것이라고 생각합니다. ",
+    second:
+      "내신과 관련해서는 공부방법, 각종 멘탈관리, 시험 유형 등에 대해 조언을 해줄 수 있을 것 같고 학생부와 관련해서는 봉사, 독서, 각종 대회, 자소서 등을 도와줄 수 있을 것 같습니다. ",
+    third:
+      "우선 지금은 내신 시험이 1달 남은 시점인 만큼 각 과목에 대한 공부 방법, 학업 계획 등을 세우는 데 중점을 두어야 할 것 같습니다. 이후 시험이 끝나면 세특을 어떻게 적어야 하는지, 대회 준비를 도와주는 쪽으로 멘토링을 하고 이후 기말고사 기간이 다가오면 중간고사 때 미흡했던 부분을 어떻게 보완해서 등급을 올릴지 수업할 수 있을 것 같습니다. ",
+    forth: "학생부 종합전형에 완벽한 인재가 될 수 있도록 돕겠습니다.^__^",
+  },
 ];
 
 const mentorForm = document.querySelector(`.price__mentor__content`);
@@ -1200,10 +1211,7 @@ mentoringContent.innerHTML = `<div class="proposal__upper">
 <div class="story__content__title2">
   <div class="proposal__lower">
     <!-- <i class="fas fa-exclamation red__exclamation"></i> -->
-    <div class="story__content__title">30분 온라인 멘토링은 어떠셨나요? 오선빈 멘토님의 멘토링 방향입니다.</div><br />
-   <span class="blue__bold"> "${menties[resultNum2].final}" </span><br/><br/>
-              추가적인 멘토링을 원하시면 아래 횟수를 선택하여 멘토님께
-              정기적으로 멘토링을 받을 수 있습니다!
+    <div class="story__content__title">30분 멘토링이 만족스러우셨나요? <br/>중간고사 끝나고 (4회 - 400분) 멘토링 신청하셔서 아래 결제 완료 후 멘토링 진행 도와드리겠습니다!
   </div>
 </div>
 </div>`;
@@ -1256,60 +1264,60 @@ function handleHome() {
   location.href = "index.html";
 }
 
-function handleMonthClick() {
-  selectedLine.style.left = "0%";
-  selectMonth.style.color = "#0123b4";
-  selectSemester.style.color = "#bebebe";
-  selectMonth.style.fontWeight = 700;
-  selectSemester.style.fontWeight = 400;
-  passbookTitle.innerHTML = `<span class="orange__underline">1회  멘토링</span> (1회 - 100분)`;
-  price1.innerHTML = "129,000원";
-  price2.innerHTML = "-30,000원";
-  price3.innerHTML = "99,000원";
-  price4.innerHTML = "99,000원";
-  offContent.innerHTML = "1회  23% 할인";
-}
+// function handleMonthClick() {
+//   selectedLine.style.left = "0%";
+//   selectMonth.style.color = "#0123b4";
+//   selectSemester.style.color = "#bebebe";
+//   selectMonth.style.fontWeight = 700;
+//   selectSemester.style.fontWeight = 400;
+//   passbookTitle.innerHTML = `<span class="orange__underline">1회  멘토링</span> (1회 - 100분)`;
+//   price1.innerHTML = "129,000원";
+//   price2.innerHTML = "-30,000원";
+//   price3.innerHTML = "99,000원";
+//   price4.innerHTML = "99,000원";
+//   offContent.innerHTML = "1회  23% 할인";
+// }
 
-function handleSemesterClick() {
-  selectedLine.style.left = "50%";
-  selectMonth.style.color = "#bebebe";
-  selectSemester.style.color = "#0123b4";
-  selectMonth.style.fontWeight = 400;
-  selectSemester.style.fontWeight = 700;
-  passbookTitle.innerHTML = `<span class="orange__underline">4회  멘토링 </span> (4회 - 400분)`;
-  price1.innerHTML = "519,000원";
-  price2.innerHTML = "-170,000원";
-  price3.innerHTML = "349,000원";
-  price4.innerHTML = "349,000원";
-  offContent.innerHTML = "4회  32% 할인";
-}
+// function handleSemesterClick() {
+//   selectedLine.style.left = "50%";
+//   selectMonth.style.color = "#bebebe";
+//   selectSemester.style.color = "#0123b4";
+//   selectMonth.style.fontWeight = 400;
+//   selectSemester.style.fontWeight = 700;
+//   passbookTitle.innerHTML = `<span class="orange__underline">4회  멘토링 </span> (4회 - 400분)`;
+//   price1.innerHTML = "519,000원";
+//   price2.innerHTML = "-170,000원";
+//   price3.innerHTML = "349,000원";
+//   price4.innerHTML = "349,000원";
+//   offContent.innerHTML = "4회  32% 할인";
+// }
 
-function getTime() {
-  const currentTime = new Date();
-  const extraDay = new Date("2020-09-19");
-  const days = Math.floor((extraDay - currentTime) / 86400000);
-  const hours = Math.floor(((extraDay - currentTime) % 86400000) / 3600000);
-  const minutes = Math.floor(
-    (((extraDay - currentTime) % 86400000) % 3600000) / 60000
-  );
-  const seconds = Math.floor(
-    ((((extraDay - currentTime) % 86400000) % 3600000) % 60000) / 1000
-  );
+// function getTime() {
+//   const currentTime = new Date();
+//   const extraDay = new Date("2020-09-19");
+//   const days = Math.floor((extraDay - currentTime) / 86400000);
+//   const hours = Math.floor(((extraDay - currentTime) % 86400000) / 3600000);
+//   const minutes = Math.floor(
+//     (((extraDay - currentTime) % 86400000) % 3600000) / 60000
+//   );
+//   const seconds = Math.floor(
+//     ((((extraDay - currentTime) % 86400000) % 3600000) % 60000) / 1000
+//   );
 
-  selectSemester.innerHTML = `${days}일 ${hours < 10 ? `0${hours}` : hours}:${
-    minutes < 10 ? `0${minutes}` : minutes
-  }:${seconds < 10 ? `0${seconds}` : seconds} 후 종료<br/>4회  멘토링`;
-}
+//   selectSemester.innerHTML = `${days}일 ${hours < 10 ? `0${hours}` : hours}:${
+//     minutes < 10 ? `0${minutes}` : minutes
+//   }:${seconds < 10 ? `0${seconds}` : seconds} 후 종료<br/>4회  멘토링`;
+// }
 
 function init() {
   btn.addEventListener("click", handleCopy);
   differButton.addEventListener("click", handleDiffer);
   kakaoButton.addEventListener("click", handleDiffer);
   homeButton.addEventListener("click", handleHome);
-  monthButton.addEventListener("click", handleMonthClick);
-  semesterButton.addEventListener("click", handleSemesterClick);
-  getTime();
-  setInterval(getTime, 500);
+  // monthButton.addEventListener("click", handleMonthClick);
+  // semesterButton.addEventListener("click", handleSemesterClick);
+  // getTime();
+  // setInterval(getTime, 500);
 }
 
 init();

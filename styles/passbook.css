@@ -2,7 +2,7 @@
   width: 90%;
   display: flex;
   flex-direction: column;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .passbook__title {
@@ -13,7 +13,6 @@
 }
 
 .passbook__title2 {
-  margin-top: 20px;
   font-size: 20px;
   color: #2a2a2a;
   font-weight: 700;
