@@ -1262,12 +1262,12 @@ function handleMonthClick() {
   selectSemester.style.color = "#bebebe";
   selectMonth.style.fontWeight = 700;
   selectSemester.style.fontWeight = 400;
-  passbookTitle.innerHTML = `<span class="orange__underline">한 달 PLAN 멘토링 (1개월)</span><br/>(4회 - 400분)`;
-  price1.innerHTML = "399,000원";
-  price2.innerHTML = "-50,000원";
-  price3.innerHTML = "349,000원";
-  price4.innerHTML = "349,000원";
-  offContent.innerHTML = "한달 PLAN 13% 할인";
+  passbookTitle.innerHTML = `<span class="orange__underline">1회 PLAN 코칭</span><br/>(1회 - 100분)`;
+  price1.innerHTML = "129,000원";
+  price2.innerHTML = "-30,000원";
+  price3.innerHTML = "99,000원";
+  price4.innerHTML = "99,000원";
+  offContent.innerHTML = "1회 PLAN 23% 할인";
 }
 
 function handleSemesterClick() {
@@ -1276,12 +1276,12 @@ function handleSemesterClick() {
   selectSemester.style.color = "#0123b4";
   selectMonth.style.fontWeight = 400;
   selectSemester.style.fontWeight = 700;
-  passbookTitle.innerHTML = `<span class="orange__underline">한 학기 PLAN 멘토링 (3개월) </span><br />(12회 - 1200분)`;
-  price1.innerHTML = "1,199,000원";
-  price2.innerHTML = "-300,000원";
-  price3.innerHTML = "899,000원";
-  price4.innerHTML = "899,000원";
-  offContent.innerHTML = "한 학기 PLAN 25% 할인";
+  passbookTitle.innerHTML = `<span class="orange__underline">4회 PLAN 멘토링 </span><br />(4회 - 400분)`;
+  price1.innerHTML = "519,000원";
+  price2.innerHTML = "-170,000원";
+  price3.innerHTML = "349,000원";
+  price4.innerHTML = "349,000원";
+  offContent.innerHTML = "4회 PLAN 32% 할인";
 }
 
 function getTime() {
@@ -1298,7 +1298,7 @@ function getTime() {
 
   selectSemester.innerHTML = `${days}일 ${hours < 10 ? `0${hours}` : hours}:${
     minutes < 10 ? `0${minutes}` : minutes
-  }:${seconds < 10 ? `0${seconds}` : seconds} 후 종료<br/>한 학기 PLAN`;
+  }:${seconds < 10 ? `0${seconds}` : seconds} 후 종료<br/>4회 PLAN`;
 }
 
 function init() {
