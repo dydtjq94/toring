@@ -1103,21 +1103,110 @@ const mentorsSubmit = [
   },
 ];
 
+const menties = [
+  {
+    mentorName: "오선빈",
+    mentiName: "김나연",
+    first:
+      "공부는 열심히 하는 것 같으나 동기부여가 조금 더 필요한 상황이었습니다. 생기부를 어떻게 채워나가야 하는지 아직 감이 없어 보였습니다. ",
+    second:
+      "내신 과목 중에서 문과 과목 (ex. 국어)에 어려움이 있는 것 같아 어떤 방식으로 공부를 해야 하는지 도움을 줄 수 있을 것 같습니다. 또한 선택 과목 선정에 대한 기준이 아직 없는 듯 하여 어떤 것을 고려해서 선택하는 것이 좋을지 조언해줄 수 있습니다. 또한 학생부를 어떻게 채워야 하는지 그 방향성에 대해서 도움을 줄 수 있습니다.",
+    third:
+      "1~4주: 곧 중간고사로 알고 있어 4주차에 대해서는 내신 공부를 제대로 진행하고 있는지, 계획 세워서 하루하루 할당량을 채워나가고 있는지 점검합니다. 또한 어렵고 고민이 있는 과목에 대해서는 방향성과 공부의 진행 상황에 대해서 더 집중적으로 관리합니다. <br/>5주~: 기말고사 대비 전 평소 학습 계획에 대한 점검은 계속하고 학생부에 과목별 세특을 어떤 방식으로 기재할 것인지에 대한 멘토링을 진행합니다.<br/>이후 기말고사에 대하서는 중간고사 대비와 비슷하게, 중간고사에서 아쉬웠던 부분 더 보완합니다. ",
+    forth:
+      "국어에서 나연 학생이 더 자신감을 얻어 안정적으로 점수를 획득할 수 있도록 지도하고 공부관리를 통해서 전교 등수 더 올릴 수 있도록 노력할 예정입니다.",
+    final:
+      "나연 학생이 고민하고 있는 국어 과목은 영리하게 공부해야 하는 과목입니다. 내가 부족한 부분이 무엇이며 이를 어떻게 보완해 나갈 것인지에 대해 스스로 파악하는 것이 필요하고, 이에 기반하여 계획적으로 공부하는 습관이 필요합니다.  또한 코로나로 인해 긴장감이 느슨해지는 상황에서 계획을 세워 공부하는 것은 자기 페이스를 유지하며 공부하는 데 큰 도움이 됩니다. 정기적인 학습 방향성 코칭과 동기 부여로 환경에 영향 받지 않고 자기 페이스를 유지하며 공부할 수 있도록 도움을 드리겠습니다. 또한 수의예과를 목표로 하는 학생의 생기부는 1학년때부터 어떻게 채워나가야 하는지, 독서나 과목별 세특과 같은 디테일한 부분까지 전년도 입시 경험을 바탕으로 멘토링을 해드리겠습니다.",
+  },
+];
+
 const mentorForm = document.querySelector(`.price__mentor__content`);
+const mentoringContent = document.querySelector(`.proposal__wrap`);
 
 const temp = decodeURI(location.href);
 const mentorName = temp.split("?")[1];
+const mentiName = temp.split("?")[2];
+
+console.log(mentorName, mentiName);
 
 let resultNum = 0;
-let i = 0;
 
-for (;;) {
+for (let i = 0; i < mentorsSubmit.length; i++) {
   if (mentorsSubmit[i].name === mentorName) {
     resultNum = i;
+    console.log(i);
     break;
   }
-  i++;
 }
+
+// for (let j = 0; j < menties.length; j++) {
+//   if (menties[j].mentiName === mentiName) {
+//     console.log(j);
+//     resultNum2 = j;
+//     break;
+//   }
+// }
+
+// mentoringContent.innerHTML = `<div class="proposal__upper">
+// <div class="proposal__title">토링 30분 멘토링 결과지</div>
+// <div class="proposal__sub__title"><span class="blue__bold">${menties[resultNum2].mentorName} 멘토님 - ${menties[resultNum2].mentiName} 멘티님</span></div>
+// </div>
+// <div class="story__content">
+// <div class="story__content__title">
+//   <div class="num">1.</div>
+//   <div class="story__content__wrap">
+//   ${menties[resultNum2].mentiName} 멘티님은 어떤 학생이었나요?
+//     <div class="story__content__description">
+//     ${menties[resultNum2].first}
+//     </div>
+//   </div>
+// </div>
+// </div>
+// <div class="story__content">
+// <div class="story__content__title">
+//   <div class="num">2.</div>
+//   <div class="story__content__wrap">
+//   ${menties[resultNum2].mentiName} 멘티님 고민에 기반해 멘토님께서 집중적으로 도움줄 수 있는 부분은 무엇인가요?
+//     <div class="story__content__description">
+//     ${menties[resultNum2].second}
+//     </div>
+//   </div>
+// </div>
+// </div>
+// <div class="story__content">
+// <div class="story__content__title">
+//   <div class="num">3.</div>
+//   <div class="story__content__wrap">
+//     2번에서 작성한 집중적으로 도움을 줄 수 있는 부분에 기반한 멘토링
+//     계획을 적어주세요.
+//     <div class="story__content__description">
+//     ${menties[resultNum2].third}
+//     </div>
+//   </div>
+// </div>
+// </div>
+// <div class="story__content">
+// <div class="story__content__title">
+//   <div class="num">4.</div>
+//   <div class="story__content__wrap">
+//     멘토링을 통해 이룰 수 있는 목표를 적어주세요!
+//     <div class="story__content__description">
+//     ${menties[resultNum2].forth}
+//     </div>
+//   </div>
+// </div>
+// </div>
+// <div class="story__content2">
+// <div class="story__content__title2">
+//   <div class="proposal__lower">
+//     <!-- <i class="fas fa-exclamation red__exclamation"></i> -->
+//     <div class="story__content__title">30분 온라인 멘토링은 어떠셨나요? 오선빈 멘토님의 멘토링 방향입니다.</div><br />
+//    <span class="blue__bold"> "${menties[resultNum2].final}" </span><br/><br/>
+//               추가적인 멘토링을 원하시면 아래 횟수를 선택하여 멘토님께
+//               정기적으로 멘토링을 받을 수 있습니다!
+//   </div>
+// </div>
+// </div>`;
 
 mentorForm.innerHTML = `<div class="price__left">
 <div class="price__left__content">${mentorsSubmit[resultNum].name} 멘토님</div>
@@ -1147,6 +1236,7 @@ const price2 = document.querySelector(`.off__content__price`);
 const price3 = document.querySelector(`.after__price`);
 const price4 = document.querySelector(`.info__price__content`);
 const offContent = document.querySelector(`.off__content`);
+const offContentPrice = document.querySelector(`.off__content__price2`);
 
 const handleCopy = (e) => {
   console.log(target);
@@ -1173,12 +1263,13 @@ function handleMonthClick() {
   selectSemester.style.color = "#bebebe";
   selectMonth.style.fontWeight = 700;
   selectSemester.style.fontWeight = 400;
-  passbookTitle.innerHTML = `<span class="orange__underline">한 달 PLAN 멘토링 (1개월)</span><br/>(4회 - 400분)`;
-  price1.innerHTML = "399,000원";
-  price2.innerHTML = "-50,000원";
-  price3.innerHTML = "349,000원";
-  price4.innerHTML = "349,000원";
-  offContent.innerHTML = "한달 PLAN 13% 할인";
+  passbookTitle.innerHTML = `<span class="orange__underline">1회  멘토링</span> (1회 - 100분)`;
+  price1.innerHTML = "129,000원";
+  price2.innerHTML = "-30,000원";
+  price3.innerHTML = "89,100원";
+  price4.innerHTML = "89,100원";
+  offContent.innerHTML = "1회  23% 할인";
+  offContentPrice.innerHTML = "-8,900원";
 }
 
 function handleSemesterClick() {
@@ -1187,12 +1278,13 @@ function handleSemesterClick() {
   selectSemester.style.color = "#0123b4";
   selectMonth.style.fontWeight = 400;
   selectSemester.style.fontWeight = 700;
-  passbookTitle.innerHTML = `<span class="orange__underline">한 학기 PLAN 멘토링 (3개월) </span><br />(12회 - 1200분)`;
-  price1.innerHTML = "1,199,000원";
-  price2.innerHTML = "-300,000원";
-  price3.innerHTML = "899,000원";
-  price4.innerHTML = "899,000원";
-  offContent.innerHTML = "한 학기 PLAN 25% 할인";
+  passbookTitle.innerHTML = `<span class="orange__underline">4회  멘토링 </span> (4회 - 400분)`;
+  price1.innerHTML = "519,000원";
+  price2.innerHTML = "-170,000원";
+  price3.innerHTML = "314,100원";
+  price4.innerHTML = "314,100원";
+  offContent.innerHTML = "4회  32% 할인";
+  offContentPrice.innerHTML = "-34,900원";
 }
 
 function getTime() {
@@ -1209,7 +1301,7 @@ function getTime() {
 
   selectSemester.innerHTML = `${days}일 ${hours < 10 ? `0${hours}` : hours}:${
     minutes < 10 ? `0${minutes}` : minutes
-  }:${seconds < 10 ? `0${seconds}` : seconds} 후 종료<br/>한 학기 PLAN`;
+  }:${seconds < 10 ? `0${seconds}` : seconds} 후 종료<br/>4회  멘토링`;
 }
 
 function init() {

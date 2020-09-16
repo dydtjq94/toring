@@ -37,7 +37,7 @@
       integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
       crossorigin="anonymous"
     />
-    <title>토링 | 제안서</title>
+    <title>토링 | 결제하기</title>
   </head>
   <header class="header">
     <a href="javascript:history.back()" class="transparent">
@@ -54,8 +54,6 @@
   <body>
     <div class="snackbar" id="snackbar">계좌가 복사되었어요!</div>
     <div class="body">
-      <div class="proposal__wrap"></div>
-
       <div class="passbook__form">
         <div class="passbook__title">멘토링 선택</div>
         <div class="passbook__select__wrap">
@@ -95,6 +93,10 @@
             <div class="off__content__price">-170,000원</div>
           </div>
           <div class="total__price__column">
+            <div class="off__content">추가 10% 할인 (은진 어머님 한정)</div>
+            <div class="off__content__price2">-34,900원</div>
+          </div>
+          <div class="total__price__column">
             <div class="after__price__title">최종 결제 금액</div>
           </div>
           <div class="total__price__column">
@@ -131,6 +133,10 @@
               <div class="info__bank__title">입금액</div>
               <div class="info__price__content">349,000원</div>
             </div>
+            <div class="passbook__price">
+              <div class="info__bank__title">입금자명</div>
+              <div class="info__price__content">이진영</div>
+            </div>
           </div>
         </div>
         <div class="user__differ">
@@ -147,11 +153,11 @@
           <i class="fas fa-check"></i>
           꼭 확인하세요!
         </div>
-        <div class="warning__text">- 입금자명 반드시 학부모님 성함</div>
+        <div class="warning__text">- 입금자명 반드시 학부모님 성함 확인</div>
         <div class="warning__text">- 멘토링 진행전 100% 환불 가능</div>
         <div class="warning__text">- 입금 완료되면 6시간 이내로 확인 문자</div>
         <div class="warning__text">
-          - 확인 문자 이후 24시간 이내로 멘토링 진행 안내
+          - 확인 문자 이후 24시간 이내로 상담 시작
         </div>
       </div>
 
@@ -162,5 +168,5 @@
     </div>
   </body>
 
-  <script src="js/proposal.js"></script>
+  <script src="js/passbook.js"></script>
 </html>

@@ -131,7 +131,17 @@
   align-items: center;
 }
 
-.total__price__column:nth-child(6) {
+.total__price__column:nth-child(5) {
+  margin: 20px 0;
+  color: #999999;
+  padding: 0 10px;
+  display: flex;
+  color: rgb(255, 71, 71);
+  justify-content: space-between;
+  align-items: center;
+}
+
+.total__price__column:nth-child(7) {
   color: #999999;
   margin: 20px 0;
 

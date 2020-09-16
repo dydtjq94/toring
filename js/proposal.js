@@ -1202,7 +1202,7 @@ mentoringContent.innerHTML = `<div class="proposal__upper">
     <!-- <i class="fas fa-exclamation red__exclamation"></i> -->
     <div class="story__content__title">30분 온라인 멘토링은 어떠셨나요? 오선빈 멘토님의 멘토링 방향입니다.</div><br />
    <span class="blue__bold"> "${menties[resultNum2].final}" </span><br/><br/>
-              추가적인 멘토링을 원하시면 아래 PLAN을 선택하여 멘토님께
+              추가적인 멘토링을 원하시면 아래 횟수를 선택하여 멘토님께
               정기적으로 멘토링을 받을 수 있습니다!
   </div>
 </div>
@@ -1262,12 +1262,12 @@ function handleMonthClick() {
   selectSemester.style.color = "#bebebe";
   selectMonth.style.fontWeight = 700;
   selectSemester.style.fontWeight = 400;
-  passbookTitle.innerHTML = `<span class="orange__underline">1회 PLAN 코칭</span><br/>(1회 - 100분)`;
+  passbookTitle.innerHTML = `<span class="orange__underline">1회  멘토링</span> (1회 - 100분)`;
   price1.innerHTML = "129,000원";
   price2.innerHTML = "-30,000원";
   price3.innerHTML = "99,000원";
   price4.innerHTML = "99,000원";
-  offContent.innerHTML = "1회 PLAN 23% 할인";
+  offContent.innerHTML = "1회  23% 할인";
 }
 
 function handleSemesterClick() {
@@ -1276,12 +1276,12 @@ function handleSemesterClick() {
   selectSemester.style.color = "#0123b4";
   selectMonth.style.fontWeight = 400;
   selectSemester.style.fontWeight = 700;
-  passbookTitle.innerHTML = `<span class="orange__underline">4회 PLAN 멘토링 </span><br />(4회 - 400분)`;
+  passbookTitle.innerHTML = `<span class="orange__underline">4회  멘토링 </span> (4회 - 400분)`;
   price1.innerHTML = "519,000원";
   price2.innerHTML = "-170,000원";
   price3.innerHTML = "349,000원";
   price4.innerHTML = "349,000원";
-  offContent.innerHTML = "4회 PLAN 32% 할인";
+  offContent.innerHTML = "4회  32% 할인";
 }
 
 function getTime() {
@@ -1298,7 +1298,7 @@ function getTime() {
 
   selectSemester.innerHTML = `${days}일 ${hours < 10 ? `0${hours}` : hours}:${
     minutes < 10 ? `0${minutes}` : minutes
-  }:${seconds < 10 ? `0${seconds}` : seconds} 후 종료<br/>4회 PLAN`;
+  }:${seconds < 10 ? `0${seconds}` : seconds} 후 종료<br/>4회  멘토링`;
 }
 
 function init() {
