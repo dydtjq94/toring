@@ -1,5 +1,6 @@
 const tagContent = document.querySelectorAll(`.tag__content`);
 const loadingWrap = document.querySelector(`.ids__loading__wrap`);
+const tagButton = document.querySelector(`.tag__button`);
 
 let tagList = [];
 const tagLs = "tag";
@@ -48,7 +49,12 @@ function loadTag() {
     });
   }
 }
+
+function handleResult() {
+  location.href = "mentorsimple.html";
+}
 function init() {
+  tagButton.addEventListener("click", handleResult);
   tagContent.forEach((e) => e.addEventListener("click", handleSelectTag));
   loadTag();
 }

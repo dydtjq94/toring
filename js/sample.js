@@ -1,4 +1,4 @@
-const tagContent = document.querySelectorAll(`.tag__content`);
+const tagContent = document.querySelectorAll(`.tag__content2`);
 const result__sample__wrap = document.querySelector(`.result__sample__wrap`);
 const loadingWrap = document.querySelector(`.ids__loading__wrap`);
 

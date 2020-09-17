@@ -31,6 +31,21 @@
   justify-content: center;
 }
 
+.tag__wrap2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.tag__title {
+  width: 90%;
+  margin-top: 24px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+}
+
 /* #4055af  */
 
 .tag__column {
@@ -54,6 +69,23 @@
 }
 
 .tag__content:hover {
+  cursor: pointer;
+}
+
+.tag__content2 {
+  font-size: 12px;
+  border-radius: 16px;
+  margin-right: 6px;
+  margin-bottom: 6px;
+  padding: 6px 12px;
+  font-weight: 700;
+  color: #adadad;
+  background-color: white;
+  border: 1px solid #adadad;
+  outline: none;
+}
+
+.tag__content2:hover {
   cursor: pointer;
 }
 
@@ -83,4 +115,10 @@
 
 .tag__button:hover {
   cursor: pointer;
+}
+
+.tag__title__wrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
