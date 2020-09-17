@@ -47,9 +47,9 @@
   margin-bottom: 8px;
   padding: 10px 20px;
   font-weight: 700;
-  color: black;
+  color: #adadad;
   background-color: white;
-  border: 1px solid rgb(214, 214, 214);
+  border: 1px solid #adadad;
   outline: none;
 }
 
@@ -58,9 +58,9 @@
 }
 
 .selected__tag {
-  color: black;
-  background-color: #ccd3de;
-  border: 1px solid none;
+  color: #4055af;
+  background-color: white;
+  border: 1px solid #4055af;
 }
 
 .tag__button__wrap {
