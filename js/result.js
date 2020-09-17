@@ -207,7 +207,7 @@ const mentors = [
     name: "고혜준",
     gender: "여",
     univ: "서울대 의예과 20학번",
-    high: "대부고등학교 졸업",
+    high: "중대부고등학교 졸업",
     method: "학생부 종합 전형",
     eng: "hyejun",
     oneWord: "슬럼프를 극복해 서울대 의대에 진학한 혜준 멘토님",

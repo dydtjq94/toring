@@ -18,7 +18,7 @@
     <link rel="shortcut icon" href="./img/favicon.ico" />
     <link rel="icon" href="./img/favicon.ico" />
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta id="viewport" content="width=device-width, initial-scale=1.0" />
     <meta property="og:title" content="토링 | SKY 대학생 멘토링 서비스" />
     <meta property="og:type" content="website" />
     <meta
@@ -38,10 +38,10 @@
       integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
       crossorigin="anonymous"
     />
-    <title>토링 | 관심 선택</title>
+    <title>토링 | 멘토 결과</title>
   </head>
   <header class="header">
-    <a href="index.html" class="header__back">
+    <a href="test.html" class="header__back">
       <i class="fas fa-chevron-left" style="user-select: auto"></i>
     </a>
 
@@ -54,22 +54,8 @@
   </header>
   <body>
     <div class="body">
-      <div class="test__title">
-        <div class="sub">
-          관심 있는 학교 태그를<br /><span class="blue__bold">3개 먼저</span>
-          선택해 주세요.
-        </div>
-        <div class="detail">
-          대치동 출신 SKY 19, 20학번 멘토에게 직접 코칭 받아보세요. 비슷한
-          환경에서 성공적으로 입시를 마친 멘토는 가장 현실적인 도움을 줄 수
-          있습니다.
-        </div>
-      </div>
-
-      <div id="find" class="mentor__find none">
-        대치동 출신 토링 멘토를 불러오는중...
-      </div>
       <div class="tag__wrap">
+        <div class="tag__title"></div>
         <div class="tag__column">
           <button class="tag__content" id="1">휘문고</button>
           <button class="tag__content" id="2">숙명여고</button>
@@ -84,10 +70,49 @@
           <button class="tag__content" id="11">정신여고</button>
         </div>
       </div>
-      <div class="tag__button__wrap">
-        <button class="tag__button">멘토 매칭 결과 보기 ></button>
+      <div class="result__sample__wrap">
+        <div class="logo2">
+          <div class="sample__marking">마감임박</div>
+          <img src="img/seoulcampus.png" class="sample__campus" />
+          <div class="sample__lower">
+            <img src="img/dayoung.jpeg" alt="" class="sample__mentor__face" />
+            <div class="sample__univ">서울대학교 생명과학부 20학번</div>
+            <div class="sample__title">
+              3년동안 흔들리지 않고 내신과 정시 완벽하게 준비하기
+            </div>
+            <div class="sample__tag">
+              <div class="sample__tag__column">#숙명여고</div>
+              <div class="sample__tag__column">#정시</div>
+              <div class="sample__tag__column">#내신</div>
+            </div>
+            <div class="sample__under">
+              <div class="sample__price">1회 99,000원</div>
+              <div class="sample__button">코치님 이야기 자세히 보기 ></div>
+            </div>
+          </div>
+        </div>
+        <div class="logo2">
+          <div class="sample__marking">마감임박</div>
+          <img src="img/seoulcampus.png" class="sample__campus" />
+          <div class="sample__lower">
+            <img src="img/dayoung.jpeg" alt="" class="sample__mentor__face" />
+            <div class="sample__univ">서울대학교 생명과학부 20학번</div>
+            <div class="sample__title">
+              3년동안 흔들리지 않고 내신과 정시 완벽하게 준비하기
+            </div>
+            <div class="sample__tag">
+              <div class="sample__tag__column">#숙명여고</div>
+              <div class="sample__tag__column">#정시</div>
+              <div class="sample__tag__column">#내신</div>
+            </div>
+            <div class="sample__under">
+              <div class="sample__price">1회 99,000원</div>
+              <div class="sample__button">코치님 이야기 자세히 보기 ></div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="tag__lower__wrap"></div>
+
       <div class="ids__loading__wrap none">
         <div class="lds-ring">
           <div></div>
@@ -98,5 +123,5 @@
       </div>
     </div>
   </body>
-  <script src="js/select.js"></script>
+  <script src="js/sample.js"></script>
 </html>

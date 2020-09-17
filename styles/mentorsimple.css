@@ -1,0 +1,103 @@
+.result__sample__wrap {
+  width: 100%;
+}
+
+.sample__campus {
+  width: 100%;
+  opacity: 0.5;
+}
+
+.logo2 {
+  width: 100%;
+  background-color: black;
+  position: relative;
+  margin-bottom: 140px;
+}
+
+.logo3 {
+  width: 90%;
+  background-color: black;
+  position: relative;
+}
+
+.sample__lower {
+  width: 100%;
+  background-color: white;
+  position: absolute;
+  bottom: -100px;
+  padding: 16px 16px;
+  -webkit-box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.75);
+}
+
+.sample__mentor__face {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  right: 20px;
+  top: -45px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid white;
+}
+
+.sample__univ {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.sample__title {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  line-height: 20px;
+  text-align: justify;
+  width: 75%;
+}
+
+.sample__marking {
+  font-weight: 700;
+  position: absolute;
+  z-index: 10;
+  top: 10px;
+  left: 10px;
+  color: white;
+  background-color: red;
+  font-size: 12px;
+  padding: 8px 16px;
+  padding-top: 12px;
+  border-radius: 6px;
+}
+
+.sample__under {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  margin-top: 10px;
+  border-top: 1px solid gray;
+  align-items: center;
+}
+
+.sample__tag {
+  display: flex;
+  font-size: 14px;
+  color: rgb(107, 107, 107);
+}
+
+.sample__tag__column {
+  margin-right: 10px;
+}
+
+.sample__button {
+  font-size: 12px;
+  color: rgb(107, 107, 107);
+  font-weight: 700;
+}
+
+.sample__price {
+  color: #0123b4;
+  font-weight: 700;
+}

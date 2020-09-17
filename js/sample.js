@@ -1,4 +1,5 @@
 const tagContent = document.querySelectorAll(`.tag__content`);
+const result__sample__wrap = document.querySelector(`.result__sample__wrap`);
 const loadingWrap = document.querySelector(`.ids__loading__wrap`);
 
 let tagList = [];
@@ -22,9 +23,10 @@ function handleSelectTag(e) {
     saveTag();
   }
   loadingWrap.classList.remove("none");
-
+  result__sample__wrap.classList.add("none");
   setTimeout(function () {
     loadingWrap.classList.add("none");
+    result__sample__wrap.classList.remove("none");
   }, 700);
 }
 
