@@ -1128,7 +1128,8 @@ const menties = [
     third:
       "우선 지금은 내신 시험이 1달 남은 시점인 만큼 각 과목에 대한 공부 방법, 학업 계획 등을 세우는 데 중점을 두어야 할 것 같습니다. 이후 시험이 끝나면 세특을 어떻게 적어야 하는지, 대회 준비를 도와주는 쪽으로 멘토링을 하고 이후 기말고사 기간이 다가오면 중간고사 때 미흡했던 부분을 어떻게 보완해서 등급을 올릴지 수업할 수 있을 것 같습니다. ",
     forth: "학생부 종합전형에 완벽한 인재가 될 수 있도록 돕겠습니다.^__^",
-    final: "",
+    final:
+      "각 대회 준비에 있어 시간 분배를 어떻게 할지, 주의해야 할 점은 무엇인지 제 경험을 토대로 멘토링 할 예정입니다. 나머지 학생부 역시 학생 상황에 맞게 필요한 부분(독서 봉사 세특 자율활동 등) 을 진로에 맞게 유기적으로 연결할 수 있게 도와줄 수 있을 것 같습니다. 멘토링을 진행하면서 학생에 대한 정확한 현황과 상태를 알아가면서 그에 맞게 서울대에 진행할 수 있는 학생부를 구성해줄 예정입니다.",
   },
 ];
 
@@ -1212,7 +1213,7 @@ mentoringContent.innerHTML = `<div class="proposal__upper">
 <div class="story__content__title2">
   <div class="proposal__lower">
     <!-- <i class="fas fa-exclamation red__exclamation"></i> -->
-    <div class="story__content__title">30분 온라인 멘토링은 어떠셨나요? 오선빈 멘토님의 멘토링 방향입니다.</div><br />
+    <div class="story__content__title">30분 온라인 멘토링은 어떠셨나요? ${menties[resultNum2].mentorName} 멘토님의 멘토링 방향입니다.</div><br />
    <span class="blue__bold"> "${menties[resultNum2].final}" </span><br/><br/>
               추가적인 멘토링을 원하시면 아래 횟수를 선택하여 멘토님께
               정기적으로 멘토링을 받을 수 있습니다!
