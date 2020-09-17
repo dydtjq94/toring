@@ -58,8 +58,8 @@
 }
 
 .selected__tag {
-  color: white;
-  background-color: #4055af;
+  color: black;
+  background-color: #ebeded;
   border: 1px solid none;
 }
 
@@ -76,7 +76,8 @@
   border: 1px solid rgb(214, 214, 214);
   padding: 16px 0;
   border-radius: 10px;
-  font-size: 20px;
+  font-size: 16px;
+  font-weight: 700;
   outline: none;
 }
 
