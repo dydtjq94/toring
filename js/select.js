@@ -53,6 +53,7 @@ function loadTag() {
 function handleResult() {
   location.href = "mentorsimple.html";
 }
+
 function init() {
   tagButton.addEventListener("click", handleResult);
   tagContent.forEach((e) => e.addEventListener("click", handleSelectTag));
