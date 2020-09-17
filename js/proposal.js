@@ -1291,7 +1291,7 @@ function handleSemesterClick() {
   selectSemester.style.fontWeight = 700;
   passbookTitle.innerHTML = `<span class="orange__underline">한학기  멘토링 </span> (12회 - 1200분)`;
   price1.innerHTML = "1,199,000원";
-  price2.innerHTML = "-200,000원";
+  price2.innerHTML = "-300,000원";
   price3.innerHTML = "899,000원";
   price4.innerHTML = "899,000원";
   offContent.innerHTML = "한학기  25% 할인";
