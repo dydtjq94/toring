@@ -34,8 +34,11 @@
 .tag__wrap2 {
   width: 100%;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   margin-bottom: 24px;
+  background-color: white;
+  padding-bottom: 12px;
 }
 
 .tag__title {
@@ -73,7 +76,7 @@
 }
 
 .tag__content2 {
-  font-size: 14px;
+  font-size: 12px;
   border-radius: 16px;
   margin-right: 8px;
   margin-bottom: 8px;
