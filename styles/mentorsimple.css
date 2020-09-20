@@ -7,17 +7,11 @@
   opacity: 0.5;
 }
 
-.logo2 {
+.result__sample {
   width: 100%;
   background-color: black;
   position: relative;
   margin-bottom: 140px;
-}
-
-.logo3 {
-  width: 90%;
-  background-color: black;
-  position: relative;
 }
 
 .sample__lower {
@@ -54,15 +48,17 @@
   font-size: 14px;
   font-weight: 700;
   margin-bottom: 8px;
+  display: flex;
+  align-items: center;
 }
 
 .sample__title {
+  width: 65%;
   font-size: 16px;
   font-weight: 700;
   margin-bottom: 8px;
   line-height: 20px;
   text-align: justify;
-  width: 75%;
 }
 
 .sample__marking {
@@ -83,10 +79,10 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding-top: 20px;
   margin-top: 10px;
   border-top: 1px solid gray;
-  align-items: center;
 }
 
 .sample__tag {
@@ -99,6 +95,10 @@
   margin-right: 10px;
 }
 
+.tag__univ {
+  color: rgb(0, 121, 177);
+}
+
 .sample__button {
   font-size: 12px;
   color: rgb(107, 107, 107);
@@ -107,5 +107,6 @@
 
 .sample__price {
   color: #0123b4;
+  font-size: 14px;
   font-weight: 700;
 }

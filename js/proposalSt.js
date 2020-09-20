@@ -1284,7 +1284,7 @@ function handleSemesterClick() {
 
 function getTime() {
   const currentTime = new Date();
-  const extraDay = new Date("2020-09-19");
+  const extraDay = new Date("2020-09-24");
   const days = Math.floor((extraDay - currentTime) / 86400000);
   const hours = Math.floor(((extraDay - currentTime) % 86400000) / 3600000);
   const minutes = Math.floor(

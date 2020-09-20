@@ -2482,7 +2482,7 @@ const freeButton = document.querySelector(`.free__button`);
 function getTime() {
   const currentTime = new Date();
   // Don't delete this.
-  const extraDay = new Date("2020-09-19");
+  const extraDay = new Date("2020-09-24");
   const days = Math.floor((extraDay - currentTime) / 86400000);
   const hours = Math.floor(((extraDay - currentTime) % 86400000) / 3600000);
   const minutes = Math.floor(

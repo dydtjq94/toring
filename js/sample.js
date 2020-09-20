@@ -6,7 +6,11 @@ let tagList = [];
 const tagLs = "tag";
 
 function handleSelectTag(e) {
+  const tagTarget = e.target.innerText;
+  const tagSchool = tagTarget.split(" ")[1];
+
   const toDoObj = {
+    school: tagSchool,
     id: parseInt(e.target.id, 10), //한개씩 추가되는 id를 얻기 위해
   };
 
@@ -28,6 +32,8 @@ function handleSelectTag(e) {
     loadingWrap.classList.add("none");
     result__sample__wrap.classList.remove("none");
   }, 700);
+
+  console.log(tagList);
 }
 
 function saveTag() {

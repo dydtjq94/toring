@@ -170,12 +170,17 @@ textarea:required {
   text-shadow: 0 0 10px #0123b4, 0 0 15px #0123b4, 0 0 30px #0123b4;
 }
 
+.ids__loading__wrap {
+  margin-top: 36px;
+}
+
 .lds-ring {
   display: inline-block;
   position: relative;
   width: 80px;
   height: 80px;
 }
+
 .lds-ring div {
   box-sizing: border-box;
   display: block;
@@ -188,15 +193,19 @@ textarea:required {
   animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
   border-color: #0123b4 transparent transparent transparent;
 }
+
 .lds-ring div:nth-child(1) {
   animation-delay: -0.45s;
 }
+
 .lds-ring div:nth-child(2) {
   animation-delay: -0.3s;
 }
+
 .lds-ring div:nth-child(3) {
   animation-delay: -0.15s;
 }
+
 @keyframes lds-ring {
   0% {
     transform: rotate(0deg);

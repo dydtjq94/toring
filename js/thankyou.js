@@ -11,7 +11,7 @@ mentorName.innerHTML = `${name} 멘토님`;
 
 function getTime() {
   const currentTime = new Date();
-  const extraDay = new Date("2020-09-17");
+  const extraDay = new Date("2020-09-24");
   const days = Math.floor((extraDay - currentTime) / 86400000);
   const hours = Math.floor(((extraDay - currentTime) % 86400000) / 3600000);
   const minutes = Math.floor(
