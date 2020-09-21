@@ -1,3 +1,379 @@
+/* 여기서부터는 새로운 메인 화면 css 입니다.  */
+
+.main__display {
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  border-bottom: 1px solid #8080804d;
+  position: relative;
+}
+
+.main__button__wrap {
+  position: absolute;
+  bottom: 120px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.main__button,
+.main__third__button,
+.main__fifth__button {
+  box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.4);
+  text-decoration: none;
+  color: white;
+  background-color: #0123b4;
+  border: none;
+  padding: 15px 50px;
+  border-radius: 10px;
+  font-size: 20px;
+  margin-top: 30px;
+  width: 90%;
+  text-align: center;
+}
+
+.main__button:hover {
+  cursor: pointer;
+}
+
+.main__third__button:hover {
+  cursor: pointer;
+}
+
+.main__fifth__button:hover {
+  cursor: pointer;
+}
+
+.second__display {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0;
+  background-color: #ebebeb;
+}
+
+.second__title__wrap,
+.second__sub__wrap {
+  width: 90%;
+}
+
+.main__second__title {
+  text-align: center;
+  font-size: 22px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+.main__second__sub {
+  text-align: center;
+  font-size: 16px;
+  margin-top: 8px;
+  margin-bottom: 24px;
+}
+
+.second__content__wrap {
+  padding: 0 5%;
+  width: 100%;
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+
+.second__content {
+  width: 100%;
+  background-color: white;
+  display: inline-block;
+  overflow: hidden;
+  padding: 30px 20px;
+  padding-bottom: 20px;
+  border-radius: 16px;
+  margin-right: 4px;
+}
+
+.second__content__upper {
+  border-bottom: 1px solid #8080804d;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.second__content__upper__up {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  margin-bottom: 4px;
+}
+
+.second__content__upper__q,
+.second__content__upper__down__extra,
+.second__content__lower__down__extra,
+.second__content__lower__img {
+  width: 14%;
+  text-align: center;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.second__content__upper__down__sub,
+.second__content__lower__down__sub,
+.second__content__upper__question,
+.second__content__lower__mentor {
+  width: 86%;
+  white-space: normal;
+  text-align: justify;
+}
+
+.second__content__upper__down {
+  display: flex;
+  width: 100%;
+}
+
+.second__content__upper__question {
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.second__content__upper__down__sub {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.second__content__lower__up,
+.second__content__lower__down {
+  width: 100%;
+  display: flex;
+}
+
+.lower__img__mentor {
+  width: 32px;
+  height: 32px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.second__content__addview {
+  width: 100%;
+  text-align: right;
+  font-size: 14px;
+  color: #646464;
+  margin-top: 20px;
+}
+
+.second__content__lower__mentor__up {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.second__content__lower__mentor__down {
+  font-size: 14px;
+  color: #646464;
+}
+
+.second__content__lower__up {
+  margin-bottom: 6px;
+}
+
+.second__content__lower__down__sub {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.second__content__lower__down {
+  margin-bottom: 8px;
+}
+
+.third__display {
+  width: 100%;
+  border-bottom: 1px solid #8080804d;
+}
+
+.main__third__title__wrap {
+  width: 100%;
+  border-bottom: 1px solid #8080804d;
+}
+
+.main__third__title {
+  text-align: center;
+  width: 100%;
+  padding-top: 60px;
+  padding-bottom: 20px;
+  font-size: 22px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+.third__content__img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.main__third__content__wrap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main__third__content {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  padding: 30px 0;
+  border-bottom: 1px solid #8080804d;
+}
+
+.third__content__left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 30px;
+}
+
+.third__content__mentor__name {
+  font-size: 14px;
+  margin-top: 10px;
+  color: #646464;
+}
+
+.third__content__right__upper {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #646464;
+}
+
+.third__content__right__middle {
+  font-size: 18px;
+  line-height: 24px;
+  text-align: justify;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.third__content__right__lower {
+  display: flex;
+}
+
+.third__content__tag {
+  margin-right: 8px;
+  font-size: 14px;
+}
+
+.main__third__button__wrap,
+.main__fifth__button__wrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 60px;
+}
+
+.forth__display {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 0;
+  padding-top: 60px;
+  border-bottom: 1px solid #8080804d;
+  background-color: #ebebeb;
+}
+
+.main__forth__uptitle {
+  font-size: 16px;
+  color: #414141;
+  margin-bottom: 12px;
+}
+
+.main__forth__downtitle {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.main__forth__semi {
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  color: #414141;
+}
+
+.main__forth__content__column {
+  display: flex;
+  align-items: center;
+  margin: 30px 0;
+}
+
+.forth__content__left {
+  font-size: 24px;
+  margin-right: 18px;
+  color: #0123b4;
+}
+
+.forth__content__right__title {
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.forth__content__right__semi {
+  font-size: 14px;
+}
+
+.fifth__display {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 0;
+}
+
+.main__fifth__title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 32px;
+}
+
+.main__fifth__button {
+  line-height: 24px;
+}
+
+.main__fifth__content__column {
+  width: 100%;
+}
+
+.fifth__content__upper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #c8c8c8;
+  font-weight: 700;
+  padding: 12px 0;
+  padding-top: 16px;
+}
+.fifth__upper__left,
+.fifth__lower__left {
+  width: 16%;
+  text-align: center;
+}
+
+.fifth__upper__right {
+  width: 84%;
+}
+
+.fifth__lower__right {
+  padding: 20px 0;
+  line-height: 22px;
+  text-align: justify;
+  padding-right: 20px;
+  width: 80%;
+}
+
+.fifth__content__lower {
+  width: 100%;
+  display: flex;
+}
+
 .main__dis {
   display: flex;
   flex-direction: column;
@@ -70,9 +446,6 @@
   border-radius: 20px;
   font-size: 20px;
   margin-top: 30px;
-  opacity: 0;
-  transform: translateY(40px);
-  animation: homeFadeIn 1s forwards 0.8s;
 }
 
 .main__button:visited {
@@ -119,4 +492,12 @@
   background-color: white;
   color: #0123b4;
   border: 1px solid #0123b4;
+}
+
+/* 여기서부터는 새로운 메인 화면 css 입니다.  */
+
+.main__display {
+  width: 100%;
+  height: 100vh;
+  background-color: white;
 }
