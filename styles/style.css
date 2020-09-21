@@ -257,6 +257,16 @@ textarea:required {
   }
 }
 
+.gone {
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+.appear {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
 /*teststyle 아직 남아있어야해서 남김 ------------------------------------*/
 
 .inline {
