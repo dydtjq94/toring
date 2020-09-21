@@ -14,6 +14,10 @@
   margin-bottom: 140px;
 }
 
+.result__sample:hover {
+  cursor: pointer;
+}
+
 .sample__lower {
   width: 100%;
   background-color: white;
