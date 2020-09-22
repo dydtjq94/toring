@@ -1127,7 +1127,7 @@ ${mentors[resultNum].title}
 </div>
 </div>
 <div class="price">
-<div class="price__title">멘토링 비용 안내</div>
+<div class="price__title">멘토링 이용 안내</div>
 
 <div class="price__column__wrap">
   <div class="price__column">
