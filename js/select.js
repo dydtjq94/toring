@@ -8,17 +8,16 @@ const mentors = [
     major: "생명과학부",
     year: "20학번",
     school: "휘문고",
-    label: 0,
-    title: "타이틀은 한줄로 부탁해유~",
+    title:
+      "휘문고 출신 진호 멘토님의<br/>휘문고에서 내신과 정시를 완벽하게 준비하기",
     method: "정시 전형",
-    mentoring: ["수시 정시 동시", "학습법 전문"],
+    mentoring: ["수시 정시 동시", "학습법 전문", "슬럼프 극복"],
     experience: [
       `휘문고등학교 졸업`,
       `휘문고 1,2학년 내신 종합 2등급~1등급 (최고 전교 7등)`,
       `2020학년도 정시 과탐 생1 지2 만점`,
       `2019, 2020학년도 생1 교육청 및 평가원 모의고사 올 1등급, 2020학년도 생1 평가원 모의고사 올 만점`,
     ],
-    being: [`asdfdsaf`, `sadfsadfasdf`, `asdfdasfadsf`],
     special: [
       {
         title: `코로나 때문에 학습습관이 무너졌어요. 어떻게 하면 좋을까요?`,
@@ -1098,7 +1097,7 @@ function loadTag() {
 }
 
 function handleResult() {
-  location.href = "mentorsimple.html";
+  location.href = "result.html";
 }
 
 function schoolList() {

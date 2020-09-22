@@ -1,4 +1,4 @@
-const mentorsDetail = [
+const mentors = [
   {
     name: "정진호",
     nameEng: "jinho",
@@ -295,65 +295,6 @@ const mentorsDetail = [
         user: `김*환 학부모님`,
         date: `2020.08`,
         content: `"정시에 집중하려고 신청했는데, 아이가 할 수 있다라는 기운을 받은건지 격려를 받은건지 요새 들어 열심히 하네요~"`,
-      },
-    ],
-  },
-
-  //조예은
-
-  {
-    name: "조예은",
-    nameEng: "yeeun",
-    gender: "여",
-    univ: "서울대",
-    univEng: "seoul",
-    major: "미학과",
-    year: "19학번",
-    school: "은광여고",
-    title:
-      "은광여고 출신 예은 멘토님의 <br/> 스스로 학생부를 채워 서울대 연세대 고려대를 동시 합격하는 비법",
-    method: "수시 일반 전형",
-    mentoring: ["SKY 동시 합격", "은광여고 내신", "진로 설정"],
-    experience: [
-      `은광여고 졸업`,
-      `서울대 수시 일반전형, 연대 학생부 종합전형, 고대 학교추천2 전형 모두 최초 합격`,
-      `상대적으로 부족했던 1학년 1학기 성적을 극복한 상승 그래프로 최종적으로 문과 전교 3등으로 졸업 후 현재 서울대 재학중`,
-      `내신 관리에 있어서 어느 정도 사교육의 도움을 받기는 했지만 기본적으로 자기주도적 학습을 진행함(과목별 공부 방식, 시간을 효율적으로 쓰는 법 등을 스스로 터득함)`,
-      `고3을 제외하고는 매년 학급 회장 활동과 학교 학생회 활동을 함. 학생의 세특 고민뿐만 아니라 인간관계 고민도 상담해줄 수 있음`,
-      `자소서를 학원에 맡기지 않고 스스로 학교별로 분석하고 학교 선생님과 아버지의 도움을 받아 작성함. 학원의 상담 없이도 합격함`,
-      `고2 시절 모의고사 최우수상 수상`,
-      `대치동의 치열한 학업 경쟁 및 등급 싸움, 특목고와의 비교등으로 개인적으로 힘든 시간을 보낸 경험이 있는 만큼 학생의 고민 등에 진심어린 위로와 격려, 조언 및 동기부여 가능`,
-    ],
-    special: [
-      {
-        title: `코로나 때문에 학습습관이 무너졌어요. 어떻게 하면 좋을까요?`,
-        detail: `전례없는 이 전염병 사태로 우리 모두가 처음인 상황들 속에서 학습습관이 무너지는 건 사실 이상한 것이 아니에요. 친구 뿐만이 아니라 다른 친구들도, 심지어는 다 큰 어른들도 생활습관이 무너지기도 하니까 우선 너무 자책하거나 스트레스 받지 않았으면 해요. 이제부터 이 새로운, 변화된 일상에 맞추어 차차 적응해가면 되겠지요? 우선 몇시에 일어나고 몇시에 잠에 드나요? 모든 것이 예측 불가능한 시기일수록 규칙적인 삶을 통해 자신의 페이스를 유지하는 것이 제일 중요해요.  <br/>시간대를 정해두고 규칙적으로 자고 일어나는 습관을 들여야 해요. 집에 오래 있다 보니 핸드폰이나 컴퓨터 넷플릭스를 과도하게 많이 하지는 않나요? 스스로 자제할 수 없이 오래 하게 되었다면 부모님께 핸드폰을 맡겨두고 공부하는 방에는 전자 기기가 전혀 없도록 하세요. 그리고 공부 방법 및 시간에 있어서는..(여기는 실제 멘토링 시간에 꿀팁을 알려드리도록 하겠습니다)`,
-      },
-      {
-        title: `멘토님과 같은 고등학교(은광여고)를 다니고 있습니다. 혹시 우리
-          학교 내신이나 학생부는 어떤 식으로 준비해야 하나요?`,
-        detail: `과목별로 남아 계시는 선생님들을 우선 여쭤보고 구체적인 방법, 내신 과목별로 유명한 대치동 강사 선생님들을 알려줄게요. 은광여고의 경우 영어를 잘하는 학생들이 많아서 영어 지문 변형이 심하기 때문에..(중략) 탐구 과목들은 필기를 쭉 정리하고 수능특강 문제를.. 이후의 자세한 사항은 멘토링에서 전부 알려드릴게요!`,
-      },
-      {
-        title: `조예은 멘토님은 이런 사람이에요!`,
-        detail: `저는 고등학교 시절에 문화산업계에 종사하고 싶다는 꿈을 가지고 있었습니다. 그렇기에 어떤 과에 가는지는 큰 상관이 없었는데, 고등학교 1학년때 교육청 컨설팅에서 서울대 미학과라는 과를 알게 되었고, 그 과에 들어가 공부해보고 싶다는 간절한 열망을 가지게 되었습니다. 고등학교 1학년때는 비교과와 교과의 우선순위를 잘못 세우는 바람에 방황하다가 성적의 부진을 겪었었는데, 마음을 다잡고 2학년때부터 비약적인 성적의 상승을 이루어 원하는 학교, 학과에 입학할 수 있었습니다.  <br/>성적의 상승에는 물론 전략의 수정 및 확실한 동기 부여로 인한 개인의 노력도 있지만, 제가 돌아봤을 때는 저를 믿고 항상 격려해주신 두 분의 선생님 덕택이 매우 컸습니다. 저는 이때 한 사람(학생)의 가능성을 알아봐주고, 믿어주고, 진심으로 응원해주었을 때 그 사람이 얼마나 큰 성장을 이룰 수 있는지를 직접 체험하였습니다. 멘토링을 통해 학습 방법 및 대학 진학을 위한 조언뿐만 아니라 그 학생의 가능성을 믿어주는 든든한 응원자로서 지원해주고 싶습니다.`,
-      },
-    ],
-    review: [
-      {
-        user: `김*혁 학부모님`,
-        date: `2020.08`,
-        content: `"은광여고 정보를 잘 구하기 어려웠는데, 은광여고를 졸업하신지 얼마 안되서 그런지 아주 잘 알고 계시네요. 아이도 너무 만족해해요."`,
-      },
-      {
-        user: `이*지 은광여자고등학교 1학년 학생`,
-        date: `2020.09`,
-        content: `"코로나 때문에 공부하기가 어려웠는데, 멘토님이 너무 너무 잘 알려주셔서 매주 잘 할 수 있는 것 같아요."`,
-      },
-      {
-        user: `유*진 학부모님`,
-        date: `2020.08`,
-        content: `"매주 꿀팁을 얻어온다며 아이가 말하는데 그것 때문인지 조금씩 변화하는게 보이네요"`,
       },
     ],
   },
@@ -1103,657 +1044,6 @@ const mentorsDetail = [
   },
 ];
 
-const mentors = [
-  {
-    name: "정진호",
-    gender: "남",
-    univ: "서울대 생명과학부 20학번",
-    high: "휘문고등학교 졸업",
-    method: "정시 전형",
-    eng: "jinho",
-    oneWord: "휘문고에서 내신과 정시를 완벽하게 준비한 진호 멘토님",
-    mentoring: ["수시 정시 동시", "학습법 전문", "슬럼프 극복"],
-    // label 0: 모집중, 1: 마감임박
-    label: 1,
-    //labelNum 몇자리 남았어요에 들어가는 숫자 (모집중이나 마감임박이나 다 써줘야함)
-    labelNum: 2,
-    // sort 1:휘문고, 2:숙명여고, 3:단대부고, 4:개포고, 5:진선여고, 6:그외
-    sort: 1,
-  },
-
-  {
-    name: "유현우",
-    gender: "남",
-    univ: "연세대 도시공학과 20학번",
-    high: "현대고등학교 졸업",
-    method: "특기자 전형",
-    eng: "hyunwoo",
-    oneWord: "학생부를 완벽하게 준비한 현우 멘토님",
-    mentoring: ["멘탈 관리", "진로 설정", "수시 전문"],
-    label: 0,
-    labelNum: 7,
-    sort: 6,
-  },
-
-  {
-    name: "오선빈",
-    gender: "여",
-    univ: "서울대 수의예과 19학번",
-    high: "진선여자고등학교 졸업",
-    method: "수시 일반 전형",
-    eng: "sunbin",
-    oneWord: "학생을 진심으로 도와주는 선빈 멘토님",
-    mentoring: ["과목별 공부법", "멘탈 관리", "진선여고 내신"],
-    label: 1,
-    labelNum: 2,
-    sort: 5,
-  },
-
-  {
-    name: "김예나",
-    gender: "여",
-    univ: "연세대 건축공학과 18학번",
-    high: "경기여자고등학교 졸업",
-    method: "학생부 종합 전형",
-    eng: "yena",
-    oneWord: "스스로 공부하는 습관으로 전교 3등으로 졸업한 예나 멘토님",
-    mentoring: ["경기여고 내신", "진로 설정", "슬럼프 극복"],
-    label: 1,
-    labelNum: 2,
-    sort: 6,
-  },
-
-  {
-    name: "김태형",
-    gender: "남",
-    univ: "연세대 전기전자공학부 20학번",
-    high: "휘문고등학교 졸업",
-    method: "논술 전형",
-    eng: "taehyung",
-    oneWord: "급격한 성적 상승을 약속하는 태형 멘토님",
-    mentoring: ["논술 전문", "성적 상승", "학습 습관 관리"],
-    label: 1,
-    labelNum: 1,
-    sort: 1,
-  },
-
-  {
-    name: "조예은",
-    gender: "여",
-    univ: "서울대 미학과 19학번",
-    high: "은광여자고등학교 졸업",
-    method: "수시 일반 전형",
-    eng: "yeeun",
-    oneWord:
-      "스스로 학생부를 채워 서울대 연세대 고려대를 동시 합격한 예은 멘토님",
-    mentoring: ["SKY 동시 합격", "은광여고 내신", "진로 설정"],
-    label: 0,
-    labelNum: 4,
-    sort: 6,
-  },
-
-  {
-    name: "임채현",
-    gender: "남",
-    univ: "연세대 중어중문학과 20학번",
-    high: "개포고등학교 졸업",
-    method: "정시 전형",
-    eng: "chaehyun",
-    oneWord: "냉정하게 현실을 알려주지만 누구보다 따뜻한 채현 멘토님",
-    mentoring: ["엄격한 코치", "성적 상승", "전문적인"],
-    label: 0,
-    labelNum: 5,
-    sort: 4,
-  },
-
-  {
-    name: "김민영",
-    gender: "여",
-    univ: "고려대 경영학과 20학번",
-    high: "숙명여자고등학교 졸업",
-    method: "학교장 추천 전형",
-    eng: "minyoung",
-    oneWord: "부모님 도움 없이 스스로 입시를 해낸 민영 멘토님",
-    mentoring: ["자기 주도 학습", "숙명여고 내신", "동기 부여"],
-    label: 0,
-    labelNum: 3,
-    sort: 2,
-  },
-
-  {
-    name: "정현진",
-    gender: "여",
-    univ: "서울대 기계공하전공 19학번",
-    high: "숙명여자고등학교 졸업",
-    method: "수시 일반 전형",
-    eng: "hyunjin",
-    oneWord: "효율적인 공부법으로 서울대와 카이스트를 동시 합격한 현진 멘토님",
-    mentoring: ["숙명여고 이과", "진로 설정", "효율적인 공부"],
-    label: 1,
-    labelNum: 2,
-    sort: 2,
-  },
-
-  {
-    name: "장하연",
-    gender: "여",
-    univ: "연세대 실내건축학과 19학번",
-    high: "숙명여자고등학교 졸업",
-    method: "정시 전형",
-    eng: "hayeon",
-    oneWord:
-      "고등학교 생활을 후회없이, 성공적으로 보낼 수 있도록 도와주는 하연 멘토님",
-    mentoring: ["성적 상승", "숙명여고 정시", "학교 생활"],
-    label: 0,
-    labelNum: 3,
-    sort: 2,
-  },
-
-  {
-    name: "유다영",
-    gender: "여",
-    univ: "연세대 경제학과 19학번",
-    high: "숙명여자고등학교 졸업",
-    method: "논술 전형",
-    eng: "dayoung",
-    oneWord: "방향성과 지름길을 알려주는 다영 멘토님",
-    mentoring: ["이과 문과 전향", "효율적인 공부", "언니 같은 멘토"],
-    label: 1,
-    labelNum: 2,
-    sort: 2,
-  },
-
-  {
-    name: "허나연",
-    gender: "여",
-    univ: "고려대 한문학과 20학번",
-    high: "진선여자고등학교 졸업",
-    method: "학생부 종합 전형",
-    eng: "nayeon",
-    oneWord: "코로나로 인한 슬럼프를 극복하게 해주는 나연 멘토님",
-    mentoring: ["슬럼프 극복", "진선여고 내신", "성적 급상승"],
-    label: 0,
-    labelNum: 3,
-    sort: 5,
-  },
-
-  {
-    name: "염지윤",
-    gender: "여",
-    univ: "서울대 윤리교육과 20학번",
-    high: "개포고등학교 졸업",
-    method: "학생부 교과 전형",
-    eng: "jiyoon",
-    oneWord:
-      "선택과 집중으로 1학년 내신 2.87이었던 개포고 학생부를 완벽하게 해결한 지윤 멘토님",
-    mentoring: ["개포고 내신", "성적 급상승", "학생부 전문"],
-    label: 1,
-    labelNum: 1,
-    sort: 4,
-  },
-
-  {
-    name: "이시연",
-    gender: "남",
-    univ: "서울대 농경제사회학부 20학번",
-    high: "중산고등학교 졸업",
-    method: "정시 전형",
-    eng: "siyeon",
-    oneWord: "모든 과목 공부법을 완벽하게 알려주는 시연 멘토님",
-    mentoring: ["과목별 공부법", "중산고 내신", "성적 상승 곡선"],
-    label: 1,
-    labelNum: 3,
-    sort: 6,
-  },
-
-  {
-    name: "고혜준",
-    gender: "여",
-    univ: "서울대 의예과 20학번",
-    high: "중대부고등학교 졸업",
-    method: "학생부 종합 전형",
-    eng: "hyejun",
-    oneWord: "슬럼프를 극복해 서울대 의대에 진학한 혜준 멘토님",
-    mentoring: ["서울대 의대", "슬럼프 극복", "과목별 공부법"],
-    label: 1,
-    labelNum: 1,
-    sort: 6,
-  },
-
-  {
-    name: "이서택",
-    gender: "남",
-    univ: "고려대 경영학과 20학번",
-    high: "단대부고등학교 졸업",
-    method: "학생부 종합 전형",
-    eng: "seotack",
-    oneWord: "단대부고의 내신과 학생부를 완벽하게 해결해주는 서택 멘토님",
-    mentoring: ["단대부고 내신", "학생부 전문", "친 형 같은"],
-    label: 1,
-    labelNum: 1,
-    sort: 3,
-  },
-
-  {
-    name: "옥승환",
-    gender: "남",
-    univ: "연세대 경영학과 20학번",
-    high: "단대부고등학교 졸업",
-    method: "학생부 종합 전형",
-    eng: "seunghwan",
-    oneWord: "친근한 형처럼 다가가지만, 확실하게 알려주는 승환 멘토님",
-    mentoring: ["정시 수시 동시", "단대부고 내신", "과목별 학습법"],
-    label: 1,
-    labelNum: 2,
-    sort: 3,
-  },
-
-  {
-    name: "박상하",
-    gender: "남",
-    univ: "연세대 의예과 20학번",
-    high: "휘문고등학교 졸업",
-    method: "정시 전형",
-    eng: "sangha",
-    oneWord: "휘문고에서 정시와 수시 모두로 의예과에 진학한 상하 멘토님",
-    mentoring: ["연세대 의대", "정시 수시 동시", "학습 습관 관리"],
-    label: 0,
-    labelNum: 3,
-    sort: 1,
-  },
-];
-
-// 멘토 리스트
-let whimoon = [];
-let sookmyungW = [];
-let dandae = [];
-let gaepo = [];
-let jinsunW = [];
-let otherH = [];
-
-for (let k = 0; k < 18; k++) {
-  if (mentors[k].sort === 1) {
-    whimoon.push(mentors[k]);
-  } else if (mentors[k].sort === 2) {
-    sookmyungW.push(mentors[k]);
-  } else if (mentors[k].sort === 3) {
-    dandae.push(mentors[k]);
-  } else if (mentors[k].sort === 4) {
-    gaepo.push(mentors[k]);
-  } else if (mentors[k].sort === 5) {
-    jinsunW.push(mentors[k]);
-  } else if (mentors[k].sort === 6) {
-    otherH.push(mentors[k]);
-  }
-}
-
-Array.prototype.shuffle = function () {
-  var length = this.length;
-  while (length) {
-    var index = Math.floor(length-- * Math.random());
-    var temp = this[length];
-    this[length] = this[index];
-    this[index] = temp;
-  }
-  return this;
-};
-
-whimoon.shuffle();
-sookmyungW.shuffle();
-dandae.shuffle();
-gaepo.shuffle();
-jinsunW.shuffle();
-otherH.shuffle();
-
-let whimoonResult = `<div class="result__title"></div>`;
-let sookmyungWResult = `<div class="result__title"></div>`;
-let dandaeResult = `<div class="result__title"></div>`;
-let gaepoResult = `<div class="result__title"></div>`;
-let jinsunWResult = `<div class="result__title"></div>`;
-let otherHResult = `<div class="result__title"></div>`;
-
-let schoolMentorList = [
-  "whimoon",
-  "sookmyungW",
-  "dandae",
-  "gaepo",
-  "jinsunW",
-  "otherH",
-];
-
-for (let q = 0; q < whimoon.length; q++) {
-  whimoonResult =
-    whimoonResult +
-    `
-<div class="mentor__simple ${whimoon[q].eng}">
-${
-  whimoon[q].label === 0
-    ? `<div class="label__style1">
-    모집중
-  </div>`
-    : `<div class="label__style2">
-    마감임박! <span class="label__extra">${whimoon[q].labelNum}자리 남았어요!</span>
-  </div>`
-}
-  <div class="nr__upper ">
-    <div class="nr__column">
-      <img src="./img/${whimoon[q].eng}.jpeg" class="nr__img" />
-    </div>
-    <div class="nr__column">
-      <div class="nr__info__name">${whimoon[q].name} 멘토님 (${
-      whimoon[q].gender
-    })</div>
-      <div class="nr__info__uni">
-        <i class="fas fa-graduation-cap"></i> ${whimoon[q].univ}
-      </div>
-      <div class="nr__info__sch">
-        <i class="fas fa-school"></i> ${whimoon[q].high}
-      </div>
-      <div class="nr__info__sch">
-        <i class="fas fa-book-open"></i> ${whimoon[q].method}
-      </div>
-    </div>
-  </div>
-  <div class="nr__lower">
-    <div class="mentor__class__title">
-      <div class="mentor__class__title__upper">
-        <div class="title__upper__title">
-        ${whimoon[q].oneWord}
-        </div>
-        <div class="title__upper__mentoring">
-          <div class="mentoring__style"># ${whimoon[q].mentoring[0]}</div>
-          <div class="mentoring__style"># ${whimoon[q].mentoring[1]}</div>
-          <div class="mentoring__style"># ${whimoon[q].mentoring[2]}</div>
-        </div>
-      </div>
-      <div class="content__column__detail">
-        멘토님 이력 자세히 보기 <i class="fas fa-chevron-right"></i>
-      </div>
-    </div>
-  </div>
-</div>`;
-}
-for (let q = 0; q < sookmyungW.length; q++) {
-  sookmyungWResult =
-    sookmyungWResult +
-    `
-<div class="mentor__simple ${sookmyungW[q].eng}">
-${
-  sookmyungW[q].label === 0
-    ? `<div class="label__style1">
-    모집중
-  </div>`
-    : `<div class="label__style2">
-    마감임박! <span class="label__extra">${sookmyungW[q].labelNum}자리 남았어요!</span>
-  </div>`
-}
-  <div class="nr__upper ">
-    <div class="nr__column">
-      <img src="./img/${sookmyungW[q].eng}.jpeg" class="nr__img" />
-    </div>
-    <div class="nr__column">
-      <div class="nr__info__name">${sookmyungW[q].name} 멘토님 (${
-      sookmyungW[q].gender
-    })</div>
-      <div class="nr__info__uni">
-        <i class="fas fa-graduation-cap"></i> ${sookmyungW[q].univ}
-      </div>
-      <div class="nr__info__sch">
-        <i class="fas fa-school"></i> ${sookmyungW[q].high}
-      </div>
-      <div class="nr__info__sch">
-        <i class="fas fa-book-open"></i> ${sookmyungW[q].method}
-      </div>
-    </div>
-  </div>
-  <div class="nr__lower">
-    <div class="mentor__class__title">
-      <div class="mentor__class__title__upper">
-        <div class="title__upper__title">
-        ${sookmyungW[q].oneWord}
-        </div>
-        <div class="title__upper__mentoring">
-          <div class="mentoring__style"># ${sookmyungW[q].mentoring[0]}</div>
-          <div class="mentoring__style"># ${sookmyungW[q].mentoring[1]}</div>
-          <div class="mentoring__style"># ${sookmyungW[q].mentoring[2]}</div>
-        </div>
-      </div>
-      <div class="content__column__detail">
-        멘토님 이력 자세히 보기 <i class="fas fa-chevron-right"></i>
-      </div>
-    </div>
-  </div>
-</div>`;
-}
-for (let q = 0; q < dandae.length; q++) {
-  dandaeResult =
-    dandaeResult +
-    `
-<div class="mentor__simple ${dandae[q].eng}">
-${
-  dandae[q].label === 0
-    ? `<div class="label__style1">
-    모집중
-  </div>`
-    : `<div class="label__style2">
-    마감임박! <span class="label__extra">${dandae[q].labelNum}자리 남았어요!</span>
-  </div>`
-}
-  <div class="nr__upper ">
-    <div class="nr__column">
-      <img src="./img/${dandae[q].eng}.jpeg" class="nr__img" />
-    </div>
-    <div class="nr__column">
-      <div class="nr__info__name">${dandae[q].name} 멘토님 (${
-      dandae[q].gender
-    })</div>
-      <div class="nr__info__uni">
-        <i class="fas fa-graduation-cap"></i> ${dandae[q].univ}
-      </div>
-      <div class="nr__info__sch">
-        <i class="fas fa-school"></i> ${dandae[q].high}
-      </div>
-      <div class="nr__info__sch">
-        <i class="fas fa-book-open"></i> ${dandae[q].method}
-      </div>
-    </div>
-  </div>
-  <div class="nr__lower">
-    <div class="mentor__class__title">
-      <div class="mentor__class__title__upper">
-        <div class="title__upper__title">
-        ${dandae[q].oneWord}
-        </div>
-        <div class="title__upper__mentoring">
-          <div class="mentoring__style"># ${dandae[q].mentoring[0]}</div>
-          <div class="mentoring__style"># ${dandae[q].mentoring[1]}</div>
-          <div class="mentoring__style"># ${dandae[q].mentoring[2]}</div>
-        </div>
-      </div>
-      <div class="content__column__detail">
-        멘토님 이력 자세히 보기 <i class="fas fa-chevron-right"></i>
-      </div>
-    </div>
-  </div>
-</div>`;
-}
-for (let q = 0; q < gaepo.length; q++) {
-  gaepoResult =
-    gaepoResult +
-    `
-<div class="mentor__simple ${gaepo[q].eng}">
-${
-  gaepo[q].label === 0
-    ? `<div class="label__style1">
-    모집중
-  </div>`
-    : `<div class="label__style2">
-    마감임박! <span class="label__extra">${gaepo[q].labelNum}자리 남았어요!</span>
-  </div>`
-}
-  <div class="nr__upper ">
-    <div class="nr__column">
-      <img src="./img/${gaepo[q].eng}.jpeg" class="nr__img" />
-    </div>
-    <div class="nr__column">
-      <div class="nr__info__name">${gaepo[q].name} 멘토님 (${
-      gaepo[q].gender
-    })</div>
-      <div class="nr__info__uni">
-        <i class="fas fa-graduation-cap"></i> ${gaepo[q].univ}
-      </div>
-      <div class="nr__info__sch">
-        <i class="fas fa-school"></i> ${gaepo[q].high}
-      </div>
-      <div class="nr__info__sch">
-        <i class="fas fa-book-open"></i> ${gaepo[q].method}
-      </div>
-    </div>
-  </div>
-  <div class="nr__lower">
-    <div class="mentor__class__title">
-      <div class="mentor__class__title__upper">
-        <div class="title__upper__title">
-        ${gaepo[q].oneWord}
-        </div>
-        <div class="title__upper__mentoring">
-          <div class="mentoring__style"># ${gaepo[q].mentoring[0]}</div>
-          <div class="mentoring__style"># ${gaepo[q].mentoring[1]}</div>
-          <div class="mentoring__style"># ${gaepo[q].mentoring[2]}</div>
-        </div>
-      </div>
-      <div class="content__column__detail">
-        멘토님 이력 자세히 보기 <i class="fas fa-chevron-right"></i>
-      </div>
-    </div>
-  </div>
-</div>`;
-}
-for (let q = 0; q < jinsunW.length; q++) {
-  jinsunWResult =
-    jinsunWResult +
-    `
-<div class="mentor__simple ${jinsunW[q].eng}">
-${
-  jinsunW[q].label === 0
-    ? `<div class="label__style1">
-    모집중
-  </div>`
-    : `<div class="label__style2">
-    마감임박! <span class="label__extra">${jinsunW[q].labelNum}자리 남았어요!</span>
-  </div>`
-}
-  <div class="nr__upper ">
-    <div class="nr__column">
-      <img src="./img/${jinsunW[q].eng}.jpeg" class="nr__img" />
-    </div>
-    <div class="nr__column">
-      <div class="nr__info__name">${jinsunW[q].name} 멘토님 (${
-      jinsunW[q].gender
-    })</div>
-      <div class="nr__info__uni">
-        <i class="fas fa-graduation-cap"></i> ${jinsunW[q].univ}
-      </div>
-      <div class="nr__info__sch">
-        <i class="fas fa-school"></i> ${jinsunW[q].high}
-      </div>
-      <div class="nr__info__sch">
-        <i class="fas fa-book-open"></i> ${jinsunW[q].method}
-      </div>
-    </div>
-  </div>
-  <div class="nr__lower">
-    <div class="mentor__class__title">
-      <div class="mentor__class__title__upper">
-        <div class="title__upper__title">
-        ${jinsunW[q].oneWord}
-        </div>
-        <div class="title__upper__mentoring">
-          <div class="mentoring__style"># ${jinsunW[q].mentoring[0]}</div>
-          <div class="mentoring__style"># ${jinsunW[q].mentoring[1]}</div>
-          <div class="mentoring__style"># ${jinsunW[q].mentoring[2]}</div>
-        </div>
-      </div>
-      <div class="content__column__detail">
-        멘토님 이력 자세히 보기 <i class="fas fa-chevron-right"></i>
-      </div>
-    </div>
-  </div>
-</div>`;
-}
-for (let q = 0; q < otherH.length; q++) {
-  otherHResult =
-    otherHResult +
-    `
-<div class="mentor__simple ${otherH[q].eng}">
-${
-  otherH[q].label === 0
-    ? `<div class="label__style1">
-    모집중
-  </div>`
-    : `<div class="label__style2">
-    마감임박! <span class="label__extra">${otherH[q].labelNum}자리 남았어요!</span>
-  </div>`
-}
-  <div class="nr__upper ">
-    <div class="nr__column">
-      <img src="./img/${otherH[q].eng}.jpeg" class="nr__img" />
-    </div>
-    <div class="nr__column">
-      <div class="nr__info__name">${otherH[q].name} 멘토님 (${
-      otherH[q].gender
-    })</div>
-      <div class="nr__info__uni">
-        <i class="fas fa-graduation-cap"></i> ${otherH[q].univ}
-      </div>
-      <div class="nr__info__sch">
-        <i class="fas fa-school"></i> ${otherH[q].high}
-      </div>
-      <div class="nr__info__sch">
-        <i class="fas fa-book-open"></i> ${otherH[q].method}
-      </div>
-    </div>
-  </div>
-  <div class="nr__lower">
-    <div class="mentor__class__title">
-      <div class="mentor__class__title__upper">
-        <div class="title__upper__title">
-        ${otherH[q].oneWord}
-        </div>
-        <div class="title__upper__mentoring">
-          <div class="mentoring__style"># ${otherH[q].mentoring[0]}</div>
-          <div class="mentoring__style"># ${otherH[q].mentoring[1]}</div>
-          <div class="mentoring__style"># ${otherH[q].mentoring[2]}</div>
-        </div>
-      </div>
-      <div class="content__column__detail">
-        멘토님 이력 자세히 보기 <i class="fas fa-chevron-right"></i>
-      </div>
-    </div>
-  </div>
-</div>`;
-}
-
-const resultList = [
-  whimoonResult,
-  sookmyungWResult,
-  dandaeResult,
-  gaepoResult,
-  jinsunWResult,
-  otherHResult,
-];
-
-const koreanResult = [
-  "휘문고",
-  "숙명여고",
-  "단대부고",
-  "개포고",
-  "진선여고",
-  "대치동",
-];
-
-let resultListLength = resultList.length;
-
 const mentorWrite = document.querySelector(".mentor");
 const priceButton = document.querySelector(".buy__content");
 const toringButton = document.querySelector(".buy__toring");
@@ -1767,693 +1057,304 @@ let resultNum = 0;
 let i = 0;
 
 for (;;) {
-  if (mentorsDetail[i].nameEng === forResult) {
+  if (mentors[i].nameEng === forResult) {
     resultNum = i;
     break;
   }
   i++;
 }
 
-for (let j = 0; j < 6; j++) {
-  if (koreanResult[j] === mentorsDetail[i].school) {
-    resultSchoolNum = j;
-    break;
-  } else {
-    resultSchoolNum = 5;
-  }
-}
-
-let randomNum = Math.floor(Math.random() * resultListLength);
-
-for (let k = 0; k < 20; k++) {
-  if (koreanResult[randomNum] !== koreanResult[resultSchoolNum]) {
-    randomResultNum = randomNum;
-    break;
-  }
-
-  k++;
-  randomNum = Math.floor(Math.random() * resultListLength);
-}
-
-console.log(
-  koreanResult[resultSchoolNum],
-  mentorsDetail[randomNum].school,
-  resultNum,
-  resultSchoolNum,
-  randomNum,
-  randomResultNum
-);
-
 let mentorExp = "";
 
-for (let u = 0; u < mentorsDetail[resultNum].experience.length; u++) {
+for (let u = 0; u < mentors[resultNum].experience.length; u++) {
   mentorExp =
     mentorExp +
     `<div class="detail__content">
   <div class="num">-</div>
-  ${mentorsDetail[resultNum].experience[u]}
+  ${mentors[resultNum].experience[u]}
 </div>`;
 }
 
 mentorWrite.innerHTML = `
-
 <div class="logo">
-          <img src="img/${
-            mentorsDetail[resultNum].univEng
-          }campus.png" class="mentor__background" />
-        </div>
-        <div class="simple__info">
-          <div class="mentor__simple__info">
-            <img src="img/${
-              mentorsDetail[resultNum].nameEng
-            }.jpeg" class="mentor__face" />
-            <div class="logo__right">
-              <div class="logo__school">${mentorsDetail[resultNum].school}</div>
-              <div class="logo__line"></div>
-              <div class="logo__univ">${mentorsDetail[resultNum].univ}학교</div>
-            </div>
-          </div>
-          <div class="mentor__name">
-          <div class="mentor__name__name">
-          <span class="bold">${mentorsDetail[resultNum].name}</span> 멘토님 (${
-  mentorsDetail[resultNum].gender
-})
-            </div>
-            ${
-              mentors[resultNum].label === 0
-                ? `<div class="mentor__label1">
-                모집중
-              </div>`
-                : `<div class="mentor__label2">
-                마감임박!
-              </div>`
-            }
+<img src="img/${mentors[resultNum].univEng}campus.png" class="mentor__background" />
+</div>
+<div class="simple__info">
+<div class="mentor__simple__info">
+  <img src="img/${mentors[resultNum].nameEng}.jpeg" class="mentor__face" />
+  <div class="logo__right">
+    <div class="logo__school">${mentors[resultNum].school}</div>
+    <div class="logo__line"></div>
+    <div class="logo__univ">${mentors[resultNum].univ}학교</div>
+  </div>
+</div>
+<div class="mentor__name">
+  <div class="mentor__name__name">
+    <span class="bold">${mentors[resultNum].name}</span> 멘토님 (${mentors[resultNum].gender})
+  </div>
+  <div class="mentor__label1">모집중</div>
+</div>
+<div class="mentor__uni__wrap">
+  <div class="mentor__uni">
+    <img src="img/${mentors[resultNum].univEng}.png" class="mentor__uni__mark" />
+    ${mentors[resultNum].univ}학교 ${mentors[resultNum].major} ${mentors[resultNum].year} • ${mentors[resultNum].method}
+  </div>
+</div>
+<div class="mentor__title">
+${mentors[resultNum].title}
+</div>
+<div class="mentoring__badge">
+  <div class="mentoring__badge__style"># ${mentors[resultNum].mentoring[0]}</div>
+  <div class="mentoring__badge__style"># ${mentors[resultNum].mentoring[1]}</div>
+  <div class="mentoring__badge__style"># ${mentors[resultNum].mentoring[2]}</div>
+</div>
+</div>
+<div class="mentor__detail">
+<div class="detail__title">멘토 이력</div>
+<div class="detail__certify">
+  <div class="certify__content">
+    <i class="fas fa-certificate"></i>본인 인증 완료
+  </div>
+  <div class="certify__content">
+    <i class="fas fa-graduation-cap"></i>학교 인증 완료
+  </div>
+  <div class="certify__content">
+    <i class="fas fa-user-shield"></i>코로나 안전 완료
+  </div>
+</div>
+<div class="detail__content__column">
+  ${mentorExp}
+</div>
+</div>
+<div class="price">
+<div class="price__title">멘토링 이용 안내</div>
 
+<div class="price__column__wrap">
+  <div class="price__column">
+    <div class="price__content__upper">
+      100분동안 학생부, 내신, 정시, 동기부여 등 내가 원하는 내용의
+      멘토링을 받을 수 있습니다. 신청 후 원하는 멘토링 방향을 말씀해
+      주시면, 그 내용을 바탕으로 멘토가 멘토링을 준비합니다.
+    </div>
+    <div class="price__content__lower">
+      <div class="price__content__benefit">
+        <i class="fas fa-check-circle"></i> 1:1 멘토링 (100분)
+      </div>
+      <div class="price__content__benefit">
+        <i class="fas fa-check-circle"></i> 개인 맞춤 멘토링 일지 발급
+      </div>
+      <div class="price__content__benefit">
+        <i class="fas fa-check-circle"></i> 멘토링 이후의 학습 방향
+        제시
+      </div>
+    </div>
+  </div>
+  <div class="price__column">
+    <div class="price__price">
+      <div class="price__price__left">1회 (100분)</div>
+      <div class="price__price__right">
+        <span class="price__original">149,000원</span>
+        <span class="price__black">99,000원</span>
+      </div>
+    </div>
+  </div>
+</div>
 
-            
-          </div>
-          <div class="mentor__uni__wrap">
-            <div class="mentor__uni">
-              <img src="img/${
-                mentorsDetail[resultNum].univEng
-              }.png" class="mentor__uni__mark" />
-              ${mentorsDetail[resultNum].univ}학교 ${
-  mentorsDetail[resultNum].major
-} ${mentorsDetail[resultNum].year} • ${mentorsDetail[resultNum].method}
-            </div>
-          </div>
-          <div class="mentor__title">
-            ${mentorsDetail[resultNum].title}
-          </div>
-          <div class="mentoring__badge">
-            <div class="mentoring__badge__style"># ${
-              mentorsDetail[resultNum].mentoring[0]
-            }</div>
-            <div class="mentoring__badge__style"># ${
-              mentorsDetail[resultNum].mentoring[1]
-            }</div>
-            <div class="mentoring__badge__style"># ${
-              mentorsDetail[resultNum].mentoring[2]
-            }</div>
-          </div>
-        </div>
-        <div class="price">
-          <div class="price__column__wrap">
-            <div class="price__column">
-              <div class="price__month">
-                <div class="price__month__left price__big">한 달 4회 PLAN (400분)</div>
-              </div>
-              <div class="price__month">
-                <div class="price__month__left price__gray">정가</div>
-                <div class="price__month__right">
-                  <span class="price__gray">399,000원</span>
-                </div>
-              </div>
-              <div class="price__month">
-                <div class="price__month__left price__gray">
-                  총 할인액 <span class="extra__time">평생</span>
-                </div>
-                <div class="price__month__right">
-                  <span class="price__red">-50,000원</span>
-                </div>
-              </div>
-              <div class="price__month">
-                <div class="price__month__left price__gray">최종 금액</div>
-                <div class="price__month__right">
-                  <span class="price__black">349,000원</span>
-                </div>
-              </div>
-            </div>
-            <div class="price__column">
-              <div class="price__semester">
-                <div class="price__semester__left price__big">
-                  한 학기 12회 PLAN (1200분) <span class="extra__time"
-                  >event</span
-                >
-                </div>
-              </div>
-              <div class="price__semester">
-                <div class="price__semester__left price__gray">정가</div>
-                <div class="price__semester__right">
-                  <span class="price__gray">1,199,000원</span>
-                </div>
-              </div>
-              <div class="price__semester">
-                <div class="price__semester__left price__gray">
-                  총 할인액
-                  <span class="extra__time" id="extra__time"
-                    >6일 17:13:38 남음</span
-                  >
-                </div>
-                <div class="price__semester__right">
-                  <span class="price__red">-300,000원</span>
-                </div>
-              </div>
-              <div class="price__semester">
-                <div class="price__semester__left price__gray">최종 금액</div>
-                <div class="price__semester__right">
-                  <span class="price__black">899,000원</span>
-                </div>
-              </div>
-            </div>
+<div class="price__button">멘토링 신청하기</div>
+</div>
+<div class="change__wrap">
+<div class="change__title">
+  멘토링 이후, 당신은 ⎽⎽⎽⎽ 한 사람이 됩니다!
+</div>
+<div class="change__content">
+  <div class="change__content__column">
+    <span class="change__num">1.</span>
+    <span class="change__write"
+      >하루를 남들보다 효율적으로 사용할 수 있는</span
+    >
+  </div>
+  <div class="change__content__column">
+    <span class="change__num">2.</span>
+    <span class="change__write">
+      내신과 정시를 동시에 챙길 수 있는
+    </span>
+  </div>
+  <div class="change__content__column">
+    <span class="change__num">3.</span>
+    <span class="change__write">
+      학교 행사, 대회 등을 나에게 맞게 활용할 수 있는
+    </span>
+  </div>
+</div>
+</div>
+<div class="mentor__individual__wrap">
+<div class="mentor__individual__title">
+  <span class="orange__underline">${mentors[resultNum].name} 멘토님</span>의 이야기를
+  들어보세요!
+</div>
+<div class="mentor__individual__content">
+${mentors[resultNum].special[2].detail}
+  <br /><br />
+  감사합니다.
+</div>
+</div>
+<div class="mentor__story__wrap">
+<div class="mentor__story">
+  <div class="story__title">
+    <span class="bold">
+      <span class="orange__underline">${mentors[resultNum].name} 멘토님</span>께
+      물어봤어요</span
+    >
+  </div>
+  <div class="story__column">
+    <div class="story__content">
+      <div class="story__content__title">
+        <div class="num">1.</div>
+        <div class="story__content__wrap">
+        ${mentors[resultNum].special[0].title}
+          <div class="story__content__description">
+          ${mentors[resultNum].special[0].detail}
           </div>
         </div>
-        <div class="free__price">
-          <div class="free__title">
-            <span class="bold">잠시만요!</span> <br />
-            멘토님과 잘 맞을지 모르겠다면
-          </div>
-          <div class="free__ment">
-            <span class="bold">${
-              mentorsDetail[resultNum].name
-            } 멘토님</span>에게 직접 받는<br /><span
-              class="blue__bold"
-              >30분 무료 온라인 멘토링</span
-            >
-            이후 <br />
-            결정하세요
-          </div>
-          <button class="free__button">30분 무료 멘토링 신청하기</button>
-        </div>
-        <div class="price__benefit__wrap">
-          <div class="price__benefit">
-            <div class="benefit__column">
-              <i class="fas fa-clock"></i> 30분 무료 멘토링
-            </div>
-            <div class="benefit__column">
-              <i class="fas fa-gift"></i> 플래너 세트
-            </div>
-            <div class="benefit__column">
-              <i class="fas fa-plus-circle"></i> ${
-                mentorsDetail[resultNum].school
-              } 추가 할인
-            </div>
-            <div class="benefit__column">
-              <i class="fas fa-thumbs-up"></i> 학습 상승 100%
-            </div>
+      </div>
+    </div>
+    <div class="story__content">
+      <div class="story__content__title">
+        <div class="num">2.</div>
+        <div class="story__content__wrap">
+        ${mentors[resultNum].special[1].title}
+          <div class="story__content__description">
+          ${mentors[resultNum].special[1].detail}
           </div>
         </div>
-        <div class="mentor__detail">
-          <div class="detail__title">멘토 이력</div>
-          <div class="detail__certify">
-            <div class="certify__content">
-              <i class="fas fa-certificate"></i>본인 인증 완료
-            </div>
-            <div class="certify__content">
-              <i class="fas fa-graduation-cap"></i>학교 인증 완료
-            </div>
-            <div class="certify__content">
-              <i class="fas fa-user-shield"></i>코로나 안전 완료
-            </div>
-          </div>
-          <div class="detail__content__column">
-            ${mentorExp}
-          </div>
-        </div>
-        <div class="service__info">
-          <div class="service__column">
-            <div class="service__title">
-            ${
-              mentorsDetail[resultNum].school
-            } 선배가 직접 해주는 <br /><span class="bold"
-                >토링 <span class="under">멘토링</span> 프로그램</span
-              >
-            </div>
-            <div class="service__red__line"></div>
-            <div class="service__q">토링 멘토링 프로그램이란?</div>
-            <div class="service__sub">
-              SKY 대학에 진학한 같은 고등학교 출신 선배가<br />
-              학습방법 / 내신 / 학교 생활을 도와주는 클래스로,<br />
-              '1:1 멘토링'과 '멘토링 일지' 2단계로 구성되어 있습니다.<br />
-              <span class="bold">30분 무료 온라인 멘토링</span>을 통해 같은 학교
-              출신이 해주는 멘토링을 직접 경험해보세요!
-            </div>
-            <div class="service__content">
-              <div class="service__content__column">
-                <span class="service__content__title"
-                  >온라인 30분 무료 멘토링</span
-                >
-              </div>
-              <div class="service__content__column">
-                <div class="service__content__detail__upper">
-                  멘토님이 직접 멘티님을 상담! (30분)
-                </div>
-                <div class="service__content__detail__lower">
-                  멘토링 시작 전, 학생이 멘토님과 직접 얘기해보고 결정할 수
-                  있습니다.<br />
-                  학생과 같은 고등학교에서 어떻게 성공적으로 SKY 대학교에
-                  진학했는지 들어보고 결정하세요!
-                </div>
-              </div>
-            </div>
-            <div class="service__plus">+</div>
-            <div class="service__content">
-              <div class="service__content__column">
-                <span class="service__content__title">오프라인 1:1 멘토링</span>
-              </div>
-              <div class="service__content__column">
-                <div class="service__content__detail__upper">
-                  1:1 코칭은 기본! (회당 100분)
-                </div>
-                <div class="service__content__detail__lower">
-                  매주 같은 학교 선배에게 듣는 생생한 멘토링을 통해<br />
-                  동기부여는 물론 학습습관부터 고등학교별 내신/생기부까지!
-                </div>
-              </div>
-            </div>
-            <div class="service__plus">+</div>
-            <div class="service__content">
-              <div class="service__content2__column">
-                <span class="service__content__title">멘토링 일지</span>
-              </div>
-              <div class="service__content2__column">
-                <div class="service__content__detail__upper">
-                  스스로 확인하고 돌아볼 수 있도록!
-                </div>
-                <div class="service__content__detail__lower">
-                  멘토링 했던 내용을 멘토가 매번 멘토링 일지로 작성해<br />
-                  학생 스스로 내가 했던 실수들, 그에 맞는 해답을<br />
-                  반복해서 확인해 스스로의 상태를 인지하고 개선할 수 있습니다.
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="special__wrap">
-          <div class="special">
-            <div class="special__title">
-              토링에서만 제공하는 <br />
-              <span class="bold">특별한 혜택!</span>
-            </div>
-            <div class="special__column">
-              <div class="special__content">
-                <div class="num">1.</div>
-                SKY에 입학한 멘토의 방학 공부법, 학생부 준비법, 동기부여에 관한
-                1:1 개인 맞춤 멘토링
-              </div>
-              <div class="special__content">
-                <div class="num">2.</div>
-                휘문고, 숙명여고 등 강남 8학군 출신 멘토의 고등학교 꿀 TIP
-              </div>
-              <div class="special__content">
-                <div class="num">3.</div>
-                이제 막 입시를 마쳐 최근 입시 경향에 가장 전문적인 지식을 갖고
-                있는 20학번, 19학번 SKY 선배들만을 엄섬한 멘토링
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="worry">
-          <div class="worry__title">
-            <span class="bold">${mentorsDetail[resultNum].school}</span>에서
-            <span class="bold">${
-              mentorsDetail[resultNum].univ
-            }</span>에 간다고 <br />마음은 단단히
-            먹었는데...
-          </div>
-          <div class="special__content">
-            <img src="./img/${
-              mentorsDetail[resultNum].univEng
-            }campus.png" alt="" class="campus" />
-          </div>
-          <div class="worry__column">
-            <div class="worry__content">
-              고등학교 1학년을 대비하는 <br /><span class="bold"
-                >방학은 어떻게 보내야할까 </span
-              >고민이라면
-            </div>
-            <div class="worry__content">•</div>
-
-            <div class="worry__content">
-              중학교 내신이 좋지 않아 <br /><span class="bold"
-                >고등학교 생활이 걱정</span
-              >이라면
-            </div>
-            <div class="worry__content">•</div>
-
-            <div class="worry__content">
-              공부해야할 <span class="bold">동기부여</span>를 <br />듬뿍
-              받아가고 싶다면
-            </div>
-            <div class="worry__content">•</div>
-
-            <div class="worry__content">
-              막상 <span class="bold">어떤 진로를 선택해서</span> <br /><span
-                class="bold"
-                >공부해야할지</span
-              >
-              모르겠다면
-            </div>
-          </div>
-        </div>
-        <div class="mentor__suggest__wrap">
-          <div class="mentor__suggest">
-            <div class="mentor__suggest__ment">
-              이제 걱정하지 말고 <br />
-              <span class="bold">${
-                mentorsDetail[resultNum].name
-              } 멘토님</span>에게 관리받아 보세요.<br />
-              <span class="bold"
-                >${mentorsDetail[resultNum].school} 학생은<br />
-                <span class="orange__underline">${
-                  mentorsDetail[resultNum].school
-                } 선배</span>가 가장 잘
-                아니까요.</span
-              >
-            </div>
-            <img src="./img/worryimg.png" class="mentor__suggest__img" />
-          </div>
-        </div>
-        <div class="mentor__story__wrap">
-          <div class="mentor__story">
-            <div class="story__title">
-              <span class="bold">
-                <span class="orange__underline">${
-                  mentorsDetail[resultNum].name
-                } 멘토님</span>께
-                물어봤어요</span
-              >
-            </div>
-            <div class="story__column">
-              <div class="story__content">
-                <div class="story__content__title">
-                  <div class="num">1.</div>
-                  <div class="story__content__wrap">
-                    코로나 때문에 학습습관이 무너졌어요. 어떻게 하면 좋을까요?
-                    <div class="story__content__description">
-                    ${mentorsDetail[resultNum].special[0].detail}
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="story__content">
-                <div class="story__content__title">
-                  <div class="num">2.</div>
-                  <div class="story__content__wrap">
-                    멘토님과 같은 고등학교(${
-                      mentorsDetail[resultNum].school
-                    })를 다니고 있습니다. 혹시
-                    우리 학교 내신이나 학생부는 어떤 식으로 준비해야 하나요?
-                    <div class="story__content__description">
-                    ${mentorsDetail[resultNum].special[1].detail}
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="story__content">
-                <div class="story__content__title">
-                  <div class="num">3.</div>
-                  <div class="story__content__wrap">
-                  ${mentorsDetail[resultNum].name} 멘토님은 이런 사람이에요!
-                    <div class="story__content__description">
-                    ${mentorsDetail[resultNum].special[2].detail}
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="menti__wrap">
-          <div class="menti">
-            <div class="menti__title">
-              이런 학생들을 위한 <br />
-              멘토링 입니다.
-            </div>
-            <div class="menti__column">
-              <div class="menti__content">
-                <i class="fas fa-check"></i>
-                ${mentorsDetail[resultNum].school}
-                <span class="bold orange__underline">최상위 선배에게</span> 관리
-                받고 싶은 학생들
-              </div>
-              <div class="menti__content">
-                <i class="fas fa-check"></i>
-                ${mentorsDetail[resultNum].school}
-                <span class="bold orange__underline">내신 및 학생부 관리</span
-                >가 궁금한 학생들
-              </div>
-              <div class="menti__content">
-                <i class="fas fa-check"></i>
-                <span class="bold orange__underline"
-                  >왜 공부를 해야 하는지</span
-                >
-                모르고 그냥 하는 학생들
-              </div>
-              <div class="menti__content">
-                <i class="fas fa-check"></i>
-                <span class="bold orange__underline">최상위권</span>으로
-                도약하고 싶은 학생들
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="curri__wrap">
-          <div class="curri">
-            <div class="curri__title">멘토링 커리큘럼</div>
-            <div class="curri__column__title">
-              <i class="fas fa-circle"></i>
-              <div class="curri__content__title">사전 무료 30분 멘토링</div>
-            </div>
-            <div class="curri__column">
-              <div class="curri__line"></div>
-              <div class="curri__content__des">
-                <div class="curri__content__column">
-                  <i class="fas fa-check"></i>
-                  멘티 성격 파악 및 멘토링 스타일 결정
-                </div>
-                <div class="curri__content__column">
-                  <i class="fas fa-check"></i>
-                  30분 무료 멘토링 이 후, 멘토링 계획서 및 제안서 전달
-                </div>
-              </div>
-            </div>
-            <div class="curri__column__title">
-              <i class="fas fa-circle"></i>
-              <div class="curri__content__title">1:1 멘토링</div>
-            </div>
-            <div class="curri__column">
-              <div class="curri__line"></div>
-              <div class="curri__content__des">
-                <div class="curri__content__des__semi">
-                  <span class="bold"
-                    >1:1 멘토링은 매주 100분씩 진행됩니다.</span
-                  >
-                  <br />정기적인 멘토링으로 학습 관리와 동기부여를 지속적으로
-                  제공합니다. 또한, 아래의 주제들 중 학생이 필요한 부분이 있다면
-                  해당 주제에 관한 맞춤 멘토링을 제공합니다.
-                </div>
-                <div class="curri__content__des__column">
-                  <i class="fas fa-check"></i>
-                  <div class="des__column">
-                    <div class="des__column__title">동기 부여 멘토링</div>
-                    <div class="des__column__content">
-                      학생의 현재 상황과 성격을 파악해 가장 잘 맞는 진로를 함께
-                      고민해주고 결과적으로 동기부여되어 공부할 수 있도록
-                      합니다.
-                    </div>
-                  </div>
-                </div>
-                <div class="curri__content__des__column">
-                  <i class="fas fa-check"></i>
-                  <div class="des__column">
-                    <div class="des__column__title">학교별 맞춤 멘토링</div>
-                    <div class="des__column__content">
-                      학생이 다니는 학교에 맞는 내신 준비 / 학생부 준비
-                      방법(교내 경시, 대회 , 세특 등)을 알려드립니다.
-                    </div>
-                  </div>
-                </div>
-                <div class="curri__content__des__column">
-                  <i class="fas fa-check"></i>
-                  <div class="des__column">
-                    <div class="des__column__title">학습 방법 멘토링</div>
-                    <div class="des__column__content">
-                      학생과 같은 환경에서 공부한 멘토들이 터득한 각 과목(국어 /
-                      수학 / 영어 / 탐구)는 어떻게 해야하는지, 코로나로 인해
-                      학습습관이 무너졌을 때는 어떻게 하는지, 공부시간을
-                      조절하고 멘탈을 관리하는 방법까지 정말 100% 활용해서 쓸 수
-                      있는 방법만 알려드리겠습니다.
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="curri__column__title">
-              <i class="fas fa-circle"></i>
-              <div class="curri__content__title">멘토링 일지 제공</div>
-            </div>
-            <div class="curri__column">
-              <div class="curri__line"></div>
-              <div class="curri__content__des">
-                <div class="curri__content__column">
-                  <i class="fas fa-check"></i>
-                  매번 멘토링이 끝난 후, 멘토링 내용을 기반으로 멘토링 일지를
-                  작성합니다.
-                </div>
-                <div class="curri__content__column">
-                  <i class="fas fa-check"></i>
-                  멘토링 일지에는 학생의 고민, 멘토의 답변, 이 후의 목표 등이
-                  담겨 있습니다.
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="method__wrap">
-          <div class="method">
-            <div class="method__title">멘토링 이용 방법 안내</div>
-            <div class="method__column">
-              <div class="method__content">
-                <div class="num">1.</div>
-                멘토님이 학생이 필요한 부분에 도움을 줄 수 있는지 멘토님 이야기를 읽어보세요.
-              </div>
-              <div class="method__content">
-                <div class="num">2.</div>
-                <div class="method__cancel">
-                30분 무료 멘토링 신청하기 버튼을 눌러서 기본적인 신청 사항 및 멘토링 희망 시간을 적어주세요.
-                  <div class="cancel">
-                  인기 많으신 멘토님의 경우 무료 멘토링 신청 후 결제까지 하셔야 대기 없이 바로 멘토링 받으실 수 있습니다!
-                  </div>
-                </div>
-              </div>
-              <div class="method__content">
-                <div class="num">3.</div>
-                30분 무료 멘토링을 신청하신 시간에 온라인 무료 멘토링을 할 수 있는 줌(ZOOM) 링크를 발송합니다.
-              </div>
-              <div class="method__content">
-                <div class="num">4.</div>
-                30분 무료 멘토링 이 후, 멘토님이 작성한 멘토링 계획과 멘토링 플랜을 선택할 수 있는 링크를 통해 멘토링 기간을 선택합니다.
-              </div>
-              <div class="method__content">
-                <div class="num">5.</div>
-                학생에게 개인화된 정기적인 멘토링을 받습니다. 멘토의 멘토링이 마음에 들지 않을 시, 동일 학교 출신의 다른 멘토로 언제든지 변경 가능합니다.
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="review__wrap">
-          <div class="review">
-            <div class="review__title">
-              <span class="bold">생생한 <br />멘토링 후기</span>
-            </div>
-            <div class="review__column">
-              <div class="review__user">
-                ${mentorsDetail[resultNum].review[0].user}
-                <span class="review__date"
-                  >${mentorsDetail[resultNum].review[0].date}</span
-                >
-              </div>
-              <div class="review__content">
-                ${mentorsDetail[resultNum].review[0].content}
-              </div>
-            </div>
-            <div class="review__column">
-              <div class="review__user">
-                ${mentorsDetail[resultNum].review[1].user}
-                <span class="review__date"
-                  >${mentorsDetail[resultNum].review[1].date}</span
-                >
-              </div>
-              <div class="review__content">
-                ${mentorsDetail[resultNum].review[1].content}
-              </div>
-            </div>
-            <div class="review__column">
-              <div class="review__user">
-                ${mentorsDetail[resultNum].review[2].user}
-                <span class="review__date"
-                  >${mentorsDetail[resultNum].review[2].date}</span
-                >
-              </div>
-              <div class="review__content">
-                ${mentorsDetail[resultNum].review[2].content}
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="final__price">
-          <div class="final__column">
-            <div class="final__title">
-              계속 할인 받을 수 있는 <br />한달 PLAN이에요!
-              <div class="extra__time__final">평생 할인</div>
-            </div>
-            <div class="final__sub">
-              한달 기준 <span class="bold">4회</span> (회당 100분)
-            </div>
-            <div class="final__price__column">
-              <div class="final__left">정가</div>
-              <div class="final__right">399,000원</div>
-            </div>
-            <div class="final__price__column">
-              <div class="final__left">총 할인 금액</div>
-              <div class="final__right">-50,000원</div>
-            </div>
-            <div class="final__price__column">
-              <div class="final__left">최종 금액</div>
-              <div class="final__right">349,000원</div>
-            </div>
-            <div class="final__price__column">
-              <div class="final__left2">1회당 가격</div>
-              <div class="final__right2">87,250원</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="final__price2">
-          <div class="final__column">
-            <div class="final__title">
-              지금 할인 받을 수 있는<br />한학기 PLAN이에요!
-              <div class="extra__time__final" id="extra__time2">
-                6일 17:13:38 남음
-              </div>
-            </div>
-            <div class="final__sub">
-              한학기 기준 <span class="bold">12회</span> (회당 100분)
-            </div>
-            <div class="final__price__column">
-              <div class="final__left">정가</div>
-              <div class="final__right">1,199,000원</div>
-            </div>
-            <div class="final__price__column">
-              <div class="final__left">총 할인 금액</div>
-              <div class="final__right">-300,000원</div>
-            </div>
-            <div class="final__price__column">
-              <div class="final__left">최종 금액</div>
-              <div class="final__right">899,000원</div>
-            </div>
-            <div class="final__price__column">
-              <div class="final__left2">1회당 가격</div>
-              <div class="final__right2">74,917원</div>
-            </div>
-          </div>
-        </div>
-        <div class="other__wrap">
-
-          <div class="other"></div>
-          <div class="other2"></div>
-        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<div class="menti__wrap">
+<div class="menti">
+  <div class="menti__title">이런 학생분께 도움을 드릴 수 있어요.</div>
+  <div class="menti__column">
+    <div class="menti__content">
+      <i class="fas fa-check"></i>
+      ${mentors[resultNum].school}
+      <span class="bold orange__underline">최상위 선배에게</span> 관리
+      받고 싶은 학생들
+    </div>
+    <div class="menti__content">
+      <i class="fas fa-check"></i>
+      ${mentors[resultNum].school}
+      <span class="bold orange__underline">내신 및 학생부 관리</span
+      >가 궁금한 학생들
+    </div>
+    <div class="menti__content">
+      <i class="fas fa-check"></i>
+      <span class="bold orange__underline"
+        >왜 공부를 해야 하는지</span
+      >
+      모르고 그냥 하는 학생들
+    </div>
+    <div class="menti__content">
+      <i class="fas fa-check"></i>
+      <span class="bold orange__underline">최상위권</span>으로
+      도약하고 싶은 학생들
+    </div>
+  </div>
+</div>
+</div>
+<div class="fifth__display2">
+<div class="main__fifth__title2">어떻게 진행되나요?</div>
+<div class="main__fifth__content__column">
+  <div class="fifth__content__upper">
+    <div class="fifth__upper__left">01</div>
+    <div class="fifth__upper__right">
+      1회 멘토링을 우선 수강합니다.
+    </div>
+  </div>
+  <div class="fifth__content__lower">
+    <div class="fifth__lower__left"></div>
+    <div class="fifth__lower__right">
+      선택한 멘토님과 1:1로 멘토링을 진행합니다. 멘토링은 100분동안
+      진행되며 오프라인 (짜택 혹은 토링이 준비한 장소) 혹은 온라인으로
+      진행하실 수 있습니다.
+    </div>
+  </div>
+</div>
+<div class="main__fifth__content__column">
+  <div class="fifth__content__upper">
+    <div class="fifth__upper__left">02</div>
+    <div class="fifth__upper__right">
+      멘토링에 대한 멘토링 일지를 제공합니다.
+    </div>
+  </div>
+  <div class="fifth__content__lower">
+    <div class="fifth__lower__left"></div>
+    <div class="fifth__lower__right">
+      1회 멘토링을 바탕으로 학생이 질문한 사항과 멘토가 답변한 사항을
+      정리한 멘토링 일지를 제공합니다.
+    </div>
+  </div>
+</div>
+<div class="main__fifth__content__column">
+  <div class="fifth__content__upper">
+    <div class="fifth__upper__left">03</div>
+    <div class="fifth__upper__right">
+      멘토링 내용을 바탕으로 학습 상담을 진행합니다.
+    </div>
+  </div>
+  <div class="fifth__content__lower">
+    <div class="fifth__lower__left"></div>
+    <div class="fifth__lower__right">
+      멘토링 때 멘토가 학생을 파악한 것을 기초하여 앞으로의 학습
+      방향에 대해서 학습 상담을 진행합니다. 학습 상담은 전화를 통해
+      진행하고 있습니다.
+    </div>
+  </div>
+</div>
+</div>
+<div class="review__wrap">
+<div class="review">
+  <div class="review__title">
+    <span class="bold">생생한 멘토링 후기</span>
+  </div>
+  <div class="review__column">
+    <div class="review__user">
+      ${mentors[resultNum].review[0].user}
+      <span class="review__date"
+        >${mentors[resultNum].review[0].date}</span
+      >
+    </div>
+    <div class="review__content">
+    ${mentors[resultNum].review[0].content}
+    </div>
+  </div>
+  <div class="review__column">
+    <div class="review__user">
+    ${mentors[resultNum].review[1].user}
+      <span class="review__date">
+      ${mentors[resultNum].review[1].date}</span
+      >
+    </div>
+    <div class="review__content">${mentors[resultNum].review[1].content}</div>
+  </div>
+  <div class="review__column">
+    <div class="review__user">
+    ${mentors[resultNum].review[2].user}
+      <span class="review__date"
+        >${mentors[resultNum].review[2].date}</span
+      >
+    </div>
+    <div class="review__content">
+    ${mentors[resultNum].review[2].content}
+    </div>
+  </div>
+</div>
+</div>
+<div class="other__wrap">
+<div class="other__title">대치동 주변 다른 학교 멘토들</div>
+<div class="other"></div>
+</div>
 
 `;
 
@@ -2473,48 +1374,6 @@ const mentorLen = mentors.length;
 const a = document.querySelector(".mentor__name");
 const mentorName = a.innerText.split(" ")[0];
 
-const time1 = document.querySelector(`#extra__time`);
-const time2 = document.querySelector(`#extra__time2`);
-const time3 = document.querySelector(`#extra__time3`);
-
-const freeButton = document.querySelector(`.free__button`);
-
-function getTime() {
-  const currentTime = new Date();
-  // Don't delete this.
-  const extraDay = new Date("2020-09-24");
-  const days = Math.floor((extraDay - currentTime) / 86400000);
-  const hours = Math.floor(((extraDay - currentTime) % 86400000) / 3600000);
-  const minutes = Math.floor(
-    (((extraDay - currentTime) % 86400000) % 3600000) / 60000
-  );
-  const seconds = Math.floor(
-    ((((extraDay - currentTime) % 86400000) % 3600000) % 60000) / 1000
-  );
-
-  time1.innerHTML = `${days}일 ${hours < 10 ? `0${hours}` : hours}:${
-    minutes < 10 ? `0${minutes}` : minutes
-  }:${seconds < 10 ? `0${seconds}` : seconds} 남음`;
-
-  time2.innerHTML = `${days}일 ${hours < 10 ? `0${hours}` : hours}:${
-    minutes < 10 ? `0${minutes}` : minutes
-  }:${seconds < 10 ? `0${seconds}` : seconds} 남음`;
-
-  time3.innerHTML = `${days}일 ${hours < 10 ? `0${hours}` : hours}:${
-    minutes < 10 ? `0${minutes}` : minutes
-  }:${seconds < 10 ? `0${seconds}` : seconds}후 종료`;
-}
-getTime();
-setInterval(getTime, 500);
-
-const other = document.querySelector(`.other`);
-const other2 = document.querySelector(`.other2`);
-other.innerHTML = resultList[resultSchoolNum];
-other2.innerHTML = resultList[randomResultNum];
-const resultTitle = document.querySelectorAll(`.result__title`);
-resultTitle[0].innerHTML = `<span class="blue__bold">다른 ${koreanResult[resultSchoolNum]} 출신</span> 멘토들 `;
-resultTitle[1].innerHTML = `<span class="blue__bold">다른 대치동 출신</span> 멘토들 `;
-
 const mentorSimple = document.querySelectorAll(`.mentor__simple`);
 
 mentorSimple.forEach((e) =>
@@ -2524,7 +1383,6 @@ mentorSimple.forEach((e) =>
 );
 function init() {
   priceButton.addEventListener("click", handlePriceButton);
-  freeButton.addEventListener("click", handlePriceButton);
   toringButton.addEventListener("click", handleToringButton);
 }
 
