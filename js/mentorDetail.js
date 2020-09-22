@@ -1209,28 +1209,33 @@ ${mentors[resultNum].special[2].detail}
     >
   </div>
   <div class="story__column">
-    <div class="story__content">
+    <div class="bubble__Q">
       <div class="story__content__title">
-        <div class="num">1.</div>
+        <div class="num">Q.</div>
         <div class="story__content__wrap">
         ${mentors[resultNum].special[0].title}
-          <div class="story__content__description">
-          ${mentors[resultNum].special[0].detail}
-          </div>
         </div>
       </div>
     </div>
-    <div class="story__content">
+    <div class="bubble__A">
+    <div class="story__content__description">
+    ${mentors[resultNum].special[0].detail}
+    </div>
+    </div>
+    <div class="bubble__Q">
       <div class="story__content__title">
-        <div class="num">2.</div>
+        <div class="num">Q.</div>
         <div class="story__content__wrap">
         ${mentors[resultNum].special[1].title}
-          <div class="story__content__description">
-          ${mentors[resultNum].special[1].detail}
-          </div>
         </div>
       </div>
     </div>
+    <div class="bubble__A">
+    <div class="story__content__description">
+    ${mentors[resultNum].special[1].detail}
+    </div>
+    </div>
+
   </div>
 </div>
 </div>
@@ -1375,7 +1380,7 @@ ${mentors[resultNum].special[2].detail}
 </div>
 </div>
 <div class="other__wrap">
-<div class="other__title">대치동 주변 다른 학교 멘토들</div>
+<div class="other__title"></div>
 <div class="other"></div>
 </div>
 
@@ -1396,8 +1401,9 @@ const mentorLen = mentors.length;
 
 const a = document.querySelector(".mentor__name");
 const mentorName = a.innerText.split(" ")[0];
-
 const mentorSimple = document.querySelectorAll(`.mentor__simple`);
+
+const mentoringApply = document.querySelector(`.price__button`);
 
 mentorSimple.forEach((e) =>
   e.addEventListener("click", function handleResultClick() {
@@ -1406,6 +1412,7 @@ mentorSimple.forEach((e) =>
 );
 function init() {
   priceButton.addEventListener("click", handlePriceButton);
+  mentoringApply.addEventListener("click", handlePriceButton);
   toringButton.addEventListener("click", handleToringButton);
 }
 
