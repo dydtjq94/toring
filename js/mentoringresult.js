@@ -1106,7 +1106,7 @@ const mentorsSubmit = [
 const menties = [
   {
     mentorName: "김예나",
-    mentiName: "김은진",
+    mentiName: "정은진",
     mentoringStu:
       "마이크가 안 켜져서 대화를 제대로는 못했지만 학생의 질문을 바탕으로 생각해보면, 고등학교 생활과 좋은 내신 성적을 얻을 수 있는 팁에 관심이 많았다고 생각합니다. 아직 중학생이라 고등학교 생활에 대한 약간의 두려움과 고민도 조금 있다는 느낌이 들었는데 그런 부분에 대한 질문들이 대부분이었습니다.  ",
     mentoringQnA: [
