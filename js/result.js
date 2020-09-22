@@ -1080,6 +1080,7 @@ function handleLoadMentor() {
 
   mentorTagList.shuffle();
   handleMentorPaint(mentorTagList);
+  goMentorDetail();
 }
 
 function handleMentorPaint(e) {
@@ -1182,6 +1183,7 @@ function handleSelectTag(e) {
   }, 800);
 
   handleLoadMentor();
+  goMentorDetail();
 }
 
 function saveTag() {

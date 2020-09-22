@@ -1127,7 +1127,7 @@ ${mentors[resultNum].title}
 </div>
 </div>
 <div class="price">
-<div class="price__title">멘토링 이용 안내</div>
+<div class="price__title">멘토링 비용 안내</div>
 
 <div class="price__column__wrap">
   <div class="price__column">
@@ -1189,6 +1189,8 @@ ${mentors[resultNum].title}
 </div>
 <div class="mentor__individual__wrap">
 <div class="mentor__individual__title">
+<img src="./img/${mentors[resultNum].nameEng}.jpeg" alt="" class="mentor__individual__img" />
+
   <span class="orange__underline">${mentors[resultNum].name} 멘토님</span>의 이야기를
   들어보세요!
 </div>
@@ -1319,36 +1321,57 @@ ${mentors[resultNum].special[2].detail}
     <span class="bold">생생한 멘토링 후기</span>
   </div>
   <div class="review__column">
-    <div class="review__user">
+  <div class="review__column__column">
+  <img src="./img/reviewimg1.png" alt="" class="review__img" />
+  <div class="review__user">
       ${mentors[resultNum].review[0].user}
       <span class="review__date"
         >${mentors[resultNum].review[0].date}</span
       >
     </div>
+  </div>
+  <div class="review__column__column">
+  <div class="review__content__extra"></div>
     <div class="review__content">
     ${mentors[resultNum].review[0].content}
     </div>
   </div>
-  <div class="review__column">
-    <div class="review__user">
-    ${mentors[resultNum].review[1].user}
-      <span class="review__date">
-      ${mentors[resultNum].review[1].date}</span
-      >
-    </div>
-    <div class="review__content">${mentors[resultNum].review[1].content}</div>
   </div>
   <div class="review__column">
-    <div class="review__user">
-    ${mentors[resultNum].review[2].user}
+  <div class="review__column__column">
+  <img src="./img/reviewimg2.png" alt="" class="review__img" />
+  <div class="review__user">
+      ${mentors[resultNum].review[1].user}
+      <span class="review__date"
+        >${mentors[resultNum].review[1].date}</span
+      >
+    </div>
+  </div>
+  <div class="review__column__column">
+  <div class="review__content__extra"></div>
+    <div class="review__content">
+    ${mentors[resultNum].review[1].content}
+    </div>
+  </div>
+  </div>
+  <div class="review__column">
+  <div class="review__column__column">
+  <img src="./img/reviewimg3.png" alt="" class="review__img" />
+  <div class="review__user">
+      ${mentors[resultNum].review[2].user}
       <span class="review__date"
         >${mentors[resultNum].review[2].date}</span
       >
     </div>
+  </div>
+  <div class="review__column__column">
+  <div class="review__content__extra"></div>
     <div class="review__content">
     ${mentors[resultNum].review[2].content}
     </div>
   </div>
+  </div>
+  
 </div>
 </div>
 <div class="other__wrap">

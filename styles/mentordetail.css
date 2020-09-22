@@ -218,6 +218,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  border: 1px solid gray;
 }
 
 .price__column {
@@ -235,15 +236,15 @@
 
 .price__content__lower {
   padding-top: 10px;
-  color: #585858;
-  font-weight: 400;
+  color: #23262b;
+  font-weight: 600;
 }
 .price__content__benefit {
   padding: 4px 0;
 }
 
 .price__content__benefit i {
-  margin-right: 6px;
+  margin-right: 7px;
 }
 
 .price__column:first-child {
@@ -333,12 +334,22 @@
 }
 
 .mentor__individual__title {
+  display: flex;
+  align-items: center;
   width: 90%;
   line-height: 25px;
   font-size: 20px;
   color: #000000;
   font-weight: 700;
   margin-bottom: 20px;
+}
+
+.mentor__individual__img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 8px;
 }
 
 .mentor__individual__content {
@@ -468,6 +479,7 @@
 }
 
 .menti__wrap {
+  background-color: #424242;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -476,12 +488,12 @@
 
 .menti {
   width: 90%;
-  margin-top: 30px;
+  margin-top: 46px;
   padding-bottom: 20px;
 }
 
 .menti__title {
-  color: black;
+  color: white;
   font-weight: 700;
   font-size: 20px;
   line-height: 25px;
@@ -492,14 +504,14 @@
 }
 
 .menti__content {
-  color: #272727;
+  color: white;
   margin-bottom: 16px;
   line-height: 24px;
 }
 
 .menti__content i {
   margin-right: 8px;
-  color: #272727;
+  color: white;
 }
 
 .review__wrap {
@@ -507,7 +519,7 @@
   display: flex;
   justify-content: center;
   border-top: 1px solid rgb(190, 190, 190);
-  background-color: #ebebeb;
+  background-color: #eff3f4;
   padding: 40px 0 10px 0;
 }
 
@@ -525,7 +537,8 @@
 .review__column {
   border-radius: 10px;
   margin-bottom: 30px;
-  padding: 30px;
+  padding: 30px 16px;
+  padding-bottom: 14px;
   display: flex;
   flex-direction: column;
   background-color: white;
@@ -534,15 +547,28 @@
   box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.75);
 }
 
+.review__column__column {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.review__img {
+  width: 26px;
+  height: 26px;
+  margin-right: 8px;
+}
+
 .review__user {
-  margin-bottom: 10px;
+  margin-top: 6px;
   font-size: 20px;
   font-weight: 700;
 }
 
 .review__date {
   font-size: 14px;
-  color: #868686;
+  color: #0123b4;
   font-weight: 400;
 }
 
@@ -552,6 +578,10 @@
   line-height: 24px;
   text-align: justify;
   align-self: center;
+}
+
+.review__content__extra {
+  width: 34px;
 }
 
 .final__price {
