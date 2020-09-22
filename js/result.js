@@ -1112,7 +1112,7 @@ function handleMentorPaint(e) {
       </div>
       <div class="sample__under">
         <div class="sample__price">1회 99,000원</div>
-        <div class="sample__button">코치님 이야기 자세히 보기 ></div>
+        <div class="sample__button">멘토님 이야기 자세히 보기 ></div>
       </div>
     </div>
   </div>`;
@@ -1143,7 +1143,7 @@ function handleMentorPaint(e) {
       </div>
       <div class="sample__under">
         <div class="sample__price">1회 99,000원</div>
-        <div class="sample__button">코치님 이야기 자세히 보기 ></div>
+        <div class="sample__button">멘토님 이야기 자세히 보기 ></div>
       </div>
     </div>
   </div>`;
