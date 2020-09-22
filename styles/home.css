@@ -2,15 +2,60 @@
 
 .main__display {
   width: 100%;
-  height: 80vh;
+  height: 70vh;
   background-color: white;
   border-bottom: 1px solid #8080804d;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bg__img1,
+.bg__img2,
+.bg__img3 {
+  position: absolute;
+  z-index: -99;
+  opacity: 0.2;
+  width: 160px;
+}
+
+.bg__img1 {
+  left: 20px;
+  top: 20px;
+}
+
+.bg__img2 {
+  right: 20px;
+  top: 150px;
+}
+
+.bg__img3 {
+  left: 20px;
+  top: 300px;
+}
+
+.main__upper__wrap {
+  margin-top: 140px;
+}
+
+.main__title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 16px;
+}
+
+.main__sub {
+  text-align: center;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .main__button__wrap {
   position: absolute;
-  bottom: 120px;
+  bottom: 80px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -384,29 +429,6 @@
   position: relative;
 }
 
-.bg__img1,
-.bg__img2,
-.bg__img3 {
-  position: absolute;
-  z-index: -99;
-  opacity: 0.2;
-  width: 180px;
-}
-
-.bg__img1 {
-  left: 0px;
-}
-
-.bg__img2 {
-  right: 0px;
-  top: 200px;
-}
-
-.bg__img3 {
-  left: 0px;
-  top: 400px;
-}
-
 .catch__phrase {
   margin-top: 140px;
   font-size: 29.5px;
@@ -496,9 +518,3 @@
 }
 
 /* 여기서부터는 새로운 메인 화면 css 입니다.  */
-
-.main__display {
-  width: 100%;
-  height: 100vh;
-  background-color: white;
-}

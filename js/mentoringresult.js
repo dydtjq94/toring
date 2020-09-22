@@ -1,4 +1,4 @@
-const mentors = [
+const mentorsSubmit = [
   {
     name: "정진호",
     nameEng: "jinho",
@@ -8,17 +8,16 @@ const mentors = [
     major: "생명과학부",
     year: "20학번",
     school: "휘문고",
-    label: 0,
-    title: "타이틀은 한줄로 부탁해유~",
+    title:
+      "휘문고 출신 진호 멘토님의<br/>휘문고에서 내신과 정시를 완벽하게 준비하기",
     method: "정시 전형",
-    mentoring: ["수시 정시 동시", "학습법 전문"],
+    mentoring: ["수시 정시 동시", "학습법 전문", "슬럼프 극복"],
     experience: [
       `휘문고등학교 졸업`,
       `휘문고 1,2학년 내신 종합 2등급~1등급 (최고 전교 7등)`,
       `2020학년도 정시 과탐 생1 지2 만점`,
       `2019, 2020학년도 생1 교육청 및 평가원 모의고사 올 1등급, 2020학년도 생1 평가원 모의고사 올 만점`,
     ],
-    being: [`asdfdsaf`, `sadfsadfasdf`, `asdfdasfadsf`],
     special: [
       {
         title: `코로나 때문에 학습습관이 무너졌어요. 어떻게 하면 좋을까요?`,
@@ -296,6 +295,65 @@ const mentors = [
         user: `김*환 학부모님`,
         date: `2020.08`,
         content: `"정시에 집중하려고 신청했는데, 아이가 할 수 있다라는 기운을 받은건지 격려를 받은건지 요새 들어 열심히 하네요~"`,
+      },
+    ],
+  },
+
+  //조예은
+
+  {
+    name: "조예은",
+    nameEng: "yeeun",
+    gender: "여",
+    univ: "서울대",
+    univEng: "seoul",
+    major: "미학과",
+    year: "19학번",
+    school: "은광여고",
+    title:
+      "은광여고 출신 예은 멘토님의 <br/> 스스로 학생부를 채워 서울대 연세대 고려대를 동시 합격하는 비법",
+    method: "수시 일반 전형",
+    mentoring: ["SKY 동시 합격", "은광여고 내신", "진로 설정"],
+    experience: [
+      `은광여고 졸업`,
+      `서울대 수시 일반전형, 연대 학생부 종합전형, 고대 학교추천2 전형 모두 최초 합격`,
+      `상대적으로 부족했던 1학년 1학기 성적을 극복한 상승 그래프로 최종적으로 문과 전교 3등으로 졸업 후 현재 서울대 재학중`,
+      `내신 관리에 있어서 어느 정도 사교육의 도움을 받기는 했지만 기본적으로 자기주도적 학습을 진행함(과목별 공부 방식, 시간을 효율적으로 쓰는 법 등을 스스로 터득함)`,
+      `고3을 제외하고는 매년 학급 회장 활동과 학교 학생회 활동을 함. 학생의 세특 고민뿐만 아니라 인간관계 고민도 상담해줄 수 있음`,
+      `자소서를 학원에 맡기지 않고 스스로 학교별로 분석하고 학교 선생님과 아버지의 도움을 받아 작성함. 학원의 상담 없이도 합격함`,
+      `고2 시절 모의고사 최우수상 수상`,
+      `대치동의 치열한 학업 경쟁 및 등급 싸움, 특목고와의 비교등으로 개인적으로 힘든 시간을 보낸 경험이 있는 만큼 학생의 고민 등에 진심어린 위로와 격려, 조언 및 동기부여 가능`,
+    ],
+    special: [
+      {
+        title: `코로나 때문에 학습습관이 무너졌어요. 어떻게 하면 좋을까요?`,
+        detail: `전례없는 이 전염병 사태로 우리 모두가 처음인 상황들 속에서 학습습관이 무너지는 건 사실 이상한 것이 아니에요. 친구 뿐만이 아니라 다른 친구들도, 심지어는 다 큰 어른들도 생활습관이 무너지기도 하니까 우선 너무 자책하거나 스트레스 받지 않았으면 해요. 이제부터 이 새로운, 변화된 일상에 맞추어 차차 적응해가면 되겠지요? 우선 몇시에 일어나고 몇시에 잠에 드나요? 모든 것이 예측 불가능한 시기일수록 규칙적인 삶을 통해 자신의 페이스를 유지하는 것이 제일 중요해요.  <br/>시간대를 정해두고 규칙적으로 자고 일어나는 습관을 들여야 해요. 집에 오래 있다 보니 핸드폰이나 컴퓨터 넷플릭스를 과도하게 많이 하지는 않나요? 스스로 자제할 수 없이 오래 하게 되었다면 부모님께 핸드폰을 맡겨두고 공부하는 방에는 전자 기기가 전혀 없도록 하세요. 그리고 공부 방법 및 시간에 있어서는..(여기는 실제 멘토링 시간에 꿀팁을 알려드리도록 하겠습니다)`,
+      },
+      {
+        title: `멘토님과 같은 고등학교(은광여고)를 다니고 있습니다. 혹시 우리
+          학교 내신이나 학생부는 어떤 식으로 준비해야 하나요?`,
+        detail: `과목별로 남아 계시는 선생님들을 우선 여쭤보고 구체적인 방법, 내신 과목별로 유명한 대치동 강사 선생님들을 알려줄게요. 은광여고의 경우 영어를 잘하는 학생들이 많아서 영어 지문 변형이 심하기 때문에..(중략) 탐구 과목들은 필기를 쭉 정리하고 수능특강 문제를.. 이후의 자세한 사항은 멘토링에서 전부 알려드릴게요!`,
+      },
+      {
+        title: `조예은 멘토님은 이런 사람이에요!`,
+        detail: `저는 고등학교 시절에 문화산업계에 종사하고 싶다는 꿈을 가지고 있었습니다. 그렇기에 어떤 과에 가는지는 큰 상관이 없었는데, 고등학교 1학년때 교육청 컨설팅에서 서울대 미학과라는 과를 알게 되었고, 그 과에 들어가 공부해보고 싶다는 간절한 열망을 가지게 되었습니다. 고등학교 1학년때는 비교과와 교과의 우선순위를 잘못 세우는 바람에 방황하다가 성적의 부진을 겪었었는데, 마음을 다잡고 2학년때부터 비약적인 성적의 상승을 이루어 원하는 학교, 학과에 입학할 수 있었습니다.  <br/>성적의 상승에는 물론 전략의 수정 및 확실한 동기 부여로 인한 개인의 노력도 있지만, 제가 돌아봤을 때는 저를 믿고 항상 격려해주신 두 분의 선생님 덕택이 매우 컸습니다. 저는 이때 한 사람(학생)의 가능성을 알아봐주고, 믿어주고, 진심으로 응원해주었을 때 그 사람이 얼마나 큰 성장을 이룰 수 있는지를 직접 체험하였습니다. 멘토링을 통해 학습 방법 및 대학 진학을 위한 조언뿐만 아니라 그 학생의 가능성을 믿어주는 든든한 응원자로서 지원해주고 싶습니다.`,
+      },
+    ],
+    review: [
+      {
+        user: `김*혁 학부모님`,
+        date: `2020.08`,
+        content: `"은광여고 정보를 잘 구하기 어려웠는데, 은광여고를 졸업하신지 얼마 안되서 그런지 아주 잘 알고 계시네요. 아이도 너무 만족해해요."`,
+      },
+      {
+        user: `이*지 은광여자고등학교 1학년 학생`,
+        date: `2020.09`,
+        content: `"코로나 때문에 공부하기가 어려웠는데, 멘토님이 너무 너무 잘 알려주셔서 매주 잘 할 수 있는 것 같아요."`,
+      },
+      {
+        user: `유*진 학부모님`,
+        date: `2020.08`,
+        content: `"매주 꿀팁을 얻어온다며 아이가 말하는데 그것 때문인지 조금씩 변화하는게 보이네요"`,
       },
     ],
   },
@@ -1045,82 +1103,223 @@ const mentors = [
   },
 ];
 
-const tagColumn = document.querySelector(`.tag__column`);
-schoolList();
-const tagButton = document.querySelector(`.tag__button`);
-const tagContent = document.querySelectorAll(`.tag__content`);
+const menties = [
+  {
+    mentorName: "오선빈",
+    mentiName: "김나연",
+    first:
+      "공부는 열심히 하는 것 같으나 동기부여가 조금 더 필요한 상황이었습니다. 생기부를 어떻게 채워나가야 하는지 아직 감이 없어 보였습니다. ",
+    second:
+      "내신 과목 중에서 문과 과목 (ex. 국어)에 어려움이 있는 것 같아 어떤 방식으로 공부를 해야 하는지 도움을 줄 수 있을 것 같습니다. 또한 선택 과목 선정에 대한 기준이 아직 없는 듯 하여 어떤 것을 고려해서 선택하는 것이 좋을지 조언해줄 수 있습니다. 또한 학생부를 어떻게 채워야 하는지 그 방향성에 대해서 도움을 줄 수 있습니다.",
+    third:
+      "1~4주: 곧 중간고사로 알고 있어 4주차에 대해서는 내신 공부를 제대로 진행하고 있는지, 계획 세워서 하루하루 할당량을 채워나가고 있는지 점검합니다. 또한 어렵고 고민이 있는 과목에 대해서는 방향성과 공부의 진행 상황에 대해서 더 집중적으로 관리합니다. <br/>5주~: 기말고사 대비 전 평소 학습 계획에 대한 점검은 계속하고 학생부에 과목별 세특을 어떤 방식으로 기재할 것인지에 대한 멘토링을 진행합니다.<br/>이후 기말고사에 대하서는 중간고사 대비와 비슷하게, 중간고사에서 아쉬웠던 부분 더 보완합니다. ",
+    forth:
+      "국어에서 나연 학생이 더 자신감을 얻어 안정적으로 점수를 획득할 수 있도록 지도하고 공부관리를 통해서 전교 등수 더 올릴 수 있도록 노력할 예정입니다.",
+    final:
+      "나연 학생이 고민하고 있는 국어 과목은 영리하게 공부해야 하는 과목입니다. 내가 부족한 부분이 무엇이며 이를 어떻게 보완해 나갈 것인지에 대해 스스로 파악하는 것이 필요하고, 이에 기반하여 계획적으로 공부하는 습관이 필요합니다.  또한 코로나로 인해 긴장감이 느슨해지는 상황에서 계획을 세워 공부하는 것은 자기 페이스를 유지하며 공부하는 데 큰 도움이 됩니다. 정기적인 학습 방향성 코칭과 동기 부여로 환경에 영향 받지 않고 자기 페이스를 유지하며 공부할 수 있도록 도움을 드리겠습니다. 또한 수의예과를 목표로 하는 학생의 생기부는 1학년때부터 어떻게 채워나가야 하는지, 독서나 과목별 세특과 같은 디테일한 부분까지 전년도 입시 경험을 바탕으로 멘토링을 해드리겠습니다.",
+  },
+  {
+    mentorName: "염지윤",
+    mentiName: "김리향",
+    first:
+      "내신에 대한 고민이 많은 학생이었고, 학업적 스트레스가 있는 것 같았습니다. 다만 학생 스스로 잘 해내고자 하는 의지가 많아서 멘토링을 통해 훨씬 더 나은 학업생활을 할 수 있을 것이라고 생각합니다. ",
+    second:
+      "내신과 관련해서는 공부방법, 각종 멘탈관리, 시험 유형 등에 대해 조언을 해줄 수 있을 것 같고 학생부와 관련해서는 봉사, 독서, 각종 대회, 자소서 등을 도와줄 수 있을 것 같습니다. ",
+    third:
+      "우선 지금은 내신 시험이 1달 남은 시점인 만큼 각 과목에 대한 공부 방법, 학업 계획 등을 세우는 데 중점을 두어야 할 것 같습니다. 이후 시험이 끝나면 세특을 어떻게 적어야 하는지, 대회 준비를 도와주는 쪽으로 멘토링을 하고 이후 기말고사 기간이 다가오면 중간고사 때 미흡했던 부분을 어떻게 보완해서 등급을 올릴지 수업할 수 있을 것 같습니다. ",
+    forth: "학생부 종합전형에 완벽한 인재가 될 수 있도록 돕겠습니다.^__^",
+    final:
+      "각 대회 준비에 있어 시간 분배를 어떻게 할지, 주의해야 할 점은 무엇인지 제 경험을 토대로 멘토링 할 예정입니다. 나머지 학생부 역시 학생 상황에 맞게 필요한 부분(독서 봉사 세특 자율활동 등) 을 진로에 맞게 유기적으로 연결할 수 있게 도와줄 수 있을 것 같습니다. 멘토링을 진행하면서 학생에 대한 정확한 현황과 상태를 알아가면서 그에 맞게 서울대에 진행할 수 있는 학생부를 구성해줄 예정입니다.",
+  },
+  {
+    mentorName: "김예나",
+    mentiName: "김은진",
+    mentoringStu:
+      "마이크가 안 켜져서 대화를 제대로는 못했지만 학생의 질문을 바탕으로 생각해보면, 고등학교 생활과 좋은 내신 성적을 얻을 수 있는 팁에 관심이 많았다고 생각합니다. 아직 중학생이라 고등학교 생활에 대한 약간의 두려움과 고민도 조금 있다는 느낌이 들었는데 그런 부분에 대한 질문들이 대부분이었습니다.  ",
+    mentoringQnA: [
+      {
+        Q: "건축학은 어떤 전공인가요?",
+        A:
+          "건축을 대표적으로 설명하면, 예술과 기술의 융합이라고 할 수 있어요! 디자인적 감각도 중요하지만 실제 건물을 어떻게 세울지에 대한 고민을 많이 하기 때문에 기술적인 지식을 필수로 합니다. 이 부분이 타 디자인 전공과의 가장 큰 차이점이라고 할 수 있겠네요",
+      },
+      {
+        Q: "건축학과에 가기 위해 고등학교에서 선택과목은 뭐가 좋을까요?",
+        A:
+          "건축은 워낙 융합, 복합적인 학문이라 특정해서 ‘딱 이 과목이 건축과 잘 맞다’ 라고 말할 수 없어요. 하지만 그래도 들었으면 좋겠다고 생각하는 과목은 ‘물리’와 ‘기하’입니다. 물리는 나중에 건축과 관련한 역학을 배우기 때문에 미리 좀 배워 놓으면 좋고 기하는 공간감을 기르기에 좋다고 생각합니다.",
+      },
+      {
+        Q: "경기여고 내신은 어떻게 잘 받을 수 있나요?",
+        A:
+          "경기여고는 특히나 학교 수업이 가장 중요합니다! 수업 시간에 선생님께서 주시는 힌트를 파악하는 게 가장 중요하다고 할 수 있어요. 과목별로 말씀드리자면 영어와 국어 그리고 사회과목들은 양이 너무 많아서 소화를 잘 했는지가 중요하고, 수학과 과학은 양은 적당하기 때문에 다른 추가 문제집들을 풀어보면서 응용력을 기르는 것이 중요합니다. 그래도 가장 중요한 건 학교 수업과 학교 자료입니다!",
+      },
+      {
+        Q: "고등 3년을 대하는 생각과 힘들 때 마음관리는 어떻게 하나요?",
+        A:
+          "3년을 생각하면 너무 길고 먼 미래라고 생각이 되어 부담스럽고 걱정될 수 있어요! 하지만 그냥 지금 이순간 자신이 할 수 있는 일을 생각해보면 좋을 것 같아요. 친구들이랑 놀 땐 놀고, 내신 기간 3주 동안은 정말 열심히 최선을 다해 공부하고, 또 학교 동아리나 여러 프로그램들도 열심히 참여하는 등 3년의 계획을 한 번에 세우려고 하지 말고 지금 당장 할 수 있는 일을 생각하고 실천해보면 어느새 졸업이 가까워져 있을 거에요 ㅎㅎ 힘들 때에도 왜 자신이 힘든지 그 이유를 정확하게 파악하고 문제를 해결하려고 해야해요! 무작정 우울해하는 건 스스로에게 현실적으로 도움이 되지 않아요. 감정은 잠시 접어두고 이유를 객관적으로 파악해보고 해결하고자 노력하면 슬럼프도 이겨낼 수 있습니다 ㅎㅎ",
+      },
+    ],
+    mentoringCont:
+      "건축학과에 가기 위한 입시 전략을 키워드로 표현하자면, ‘융합 + 자신의 관심사’라고 할 수 있습니다. 건축학과만큼 융합적이고 복합적으로 생각해야 하는 전공은 없다고 생각합니다. 고등학생의 입장에서는 모든 과목에 다방면으로 관심을 갖고 열심히 공부하는 모습을 보여주는 게 아무래도 유리하겠죠? 또한 그 중에서도 특별히 자신이 평소에 좋아하고 관심을 가져온 부분에 대해 생각해보고, 이와 관련된 프로그램에 참여해보는 것이 중요합니다. 융합은 보편적으로 건축가가 가져야 할 요소라면, 자신의 관심사야말로 ‘어떤’ 건축가가 되고 싶은지를 보여주기 때문이에요. 그래서 막 입시에 도움이 될 것 같아 이것 저것 모든 프로그램에 참여해야지! 라는 생각보다는, 얕고 넓게 관심을 갖고 공부를 하되, 자신의 관심에 맞춰서 할 수 있는 한 깊이 생각해보는 게 더 중요할 것 같습니다. 학습 방법은 특별히 건축학과에만 해당되는 것은 없습니다! 고등학교에서 배우는 것은 기본 소양 과목들이기 때문에 아까 말씀드린 것처럼 모든 과목에 시간을 투자해서 골고루 지식을 습득하려고 하셔야 해요. 수학과목만 열심히 하고 사회과목은 버리는 식의 공부 계획은 융합적인 인재의 이미지를 만들기에는 바람직하지 않습니다.",
+    mentoringPurpose:
+      "6개월 뒤면 고등학교를 막 시작할 때네요! 고등학교라고 해서 중학교와 크게 다른 부분은 없으니까, 자신의 공부 페이스 대로 열심히 학교 수업에 최선을 다하시면 될 것 같아요. 경기여고에 맞춘 목표로는 선생님 말씀이 시험문제라고 생각하면서 학교 수업에 정말 열심히 참여하는 것과 1학년 때부터 다양한 프로그램들이 있으니까 전부 참여할 필요는 없되, 필요하다고 생각되는 것과 관심있는 것들은 참여해보시는 것을 추천 드립니다 ^^ 최종목표는 나중에 졸업을 할 때 정말 후회가 없을 정도로 고등 3년을 잘 보냈다고 생각하는 것이었으면 좋겠어요 목표대로 건축학과에 가는 것도 중요하지만, 3년을 알차게 쓰고 원하는 대로 합격하는 것과, 애매하게 겨우겨우 합격하는 것은 상당히 다르답니다! 앞으로의 3년을 응원하겠습니다 😊 ",
+    mentoringFinal:
+      "아직 중학생인데 고등학교에서 어떻게 잘 생활해야 하는지 준비하고자 하는 모습이 너무 기특해요! 사실 저는 아무것도 모르고 고등학교에 갔거든요. 저보다 훨씬 많은 정보도 알고 가시고, 또 미리 이렇게 준비도 열심히 하시니까 정말 재밌고, 또 보람찬 고등 3년 보내실 거에요! 고등학교가면 공부만 해야하나…라면서 걱정하지 마시고, 중학교와 똑같다! 라고 생각하면서 그냥 재밌게 잘 보내셨으면 좋겠어요 ㅎㅎ 또 슬럼프가 와도 언젠가는 극복이 되고 또 마무리가 되더라구요 지금 당장 힘들어도 너무 낙심하지 마시고 더 성장하기 위한 과정일 뿐이라고 생각하면서 앞으로 계속 나아가셨으면 좋겠어요! 저도 정말 큰 슬럼프를 겪었지만 무작정 나아가려고 노력하니까 어느새 극복도 하고 또 원했던 공부도 하고 있더라구요 아무튼!! 앞으로 3년 제가 열심히 응원할 테니까 화이팅이에요~ 😊😉",
+  },
+];
 
-let tagList = [];
-const tagLs = "tag";
+const mentorForm = document.querySelector(`.price__mentor__content`);
+const mentoringContent = document.querySelector(`.proposal__wrap`);
 
-function handleSelectTag(e) {
-  const tagTarget = e.target.innerText;
-  const tagSchool = tagTarget.split(" ")[1];
+const temp = decodeURI(location.href);
+const mentorName = temp.split("?")[1];
+const mentiName = temp.split("?")[2];
 
-  const toDoObj = {
-    school: tagSchool,
-    id: parseInt(e.target.id, 10), //한개씩 추가되는 id를 얻기 위해
-  };
+console.log(mentorName, mentiName);
 
-  if (e.target.classList[1] !== "selected__tag") {
-    e.target.classList.add("selected__tag");
-    tagList.push(toDoObj);
-    saveTag();
-  } else {
-    e.target.classList.remove("selected__tag");
-    const cleanTags = tagList.filter(function (tag) {
-      return tag.id !== parseInt(e.target.id);
-    });
-    tagList = cleanTags;
-    saveTag();
+let resultNum = 0;
+
+for (let i = 0; i < mentorsSubmit.length; i++) {
+  if (mentorsSubmit[i].name === mentorName) {
+    resultNum = i;
+    console.log(i);
+    break;
   }
 }
 
-function saveTag() {
-  localStorage.setItem(tagLs, JSON.stringify(tagList));
-}
-
-function paintTag(e) {
-  tagContent[e - 1].classList.add("selected__tag");
-}
-
-function loadTag() {
-  const loadedTags = localStorage.getItem(tagLs);
-  if (loadedTags !== null) {
-    const parsedTags = JSON.parse(loadedTags);
-
-    //어레이 안에 있는 값 각각 함수
-    parsedTags.forEach(function (tag) {
-      paintTag(tag.id);
-      tagList.push(tag);
-    });
+for (let j = 0; j < menties.length; j++) {
+  if (menties[j].mentiName === mentiName) {
+    console.log(j);
+    resultNum2 = j;
+    break;
   }
 }
 
-function handleResult() {
-  location.href = "mentorsimple.html";
+let QNA = "";
+
+for (let k = 0; k < menties[resultNum2].mentoringQnA.length; k++) {
+  QNA =
+    QNA +
+    `<div class="story__content3">
+<div class="story__content__title">
+  <div class="num">●</div>
+  <div class="story__content__wrap">
+  ${menties[resultNum2].mentoringQnA[k].Q}
+    <div class="story__content__description">
+    ${menties[resultNum2].mentoringQnA[k].A}
+    </div>
+  </div>
+</div>
+</div>`;
+}
+console.log(QNA);
+
+mentoringContent.innerHTML = `<div class="proposal__upper">
+<div class="proposal__title">토링 100분 멘토링 결과지</div>
+<div class="proposal__sub__title"><span class="blue__bold">${menties[resultNum2].mentorName} 멘토님 - ${menties[resultNum2].mentiName} 멘티님</span></div>
+</div>
+<div class="story__content3">
+<div class="story__content__title">
+  <div class="num">●</div>
+  <div class="story__content__wrap">
+  ${menties[resultNum2].mentiName} 멘티님은 어떤 학생이었나요?
+    <div class="story__content__description">
+    ${menties[resultNum2].mentoringStu}
+    </div>
+  </div>
+</div>
+</div>
+<div class="proposal__title">멘토링 고민 상담 내용</div>
+${QNA}
+<div class="proposal__title">개인 맞춤 멘토링 내용</div>
+<div class="story__content3">
+<div class="story__content__title">
+  <div class="num">●</div>
+  <div class="story__content__wrap">
+  학습방법, 입시전략 등 나중에도 확인해서 도움이 될 수 있도록 적어주세요!
+    <div class="story__content__description">
+    ${menties[resultNum2].mentoringCont}
+    </div>
+  </div>
+</div>
+</div>
+<div class="proposal__title">한달 후 / 6개월 후 / 1년 후 / 최종 한 줄 목표 설정</div>
+<div class="story__content3">
+<div class="story__content__title">
+  <div class="num">●</div>
+  <div class="story__content__wrap">
+${menties[resultNum2].mentiName} 멘티님의 목표는 무엇인가요?
+    <div class="story__content__description">
+    ${menties[resultNum2].mentoringCont}
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="story__content2">
+<div class="story__content__title2">
+  <div class="proposal__lower">
+    <!-- <i class="fas fa-exclamation red__exclamation"></i> -->
+    <div class="story__content__title">${menties[resultNum2].mentorName} 멘토님이 ${menties[resultNum2].mentiName} 멘티에게 드리는 따뜻한 한마디입니다.</div><br />
+   <span class="blue__bold"> "${menties[resultNum2].mentoringFinal}" </span><br/><br/>
+              추가적인 멘토링을 원하시면 아래 4회 멘토링을 결제 완료해주시면  <span class="blue__bold"> ${menties[resultNum2].mentorName}멘토님</span>께
+              정기적으로 멘토링을 받을 수 있습니다!
+  </div>
+</div>
+</div>`;
+
+mentorForm.innerHTML = `<div class="price__left">
+<div class="price__left__content">${mentorsSubmit[resultNum].name} 멘토님</div>
+</div>
+<div class="price__left">
+<div class="price__left__content2">
+${mentorsSubmit[resultNum].title}
+</div>
+</div>`;
+
+const differButton = document.querySelector(`.differ__button`);
+const kakaoButton = document.querySelector(`.passbook__button__kakao`);
+const homeButton = document.querySelector(`.passbook__button__home`);
+
+const btn = document.querySelector(`#btn`);
+const target = document.querySelector(`#target`);
+const snackBar = document.querySelector(`#snackbar`);
+
+const monthButton = document.querySelector(`.passbook__select__month`);
+const semesterButton = document.querySelector(`.passbook__select__semester`);
+const selectedLine = document.querySelector(`.passbook__selected__line`);
+const selectMonth = document.querySelector(`.passbook__select__month`);
+const selectSemester = document.querySelector(`.passbook__select__semester`);
+const passbookTitle = document.querySelector(`.passbook__title2`);
+const price1 = document.querySelector(`.before__price`);
+const price2 = document.querySelector(`.off__content__price`);
+const price3 = document.querySelector(`.after__price`);
+const price4 = document.querySelector(`.info__price__content`);
+const offContent = document.querySelector(`.off__content`);
+
+const handleCopy = (e) => {
+  console.log(target);
+  target.select();
+  document.execCommand("Copy");
+  snackBar.classList.add("snackbar__anim");
+  setTimeout(function () {
+    snackBar.classList.remove("snackbar__anim");
+  }, 2000);
+};
+
+function handleDiffer() {
+  var newWindow = window.open("about:blank");
+  newWindow.location.href = "http://pf.kakao.com/_WMMxgxb/chat";
 }
 
-function schoolList() {
-  let schoolListSemi = [];
-  mentors.forEach((e) => schoolListSemi.push(e.school));
-  let schoolList = Array.from(new Set(schoolListSemi));
-  console.log(schoolList);
-  let schoolTag = ``;
-  for (let k = 0; k < schoolList.length; k++) {
-    schoolTag =
-      schoolTag +
-      `<button class="tag__content" id="${k + 1}"># ${schoolList[k]}</button>`;
-  }
-  console.log(schoolTag);
-  console.log(tagColumn);
-  tagColumn.innerHTML = schoolTag;
-}
+// function handleHome() {
+//   location.href = "index.html";
+// }
 
 function init() {
-  tagButton.addEventListener("click", handleResult);
-  tagContent.forEach((e) => e.addEventListener("click", handleSelectTag));
-  loadTag();
+  btn.addEventListener("click", handleCopy);
+  differButton.addEventListener("click", handleDiffer);
+  // kakaoButton.addEventListener("click", handleDiffer);
+  // homeButton.addEventListener("click", handleHome);
 }
 
 init();
