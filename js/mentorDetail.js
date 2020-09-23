@@ -61,7 +61,7 @@ const mentors = [
         content: `"휘문고가 다른 학교와 달라 걱정이었는데, 정말 휘문고 출신한테만 들을 수 있는 휘문고에 딱 맞는 멘토링을 해주시네요"`,
       },
       {
-        user: `박*영 휘문고등학교 1학년 학생`,
+        user: `박*영 휘문고 1학년 학생`,
         date: `2020.09`,
         content: `"생기부가 늦었다고 생각했는데, 정말 현실적으로 도움되는 방향만 잘 알려주세요"`,
       },
@@ -1045,37 +1045,33 @@ const mentors = [
 ];
 
 const mentorWrite = document.querySelector(".mentor");
-const priceButton = document.querySelector(".buy__content");
-const toringButton = document.querySelector(".buy__toring");
-
 const temp = location.href.split("?");
 const forResult = temp[1].split(":")[1];
 
-console.log(forResult);
+function paintMentorDetail() {
+  let resultNum = 0;
+  let i = 0;
 
-let resultNum = 0;
-let i = 0;
-
-for (;;) {
-  if (mentors[i].nameEng === forResult) {
-    resultNum = i;
-    break;
+  for (;;) {
+    if (mentors[i].nameEng === forResult) {
+      resultNum = i;
+      break;
+    }
+    i++;
   }
-  i++;
-}
 
-let mentorExp = "";
+  let mentorExp = "";
 
-for (let u = 0; u < mentors[resultNum].experience.length; u++) {
-  mentorExp =
-    mentorExp +
-    `<div class="detail__content">
+  for (let u = 0; u < mentors[resultNum].experience.length; u++) {
+    mentorExp =
+      mentorExp +
+      `<div class="detail__content">
   <div class="num">-</div>
   ${mentors[resultNum].experience[u]}
 </div>`;
-}
+  }
 
-mentorWrite.innerHTML = `
+  mentorWrite.innerHTML = `
 <div class="logo">
 <img src="img/${mentors[resultNum].univEng}campus.png" class="mentor__background" />
 </div>
@@ -1203,7 +1199,7 @@ ${mentors[resultNum].special[2].detail}
 <div class="mentor__story__wrap">
 <div class="mentor__story">
   <div class="story__title">
-    <span class="bold">
+    <span class="bold"> 토링이
       <span class="orange__underline">${mentors[resultNum].name} 멘토님</span>께
       물어봤어요</span
     >
@@ -1380,11 +1376,12 @@ ${mentors[resultNum].special[2].detail}
 </div>
 </div>
 <div class="other__wrap">
-<div class="other__title"></div>
+<div class="other__title">주변 추천 멘토</div>
 <div class="other"></div>
 </div>
 
 `;
+}
 
 function handlePriceButton() {
   const a = document.querySelector(".mentor__name");
@@ -1397,23 +1394,109 @@ function handleToringButton() {
   newWindow.location.href = "http://pf.kakao.com/_WMMxgxb/chat";
 }
 
-const mentorLen = mentors.length;
+function paintButton() {
+  const mentoringApply = document.querySelector(`.price__button`);
+  const priceButton = document.querySelector(".buy__content");
+  const toringButton = document.querySelector(".buy__toring");
 
-const a = document.querySelector(".mentor__name");
-const mentorName = a.innerText.split(" ")[0];
-const mentorSimple = document.querySelectorAll(`.mentor__simple`);
-
-const mentoringApply = document.querySelector(`.price__button`);
-
-mentorSimple.forEach((e) =>
-  e.addEventListener("click", function handleResultClick() {
-    location.href = "mentordetail.html?" + "name" + ":" + e.classList[1];
-  })
-);
-function init() {
   priceButton.addEventListener("click", handlePriceButton);
   mentoringApply.addEventListener("click", handlePriceButton);
   toringButton.addEventListener("click", handleToringButton);
 }
 
+function recommendationMentor() {
+  const otherPaint = document.querySelector(`.other`);
+  let n = Math.floor(Math.random() * mentors.length);
+  let k = Math.floor(Math.random() * mentors.length);
+
+  let i = 0;
+
+  for (;;) {
+    if (
+      mentors[n].nameEng !== forResult &&
+      mentors[k].nameEng !== forResult &&
+      mentors[k].nameEng !== mentors[n].nameEng
+    ) {
+      break;
+    }
+    n = Math.floor(Math.random() * mentors.length);
+    k = Math.floor(Math.random() * mentors.length);
+    i++;
+  }
+
+  console.log(n, k, forResult);
+
+  recommendMentor = `<div class="result__sample ${mentors[n].nameEng}">
+  <div class="sample__marking">마감임박</div>
+  <img src="img/${mentors[n].univEng}campus.png" class="sample__campus" />
+  <div class="sample__lower">
+    <img src="img/${mentors[n].nameEng}.jpeg" alt="" class="sample__mentor__face" />
+    <div class="sample__univ">
+      <img src="img/${mentors[n].univEng}.png" class="sample__uni__mark" />
+      ${mentors[n].univ}학교 ${mentors[n].major} ${mentors[n].year}
+    </div>
+    <div class="sample__title">
+    ${mentors[n].title}
+    </div>
+    <div class="sample__tag">
+      <div class="sample__tag__column tag__univ bold" id="tag__univ">
+        # ${mentors[n].school}
+      </div>
+      <div class="sample__tag__column"># ${mentors[n].mentoring[0]}</div>
+      <div class="sample__tag__column"># ${mentors[n].mentoring[1]}</div>
+
+    </div>
+    <div class="sample__under">
+      <div class="sample__price">1회 99,000원</div>
+      <div class="sample__button">멘토님 이야기 자세히 보기 ></div>
+    </div>
+  </div>
+</div>
+<div class="result__sample ${mentors[k].nameEng}">
+    <div class="sample__marking">마감임박</div>
+    <img src="img/${mentors[k].univEng}campus.png" class="sample__campus" />
+    <div class="sample__lower">
+      <img src="img/${mentors[k].nameEng}.jpeg" alt="" class="sample__mentor__face" />
+      <div class="sample__univ">
+        <img src="img/${mentors[k].univEng}.png" class="sample__uni__mark" />
+        ${mentors[k].univ}학교 ${mentors[k].major} ${mentors[k].year}
+      </div>
+      <div class="sample__title">
+      ${mentors[k].title}
+      </div>
+      <div class="sample__tag">
+        <div class="sample__tag__column tag__univ bold" id="tag__univ">
+          # ${mentors[k].school}
+        </div>
+        <div class="sample__tag__column"># ${mentors[k].mentoring[0]}</div>
+        <div class="sample__tag__column"># ${mentors[k].mentoring[1]}</div>
+
+      </div>
+      <div class="sample__under">
+        <div class="sample__price">1회 99,000원</div>
+        <div class="sample__button">멘토님 이야기 자세히 보기 ></div>
+      </div>
+    </div>
+  </div>
+`;
+
+  otherPaint.innerHTML = recommendMentor;
+
+  const mentorSimple = document.querySelectorAll(`.result__sample`);
+
+  mentorSimple.forEach((e) =>
+    e.addEventListener("click", function handleResultClick() {
+      location.href = "mentordetail.html?" + "name" + ":" + e.classList[1];
+    })
+  );
+}
+
+function init() {
+  paintMentorDetail();
+  paintButton();
+  recommendationMentor();
+}
+
 init();
+
+// const mentorSimple = document.querySelectorAll(`.mentor__simple`);

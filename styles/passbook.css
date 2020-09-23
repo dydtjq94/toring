@@ -2,18 +2,18 @@
   width: 90%;
   display: flex;
   flex-direction: column;
-  margin-top: 20px;
 }
 
 .passbook__title {
   font-size: 24px;
+  line-height: 32px;
   color: #2a2a2a;
-  padding-bottom: 20px;
+  padding-top: 20px;
   font-weight: 700;
 }
 
 .passbook__title2 {
-  margin-top: 30px;
+  margin-top: 20px;
   font-size: 20px;
   color: #2a2a2a;
   font-weight: 700;
@@ -26,68 +26,12 @@
   width: 100%;
 }
 
-.passbook__line {
-  width: 100%;
-  height: 2px;
-  background-color: #bebebe;
-  position: relative;
-}
-
-.passbook__selected__line {
-  position: absolute;
-  left: 50%;
-  height: 5px;
-  bottom: -1px;
-  width: 50%;
-  background-color: #0123b4;
-  transition: all 0.2s linear;
-}
-
-.passbook__select__button {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  margin-bottom: 10px;
-}
-
-.passbook__select__month {
-  color: #bebebe;
-  text-align: center;
-  width: 50%;
-  font-weight: 400;
-  line-height: 24px;
-  margin-bottom: 6px;
-}
-
-.passbook__select__semester {
-  color: #0123b4;
-  text-align: center;
-  width: 50%;
-  font-weight: 700;
-  line-height: 24px;
-  margin-bottom: 6px;
-}
-
-.passbook__select__month:hover {
-  cursor: pointer;
-}
-
-.passbook__select__semester:hover {
-  cursor: pointer;
-}
-
 .total__price {
-  margin: 20px 0;
+  margin-top: 20px;
+  border-top: 1px solid #999999;
   border-bottom: 1px solid #999999;
+  padding-bottom: 20px;
   color: #2a2a2a;
-}
-
-.total__price__column:nth-child(2) {
-  margin: 20px 0;
-  padding: 0 10px;
-  display: flex;
-  flex-direction: column;
-  color: #999999;
 }
 
 .price__mentor__content {
@@ -96,6 +40,7 @@
   width: 100%;
   background-color: #ececec;
   padding: 16px 24px;
+  margin-top: 16px;
   margin-bottom: 16px;
   border-radius: 10px;
 }
@@ -106,55 +51,66 @@
 }
 
 .price__left__content {
-  color: #626262;
+  color: #0123b4;
   line-height: 20px;
   font-weight: 700;
 }
 
 .price__left__content2 {
   color: #626262;
-  line-height: 20px;
+  line-height: 18px;
   font-size: 14px;
 }
 
-.before__price {
+.total__price__column__wrap {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.total__price__column {
+  padding-top: 16px;
+}
+
+.total__price__column:nth-child(2n + 1) {
+  color: #999999;
+  font-weight: 700;
+}
+
+.total__price__column:nth-child(2n) {
   align-self: flex-end;
 }
 
-.total__price__column:nth-child(4) {
-  margin: 20px 0;
-  color: #999999;
-  padding: 0 10px;
+.total__off {
+  width: 100%;
   display: flex;
-  color: rgb(255, 71, 71);
   justify-content: space-between;
   align-items: center;
+  padding-left: 20px;
 }
 
-.total__price__column:nth-child(5) {
-  margin: 20px 0;
+.before__price {
   color: #999999;
-  padding: 0 10px;
-  display: flex;
-  color: rgb(255, 71, 71);
-  justify-content: space-between;
-  align-items: center;
 }
 
-.total__price__column:nth-child(7) {
-  color: #999999;
-  margin: 20px 0;
+.off__content {
+  color: #f54e00;
+}
 
-  padding: 0 10px;
-  display: flex;
-  flex-direction: column;
+.off__content__price {
+  color: #f54e00;
+
+  font-weight: 700;
+}
+
+.after__content {
+  color: #0123b4;
 }
 
 .after__price {
-  align-self: flex-end;
-  font-size: 20px;
   color: #0123b4;
   font-weight: 700;
+  font-size: 20px;
 }
 
 .passbook {
@@ -379,4 +335,42 @@
 
 .differ__button:hover {
   cursor: pointer;
+}
+
+.warning {
+  padding: 20px 20px;
+  width: 100%;
+  color: #494949;
+  background-color: #ececec;
+}
+
+.warning__title {
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  color: rgb(221, 0, 0);
+}
+
+.warning__title i {
+  margin-right: 5px;
+}
+
+.warning__text {
+  text-align: justify;
+  line-height: 24px;
+  font-size: 18px;
+  color: #494949;
+  margin: 10px 0;
+  margin-left: 10px;
+  display: flex;
+}
+
+.warning__text__left {
+  margin-right: 5px;
+}
+
+.warning__text__add {
+  font-size: 18px;
+  width: 100%;
+  text-align: center;
 }

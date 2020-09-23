@@ -358,6 +358,9 @@
   width: 90%;
   line-height: 28px;
   text-align: justify;
+  background-color: #ebebeb;
+  padding: 20px;
+  border-radius: 20px;
 }
 
 .off__column:nth-child(1) {
@@ -439,14 +442,6 @@
   color: black;
   font-size: 20px;
   line-height: 25px;
-}
-
-.story__semi {
-  margin-top: 20px;
-  text-align: right;
-  color: #585858;
-  line-height: 20px;
-  font-size: 14px;
 }
 
 .story__column {
@@ -626,85 +621,13 @@
   width: 34px;
 }
 
-.final__price {
-  margin-top: 20px;
-  background-color: #00092f;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  padding: 24px 0;
-}
-
-.final__price2 {
-  margin-top: 20px;
-  background-color: #2f0000;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  padding: 24px 0;
-  margin-bottom: 40px;
-}
-
-.final__column {
-  width: 90%;
-}
-
-.final__title {
-  color: white;
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 32px;
-  margin: 18px 0;
-  display: flex;
-  justify-content: space-between;
-}
-
-.extra__time__final {
-  font-size: 14px;
-  color: #fb3e46;
-  font-weight: 700;
-}
-
-.final__sub {
-  color: white;
-  font-size: 20px;
-}
-
-.final__price__column {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  margin: 18px 0;
-  align-items: center;
-}
-
-.final__left {
-  color: #b4b4b4;
-}
-
-.final__right {
-  color: #b4b4b4;
-}
-
-.final__left2 {
-  color: #fec645;
-  font-size: 20px;
-  font-weight: 700;
-}
-
-.final__right2 {
-  color: #fec645;
-  font-weight: 700;
-  font-size: 24px;
-}
-
 .other__wrap {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 120px;
-  padding-top: 40px;
+  margin-bottom: 90px;
+  padding-top: 30px;
 }
 
 .other__title {
@@ -719,7 +642,7 @@
 
 .other,
 .other2 {
-  width: 90%;
+  width: 100%;
 }
 .buy {
   background-color: white;
@@ -745,8 +668,12 @@
 .buy__button {
   display: flex;
   width: 100%;
-  padding: 20px 10px;
+  padding: 24px 10px;
+  padding-top: 10px;
   justify-content: space-between;
+  -webkit-box-shadow: 0px -1px 8px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px -1px 8px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px -1px 8px 0px rgba(0, 0, 0, 0.2);
 }
 
 .buy__toring {
@@ -754,8 +681,8 @@
   justify-content: center;
   align-items: center;
   width: 34%;
-  padding: 10px 20px;
-  padding-top: 12px;
+  padding: 16px 20px;
+  padding-top: 18px;
   text-align: center;
   background-color: #e6e6e6;
   color: #0123b4;
@@ -769,7 +696,8 @@
   justify-content: center;
   align-items: center;
   width: 64%;
-  padding: 10px 20px;
+  padding: 16px 20px;
+  padding-top: 18px;
   text-align: center;
   border: none;
   background-color: #0123b4;

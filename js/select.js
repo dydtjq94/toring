@@ -1073,6 +1073,7 @@ function handleSelectTag(e) {
     tagList = cleanTags;
     saveTag();
   }
+  buttonActive();
 }
 
 function saveTag() {
@@ -1094,6 +1095,7 @@ function loadTag() {
       tagList.push(tag);
     });
   }
+  buttonActive();
 }
 
 function handleResult() {
@@ -1116,8 +1118,23 @@ function schoolList() {
   tagColumn.innerHTML = schoolTag;
 }
 
+function buttonActive() {
+  const selectTag = document.querySelectorAll(`.selected__tag`);
+  console.log(selectTag.length);
+  if (selectTag.length >= 3) {
+    tagButton.classList.add("active__button");
+    tagButton.innerHTML = `학교별 멘토들 보기 (3/3)`;
+    tagButton.addEventListener("click", handleResult);
+    setTimeout(function () {
+      tagButton.classList.add("button__anim");
+    }, 10);
+  } else {
+    tagButton.classList.remove("active__button");
+    tagButton.innerHTML = `학교별 멘토들 보기 (${selectTag.length}/3)`;
+  }
+}
+
 function init() {
-  tagButton.addEventListener("click", handleResult);
   tagContent.forEach((e) => e.addEventListener("click", handleSelectTag));
   loadTag();
 }

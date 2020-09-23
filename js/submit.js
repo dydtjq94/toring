@@ -1,4 +1,4 @@
-const mentorsSubmit = [
+const mentors = [
   {
     name: "정진호",
     nameEng: "jinho",
@@ -1090,72 +1090,6 @@ const mentorsSubmit = [
   },
 ];
 
-const submitUpper = document.querySelector(`.submit__upper`);
-
-const temp = decodeURI(location.href);
-console.log(temp);
-const name = temp.split(":")[2];
-console.log(name);
-
-const major = parseInt(temp.split(":")[1].split("?")[1], 10);
-
-let resultNum = 0;
-let i = 0;
-
-for (;;) {
-  if (mentorsSubmit[i].name === name) {
-    resultNum = i;
-    break;
-  }
-  i++;
-}
-
-console.log(resultNum);
-
-submitUpper.innerHTML = `<div class="submit__upper__wrap">
-<div class="submit__upper__column">
-  <img class="submit__mentor__img" src="./img/${mentorsSubmit[resultNum].nameEng}.jpeg" />
-</div>
-<div class="submit__upper__column">
-  <div class="submit__mentor__name">
-    <div class="submit__name__title">멘토링 진행 멘토</div>
-    <div class="submit__mentor__wrap">
-      <input
-        type="text"
-        name="mentor"
-        class="submit__mentor"
-        placeholder="학생 이름"
-        value="${mentorsSubmit[resultNum].name} 멘토님"
-        readonly
-      />
-    </div>
-  </div>
-  <div class="submit__univ">
-    <div class="submit__school">
-      <div class="submit__name__title">멘토님 대학교</div>
-      <div class="submit__class">${mentorsSubmit[resultNum].univ}학교</div>
-    </div>
-    <div class="submit__school">
-      <div class="submit__name__title">출신 고등학교</div>
-      <div class="submit__class">${mentorsSubmit[resultNum].school} 졸</div>
-    </div>
-  </div>
-</div>
-</div>
-<div class="submit__lower__column">
-<div class="submit__upper2">
-  <div class="submit__text">
-    <i class="fas fa-quote-left"></i>
-    <div class="submit__center">
-      안녕하세요, 신청 감사합니다! 신청 완료를 위해 아래
-      항목들을 작성해주세요. 접수가 완료되면 제가 직접 100분동안
-      멘토링을 진행하고 있습니다 :)
-    </div>
-    <i class="fas fa-quote-right"></i>
-  </div>
-</div>
-</div>`;
-
 const form = document.querySelector(".submitForm");
 const submitName = document.querySelector(`.submit__name`);
 const submitTel = document.querySelector(`.submit__tel`);
@@ -1165,14 +1099,17 @@ const submitBtn = document.querySelector(".submit__submit");
 const submitBtnPar = document.querySelector(`.submit__button`);
 const blackLoading = document.querySelector(".black__loading");
 const thx = document.querySelector(`#thx`);
+const temp = decodeURI(location.href);
+const name = temp.split(":")[2];
 
 submitBtn.disabled = true;
+
 let s1 = "";
 let s2 = "";
 let s3 = "";
 let s4 = "";
+
 function handleNameChange() {
-  console.dir(submitName.value);
   s1 = submitName.value;
   let setI = setInterval(function () {
     console.log(s1, s2, s3, s4);
@@ -1189,24 +1126,23 @@ function handleNameChange() {
 }
 
 function handleTelChange() {
-  console.dir(submitTel.value);
   s2 = submitTel.value;
 }
 
 function handleStuChange() {
-  console.dir(submitStu.value);
   s3 = submitStu.value;
 }
 
 function handleConChange() {
-  console.dir(submitCon.value);
   s4 = submitCon.value;
   let setI = setInterval(function () {
-    console.log(s1, s2, s3, s4);
     if (s1 !== "" && s2 !== "" && s3 !== "" && s4 !== "") {
       submitBtn.style.backgroundColor = "#0123b4";
       submitBtn.style.color = "white";
       document.querySelector(`.submit__submit`).disabled = false;
+      setTimeout(function () {
+        submitBtn.classList.add("button__anim");
+      }, 10);
     }
 
     if (document.querySelector(`.submit__submit`).disabled === false) {
@@ -1218,11 +1154,13 @@ function handleConChange() {
 function handleConClick() {
   s4 = "yes";
   let setI = setInterval(function () {
-    console.log(s1, s2, s3, s4);
     if (s1 !== "" && s2 !== "" && s3 !== "" && s4 !== "") {
       submitBtn.style.backgroundColor = "#0123b4";
       submitBtn.style.color = "white";
       document.querySelector(`.submit__submit`).disabled = false;
+      setTimeout(function () {
+        submitBtn.classList.add("button__anim");
+      }, 10);
     }
 
     if (document.querySelector(`.submit__submit`).disabled === false) {
@@ -1231,18 +1169,9 @@ function handleConClick() {
   }, 800);
 }
 
-submitName.addEventListener("change", handleNameChange);
-submitTel.addEventListener("change", handleTelChange);
-submitStu.addEventListener("change", handleStuChange);
-submitCon.addEventListener("change", handleConChange);
-submitCon.addEventListener("click", handleConClick);
-
-console.dir(thx.style.display);
-
 function handleSubmit() {
   setTimeout(function () {
     blackLoading.classList.remove("none");
-    console.log(blackLoading.classList);
   }, 1);
   setTimeout(function () {
     blackLoading.style.opacity = 1;
@@ -1261,15 +1190,84 @@ function handleSubmit() {
         blackLoading.classList.add("none");
       }, 310);
       setTimeout(function () {
-        location.href = "thankyou.html?" + name;
+        location.href = `passbook.html?${name}?${s1}`;
       }, 500);
       clearInterval(link);
     }
   }, 200);
 }
 
-function init() {
+function handleClickSubmit() {
+  submitName.addEventListener("change", handleNameChange);
+  submitTel.addEventListener("change", handleTelChange);
+  submitStu.addEventListener("change", handleStuChange);
+  submitCon.addEventListener("change", handleConChange);
+  submitCon.addEventListener("click", handleConClick);
   submitBtnPar.addEventListener("click", handleSubmit);
+}
+
+function padintSubmitUpper() {
+  const submitUpper = document.querySelector(`.submit__upper`);
+
+  let resultNum = 0;
+  let i = 0;
+
+  for (;;) {
+    if (mentors[i].name === name) {
+      resultNum = i;
+      break;
+    }
+    i++;
+  }
+
+  submitUpper.innerHTML = `<div class="submit__upper__wrap">
+<div class="submit__upper__column">
+  <img class="submit__mentor__img" src="./img/${mentors[resultNum].nameEng}.jpeg" />
+</div>
+<div class="submit__upper__column">
+  <div class="submit__mentor__name">
+    <div class="submit__name__title">멘토링 진행 멘토</div>
+    <div class="submit__mentor__wrap">
+      <input
+        type="text"
+        name="mentor"
+        class="submit__mentor"
+        placeholder="학생 이름"
+        value="${mentors[resultNum].name} 멘토님"
+        readonly
+      />
+    </div>
+  </div>
+  <div class="submit__univ">
+    <div class="submit__school">
+      <div class="submit__name__title">멘토님 대학교</div>
+      <div class="submit__class">${mentors[resultNum].univ}학교</div>
+    </div>
+    <div class="submit__school">
+      <div class="submit__name__title">출신 고등학교</div>
+      <div class="submit__class">${mentors[resultNum].school} 졸</div>
+    </div>
+  </div>
+</div>
+</div>
+<div class="submit__lower__column">
+<div class="submit__upper2">
+  <div class="submit__text">
+    <i class="fas fa-quote-left"></i>
+    <div class="submit__center">
+      안녕하세요, 신청 감사합니다! 신청 완료를 위해 아래
+      항목들을 작성해주세요. 접수가 완료되면 제가 직접 100분동안
+      멘토링을 진행하고 있습니다 :)
+    </div>
+    <i class="fas fa-quote-right"></i>
+  </div>
+</div>
+</div>`;
+}
+
+function init() {
+  padintSubmitUpper();
+  handleClickSubmit();
 }
 
 init();

@@ -109,7 +109,8 @@
 .tag__button {
   width: 90%;
   background-color: transparent;
-  border: 1px solid rgb(214, 214, 214);
+  border: 1px solid #d6d6d6;
+  color: #d6d6d6;
   padding: 16px 0;
   border-radius: 10px;
   font-size: 16px;
@@ -119,6 +120,12 @@
 
 .tag__button:hover {
   cursor: pointer;
+}
+
+.active__button {
+  color: white;
+  background-color: #0123b4;
+  border: 1px solid #4055af;
 }
 
 .tag__title__wrap {

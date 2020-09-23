@@ -279,6 +279,10 @@
   border-bottom: 1px solid #8080804d;
 }
 
+.main__third__content:hover {
+  cursor: pointer;
+}
+
 .third__content__left {
   display: flex;
   flex-direction: column;
@@ -541,4 +545,7 @@
   border: 1px solid #0123b4;
 }
 
-/* 여기서부터는 새로운 메인 화면 css 입니다.  */
+.main__button {
+  -webkit-animation: buttonAnim 1.5s ease-in-out 3 both;
+  animation: buttonAnim 1.5s ease-in-out 3 both;
+}
