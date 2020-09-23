@@ -1328,7 +1328,9 @@ function secondDisplayMentor() {
         </div>
         <div class="second__content__lower__mentor">
           <div class="second__content__lower__mentor__up">
-          ${mentors[e].school} 졸업생 ${mentors[e].name} 멘토님
+          <span class="blue__bold">${mentors[e].school}</span> 졸업생 ${
+        mentors[e].name
+      } 멘토님
           </div>
           <div class="second__content__lower__mentor__down">
           ${mentors[e].univ} ${mentors[e].major} ${mentors[e].year}
