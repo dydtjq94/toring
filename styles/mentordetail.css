@@ -652,6 +652,9 @@
 }
 
 .other__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   color: black;
   font-size: 20px;
   line-height: 30px;
@@ -659,6 +662,11 @@
   font-weight: 700;
   width: 90%;
   margin-bottom: 20px;
+}
+
+.again__result {
+  color: #0123b4;
+  font-size: 14px;
 }
 
 .other,

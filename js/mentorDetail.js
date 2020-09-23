@@ -1619,7 +1619,9 @@ ${mentors[resultNum].special[2].detail}
 </div>
 </div>
 <div class="other__wrap">
-<div class="other__title">주변 추천 멘토</div>
+<div class="other__title">대치동 주변 추천 멘토
+<span class="again__result">고등학교 선택하기 ></span>
+</div>
 <div class="other"></div>
 </div>
 
@@ -1649,7 +1651,15 @@ function handleToringButton() {
 
 function paintButton() {
   const toringButton = document.querySelector(".buy__toring");
+  const goResult = document.querySelector(`.again__result`);
   toringButton.addEventListener("click", handleToringButton);
+  goResult.addEventListener("click", function handleGoResult() {
+    goResult.classList.add("click__anim");
+    setTimeout(function () {
+      goResult.classList.remove("click__anim");
+    }, 410);
+    location.href = "result.html";
+  });
 }
 
 function recommendationMentor() {
