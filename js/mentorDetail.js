@@ -10,7 +10,8 @@ const mentors = [
     school: "휘문고",
     label: 1, //0이 모집중 1이 마감임박 2마감
     labelNum: 1,
-    title: "휘문고 출신이 알려주는 휘문고에서 수시와 정시 동시에 준비하는 방법",
+    title:
+      "휘문고 출신 서울대생이 알려주는 휘문고에서 수시와 정시 동시에 준비하는 방법",
     method: "정시 전형",
     mentoring: ["학습법 전문", "슬럼프 극복"],
     experience: [
@@ -97,7 +98,7 @@ const mentors = [
     school: "현대고",
     label: 0, //0이 모집중 1이 마감임박 2마감
     labelNum: 3,
-    title: "현대고 출신 현우 멘토님의 <br/> 학생부를 완벽하게 준비하는 방법",
+    title: "현대고에서 학생부 100% 활용하는 방법",
     method: "특기자 전형",
     mentoring: ["멘탈 관리", "진로 설정"],
     experience: [
@@ -170,8 +171,7 @@ const mentors = [
     school: "진선여고",
     label: 2, //0이 모집중 1이 마감임박 2마감
     labelNum: 0,
-    title:
-      "진선여고 출신 선빈 멘토님의 <br/> 진심으로 학생을 생각하는 성공할 수 밖에 없는 멘토링",
+    title: "진선여고에서 수시로 서울대 진학하기",
     method: "수시 일반 전형",
     mentoring: ["과목별 공부법", "멘탈 관리"],
     experience: [
@@ -238,8 +238,7 @@ const mentors = [
     school: "경기여고",
     label: 1, //0이 모집중 1이 마감임박 2마감
     labelNum: 1,
-    title:
-      "경기여고 출신 예나 멘토님의<br/> 스스로 공부하는 습관으로 전교 3등으로 졸업하는 비법",
+    title: "경기여고에서 성적 기복 극복하고 전교 3등으로 졸업한 이야기",
     method: "학생부 종합 전형",
     mentoring: ["진로 설정", "슬럼프 극복"],
     experience: [
@@ -305,7 +304,7 @@ const mentors = [
     school: "휘문고",
     label: 1, //0이 모집중 1이 마감임박 2마감
     labelNum: 2,
-    title: "휘문고 출신 태형 멘토님의 <br/> 급격한 성적 상승을 약속하는 멘토링",
+    title: "휘문고에서 성적 상승 곡선 그리고 연세대 합격한 스토리",
     method: "논술 전형",
     mentoring: ["성적 상승", "학습 습관 관리"],
     experience: [
@@ -374,7 +373,7 @@ const mentors = [
     label: 1, //0이 모집중 1이 마감임박 2마감
     labelNum: 2,
     title:
-      "개포고 출신 채현 멘토님의 <br/>냉정하게 현실을 알려주지만 누구보다 따뜻한 멘토링",
+      "개포고 출신 연세대생의 누구보다도 강력한 동기부여로 내신과 정시 효율적으로 준비하기",
     method: "정시 전형",
     mentoring: ["엄격한 코치", "성적 상승"],
     experience: [
@@ -452,8 +451,7 @@ const mentors = [
     school: "숙명여고",
     label: 0, //0이 모집중 1이 마감임박 2마감
     labelNum: 3,
-    title:
-      "숙명여고 출신 민영 멘토님의 <br/>부모님 도움 없이 스스로 입시를 해내 고려대에 진학한 비법",
+    title: "숙명여고에서 부모님 도움 없이 스스로 고려대 합격한 방법",
     method: "학교장 추천 전형",
     mentoring: ["자기 주도 학습", "동기 부여"],
     experience: [
@@ -524,8 +522,7 @@ const mentors = [
     school: "숙명여고",
     label: 0, //0이 모집중 1이 마감임박 2마감
     labelNum: 3,
-    title:
-      "숙명여고 출신 현진 멘토님의 <br/>효율적인 공부법으로 서울대와 카이스트를 동시 합격하는 비법",
+    title: "서울대와 카이스트 동시 합격의 비결, 효율적인 공부란 이런 것",
     method: "수시 일반 전형",
     mentoring: ["진로 설정", "효율적인 공부"],
     experience: [
@@ -596,7 +593,7 @@ const mentors = [
     label: 0, //0이 모집중 1이 마감임박 2마감
     labelNum: 3,
     title:
-      "숙명여고 출신 하연 멘토님의 <br/> 고등학교 생활을 후회없이, 성공적으로 보낼 수 있도록 만들어주는 멘토링",
+      "숙명여고에서의 후회 없는 고등학교 생활으로 원하는 학교와 학과까지 합격하기",
     method: "정시 전형",
     mentoring: ["성적 상승", "학교 생활"],
     experience: [
@@ -667,7 +664,7 @@ const mentors = [
     label: 1, //0이 모집중 1이 마감임박 2마감
     labelNum: 2,
     title:
-      "숙명여고 출신 다영 멘토님의 <br/>공부의 방향성과 지름길을 알려주는 멘토링",
+      "숙명여고 이과생이 문과로 전향해 연세대 합격할 수 있었던 공부의 지름길과 방향성",
     method: "논술 전형",
     mentoring: ["이과 문과 전향", "언니 같은 멘토"],
     experience: [
@@ -736,8 +733,7 @@ const mentors = [
     school: "진선여고",
     label: 1, //0이 모집중 1이 마감임박 2마감
     labelNum: 1,
-    title:
-      "진선여고 출신 나연 멘토님의<br/>코로나로 인한 슬럼프를 극복하게 해주는 멘토링",
+    title: "진선여고 출신 고려대생이 알려주는 진선여고 내신 완벽 대비 노하우",
     method: "학생부 종합 전형",
     mentoring: ["슬럼프 극복", "성적 급상승"],
     experience: [
@@ -806,8 +802,7 @@ const mentors = [
     school: "개포고",
     label: 1, //0이 모집중 1이 마감임박 2마감
     labelNum: 1,
-    title:
-      "개포고 출신 지윤 멘토님의<br/>1학년 내신 2.87이었던 개포고 학생부를 완벽하게 올릴 수 있었던 비법",
+    title: "개포고 내신 2.87이었던 학생부로 서울대에 합격한 비법 ",
     method: "학생부 종합 전형",
     mentoring: ["성적 급상승", "학생부 전문"],
     experience: [
@@ -874,7 +869,7 @@ const mentors = [
     label: 1, //0이 모집중 1이 마감임박 2마감
     labelNum: 2,
     title:
-      "중산고 출신 시연 멘토님의<br/>모든 과목 공부법을 완벽하게 알려주는 멘토링",
+      "중산고 중위권이 내신과 정시 동시에 최상위권으로 끌어올려 서울대 합격한 이야기",
     method: "정시 전형",
     mentoring: ["과목별 공부법", "성적 상승 곡선"],
     experience: [
@@ -940,8 +935,7 @@ const mentors = [
     school: "중대부고",
     label: 1, //0이 모집중 1이 마감임박 2마감
     labelNum: 1,
-    title:
-      "중대부고 출신 혜준 멘토님의<br/>슬럼프를 극복해 서울대 의대에 진학하는 비법",
+    title: "중대부고에서 감정기복과 슬럼프 극복하고 서울대 의대 합격하기",
     method: "학생부 종합 전형",
     mentoring: ["서울대 의대", "과목별 공부법"],
     experience: [
@@ -1011,8 +1005,7 @@ const mentors = [
     school: "단대부고",
     label: 1, //0이 모집중 1이 마감임박 2마감
     labelNum: 2,
-    title:
-      "단대부고 출신 서택 멘토님의<br/>단대부고의 내신과 학생부를 완벽하게 해결해주는 멘토링",
+    title: "경험에서 우러나오는 검증된 단대부고 내신 준비 비법",
     method: "학생부 종합 전형",
     mentoring: ["학생부 전문", "친 형 같은"],
     experience: [
@@ -1096,8 +1089,7 @@ const mentors = [
     school: "단대부고",
     label: 1, //0이 모집중 1이 마감임박 2마감
     labelNum: 1,
-    title:
-      "단대부고 출신 승환 멘토님의<br/>친근한 형처럼 다가가지만, 확실하게 알려주는 멘토링",
+    title: "지금부터 시작하는 단대부고에서 수시와 정시 완벽하게 대비하기",
     method: "학생부 종합 전형",
     mentoring: ["정시 수시 동시", "과목별 학습법"],
     experience: [
@@ -1197,8 +1189,7 @@ const mentors = [
     school: "휘문고",
     label: 1, //0이 모집중 1이 마감임박 2마감
     labelNum: 1,
-    title:
-      "휘문고 출신 상하 멘토님의<br/>휘문고에서 정시와 수시 모두로 의예과에 진학하는 비법",
+    title: "휘문고에서 의대에 진학할 수 있는 모든 방법과 노하우",
     method: "정시 전형",
     mentoring: ["연세대 의대", "학습 습관 관리"],
     experience: [
