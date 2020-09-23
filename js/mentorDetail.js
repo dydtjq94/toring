@@ -1337,10 +1337,10 @@ ${mentors[resultNum].title}
     mentors[resultNum].school
   }</div>
   <div class="mentoring__badge__style"># ${
-    mentors[resultNum].mentoring[1]
+    mentors[resultNum].mentoring[0]
   }</div>
   <div class="mentoring__badge__style"># ${
-    mentors[resultNum].mentoring[2]
+    mentors[resultNum].mentoring[1]
   }</div>
 </div>
 </div>
@@ -1626,12 +1626,16 @@ ${mentors[resultNum].special[2].detail}
 `;
 }
 
-function handlePriceButton() {
+function handleClickSelect() {
   const a = document.querySelector(".mentor__name");
   const mentorName = a.innerText.split(" ")[0];
-  location.href = "submit.html?" + "name" + ":" + mentorName;
-  priceButton.classList.add("click__anim");
-  mentoringApply.classList.add("click__anim");
+  const goSelectButton = document.querySelectorAll(`#goButton`);
+  goSelectButton.forEach((e) =>
+    e.addEventListener("click", function handleResultClick() {
+      e.classList.add("click__anim");
+      location.href = "submit.html?" + "name" + ":" + mentorName;
+    })
+  );
 }
 
 function handleToringButton() {
@@ -1641,11 +1645,7 @@ function handleToringButton() {
 }
 
 function paintButton() {
-  const mentoringApply = document.querySelector(`.price__button`);
-  const priceButton = document.querySelector(".buy__content");
   const toringButton = document.querySelector(".buy__toring");
-  priceButton.addEventListener("click", handlePriceButton);
-  mentoringApply.addEventListener("click", handlePriceButton);
   toringButton.addEventListener("click", handleToringButton);
 }
 
@@ -1768,6 +1768,7 @@ ${
 function init() {
   paintMentorDetail();
   paintButton();
+  handleClickSelect();
   recommendationMentor();
 }
 
