@@ -339,10 +339,13 @@
 
 .change__content__column {
   padding-top: 20px;
+  display: flex;
+  line-height: 22px;
 }
 
 .change__num {
   font-weight: 600;
+  margin-right: 6px;
 }
 
 .mentor__individual__wrap {
