@@ -320,6 +320,6 @@ textarea:required {
 }
 
 .click__anim {
-  -webkit-animation: clickEffect 0.7s ease-in-out forwards;
-  animation: clickEffect 0.7s ease-in-out forwards;
+  -webkit-animation: clickEffect 0.4s ease-in-out forwards;
+  animation: clickEffect 0.4s ease-in-out forwards;
 }
