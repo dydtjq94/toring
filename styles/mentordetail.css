@@ -294,18 +294,20 @@
 }
 
 .price__button {
-  width: 90%;
   box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.4);
   text-decoration: none;
   color: white;
   background-color: #0123b4;
   border: none;
   padding: 15px 50px;
-  border-radius: 10px;
+  border-radius: 12px;
+
   font-size: 20px;
   margin-top: 30px;
+  width: 90%;
   outline: none;
   text-align: center;
+  font-weight: 700;
 }
 
 .price__button:hover {
@@ -704,7 +706,7 @@
   color: #0123b4;
   border: none;
   line-height: 18px;
-  border-radius: 6px;
+  border-radius: 12px;
 }
 
 .buy__content {
@@ -718,7 +720,7 @@
   border: none;
   background-color: #0123b4;
   color: white;
-  border-radius: 6px;
+  border-radius: 12px;
   font-size: 18px;
 }
 

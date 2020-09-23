@@ -179,6 +179,7 @@
   color: white;
   font-weight: 700;
   font-size: 14px;
+  border-radius: 12px;
 }
 
 .num__copy:hover {
@@ -313,11 +314,12 @@
   background-color: transparent;
   color: #0123b4;
   border: 1px solid #0123b4;
-  border-radius: 10px;
+  border-radius: 12px;
 }
 
 .passbook__button__home {
-  border-radius: 10px;
+  border-radius: 12px;
+
   text-align: center;
   padding: 20px 0;
   width: 48%;

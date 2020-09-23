@@ -202,7 +202,8 @@
   background-color: transparent;
   padding-bottom: 10px;
   outline: none;
-  border-radius: 10px;
+  border-radius: 12px;
+
   text-align: justify;
 }
 
@@ -233,7 +234,8 @@
   background-color: rgb(102, 102, 102);
   border: none;
   color: white;
-  border-radius: 10px;
+  border-radius: 12px;
+
   padding: 16px 20px;
   width: 90%;
   outline: none;
