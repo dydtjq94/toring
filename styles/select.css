@@ -113,7 +113,8 @@
   color: #d6d6d6;
   padding: 16px 0;
   border-radius: 20px;
-  font-size: 16px;
+  font-size: 20px;
+
   font-weight: 700;
   outline: none;
 }
@@ -125,7 +126,7 @@
 .active__button {
   color: white;
   background-color: #0123b4;
-  border: 1px solid #4055af;
+  border: 1px solid #0123b4;
 }
 
 .tag__title__wrap {

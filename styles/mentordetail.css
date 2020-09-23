@@ -141,6 +141,17 @@
   text-align: center;
 }
 
+.mentor__label3 {
+  background-color: rgb(163, 163, 163);
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 6px;
+  color: white;
+  padding: 6px 12px;
+  padding-top: 9px;
+  text-align: center;
+}
+
 .mentor__uni__wrap {
   width: 100%;
   display: flex;
@@ -190,6 +201,11 @@
   background-color: #ebebeb;
   padding: 6px 12px;
   padding-top: 9px;
+}
+
+.tag__univ {
+  color: rgb(0, 121, 177);
+  font-weight: 700;
 }
 
 .price {

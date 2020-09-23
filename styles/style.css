@@ -299,3 +299,27 @@ textarea:required {
   -webkit-animation: buttonAnim 1.5s ease-in-out 2 both;
   animation: buttonAnim 1.5s ease-in-out 2 both;
 }
+
+@keyframes clickEffect {
+  0% {
+    opacity: 1;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+
+  50% {
+    opacity: 0;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  100% {
+    opacity: 1;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+}
+
+.click__anim {
+  -webkit-animation: clickEffect 1s ease-in-out forwards;
+  animation: clickEffect 1s ease-in-out forwards;
+}
