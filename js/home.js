@@ -1273,9 +1273,8 @@ function scrollAppear(event) {
   });
 }
 
-function handleClickSelect(e) {
+function handleClickSelect() {
   const goSelectButton = document.querySelectorAll(`#goButton`);
-
   goSelectButton.forEach((e) =>
     e.addEventListener("click", function handleResultClick() {
       e.classList.add("click__anim");

@@ -1395,7 +1395,7 @@ ${mentors[resultNum].title}
   </div>
 </div>
 
-<div class="price__button">멘토링 신청하기</div>
+<div class="price__button" id="goButton">멘토링 신청하기</div>
 </div>
 <div class="change__wrap">
 <div class="change__title">
@@ -1641,7 +1641,6 @@ function paintButton() {
   const mentoringApply = document.querySelector(`.price__button`);
   const priceButton = document.querySelector(".buy__content");
   const toringButton = document.querySelector(".buy__toring");
-
   priceButton.addEventListener("click", handlePriceButton);
   mentoringApply.addEventListener("click", handlePriceButton);
   toringButton.addEventListener("click", handleToringButton);
