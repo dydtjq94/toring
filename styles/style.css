@@ -273,18 +273,18 @@ textarea:required {
     animation-timing-function: ease-out;
   }
   10% {
-    transform: scale(0.94);
+    transform: scale(0.97);
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
   }
 
   17% {
-    transform: scale(0.98);
+    transform: scale(0.99);
     -webkit-animation-timing-function: ease-out;
     animation-timing-function: ease-out;
   }
   33% {
-    transform: scale(0.91);
+    transform: scale(0.95);
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
   }
