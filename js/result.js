@@ -1437,6 +1437,9 @@ function goMentorDetail() {
   resultSample.forEach((e) =>
     e.addEventListener("click", function handleResultClick() {
       e.classList.add("click__anim");
+      setTimeout(function () {
+        e.classList.remove("click__anim");
+      }, 410);
       location.href = "mentordetail.html?" + "name" + ":" + e.classList[1];
     })
   );

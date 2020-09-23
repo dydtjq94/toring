@@ -107,16 +107,19 @@
 }
 
 .tag__button {
-  width: 90%;
-  background-color: transparent;
-  border: 1px solid #d6d6d6;
-  color: #d6d6d6;
-  padding: 16px 0;
+  box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.4);
+  text-decoration: none;
+  color: white;
+  background-color: #d6d6d6;
+  border: none;
+  padding: 15px 50px;
   border-radius: 20px;
   font-size: 20px;
-
-  font-weight: 700;
+  margin-top: 30px;
+  width: 90%;
   outline: none;
+  text-align: center;
+  font-weight: 700;
 }
 
 .tag__button:hover {

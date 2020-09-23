@@ -1633,6 +1633,9 @@ function handleClickSelect() {
   goSelectButton.forEach((e) =>
     e.addEventListener("click", function handleResultClick() {
       e.classList.add("click__anim");
+      setTimeout(function () {
+        e.classList.remove("click__anim");
+      }, 410);
       location.href = "submit.html?" + "name" + ":" + mentorName;
     })
   );
