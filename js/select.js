@@ -1309,6 +1309,7 @@ function loadTag() {
 }
 
 function handleResult() {
+  tagButton.classList.add("click__anim");
   location.href = "result.html";
 }
 

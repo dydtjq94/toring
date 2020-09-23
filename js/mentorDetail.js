@@ -1630,11 +1630,14 @@ function handlePriceButton() {
   const a = document.querySelector(".mentor__name");
   const mentorName = a.innerText.split(" ")[0];
   location.href = "submit.html?" + "name" + ":" + mentorName;
+  priceButton.classList.add("click__anim");
+  mentoringApply.classList.add("click__anim");
 }
 
 function handleToringButton() {
   var newWindow = window.open("about:blank");
   newWindow.location.href = "http://pf.kakao.com/_WMMxgxb/chat";
+  toringButton.classList.add("click__anim");
 }
 
 function paintButton() {
