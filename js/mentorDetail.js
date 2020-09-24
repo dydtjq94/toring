@@ -1457,51 +1457,46 @@ ${mentors[resultNum].special[2].detail}
 <div class="fifth__display2">
 <div class="main__fifth__title2">어떻게 진행되나요?</div>
 <div class="main__fifth__content__column">
-  <div class="fifth__content__upper">
-    <div class="fifth__upper__left">01</div>
-    <div class="fifth__upper__right">
-      1회 멘토링을 우선 수강합니다.
-    </div>
-  </div>
-  <div class="fifth__content__lower">
-    <div class="fifth__lower__left"></div>
-    <div class="fifth__lower__right">
-      선택한 멘토님과 1:1로 멘토링을 진행합니다. 멘토링은 100분동안
-      진행되며 오프라인 (짜택 혹은 토링이 준비한 장소) 혹은 온라인으로
-      진행하실 수 있습니다.
-    </div>
+<div class="fifth__content__upper">
+  <div class="fifth__upper__left">01</div>
+  <div class="fifth__upper__right">
+    1:1 멘토링을 신청하세요.
   </div>
 </div>
-<div class="main__fifth__content__column">
-  <div class="fifth__content__upper">
-    <div class="fifth__upper__left">02</div>
-    <div class="fifth__upper__right">
-      멘토링에 대한 멘토링 일지를 제공합니다.
-    </div>
-  </div>
-  <div class="fifth__content__lower">
-    <div class="fifth__lower__left"></div>
-    <div class="fifth__lower__right">
-      1회 멘토링을 바탕으로 학생이 질문한 사항과 멘토가 답변한 사항을
-      정리한 멘토링 일지를 제공합니다.
-    </div>
+<div class="fifth__content__lower">
+  <div class="fifth__lower__left"></div>
+  <div class="fifth__lower__right">
+내가 원하는 멘토에게 멘토링을 신청하세요.
+  학생부 코칭, 동기부여, 내신 등 원하시는 멘토링 방향을 작성해주시면, 그에 맞춰 멘토링이 준비됩니다.
   </div>
 </div>
+</div>
 <div class="main__fifth__content__column">
-  <div class="fifth__content__upper">
-    <div class="fifth__upper__left">03</div>
-    <div class="fifth__upper__right">
-      멘토링 내용을 바탕으로 학습 상담을 진행합니다.
-    </div>
+<div class="fifth__content__upper">
+  <div class="fifth__upper__left">02</div>
+  <div class="fifth__upper__right">1:1로 멘토링을 진행합니다.</div>
+</div>
+<div class="fifth__content__lower">
+  <div class="fifth__lower__left"></div>
+  <div class="fifth__lower__right">
+    내가 선택한 멘토님과 1:1로 멘토링을 진행합니다. 멘토링은 100분동안
+    진행되며 오프라인/온라인 중 원하시는 방법으로 진행하실 수
+    있습니다.
   </div>
-  <div class="fifth__content__lower">
-    <div class="fifth__lower__left"></div>
-    <div class="fifth__lower__right">
-      멘토링 때 멘토가 학생을 파악한 것을 기초하여 앞으로의 학습
-      방향에 대해서 학습 상담을 진행합니다. 학습 상담은 전화를 통해
-      진행하고 있습니다.
-    </div>
+</div>
+</div>
+<div class="main__fifth__content__column">
+<div class="fifth__content__upper">
+  <div class="fifth__upper__left">03</div>
+  <div class="fifth__upper__right">멘토링 결과지를 제공합니다.</div>
+</div>
+<div class="fifth__content__lower">
+  <div class="fifth__lower__left"></div>
+  <div class="fifth__lower__right">
+    학생의 질문, 멘토의 답변 등이 정리된 멘토링 내용과 앞으로의 학습
+    방향에 대한 조언이 담긴 멘토링 일지를 제공해드려요.
   </div>
+</div>
 </div>
 </div>
 <div class="review__wrap">
