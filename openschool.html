@@ -101,7 +101,88 @@
           </div>
         </div>
       </div>
+
+      <form
+        action="https://script.google.com/macros/s/AKfycbzMJEI0x4Mxzyfd2a5RNo-rh69KxHdtW-6Z2c-QEonOg6L5zso/exec"
+        class="gform"
+        method="POST"
+        data-email="example@email.net"
+      >
+        <div class="submit">
+          <div class="submit__column">
+            <div class="submit__price">
+              <div class="submit__name__title">학부모님 성함 *</div>
+              <input
+                type="text"
+                class="submit__name"
+                name="name"
+                placeholder="ex) 김미선"
+                required
+              />
+            </div>
+          </div>
+          <div class="submit__column">
+            <div class="submit__price">
+              <div class="submit__name__title">학부모님 전화번호 *</div>
+              <input
+                type="number"
+                name="email"
+                class="submit__tel"
+                placeholder="ex) 01012345678"
+                required
+              />
+            </div>
+          </div>
+          <div class="submit__column">
+            <div class="submit__price">
+              <div class="submit__name__title">
+                학생 정보 (이름 / 학교 / 학년) *
+              </div>
+              <input
+                type="text"
+                name="student"
+                class="submit__student"
+                placeholder="ex) 윤지훈 / 휘문고 / 1학년"
+                required
+              />
+            </div>
+          </div>
+          <div class="submit__column">
+            <div class="submit__price">
+              <div class="submit__name__title">멘토님에게 전하고 싶은 말 *</div>
+              <textarea
+                name="content"
+                cols="10"
+                rows="4"
+                class="submit__content"
+                placeholder="무료 멘토링 준비를 위해 고민 또는 학생 본인에 대해 간단하게 소개해주세요!"
+                required
+              ></textarea>
+            </div>
+          </div>
+        </div>
+        <div style="display: none" class="thankyou_message" id="thx">
+          <h2 class="guide__m">
+            멘토링 신청이 완료되었습니다. <br />감사합니다!
+          </h2>
+        </div>
+        <div class="submit__button">
+          <input
+            type="submit"
+            value="100분 멘토링 신청하기"
+            class="submit__submit"
+          />
+          <div class="submit__submit__ment">
+            작성하신 정보는 무료 멘토링 진행을 위해서만 사용됩니다.
+          </div>
+        </div>
+      </form>
     </div>
   </body>
+  <script
+    data-cfasync="false"
+    type="text/javascript"
+    src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"
+  ></script>
   <script src="js/openschool.js"></script>
 </html>
