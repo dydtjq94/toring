@@ -42,7 +42,7 @@
 .main__title {
   text-align: center;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 32px;
   margin-bottom: 16px;
 }
@@ -71,7 +71,7 @@
   color: white;
   background-color: #0123b4;
   border: none;
-  padding: 15px 50px;
+  padding: 15px 10px;
   border-radius: 12px;
   font-size: 20px;
   margin-top: 30px;
@@ -109,8 +109,8 @@
 
 .main__second__title {
   text-align: center;
-  font-size: 22px;
-  line-height: 36px;
+  font-size: 20px;
+  line-height: 32px;
   font-weight: 700;
 }
 
@@ -125,6 +125,7 @@
   padding: 0 5%;
   width: 100%;
   overflow-x: scroll;
+  /* overflow-x: hidden; */
   white-space: nowrap;
 }
 
@@ -257,8 +258,8 @@
   width: 100%;
   padding-top: 60px;
   padding-bottom: 20px;
-  font-size: 22px;
-  line-height: 36px;
+  font-size: 20px;
+  line-height: 32px;
   font-weight: 700;
 }
 
@@ -358,14 +359,15 @@
 }
 
 .main__forth__downtitle {
-  font-size: 24px;
+  font-size: 20px;
+  line-height: 32px;
   font-weight: 700;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
 }
 
 .main__forth__semi {
-  font-size: 12px;
-  line-height: 18px;
+  font-size: 14px;
+  line-height: 21px;
   text-align: center;
   color: #414141;
 }
@@ -408,7 +410,8 @@
 }
 
 .main__fifth__title {
-  font-size: 24px;
+  font-size: 20px;
+  line-height: 32px;
   font-weight: 700;
   margin-bottom: 32px;
 }
