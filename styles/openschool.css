@@ -7,12 +7,54 @@
 
 .open__school__title {
   width: 100%;
-  margin-top: 20px;
+  margin-top: 30px;
   font-size: 24px;
   font-weight: 700;
 }
 
 .open__school__content__wrap {
   width: 100%;
-  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.open__school__content {
+  margin-top: 30px;
+
+  width: 47%;
+}
+
+.open__school__content__img {
+  border-radius: 6px;
+}
+
+.open__school__img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+.open__school__content__title {
+  margin: 10px 0;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.open__school__content__button {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #5a5a5a;
+  border: 1px solid #888888;
+}
+
+.open__school__num {
+  color: rgb(0, 121, 177);
+}
+
+.open__school__content__button:hover {
+  cursor: pointer;
 }
