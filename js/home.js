@@ -1338,7 +1338,7 @@ function handleCountNum() {
       countNum.innerHTML = countNumber;
     }
   }
-  setInterval(countUp, 30);
+  setInterval(countUp, 60);
 }
 
 function init() {
