@@ -355,27 +355,28 @@
 .main__forth__uptitle {
   font-size: 16px;
   color: #414141;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
 
 .main__forth__downtitle {
   font-size: 20px;
   line-height: 32px;
   font-weight: 700;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
 
 .main__forth__semi {
   font-size: 14px;
   line-height: 21px;
   text-align: center;
-  color: #414141;
+  color: #535353;
+  margin-bottom: 6px;
 }
 
 .main__forth__content__column {
   display: flex;
   align-items: center;
-  margin: 30px 0;
+  margin: 24px 0 30px 0;
 }
 
 .forth__content__left {
