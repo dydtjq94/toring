@@ -1294,7 +1294,7 @@ function secondDisplayMentor() {
       <div class="second__content__lower__down">
         <div class="second__content__lower__down__extra"></div>
         <div class="second__content__lower__down__sub">
-        ${mentors[e].special[1].detail.slice(0, 124)}....
+        ${mentors[e].special[1].detail.slice(0, 121)}....
         </div>
       </div>
     </div>
