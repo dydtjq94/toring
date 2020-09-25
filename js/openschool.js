@@ -7,10 +7,12 @@ const popupFirst = document.querySelector(`.form__popup`);
 const popupCloseBtn = document.querySelector(`.popup__close__button`);
 const openSubmitButton = document.querySelector(`.phone__submit__button`);
 const openSubmitInput = document.querySelector(`.phone__submit__input`);
-
 const openSchoolContentWrap = document.querySelector(
   `.open__school__content__wrap`
 );
+const thx = document.querySelector(`#thx`);
+
+console.log(thx);
 
 function goSchoolTitle(e) {
   openSchoolTitle.innerHTML = `
@@ -51,7 +53,25 @@ function openSchoolApply(e) {
 }
 
 function handleOpenApply() {
-  openSubmitInput.value = "신청중입니다. 잠시만 기다려주세요";
+  openSubmitInput.value = "신청중입니다. 잠시만 기다려주세요!";
+
+  setTimeout(function () {
+    blackBoard.classList.add("none");
+  }, 10000);
+
+  let link = setInterval(function () {
+    if (thx.style.display === "block") {
+      openSubmitInput.value = "신청이 완료되었습니다!";
+
+      setTimeout(function () {
+        blackBoard.classList.add("none");
+        popupFirst.classList.remove("popup__anim__result");
+        popupFirst.classList.add("popup__anim__up");
+      }, 610);
+
+      clearInterval(link);
+    }
+  }, 200);
 }
 
 function init() {
