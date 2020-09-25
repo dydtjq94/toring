@@ -1,3 +1,10 @@
+.pop__parent {
+  display: flex;
+  justify-content: center;
+  top: 0;
+  width: 100%;
+}
+
 .open__school__wrap {
   width: 90%;
   display: flex;
@@ -7,8 +14,8 @@
 
 .open__school__title {
   width: 100%;
-  margin-top: 30px;
-  font-size: 24px;
+  margin-top: 20px;
+  font-size: 20px;
   font-weight: 700;
 }
 
@@ -20,7 +27,7 @@
 }
 
 .open__school__content {
-  margin-top: 30px;
+  margin-top: 20px;
 
   width: 47%;
 }
@@ -56,5 +63,185 @@
 }
 
 .open__school__content__button:hover {
+  cursor: pointer;
+}
+
+.openschool__phone__wrap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.openschool__concern__wrap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.openschool__phone__title {
+  width: 100%;
+  text-align: center;
+  color: black;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  margin-top: 30px;
+}
+
+.school__submit__input {
+  outline: none;
+  border: none;
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+
+.school__submit__input::placeholder {
+  color: white;
+  font-size: 20px;
+}
+
+.openschool__phone__sub {
+  margin-top: 12px;
+  color: #383838;
+}
+
+.openschool__concern__column {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.openschool__phone__submit,
+.openschool__concern {
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.openschool__input {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #0123b4;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 20px;
+  width: 70%;
+}
+
+.openschool__input::placeholder {
+  color: #b6b6b6;
+  font-weight: 700;
+}
+
+.phone__submit__input {
+  font-size: 16px;
+  background-color: #0123b4;
+  border: none;
+  color: white;
+  border-radius: 12px;
+  padding: 16px 20px;
+  width: 70%;
+  outline: none;
+  margin-bottom: 6px;
+}
+
+.phone__submit__input:hover {
+  cursor: pointer;
+}
+
+.phone__submit__button {
+  width: 100%;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.openschool__concern__title {
+  text-align: center;
+  line-height: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.openschool__concern__button__wrap {
+  width: 100%;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.openschool__concern__input {
+  font-size: 16px;
+  background-color: #0123b4;
+  border: none;
+  color: white;
+  border-radius: 12px;
+  padding: 16px 20px;
+  width: 70%;
+  outline: none;
+  margin-bottom: 6px;
+}
+
+.openschool__concern__input:hover {
+  cursor: pointer;
+}
+
+.form__popup {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  opacity: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  transition: 0.3s transform;
+  transform: translateY(-375px);
+}
+
+.popup__anim__result {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.popup__anim__up {
+  opacity: 1;
+  transform: translateY(-375px);
+}
+
+#openschool__phone__origin {
+  background-color: white;
+  margin: 0px auto;
+}
+
+.black__board {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 1;
+}
+
+.black__board:hover {
+  cursor: pointer;
+}
+
+.popup__close__button {
+  color: black;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 24px;
+  padding: 20px;
+}
+
+.popup__close__button:hover {
   cursor: pointer;
 }

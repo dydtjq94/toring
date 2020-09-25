@@ -149,7 +149,13 @@
   width: 90%;
   font-size: 24px;
   font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.tag__lower__sub {
+  width: 90%;
   margin-bottom: 20px;
+  color: #555555;
 }
 
 .tag__lower__column__wrap {

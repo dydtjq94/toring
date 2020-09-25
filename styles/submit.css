@@ -7,8 +7,6 @@
 
 .gform {
   width: 100%;
-  display: flex;
-  flex-direction: column;
 }
 
 .submit__title {
@@ -235,7 +233,6 @@
   border: none;
   color: white;
   border-radius: 12px;
-
   padding: 16px 20px;
   width: 90%;
   outline: none;
@@ -264,7 +261,6 @@
   line-height: 24px;
   border-top: 1px solid #203aac;
   border-bottom: 1px solid #203aac;
-
   color: #203aac;
   padding: 20px 0;
   margin-bottom: 20px;
