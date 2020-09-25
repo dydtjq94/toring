@@ -10,6 +10,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 120px;
 }
 
 .open__school__title {
@@ -51,7 +52,6 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 10px 20px;
   border-radius: 6px;
   font-size: 14px;
   color: #5a5a5a;
@@ -59,7 +59,20 @@
 }
 
 .open__school__num {
+  width: 30%;
   color: rgb(0, 121, 177);
+  text-align: right;
+  padding: 10px 20px 10px 0;
+}
+
+.skyblue__bold {
+  color: rgb(0, 121, 177);
+  font-weight: 700;
+}
+
+.apply__open {
+  width: 70%;
+  padding: 10px 0px 10px 20px;
 }
 
 .open__school__content__button:hover {

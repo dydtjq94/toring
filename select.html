@@ -74,24 +74,71 @@
         <button class="tag__button"></button>
       </div>
       <div class="tag__lower__wrap">
-        <div class="tag__lower__title">우리 학교가 없나요? (준비중)</div>
-        <div class="tag__lower__column__wrap">
-          <div class="tag__lower__column">
-            <div class="tag__lower__left">
-              <div class="tag__lower__left__des">
-                우리 학교 학생 5명이 모이면 <br />원하시는 멘토를 찾아 드려요.
-              </div>
-              <div class="tag__lower__left__button">
-                우리 학교 토링 개설하기
-              </div>
-            </div>
-            <div class="tag__lower__right">
-              <img src="./img/addschool.png" alt="" class="tag__lower__img" />
-            </div>
-          </div>
+        <div class="tag__lower__title">우리 학교 멘토가 없나요?</div>
+        <div class="tag__lower__sub">
+          5명이 신청하면 토링이 해당 학교 멘토를 모집해요.
+        </div>
+        <div class="open__school__wrap">
+          <div class="open__school__title">멘토 모집 신청 가능 고등학교</div>
+          <div class="open__school__content__wrap"></div>
         </div>
       </div>
     </div>
+    <div class="black__board none"></div>
+    <div class="form__popup">
+      <form
+        action="https://script.google.com/macros/s/AKfycbzMJEI0x4Mxzyfd2a5RNo-rh69KxHdtW-6Z2c-QEonOg6L5zso/exec"
+        class="gform"
+        id="openschool__phone__origin"
+        method="POST"
+        data-email="example@email.net"
+      >
+        <div class="openschool__phone__wrap">
+          <div class="openschool__phone__title">
+            <input
+              type="text"
+              class="school__submit__input"
+              name="school"
+              placeholder=""
+              required
+            />
+          </div>
+          <div class="openschool__phone__sub">
+            전화번호는 알림 용도로만 사용됩니다!😊
+          </div>
+          <div class="openschool__phone__submit">
+            <input
+              type="number"
+              class="openschool__input"
+              name="schoolphone"
+              placeholder="ex. 01083139943"
+              required
+            />
+          </div>
+          <div style="display: none" class="thankyou_message" id="thx">
+            <h2 class="guide__m none">
+              신청이 완료되었습니다. <br />감사합니다!
+            </h2>
+          </div>
+          <div class="phone__submit__button">
+            <input
+              type="submit"
+              value="모집 신청"
+              class="phone__submit__input"
+            />
+          </div>
+        </div>
+      </form>
+      <div class="popup__close__button">
+        <i class="fas fa-times"></i>
+      </div>
+    </div>
   </body>
+  <script
+    data-cfasync="false"
+    type="text/javascript"
+    src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"
+  ></script>
+  <script src="js/openschool.js"></script>
   <script src="js/select.js"></script>
 </html>
