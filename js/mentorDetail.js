@@ -1200,6 +1200,7 @@ const mentors = [
 ];
 
 const mentorWrite = document.querySelector(".mentor");
+const buyMentorText = document.querySelector(`.buy__off`);
 const temp = location.href.split("?");
 const forResult = temp[1].split(":")[1];
 
@@ -1214,6 +1215,8 @@ function paintMentorDetail() {
     }
     i++;
   }
+
+  buyMentorText.innerText = `${mentors[resultNum].name} 멘토님 | ${mentors[resultNum].univ} ${mentors[resultNum].major} | ${mentors[resultNum].school}`;
 
   let mentorExp = "";
 
