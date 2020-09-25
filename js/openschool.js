@@ -130,9 +130,9 @@ function paintOpenSchool() {
       <div class="open__school__content__img">
         <img
           src="./img/openschool/${openSchoolList[e].nameEng}.png"
-          alt=""
           class="open__school__img"
         />
+        <div class="black__school__board"></div>
       </div>
       <div class="open__school__content__title">${openSchoolList[e].name}</div>
       <div class="open__school__content__button">
