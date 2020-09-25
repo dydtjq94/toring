@@ -69,7 +69,7 @@ function handleOpenApply(e) {
 
   let link = setInterval(function () {
     if (thx.style.display === "block") {
-      openSubmitInput.value = "신청이 완료되었습니다!";
+      openSubmitInput.value = "신청 완료! 다른 학교 멘토들 보여드릴게요!";
 
       setTimeout(function () {
         blackBoard.classList.add("none");
@@ -77,8 +77,8 @@ function handleOpenApply(e) {
         popupFirst.classList.add("popup__anim__up");
         setTimeout(function () {
           location.href = "result.html";
-        }, 310);
-      }, 610);
+        }, 510);
+      }, 1410);
 
       clearInterval(link);
     }
@@ -92,7 +92,7 @@ function handleOpenApply(e) {
       }, 1210);
 
       clearInterval(link);
-    }, 6000);
+    }, 8000);
   }, 2);
 }
 
