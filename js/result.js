@@ -1289,7 +1289,19 @@ function handleMentorPaint(e) {
       resultPaint =
         resultPaint +
         ` <div class="result__sample ${e[i].nameEng}">
-    <div class="sample__marking">마감임박</div>
+        ${
+          e[i].label === 0
+            ? `<div class="sample__marking">
+            모집중
+          </div>`
+            : e[i].label === 1
+            ? `<div class="sample__marking2">
+            마감 임박!
+          </div>`
+            : `<div class="sample__marking3">
+          모집 마감
+        </div>`
+        }
     <img src="img/${e[i].univEng}campus.png" class="sample__campus" />
     <div class="sample__lower">
       <img src="img/${e[i].nameEng}.jpeg" alt="" class="sample__mentor__face" />

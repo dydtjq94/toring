@@ -1336,18 +1336,6 @@ const btn = document.querySelector(`#btn`);
 const target = document.querySelector(`#target`);
 const snackBar = document.querySelector(`#snackbar`);
 
-const monthButton = document.querySelector(`.passbook__select__month`);
-const semesterButton = document.querySelector(`.passbook__select__semester`);
-const selectedLine = document.querySelector(`.passbook__selected__line`);
-const selectMonth = document.querySelector(`.passbook__select__month`);
-const selectSemester = document.querySelector(`.passbook__select__semester`);
-const passbookTitle = document.querySelector(`.passbook__title2`);
-const price1 = document.querySelector(`.before__price`);
-const price2 = document.querySelector(`.off__content__price`);
-const price3 = document.querySelector(`.after__price`);
-const price4 = document.querySelector(`.info__price__content`);
-const offContent = document.querySelector(`.off__content`);
-
 const handleCopy = (e) => {
   console.log(target);
   target.select();
