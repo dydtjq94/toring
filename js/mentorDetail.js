@@ -6,6 +6,7 @@ const mentors = [
     univ: "서울대",
     univEng: "seoul",
     major: "생명과학부",
+    majorNum: 0,
     year: "20학번",
     school: "휘문고",
     label: 1, //0이 모집중 1이 마감임박 2마감
@@ -88,6 +89,7 @@ const mentors = [
     univ: "연세대",
     univEng: "yonsei",
     major: "도시공학과",
+    majorNum: 0,
     year: "20학번",
     school: "현대고",
     label: 0, //0이 모집중 1이 마감임박 2마감
@@ -161,6 +163,7 @@ const mentors = [
     univ: "서울대",
     univEng: "seoul",
     major: "수의예과",
+    majorNum: 0,
     year: "19학번",
     school: "진선여고",
     label: 2, //0이 모집중 1이 마감임박 2마감
@@ -228,6 +231,7 @@ const mentors = [
     univ: "연세대",
     univEng: "yonsei",
     major: "건축공학과",
+    majorNum: 0,
     year: "18학번",
     school: "경기여고",
     label: 1, //0이 모집중 1이 마감임박 2마감
@@ -294,6 +298,7 @@ const mentors = [
     univ: "연세대",
     univEng: "yonsei",
     major: "전기전자공학부",
+    majorNum: 0,
     year: "20학번",
     school: "휘문고",
     label: 1, //0이 모집중 1이 마감임박 2마감
@@ -361,6 +366,7 @@ const mentors = [
     univ: "연세대",
     univEng: "yonsei",
     major: "중어중문학과",
+    majorNum: 0,
     year: "20학번",
     school: "개포고",
     label: 1, //0이 모집중 1이 마감임박 2마감
@@ -440,6 +446,7 @@ const mentors = [
     univ: "고려대",
     univEng: "korea",
     major: "경영학과",
+    majorNum: 0,
     year: "20학번",
     school: "숙명여고",
     label: 0, //0이 모집중 1이 마감임박 2마감
@@ -507,6 +514,7 @@ const mentors = [
     univ: "서울대",
     univEng: "seoul",
     major: "기계공학전공",
+    majorNum: 0,
     year: "19학번",
     school: "숙명여고",
     label: 0, //0이 모집중 1이 마감임박 2마감
@@ -577,6 +585,7 @@ const mentors = [
     univ: "연세대",
     univEng: "yonsei",
     major: "실내건축학과",
+    majorNum: 0,
     year: "19학번",
     school: "숙명여고",
     label: 0, //0이 모집중 1이 마감임박 2마감
@@ -648,6 +657,7 @@ const mentors = [
     univ: "연세대",
     univEng: "yonsei",
     major: "경제학과",
+    majorNum: 0,
     year: "19학번",
     school: "숙명여고",
     label: 1, //0이 모집중 1이 마감임박 2마감
@@ -718,6 +728,7 @@ const mentors = [
     univ: "고려대",
     univEng: "korea",
     major: "한문학과",
+    majorNum: 0,
     year: "20학번",
     school: "진선여고",
     label: 1, //0이 모집중 1이 마감임박 2마감
@@ -787,6 +798,7 @@ const mentors = [
     univ: "서울대",
     univEng: "seoul",
     major: "윤리교육과",
+    majorNum: 0,
     year: "20학번",
     school: "개포고",
     label: 1, //0이 모집중 1이 마감임박 2마감
@@ -853,6 +865,7 @@ const mentors = [
     univ: "서울대",
     univEng: "seoul",
     major: "농경제사회학부",
+    majorNum: 0,
     year: "20학번",
     school: "중산고",
     label: 1, //0이 모집중 1이 마감임박 2마감
@@ -920,6 +933,7 @@ const mentors = [
     univ: "서울대",
     univEng: "seoul",
     major: "의예과",
+    majorNum: 1,
     year: "20학번",
     school: "중대부고",
     label: 1, //0이 모집중 1이 마감임박 2마감
@@ -990,6 +1004,7 @@ const mentors = [
     univ: "고려대",
     univEng: "korea",
     major: "경영학과",
+    majorNum: 0,
     year: "20학번",
     school: "단대부고",
     label: 1, //0이 모집중 1이 마감임박 2마감
@@ -1067,6 +1082,7 @@ const mentors = [
     univ: "연세대",
     univEng: "yonsei",
     major: "경영학과",
+    majorNum: 0,
     year: "20학번",
     school: "단대부고",
     label: 1, //0이 모집중 1이 마감임박 2마감
@@ -1139,6 +1155,7 @@ const mentors = [
     univ: "연세대",
     univEng: "yonsei",
     major: "의예과",
+    majorNum: 1,
     year: "20학번",
     school: "휘문고",
     label: 1, //0이 모집중 1이 마감임박 2마감
@@ -1336,8 +1353,17 @@ ${mentors[resultNum].title}
     <div class="price__price">
       <div class="price__price__left">1회 (100분)</div>
       <div class="price__price__right">
-        <span class="price__original">149,000원</span>
-        <span class="price__black">99,000원</span>
+        ${
+          mentors[resultNum].majorNum == 0
+            ? `
+            <span class="price__original">129,000원</span>
+            <span class="price__black">99,000원</span>
+            `
+            : `
+            <span class="price__original">199,000원</span>
+            <span class="price__black">149,000원</span>
+            `
+        }
       </div>
     </div>
   </div>
@@ -1662,7 +1688,7 @@ function recommendationMentor() {
 
     </div>
     <div class="sample__under">
-      <div class="sample__price">1회 99,000원</div>
+      <div class="sample__price"></div>
       <div class="sample__button">멘토님 이야기 자세히 보기 ></div>
     </div>
   </div>
@@ -1702,7 +1728,7 @@ ${
 
       </div>
       <div class="sample__under">
-        <div class="sample__price">1회 99,000원</div>
+        <div class="sample__price"></div>
         <div class="sample__button">멘토님 이야기 자세히 보기 ></div>
       </div>
     </div>

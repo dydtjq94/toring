@@ -6,6 +6,7 @@ const mentors = [
     univ: "서울대",
     univEng: "seoul",
     major: "생명과학부",
+    majorNum: 0,
     year: "20학번",
     school: "휘문고",
     label: 1, //0이 모집중 1이 마감임박 2마감
@@ -88,6 +89,7 @@ const mentors = [
     univ: "연세대",
     univEng: "yonsei",
     major: "도시공학과",
+    majorNum: 0,
     year: "20학번",
     school: "현대고",
     label: 0, //0이 모집중 1이 마감임박 2마감
@@ -161,6 +163,7 @@ const mentors = [
     univ: "서울대",
     univEng: "seoul",
     major: "수의예과",
+    majorNum: 0,
     year: "19학번",
     school: "진선여고",
     label: 2, //0이 모집중 1이 마감임박 2마감
@@ -228,6 +231,7 @@ const mentors = [
     univ: "연세대",
     univEng: "yonsei",
     major: "건축공학과",
+    majorNum: 0,
     year: "18학번",
     school: "경기여고",
     label: 1, //0이 모집중 1이 마감임박 2마감
@@ -294,6 +298,7 @@ const mentors = [
     univ: "연세대",
     univEng: "yonsei",
     major: "전기전자공학부",
+    majorNum: 0,
     year: "20학번",
     school: "휘문고",
     label: 1, //0이 모집중 1이 마감임박 2마감
@@ -361,6 +366,7 @@ const mentors = [
     univ: "연세대",
     univEng: "yonsei",
     major: "중어중문학과",
+    majorNum: 0,
     year: "20학번",
     school: "개포고",
     label: 1, //0이 모집중 1이 마감임박 2마감
@@ -440,6 +446,7 @@ const mentors = [
     univ: "고려대",
     univEng: "korea",
     major: "경영학과",
+    majorNum: 0,
     year: "20학번",
     school: "숙명여고",
     label: 0, //0이 모집중 1이 마감임박 2마감
@@ -507,6 +514,7 @@ const mentors = [
     univ: "서울대",
     univEng: "seoul",
     major: "기계공학전공",
+    majorNum: 0,
     year: "19학번",
     school: "숙명여고",
     label: 0, //0이 모집중 1이 마감임박 2마감
@@ -577,6 +585,7 @@ const mentors = [
     univ: "연세대",
     univEng: "yonsei",
     major: "실내건축학과",
+    majorNum: 0,
     year: "19학번",
     school: "숙명여고",
     label: 0, //0이 모집중 1이 마감임박 2마감
@@ -648,6 +657,7 @@ const mentors = [
     univ: "연세대",
     univEng: "yonsei",
     major: "경제학과",
+    majorNum: 0,
     year: "19학번",
     school: "숙명여고",
     label: 1, //0이 모집중 1이 마감임박 2마감
@@ -718,6 +728,7 @@ const mentors = [
     univ: "고려대",
     univEng: "korea",
     major: "한문학과",
+    majorNum: 0,
     year: "20학번",
     school: "진선여고",
     label: 1, //0이 모집중 1이 마감임박 2마감
@@ -787,6 +798,7 @@ const mentors = [
     univ: "서울대",
     univEng: "seoul",
     major: "윤리교육과",
+    majorNum: 0,
     year: "20학번",
     school: "개포고",
     label: 1, //0이 모집중 1이 마감임박 2마감
@@ -853,6 +865,7 @@ const mentors = [
     univ: "서울대",
     univEng: "seoul",
     major: "농경제사회학부",
+    majorNum: 0,
     year: "20학번",
     school: "중산고",
     label: 1, //0이 모집중 1이 마감임박 2마감
@@ -920,6 +933,7 @@ const mentors = [
     univ: "서울대",
     univEng: "seoul",
     major: "의예과",
+    majorNum: 1,
     year: "20학번",
     school: "중대부고",
     label: 1, //0이 모집중 1이 마감임박 2마감
@@ -990,6 +1004,7 @@ const mentors = [
     univ: "고려대",
     univEng: "korea",
     major: "경영학과",
+    majorNum: 0,
     year: "20학번",
     school: "단대부고",
     label: 1, //0이 모집중 1이 마감임박 2마감
@@ -1067,6 +1082,7 @@ const mentors = [
     univ: "연세대",
     univEng: "yonsei",
     major: "경영학과",
+    majorNum: 0,
     year: "20학번",
     school: "단대부고",
     label: 1, //0이 모집중 1이 마감임박 2마감
@@ -1139,6 +1155,7 @@ const mentors = [
     univ: "연세대",
     univEng: "yonsei",
     major: "의예과",
+    majorNum: 1,
     year: "20학번",
     school: "휘문고",
     label: 1, //0이 모집중 1이 마감임박 2마감
@@ -1223,9 +1240,6 @@ function paintMentor() {
   const temp = decodeURI(location.href);
   const mentorName = temp.split("?")[1];
   const parentName = temp.split("?")[2];
-  const mentorForm = document.querySelector(`.price__mentor__content`);
-  const parentForm = document.querySelector(`#parent`);
-  const title2Form = document.querySelector(`.passbook__title2`);
 
   let resultNum = 0;
 
@@ -1236,6 +1250,11 @@ function paintMentor() {
       break;
     }
   }
+  paintPrice(resultNum);
+
+  const mentorForm = document.querySelector(`.price__mentor__content`);
+  const parentForm = document.querySelector(`#parent`);
+  const title2Form = document.querySelector(`.passbook__title2`);
 
   mentorForm.innerHTML = `<div class="price__left">
 <div class="price__left__content">${mentors[resultNum].name} 멘토님</div>
@@ -1247,6 +1266,104 @@ ${mentors[resultNum].title}
 </div>`;
   parentForm.innerHTML = parentName;
   title2Form.innerHTML = `<span class="orange__underline">${mentors[resultNum].school} 멘토링</span> (1회 - 100분)`;
+}
+
+function paintPrice(e) {
+  const totalPrice = document.querySelector(`.total__price`);
+  const passbook = document.querySelector(`.passbook`);
+  totalPrice.innerHTML = `<div class="passbook__title2"></div>
+  <div class="price__mentor__content"></div>
+  <div class="total__price__column__wrap">
+    <div class="total__price__column">
+      <div class="before__price__title">정가</div>
+    </div>
+    <div class="total__price__column">
+      
+      ${
+        mentors[e].majorNum == 0
+          ? `
+          <div class="before__price">129,000원</div>
+          `
+          : `
+          <div class="before__price">199,000원</div>
+          `
+      }
+    </div>
+    <div class="total__price__column">
+      <div class="off__title">할인</div>
+    </div>
+    <div class="total__price__column total__off">
+      
+      ${
+        mentors[e].majorNum == 0
+          ? `
+          <div class="off__content">NEW 24% 할인</div>
+          <div class="off__content__price">-30,000원</div>
+          `
+          : `
+          <div class="off__content">NEW 26% 할인</div>
+          <div class="off__content__price">-50,000원</div>
+          `
+      }
+    </div>
+    <div class="total__price__column">
+      <div class="after__price__title">최종 결제 금액</div>
+    </div>
+    <div class="total__price__column">
+      
+      ${
+        mentors[e].majorNum == 0
+          ? `
+          <div class="after__price">99,000원</div>
+          `
+          : `
+          <div class="after__price">149,000원</div>
+          `
+      }
+    </div>
+  </div>`;
+  passbook.innerHTML = `<div class="passbook__column">
+<div class="passbook__num__title">입금 계좌</div>
+<div class="passbook__num__content">
+<input
+  type="text"
+  class="num__content"
+  id="target"
+  value="530402-01-226704"
+  readonly
+/>
+<div class="num__copy2" id="btn">복사하기</div>
+</div>
+</div>
+<div class="passbook__column">
+<div class="passbook__info">
+<div class="info__bank__title">입금 은행</div>
+<div class="info__bank__content">국민은행</div>
+</div>
+<div class="passbook__info">
+<div class="info__name__title">예금주</div>
+<div class="info__name__content">지현준</div>
+</div>
+</div>
+<div class="passbook__column">
+<div class="passbook__price">
+<div class="info__bank__title">입금액</div>
+${
+  mentors[e].majorNum == 0
+    ? `
+    <div class="info__price__content">99,000원</div>
+    `
+    : `
+    <div class="info__price__content">149,000원</div>
+    `
+}
+
+</div>
+<div class="passbook__price">
+<div class="info__bank__title">입금자명</div>
+<div class="info__price__content" id="parent"></div>
+</div>
+</div>`;
 }
 
 function passbookButton() {

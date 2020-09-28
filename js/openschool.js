@@ -3,12 +3,12 @@ const openSchoolList = [
   { name: "경기고", nameEng: "kyungki", applyNum: "3/5" },
   { name: "영동고", nameEng: "youngdong", applyNum: "1/5" },
   { name: "서울고", nameEng: "seoulhigh", applyNum: "2/5" },
-  { name: "중동고", nameEng: "joongdong", applyNum: "2/5" },
+  { name: "중동고", nameEng: "joongdong", applyNum: "3/5" },
   { name: "반포고", nameEng: "banpo", applyNum: "2/5" },
   { name: "잠실여고", nameEng: "jamsilw", applyNum: "2/5" },
   { name: "정신여고", nameEng: "joungsinw", applyNum: "1/5" },
   { name: "외대부고", nameEng: "yongin", applyNum: "3/5" },
-  { name: "대원외고", nameEng: "daewon", applyNum: "3/5" },
+  { name: "대원외고", nameEng: "daewon", applyNum: "4/5" },
 ];
 
 const openSchoolContentWrap = document.querySelector(
