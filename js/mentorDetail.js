@@ -1587,13 +1587,55 @@ ${mentors[resultNum].special[2].detail}
   
 </div>
 </div>
+<div class="price2">
+<div class="price__title">멘토링 이용 안내</div>
+
+<div class="price__column__wrap">
+  <div class="price__column">
+    <div class="price__content__upper">
+      100분동안 학생부, 내신, 정시, 동기부여 등 내가 원하는 내용의
+      멘토링을 받을 수 있습니다. 신청 후 원하는 멘토링 방향을 말씀해
+      주시면, 그 내용을 바탕으로 멘토가 멘토링을 준비합니다.
+    </div>
+    <div class="price__content__lower">
+      <div class="price__content__benefit">
+        <i class="fas fa-check-circle"></i> 1:1 멘토링 (100분)
+      </div>
+      <div class="price__content__benefit">
+        <i class="fas fa-check-circle"></i> 개인 맞춤 멘토링 일지 발급
+      </div>
+      <div class="price__content__benefit">
+        <i class="fas fa-check-circle"></i> 멘토링 이후의 학습 방향
+        제시
+      </div>
+    </div>
+  </div>
+  <div class="price__column">
+    <div class="price__price">
+      <div class="price__price__left">1회 (100분)</div>
+      <div class="price__price__right">
+        ${
+          mentors[resultNum].majorNum == 0
+            ? `
+            <span class="price__original">129,000원</span>
+            <span class="price__black">99,000원</span>
+            `
+            : `
+            <span class="price__original">199,000원</span>
+            <span class="price__black">149,000원</span>
+            `
+        }
+      </div>
+    </div>
+  </div>
+</div>
+</div>
 <div class="other__wrap">
 <div class="other__title">대치동 주변 추천 멘토
 <span class="again__result">고등학교 선택하기 ></span>
 </div>
 <div class="other"></div>
 </div>
-
 `;
 }
 

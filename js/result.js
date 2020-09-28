@@ -1295,11 +1295,8 @@ function handleMentorPaint(e) {
 
       </div>
       <div class="sample__under">
-        ${
-          e[i].majorNum == 0
-            ? `<div class="sample__price">1회 99,000원</div>`
-            : `<div class="sample__price">1회 149,000원</div>`
-        }
+   
+        <div class="sample__price"></div>
         <div class="sample__button">멘토님 이야기 자세히 보기 ></div>
       </div>
     </div>
