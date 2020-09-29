@@ -1187,7 +1187,7 @@ const mentors = [
       },
       {
         title: `박상하 멘토님은 이런 사람이에요!`,
-        detail: `고등학교 3년 수시와 정시를 모두 동시에 준비해봤습니다. 둘 다 나쁘지 않은 수준까지는 도달했으나, 완전한 노력을 쏟지는 못해 얻은 결과에 대한 후회가 남았습니다. 그래서 재수생활 1년동안 모든거를 받쳐서 연세대에 입학했습니다. 자기관리 방법과 동기부여할 수 았는 방법을 알려드리겠습니다.`,
+        detail: `고등학교 3년 수시와 정시를 모두 동시에 준비해봤습니다. 둘 다 나쁘지 않은 수준까지는 도달했으나, 완전한 노력을 쏟지는 못해 얻은 결과에 대한 후회가 남았습니다. 그래서 재수생활 1년동안 모든 것을 바쳐서 연세대에 입학했습니다. 자기관리 방법과 동기부여할 수 았는 방법을 알려드리겠습니다.`,
       },
     ],
     review: [
@@ -1290,21 +1290,17 @@ const mentorName = temp.split("?")[1];
 const mentiName = temp.split("?")[2];
 const week = temp.split("?")[3];
 
-console.log(mentorName, mentiName);
-
 let resultNum = 0;
 
 for (let i = 0; i < mentors.length; i++) {
   if (mentors[i].name === mentorName) {
     resultNum = i;
-    console.log(i);
     break;
   }
 }
 
 for (let j = 0; j < menties.length; j++) {
   if (menties[j].mentiName === mentiName) {
-    console.log(j);
     resultNum2 = j;
     break;
   }
@@ -1373,45 +1369,12 @@ ${menties[resultNum2].mentiName} 멘티님의 한 주 목표는 무엇인가요?
 
 </div>`;
 
-const differButton = document.querySelector(`.differ__button`);
-const kakaoButton = document.querySelector(`.passbook__button__kakao`);
-const homeButton = document.querySelector(`.passbook__button__home`);
-
-const btn = document.querySelector(`#btn`);
-const target = document.querySelector(`#target`);
-const snackBar = document.querySelector(`#snackbar`);
-
-const monthButton = document.querySelector(`.passbook__select__month`);
-const semesterButton = document.querySelector(`.passbook__select__semester`);
-const selectedLine = document.querySelector(`.passbook__selected__line`);
-const selectMonth = document.querySelector(`.passbook__select__month`);
-const selectSemester = document.querySelector(`.passbook__select__semester`);
-const passbookTitle = document.querySelector(`.passbook__title2`);
-const price1 = document.querySelector(`.before__price`);
-const price2 = document.querySelector(`.off__content__price`);
-const price3 = document.querySelector(`.after__price`);
-const price4 = document.querySelector(`.info__price__content`);
-const offContent = document.querySelector(`.off__content`);
-
-const handleCopy = (e) => {
-  console.log(target);
-  target.select();
-  document.execCommand("Copy");
-  snackBar.classList.add("snackbar__anim");
-  setTimeout(function () {
-    snackBar.classList.remove("snackbar__anim");
-  }, 2000);
-};
-
-function handleDiffer() {
-  var newWindow = window.open("about:blank");
-  newWindow.location.href = "http://pf.kakao.com/_WMMxgxb/chat";
+function documentTitleChange() {
+  document.title = `토링 | ${mentiName} 멘티님`;
 }
 
-// function handleHome() {
-//   location.href = "index.html";
-// }
-
-function init() {}
+function init() {
+  documentTitleChange();
+}
 
 init();

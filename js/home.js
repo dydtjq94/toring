@@ -1187,7 +1187,7 @@ const mentors = [
       },
       {
         title: `박상하 멘토님은 이런 사람이에요!`,
-        detail: `고등학교 3년 수시와 정시를 모두 동시에 준비해봤습니다. 둘 다 나쁘지 않은 수준까지는 도달했으나, 완전한 노력을 쏟지는 못해 얻은 결과에 대한 후회가 남았습니다. 그래서 재수생활 1년동안 모든거를 받쳐서 연세대에 입학했습니다. 자기관리 방법과 동기부여할 수 았는 방법을 알려드리겠습니다.`,
+        detail: `고등학교 3년 수시와 정시를 모두 동시에 준비해봤습니다. 둘 다 나쁘지 않은 수준까지는 도달했으나, 완전한 노력을 쏟지는 못해 얻은 결과에 대한 후회가 남았습니다. 그래서 재수생활 1년동안 모든 것을 바쳐서 연세대에 입학했습니다. 자기관리 방법과 동기부여할 수 았는 방법을 알려드리겠습니다.`,
       },
     ],
     review: [
@@ -1220,17 +1220,17 @@ const scroll = document.querySelectorAll(`.scroll`);
 const countNum = document.querySelector(`#count__num`);
 const secondContentWrap = document.querySelector(`.second__content__wrap`);
 
-function scrollAppear(event) {
-  event.style.transition = "all 1s ease-in-out";
-  event.classList.add("gone");
+function scrollAppear(e) {
+  e.style.transition = "all 1s ease-in-out";
+  e.classList.add("gone");
   window.addEventListener("scroll", () => {
-    let elPos = event.getBoundingClientRect().top,
+    let elPos = e.getBoundingClientRect().top,
       pos = window.innerHeight / 1;
 
     if (elPos < pos) {
-      event.classList.add("appear");
+      e.classList.add("appear");
     } else {
-      event.classList.remove("appear");
+      e.classList.remove("appear");
     }
   });
 }
