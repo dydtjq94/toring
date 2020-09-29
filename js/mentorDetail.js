@@ -1332,7 +1332,7 @@ ${mentors[resultNum].title}
 <div class="price__column__wrap">
   <div class="price__column">
     <div class="price__content__upper">
-      100분동안 학생부, 내신, 정시, 동기부여 등 내가 원하는 내용의
+      100분동안 고등학교생활, 학생부, 내신, 정시, 동기부여 등 내가 원하는 내용의
       멘토링을 받을 수 있습니다. 신청 후 원하는 멘토링 방향을 말씀해
       주시면, 그 내용을 바탕으로 멘토가 멘토링을 준비합니다.
     </div>
@@ -1593,7 +1593,7 @@ ${mentors[resultNum].special[2].detail}
 <div class="price__column__wrap">
   <div class="price__column">
     <div class="price__content__upper">
-      100분동안 학생부, 내신, 정시, 동기부여 등 내가 원하는 내용의
+      100분동안 고등학교생활, 학생부, 내신, 정시, 동기부여 등 내가 원하는 내용의
       멘토링을 받을 수 있습니다. 신청 후 원하는 멘토링 방향을 말씀해
       주시면, 그 내용을 바탕으로 멘토가 멘토링을 준비합니다.
     </div>
