@@ -1,4 +1,4 @@
-import { mentors } from "./mentorInfo.js";
+import { mentors } from "./mentorInfo";
 
 const scroll = document.querySelectorAll(`.scroll`);
 const countNum = document.querySelector(`#count__num`);
