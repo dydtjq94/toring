@@ -1,0 +1,12 @@
+.mentoring__management__wrap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .menti__name {
+    width: 90%;
+    font-size: 24px;
+    font-weight: 700;
+    padding-top: 20px;
+  }
+}

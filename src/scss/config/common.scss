@@ -1,0 +1,103 @@
+body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  font-family: "Gilroy", sans-serif;
+}
+
+.body {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+.body,
+.body__onboarding {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+}
+
+/* 모바일 */
+@media screen and (min-width: 500px) {
+  .body,
+  .body__onboarding {
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    border-right: 0.3px solid rgba(107, 107, 107, 0.2);
+    border-left: 0.3px solid rgba(107, 107, 107, 0.2);
+  }
+
+  .buy {
+    width: 500px;
+  }
+
+  .header {
+    width: 500px;
+  }
+
+  .snackbar__result {
+    width: 500px;
+  }
+
+  .black__loading {
+    width: 500px;
+  }
+  .num__copy {
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 6px 12px 0px 12px;
+    color: white;
+    font-size: 14px;
+  }
+  .form__popup {
+    width: 500px;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.blue__bold {
+  color: #0123b4;
+  font-weight: 700;
+}
+
+.under {
+  text-decoration: underline;
+}
+
+.orange__underline {
+  text-decoration: none;
+  border-bottom: 3px solid rgba(245, 78, 0, 0.7);
+  padding-bottom: 0px;
+}
+
+input[type="submit"] {
+  -webkit-appearance: none;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.none {
+  display: none;
+  transform: translateY(100px);
+}
