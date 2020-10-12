@@ -1199,44 +1199,29 @@ function handleMentorPaint(e) {
       resultPaint =
         resultPaint +
         ` <div class="result__sample ${e[i].nameEng}">
-  ${
-    e[i].label === 0
-      ? `<div class="sample__marking">
-      모집중
-    </div>`
-      : e[i].label === 1
-      ? `<div class="sample__marking2">
-      마감 임박!
-    </div>`
-      : `<div class="sample__marking3">
-    모집 마감
-  </div>`
-  }
-    <img src="img/${e[i].univEng}campus.png" class="sample__campus" />
-    <div class="sample__lower">
-      <img src="img/${e[i].nameEng}.jpeg" alt="" class="sample__mentor__face" />
-      <div class="sample__univ">
-        <img src="img/${e[i].univEng}.png" class="sample__uni__mark" />
-        ${e[i].univ}학교 ${e[i].major} ${e[i].year}
-      </div>
-      <div class="sample__title">
-      ${e[i].title}
-      </div>
-      <div class="sample__tag">
-        <div class="sample__tag__column tag__univ bold" id="tag__univ">
-          # ${e[i].school}
+        ${
+          e[i].label === 0
+            ? `<div class="result__condition">
+            모집중
+          </div>`
+            : e[i].label === 1
+            ? `<div class="result__condition2">
+            마감 임박!
+          </div>`
+            : `<div class="result__condition3">
+          모집 마감
+        </div>`
+        }
+        <div class="result__sample__content">
+          <div class="result__name">${e[i].school} - ${e[i].univ}학교</div>
+          <div class="result__sub">${e[i].major} ${e[i].year}</div>
+          <div class="result__info">${e[i].name} 멘토님 ㅣ ${e[i].method}</div>
+          <div class="result__button">더보기</div>
         </div>
-        <div class="sample__tag__column"># ${e[i].mentoring[0]}</div>
-        <div class="sample__tag__column"># ${e[i].mentoring[1]}</div>
-
-      </div>
-      <div class="sample__under">
-   
-        <div class="sample__price"></div>
-        <div class="sample__button">멘토님 이야기 자세히 보기 ></div>
-      </div>
-    </div>
-  </div>`;
+        <div class="result__sample__img">
+          <img src="./img/${e[i].nameEng}.jpeg" class="result__img" />
+        </div>
+      </div>`;
     }
   } else {
     for (let i = 0; i < 10; i++) {
@@ -1245,42 +1230,27 @@ function handleMentorPaint(e) {
         ` <div class="result__sample ${e[i].nameEng}">
         ${
           e[i].label === 0
-            ? `<div class="sample__marking">
+            ? `<div class="result__condition">
             모집중
           </div>`
             : e[i].label === 1
-            ? `<div class="sample__marking2">
+            ? `<div class="result__condition2">
             마감 임박!
           </div>`
-            : `<div class="sample__marking3">
+            : `<div class="result__condition3">
           모집 마감
         </div>`
         }
-    <img src="img/${e[i].univEng}campus.png" class="sample__campus" />
-    <div class="sample__lower">
-      <img src="img/${e[i].nameEng}.jpeg" alt="" class="sample__mentor__face" />
-      <div class="sample__univ">
-        <img src="img/${e[i].univEng}.png" class="sample__uni__mark" />
-        ${e[i].univ}학교 ${e[i].major} ${e[i].year}
-      </div>
-      <div class="sample__title">
-      ${e[i].title}
-      </div>
-      <div class="sample__tag">
-        <div class="sample__tag__column tag__univ bold" id="tag__univ">
-          # ${e[i].school}
+        <div class="result__sample__content">
+          <div class="result__name">${e[i].school} - ${e[i].univ}학교</div>
+          <div class="result__sub">${e[i].major} ${e[i].year}</div>
+          <div class="result__info">${e[i].name} 멘토님 ㅣ ${e[i].method}</div>
+          <div class="result__button">더보기</div>
         </div>
-        <div class="sample__tag__column"># ${e[i].mentoring[0]}</div>
-        <div class="sample__tag__column"># ${e[i].mentoring[1]}</div>
-
-      </div>
-      <div class="sample__under">
-    
-      <div class="sample__price"></div>
-        <div class="sample__button">멘토님 이야기 자세히 보기 ></div>
-      </div>
-    </div>
-  </div>`;
+        <div class="result__sample__img">
+          <img src="./img/${e[i].nameEng}.jpeg" class="result__img" />
+        </div>
+      </div>`;
     }
   }
 
