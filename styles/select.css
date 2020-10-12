@@ -93,9 +93,9 @@
 }
 
 .selected__tag {
-  color: #4055af;
-  background-color: white;
-  border: 1px solid #4055af;
+  color: white;
+  background-color: #0123b4;
+  border: 1px solid #0123b4;
 }
 
 .tag__button__wrap {
