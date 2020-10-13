@@ -1359,7 +1359,7 @@ ${mentors[resultNum].title}
 </div>
 <div class="change__wrap">
 <div class="change__title">
-  멘토링 이후, 당신은 ⎽⎽⎽⎽ 한 사람이 됩니다!
+  멘토링 이후, 당신은 _____ 한 사람이 됩니다!
 </div>
 <div class="change__content">
   <div class="change__content__column">
