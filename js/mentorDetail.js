@@ -1,5 +1,54 @@
 const mentors = [
   {
+    name: "김혜리",
+    nameEng: "hyeli",
+    gender: "여",
+    univ: "연세대",
+    univEng: "yonsei",
+    major: "도시공학과",
+    majorNum: 0,
+    year: "19학번",
+    school: "개포고",
+    label: 0, //0이 모집중 1이 마감임박 2마감
+    labelNum: 1,
+    title: "개포고 이과 언니가 알려주는 연세대 공대 가는 방법",
+    method: "학생부 종합",
+    mentoring: ["학생부 관리", "내신 관리법"],
+    experience: [
+      `개포고등학교 졸업`,
+      `연세대학교 학생부 종합 전형으로 입학(활동 우수형)`,
+      `고2 수학, 영어 과외 경험`,
+      `중1 수학 과외 경험`,
+      `고3 수학학원 조교 경험`,
+    ],
+    being: [
+      `서울대 진학을 위한 수시 준비와 정시 준비를 동시에 할 수 있는`,
+      `스스로 계획을 짜서 공부할 수 있는 방법에 기반해 효율적인 학습이 가능한`,
+      `개포고에서 학생부를 내가 원하는 과의 특성에 맞춰 작성하는 방법을 아는`,
+    ],
+    special: [
+      {
+        title: `코로나 때문에 학습습관이 무너졌어요. 어떻게 하면 좋을까요?`,
+        detail: `친구들이나 과외 선생님과 함께 공부하는 시간을 따로 정해서 해당 시간 동안은 본인이 공부가 잘 되는 공간(독서실, 스터디 카페 등)에 필수적으로 출석하는 연습을 하다보면 관성이 생겨 학습 습관을 다시 잡을 수 있을 것입니다. 초반에는 학습 습관이 무너진 상태라 집중이 안될 수 있지만 일정수준 이상의 공부시간을 투입해야 집중력이 향상되어 공부의 질이 높아집니다.  때문에 집중이 잘 되지 않아도 공부 시간을 초반에 투입해주어야 합니다.`,
+      },
+      {
+        title: `멘토님과 같은 고등학교(개포고)를 다니고 있습니다. 혹시 우리
+              학교 내신이나 학생부는 어떤 식으로 준비해야 하나요?`,
+        detail: `내신 관리의 경우 주요 과목은 단순 암기에 더하여 수능형 문제가 많이 출제되기 때문에 비 내신기간에도 수능형 문제를 많이 풀어보는 것이 결국 내신에 도움이 됩니다. 또한 학교 특성 상 이과 인원수가 많지 않아 선택과목을 고르게 되면 선택 인원이 많은 쪽이 유리합니다. 학생부 관리는 크게 대회 준비, 독서 기록, 진로 기입 사항으로 나눌 수 있습니다. 간략하게 설명드리자면 대회 준비는 중간, 기말 고사에 영향을 최소화해서 비 시험기간에 준비해야 하고, 독서 기록의 경우 각 과목 당 두권 정도의 독후감을 작성해서 기록하는 것이 좋습니다. 진로 기입 사항은 학년이 올라갈수록 희망 분야를 점점 구체화하는 방식으로 기입하는 것이 좋습니다.`,
+      },
+      {
+        title: `정진호 멘토님은 이런 사람이에요!`,
+        detail: `고등학교 재학 기간 중 학생부와 내신을 함께 관리하기 위해 노력했습니다. 학생부를 준비하기 위해 대회나 독서 활동을 하다보면 내신 공부에 집중하기 어려울 때가 많았는데, 그럴 때에 양쪽의 균형을 맞추어 준비하는 방법을 터득하여 시간을 효율적으로 활용하려했습니다. 수험기간 멘탈관리와 시간관리를 중점적으로 관리해드릴 수 있습니다!`,
+      },
+    ],
+    review: [],
+    mainQnA: {
+      title: "개포고 내신이나 학생부는 어떻게 준비하면 좋을까요?",
+      sub:
+        "1학년때부터 학생부나 내신 관리를 잘하고 싶은데, 어떤 방향으로 해야 할지 조언 좀 부탁드립니다.",
+    },
+  },
+  {
     name: "정진호",
     nameEng: "jinho",
     gender: "남",
@@ -1465,63 +1514,68 @@ ${mentors[resultNum].special[2].detail}
 </div>
 </div>
 <div class="review__wrap">
-<div class="review">
-  <div class="review__title">
-    <span class="bold">생생한 멘토링 후기</span>
-  </div>
-  <div class="review__column">
-  <div class="review__column__column">
-  <img src="./img/reviewimg1.png" alt="" class="review__img" />
-  <div class="review__user">
-      ${mentors[resultNum].review[0].user}
-      <span class="review__date"
-        >${mentors[resultNum].review[0].date}</span
-      >
+
+${
+  mentors[resultNum].review.length == 0
+    ? `
+  <div class="review">
+    <div class="review__title">
+      <span class="bold">생생한 멘토링 후기</span>
+    </div>
+  </div>`
+    : `
+  <div class="review">
+    <div class="review__title">
+      <span class="bold">생생한 멘토링 후기</span>
+    </div>
+    <div class="review__column">
+      <div class="review__column__column">
+        <img src="./img/reviewimg1.png" alt="" class="review__img" />
+        <div class="review__user">
+          ${mentors[resultNum].review[0].user}
+          <span class="review__date">${mentors[resultNum].review[0].date}</span>
+        </div>
+      </div>
+      <div class="review__column__column">
+        <div class="review__content__extra"></div>
+        <div class="review__content">
+          ${mentors[resultNum].review[0].content}
+        </div>
+      </div>
+    </div>
+    <div class="review__column">
+      <div class="review__column__column">
+        <img src="./img/reviewimg2.png" alt="" class="review__img" />
+        <div class="review__user">
+          ${mentors[resultNum].review[1].user}
+          <span class="review__date">${mentors[resultNum].review[1].date}</span>
+        </div>
+      </div>
+      <div class="review__column__column">
+        <div class="review__content__extra"></div>
+        <div class="review__content">
+          ${mentors[resultNum].review[1].content}
+        </div>
+      </div>
+    </div>
+    <div class="review__column">
+      <div class="review__column__column">
+        <img src="./img/reviewimg3.png" alt="" class="review__img" />
+        <div class="review__user">
+          ${mentors[resultNum].review[2].user}
+          <span class="review__date">${mentors[resultNum].review[2].date}</span>
+        </div>
+      </div>
+      <div class="review__column__column">
+        <div class="review__content__extra"></div>
+        <div class="review__content">
+          ${mentors[resultNum].review[2].content}
+        </div>
+      </div>
     </div>
   </div>
-  <div class="review__column__column">
-  <div class="review__content__extra"></div>
-    <div class="review__content">
-    ${mentors[resultNum].review[0].content}
-    </div>
-  </div>
-  </div>
-  <div class="review__column">
-  <div class="review__column__column">
-  <img src="./img/reviewimg2.png" alt="" class="review__img" />
-  <div class="review__user">
-      ${mentors[resultNum].review[1].user}
-      <span class="review__date"
-        >${mentors[resultNum].review[1].date}</span
-      >
-    </div>
-  </div>
-  <div class="review__column__column">
-  <div class="review__content__extra"></div>
-    <div class="review__content">
-    ${mentors[resultNum].review[1].content}
-    </div>
-  </div>
-  </div>
-  <div class="review__column">
-  <div class="review__column__column">
-  <img src="./img/reviewimg3.png" alt="" class="review__img" />
-  <div class="review__user">
-      ${mentors[resultNum].review[2].user}
-      <span class="review__date"
-        >${mentors[resultNum].review[2].date}</span
-      >
-    </div>
-  </div>
-  <div class="review__column__column">
-  <div class="review__content__extra"></div>
-    <div class="review__content">
-    ${mentors[resultNum].review[2].content}
-    </div>
-  </div>
-  </div>
-  
-</div>
+  `
+}
 </div>
 <div class="price2">
 <div class="price__title">멘토링 이용 안내</div>
@@ -1570,7 +1624,7 @@ ${mentors[resultNum].special[2].detail}
 <div class="other__title">대치동 주변 추천 멘토
 <span class="again__result">고등학교 선택하기 ></span>
 </div>
-<div class="other"></div>
+<div class="result__sample__wrap"></div>
 </div>
 `;
 }
@@ -1610,7 +1664,7 @@ function paintButton() {
 }
 
 function recommendationMentor() {
-  const otherPaint = document.querySelector(`.other`);
+  const otherPaint = document.querySelector(`.result__sample__wrap`);
   let n = Math.floor(Math.random() * mentors.length);
   let k = Math.floor(Math.random() * mentors.length);
 
@@ -1631,86 +1685,66 @@ function recommendationMentor() {
 
   console.log(n, k, forResult);
 
-  recommendMentor = `<div class="result__sample ${mentors[n].nameEng}">
-  ${
-    mentors[n].label === 0
-      ? `<div class="sample__marking">
-      모집중
-    </div>`
-      : mentors[n].label === 1
-      ? `<div class="sample__marking2">
-      마감 임박!
-    </div>`
-      : `<div class="sample__marking3">
-    모집 마감
-  </div>`
-  }
-  <img src="img/${mentors[n].univEng}campus.png" class="sample__campus" />
-  <div class="sample__lower">
-    <img src="img/${
-      mentors[n].nameEng
-    }.jpeg" alt="" class="sample__mentor__face" />
-    <div class="sample__univ">
-      <img src="img/${mentors[n].univEng}.png" class="sample__uni__mark" />
-      ${mentors[n].univ}학교 ${mentors[n].major} ${mentors[n].year}
-    </div>
-    <div class="sample__title">
-    ${mentors[n].title}
-    </div>
-    <div class="sample__tag">
-      <div class="sample__tag__column tag__univ bold" id="tag__univ">
-        # ${mentors[n].school}
-      </div>
-      <div class="sample__tag__column"># ${mentors[n].mentoring[0]}</div>
-      <div class="sample__tag__column"># ${mentors[n].mentoring[1]}</div>
-
-    </div>
-    <div class="sample__under">
-      <div class="sample__price"></div>
-      <div class="sample__button">멘토님 이야기 자세히 보기 ></div>
-    </div>
-  </div>
-</div>
-<div class="result__sample ${mentors[k].nameEng}">
-${
-  mentors[k].label === 0
-    ? `<div class="sample__marking">
-    모집중
-  </div>`
-    : mentors[k].label === 1
-    ? `<div class="sample__marking2">
-    마감 임박!
-  </div>`
-    : `<div class="sample__marking3">
-  모집 마감
-</div>`
-}
-    <img src="img/${mentors[k].univEng}campus.png" class="sample__campus" />
-    <div class="sample__lower">
-      <img src="img/${
-        mentors[k].nameEng
-      }.jpeg" alt="" class="sample__mentor__face" />
-      <div class="sample__univ">
-        <img src="img/${mentors[k].univEng}.png" class="sample__uni__mark" />
-        ${mentors[k].univ}학교 ${mentors[k].major} ${mentors[k].year}
-      </div>
-      <div class="sample__title">
-      ${mentors[k].title}
-      </div>
-      <div class="sample__tag">
-        <div class="sample__tag__column tag__univ bold" id="tag__univ">
-          # ${mentors[k].school}
+  recommendMentor = `
+  <div class="result__sample ${mentors[n].nameEng}">
+        ${
+          mentors[n].label === 0
+            ? `<div class="result__condition">
+            모집중
+          </div>`
+            : mentors[n].label === 1
+            ? `<div class="result__condition2">
+            마감 임박!
+          </div>`
+            : `<div class="result__condition3">
+          모집 마감
+        </div>`
+        }
+        <div class="result__sample__content">
+          <div class="result__name">${mentors[n].school} - ${
+    mentors[n].univ
+  }학교</div>
+          <div class="result__sub">${mentors[n].major} ${mentors[n].year}</div>
+          <div class="result__info">${mentors[n].name} 멘토님 ㅣ ${
+    mentors[n].method
+  }</div>
+          <div class="result__button">더보기</div>
         </div>
-        <div class="sample__tag__column"># ${mentors[k].mentoring[0]}</div>
-        <div class="sample__tag__column"># ${mentors[k].mentoring[1]}</div>
+        <div class="result__sample__img">
+          <img src="./img/${mentors[n].nameEng}.jpeg" class="result__img" />
+        </div>
+      </div>
 
+      <div class="result__sample ${mentors[k].nameEng}">
+        ${
+          mentors[k].label === 0
+            ? `<div class="result__condition">
+            모집중
+          </div>`
+            : mentors[k].label === 1
+            ? `<div class="result__condition2">
+            마감 임박!
+          </div>`
+            : `<div class="result__condition3">
+          모집 마감
+        </div>`
+        }
+        <div class="result__sample__content">
+          <div class="result__name">${mentors[k].school} - ${
+    mentors[k].univ
+  }학교</div>
+          <div class="result__sub">${mentors[k].major} ${mentors[k].year}</div>
+          <div class="result__info">${mentors[k].name} 멘토님 ㅣ ${
+    mentors[k].method
+  }</div>
+          <div class="result__button">더보기</div>
+        </div>
+        <div class="result__sample__img">
+          <img src="./img/${mentors[k].nameEng}.jpeg" class="result__img" />
+        </div>
       </div>
-      <div class="sample__under">
-        <div class="sample__price"></div>
-        <div class="sample__button">멘토님 이야기 자세히 보기 ></div>
-      </div>
-    </div>
-  </div>
+  
+  
 `;
 
   otherPaint.innerHTML = recommendMentor;
