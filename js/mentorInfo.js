@@ -11,7 +11,7 @@ export const mentors = [
     school: "개포고",
     label: 0, //0이 모집중 1이 마감임박 2마감
     labelNum: 1,
-    title: "개포고 이과 언니가 알려주는 연세대 공대 가는 방법",
+    title: "이과 언니가 알려주는 개포고에서 SKY 가는 방법",
     method: "학생부 종합",
     mentoring: ["학생부 관리", "내신 관리법"],
     experience: [
