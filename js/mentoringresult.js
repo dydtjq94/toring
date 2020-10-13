@@ -12,7 +12,7 @@ const mentors = [
     label: 1, //0이 모집중 1이 마감임박 2마감
     labelNum: 1,
     title: "서울대 합격생이 후배에게 알려주고 싶은 휘문고 입시의 모든 것.",
-    method: "정시 전형",
+    method: "정시",
     mentoring: ["학습법 전문", "슬럼프 극복"],
     experience: [
       `휘문고등학교 졸업`,
@@ -94,7 +94,7 @@ const mentors = [
     label: 0, //0이 모집중 1이 마감임박 2마감
     labelNum: 3,
     title: "현대고에서 학생부 전형 준비! 이렇게 시작해야 합니다.",
-    method: "특기자 전형",
+    method: "특기자",
     mentoring: ["멘탈 관리", "진로 설정"],
     experience: [
       `현대고등학교 이과 졸업`,
@@ -168,7 +168,7 @@ const mentors = [
     label: 2, //0이 모집중 1이 마감임박 2마감
     labelNum: 0,
     title: "진선여고에서 수시로 서울대 진학하기",
-    method: "수시 일반 전형",
+    method: "수시 일반",
     mentoring: ["과목별 공부법", "멘탈 관리"],
     experience: [
       `진선여자고등학교 졸업`,
@@ -237,7 +237,7 @@ const mentors = [
     labelNum: 1,
     title:
       "경기여고 내신과 학생부! 가장 현실적이고 정확한 노하우를 전해드릴게요.",
-    method: "학생부 종합 전형",
+    method: "학생부 종합",
     mentoring: ["진로 설정", "슬럼프 극복"],
     experience: [
       `경기여자고등학교 전교 3등 졸업 `,
@@ -304,7 +304,7 @@ const mentors = [
     label: 1, //0이 모집중 1이 마감임박 2마감
     labelNum: 2,
     title: "연세대 합격생이 알려주는 휘문고에서 성적 상승 곡선 그리기",
-    method: "논술 전형",
+    method: "논술",
     mentoring: ["성적 상승", "학습 습관 관리"],
     experience: [
       `휘문고등학교 졸업`,
@@ -372,7 +372,7 @@ const mentors = [
     label: 1, //0이 모집중 1이 마감임박 2마감
     labelNum: 2,
     title: "꿈꿔왔던 대학교 합격, 개포고 졸업과 동시에 현실로 만들기.",
-    method: "정시 전형",
+    method: "정시",
     mentoring: ["엄격한 코치", "성적 상승"],
     experience: [
       `개포고 졸업`,
@@ -452,7 +452,7 @@ const mentors = [
     labelNum: 3,
     title:
       "부모님 도움 없이 숙명여고에서 고려대 합격한 비법, 그대로 전해드릴게요.",
-    method: "학교장 추천 전형",
+    method: "학교장 추천",
     mentoring: ["자기 주도 학습", "동기 부여"],
     experience: [
       `숙명여고 졸업`,
@@ -521,7 +521,7 @@ const mentors = [
     labelNum: 3,
     title:
       "숙명여고에서 서울대는 누가 가는걸까? 이렇게 공부하는 학생들이 갑니다.",
-    method: "수시 일반 전형",
+    method: "수시 일반",
     mentoring: ["진로 설정", "효율적인 공부"],
     experience: [
       `숙명여고 이과 졸업`,
@@ -593,7 +593,7 @@ const mentors = [
     labelNum: 3,
     title:
       "숙명여고 최상위권은 이유가 있습니다. 100분에 꾹꾹 눌러담은 숙명여고 입시 꿀팁",
-    method: "정시 전형",
+    method: "정시",
     mentoring: ["성적 상승", "학교 생활"],
     experience: [
       `숙명여고 졸업`,
@@ -665,7 +665,7 @@ const mentors = [
     labelNum: 1,
     title:
       "진선여고 학생부와 수시, 미리 설계하는 학생이 이길 수 밖에 없는 이유",
-    method: "학생부 종합 전형",
+    method: "학생부 종합",
     mentoring: ["슬럼프 극복", "성적 급상승"],
     experience: [
       `진선여고 심화반(얼리버드) 졸업`,
@@ -736,7 +736,7 @@ const mentors = [
     labelNum: 1,
     title:
       "1학년 내신 2.87이었던 학생부로 서울대 합격한 비법, 완벽하게 전달해드릴게요.",
-    method: "학생부 종합 전형",
+    method: "학생부 종합",
     mentoring: ["성적 급상승", "학생부 전문"],
     experience: [
       `개포고등학교 졸업`,
@@ -804,7 +804,7 @@ const mentors = [
     labelNum: 2,
     title:
       "‘공부 머리’는 따로 있다고요? 갖게 해드릴게요. 서울대도 가게 해드릴게요.",
-    method: "정시 전형",
+    method: "정시",
     mentoring: ["과목별 공부법", "성적 상승 곡선"],
     experience: [
       `중산고등학교 졸업`,
@@ -872,7 +872,7 @@ const mentors = [
     labelNum: 1,
     title:
       "서울대 의대는 누가 가는걸까? 중대부고 선배가 알려주는 내신과 학생부 관리의 핵심!",
-    method: "학생부 종합 전형",
+    method: "학생부 종합",
     mentoring: ["서울대 의대", "과목별 공부법"],
     experience: [
       `중대부고 졸업`,
@@ -944,7 +944,7 @@ const mentors = [
     labelNum: 2,
     title:
       "단대부고 내신 최상위권은 이렇게 공부합니다. 모르면 솔직히 손해 맞습니다.",
-    method: "학생부 종합 전형",
+    method: "학생부 종합",
     mentoring: ["학생부 전문", "친 형 같은"],
     experience: [
       `단대부고 졸업`,
@@ -1023,7 +1023,7 @@ const mentors = [
     labelNum: 1,
     title:
       "단대부고에서 SKY 합격하는 생기부는 시작부터 다릅니다. 100분동안 완벽하게 알려드릴게요.",
-    method: "학생부 종합 전형",
+    method: "학생부 종합",
     mentoring: ["정시 수시 동시", "과목별 학습법"],
     experience: [
       `단대부고 졸업`,
@@ -1097,7 +1097,7 @@ const mentors = [
     labelNum: 1,
     title:
       "의대 진학을 위해 모든 것을 바쳤던 시간, 거기서 얻은 것을 전해드릴게요.",
-    method: "정시 전형",
+    method: "정시",
     mentoring: ["연세대 의대", "학습 습관 관리"],
     experience: [
       `휘문고등학교 졸업`,
