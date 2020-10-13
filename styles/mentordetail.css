@@ -682,6 +682,10 @@
   font-size: 14px;
 }
 
+.again__result:hover {
+  cursor: pointer;
+}
+
 .other,
 .other2 {
   width: 100%;
