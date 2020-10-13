@@ -19,6 +19,9 @@
     -webkit-box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.75);
     box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.75);
+    :hover {
+      cursor: pointer;
+    }
     .result__sample__content {
       display: flex;
       flex-direction: column;
