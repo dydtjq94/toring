@@ -68,6 +68,11 @@ body {
   box-sizing: border-box;
 }
 
+.none {
+  display: none;
+  transform: translateY(100px);
+}
+
 .bold {
   font-weight: 700;
 }
@@ -95,9 +100,4 @@ input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
-}
-
-.none {
-  display: none;
-  transform: translateY(100px);
 }
