@@ -215,7 +215,7 @@ export const mentors = [
     majorNum: 0,
     year: "19학번",
     school: "진선여고",
-    label: 2, //0이 모집중 1이 마감임박 2마감
+    label: 1, //0이 모집중 1이 마감임박 2마감
     labelNum: 0,
     title: "진선여고에서 수시로 서울대 진학하기",
     method: "수시 일반",
