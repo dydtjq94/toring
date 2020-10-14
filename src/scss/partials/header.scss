@@ -39,15 +39,3 @@
   text-decoration: none;
   color: #0123b4;
 }
-
-@media screen and (min-width: 500px) {
-  .header {
-    width: 500px;
-  }
-}
-
-@media screen and (max-width: 499px) {
-  .header {
-    width: 100%;
-  }
-}
