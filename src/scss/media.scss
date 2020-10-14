@@ -1,0 +1,52 @@
+// desktop
+
+@media screen and (min-width: 500px) {
+  .header {
+    width: 500px;
+  }
+  .body,
+  .body__onboarding {
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    border-right: 0.3px solid rgba(107, 107, 107, 0.2);
+    border-left: 0.3px solid rgba(107, 107, 107, 0.2);
+  }
+
+  .buy {
+    width: 500px;
+  }
+
+  .header {
+    width: 500px;
+  }
+
+  .snackbar__result {
+    width: 500px;
+  }
+
+  .black__loading {
+    width: 500px;
+  }
+  .num__copy {
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 6px 12px 0px 12px;
+    color: white;
+    font-size: 14px;
+  }
+  .form__popup {
+    width: 500px;
+  }
+}
+
+// 모바일
+
+@media screen and (max-width: 499px) {
+  .header {
+    width: 100%;
+  }
+}
