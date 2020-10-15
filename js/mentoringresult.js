@@ -1370,7 +1370,7 @@ ${QNA}
   <div class="story__content__wrap">
 ${menties[resultNum2].mentiName} 멘티님의 목표는 무엇인가요?
     <div class="story__content__description">
-    ${menties[resultNum2].mentoringCont}
+    ${menties[resultNum2].mentoringPurpose}
     </div>
   </div>
 </div>
