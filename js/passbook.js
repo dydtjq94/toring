@@ -1364,7 +1364,7 @@ function paintPrice(e) {
   type="text"
   class="num__content"
   id="target"
-  value="530402-01-226704"
+  value="3333-17-3142700"
   readonly
 />
 <div class="num__copy2" id="btn">복사하기</div>
@@ -1373,7 +1373,7 @@ function paintPrice(e) {
 <div class="passbook__column">
 <div class="passbook__info">
 <div class="info__bank__title">입금 은행</div>
-<div class="info__bank__content">국민은행</div>
+<div class="info__bank__content">카카오뱅크</div>
 </div>
 <div class="passbook__info">
 <div class="info__name__title">예금주</div>
