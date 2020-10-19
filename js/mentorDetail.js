@@ -1379,8 +1379,12 @@ ${mentors[resultNum].title}
         <i class="fas fa-check-circle"></i> 개인 맞춤 멘토링 일지 발급
       </div>
       <div class="price__content__benefit">
-        <i class="fas fa-check-circle"></i> 멘토링 이후의 학습 방향
-        제시
+        <i class="fas fa-check-circle"></i> 
+        ${mentors[resultNum].school} 학생부 및 내신 관리 비법 전수
+      </div>
+      <div class="price__content__benefit">
+        <i class="fas fa-check-circle"></i> 
+        ${mentors[resultNum].name} 멘토님의 ${mentors[resultNum].school} 이야기
       </div>
     </div>
   </div>
@@ -1648,8 +1652,12 @@ ${
         <i class="fas fa-check-circle"></i> 개인 맞춤 멘토링 일지 발급
       </div>
       <div class="price__content__benefit">
-        <i class="fas fa-check-circle"></i> 멘토링 이후의 학습 방향
-        제시
+        <i class="fas fa-check-circle"></i> 
+        ${mentors[resultNum].school} 학생부 및 내신 관리 비법 전수
+      </div>
+      <div class="price__content__benefit">
+        <i class="fas fa-check-circle"></i> 
+        ${mentors[resultNum].name} 멘토님의 ${mentors[resultNum].school} 이야기
       </div>
     </div>
   </div>
