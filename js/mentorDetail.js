@@ -1400,7 +1400,7 @@ ${mentors[resultNum].title}
   </div>
 </div>
 
-<div class="price__button" id="goButton">멘토링 신청하기</div>
+<div class="price__button" id="goButton">1:1 멘토링 신청하기</div>
 </div>
 <div class="change__wrap">
 <div class="change__title">
