@@ -204,7 +204,7 @@
 }
 
 .tag__univ {
-  color: rgb(0, 121, 177);
+  color: $blue2;
   font-weight: 700;
 }
 
@@ -318,7 +318,7 @@
   box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.4);
   text-decoration: none;
   color: white;
-  background-color: #0123b4;
+  background-color: $blue2;
   border: none;
   padding: 15px 50px;
   border-radius: 12px;
@@ -746,7 +746,7 @@
   padding-top: 18px;
   text-align: center;
   background-color: #e6e6e6;
-  color: #0123b4;
+  color: $blue2;
   border: none;
   line-height: 18px;
   border-radius: 12px;
@@ -761,7 +761,7 @@
   padding-top: 18px;
   text-align: center;
   border: none;
-  background-color: #0123b4;
+  background-color: $blue2;
   color: white;
   border-radius: 12px;
   font-size: 18px;

@@ -1261,7 +1261,6 @@ function scrollAppear(e) {
   window.addEventListener("scroll", () => {
     let elPos = e.getBoundingClientRect().top,
       pos = window.innerHeight / 1;
-
     if (elPos < pos) {
       e.classList.add("appear");
     } else {

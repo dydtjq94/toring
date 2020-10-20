@@ -1292,8 +1292,12 @@ function handleLoadMentor() {
 
 function handleMentorPaint(e) {
   let resultPaint = ``;
+  let resultPaintAdd = ``;
+  const resultLoadingWrap = document.querySelector(`.ids__loading__wrap`);
+  flag = false;
+  console.log(e.length);
 
-  if (e.length < 10) {
+  if (e.length < 8) {
     for (let i = 0; i < e.length; i++) {
       resultPaint =
         resultPaint +
@@ -1322,8 +1326,9 @@ function handleMentorPaint(e) {
         </div>
       </div>`;
     }
+    console.log("10미만");
   } else {
-    for (let i = 0; i < 10; i++) {
+    for (let i = 0; i < 8; i++) {
       resultPaint =
         resultPaint +
         ` <div class="result__sample ${e[i].nameEng}">
@@ -1351,8 +1356,51 @@ function handleMentorPaint(e) {
         </div>
       </div>`;
     }
-  }
 
+    for (let j = 8; j < e.length; j++) {
+      resultPaintAdd =
+        resultPaintAdd +
+        ` <div class="result__sample ${e[j].nameEng}">
+        ${
+          e[j].label === 0
+            ? `<div class="result__condition">
+            모집중
+          </div>`
+            : e[j].label === 1
+            ? `<div class="result__condition2">
+            마감 임박!
+          </div>`
+            : `<div class="result__condition3">
+          모집 마감
+        </div>`
+        }
+        <div class="result__sample__content">
+          <div class="result__name">${e[j].school} - ${e[j].univ}학교</div>
+          <div class="result__sub">${e[j].major} ${e[j].year}</div>
+          <div class="result__info">${e[j].name} 멘토님 ㅣ ${e[j].method}</div>
+          <div class="result__button">더보기</div>
+        </div>
+        <div class="result__sample__img">
+          <img src="./img/${e[j].nameEng}.jpeg" class="result__img" />
+        </div>
+      </div>`;
+    }
+    window.onscroll = function () {
+      if (
+        window.innerHeight + window.scrollY >= document.body.offsetHeight &&
+        !flag
+      ) {
+        flag = true;
+        resultLoadingWrap.classList.remove("none");
+        setTimeout(function () {
+          resultLoadingWrap.classList.add("none");
+
+          resultPaint = resultPaint + resultPaintAdd;
+          resultSampleWrap.innerHTML = resultPaint;
+        }, 1200);
+      }
+    };
+  }
   resultSampleWrap.innerHTML = resultPaint;
 }
 
