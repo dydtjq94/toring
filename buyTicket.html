@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-174046756-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-174046756-1");
+    </script>
+
+    <!-- 네이버 애널리틱스  -->
+    <script type="text/javascript" src="//wcs.naver.net/wcslog.js"></script>
+    <script type="text/javascript">
+      if (!wcs_add) var wcs_add = {};
+      wcs_add["wa"] = "8d674525fa4f98";
+      if (window.wcs) {
+        wcs_do();
+      }
+    </script>
+    <!-- 네이버 애널리틱스 끝 -->
+    <meta
+      name="naver-site-verification"
+      content="19d24390858f25ea9dc1b6cec2cc8111d541da80"
+    />
+    <link rel="shortcut icon" href="./img/favicon.ico" />
+    <link rel="icon" href="./img/favicon.ico" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="토링 | SKY 대학생 멘토링 서비스" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:description"
+      content="대치동 우리 고등학교 선배들이 직접 답해주는 입시, 대학교 정보 SKY 19, 20 학번 선배들에게 듣는 가장 리얼한 입시와 학교 정보"
+    />
+    <meta property="og:url" content="https://www.toring.me/" />
+    <meta
+      property="og:image"
+      content="https://i.ibb.co/9yRcmbF/welcome-logo.png"
+    />
+
+    <link rel="stylesheet" href="dest/css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <title>토링 | 멘토링 신청</title>
+  </head>
+  <header class="header">
+    <a href="javascript:history.back()" class="header__back">
+      <i class="fas fa-chevron-left" style="user-select: auto"></i>
+    </a>
+
+    <a href="index.html" class="header__toring">
+      토링 <span class="semi__logo">대치</span></a
+    >
+    <a href="javascript:location.reload()" class="transparent">
+      <i class="fas fa-chevron-left" style="user-select: auto"></i>
+    </a>
+  </header>
+  <body>
+    <div class="black__loading none">
+      <div class="submit__rotate__background">
+        <div class="submit__rotate">
+          <div class="submit__circle"></div>
+          <div class="submit__circle"></div>
+          <div class="submit__circle"></div>
+        </div>
+      </div>
+      신청중입니다! <br />
+      잠시만 기다려주세요!
+    </div>
+
+    <div class="body">
+      <div class="submit__title">
+        <span class="span__title"
+          >토링 4회 멘토링권 구매하기<span class="on__bold">.</span></span
+        >
+      </div>
+
+      <div class="submitForm">
+        <form
+          action="https://script.google.com/macros/s/AKfycbzMJEI0x4Mxzyfd2a5RNo-rh69KxHdtW-6Z2c-QEonOg6L5zso/exec"
+          class="gform"
+          method="POST"
+          data-email="example@email.net"
+        >
+          <div class="submit">
+            <div class="submit__upper none"></div>
+            <div class="submit__column">
+              <div class="submit__price">
+                <div class="submit__name__title">학부모님 성함 *</div>
+                <input
+                  type="text"
+                  class="submit__name"
+                  name="nameTicket"
+                  placeholder="ex) 김미선"
+                  required
+                />
+              </div>
+            </div>
+            <div class="submit__column">
+              <div class="submit__price">
+                <div class="submit__name__title">학부모님 전화번호 *</div>
+                <input
+                  type="number"
+                  name="emailTicket"
+                  class="submit__tel"
+                  placeholder="ex) 01012345678"
+                  required
+                />
+              </div>
+            </div>
+            <div class="submit__column">
+              <div class="submit__price">
+                <div class="submit__name__title">
+                  학생 정보 (이름 / 학교 / 학년) *
+                </div>
+                <input
+                  type="text"
+                  name="studentTicket"
+                  class="submit__student"
+                  placeholder="ex) 윤지훈 / 휘문고 / 1학년"
+                  required
+                />
+              </div>
+            </div>
+            <div class="submit__column">
+              <div class="submit__price">
+                <div class="submit__name__title">간단하게 소개해주세요. *</div>
+                <textarea
+                  name="contentTicket"
+                  cols="10"
+                  rows="4"
+                  class="submit__content"
+                  placeholder="토링 대표님의 상담을 위해 고민 또는 학생 본인에 대해 간단하게 소개해주세요!"
+                  required
+                ></textarea>
+              </div>
+            </div>
+          </div>
+          <div style="display: none" class="thankyou_message" id="thx">
+            <h2 class="guide__m">
+              멘토링권 구매 신청이 완료되었습니다. <br />감사합니다!
+            </h2>
+          </div>
+          <div class="submit__button">
+            <input
+              type="submit"
+              value="멘토링권 4회 구매하기"
+              class="submit__submit"
+            />
+            <div class="submit__submit__ment">
+              작성하신 정보는 멘토링 상담을 위해서만 사용됩니다.
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+
+  <script
+    data-cfasync="false"
+    type="text/javascript"
+    src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"
+  ></script>
+  <script src="js/buyTicket.js"></script>
+</html>

@@ -1251,143 +1251,184 @@ const mentors = [
   },
 ];
 
-function handleCopy(e) {
-  const target = document.querySelector(`#target`);
-  const snackBar = document.querySelector(`#snackbar`);
-  target.select();
-  document.execCommand("Copy");
-  snackBar.classList.add("snackbar__anim");
+const form = document.querySelector(".submitForm");
+const submitName = document.querySelector(`.submit__name`);
+const submitTel = document.querySelector(`.submit__tel`);
+const submitStu = document.querySelector(`.submit__student`);
+const submitCon = document.querySelector(`.submit__content`);
+const submitBtn = document.querySelector(".submit__submit");
+const submitBtnPar = document.querySelector(`.submit__button`);
+const blackLoading = document.querySelector(".black__loading");
+const thx = document.querySelector(`#thx`);
+const temp = decodeURI(location.href);
+const name = temp.split(":")[2];
+
+submitBtn.disabled = true;
+
+let s1 = "";
+let s2 = "";
+let s3 = "";
+let s4 = "";
+
+function handleNameChange() {
+  s1 = submitName.value;
+  let setI = setInterval(function () {
+    console.log(s1, s2, s3, s4);
+    if (s1 !== "" && s2 !== "" && s3 !== "" && s4 !== "") {
+      submitBtn.style.backgroundColor = "#0123b4";
+      submitBtn.style.color = "white";
+      document.querySelector(`.submit__submit`).disabled = false;
+    }
+
+    if (document.querySelector(`.submit__submit`).disabled === false) {
+      clearInterval(setI);
+    }
+  }, 1000);
+}
+
+function handleTelChange() {
+  s2 = submitTel.value;
+}
+
+function handleStuChange() {
+  s3 = submitStu.value;
+}
+
+function handleConChange() {
+  s4 = submitCon.value;
+  let setI = setInterval(function () {
+    if (s1 !== "" && s2 !== "" && s3 !== "" && s4 !== "") {
+      submitBtn.style.backgroundColor = "#0123b4";
+      submitBtn.style.color = "white";
+      document.querySelector(`.submit__submit`).disabled = false;
+      setTimeout(function () {
+        submitBtn.classList.add("button__anim");
+      }, 10);
+    }
+
+    if (document.querySelector(`.submit__submit`).disabled === false) {
+      clearInterval(setI);
+    }
+  }, 800);
+}
+
+function handleConClick() {
+  s4 = "yes";
+  let setI = setInterval(function () {
+    if (s1 !== "" && s2 !== "" && s3 !== "" && s4 !== "") {
+      submitBtn.style.backgroundColor = "#0123b4";
+      submitBtn.style.color = "white";
+      document.querySelector(`.submit__submit`).disabled = false;
+      setTimeout(function () {
+        submitBtn.classList.add("button__anim");
+      }, 10);
+    }
+
+    if (document.querySelector(`.submit__submit`).disabled === false) {
+      clearInterval(setI);
+    }
+  }, 800);
+}
+
+function handleSubmit() {
   setTimeout(function () {
-    snackBar.classList.remove("snackbar__anim");
-  }, 2000);
+    blackLoading.classList.remove("none");
+  }, 1);
+  setTimeout(function () {
+    blackLoading.style.opacity = 1;
+  }, 10);
+
+  setTimeout(function () {
+    blackLoading.classList.add("none");
+  }, 10000);
+
+  let link = setInterval(function () {
+    if (thx.style.display === "block") {
+      blackLoading.style.opacity = 0;
+      submitBtnPar.style.opacity = 0;
+
+      setTimeout(function () {
+        blackLoading.classList.add("none");
+      }, 310);
+      setTimeout(function () {
+        location.href = `passbookTicket.html?${name}?${s1}`;
+      }, 500);
+      clearInterval(link);
+    }
+  }, 200);
 }
 
-function handleDiffer() {
-  var newWindow = window.open("about:blank");
-  newWindow.location.href = "http://pf.kakao.com/_WMMxgxb/chat";
+function handleClickSubmit() {
+  submitName.addEventListener("change", handleNameChange);
+  submitTel.addEventListener("change", handleTelChange);
+  submitStu.addEventListener("change", handleStuChange);
+  submitCon.addEventListener("change", handleConChange);
+  submitCon.addEventListener("click", handleConClick);
+  submitBtnPar.addEventListener("click", handleSubmit);
 }
 
-function handleHome() {
-  location.href = "index.html";
-}
-
-function paintMentor() {
-  const temp = decodeURI(location.href);
-  const mentorName = temp.split("?")[1];
-  const parentName = temp.split("?")[2];
+function padintSubmitUpper() {
+  const submitUpper = document.querySelector(`.submit__upper`);
 
   let resultNum = 0;
+  let i = 0;
 
-  for (let i = 0; i < mentors.length; i++) {
-    if (mentors[i].name === mentorName) {
+  for (;;) {
+    if (mentors[i].name === name) {
       resultNum = i;
-      console.log(i);
       break;
     }
+    i++;
   }
-  paintPrice(resultNum);
 
-  const mentorForm = document.querySelector(`.price__mentor__content`);
-  const parentForm = document.querySelector(`#parent`);
-  const title2Form = document.querySelector(`.passbook__title2`);
-
-  mentorForm.innerHTML = `<div class="price__left">
-<div class="price__left__content">${mentors[resultNum].name} 멘토님</div>
+  submitUpper.innerHTML = `<div class="submit__upper__wrap">
+<div class="submit__upper__column">
+  <img class="submit__mentor__img" src="./img/${mentors[resultNum].nameEng}.jpeg" />
 </div>
-<div class="price__left">
-<div class="price__left__content2">
-${mentors[resultNum].title}
+<div class="submit__upper__column">
+  <div class="submit__mentor__name">
+    <div class="submit__name__title">멘토링 진행 멘토</div>
+    <div class="submit__mentor__wrap">
+      <input
+        type="text"
+        name="mentor"
+        class="submit__mentor"
+        placeholder="학생 이름"
+        value="${mentors[resultNum].name} 멘토님"
+        readonly
+      />
+    </div>
+  </div>
+  <div class="submit__univ">
+    <div class="submit__school">
+      <div class="submit__name__title">멘토님 대학교</div>
+      <div class="submit__class">${mentors[resultNum].univ}학교</div>
+    </div>
+    <div class="submit__school">
+      <div class="submit__name__title">출신 고등학교</div>
+      <div class="submit__class">${mentors[resultNum].school} 졸</div>
+    </div>
+  </div>
+</div>
+</div>
+<div class="submit__lower__column">
+<div class="submit__upper2">
+  <div class="submit__text">
+    <i class="fas fa-quote-left"></i>
+    <div class="submit__center">
+      안녕하세요, 신청 감사합니다! 신청 완료를 위해 아래
+      항목들을 작성해주세요. 접수가 완료되면 제가 직접 100분동안
+      멘토링을 진행하고 있습니다 :)
+    </div>
+    <i class="fas fa-quote-right"></i>
+  </div>
 </div>
 </div>`;
-  parentForm.innerHTML = parentName;
-  title2Form.innerHTML = `<span class="orange__underline">${mentors[resultNum].school} 멘토링</span> (1회 - 100분)`;
-}
-
-function paintPrice(e) {
-  const totalPrice = document.querySelector(`.total__price`);
-  const passbook = document.querySelector(`.passbook`);
-  totalPrice.innerHTML = `<div class="passbook__title2"></div>
-  <div class="price__mentor__content"></div>
-  <div class="total__price__column__wrap">
-    <div class="total__price__column">
-      <div class="before__price__title">정가</div>
-    </div>
-    <div class="total__price__column">
-    
-          <div class="before__price">129,000원</div>
-
-    </div>
-    <div class="total__price__column">
-      <div class="off__title">할인</div>
-    </div>
-    <div class="total__price__column total__off">
-      
-
-          <div class="off__content">NEW 24% 할인</div>
-          <div class="off__content__price">-30,000원</div>
-
-    </div>
-    <div class="total__price__column">
-      <div class="after__price__title">최종 결제 금액</div>
-    </div>
-    <div class="total__price__column">
-
-          <div class="after__price">99,000원</div>
- 
-    </div>
-  </div>`;
-  passbook.innerHTML = `<div class="passbook__column">
-<div class="passbook__num__title">입금 계좌</div>
-<div class="passbook__num__content">
-<input
-  type="text"
-  class="num__content"
-  id="target"
-  value="3333-17-3142700"
-  readonly
-/>
-<div class="num__copy2" id="btn">복사하기</div>
-</div>
-</div>
-<div class="passbook__column">
-<div class="passbook__info">
-<div class="info__bank__title">입금 은행</div>
-<div class="info__bank__content">카카오뱅크</div>
-</div>
-<div class="passbook__info">
-<div class="info__name__title">예금주</div>
-<div class="info__name__content">지현준</div>
-</div>
-</div>
-<div class="passbook__column">
-<div class="passbook__price">
-<div class="info__bank__title">입금액</div>
-
-    <div class="info__price__content">99,000원</div>
-
-
-</div>
-<div class="passbook__price">
-<div class="info__bank__title">입금자명</div>
-<div class="info__price__content" id="parent"></div>
-</div>
-</div>`;
-}
-
-function passbookButton() {
-  const btn = document.querySelector(`#btn`);
-  const differButton = document.querySelector(`.differ__button`);
-  const kakaoButton = document.querySelector(`.passbook__button__kakao`);
-  const homeButton = document.querySelector(`.passbook__button__home`);
-  btn.addEventListener("click", handleCopy);
-  differButton.addEventListener("click", handleDiffer);
-  kakaoButton.addEventListener("click", handleDiffer);
-  homeButton.addEventListener("click", handleHome);
 }
 
 function init() {
-  paintMentor();
-  passbookButton();
+  padintSubmitUpper();
+  handleClickSubmit();
 }
 
 init();

@@ -1392,17 +1392,9 @@ ${mentors[resultNum].title}
     <div class="price__price">
       <div class="price__price__left">1회 (100분)</div>
       <div class="price__price__right">
-        ${
-          mentors[resultNum].majorNum == 0
-            ? `
             <span class="price__original">129,000원</span>
             <span class="price__black">99,000원</span>
-            `
-            : `
-            <span class="price__original">199,000원</span>
-            <span class="price__black">149,000원</span>
-            `
-        }
+            
       </div>
     </div>
   </div>
@@ -1665,21 +1657,54 @@ ${
     <div class="price__price">
       <div class="price__price__left">1회 (100분)</div>
       <div class="price__price__right">
-        ${
-          mentors[resultNum].majorNum == 0
-            ? `
             <span class="price__original">129,000원</span>
             <span class="price__black">99,000원</span>
-            `
-            : `
-            <span class="price__original">199,000원</span>
-            <span class="price__black">149,000원</span>
-            `
-        }
       </div>
     </div>
   </div>
+
 </div>
+<div class="price__button" id="goButton">1:1 멘토링 신청하기</div>
+
+</div>
+
+  <div class="price3">
+        <div class="price__title">
+          토링 <span class="orange__underline">실속 4회 </span>멘토링권
+        </div>
+        <div class="price__column__wrap">
+          <div class="price__column">
+            <div class="price__content__lower">
+              <div class="price__content__benefit">
+                <i class="fas fa-check-circle"></i> 어떤 멘토님이든 매번 원하는
+                멘토님 선택 가능!
+              </div>
+              <div class="price__content__benefit">
+                <i class="fas fa-check-circle"></i> 하루, 일주일, 한달 언제나
+                사용 가능!
+              </div>
+              <div class="price__content__benefit">
+                <i class="fas fa-check-circle"></i>
+                원하는 학교, 전공 멘토님 모집 요청 가능!
+              </div>
+              <div class="price__content__benefit">
+                <i class="fas fa-check-circle"></i>
+                신청 즉시 경기고 - 연세대 출신 토링 대표가 직접 상담!
+              </div>
+            </div>
+          </div>
+          <div class="price__column">
+            <div class="price__price">
+              <div class="price__price__left">1회당 (100분)</div>
+              <div class="price__price__right">
+                <span class="price__original">129,000원</span>
+                <span class="price__black">87,250원</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="price__button3" id="four__tickets__btn">4회 멘토링권 구매하기</div>
+      </div>
 </div>
 <div class="other__wrap">
 <div class="other__title">대치동 주변 추천 멘토
@@ -1694,6 +1719,14 @@ function handleClickSelect() {
   const a = document.querySelector(".mentor__name");
   const mentorName = a.innerText.split(" ")[0];
   const goSelectButton = document.querySelectorAll(`#goButton`);
+  const goFourTicket = document.querySelector(`#four__tickets__btn`);
+  goFourTicket.addEventListener("click", function handleTicketClick() {
+    goFourTicket.classList.add("click__anim");
+    setTimeout(function () {
+      goFourTicket.classList.remove("click__anim");
+    }, 410);
+    location.href = "buyTicket.html?" + "name" + ":" + mentorName;
+  });
   goSelectButton.forEach((e) =>
     e.addEventListener("click", function handleResultClick() {
       e.classList.add("click__anim");

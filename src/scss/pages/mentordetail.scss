@@ -225,7 +225,16 @@
   width: 100%;
   background-color: white;
   border-top: 1px solid rgb(190, 190, 190);
-  padding: 30px 0px;
+  padding: 30px 0px 10px 0;
+}
+
+.price3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: white;
+  padding: 30px 0px 10px 0;
 }
 
 .price__title {
@@ -266,10 +275,12 @@
 }
 .price__content__benefit {
   padding: 4px 0;
+  line-height: 20px;
+  display: flex;
 }
 
 .price__content__benefit i {
-  margin-right: 7px;
+  margin-right: 6px;
 }
 
 .price__column:first-child {
@@ -311,7 +322,6 @@
   border: none;
   padding: 15px 50px;
   border-radius: 12px;
-
   font-size: 20px;
   margin-top: 30px;
   width: 90%;
@@ -776,4 +786,28 @@
   flex-direction: column;
   align-items: center;
   padding: 40px 0;
+}
+
+.add__plan {
+  padding: 100px 0;
+  width: 100%;
+}
+
+.price__button3 {
+  box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.4);
+  text-decoration: none;
+  color: white;
+  background-color: #f54e00b3;
+  border: none;
+  padding: 15px 50px;
+  border-radius: 12px;
+  font-size: 20px;
+  margin-top: 30px;
+  width: 90%;
+  outline: none;
+  text-align: center;
+  font-weight: 700;
+  &:hover {
+    cursor: pointer;
+  }
 }

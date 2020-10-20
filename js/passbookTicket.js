@@ -1287,34 +1287,25 @@ function paintMentor() {
   }
   paintPrice(resultNum);
 
-  const mentorForm = document.querySelector(`.price__mentor__content`);
   const parentForm = document.querySelector(`#parent`);
   const title2Form = document.querySelector(`.passbook__title2`);
 
-  mentorForm.innerHTML = `<div class="price__left">
-<div class="price__left__content">${mentors[resultNum].name} 멘토님</div>
-</div>
-<div class="price__left">
-<div class="price__left__content2">
-${mentors[resultNum].title}
-</div>
-</div>`;
   parentForm.innerHTML = parentName;
-  title2Form.innerHTML = `<span class="orange__underline">${mentors[resultNum].school} 멘토링</span> (1회 - 100분)`;
+  title2Form.innerHTML = `<span class="orange__underline">토링 멘토링권</span> (4회 - 400분)`;
 }
 
 function paintPrice(e) {
   const totalPrice = document.querySelector(`.total__price`);
   const passbook = document.querySelector(`.passbook`);
   totalPrice.innerHTML = `<div class="passbook__title2"></div>
-  <div class="price__mentor__content"></div>
+
   <div class="total__price__column__wrap">
     <div class="total__price__column">
       <div class="before__price__title">정가</div>
     </div>
     <div class="total__price__column">
     
-          <div class="before__price">129,000원</div>
+          <div class="before__price">519,000원</div>
 
     </div>
     <div class="total__price__column">
@@ -1323,8 +1314,8 @@ function paintPrice(e) {
     <div class="total__price__column total__off">
       
 
-          <div class="off__content">NEW 24% 할인</div>
-          <div class="off__content__price">-30,000원</div>
+          <div class="off__content">4회권 33% 할인</div>
+          <div class="off__content__price">-170,000원</div>
 
     </div>
     <div class="total__price__column">
@@ -1332,7 +1323,7 @@ function paintPrice(e) {
     </div>
     <div class="total__price__column">
 
-          <div class="after__price">99,000원</div>
+          <div class="after__price">349,000원</div>
  
     </div>
   </div>`;
@@ -1363,7 +1354,7 @@ function paintPrice(e) {
 <div class="passbook__price">
 <div class="info__bank__title">입금액</div>
 
-    <div class="info__price__content">99,000원</div>
+    <div class="info__price__content">349,000원</div>
 
 
 </div>
