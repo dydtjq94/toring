@@ -1259,6 +1259,7 @@ const tagContent = document.querySelectorAll(`.tag__content2`);
 
 let tagList = [];
 const tagLs = "tag";
+let flag = false;
 
 Array.prototype.shuffle = function () {
   var length = this.length;
@@ -1291,13 +1292,14 @@ function handleLoadMentor() {
 }
 
 function handleMentorPaint(e) {
+  console.log("열심히 그리자!");
   let resultPaint = ``;
   let resultPaintAdd = ``;
   const resultLoadingWrap = document.querySelector(`.ids__loading__wrap`);
-  flag = false;
+
   console.log(e.length);
 
-  if (e.length < 6) {
+  if (e.length < 8) {
     for (let i = 0; i < e.length; i++) {
       resultPaint =
         resultPaint +
@@ -1326,9 +1328,11 @@ function handleMentorPaint(e) {
         </div>
       </div>`;
     }
-    console.log("10미만");
+    resultSampleWrap.innerHTML = resultPaint;
+    flag = true;
+    console.log("7개 미만 그렸오!");
   } else {
-    for (let i = 0; i < 6; i++) {
+    for (let i = 0; i < 8; i++) {
       resultPaint =
         resultPaint +
         ` <div class="result__sample ${e[i].nameEng}">
@@ -1356,8 +1360,10 @@ function handleMentorPaint(e) {
         </div>
       </div>`;
     }
+    resultSampleWrap.innerHTML = resultPaint;
+    console.log("7개 넘는데 7개 미만 그리기 완료");
 
-    for (let j = 6; j < e.length; j++) {
+    for (let j = 8; j < e.length; j++) {
       resultPaintAdd =
         resultPaintAdd +
         ` <div class="result__sample ${e[j].nameEng}">
@@ -1394,20 +1400,19 @@ function handleMentorPaint(e) {
         resultLoadingWrap.classList.remove("none");
         setTimeout(function () {
           resultLoadingWrap.classList.add("none");
-
           resultPaint = resultPaint + resultPaintAdd;
           resultSampleWrap.innerHTML = resultPaint;
-        }, 1200);
+          console.log("나머지도 다 그리기 완료!");
+        }, 900);
       }
     };
   }
-  resultSampleWrap.innerHTML = resultPaint;
 }
 
 function handleSelectTag(e) {
   const tagTarget = e.target.innerText;
   const tagSchool = tagTarget.split(" ")[1];
-
+  flag = false;
   const toDoObj = {
     school: tagSchool,
     id: parseInt(e.target.id, 10), //한개씩 추가되는 id를 얻기 위해
