@@ -1403,6 +1403,7 @@ function handleMentorPaint(e) {
           resultPaint = resultPaint + resultPaintAdd;
           resultSampleWrap.innerHTML = resultPaint;
           console.log("나머지도 다 그리기 완료!");
+          goMentorDetail();
         }, 900);
       }
     };
