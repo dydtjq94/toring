@@ -1297,7 +1297,7 @@ function handleMentorPaint(e) {
   flag = false;
   console.log(e.length);
 
-  if (e.length < 8) {
+  if (e.length < 6) {
     for (let i = 0; i < e.length; i++) {
       resultPaint =
         resultPaint +
@@ -1328,7 +1328,7 @@ function handleMentorPaint(e) {
     }
     console.log("10미만");
   } else {
-    for (let i = 0; i < 8; i++) {
+    for (let i = 0; i < 6; i++) {
       resultPaint =
         resultPaint +
         ` <div class="result__sample ${e[i].nameEng}">
@@ -1357,7 +1357,7 @@ function handleMentorPaint(e) {
       </div>`;
     }
 
-    for (let j = 8; j < e.length; j++) {
+    for (let j = 6; j < e.length; j++) {
       resultPaintAdd =
         resultPaintAdd +
         ` <div class="result__sample ${e[j].nameEng}">
