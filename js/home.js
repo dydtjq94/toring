@@ -1384,7 +1384,7 @@ function handleThirdGoDetail() {
 function handleCountNum() {
   let countNumber = 0;
   function countUp() {
-    if (countNumber < 157) {
+    if (countNumber < 168) {
       countNumber++;
       countNum.innerHTML = countNumber;
     }
