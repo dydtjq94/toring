@@ -442,6 +442,20 @@
 
 .fifth__upper__right {
   width: 84%;
+  display: flex;
+  justify-content: space-between;
+  .fifth__resultSheet {
+    margin-right: 28px;
+    font-size: 14px;
+    color: $blue2;
+    &:hover {
+      cursor: pointer;
+    }
+    a {
+      text-decoration: none;
+      color: $blue2;
+    }
+  }
 }
 
 .fifth__lower__right {
