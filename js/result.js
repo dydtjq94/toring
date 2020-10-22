@@ -1299,7 +1299,7 @@ function handleMentorPaint(e) {
 
   console.log(e.length);
 
-  if (e.length < 8) {
+  if (e.length < 5) {
     for (let i = 0; i < e.length; i++) {
       resultPaint =
         resultPaint +
@@ -1330,9 +1330,9 @@ function handleMentorPaint(e) {
     }
     resultSampleWrap.innerHTML = resultPaint;
     flag = true;
-    console.log("7개 미만 그렸오!");
+    console.log("5개 그렸오!");
   } else {
-    for (let i = 0; i < 8; i++) {
+    for (let i = 0; i < 5; i++) {
       resultPaint =
         resultPaint +
         ` <div class="result__sample ${e[i].nameEng}">
@@ -1361,9 +1361,9 @@ function handleMentorPaint(e) {
       </div>`;
     }
     resultSampleWrap.innerHTML = resultPaint;
-    console.log("7개 넘는데 7개 미만 그리기 완료");
+    console.log("5개 넘는데 5개 그리기 완료");
 
-    for (let j = 8; j < e.length; j++) {
+    for (let j = 5; j < e.length; j++) {
       resultPaintAdd =
         resultPaintAdd +
         ` <div class="result__sample ${e[j].nameEng}">
