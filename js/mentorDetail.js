@@ -1520,7 +1520,7 @@ ${mentors[resultNum].special[2].detail}
 <div class="fifth__content__upper">
   <div class="fifth__upper__left">01</div>
   <div class="fifth__upper__right">
-    1:1 멘토링을 신청하세요.
+    멘토님께 멘토링을 신청하세요.
   </div>
 </div>
 <div class="fifth__content__lower">
@@ -1548,7 +1548,10 @@ ${mentors[resultNum].special[2].detail}
 <div class="main__fifth__content__column">
 <div class="fifth__content__upper">
   <div class="fifth__upper__left">03</div>
-  <div class="fifth__upper__right">멘토링 결과지를 제공합니다.</div>
+  <div class="fifth__upper__right">멘토링 결과지를 제공합니다.
+  <span class="fifth__resultSheet">
+                <a href="exResultSheet.html"> 결과지 예시 보기</a>
+              </span></div>
 </div>
 <div class="fifth__content__lower">
   <div class="fifth__lower__left"></div>
