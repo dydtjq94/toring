@@ -1367,67 +1367,7 @@ function handleClickSubmit() {
   submitBtnPar.addEventListener("click", handleSubmit);
 }
 
-function paintSubmitUpper() {
-  const submitUpper = document.querySelector(`.submit__upper`);
-
-  let resultNum = 0;
-  let i = 0;
-
-  for (;;) {
-    if (mentors[i].name === name) {
-      resultNum = i;
-      break;
-    }
-    i++;
-  }
-
-  submitUpper.innerHTML = `<div class="submit__upper__wrap">
-<div class="submit__upper__column">
-  <img class="submit__mentor__img" src="./img/${mentors[resultNum].nameEng}.jpeg" />
-</div>
-<div class="submit__upper__column">
-  <div class="submit__mentor__name">
-    <div class="submit__name__title">멘토링 진행 멘토</div>
-    <div class="submit__mentor__wrap">
-      <input
-        type="text"
-        name="mentor"
-        class="submit__mentor"
-        placeholder="학생 이름"
-        value="${mentors[resultNum].name} 멘토님"
-        readonly
-      />
-    </div>
-  </div>
-  <div class="submit__univ">
-    <div class="submit__school">
-      <div class="submit__name__title">멘토님 대학교</div>
-      <div class="submit__class">${mentors[resultNum].univ}학교</div>
-    </div>
-    <div class="submit__school">
-      <div class="submit__name__title">출신 고등학교</div>
-      <div class="submit__class">${mentors[resultNum].school} 졸</div>
-    </div>
-  </div>
-</div>
-</div>
-<div class="submit__lower__column">
-<div class="submit__upper2">
-  <div class="submit__text">
-    <i class="fas fa-quote-left"></i>
-    <div class="submit__center">
-      안녕하세요, 신청 감사합니다! 신청 완료를 위해 아래
-      항목들을 작성해주세요. 접수가 완료되면 제가 직접 100분동안
-      멘토링을 진행하고 있습니다 :)
-    </div>
-    <i class="fas fa-quote-right"></i>
-  </div>
-</div>
-</div>`;
-}
-
 function init() {
-  paintSubmitUpper();
   handleClickSubmit();
 }
 
