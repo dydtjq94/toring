@@ -89,7 +89,7 @@ function handleSubmit() {
         blackLoading.classList.add("none");
       }, 310);
       setTimeout(function () {
-        location.href = `passbookTicket.html?${name}?${s1}`;
+        location.href = `result.html`;
       }, 500);
       clearInterval(link);
     }
