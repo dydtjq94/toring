@@ -37,6 +37,7 @@
 .price__mentor__content {
   display: flex;
   flex-direction: column;
+  line-height: 22px;
   width: 100%;
   background-color: #ececec;
   padding: 16px 24px;
@@ -75,10 +76,12 @@
 .total__price__column:nth-child(2n + 1) {
   color: #999999;
   font-weight: 700;
+  width: 100%;
 }
 
 .total__price__column:nth-child(2n) {
-  align-self: flex-end;
+  text-align: right;
+  width: 100%;
 }
 
 .total__off {
@@ -87,6 +90,7 @@
   justify-content: space-between;
   align-items: center;
   padding-left: 20px;
+  margin-bottom: 10px;
 }
 
 .before__price {
@@ -111,6 +115,12 @@
   color: #0123b4;
   font-weight: 700;
   font-size: 20px;
+}
+
+.after__price__small {
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 8px;
 }
 
 .passbook {

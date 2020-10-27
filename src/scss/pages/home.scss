@@ -475,3 +475,14 @@
   -webkit-animation: buttonAnim 1.5s ease-in-out 2 both;
   animation: buttonAnim 1.5s ease-in-out 2 both;
 }
+
+.dschool__event {
+  position: absolute;
+  top: 8px;
+  right: 28px;
+  font-weight: 700;
+  .dschool__d {
+    color: #cf0020;
+    font-size: 20px;
+  }
+}

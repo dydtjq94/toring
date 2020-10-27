@@ -1290,12 +1290,142 @@ const mentors = [
         "1학년때부터 학생부나 내신 관리를 잘하고 싶은데, 어떤 방향으로 해야 할지 조언 좀 부탁드립니다.",
     },
   },
+
+  //이지영
+
+  {
+    name: "이지영",
+    nameEng: "jiyoung",
+    gender: "여",
+    univ: "서울대",
+    univEng: "seoul",
+    major: "수의예과",
+    majorNum: 0,
+    year: "20학번",
+    school: "정신여고",
+    label: 0, //0이 모집중 1이 마감임박 2마감
+    labelNum: 1,
+    title: "서울대 수의예과 20학번 선배가 알려주는 멘탈관리가 중요한 이유",
+    method: "정시",
+    mentoring: ["멘탈 관리", "비교과 내신 관리법"],
+    experience: [
+      `정신여자고등학교 졸업`,
+      `2020 서울대학교 수의과대학 정시 입학`,
+      `2020 카이스트 정시 전형 동시 합격`,
+      `2019 9월 모의고사 올 1등급`,
+      `2019 9월 모의고사, 수능 모의고사 수학 만점`,
+      `화학 AP 과정 수료`,
+      `고등학교 재학 당시 멘토링 다회 진행`,
+      `서울대학교 수학 영재교육원 수료`,
+      `강동교육청 수학 영재교육원 수료`,
+    ],
+    being: [
+      `멘탈을 스스로 관리할 수 있는`,
+      `불안정한 성적을 이겨내 안정적인 성적 관리 할 수 있는`,
+      `비교과 부분에서 보다 뛰어난`,
+    ],
+    special: [
+      {
+        title: `멘토님은 어떤 학창 시절을 보내셨나요? 기억에 남는 이야기나 경험이 있으면 공유해주세요!`,
+        detail: `고등학교 2학년 때, 그 해 처음 생긴 동아리의 부장 자리를 맡게 되었습니다. 처음에는 어떻게 헤쳐나가야 할 지 몰랐지만, 동아리 조원들과 이야기하면서 점차 기틀을 잡아갔습니다. 그래서 다 같이 학교 축제에 참가해 부스를 운영했고, 정말 많은 사람들이 방문해 주셨습니다. 그 결과 그 해 처음 생긴 동아리가 학교 축제 인기부스상을 받을 수 있게 되었고, 너무 뿌듯했던 것이 기억에 남았습니다.`,
+      },
+      {
+        title: `멘토님과 같은 고등학교(정신여고)을 다니고 있습니다. 혹시 우리 학교 내신이나 학생부는 어떤식으로 준비해야하나요?`,
+        detail: ` 학교 내신은 정말 꼼꼼하게 준비해야 합니다. 담당 교과선생님 말씀을 우선으로 하고, 시험을 준비해야 합니다. 교과서와 기출문제를 여러번 읽고 풀어보면 더 완벽하게 준비할 수 있습니다. `,
+      },
+      {
+        title: `지금의 입시 결과를 이뤄낼 수 있었던 이유, 혹은 자신만의 공부 방법은 무엇인가요?`,
+        detail: `지금의 입시 결과를 이뤄낼 수 있었던 이유는 바로 멘탈 관리가 잘 되어서라고 생각합니다. 수능은 벼락치기로 해결할 수 있는 시험이 아닙니다. 꾸준히, 오랜 기간동안 실력을 다져와야 노력의 결싷을 얻을 수 있는 시험입니다. 지칠 때마다 스스로에게 동기 부여를 하고, 마음을 다잡는 방법을 알고 있었으기에 좋은 결과를 거둘 수 있었습니다.
+        또 저는 각 과목에 맞는 효율적인 방법을 찾고자 노력했습니다. 잘 외워지지 않거나 헷갈리는 부분들은 포스트잇에 써서 잘 보이는 곳에 붙여두곤 했습니다. 그리고 과목마다 체계적인 오답노트를 작성하여, 틀린 이유를 분석하고 똑같은 문제를 다시 틀리는 일은 없도록 노력했습니다. 오답을 잊지 않기 위해, 1주 후, 1달 후 등  오답노트를 다시 풀어보며 가지고 있는 지식을 점검하였습니다. `,
+      },
+      {
+        title: `대학에 오니 이런 점이 좋다! 하는 점을 후배에게 들려준다면 어떤 이야기를 해 주실 수 있을까요? (ex. 관심있던 분야의 동아리 활동, 내가 좋아하는 분야의 공부를 한다는 것)`,
+        detail: `좋아하는 공부에 할애할 수 있는 시간이 늘어나고 자율적으로 듣고 싶은 과목을 선택할 수 있습니다.`,
+      },
+    ],
+    introduce: [
+      {
+        title: `이지영 멘토님은 이런 사람이에요!`,
+        detail: `고등학생 때 다양한 활동을 해보고 싶어 학교에서 참여할 수 있는 거의모든 활동에 참가했습니다. 비교과를 더 잘 적어내고 싶은 학생들에게 큰 도움이 될 수 있습니다.
+        또 두번의 정시 경험으로, 공부할 때의 멘탈 관리와 동기부여 방법, 효율적인 공부 방법을 알려드릴 수 있습니다.`,
+      },
+    ],
+    review: [],
+    mainQnA: {
+      title: "정신여고 내신이나 학생부는 어떻게 준비하면 좋을까요?",
+      sub:
+        "1학년때부터 학생부나 내신 관리를 잘하고 싶은데, 어떤 방향으로 해야 할지 조언 좀 부탁드립니다.",
+    },
+  },
+
+  //정민지
+
+  {
+    name: "정민지",
+    nameEng: "minji",
+    gender: "여",
+    univ: "연세대",
+    univEng: "yonsei",
+    major: "의예과",
+    majorNum: 0,
+    year: "20학번",
+    school: "잠실여고",
+    label: 0, //0이 모집중 1이 마감임박 2마감
+    labelNum: 1,
+    title: "고등학교 3년을 어떻게 보내야 연세대 의대를 합격할 수 있을까?",
+    method: "학생부 종합",
+    mentoring: ["내신 관리", "학생부 관리"],
+    experience: [
+      `잠실여자고등학교 졸업`,
+      `2020 연세대학교(활동우수형, 면접형), 경희대학교, 가톨릭대학교 의예과 합격`,
+      `잠실여고 내신 1.02`,
+      `멘토링 봉사 진행 중`,
+      `과외 경험 4회 (하위권~최상위권) (수학, 물리1, 생명과학2)`,
+    ],
+    being: [
+      `잠실여고에서 학생부를 누구보다 잘 관리할 수 있는`,
+      `연세대 의대생에게 잠실여고 내신 관리 비법을 알아가는`,
+      `공부만 하는 것이 아닌 원할한 학교 생활의 중요성을 아는`,
+    ],
+    special: [
+      {
+        title: `멘토님은 어떤 학창 시절을 보내셨나요? 기억에 남는 이야기나 경험이 있으면 공유해주세요!`,
+        detail: `사실 고등학교 3년간 의대를 생각하며 학생부 전형을 준비하다보니 내신, 수능,  비교과 활동들을 모두 챙겨야 해서 바빴던 것 같습니다. 그러나 그런 와중에도 좋은 친구들을 만나 학교 생활을 나름 즐겁게 했던 기억이 있습니다. 그리고 바쁘게 여러 활동들을 준비했던 것보다도 이렇게 학교 일과 시간에 재밌게 어울려 놀았던 기억이 자기소개서를 쓸 때, 면접을 준비할 때 더 큰 도움이 되었습니다. 물론 내신, 비교과 활동을 준비하는 데도 최선을 다해야 하지만 학교 생활에 너무 스트레스 받지 말고 즐겁게 할 수 있으면 더욱 좋을 것 같습니다.`,
+      },
+      {
+        title: `멘토님과 같은 고등학교(잠실여고)을 다니고 있습니다. 혹시 우리 학교 내신이나 학생부는 어떤식으로 준비해야하나요?`,
+        detail: `잠실여고의 경우 사립학교이기 때문에 오랫동안 근무하신 선생님들도 많이 계시지만 생각보다 1년, 2년 짧게 근무하시는 선생님들도 많이 계십니다. 그래서 학년 별로, 해별로 문제 스타일이 조금씩 바뀌는 것 같습니다. 그러나 국어, 영어 같은 경우는 스타일이 거의 바뀌지 않고 암기가 중요한 시험을 내는 학교입니다. 내신은 무엇보다 꼼꼼하게 암기하는 것이 중요하며 학생부는 최대한 다양한 활동에 참여하는 것이 중요합니다.`,
+      },
+      {
+        title: `지금의 입시 결과를 이뤄낼 수 있었던 이유, 혹은 자신만의 공부 방법은 무엇인가요?`,
+        detail: `지저는 특별한 공부 방법이 있었던 편은 아닙니다. 내신을 잘 받을 수 있었던 비법이라고 할 만한 것을 굳이 뽑자면 공부할 때 꼼수를 부리지 않는다는 것이었던 것 같습니다. 이것까지 외워야 할까 싶은 것까지 모두 외우기 위해 노력했습니다. 저희학교 내신의 경우 암기가 꽤 중요하기 때문에 열심히 외운 것이 비법이 아닐까 생각합니다.`,
+      },
+      {
+        title: `대학에 오니 이런 점이 좋다! 하는 점을 후배에게 들려준다면 어떤 이야기를 해 주실 수 있을까요? (ex. 관심있던 분야의 동아리 활동, 내가 좋아하는 분야의 공부를 한다는 것)`,
+        detail: `대학에 오면 가장 기본적으로는 자신이 듣고 싶은 과목을 선택해서 들을 수 있다는 점이 좋은 것 같습니다. 저는 수학 관련 과목을 몇 가지 들었는데 흥미를 느꼈고 저희학교 의예과 특성 상 다른 과의 전공을 듣는 것이 비교적 자유로워 2학년 때도 관련 과목을 들어볼까 합니다. 그 외에도 다양한 활동을 할 수 있다는 장점이 있으나 코로나로 인해 경험해 보지 못해 자세히 알지 못합니다.`,
+      },
+    ],
+    introduce: [
+      {
+        title: `이지영 멘토님은 이런 사람이에요!`,
+        detail: `저는 사실 중학교 3학년 때부터 뇌공학 혹은 의대 쪽으로 가고 싶다고 생각을 하고 고등학교에 입학하였습니다. 그래서 고등학교 3년 동안 그 방향에 맞춰 생기부를 준비했고 다수 의예과에 학생부 전형으로 합격할 수 있었습니다. 그래서 학생부 종합 전형을 생각하신다면 제 경험을 바탕으로 말씀드릴 수 있을 것 같습니다.`,
+      },
+    ],
+    review: [],
+    mainQnA: {
+      title: "잠실여고 내신이나 학생부는 어떻게 준비하면 좋을까요?",
+      sub:
+        "1학년때부터 학생부나 내신 관리를 잘하고 싶은데, 어떤 방향으로 해야 할지 조언 좀 부탁드립니다.",
+    },
+  },
 ];
 
 const menties = [
   {
     mentorName: "김예나",
     mentiName: "정은진",
+    mentoringDate: "2020-10-26",
+    mentoringExtraDate: "2020-10-25",
     mentoringStu:
       "마이크가 안 켜져서 대화를 제대로는 못했지만 학생의 질문을 바탕으로 생각해보면, 고등학교 생활과 좋은 내신 성적을 얻을 수 있는 팁에 관심이 많았다고 생각합니다. 아직 중학생이라 고등학교 생활에 대한 약간의 두려움과 고민도 조금 있다는 느낌이 들었는데 그런 부분에 대한 질문들이 대부분이었습니다.  ",
     mentoringQnA: [
@@ -1331,33 +1461,44 @@ const menties = [
 
 const mentorForm = document.querySelector(`.price__mentor__content`);
 const mentoringContent = document.querySelector(`.proposal__wrap`);
+const passbookTitle2 = document.querySelector(`.passbook__title2`);
+const offTitle = document.querySelectorAll(`.off__title`);
+const totalOffFirst = document.querySelector(`.total__off__first`);
+const totalOffSecond = document.querySelector(`.total__off__second`);
+const afterPriceFirst = document.querySelector(`.after__price__first`);
+const afterPriceSecond = document.querySelector(`.after__price__second`);
 
 const temp = decodeURI(location.href);
 const mentorName = temp.split("?")[1];
 const mentiName = temp.split("?")[2];
 
-console.log(mentorName, mentiName);
-
 let resultNum = 0;
 
+// mentor 찾기 for문
 for (let i = 0; i < mentors.length; i++) {
   if (mentors[i].name === mentorName) {
     resultNum = i;
-    console.log(i);
     break;
   }
 }
 
+// menti 찾기 for문
 for (let j = 0; j < menties.length; j++) {
   if (menties[j].mentiName === mentiName) {
-    console.log(j);
     resultNum2 = j;
     break;
   }
 }
 
-let QNA = "";
+let currentTime = new Date();
+let extraDay = new Date(menties[resultNum2].mentoringExtraDate);
+let calDay = extraDay - currentTime;
+let days = Math.floor(calDay / 86400000);
 
+console.log(days);
+
+// QNA 리스트 생성
+let QNA = "";
 for (let k = 0; k < menties[resultNum2].mentoringQnA.length; k++) {
   QNA =
     QNA +
@@ -1373,11 +1514,14 @@ for (let k = 0; k < menties[resultNum2].mentoringQnA.length; k++) {
 </div>
 </div>`;
 }
-console.log(QNA);
 
-mentoringContent.innerHTML = `<div class="proposal__upper">
+// paint mentoring record
+function paintMentoring() {
+  mentoringContent.innerHTML = `<div class="proposal__upper">
 <div class="proposal__title">토링 100분 멘토링 결과지</div>
-<div class="proposal__sub__title"><span class="blue__bold">${menties[resultNum2].mentorName} 멘토님 - ${menties[resultNum2].mentiName} 멘티님</span></div>
+<div class="proposal__sub__title"><span class="blue__bold">${menties[resultNum2].mentorName} 멘토님 - ${menties[resultNum2].mentiName} 멘티님</span>
+${menties[resultNum2].mentoringDate}
+</div>
 </div>
 <div class="story__content3">
 <div class="story__content__title">
@@ -1404,7 +1548,7 @@ ${QNA}
   </div>
 </div>
 </div>
-<div class="proposal__title">한달 후 / 6개월 후 / 1년 후 / 최종 한 줄 목표 설정</div>
+<div class="proposal__title">한달 후 /  1년 후 / 최종 한 줄 목표 설정</div>
 <div class="story__content3">
 <div class="story__content__title">
   <div class="num">●</div>
@@ -1416,20 +1560,20 @@ ${menties[resultNum2].mentiName} 멘티님의 목표는 무엇인가요?
   </div>
 </div>
 </div>
-
 <div class="story__content2">
 <div class="story__content__title2">
   <div class="proposal__lower">
     <!-- <i class="fas fa-exclamation red__exclamation"></i> -->
-    <div class="story__content__title">${menties[resultNum2].mentorName} 멘토님이 ${menties[resultNum2].mentiName} 멘티에게 드리는 따뜻한 한마디입니다.</div><br />
+    <div class="story__content__title">${menties[resultNum2].mentorName} 멘토님이 ${menties[resultNum2].mentiName} 멘티님에게 드리는 따뜻한 한마디입니다.</div><br />
    <span class="blue__bold"> "${menties[resultNum2].mentoringFinal}" </span><br/><br/>
-              추가적인 멘토링을 원하시면 아래 4회 멘토링을 결제 완료해주시면  <span class="blue__bold"> ${menties[resultNum2].mentorName}멘토님</span>께
-              정기적으로 멘토링을 받을 수 있습니다!
+        멘토링은 어떠셨나요? <br/> <span class="blue__bold">멘토링 이후 일주일동안 추가 할인이 지원된
+        가격으로 멘토링권</span>을 구매할 수 있어요. 멘토링권은 구매 이후 원하는 시기에
+        언제든 사용 가능합니다!
   </div>
 </div>
 </div>`;
 
-mentorForm.innerHTML = `<div class="price__left">
+  mentorForm.innerHTML = `<div class="price__left">
 <div class="price__left__content">${mentors[resultNum].name} 멘토님</div>
 </div>
 <div class="price__left">
@@ -1437,6 +1581,82 @@ mentorForm.innerHTML = `<div class="price__left">
 ${mentors[resultNum].title}
 </div>
 </div>`;
+
+  passbookTitle2.innerHTML = `${mentorName} 멘토님에게 <br/>
+<span class="orange__underline">한번 더 멘토링</span> (2만원 추가 할인)
+`;
+
+  totalOffFirst.innerHTML = `${
+    days > 0
+      ? `<div class="total__off">
+<div class="off__content">기본 23% 할인</div>
+<div class="off__content__price">-30,000원</div>
+</div>
+<div class="total__off">
+<div class="off__content">추가 15% 할인</div>
+<div class="off__content__price">-20,000원</div>
+</div>`
+      : `<div class="total__off">
+<div class="off__content">기본 23% 할인</div>
+<div class="off__content__price">-30,000원</div>
+</div>`
+  }`;
+  totalOffSecond.innerHTML = `${
+    days > 0
+      ? `<div class="total__off">
+  <div class="off__content">기본 34% 할인</div>
+  <div class="off__content__price">-170,000원</div>
+</div>
+<div class="total__off">
+  <div class="off__content">추가 10% 할인</div>
+  <div class="off__content__price">-50,000원</div>
+</div>`
+      : `<div class="total__off">
+<div class="off__content">기본 34% 할인</div>
+<div class="off__content__price">-170,000원</div>
+</div>`
+  }`;
+  afterPriceFirst.innerHTML = `${
+    days > 0
+      ? `<div class="after__price">79,000원</div>`
+      : `<div class="after__price">99,000원</div>`
+  }`;
+  afterPriceSecond.innerHTML = `${
+    days > 0
+      ? `<div class="after__price after__price__small">1회당 74,750원</div>
+  <div class="after__price">299,000원</div>`
+      : `<div class="after__price after__price__small">1회당 87,250원</div>
+  <div class="after__price">349,000원</div>`
+  }`;
+}
+
+function getTime() {
+  let currentTime = new Date();
+  let extraDay = new Date(menties[resultNum2].mentoringExtraDate);
+  let calDay = extraDay - currentTime;
+  let days = Math.floor(calDay / 86400000);
+  const hours = Math.floor((calDay % 86400000) / 3600000);
+  const minutes = Math.floor(((calDay % 86400000) % 3600000) / 60000);
+  const seconds = Math.floor((((calDay % 86400000) % 3600000) % 60000) / 1000);
+
+  if (days > 0) {
+    offTitle.forEach(
+      (e) =>
+        (e.innerHTML = `할인 <span class="extra__time">
+  ${days}일 ${hours < 10 ? `0${hours}` : hours}:${
+          minutes < 10 ? `0${minutes}` : minutes
+        }:${seconds < 10 ? `0${seconds}` : seconds}후 추가 할인 종료
+  </span>`)
+    );
+  } else {
+    offTitle.forEach(
+      (e) =>
+        (e.innerHTML = `할인 <span class="extra__time">
+  추가 할인 종료
+  </span>`)
+    );
+  }
+}
 
 const differButton = document.querySelector(`.differ__button`);
 const kakaoButton = document.querySelector(`.passbook__button__kakao`);
@@ -1446,20 +1666,7 @@ const btn = document.querySelector(`#btn`);
 const target = document.querySelector(`#target`);
 const snackBar = document.querySelector(`#snackbar`);
 
-const monthButton = document.querySelector(`.passbook__select__month`);
-const semesterButton = document.querySelector(`.passbook__select__semester`);
-const selectedLine = document.querySelector(`.passbook__selected__line`);
-const selectMonth = document.querySelector(`.passbook__select__month`);
-const selectSemester = document.querySelector(`.passbook__select__semester`);
-const passbookTitle = document.querySelector(`.passbook__title2`);
-const price1 = document.querySelector(`.before__price`);
-const price2 = document.querySelector(`.off__content__price`);
-const price3 = document.querySelector(`.after__price`);
-const price4 = document.querySelector(`.info__price__content`);
-const offContent = document.querySelector(`.off__content`);
-
 const handleCopy = (e) => {
-  console.log(target);
   target.select();
   document.execCommand("Copy");
   snackBar.classList.add("snackbar__anim");
@@ -1473,15 +1680,12 @@ function handleDiffer() {
   newWindow.location.href = "http://pf.kakao.com/_WMMxgxb/chat";
 }
 
-// function handleHome() {
-//   location.href = "index.html";
-// }
-
 function init() {
+  getTime();
+  setInterval(getTime, 500);
+  paintMentoring();
   btn.addEventListener("click", handleCopy);
   differButton.addEventListener("click", handleDiffer);
-  // kakaoButton.addEventListener("click", handleDiffer);
-  // homeButton.addEventListener("click", handleHome);
 }
 
 init();
