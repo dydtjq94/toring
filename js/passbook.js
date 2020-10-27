@@ -1492,7 +1492,7 @@ function paintPrice(e) {
     <div class="total__price__column total__off">
       
 
-          <div class="off__content">NEW 24% 할인</div>
+          <div class="off__content">DSchool 24% 할인</div>
           <div class="off__content__price">-30,000원</div>
 
     </div>
