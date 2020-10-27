@@ -1,14 +1,66 @@
 const openSchoolList = [
-  { name: "세화고", nameEng: "saehwa", applyNum: "4/5" },
-  { name: "경기고", nameEng: "kyungki", applyNum: "3/5" },
-  { name: "영동고", nameEng: "youngdong", applyNum: "1/5" },
-  { name: "서울고", nameEng: "seoulhigh", applyNum: "2/5" },
-  { name: "중동고", nameEng: "joongdong", applyNum: "3/5" },
-  { name: "반포고", nameEng: "banpo", applyNum: "2/5" },
-  { name: "잠실여고", nameEng: "jamsilw", applyNum: "5/5" },
-  { name: "정신여고", nameEng: "joungsinw", applyNum: "5/5" },
-  { name: "외대부고", nameEng: "yongin", applyNum: "3/5" },
-  { name: "대원외고", nameEng: "daewon", applyNum: "4/5" },
+  //applyStatus:0 -> 모집 신청하기 ,1 -> 모집 완료
+
+  {
+    name: "세화고",
+    nameEng: "saehwa",
+    applyNum: "4/5",
+    applyStatus: 0,
+  },
+  {
+    name: "경기고",
+    nameEng: "kyungki",
+    applyNum: "3/5",
+    applyStatus: 0,
+  },
+  {
+    name: "영동고",
+    nameEng: "youngdong",
+    applyNum: "1/5",
+    applyStatus: 0,
+  },
+  {
+    name: "서울고",
+    nameEng: "seoulhigh",
+    applyNum: "2/5",
+    applyStatus: 0,
+  },
+  {
+    name: "중동고",
+    nameEng: "joongdong",
+    applyNum: "3/5",
+    applyStatus: 0,
+  },
+  {
+    name: "반포고",
+    nameEng: "banpo",
+    applyNum: "2/5",
+    applyStatus: 0,
+  },
+  {
+    name: "잠실여고",
+    nameEng: "jamsilw",
+    applyNum: "5/5",
+    applyStatus: 1,
+  },
+  {
+    name: "정신여고",
+    nameEng: "joungsinw",
+    applyNum: "5/5",
+    applyStatus: 1,
+  },
+  {
+    name: "외대부고",
+    nameEng: "yongin",
+    applyNum: "3/5",
+    applyStatus: 0,
+  },
+  {
+    name: "대원외고",
+    nameEng: "daewon",
+    applyNum: "4/5",
+    applyStatus: 0,
+  },
 ];
 
 const openSchoolContentWrap = document.querySelector(
@@ -120,8 +172,6 @@ function paintOpenSchool() {
   }
   lottoNum();
 
-  console.log(lotto);
-
   let openSchoolContent = ``;
   lotto.forEach(function paintSecondContent(e) {
     openSchoolContent =
@@ -135,10 +185,24 @@ function paintOpenSchool() {
         <div class="black__school__board"></div>
       </div>
       <div class="open__school__content__title">${openSchoolList[e].name}</div>
-      <div class="open__school__content__button">
-        <span class="apply__open skyblue__bold">모집 신청하기</span>
-        <span class="open__school__num bold">${openSchoolList[e].applyNum}</span>
-      </div>
+      
+${
+  openSchoolList[e].applyStatus === 0
+    ? `
+    <div class="open__school__content__button">
+    <span class="apply__open skyblue__bold">모집 신청하기</span>
+    <span class="open__school__num skyblue__bold">${openSchoolList[e].applyNum}</span>
+    </div>
+    `
+    : `
+    <div class="open__school__content__button2">
+    <span class="apply__open gray__bold">모집 완료</span>
+    <span class="open__school__num gray__bold">${openSchoolList[e].applyNum}</span>
+    </div>
+    `
+}
+      
+      
     </div>`;
   });
   openSchoolContentWrap.innerHTML = openSchoolContent;

@@ -1561,6 +1561,52 @@ function handleCountNum() {
   setInterval(countUp, 45);
 }
 
+// function handleSnackBar() {
+//   const snackBarResult = document.querySelector(`#snackbar__result`);
+//   const body = document.querySelector(`body`);
+//   const bodyBlack = document.querySelector(`.body__black`);
+//   const snackBarButton = document.querySelector(`.snackbar__result__button`);
+//   const RESULT_LS = "result";
+//   const loadedResult = sessionStorage.getItem(RESULT_LS);
+
+//   setTimeout(function () {
+//     console.dir(bodyBlack);
+//     snackBarResult.classList.add("snackbar__anim__result");
+//     snackBarResult.classList.remove("snackbar__anim__up");
+//     body.style.backgroundColor = "#313131";
+//     bodyBlack.classList.remove("none");
+
+//     // let a = 11;
+//     // function minusNum() {
+//     //   a = a - 1;
+//     //   autoResult.innerHTML = `
+//     //   ${
+//     //     aaaa.split("등")[0]
+//     //   } 출신 ${firstMentorName} 멘토님 이야기가 궁금하신가요?<br/> ${a}초 후 자동으로 넘어갑니다.`;
+//     // }
+//     // minusNum();
+//     // setInterval(minusNum, 1000);
+//     // if (a == 0) {
+//     //   clearTimeout(setTimeoutId);
+//     // }
+
+//     // setTimeoutId = setTimeout(function () {
+//     //   location.href =
+//     //     "mentordetail.html?" + "name" + ":" + mentorSimple[0].classList[1];
+//     // }, 10700);
+//   }, 1000);
+
+//   snackBarButton.addEventListener("click", handleSnackRemove);
+
+//   function handleSnackRemove() {
+//     // clearTimeout(setTimeoutId);
+//     snackBarResult.classList.remove("snackbar__anim__result");
+//     snackBarResult.classList.add("snackbar__anim__up");
+//     body.style.backgroundColor = "#f7f7f7";
+//     bodyBlack.classList.add("none");
+//   }
+// }
+
 function init() {
   scroll.forEach((item) => {
     scrollAppear(item);
@@ -1572,6 +1618,7 @@ function init() {
   secondDisplayMentor();
   handleThirdGoDetail();
   handleCountNum();
+  // handleSnackBar();
 }
 
 init();
