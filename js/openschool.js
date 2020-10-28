@@ -16,13 +16,13 @@ const openSchoolList = [
   {
     name: "영동고",
     nameEng: "youngdong",
-    applyNum: "1/5",
+    applyNum: "4/5",
     applyStatus: 0,
   },
   {
     name: "서울고",
     nameEng: "seoulhigh",
-    applyNum: "2/5",
+    applyNum: "3/5",
     applyStatus: 0,
   },
   {
@@ -52,7 +52,7 @@ const openSchoolList = [
   {
     name: "외대부고",
     nameEng: "yongin",
-    applyNum: "3/5",
+    applyNum: "4/5",
     applyStatus: 0,
   },
   {
@@ -185,7 +185,7 @@ function paintOpenSchool() {
         <div class="black__school__board"></div>
       </div>
       <div class="open__school__content__title">${openSchoolList[e].name}</div>
-      
+    
 ${
   openSchoolList[e].applyStatus === 0
     ? `
