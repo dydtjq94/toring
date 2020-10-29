@@ -1597,6 +1597,7 @@ ${menties[resultNum2].mentiName} 멘티님과 어떤 목표를 정하셨나요?
   </div>
 </div>
 </div>
+<div class="proposal__title">따뜻한 한마디</div>
 <div class="story__content2">
 <div class="story__content__title2">
   <div class="proposal__lower">
