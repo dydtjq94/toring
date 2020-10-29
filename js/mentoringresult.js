@@ -1458,8 +1458,10 @@ const menties = [
       "아직 중학생인데 고등학교에서 어떻게 잘 생활해야 하는지 준비하고자 하는 모습이 너무 기특해요! 사실 저는 아무것도 모르고 고등학교에 갔거든요. 저보다 훨씬 많은 정보도 알고 가시고, 또 미리 이렇게 준비도 열심히 하시니까 정말 재밌고, 또 보람찬 고등 3년 보내실 거에요! 고등학교가면 공부만 해야하나…라면서 걱정하지 마시고, 중학교와 똑같다! 라고 생각하면서 그냥 재밌게 잘 보내셨으면 좋겠어요 ㅎㅎ 또 슬럼프가 와도 언젠가는 극복이 되고 또 마무리가 되더라구요 지금 당장 힘들어도 너무 낙심하지 마시고 더 성장하기 위한 과정일 뿐이라고 생각하면서 앞으로 계속 나아가셨으면 좋겠어요! 저도 정말 큰 슬럼프를 겪었지만 무작정 나아가려고 노력하니까 어느새 극복도 하고 또 원했던 공부도 하고 있더라구요 아무튼!! 앞으로 3년 제가 열심히 응원할 테니까 화이팅이에요~ 😊😉 그리고 혼자하기 어렵다면 제가 최선을 다해서 돕겠습니다! 함께 하면 훨씬 잘 할 수 있으니까요!",
   },
   {
-    mentorName: "김혜리",
-    mentiName: "김리향",
+    mentorName: "hyeri",
+    mentorNameK: "김혜리",
+    mentiName: "rihyang",
+    mentiNameK: "김리향",
     mentoringCount: 1,
     mentoringDate: "2020-10-28",
     mentoringExtraDate: "2020-10-30",
@@ -1556,7 +1558,7 @@ for (let k = 0; k < menties[resultNum2].mentoringQnA.length; k++) {
 function paintMentoring() {
   mentoringContent.innerHTML = `<div class="proposal__upper">
 <div class="proposal__title">토링 100분 멘토링 결과지</div>
-<div class="proposal__sub__title"><span class="blue__bold">${menties[resultNum2].mentorName} 멘토님 - ${menties[resultNum2].mentiName} 멘티님</span>
+<div class="proposal__sub__title"><span class="blue__bold">${menties[resultNum2].mentorNameK} 멘토님 - ${menties[resultNum2].mentiNameK} 멘티님</span>
 ${menties[resultNum2].mentoringDate}
 </div>
 </div>
@@ -1564,7 +1566,7 @@ ${menties[resultNum2].mentoringDate}
 <div class="story__content__title">
   <div class="num">●</div>
   <div class="story__content__wrap">
-  ${menties[resultNum2].mentiName} 멘티님은 어떤 학생이었나요?
+  ${menties[resultNum2].mentiNameK} 멘티님은 어떤 학생이었나요?
     <div class="story__content__description">
     ${menties[resultNum2].mentoringStu}
     </div>
@@ -1590,7 +1592,7 @@ ${QNA}
 <div class="story__content__title">
   <div class="num">●</div>
   <div class="story__content__wrap">
-${menties[resultNum2].mentiName} 멘티님과 어떤 목표를 정하셨나요?
+${menties[resultNum2].mentiNameK} 멘티님과 어떤 목표를 정하셨나요?
     <div class="story__content__description">
     ${menties[resultNum2].mentoringPurpose}
     </div>
@@ -1602,7 +1604,7 @@ ${menties[resultNum2].mentiName} 멘티님과 어떤 목표를 정하셨나요?
 <div class="story__content__title2">
   <div class="proposal__lower">
     <!-- <i class="fas fa-exclamation red__exclamation"></i> -->
-    <div class="story__content__title">${menties[resultNum2].mentorName} 멘토님이 ${menties[resultNum2].mentiName} 멘티님에게 드리는 따뜻한 한마디입니다. 🌸🌸🌸</div><br />
+    <div class="story__content__title">${menties[resultNum2].mentorNameK} 멘토님이 ${menties[resultNum2].mentiNameK} 멘티님에게 드리는 따뜻한 한마디입니다. 🌸🌸🌸</div><br />
    <span class="blue__bold warm__word"> "${menties[resultNum2].mentoringFinal}" </span>
   </div>
 </div>
