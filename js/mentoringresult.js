@@ -1585,7 +1585,7 @@ ${QNA}
   </div>
 </div>
 </div>
-<div class="proposal__title">한달 후 /  1년 후 / 최종 한 줄 목표 설정</div>
+<div class="proposal__title">함께 설정한 목표</div>
 <div class="story__content3">
 <div class="story__content__title">
   <div class="num">●</div>
