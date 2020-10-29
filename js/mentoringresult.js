@@ -1601,8 +1601,8 @@ ${menties[resultNum2].mentiName} 멘티님과 어떤 목표를 정하셨나요?
 <div class="story__content__title2">
   <div class="proposal__lower">
     <!-- <i class="fas fa-exclamation red__exclamation"></i> -->
-    <div class="story__content__title">${menties[resultNum2].mentorName} 멘토님이 ${menties[resultNum2].mentiName} 멘티님에게 드리는 따뜻한 한마디입니다. (꼭 보여주세요!)</div><br />
-   <span class="blue__bold"> "${menties[resultNum2].mentoringFinal}" </span>
+    <div class="story__content__title">${menties[resultNum2].mentorName} 멘토님이 ${menties[resultNum2].mentiName} 멘티님에게 드리는 따뜻한 한마디입니다. 🌸🌸🌸</div><br />
+   <span class="blue__bold warm__word"> "${menties[resultNum2].mentoringFinal}" </span>
   </div>
 </div>
 </div>`;
