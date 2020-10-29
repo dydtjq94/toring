@@ -129,9 +129,8 @@ function handleOpenApply(e) {
         popupFirst.classList.add("popup__anim__up");
         setTimeout(function () {
           location.href = "result.html";
-        }, 510);
+        }, 210);
       }, 1410);
-
       clearInterval(link);
     }
     setTimeout(function () {
@@ -144,7 +143,7 @@ function handleOpenApply(e) {
       }, 1210);
 
       clearInterval(link);
-    }, 8000);
+    }, 10000);
   }, 2);
 }
 

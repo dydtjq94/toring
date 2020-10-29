@@ -1579,7 +1579,7 @@ ${QNA}
 <div class="story__content__title">
   <div class="num">●</div>
   <div class="story__content__wrap">
-${menties[resultNum2].mentiName} 멘티님과 어떤 목표를 정하셨나요?
+${menties[resultNum2].mentiName} 멘티님의 목표는 무엇인가요?
     <div class="story__content__description">
     ${menties[resultNum2].mentoringPurpose}
     </div>
@@ -1591,66 +1591,69 @@ ${menties[resultNum2].mentiName} 멘티님과 어떤 목표를 정하셨나요?
   <div class="proposal__lower">
     <!-- <i class="fas fa-exclamation red__exclamation"></i> -->
     <div class="story__content__title">${menties[resultNum2].mentorName} 멘토님이 ${menties[resultNum2].mentiName} 멘티님에게 드리는 따뜻한 한마디입니다.</div><br />
-   <span class="blue__bold"> "${menties[resultNum2].mentoringFinal}" </span>
+   <span class="blue__bold"> "${menties[resultNum2].mentoringFinal}" </span><br/><br/>
+        멘토링은 어떠셨나요? <br/> <span class="blue__bold">멘토링 이후 일주일동안 추가 할인이 지원된
+        가격으로 멘토링권</span>을 구매할 수 있어요. 멘토링권은 구매 이후 원하는 시기에
+        언제든 사용 가능합니다!
   </div>
 </div>
 </div>`;
 
-  //   mentorForm.innerHTML = `<div class="price__left">
-  // <div class="price__left__content">${mentors[resultNum].name} 멘토님</div>
-  // </div>
-  // <div class="price__left">
-  // <div class="price__left__content2">
-  // ${mentors[resultNum].title}
-  // </div>
-  // </div>`;
+  mentorForm.innerHTML = `<div class="price__left">
+<div class="price__left__content">${mentors[resultNum].name} 멘토님</div>
+</div>
+<div class="price__left">
+<div class="price__left__content2">
+${mentors[resultNum].title}
+</div>
+</div>`;
 
-  //   passbookTitle2.innerHTML = `${mentorName} 멘토님에게 <br/>
-  // <span class="orange__underline">한번 더 멘토링</span> (2만원 추가 할인)
-  // `;
+  passbookTitle2.innerHTML = `${mentorName} 멘토님에게 <br/>
+<span class="orange__underline">한번 더 멘토링</span> (2만원 추가 할인)
+`;
 
-  //   totalOffFirst.innerHTML = `${
-  //     days > 0
-  //       ? `<div class="total__off">
-  // <div class="off__content">기본 23% 할인</div>
-  // <div class="off__content__price">-30,000원</div>
-  // </div>
-  // <div class="total__off">
-  // <div class="off__content">추가 15% 할인</div>
-  // <div class="off__content__price">-20,000원</div>
-  // </div>`
-  //       : `<div class="total__off">
-  // <div class="off__content">기본 23% 할인</div>
-  // <div class="off__content__price">-30,000원</div>
-  // </div>`
-  //   }`;
-  //   totalOffSecond.innerHTML = `${
-  //     days > 0
-  //       ? `<div class="total__off">
-  //   <div class="off__content">기본 34% 할인</div>
-  //   <div class="off__content__price">-170,000원</div>
-  // </div>
-  // <div class="total__off">
-  //   <div class="off__content">추가 10% 할인</div>
-  //   <div class="off__content__price">-50,000원</div>
-  // </div>`
-  //       : `<div class="total__off">
-  // <div class="off__content">기본 34% 할인</div>
-  // <div class="off__content__price">-170,000원</div>
-  // </div>`
-  //   }`;
-  //   afterPriceFirst.innerHTML = `${
-  //     days > 0
-  //       ? `<div class="after__price">79,000원</div>`
-  //       : `<div class="after__price">99,000원</div>`
-  //   }`;
-  //   afterPriceSecond.innerHTML = `${
-  //     days > 0
-  //       ? `<div class="after__price after__price__small">1회당 74,750원</div>
-  //   <div class="after__price">299,000원</div>`
-  //       : `<div class="after__price after__price__small">1회당 87,250원</div>
-  //   <div class="after__price">349,000원</div>`
-  //   }`;
+  totalOffFirst.innerHTML = `${
+    days > 0
+      ? `<div class="total__off">
+<div class="off__content">기본 23% 할인</div>
+<div class="off__content__price">-30,000원</div>
+</div>
+<div class="total__off">
+<div class="off__content">추가 15% 할인</div>
+<div class="off__content__price">-20,000원</div>
+</div>`
+      : `<div class="total__off">
+<div class="off__content">기본 23% 할인</div>
+<div class="off__content__price">-30,000원</div>
+</div>`
+  }`;
+  totalOffSecond.innerHTML = `${
+    days > 0
+      ? `<div class="total__off">
+  <div class="off__content">기본 34% 할인</div>
+  <div class="off__content__price">-170,000원</div>
+</div>
+<div class="total__off">
+  <div class="off__content">추가 10% 할인</div>
+  <div class="off__content__price">-50,000원</div>
+</div>`
+      : `<div class="total__off">
+<div class="off__content">기본 34% 할인</div>
+<div class="off__content__price">-170,000원</div>
+</div>`
+  }`;
+  afterPriceFirst.innerHTML = `${
+    days > 0
+      ? `<div class="after__price">79,000원</div>`
+      : `<div class="after__price">99,000원</div>`
+  }`;
+  afterPriceSecond.innerHTML = `${
+    days > 0
+      ? `<div class="after__price after__price__small">1회당 74,750원</div>
+  <div class="after__price">299,000원</div>`
+      : `<div class="after__price after__price__small">1회당 87,250원</div>
+  <div class="after__price">349,000원</div>`
+  }`;
 }
 
 function getTime() {
@@ -1704,11 +1707,11 @@ function handleDiffer() {
 }
 
 function init() {
-  // getTime();
-  // setInterval(getTime, 500);
+  getTime();
+  setInterval(getTime, 500);
   paintMentoring();
-  // btn.addEventListener("click", handleCopy);
-  // differButton.addEventListener("click", handleDiffer);
+  btn.addEventListener("click", handleCopy);
+  differButton.addEventListener("click", handleDiffer);
 }
 
 init();
