@@ -1,4 +1,6 @@
 const mentors = [
+  // 정진호
+
   {
     name: "정진호",
     nameEng: "jinho",
@@ -81,7 +83,7 @@ const mentors = [
     },
   },
 
-  //유현우 멘토
+  // 유현우
 
   {
     name: "유현우",
@@ -157,7 +159,7 @@ const mentors = [
     },
   },
 
-  //오선빈 멘토
+  // 오선빈
 
   {
     name: "오선빈",
@@ -227,7 +229,7 @@ const mentors = [
     },
   },
 
-  //김예나 멘토
+  // 김예나
 
   {
     name: "김예나",
@@ -297,7 +299,7 @@ const mentors = [
     },
   },
 
-  //김태형
+  // 김태형
 
   {
     name: "김태형",
