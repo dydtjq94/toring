@@ -3,4 +3,4 @@ Allow:/
 Sitemap: https://www.toring.me/sitemap.xml
 
 User-agent: Googlebot-Image
-Disallow: /images/*
+Disallow: /*.jpeg$
