@@ -1865,6 +1865,7 @@ const mentors = [
 const scroll = document.querySelectorAll(`.scroll`);
 const countNum = document.querySelector(`#count__num`);
 const secondContentWrap = document.querySelector(`.second__content__wrap`);
+const thirdContentWrap = document.querySelector(`.main__third__content__wrap`);
 
 function scrollAppear(e) {
   e.style.transition = "all 1s ease-in-out";
@@ -1891,12 +1892,12 @@ function handleClickSelect() {
   );
 }
 
-function secondDisplayMentor() {
+function secondThirdDisplayMentor() {
   let lotto = [];
 
   function lottoNum() {
     let i = 0;
-    while (i < 4) {
+    while (i < 8) {
       let n = Math.floor(Math.random() * mentors.length);
       if (!sameNum(n)) {
         lotto.push(n);
@@ -1915,8 +1916,15 @@ function secondDisplayMentor() {
   }
   lottoNum();
 
+  let lotto1 = lotto.slice(undefined, 4);
+  let lotto2 = lotto.slice(4, 8);
+
+  console.log(lotto, lotto1, lotto2);
+
   let secondContent = ``;
-  lotto.forEach(function paintSecondContent(e) {
+  let thirdContent = ``;
+
+  lotto1.forEach(function paintSecondContent(e) {
     secondContent =
       secondContent +
       ` <div class="second__content ${mentors[e].nameEng}">
@@ -1963,8 +1971,33 @@ function secondDisplayMentor() {
     <div class="second__content__addview">자세히 보기 ></div>
   </div>`;
   });
+
+  lotto2.forEach(function paintSecondContent(e) {
+    thirdContent =
+      thirdContent +
+      ` <div class="main__third__content ${mentors[e].nameEng}">
+      <div class="third__content__left">
+        <img src="./img/${mentors[e].nameEng}.jpeg" class="third__content__img" />
+      </div>
+      <div class="third__content__right">
+        <div class="third__content__right__upper">
+        ${mentors[e].univ}학교 ${mentors[e].major} ${mentors[e].year}
+        </div>
+        <div class="third__content__tag tag__univ bold"># ${mentors[e].school}</div>
+
+        <div class="third__content__right__middle">
+        ${mentors[e].title}
+        </div>
+        
+      </div>
+    </div>`;
+  });
+
   secondContentWrap.innerHTML = secondContent;
+  thirdContentWrap.innerHTML = thirdContent;
+
   handleSecondGoDetail();
+  handleThirdGoDetail();
 }
 
 function handleSecondGoDetail() {
@@ -1995,7 +2028,7 @@ function handleThirdGoDetail() {
 function handleCountNum() {
   let countNumber = 0;
   function countUp() {
-    if (countNumber < 168) {
+    if (countNumber < 174) {
       countNumber++;
       countNum.innerHTML = countNumber;
     }
@@ -2056,9 +2089,7 @@ function init() {
   window.scrollTo(1, 1);
 
   handleClickSelect();
-
-  secondDisplayMentor();
-  handleThirdGoDetail();
+  secondThirdDisplayMentor();
   handleCountNum();
   // handleSnackBar();
 }
