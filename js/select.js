@@ -2585,14 +2585,14 @@ function schoolList() {
 
 function buttonActive() {
   const selectTag = document.querySelectorAll(`.selected__tag`);
-  if (selectTag.length >= 3) {
+  if (selectTag.length >= 1) {
     tagButton.classList.add("active__button");
     tagButton.innerHTML = `학교별 멘토들 보기`;
     tagButton.addEventListener("click", handleResult);
     buttonHeart();
   } else {
     tagButton.classList.remove("active__button");
-    tagButton.innerHTML = `학교별 멘토들 보기 <span class="blue__bold">(${selectTag.length}/3)</span>`;
+    tagButton.innerHTML = `학교별 멘토들 보기 <span class="blue__bold">(${selectTag.length}/1)</span>`;
   }
 }
 
