@@ -446,9 +446,10 @@
   width: 84%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   .fifth__resultSheet {
     margin-right: 28px;
-    font-size: 14px;
+    font-size: 11px;
     color: $blue2;
     &:hover {
       cursor: pointer;
