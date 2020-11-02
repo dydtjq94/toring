@@ -4,19 +4,19 @@ const openSchoolList = [
   {
     name: "세화고",
     nameEng: "saehwa",
-    applyNum: "4/5",
+    applyNum: "5/5",
     applyStatus: 0,
   },
   {
     name: "경기고",
     nameEng: "kyungki",
-    applyNum: "3/5",
+    applyNum: "5/5",
     applyStatus: 0,
   },
   {
     name: "영동고",
     nameEng: "youngdong",
-    applyNum: "4/5",
+    applyNum: "5/5",
     applyStatus: 0,
   },
   {
@@ -28,13 +28,13 @@ const openSchoolList = [
   {
     name: "중동고",
     nameEng: "joongdong",
-    applyNum: "3/5",
+    applyNum: "5/5",
     applyStatus: 0,
   },
   {
     name: "반포고",
     nameEng: "banpo",
-    applyNum: "2/5",
+    applyNum: "3/5",
     applyStatus: 0,
   },
   {
@@ -52,7 +52,7 @@ const openSchoolList = [
   {
     name: "외대부고",
     nameEng: "yongin",
-    applyNum: "4/5",
+    applyNum: "5/5",
     applyStatus: 0,
   },
   {
