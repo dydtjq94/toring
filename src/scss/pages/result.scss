@@ -1,4 +1,5 @@
-.result__sample__wrap {
+.result__sample__wrap,
+.result__recommendation__wrap {
   width: 90%;
   display: flex;
   flex-direction: column;
@@ -102,4 +103,11 @@
       font-weight: 700;
     }
   }
+}
+
+.result__total__wrap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

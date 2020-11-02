@@ -2796,6 +2796,8 @@ const mentors = [
 const tagColumn = document.querySelector(`.tag__column`);
 schoolList();
 const resultSampleWrap = document.querySelector(`.result__sample__wrap`);
+const resultTotalWrap = document.querySelector(`.result__total__wrap`);
+const recommendationMentor = document.querySelector(`.recommendation__mentor`);
 const loadingWrap = document.querySelector(`.ids__loading__wrap`);
 const tagContent = document.querySelectorAll(`.tag__content2`);
 
@@ -2835,8 +2837,12 @@ function handleLoadMentor() {
 
 function handleMentorPaint(e) {
   console.log("열심히 그리자!");
+  console.log(e[0]);
+  console.log(mentors);
+
   let resultPaint = ``;
   let resultPaintAdd = ``;
+  let resultRecommendation = ``;
   const resultLoadingWrap = document.querySelector(`.ids__loading__wrap`);
 
   console.log(e.length);
@@ -2870,6 +2876,77 @@ function handleMentorPaint(e) {
         </div>
       </div>`;
     }
+
+    let mentorsFilter = mentors;
+    for (let k = 0; k < e.length; k++) {
+      mentorsFilter = mentorsFilter.filter(function (n) {
+        return n.name !== e[k].name;
+      });
+      mentorsFilter = mentorsFilter;
+      console.log(mentorsFilter);
+    }
+    console.log(mentorsFilter);
+
+    let lotto = [];
+    function lottoNum() {
+      let i = 0;
+      while (i < 3) {
+        let n = Math.floor(Math.random() * mentorsFilter.length);
+        if (!sameNum(n)) {
+          lotto.push(n);
+          i++;
+        }
+      }
+      function sameNum(n) {
+        for (var i = 0; i < lotto.length; i++) {
+          if (n === lotto[i]) {
+            return true;
+          }
+        }
+        return false;
+      }
+      return lotto;
+    }
+    lottoNum();
+    for (let i = 0; i < 3; i++) {
+      resultRecommendation =
+        resultRecommendation +
+        ` <div class="result__sample ${mentorsFilter[lotto[i]].nameEng}">
+        ${
+          mentorsFilter[lotto[i]].label === 0
+            ? `<div class="result__condition">
+            모집중
+          </div>`
+            : mentorsFilter[lotto[i]].label === 1
+            ? `<div class="result__condition2">
+            마감 임박!
+          </div>`
+            : `<div class="result__condition3">
+          모집 마감
+        </div>`
+        }
+        <div class="result__sample__content">
+          <div class="result__name">${mentorsFilter[lotto[i]].school} - ${
+          mentorsFilter[lotto[i]].univ
+        }학교</div>
+          <div class="result__sub">${mentorsFilter[lotto[i]].major} ${
+          mentorsFilter[lotto[i]].year
+        }</div>
+          <div class="result__info">${mentorsFilter[lotto[i]].name} 멘토님 ㅣ ${
+          mentorsFilter[lotto[i]].method
+        }</div>
+          <div class="result__button">더보기</div>
+        </div>
+        <div class="result__sample__img">
+          <img src="./img/${
+            mentorsFilter[lotto[i]].nameEng
+          }.jpeg" class="result__img" />
+        </div>
+      </div>`;
+    }
+    console.log(resultRecommendation);
+
+    recommendationMentor.innerHTML = resultRecommendation;
     resultSampleWrap.innerHTML = resultPaint;
     flag = true;
     console.log("5개 그렸오!");
@@ -2974,11 +3051,11 @@ function handleSelectTag(e) {
     saveTag();
   }
   loadingWrap.classList.remove("none");
-  resultSampleWrap.classList.add("none");
+  resultTotalWrap.classList.add("none");
   setTimeout(function () {
     loadingWrap.classList.add("none");
-    resultSampleWrap.classList.remove("none");
-    resultSampleWrap.classList.add("trans");
+    resultTotalWrap.classList.remove("none");
+    resultTotalWrap.classList.add("trans");
   }, 800);
 
   handleLoadMentor();
