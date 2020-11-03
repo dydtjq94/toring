@@ -2876,8 +2876,16 @@ schoolList();
 const resultSampleWrap = document.querySelector(`.result__sample__wrap`);
 const resultTotalWrap = document.querySelector(`.result__total__wrap`);
 const recommendationMentor = document.querySelector(`.recommendation__mentor`);
+const recommendationTitle = document.querySelector(
+  `.result__recommendation__title`
+);
 const loadingWrap = document.querySelector(`.ids__loading__wrap`);
 const tagContent = document.querySelectorAll(`.tag__content2`);
+
+const temp = decodeURI(location.href.split("?"));
+const forResult = temp.split(",")[1];
+const forResultId = parseInt(temp.split(",")[2], 10);
+console.log(temp, forResult, forResultId);
 
 let tagList = [];
 const tagLs = "tag";
@@ -2914,16 +2922,10 @@ function handleLoadMentor() {
 }
 
 function handleMentorPaint(e) {
-  console.log("열심히 그리자!");
-  console.log(e[0]);
-  console.log(mentors);
-
   let resultPaint = ``;
   let resultPaintAdd = ``;
   let resultRecommendation = ``;
   const resultLoadingWrap = document.querySelector(`.ids__loading__wrap`);
-
-  console.log(e.length);
 
   if (e.length < 5) {
     for (let i = 0; i < e.length; i++) {
@@ -2961,9 +2963,7 @@ function handleMentorPaint(e) {
         return n.name !== e[k].name;
       });
       mentorsFilter = mentorsFilter;
-      console.log(mentorsFilter);
     }
-    console.log(mentorsFilter);
 
     let lotto = [];
     function lottoNum() {
@@ -3022,12 +3022,12 @@ function handleMentorPaint(e) {
         </div>
       </div>`;
     }
-    console.log(resultRecommendation);
 
     recommendationMentor.innerHTML = resultRecommendation;
+    recommendationTitle.innerHTML = ` 다른 고등학교 출신 <br />
+    멘토들도 확인해보세요!`;
     resultSampleWrap.innerHTML = resultPaint;
     flag = true;
-    console.log("5개 그렸오!");
   } else {
     for (let i = 0; i < 5; i++) {
       resultPaint =
@@ -3058,7 +3058,6 @@ function handleMentorPaint(e) {
       </div>`;
     }
     resultSampleWrap.innerHTML = resultPaint;
-    console.log("5개 넘는데 5개 그리기 완료");
 
     for (let j = 5; j < e.length; j++) {
       resultPaintAdd =
@@ -3099,7 +3098,7 @@ function handleMentorPaint(e) {
           resultLoadingWrap.classList.add("none");
           resultPaint = resultPaint + resultPaintAdd;
           resultSampleWrap.innerHTML = resultPaint;
-          console.log("나머지도 다 그리기 완료!");
+
           goMentorDetail();
         }, 900);
       }
@@ -3191,7 +3190,18 @@ function schoolList() {
 }
 
 function init() {
-  loadTag();
+  if (forResult === undefined) {
+    loadTag();
+  } else {
+    localStorage.clear();
+    const resultAndId = {
+      school: forResult,
+      id: forResultId,
+    };
+    tagList.push(resultAndId);
+    saveTag();
+    loadTag();
+  }
   goMentorDetail();
   tagContent.forEach((e) => e.addEventListener("click", handleSelectTag));
 }

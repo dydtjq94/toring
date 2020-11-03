@@ -5,6 +5,14 @@
   align-items: center;
 }
 
+.result__recommendation__title {
+  width: 90%;
+  font-weight: 700;
+  margin-bottom: 20px;
+  font-size: 24px;
+  line-height: 32px;
+}
+
 .result__sample__wrap,
 .recommendation__mentor {
   width: 90%;
@@ -16,7 +24,6 @@
   :hover {
     cursor: pointer;
   }
-
   .result__sample {
     position: relative;
     width: 100%;
@@ -37,12 +44,12 @@
       .result__name {
         font-size: 20px;
         font-weight: 900;
-        margin-bottom: 12px;
+        margin-bottom: 6px;
       }
       .result__sub {
         color: $grayFont;
         font-weight: 700;
-        margin-bottom: 8px;
+        margin-bottom: 12px;
       }
       .result__info {
         color: $grayFont;
