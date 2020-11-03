@@ -1,5 +1,12 @@
-.result__sample__wrap,
 .result__recommendation__wrap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.result__sample__wrap,
+.recommendation__mentor {
   width: 90%;
   display: flex;
   flex-direction: column;
