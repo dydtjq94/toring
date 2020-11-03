@@ -3190,16 +3190,20 @@ function schoolList() {
 }
 
 function init() {
-  if (forResult === undefined) {
-    loadTag();
-  } else {
+  if (forResult !== undefined) {
     localStorage.clear();
+
     const resultAndId = {
       school: forResult,
       id: forResultId,
     };
+    console.log(resultAndId, tagList);
     tagList.push(resultAndId);
+    console.log(tagList);
     saveTag();
+    paintTag(forResultId);
+    handleLoadMentor();
+  } else {
     loadTag();
   }
   goMentorDetail();
