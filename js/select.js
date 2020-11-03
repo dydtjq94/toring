@@ -2945,8 +2945,6 @@ function schoolList() {
   }
 
   tagColumn.innerHTML = schoolTag;
-
-  console.log(schoolList);
 }
 
 function buttonActive() {

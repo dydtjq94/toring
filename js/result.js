@@ -2927,7 +2927,7 @@ function handleMentorPaint(e) {
   let resultRecommendation = ``;
   const resultLoadingWrap = document.querySelector(`.ids__loading__wrap`);
 
-  if (e.length < 5) {
+  if (e.length < 6) {
     for (let i = 0; i < e.length; i++) {
       resultPaint =
         resultPaint +
@@ -2964,7 +2964,6 @@ function handleMentorPaint(e) {
       });
       mentorsFilter = mentorsFilter;
     }
-
     let lotto = [];
     function lottoNum() {
       let i = 0;
@@ -3022,13 +3021,15 @@ function handleMentorPaint(e) {
         </div>
       </div>`;
     }
-
     recommendationMentor.innerHTML = resultRecommendation;
     recommendationTitle.innerHTML = ` 다른 고등학교 출신 <br />
     멘토들도 확인해보세요!`;
     resultSampleWrap.innerHTML = resultPaint;
+
     flag = true;
   } else {
+    recommendationMentor.innerHTML = ``;
+    recommendationTitle.innerHTML = ``;
     for (let i = 0; i < 5; i++) {
       resultPaint =
         resultPaint +
