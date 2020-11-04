@@ -3015,6 +3015,15 @@ function handleCodeButton() {
 <div class="code__content__price">-20,000원</div> `;
       passbookPrice1.innerHTML = `79,000원`;
       passbookPrice2.innerHTML = `79,000원`;
+    } else if (codeInputResult === "SANGDO1104") {
+      codeResult.innerHTML = `<span class="blue__result">
+  <i class="fas fa-check"></i>
+  할인 코드 적용이 완료 되었습니다.</span
+>`;
+      codeContent.innerHTML = `<div class="code__content">(추가) 특별 할인</div>
+<div class="code__content__price">-20,000원</div> `;
+      passbookPrice1.innerHTML = `79,000원`;
+      passbookPrice2.innerHTML = `79,000원`;
     } else {
       codeResult.innerHTML = `<span class="red__result">
     <i class="fas fa-exclamation-circle"></i>

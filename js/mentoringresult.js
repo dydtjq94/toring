@@ -3170,18 +3170,18 @@ ${menties[resultNum2].mentiNameK} 멘티님과 어떤 목표를 정하셨나요?
 </div>`;
 
   mentorForm.innerHTML = `<div class="price__left">
-  <div class="price__left__content">${mentors[resultNum].name} 멘토님</div>
+
   </div>
   <div class="price__left">
-  <div class="price__left__content2">
-  ${mentors[resultNum].title}
+  <div class="price__left__content2 big__coupon">
+*구매하신 멘토링 이용권은 기간 상관 없이 언제든 사용하실 수 있습니다.
   </div>
   </div>`;
 
   passbookTitle2.innerHTML = `${
     days > 0
       ? `<span class="orange__underline">${menties[resultNum2].mentorNameK} 멘토님에게 
-      한번 더 멘토링</span> <br/>(일주일 안에 결제시 2만원 추가 할인!!)
+      한번 더 멘토링</span> <br/>(일주일 안에 결제시 2만원 추가 할인)
   `
       : `<span class="orange__underline">${menties[resultNum2].mentorNameK} 멘토님에게 
       한번 더 멘토링</span> <br/>(추가 할인 종료)`
