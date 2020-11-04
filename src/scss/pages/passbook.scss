@@ -147,6 +147,9 @@
 }
 
 .code__input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   padding: 16px 28px 16px 16px;
   outline: none;
   border-radius: 5px;
