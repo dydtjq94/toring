@@ -2869,6 +2869,73 @@ const mentors = [
         "1학년때부터 학생부나 내신 관리를 잘하고 싶은데, 어떤 방향으로 해야 할지 조언 좀 부탁드립니다.",
     },
   },
+
+  // 임규은
+
+  {
+    name: "유석균",
+    nameEng: "seokgyun",
+    gender: "남",
+    univ: "서울대",
+    univEng: "seoul",
+    major: "의학과",
+    majorNum: 0,
+    year: "18학번",
+    school: "영동고",
+    label: 0, //0이 모집중 1이 마감임박 2마감
+    labelNum: 1,
+    title: "서울대 의대에 입학하기 위해 영동고 3년을 관리했던 방법 ",
+    method: "학생부 종합",
+    mentoring: ["학생부 관리", "내신 관리"],
+    experience: [
+      `영동고등학교 졸업`,
+      `영동고등학교 수학경시부 42기`,
+      `영동고등학교 하이스트`,
+      `영동고등학교 모의재판 대회 2년 연속 수상`,
+      `영동고등학교 수학과 프로젝트 2년 연속 수상`,
+      `영동고등학교 42기 학생회`,
+    ],
+    being: [
+      `진로를 확정하지 못해 생기부의 방향성관련해서 고민하는`,
+      `수행평가나 대회 준비가 막막한`,
+      `비교과 활동의 아이디어를 얻고 싶은`,
+    ],
+    introduce: [
+      {
+        title: `유석균 멘토님은 이런 사람이에요!`,
+        detail: `꾸준한 노력으로 생활기록부를 채웠고, 제 생각을 담은 자기소개서를 통해 서울대에 입학했습니다. 고등학교 시절의 중요성을 알려드릴 수 있습니다.`,
+      },
+    ],
+    special: [
+      {
+        title: `멘토님은 고등학생 때 어떤 학생이었나요? 입시 스토리를 간단하게 들려주셔도 좋아요!`,
+        detail: `거의 공부 밖에 안 했다 싶을 정도로 피시방을 가 본적도 없고 학원이 없는 날은 학교에 남아서 공부를 하다 집에 가는 학생이었습니다. 슬럼프의 극복 방법도 앉아서 공부를 하다 보면 극복된다는 마인드의 학생이었던 것 같습니다.`,
+      },
+      {
+        title: `멘토님과 같은 고등학교(영동고)를 다니고 있습니다. 혹시 우리 학교 내신이나 학생부는 어떤식으로 준비해야하나요?`,
+        detail: `내신도 중요하지만, 특히 서울대에 관해선 비교과가 많이 중요한 것 같습니다. 내신 시험만 준비하려 하지 말고, 학교의 여러 활동을 두루 해보면 좋을 것 같습니다.`,
+      },
+      {
+        title: `지금의 입시 결과를 이뤄낼 수 있었던 이유, 혹은 자신만의 공부 방법은 무엇인가요?`,
+        detail: `딱 세가지 말씀드릴 수 있습니다. 무거운 엉덩이, 중용을 지키기, 자만하지 않기`,
+      },
+      {
+        title: `대학에 오니 이런 점이 좋다! 하는 점을 후배에게 들려준다면 어떤 이야기를 해 주실 수 있을까요? `,
+        detail: `압박감이 크게 없다는 것, 좋아하는 것들을 더 많이 할 수 있다는 것이 가장 대학에서의 장점입니다.`,
+      },
+
+      {
+        title: `어떤 학생들에게 주로 도움을 줄 수 있으실까요?`,
+        detail: `의대 진학에 대해 고민하고 있는 친구들, 고등학교 공부의 중요성에 대해 알고 싶은 친구들을 도와드릴 수 있습니다.`,
+      },
+    ],
+    review: [],
+    mainQnA: {
+      title: "영동고 내신이나 학생부는 어떻게 준비하면 좋을까요?",
+      sub:
+        "1학년때부터 학생부나 내신 관리를 잘하고 싶은데, 어떤 방향으로 해야 할지 조언 좀 부탁드립니다.",
+    },
+  },
 ];
 
 const tagColumn = document.querySelector(`.tag__column`);
@@ -2915,8 +2982,8 @@ function handleLoadMentor() {
   if (mentorTagList.length === 0) {
     mentorTagList = mentors;
   }
-
   mentorTagList.shuffle();
+
   handleMentorPaint(mentorTagList);
   goMentorDetail();
 }
@@ -3181,6 +3248,11 @@ function schoolList() {
   let schoolListSemi = [];
   mentors.forEach((e) => schoolListSemi.push(e.school));
   let schoolList = Array.from(new Set(schoolListSemi));
+
+  schoolList.sort(function (a, b) {
+    // 한글 오름차순
+    return a < b ? -1 : a > b ? 1 : 0;
+  });
   let schoolTag = ``;
   for (let k = 0; k < schoolList.length; k++) {
     schoolTag =
