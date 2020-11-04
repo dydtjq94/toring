@@ -2957,7 +2957,7 @@ function handleCodeButton() {
       passbookPrice1.innerHTML = `99,000원`;
       passbookPrice2.innerHTML = `99,000원`;
     }
-  }, 400);
+  }, 200);
 }
 
 function passbookButton() {
