@@ -2934,28 +2934,30 @@ function paintCodeInput() {
 }
 
 function handleCodeButton() {
-  sessionStorage.setItem("code", codeInput.value);
-  codeInput.value = "";
-  const codeInputResult = sessionStorage.getItem("code");
-  console.log(codeInputResult);
-  if (codeInputResult === "test") {
-    codeResult.innerHTML = `<span class="blue__result">
+  setTimeout(function () {
+    sessionStorage.setItem("code", codeInput.value);
+    codeInput.value = "";
+    const codeInputResult = sessionStorage.getItem("code");
+    console.log(codeInputResult);
+    if (codeInputResult === "test") {
+      codeResult.innerHTML = `<span class="blue__result">
   <i class="fas fa-check"></i>
   할인 코드 적용이 완료 되었습니다.</span
 >`;
-    codeContent.innerHTML = `<div class="code__content">(추가) 개설 멤버 할인</div>
+      codeContent.innerHTML = `<div class="code__content">(추가) 개설 멤버 할인</div>
 <div class="code__content__price">-20,000원</div> `;
-    passbookPrice1.innerHTML = `79,000원`;
-    passbookPrice2.innerHTML = `79,000원`;
-  } else {
-    codeResult.innerHTML = `<span class="red__result">
+      passbookPrice1.innerHTML = `79,000원`;
+      passbookPrice2.innerHTML = `79,000원`;
+    } else {
+      codeResult.innerHTML = `<span class="red__result">
     <i class="fas fa-exclamation-circle"></i>
     할인 코드를 다시 한번 확인해주세요.</span
   >`;
-    codeContent.innerHTML = ``;
-    passbookPrice1.innerHTML = `99,000원`;
-    passbookPrice2.innerHTML = `99,000원`;
-  }
+      codeContent.innerHTML = ``;
+      passbookPrice1.innerHTML = `99,000원`;
+      passbookPrice2.innerHTML = `99,000원`;
+    }
+  }, 400);
 }
 
 function passbookButton() {
