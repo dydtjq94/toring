@@ -2891,7 +2891,7 @@ function handleHome() {
   location.href = "index.html";
 }
 
-function paintMentor() {
+function paintPassbook() {
   const temp = decodeURI(location.href);
   const mentorName = temp.split("?")[1];
   const parentName = temp.split("?")[2];
@@ -2905,7 +2905,6 @@ function paintMentor() {
       break;
     }
   }
-  paintPrice(resultNum);
 
   const mentorForm = document.querySelector(`.price__mentor__content`);
   const parentForm = document.querySelector(`#parent`);
@@ -2923,75 +2922,40 @@ ${mentors[resultNum].title}
   title2Form.innerHTML = `<span class="orange__underline">${mentors[resultNum].school} 멘토링</span> (1회 - 100분)`;
 }
 
-function paintPrice(e) {
-  const totalPrice = document.querySelector(`.total__price`);
-  const passbook = document.querySelector(`.passbook`);
-  totalPrice.innerHTML = `<div class="passbook__title2"></div>
-  <div class="price__mentor__content"></div>
-  <div class="total__price__column__wrap">
-    <div class="total__price__column">
-      <div class="before__price__title">정가</div>
-    </div>
-    <div class="total__price__column">
-    
-          <div class="before__price">129,000원</div>
+const codeInput = document.querySelector(`.code__input`);
+const codeButton = document.querySelector(`.code__content__button`);
+const codeResult = document.querySelector(`.code__result`);
+const codeContent = document.querySelector(`.code__content__column`);
+const passbookPrice1 = document.querySelector(`.after__price`);
+const passbookPrice2 = document.querySelector(`.info__price__content`);
 
-    </div>
-    <div class="total__price__column">
-      <div class="off__title">할인</div>
-    </div>
-    <div class="total__price__column total__off">
-      
+function paintCodeInput() {
+  codeButton.addEventListener("click", handleCodeButton);
+}
 
-          <div class="off__content">DSchool 24% 할인</div>
-          <div class="off__content__price">-30,000원</div>
-
-    </div>
-    <div class="total__price__column">
-      <div class="after__price__title">최종 결제 금액</div>
-    </div>
-    <div class="total__price__column">
-
-          <div class="after__price">99,000원</div>
- 
-    </div>
-  </div>`;
-  passbook.innerHTML = `<div class="passbook__column">
-<div class="passbook__num__title">입금 계좌</div>
-<div class="passbook__num__content">
-<input
-  type="text"
-  class="num__content"
-  id="target"
-  value="3333-17-3142700"
-  readonly
-/>
-<div class="num__copy2" id="btn">복사하기</div>
-</div>
-</div>
-<div class="passbook__column">
-<div class="passbook__info">
-<div class="info__bank__title">입금 은행</div>
-<div class="info__bank__content">카카오뱅크</div>
-</div>
-<div class="passbook__info">
-<div class="info__name__title">예금주</div>
-<div class="info__name__content">지현준</div>
-</div>
-</div>
-<div class="passbook__column">
-<div class="passbook__price">
-<div class="info__bank__title">입금액</div>
-
-    <div class="info__price__content">99,000원</div>
-
-
-</div>
-<div class="passbook__price">
-<div class="info__bank__title">입금자명</div>
-<div class="info__price__content" id="parent"></div>
-</div>
-</div>`;
+function handleCodeButton() {
+  sessionStorage.setItem("code", codeInput.value);
+  codeInput.value = "";
+  const codeInputResult = sessionStorage.getItem("code");
+  console.log(codeInputResult);
+  if (codeInputResult === "test") {
+    codeResult.innerHTML = `<span class="blue__result">
+  <i class="fas fa-check"></i>
+  할인 코드 적용이 완료 되었습니다.</span
+>`;
+    codeContent.innerHTML = `<div class="code__content">(추가) 개설 멤버 할인</div>
+<div class="code__content__price">-20,000원</div> `;
+    passbookPrice1.innerHTML = `79,000원`;
+    passbookPrice2.innerHTML = `79,000원`;
+  } else {
+    codeResult.innerHTML = `<span class="red__result">
+    <i class="fas fa-exclamation-circle"></i>
+    할인 코드를 다시 한번 확인해주세요.</span
+  >`;
+    codeContent.innerHTML = ``;
+    passbookPrice1.innerHTML = `99,000원`;
+    passbookPrice2.innerHTML = `99,000원`;
+  }
 }
 
 function passbookButton() {
@@ -3006,8 +2970,9 @@ function passbookButton() {
 }
 
 function init() {
-  paintMentor();
+  paintPassbook();
   passbookButton();
+  paintCodeInput();
 }
 
 init();

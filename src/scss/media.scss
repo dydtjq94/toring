@@ -42,6 +42,16 @@
   .form__popup {
     width: 500px;
   }
+  .code__input {
+    padding: 16px 120px 16px 16px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid rgb(211, 211, 211);
+    font-weight: 700;
+    &::placeholder {
+      font-weight: 700;
+    }
+  }
 }
 
 // 모바일
