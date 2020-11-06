@@ -3135,7 +3135,7 @@ const menties = [
     mentiNameK: "이종원",
     mentoringCount: 1,
     mentoringDate: "2020-11-04",
-    mentoringExtraDate: "2020-11-12",
+    mentoringExtraDate: "2020-11-13",
     mentoringStu:
       "학습의 중요성은 인지하고 있으나 막상 실천을 어려워하는 학생이였습니다. 자신이 나중에 어떤과목을 선택할지, 어떤 과로 진학할지에 대한 청사진은 가지고 있으나 그것을 실현시킬 구체적인 계획 설정이 부족해보였습니다. 학습 습관의 경우 하루하루 시간표나 해야할 일들을 설정하고 지키려고 노력하는 것이 아니라, 그냥 잡히는대로 공부하는 경향을 보여 날마다 P.xx~P.xx처럼 구체적으로 계획을 세우라 조언하였습니다.",
     mentoringQnA: [
