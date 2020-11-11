@@ -3230,8 +3230,9 @@ function popupCloseForever() {
   }, 30);
 }
 
-function handlePopupBtn() {
+function handlePopupBtn(e) {
   location.href = "submitMiddleThird.html";
+  e.target.classList.add("click__anim");
 }
 
 const mainBannerLS = localStorage.getItem("mainBanner");
