@@ -225,14 +225,14 @@
   position: fixed;
   width: 100%;
   z-index: 100;
-  opacity: 1;
+  opacity: 0;
   top: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: white;
   transition: 0.3s transform;
-  transform: translateY(-415px);
+  transform: translateY(-435px);
 }
 
 .popup__anim__result {
@@ -242,7 +242,7 @@
 
 .popup__anim__up {
   opacity: 1;
-  transform: translateY(-415px);
+  transform: translateY(-435px);
 }
 
 #openschool__phone__origin {
