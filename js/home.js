@@ -3032,10 +3032,22 @@ function scrollAppear(e) {
 
 function handleClickSelect() {
   const goSelectButton = document.querySelectorAll(`#goButton`);
+  const goSelectButton2 = document.querySelectorAll(`#goButton2`);
+  const mainButton = document.querySelector(`.main__button`);
+
   goSelectButton.forEach((e) =>
     e.addEventListener("click", function handleResultClick() {
       e.classList.add("click__anim");
+    })
+  );
 
+  mainButton.addEventListener("click", function () {
+    location.href = "select.html";
+  });
+
+  goSelectButton2.forEach((e) =>
+    e.addEventListener("click", function handleResultClick() {
+      e.classList.add("click__anim");
       location.href = "select.html";
     })
   );
@@ -3185,51 +3197,44 @@ function handleCountNum() {
   setInterval(countUp, 45);
 }
 
-// function handleSnackBar() {
-//   const snackBarResult = document.querySelector(`#snackbar__result`);
-//   const body = document.querySelector(`body`);
-//   const bodyBlack = document.querySelector(`.body__black`);
-//   const snackBarButton = document.querySelector(`.snackbar__result__button`);
-//   const RESULT_LS = "result";
-//   const loadedResult = sessionStorage.getItem(RESULT_LS);
+const blackBoard = document.querySelector(`.black__board`);
+const popupCloseBtn = document.querySelector(`.popup__close__button`);
+const popupCloseBtnNow = document.querySelector(`.popup__close__now`);
+const popupCloseBtnForever = document.querySelector(`.popup__close__forever`);
+const popupFirst = document.querySelector(`#snackbar__result`);
+const popupBtn = document.querySelector(`.close`);
+const floatingBtn = document.querySelector(`.floating__button`);
 
-//   setTimeout(function () {
-//     console.dir(bodyBlack);
-//     snackBarResult.classList.add("snackbar__anim__result");
-//     snackBarResult.classList.remove("snackbar__anim__up");
-//     body.style.backgroundColor = "#313131";
-//     bodyBlack.classList.remove("none");
+function popupOpen() {
+  setTimeout(function () {
+    popupFirst.classList.add("snackbar__anim__result");
+    popupFirst.classList.remove("snackbar__anim__up");
+    blackBoard.classList.remove("none");
+  }, 8000);
+}
 
-//     // let a = 11;
-//     // function minusNum() {
-//     //   a = a - 1;
-//     //   autoResult.innerHTML = `
-//     //   ${
-//     //     aaaa.split("등")[0]
-//     //   } 출신 ${firstMentorName} 멘토님 이야기가 궁금하신가요?<br/> ${a}초 후 자동으로 넘어갑니다.`;
-//     // }
-//     // minusNum();
-//     // setInterval(minusNum, 1000);
-//     // if (a == 0) {
-//     //   clearTimeout(setTimeoutId);
-//     // }
+function popupClose() {
+  setTimeout(function () {
+    popupFirst.classList.remove("snackbar__anim__result");
+    popupFirst.classList.add("snackbar__anim__up");
+    blackBoard.classList.add("none");
+  }, 30);
+}
 
-//     // setTimeoutId = setTimeout(function () {
-//     //   location.href =
-//     //     "mentordetail.html?" + "name" + ":" + mentorSimple[0].classList[1];
-//     // }, 10700);
-//   }, 1000);
+function popupCloseForever() {
+  setTimeout(function () {
+    popupFirst.classList.remove("snackbar__anim__result");
+    popupFirst.classList.add("snackbar__anim__up");
+    blackBoard.classList.add("none");
+    localStorage.setItem("mainBanner", "close");
+  }, 30);
+}
 
-//   snackBarButton.addEventListener("click", handleSnackRemove);
+function handlePopupBtn() {
+  location.href = "submitMiddleThird.html";
+}
 
-//   function handleSnackRemove() {
-//     // clearTimeout(setTimeoutId);
-//     snackBarResult.classList.remove("snackbar__anim__result");
-//     snackBarResult.classList.add("snackbar__anim__up");
-//     body.style.backgroundColor = "#f7f7f7";
-//     bodyBlack.classList.add("none");
-//   }
-// }
+const mainBannerLS = localStorage.getItem("mainBanner");
 
 function init() {
   scroll.forEach((item) => {
@@ -3240,7 +3245,15 @@ function init() {
   handleClickSelect();
   secondThirdDisplayMentor();
   handleCountNum();
-  // handleSnackBar();
+  if (mainBannerLS !== "close") {
+    popupOpen();
+  }
+  blackBoard.addEventListener("click", popupClose);
+  popupCloseBtn.addEventListener("click", popupClose);
+  // popupCloseBtnNow.addEventListener("click", popupClose);
+  // popupCloseBtnForever.addEventListener("click", popupCloseForever);
+  popupBtn.addEventListener("click", handlePopupBtn);
+  floatingBtn.addEventListener("click", handlePopupBtn);
 }
 
 init();

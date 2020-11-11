@@ -71,19 +71,41 @@
   </head>
 
   <body>
-    <header class="header">
-      <a href="javascript:history.back()" class="transparent">
-        <i class="fas fa-chevron-left" style="user-select: auto"></i>
-      </a>
-
-      <a href="index.html" class="header__toring">
-        토링 <span class="semi__logo">대치</span></a
-      >
-      <a href="javascript:location.reload()" class="transparent">
-        <i class="fas fa-chevron-left" style="user-select: auto"></i>
-      </a>
-    </header>
+    <div class="snackbar__result" id="snackbar__result">
+      <div class="popup__close__button">
+        <i class="fas fa-times"></i>
+      </div>
+      <div class="auto__result">
+        <span class="dschool__d2">D</span>School 학부모님 주목!
+      </div>
+      <div class="snackbar__result__ment">
+        디스쿨 회원님들을 위한<br />
+        멘토에게 직접 물어보는<br />
+        1회 무료 질문 기능 출시!
+      </div>
+      <div class="close" id="goButton">바로 사용해 고민 해결하기</div>
+    </div>
+    <div class="black__board none"></div>
+    <div class="floating__button">
+      <div class="floating__button__content">1:1 무료 질문</div>
+      <div class="floating__button__mark">
+        <i class="fas fa-question"></i>
+      </div>
+    </div>
     <div class="body">
+      <header class="header">
+        <a href="javascript:history.back()" class="transparent">
+          <i class="fas fa-chevron-left" style="user-select: auto"></i>
+        </a>
+
+        <a href="index.html" class="header__toring">
+          토링 <span class="semi__logo">대치</span></a
+        >
+        <a href="javascript:location.reload()" class="transparent">
+          <i class="fas fa-chevron-left" style="user-select: auto"></i>
+        </a>
+      </header>
+
       <div class="main__display scroll">
         <img class="bg__img1" src="./img/seoul.png" alt="" />
         <img class="bg__img2" src="./img/yonsei.png" alt="" />
@@ -102,13 +124,16 @@
           <button class="main__button" id="goButton">
             우리 고등학교 멘토들 찾아보기
           </button>
+          <div class="dschool__event">
+            with <span class="dschool__d">D</span>School
+          </div>
         </div>
       </div>
       <div class="second__display scroll">
         <div class="main__second__title__wrap">
           <div class="main__second__title">
             3개월동안
-            <span class="blue__bold" id="count__num">149</span>명이<br />토링을
+            <span class="blue__bold" id="count__num"></span>명이<br />토링을
             통해 직접 고민을 해결했습니다.
           </div>
         </div>
@@ -129,7 +154,7 @@
         </div>
         <div class="main__third__content__wrap"></div>
         <div class="main__third__button__wrap">
-          <div class="main__third__button" id="goButton">
+          <div class="main__third__button" id="goButton2">
             대치동 고등학교 멘토 더 보기
           </div>
         </div>
@@ -252,8 +277,11 @@
         </div>
 
         <div class="main__fifth__button__wrap">
-          <div class="main__fifth__button" id="goButton">
-            지금 멘토를 만나보세요!
+          <div class="main__fifth__button" id="goButton2">
+            지금 같은 학교 선배를 만나보세요!
+          </div>
+          <div class="dschool__event">
+            with <span class="dschool__d">D</span>School
           </div>
         </div>
       </div>
@@ -267,7 +295,9 @@
         </div>
         <div class="footer__column">
           <div class="footer__left">주소</div>
-          <div class="footer__right">서울특별시 서대문구 연세로 50</div>
+          <div class="footer__right">
+            서울특별시 서대문구 연세로 50 (연세대학교)
+          </div>
         </div>
 
         <div class="footer__column">

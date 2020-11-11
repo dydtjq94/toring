@@ -73,8 +73,8 @@ const openSchoolButton = document.querySelectorAll(
   `.open__school__content__button`
 );
 const blackBoard = document.querySelector(`.black__board`);
-const popupFirst = document.querySelector(`.form__popup`);
 const popupCloseBtn = document.querySelector(`.popup__close__button`);
+const popupFirst = document.querySelector(`.form__popup`);
 const openSubmitButton = document.querySelector(`.phone__submit__button`);
 const openSubmitInput = document.querySelector(`.phone__submit__input`);
 const thx = document.querySelector(`#thx`);

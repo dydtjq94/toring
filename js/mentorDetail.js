@@ -2351,7 +2351,7 @@ const mentors = [
         detail: ` 학원에 의존하지 않고 성적을 올리기 위해 도서관에서 일상을 보내던 학생이었습니다. 고3 때는 나름대로 열심히 공부했다고 생각했지만, 결과는 비참했습니다. 수능 지진으로 인한 연기 때문인지 마지막에 매우 느슨해진 탓도 있었을 겁니다. 어쩔 수 없이 재수를 하게 되었을 때, 저 자신을 '매우 열심히 공부한 학생'이라고 밖에 표현할 수 없을 것 같습니다. 내신도 나름 열심히 올렸지만 고3 때 입시 상담 당시 원하는 결과가 나오지 않아 조금 더 열심히 하지 못했던 과거의 자신에 대해 후회스러웠습니다. `,
       },
       {
-        title: `멘토님과 같은 고등학교(휘문고)를 다니고 있습니다. 혹시 우리 학교 내신이나 학생부는 어떤식으로 준비해야하나요?`,
+        title: `멘토님과 같은 고등학교(중동고)를 다니고 있습니다. 혹시 우리 학교 내신이나 학생부는 어떤식으로 준비해야하나요?`,
         detail: `중동고 출신의 수시를 통한 명문대 진학은 내신이 꼭 베이스가 되어야하는 것 같습니다. 다른 어느 비교과도 내신 점수를 뛰어넘을 수 없는 듯 합니다. 비교과의 가장 중요한 포인트는 아마 '독서 활동'이 아닐까 싶습니다. 내신과 같은경우는 교과서를 전부 외우는 것이 최고의 방안입니다.`,
       },
       {
@@ -3407,16 +3407,9 @@ function handleClickSelect() {
   );
 }
 
-function handleToringButton() {
-  var newWindow = window.open("about:blank");
-  newWindow.location.href = "http://pf.kakao.com/_WMMxgxb/chat";
-  toringButton.classList.add("click__anim");
-}
-
 function paintButton() {
   const toringButton = document.querySelector(".buy__toring");
   const goResult = document.querySelector(`.again__result`);
-  toringButton.addEventListener("click", handleToringButton);
   goResult.addEventListener("click", function handleGoResult() {
     goResult.classList.add("click__anim");
     setTimeout(function () {

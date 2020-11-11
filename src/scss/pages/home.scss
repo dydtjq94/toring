@@ -484,11 +484,14 @@
   top: 8px;
   right: 28px;
   font-weight: 700;
-
-  .dschool__d {
-    color: #cf0020;
-    font-size: 20px;
-  }
+}
+.dschool__d {
+  color: #cf0020;
+  font-size: 20px;
+}
+.dschool__d2 {
+  color: #cf0020;
+  font-size: 26px;
 }
 
 .dschool__banner__wrap {
@@ -513,20 +516,60 @@
   }
 }
 
+.body__black {
+  background-color: #313131;
+  opacity: 0.8;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 88;
+}
+
+.floating__button {
+  display: flex;
+  align-items: center;
+  z-index: 100;
+  background-color: white;
+  border-radius: 40px 40px 40px 40px;
+  box-shadow: 1px 1px 6px 1px rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 85vh;
+  right: 12px;
+  &:hover {
+    cursor: pointer;
+  }
+  .floating__button__content {
+    border-radius: 40px 0 0 40px;
+    padding-right: 16px;
+    padding-bottom: 8px;
+    padding-top: 12px;
+    padding-left: 24px;
+    font-weight: 700;
+  }
+  .floating__button__mark {
+    color: white;
+    background-color: #cf0020;
+    border-radius: 40px;
+    padding: 16px 20px;
+    font-size: 20px;
+  }
+}
+
 .snackbar__result {
   width: 100%;
-  height: 340px;
-  z-index: 100;
+  height: 290px;
+  z-index: 103;
   opacity: 0;
   position: fixed;
   top: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #de8059;
-  color: white;
+  background-color: white;
+  color: black;
   transition: 0.5s transform;
-  transform: translateY(-340px);
+  transform: translateY(-290px);
 }
 
 .snackbar__anim__result {
@@ -536,26 +579,24 @@
 
 .snackbar__anim__up {
   opacity: 1;
-  transform: translateY(-340px);
+  transform: translateY(-290px);
 }
 
 .auto__result {
-  font-size: 20px;
+  font-size: 24px;
   margin-top: 40px;
   font-weight: 700;
   line-height: 24px;
   text-align: center;
+  text-decoration: underline;
+  text-underline-position: under;
 }
 
 .snackbar__result__ment {
-  font-size: 28px;
-  height: 82%;
-  font-weight: 700;
-  line-height: 40px;
-  width: 80%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  font-size: 24px;
+  height: 75%;
+  line-height: 36px;
+  margin-top: 24px;
 }
 
 .snackbar__bold {
@@ -563,32 +604,43 @@
   font-weight: 700;
 }
 
-.snackbar__result__button {
-  font-size: 20px;
-  outline: none;
-  width: 100%;
-  height: 18%;
-  background-color: white;
+.close {
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+  background-color: $blue2;
   border: none;
-  border-top: 1px solid white;
-  color: #0123b4;
-  font-weight: 700;
-}
-
-.snackbar__result__button:hover {
-  cursor: pointer;
+  color: white;
+  border-radius: 12px;
+  padding: 16px 20px;
+  width: 70%;
+  outline: none;
+  margin-bottom: 24px;
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .yellow {
   color: #fec645;
 }
 
-.body__black {
-  background-color: #313131;
-  opacity: 0.8;
-  height: 100%;
+.popup__close__button__wrap {
+  display: flex;
   width: 100%;
-  position: fixed;
-  top: 0;
-  z-index: 88;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+
+  .popup__close__forever,
+  .popup__close__now {
+    width: 50%;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .popup__close__now {
+    border-left: 1px solid rgba(0, 0, 0, 0.2);
+  }
 }
