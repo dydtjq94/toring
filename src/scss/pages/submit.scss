@@ -424,3 +424,19 @@ select::-ms-expand {
   -ms-word-break: normal;
   word-break: normal;
 }
+
+.mentor__list__wrap {
+  padding: 0 5%;
+  width: 100%;
+  overflow-x: scroll;
+  /* overflow-x: hidden; */
+  white-space: nowrap;
+}
+
+.mentor__list__img {
+  width: 60px;
+  height: 60px;
+  border-radius: 25px;
+  object-fit: cover;
+  margin: 8px;
+}
