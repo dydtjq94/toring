@@ -3135,7 +3135,6 @@ function handleMentorList() {
     mentorsEng.push(mentors[i].nameEng);
   }
   mentorsEng.shuffle();
-  console.log(mentorsEng);
 
   let mentorListImg = "";
   for (let j = 0; j < mentorsEng.length; j++) {
@@ -3143,7 +3142,7 @@ function handleMentorList() {
       mentorListImg +
       `<img src="./img/${mentorsEng[j]}.jpeg" class="mentor__list__img" />`;
   }
-  console.log(mentorListImg);
+
   mentorListWrap.innerHTML = mentorListImg;
 }
 
