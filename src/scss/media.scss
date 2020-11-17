@@ -52,6 +52,13 @@
       font-weight: 700;
     }
   }
+  .nav {
+    position: fixed;
+    bottom: 0px;
+    width: 500px;
+    animation: navAnim 0.3s linear forwards;
+    z-index: 102;
+  }
 }
 
 // 모바일

@@ -3038,7 +3038,7 @@ function handleSubmit() {
         blackLoading.classList.add("none");
       }, 310);
       setTimeout(function () {
-        location.href = `passbook.html?${name}?${s1}`;
+        location.href = `lesson.html`;
       }, 500);
       clearInterval(link);
     }
@@ -3104,8 +3104,7 @@ function padintSubmitUpper() {
     <i class="fas fa-quote-left"></i>
     <div class="submit__center">
       안녕하세요, 신청 감사합니다! 신청 완료를 위해 아래
-      항목들을 작성해주세요. 접수가 완료되면 제가 직접 100분동안
-      멘토링을 진행하고 있습니다 :)
+      항목들을 작성해주세요. 접수가 완료되면 제가 직접 30분동안 온라인으로 시범 과외를 진행하고 있습니다 :)
     </div>
     <i class="fas fa-quote-right"></i>
   </div>

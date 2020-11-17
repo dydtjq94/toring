@@ -1,0 +1,177 @@
+/* 여기서부터는 새로운 메인 화면 css 입니다.  */
+
+.main__display__lesson {
+  width: 100%;
+  background-color: white;
+  border-bottom: 1px solid #8080804d;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lesson__upper__wrap {
+  width: 100%;
+  background-color: #edecf0;
+  padding: 60px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .lesson__upper__title {
+    width: 90%;
+    font-size: 28px;
+    font-weight: 800;
+    margin-bottom: 16px;
+  }
+  .lesson__upper__sub {
+    width: 90%;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+  }
+}
+
+.lesson__middle__wrap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.lesson__middle__upper {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+
+  .middle__upper__left {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    .upper__left__lower {
+      background-color: #edecf0;
+      border-radius: 10px;
+      padding: 16px;
+      display: flex;
+      width: 100%;
+      margin-top: 8px;
+      margin-right: 8px;
+      height: 80px;
+      justify-content: space-between;
+
+      .lesson__first__right {
+        align-items: center;
+      }
+      .lesson__first__right img {
+        width: 40px;
+      }
+      .lesson__first__left {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .first__left__upper {
+          color: gray;
+        }
+        .first__left__lower {
+          font-weight: 700;
+        }
+      }
+    }
+  }
+  .middle__upper__right {
+    width: 48%;
+    background-color: #edecf0;
+    border-radius: 10px;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+
+    .lesson__second__left {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .second__left__upper {
+        color: gray;
+      }
+      .second__left__lower {
+        font-weight: 700;
+        line-height: 20px;
+      }
+    }
+    .lesson__second__right img {
+      width: 50px;
+    }
+  }
+}
+
+.upper__left__upper {
+  position: relative;
+  font-weight: 800;
+  line-height: 22px;
+}
+.upper__left__upper i {
+  position: absolute;
+  left: -8px;
+  top: -8px;
+  font-size: 10px;
+  color: $blue2;
+}
+
+.lesson__middle__lower {
+  background-color: #edecf0;
+  border-radius: 10px;
+  padding: 16px;
+  display: flex;
+  width: 90%;
+  margin-top: 8px;
+  .lesson__third__left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .third__left__upper {
+      color: gray;
+    }
+    .third__left__lower {
+      font-weight: 700;
+    }
+  }
+  .lesson__third__right {
+    font-size: 11px;
+    line-height: 20px;
+    font-weight: 700;
+    color: rgb(105, 105, 105);
+  }
+}
+.lesson__lower__column {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eff3f6;
+  padding: 40px 0 34px 0;
+}
+
+.lesson__lower__wrap {
+  position: relative;
+  font-weight: 700;
+  width: 84%;
+}
+
+.lesson__lower__sub {
+  font-weight: 700;
+  margin-top: 10px;
+  color: rgb(87, 87, 87);
+  font-size: 14px;
+}
+.lesson__lower__title {
+  font-size: 20px;
+  font-weight: 800;
+}
+.lesson__lower__title i {
+  position: absolute;
+  left: -10px;
+  top: -10px;
+  font-size: 10px;
+  color: $blue2;
+}

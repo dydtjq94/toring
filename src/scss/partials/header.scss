@@ -12,10 +12,6 @@
   padding: 0 20px;
 }
 
-.semi__logo {
-  font-size: 16px;
-}
-
 .header__back {
   color: #0123b4;
   text-decoration: none;
@@ -26,16 +22,21 @@
   text-decoration: none;
 }
 
-.header__toring {
-  color: #0123b4;
-  text-decoration: none;
-}
-
 .header a:link {
   text-decoration: none;
 }
 
 .header a:visited {
   text-decoration: none;
-  color: #0123b4;
+  color: black;
+}
+
+.header__toring {
+  color: black;
+  text-decoration: none;
+}
+
+.semi__logo {
+  font-size: 14px;
+  color: $blue2;
 }

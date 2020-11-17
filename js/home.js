@@ -3164,6 +3164,16 @@ function handlePopupBtn(e) {
 
 const mainBannerLS = localStorage.getItem("mainBanner");
 
+const mentoringGo = document.querySelector(`#mentoring__go`);
+const lessonGo = document.querySelector(`#lesson__go`);
+
+function handleMentoringGo() {
+  location.href = "index.html";
+}
+function handleLessonGo() {
+  location.href = "lesson.html";
+}
+
 function init() {
   scroll.forEach((item) => {
     scrollAppear(item);
@@ -3182,6 +3192,8 @@ function init() {
   // popupCloseBtnForever.addEventListener("click", popupCloseForever);
   popupBtn.addEventListener("click", handlePopupBtn);
   floatingBtn.addEventListener("click", handlePopupBtn);
+  mentoringGo.addEventListener("click", handleMentoringGo);
+  lessonGo.addEventListener("click", handleLessonGo);
 }
 
 init();

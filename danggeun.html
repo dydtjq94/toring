@@ -71,19 +71,41 @@
   </head>
 
   <body>
-    <header class="header">
-      <a href="javascript:history.back()" class="transparent">
-        <i class="fas fa-chevron-left" style="user-select: auto"></i>
-      </a>
-
-      <a href="index.html" class="header__toring">
-        토링 <span class="semi__logo">대치</span></a
-      >
-      <a href="javascript:location.reload()" class="transparent">
-        <i class="fas fa-chevron-left" style="user-select: auto"></i>
-      </a>
-    </header>
+    <div class="snackbar__result" id="snackbar__result">
+      <div class="popup__close__button">
+        <i class="fas fa-times"></i>
+      </div>
+      <div class="auto__result">
+        <span class="dschool__d2">D</span>School 학부모님 주목!
+      </div>
+      <div class="snackbar__result__ment">
+        디스쿨 회원님들을 위한<br />
+        멘토에게 직접 물어보는<br />
+        1회 무료 질문 기능 출시!
+      </div>
+      <div class="close" id="goButton">바로 사용하기</div>
+    </div>
+    <div class="black__board none"></div>
+    <div class="floating__button">
+      <div class="floating__button__content">1:1 무료 질문</div>
+      <div class="floating__button__mark">
+        <i class="fas fa-question"></i>
+      </div>
+    </div>
     <div class="body">
+      <header class="header">
+        <a href="javascript:history.back()" class="transparent">
+          <i class="fas fa-chevron-left" style="user-select: auto"></i>
+        </a>
+
+        <a href="index.html" class="header__toring">
+          토링 <span class="semi__logo">대치</span></a
+        >
+        <a href="javascript:location.reload()" class="transparent">
+          <i class="fas fa-chevron-left" style="user-select: auto"></i>
+        </a>
+      </header>
+
       <div class="main__display scroll">
         <img class="bg__img1" src="./img/seoul.png" alt="" />
         <img class="bg__img2" src="./img/yonsei.png" alt="" />
@@ -102,13 +124,16 @@
           <button class="main__button" id="goButton">
             우리 고등학교 멘토들 찾아보기
           </button>
+          <div class="dschool__event">
+            with <span class="dschool__d">D</span>School
+          </div>
         </div>
       </div>
       <div class="second__display scroll">
         <div class="main__second__title__wrap">
           <div class="main__second__title">
             3개월동안
-            <span class="blue__bold" id="count__num">149</span>명이<br />토링을
+            <span class="blue__bold" id="count__num"></span>명이<br />토링을
             통해 직접 고민을 해결했습니다.
           </div>
         </div>
@@ -127,64 +152,9 @@
             보세요.
           </div>
         </div>
-        <div class="main__third__content__wrap">
-          <div class="main__third__content hyejun">
-            <div class="third__content__left">
-              <img src="./img/hyejun.jpeg" class="third__content__img" />
-            </div>
-            <div class="third__content__right">
-              <div class="third__content__right__upper">
-                서울대학교 의예과 20학번
-              </div>
-              <div class="third__content__right__middle">
-                슬럼프를 극복해 서울대 의대에 진학하는 비법
-              </div>
-              <div class="third__content__right__lower">
-                <div class="third__content__tag tag__univ bold"># 중대부고</div>
-                <div class="third__content__tag"># 슬럼프</div>
-                <div class="third__content__tag"># 공부법</div>
-              </div>
-            </div>
-          </div>
-          <div class="main__third__content yena">
-            <div class="third__content__left">
-              <img src="./img/yena.jpeg" class="third__content__img" />
-            </div>
-            <div class="third__content__right">
-              <div class="third__content__right__upper">
-                연세대학교 건축공학과 18학번
-              </div>
-              <div class="third__content__right__middle">
-                스스로 공부하는 습관으로 전교 3등으로 졸업하는 비법
-              </div>
-              <div class="third__content__right__lower">
-                <div class="third__content__tag tag__univ bold"># 경기여고</div>
-                <div class="third__content__tag"># 진로 설정</div>
-                <div class="third__content__tag"># 슬럼프</div>
-              </div>
-            </div>
-          </div>
-          <div class="main__third__content sangha">
-            <div class="third__content__left">
-              <img src="./img/sangha.jpeg" class="third__content__img" />
-            </div>
-            <div class="third__content__right">
-              <div class="third__content__right__upper">
-                연세대학교 의예과 20학번
-              </div>
-              <div class="third__content__right__middle">
-                휘문고에서 정시와 수시 모두로 의예과에 진학하는 비법
-              </div>
-              <div class="third__content__right__lower">
-                <div class="third__content__tag tag__univ bold"># 휘문고</div>
-                <div class="third__content__tag"># 정시</div>
-                <div class="third__content__tag"># 수시</div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <div class="main__third__content__wrap"></div>
         <div class="main__third__button__wrap">
-          <div class="main__third__button" id="goButton">
+          <div class="main__third__button" id="goButton2">
             대치동 고등학교 멘토 더 보기
           </div>
         </div>
@@ -292,7 +262,6 @@
             <div class="fifth__upper__left">03</div>
             <div class="fifth__upper__right">
               멘토링 결과지를 제공합니다.
-
               <span class="fifth__resultSheet">
                 <a href="exResultSheet.html"> 결과지 예시 보기</a>
               </span>
@@ -308,8 +277,11 @@
         </div>
 
         <div class="main__fifth__button__wrap">
-          <div class="main__fifth__button" id="goButton">
-            지금 멘토를 만나보세요!
+          <div class="main__fifth__button" id="goButton2">
+            지금 같은 학교 선배를 만나보세요!
+          </div>
+          <div class="dschool__event">
+            with <span class="dschool__d">D</span>School
           </div>
         </div>
       </div>
@@ -323,7 +295,9 @@
         </div>
         <div class="footer__column">
           <div class="footer__left">주소</div>
-          <div class="footer__right">서울특별시 서대문구 연세로 50</div>
+          <div class="footer__right">
+            서울특별시 서대문구 연세로 50 (연세대학교)
+          </div>
         </div>
 
         <div class="footer__column">
@@ -362,6 +336,18 @@
         </div>
       </div>
     </div>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__column" id="mentoring__go">
+          <i class="fas fa-chalkboard-teacher nav__selected"></i>
+          <div class="nav__text nav__selected">멘토링</div>
+        </li>
+        <li class="nav__column" id="lesson__go">
+          <i class="fas fa-search"></i>
+          <div class="nav__text">과외찾기</div>
+        </li>
+      </ul>
+    </nav>
   </body>
   <script src="js/home.js"></script>
 </html>
