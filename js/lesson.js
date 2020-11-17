@@ -3076,7 +3076,7 @@ function handleLoadMentor() {
   let mentorTagList = [];
   for (let j = 0; j < tagList.length; j++) {
     const newMentors = mentors.filter(function (tag) {
-      return tag.school === tagList[j].school;
+      return tag.area === tagList[j].school;
     });
     for (let i = 0; i < newMentors.length; i++) {
       mentorTagList.push(newMentors[i]);
