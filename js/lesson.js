@@ -12,6 +12,7 @@ const mentors = [
     year: "20학번",
     school: "휘문고",
     subject: ["국어", "수학", "영어"],
+    area: "강남",
     label: 1, //0이 모집중 1이 마감임박 2마감
     labelNum: 1,
     title: "서울대 합격생이 후배에게 알려주고 싶은 휘문고 입시의 모든 것.",
@@ -96,6 +97,7 @@ const mentors = [
     majorNum: 0,
     year: "20학번",
     school: "현대고",
+    area: "강남",
     subject: ["수학"],
     label: 0, //0이 모집중 1이 마감임박 2마감
     labelNum: 3,
@@ -173,6 +175,7 @@ const mentors = [
     majorNum: 0,
     year: "19학번",
     school: "진선여고",
+    area: "강남",
     subject: ["국어"],
     label: 1, //0이 모집중 1이 마감임박 2마감
     labelNum: 0,
@@ -244,6 +247,7 @@ const mentors = [
     majorNum: 0,
     year: "18학번",
     school: "경기여고",
+    area: "강남",
     subject: ["수학"],
     label: 1, //0이 모집중 1이 마감임박 2마감
     labelNum: 1,
@@ -315,6 +319,7 @@ const mentors = [
     majorNum: 0,
     year: "20학번",
     school: "휘문고",
+    area: "강남",
     subject: ["수학"],
     label: 1, //0이 모집중 1이 마감임박 2마감
     labelNum: 2,
@@ -386,6 +391,7 @@ const mentors = [
     majorNum: 0,
     year: "20학번",
     school: "개포고",
+    area: "강남",
     subject: ["국어"],
     label: 1, //0이 모집중 1이 마감임박 2마감
     labelNum: 2,
@@ -468,6 +474,7 @@ const mentors = [
     majorNum: 0,
     year: "20학번",
     school: "숙명여고",
+    area: "강남",
     subject: ["국어", "영어"],
     label: 0, //0이 모집중 1이 마감임박 2마감
     labelNum: 3,
@@ -540,6 +547,7 @@ const mentors = [
     majorNum: 0,
     year: "19학번",
     school: "숙명여고",
+    area: "강남",
     subject: ["수학"],
     label: 0, //0이 모집중 1이 마감임박 2마감
     labelNum: 3,
@@ -612,6 +620,7 @@ const mentors = [
     univ: "연세대",
     univEng: "yonsei",
     major: "실내건축학과",
+    area: "강남",
     majorNum: 0,
     year: "19학번",
     school: "숙명여고",
@@ -690,6 +699,7 @@ const mentors = [
     majorNum: 0,
     year: "20학번",
     school: "진선여고",
+    area: "강남",
     subject: ["국어"],
     label: 1, //0이 모집중 1이 마감임박 2마감
     labelNum: 1,
@@ -764,6 +774,7 @@ const mentors = [
     majorNum: 0,
     year: "20학번",
     school: "개포고",
+    area: "강남",
     subject: ["국어", "수학", "영어"],
     label: 1, //0이 모집중 1이 마감임박 2마감
     labelNum: 1,
@@ -835,6 +846,7 @@ const mentors = [
     majorNum: 0,
     year: "20학번",
     school: "중산고",
+    area: "강남",
     subject: ["국어", "수학", "영어"],
     label: 1, //0이 모집중 1이 마감임박 2마감
     labelNum: 2,
@@ -906,6 +918,7 @@ const mentors = [
     majorNum: 1,
     year: "20학번",
     school: "중대부고",
+    area: "강남",
     subject: ["국어", "수학", "영어"],
     label: 1, //0이 모집중 1이 마감임박 2마감
     labelNum: 1,
@@ -981,6 +994,7 @@ const mentors = [
     majorNum: 0,
     year: "20학번",
     school: "단대부고",
+    area: "강남",
     subject: ["수학"],
     label: 1, //0이 모집중 1이 마감임박 2마감
     labelNum: 2,
@@ -1062,6 +1076,7 @@ const mentors = [
     majorNum: 0,
     year: "20학번",
     school: "단대부고",
+    area: "강남",
     subject: ["수학"],
     label: 1, //0이 모집중 1이 마감임박 2마감
     labelNum: 1,
@@ -1139,6 +1154,7 @@ const mentors = [
     majorNum: 1,
     year: "20학번",
     school: "휘문고",
+    area: "강남",
     subject: ["국어", "수학", "영어"],
     label: 1, //0이 모집중 1이 마감임박 2마감
     labelNum: 1,
@@ -1212,6 +1228,7 @@ const mentors = [
     majorNum: 0,
     year: "20학번",
     school: "낙생고",
+    area: "분당",
     subject: ["수학"],
     label: 0, //0이 모집중 1이 마감임박 2마감
     labelNum: 1,
@@ -1267,6 +1284,7 @@ const mentors = [
     majorNum: 0,
     year: "19학번",
     school: "개포고",
+    area: "강남",
     subject: ["수학", "영어"],
     label: 0, //0이 모집중 1이 마감임박 2마감
     labelNum: 1,
@@ -1323,6 +1341,7 @@ const mentors = [
     majorNum: 0,
     year: "20학번",
     school: "잠실여고",
+    area: "송파",
     subject: ["수학"],
     label: 0, //0이 모집중 1이 마감임박 2마감
     labelNum: 1,
@@ -1389,6 +1408,7 @@ const mentors = [
     majorNum: 0,
     year: "20학번",
     school: "외대부고",
+    area: "용인",
     subject: ["국어", "수학", "영어"],
     label: 0, //0이 모집중 1이 마감임박 2마감
     labelNum: 1,
@@ -1456,6 +1476,7 @@ const mentors = [
     majorNum: 0,
     year: "20학번",
     school: "중동고",
+    area: "강남",
     subject: ["국어", "수학", "영어"],
     label: 0, //0이 모집중 1이 마감임박 2마감
     labelNum: 1,
@@ -1527,6 +1548,7 @@ const mentors = [
     majorNum: 0,
     year: "20학번",
     school: "진선여고",
+    area: "강남",
     subject: ["국어", "수학", "영어"],
     label: 0, //0이 모집중 1이 마감임박 2마감
     labelNum: 1,
@@ -1593,6 +1615,7 @@ const mentors = [
     majorNum: 0,
     year: "20학번",
     school: "경기고",
+    area: "강남",
     subject: ["국어", "영어"],
     label: 0, //0이 모집중 1이 마감임박 2마감
     labelNum: 1,
@@ -1662,6 +1685,7 @@ const mentors = [
     majorNum: 0,
     year: "19학번",
     school: "영동고",
+    area: "강남",
     subject: ["수학"],
     label: 0, //0이 모집중 1이 마감임박 2마감
     labelNum: 1,
@@ -1731,6 +1755,7 @@ const mentors = [
     majorNum: 0,
     year: "19학번",
     school: "경기고",
+    area: "강남",
     subject: ["수학", "영어"],
     label: 0, //0이 모집중 1이 마감임박 2마감
     labelNum: 1,
@@ -1801,6 +1826,7 @@ const mentors = [
     majorNum: 0,
     year: "19학번",
     school: "외대부고",
+    area: "용인",
     subject: ["국어", "영어"],
     label: 0, //0이 모집중 1이 마감임박 2마감
     labelNum: 1,
@@ -1867,6 +1893,7 @@ const mentors = [
     majorNum: 0,
     year: "19학번",
     school: "외대부고",
+    area: "용인",
     subject: ["수학", "영어"],
     label: 0, //0이 모집중 1이 마감임박 2마감
     labelNum: 1,
@@ -1935,6 +1962,7 @@ const mentors = [
     majorNum: 0,
     year: "20학번",
     school: "세화고",
+    area: "서초",
     subject: ["국어", "수학"],
     label: 0, //0이 모집중 1이 마감임박 2마감
     labelNum: 1,
@@ -2007,6 +2035,7 @@ const mentors = [
     majorNum: 0,
     year: "19학번",
     school: "세화여고",
+    area: "서초",
     subject: ["수학"],
     label: 0, //0이 모집중 1이 마감임박 2마감
     labelNum: 1,
@@ -2076,6 +2105,7 @@ const mentors = [
     majorNum: 0,
     year: "19학번",
     school: "단대부고",
+    area: "강남",
     subject: ["국어", "수학", "영어"],
     label: 0, //0이 모집중 1이 마감임박 2마감
     labelNum: 1,
@@ -2145,6 +2175,7 @@ const mentors = [
     majorNum: 0,
     year: "19학번",
     school: "외대부고",
+    area: "용인",
     subject: ["수학", "영어"],
     label: 0, //0이 모집중 1이 마감임박 2마감
     labelNum: 1,
@@ -2278,6 +2309,7 @@ const mentors = [
     majorNum: 0,
     year: "19학번",
     school: "중동고",
+    area: "강남",
     subject: ["국어", "수학", "영어"],
     label: 0, //0이 모집중 1이 마감임박 2마감
     labelNum: 1,
@@ -2346,6 +2378,7 @@ const mentors = [
     majorNum: 0,
     year: "19학번",
     school: "휘문고",
+    area: "강남",
     subject: ["국어"],
     label: 0, //0이 모집중 1이 마감임박 2마감
     labelNum: 1,
@@ -2428,6 +2461,7 @@ const mentors = [
     majorNum: 0,
     year: "20학번",
     school: "중동고",
+    area: "강남",
     subject: ["국어", "수학", "영어"],
     label: 0, //0이 모집중 1이 마감임박 2마감
     labelNum: 1,
@@ -2495,6 +2529,7 @@ const mentors = [
     majorNum: 0,
     year: "20학번",
     school: "중동고",
+    area: "강남",
     subject: ["수학"],
     label: 0, //0이 모집중 1이 마감임박 2마감
     labelNum: 1,
@@ -2564,6 +2599,7 @@ const mentors = [
     majorNum: 0,
     year: "19학번",
     school: "언남고",
+    area: "서초",
     subject: ["수학", "영어"],
     label: 0, //0이 모집중 1이 마감임박 2마감
     labelNum: 1,
@@ -2638,6 +2674,7 @@ const mentors = [
     majorNum: 0,
     year: "20학번",
     school: "경기여고",
+    area: "강남",
     subject: ["국어"],
     label: 0, //0이 모집중 1이 마감임박 2마감
     labelNum: 1,
@@ -2708,6 +2745,7 @@ const mentors = [
     majorNum: 0,
     year: "20학번",
     school: "외대부고",
+    area: "용인",
     subject: ["수학", "영어"],
     label: 0, //0이 모집중 1이 마감임박 2마감
     labelNum: 1,
@@ -2777,6 +2815,7 @@ const mentors = [
     majorNum: 0,
     year: "19학번",
     school: "외대부고",
+    area: "용인",
     subject: ["수학"],
     label: 0, //0이 모집중 1이 마감임박 2마감
     labelNum: 1,
@@ -2848,6 +2887,7 @@ const mentors = [
     majorNum: 0,
     year: "18학번",
     school: "영동고",
+    area: "강남",
     subject: ["수학"],
     label: 0, //0이 모집중 1이 마감임박 2마감
     labelNum: 1,
@@ -2916,6 +2956,7 @@ const mentors = [
     majorNum: 0,
     year: "20학번",
     school: "진선여고",
+    area: "강남",
     subject: ["국어", "영어"],
     label: 0, //0이 모집중 1이 마감임박 2마감
     labelNum: 1,
@@ -3061,30 +3102,19 @@ function handleMentorPaint(e) {
       resultPaint =
         resultPaint +
         ` <div class="result__sample ${e[i].nameEng}">
-        ${
-          e[i].label === 0
-            ? `<div class="result__condition">
-            모집중
-          </div>`
-            : e[i].label === 1
-            ? `<div class="result__condition2">
-            마감 임박!
-          </div>`
-            : `<div class="result__condition3">
-          모집 마감
-        </div>`
-        }
+       
         <div class="result__sample__content">
+        ${
+          e[i].subject.length === 3
+            ? `<div class="result__info">${e[i].subject[0]}, ${e[i].subject[1]}, ${e[i].subject[2]}</div>`
+            : e[i].subject.length === 2
+            ? `<div class="result__info">${e[i].subject[0]}, ${e[i].subject[1]}</div>`
+            : `<div class="result__info">${e[i].subject[0]}</div>`
+        }
           <div class="result__name">${e[i].school} - ${e[i].univ}학교</div>
           <div class="result__sub">${e[i].major} ${e[i].year}</div>
           <div class="result__info">${e[i].name} 멘토님 ㅣ ${e[i].method}</div>
-          ${
-            e[i].subject.length === 3
-              ? `<div class="result__info">${e[i].subject[0]}, ${e[i].subject[1]}, ${e[i].subject[2]}</div>`
-              : e[i].subject.length === 2
-              ? `<div class="result__info">${e[i].subject[0]}, ${e[i].subject[1]}</div>`
-              : `<div class="result__info">${e[i].subject[0]}</div>`
-          }
+          
           
           <div class="result__button">자세히 보기</div>
         </div>
@@ -3127,6 +3157,21 @@ function handleMentorPaint(e) {
         resultRecommendation +
         ` <div class="result__sample ${mentorsFilter[lotto[i]].nameEng}">
                 <div class="result__sample__content">
+                ${
+                  mentorsFilter[lotto[i]].subject.length === 3
+                    ? `<div class="result__info">${
+                        mentorsFilter[lotto[i]].subject[0]
+                      }, ${mentorsFilter[lotto[i]].subject[1]}, ${
+                        mentorsFilter[lotto[i]].subject[2]
+                      }</div>`
+                    : mentorsFilter[lotto[i]].subject.length === 2
+                    ? `<div class="result__info">${
+                        mentorsFilter[lotto[i]].subject[0]
+                      }, ${mentorsFilter[lotto[i]].subject[1]}</div>`
+                    : `<div class="result__info">${
+                        mentorsFilter[lotto[i]].subject[0]
+                      }</div>`
+                }
           <div class="result__name">${mentorsFilter[lotto[i]].school} - ${
           mentorsFilter[lotto[i]].univ
         }학교</div>
@@ -3136,13 +3181,7 @@ function handleMentorPaint(e) {
           <div class="result__info">${mentorsFilter[lotto[i]].name} 멘토님 ㅣ ${
           mentorsFilter[lotto[i]].method
         }</div>
-        ${
-          e[i].subject.length === 3
-            ? `<div class="result__info">${e[i].subject[0]}, ${e[i].subject[1]}, ${e[i].subject[2]}</div>`
-            : e[i].subject.length === 2
-            ? `<div class="result__info">${e[i].subject[0]}, ${e[i].subject[1]}</div>`
-            : `<div class="result__info">${e[i].subject[0]}</div>`
-        }
+      
           <div class="result__button">자세히 보기</div>
         </div>
         <div class="result__sample__img">
@@ -3167,16 +3206,17 @@ function handleMentorPaint(e) {
         ` <div class="result__sample ${e[i].nameEng}">
 
         <div class="result__sample__content">
+        ${
+          e[i].subject.length === 3
+            ? `<div class="result__info">${e[i].subject[0]}, ${e[i].subject[1]}, ${e[i].subject[2]}</div>`
+            : e[i].subject.length === 2
+            ? `<div class="result__info">${e[i].subject[0]}, ${e[i].subject[1]}</div>`
+            : `<div class="result__info">${e[i].subject[0]}</div>`
+        }
           <div class="result__name">${e[i].school} - ${e[i].univ}학교</div>
           <div class="result__sub">${e[i].major} ${e[i].year}</div>
           <div class="result__info">${e[i].name} 선생님 ㅣ ${e[i].method}</div>
-          ${
-            e[i].subject.length === 3
-              ? `<div class="result__info">${e[i].subject[0]}, ${e[i].subject[1]}, ${e[i].subject[2]}</div>`
-              : e[i].subject.length === 2
-              ? `<div class="result__info">${e[i].subject[0]}, ${e[i].subject[1]}</div>`
-              : `<div class="result__info">${e[i].subject[0]}</div>`
-          }
+         
           <div class="result__button">자세히 보기</div>
         </div>
         <div class="result__sample__img">
@@ -3192,16 +3232,17 @@ function handleMentorPaint(e) {
         ` <div class="result__sample ${e[j].nameEng}">
        
         <div class="result__sample__content">
+        ${
+          e[j].subject.length === 3
+            ? `<div class="result__info">${e[j].subject[0]}, ${e[j].subject[1]}, ${e[j].subject[2]}</div>`
+            : e[j].subject.length === 2
+            ? `<div class="result__info">${e[j].subject[0]}, ${e[j].subject[1]}</div>`
+            : `<div class="result__info">${e[j].subject[0]}</div>`
+        }
           <div class="result__name">${e[j].school} - ${e[j].univ}학교</div>
           <div class="result__sub">${e[j].major} ${e[j].year}</div>
           <div class="result__info">${e[j].name} 멘토님 ㅣ ${e[j].method}</div>
-          ${
-            e[j].subject.length === 3
-              ? `<div class="result__info">${e[j].subject[0]}, ${e[j].subject[1]}, ${e[j].subject[2]}</div>`
-              : e[j].subject.length === 2
-              ? `<div class="result__info">${e[j].subject[0]}, ${e[j].subject[1]}</div>`
-              : `<div class="result__info">${e[j].subject[0]}</div>`
-          }
+         
           <div class="result__button">자세히 보기</div>
         </div>
         <div class="result__sample__img">
@@ -3220,7 +3261,6 @@ function handleMentorPaint(e) {
           resultLoadingWrap.classList.add("none");
           resultPaint = resultPaint + resultPaintAdd;
           resultSampleWrap.innerHTML = resultPaint;
-
           goMentorDetail();
         }, 900);
       }
@@ -3301,7 +3341,7 @@ function goMentorDetail() {
 
 function schoolList() {
   let schoolListSemi = [];
-  mentors.forEach((e) => schoolListSemi.push(e.school));
+  mentors.forEach((e) => schoolListSemi.push(e.area));
   let schoolList = Array.from(new Set(schoolListSemi));
 
   schoolList.sort(function (a, b) {
