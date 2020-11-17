@@ -3190,19 +3190,7 @@ function handleMentorPaint(e) {
       resultPaintAdd =
         resultPaintAdd +
         ` <div class="result__sample ${e[j].nameEng}">
-        ${
-          e[j].label === 0
-            ? `<div class="result__condition">
-            모집중
-          </div>`
-            : e[j].label === 1
-            ? `<div class="result__condition2">
-            마감 임박!
-          </div>`
-            : `<div class="result__condition3">
-          모집 마감
-        </div>`
-        }
+       
         <div class="result__sample__content">
           <div class="result__name">${e[j].school} - ${e[j].univ}학교</div>
           <div class="result__sub">${e[j].major} ${e[j].year}</div>
