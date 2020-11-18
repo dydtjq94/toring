@@ -3058,7 +3058,7 @@ const loadingWrap = document.querySelector(`.ids__loading__wrap`);
 const tagContent = document.querySelectorAll(`.tag__content2`);
 
 let tagList = [];
-const tagLs = "tag";
+const tagLs = "tagArea";
 let flag = false;
 
 Array.prototype.shuffle = function () {
