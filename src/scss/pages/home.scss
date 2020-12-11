@@ -590,13 +590,16 @@
   text-align: center;
   text-decoration: underline;
   text-underline-position: under;
+  color: #0123b4;
 }
 
 .snackbar__result__ment {
-  font-size: 24px;
+  font-size: 20px;
   height: 75%;
   line-height: 36px;
   margin-top: 24px;
+  font-weight: 700;
+  text-align: center;
 }
 
 .snackbar__bold {

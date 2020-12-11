@@ -3051,7 +3051,7 @@ function handleCountNum() {
       countNum.innerHTML = countNumber;
     }
   }
-  setInterval(countUp, 45);
+  setInterval(countUp, 25);
 }
 
 const blackBoard = document.querySelector(`.black__board`);
@@ -3060,14 +3060,13 @@ const popupCloseBtnNow = document.querySelector(`.popup__close__now`);
 const popupCloseBtnForever = document.querySelector(`.popup__close__forever`);
 const popupFirst = document.querySelector(`#snackbar__result`);
 const popupBtn = document.querySelector(`.close`);
-const floatingBtn = document.querySelector(`.floating__button`);
 
 function popupOpen() {
   setTimeout(function () {
     popupFirst.classList.add("snackbar__anim__result");
     popupFirst.classList.remove("snackbar__anim__up");
     blackBoard.classList.remove("none");
-  }, 8000);
+  }, 2000);
 }
 
 function popupClose() {
@@ -3088,12 +3087,11 @@ function popupCloseForever() {
 }
 
 function handlePopupBtn(e) {
-  location.href = "submitMiddleThird.html";
+  location.href = "result.html";
   e.target.classList.add("click__anim");
 }
 
 const mainBannerLS = localStorage.getItem("mainBanner");
-
 const mentoringGo = document.querySelector(`#mentoring__go`);
 const lessonGo = document.querySelector(`#lesson__go`);
 
@@ -3121,7 +3119,7 @@ function init() {
   // popupCloseBtnNow.addEventListener("click", popupClose);
   // popupCloseBtnForever.addEventListener("click", popupCloseForever);
   popupBtn.addEventListener("click", handlePopupBtn);
-  floatingBtn.addEventListener("click", handlePopupBtn);
+
   mentoringGo.addEventListener("click", handleMentoringGo);
   lessonGo.addEventListener("click", handleLessonGo);
 }

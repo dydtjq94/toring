@@ -3038,7 +3038,7 @@ function handleSubmit() {
         blackLoading.classList.add("none");
       }, 310);
       setTimeout(function () {
-        location.href = `lesson.html`;
+        location.href = `passbook.html?${name}?${s1}`;
       }, 500);
       clearInterval(link);
     }

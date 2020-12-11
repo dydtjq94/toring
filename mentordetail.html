@@ -69,69 +69,6 @@
     </a>
   </header>
   <body>
-    <div class="form__popup">
-      <form
-        action="https://script.google.com/macros/s/AKfycbzMJEI0x4Mxzyfd2a5RNo-rh69KxHdtW-6Z2c-QEonOg6L5zso/exec"
-        class="gform"
-        id="openschool__phone__origin"
-        method="POST"
-        data-email="example@email.net"
-      >
-        <div class="openschool__phone__wrap">
-          <div class="openschool__phone__title">
-            <input
-              type="text"
-              class="school__submit__input"
-              name="school"
-              placeholder=""
-              required
-            />
-          </div>
-          <div class="openschool__phone__sub">
-            <!-- 전화번호는 용도로만 사용됩니다!😊 -->
-          </div>
-          <div class="openschool__phone__submit">
-            <input
-              type="text"
-              class="openschool__input"
-              name="subContent"
-              placeholder="답변 받고 싶은 질문 작성"
-              required
-            />
-          </div>
-          <div class="openschool__phone__submit">
-            <input
-              type="number"
-              class="openschool__input"
-              name="subPhone"
-              placeholder="답변 받을 전화번호 입력"
-              required
-            />
-          </div>
-          <div style="display: none" class="thankyou_message" id="thx">
-            <h2 class="guide__m none">
-              신청이 완료되었습니다. <br />감사합니다!
-            </h2>
-          </div>
-          <div class="phone__submit__button">
-            <input
-              type="submit"
-              value="멘토님에게 무료 1회 질문하기"
-              class="phone__submit__input"
-            />
-          </div>
-        </div>
-        <!-- <div class="popup__close__button__wrap">
-          <div class="popup__close__forever">다시는 보지 않기</div>
-          <div class="popup__close__now">닫기</div>
-        </div> -->
-      </form>
-      <div class="popup__close__button">
-        <i class="fas fa-times"></i>
-      </div>
-    </div>
-
-    <div class="black__board none"></div>
     <div class="body">
       <div class="mentor"></div>
     </div>
@@ -140,8 +77,8 @@
       <div class="buy__off"></div>
 
       <div class="buy__button">
-        <div class="buy__toring">무료 1회 질문</div>
-        <div class="buy__content" id="goButton">1:1 멘토링 신청하기</div>
+        <div class="buy__toring">문의하기</div>
+        <div class="buy__content" id="goButton">1:1 온라인 멘토링 신청</div>
       </div>
     </div>
   </body>
@@ -151,5 +88,4 @@
     src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"
   ></script>
   <script src="js/mentorDetail.js"></script>
-  <script src="js/subscribe.js"></script>
 </html>

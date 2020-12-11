@@ -3031,15 +3031,15 @@ ${mentors[resultNum].title}
     <div class="price__price">
       <div class="price__price__left">1회 (100분)</div>
       <div class="price__price__right">
-            <span class="price__original">129,000원</span>
-            <span class="price__black">99,000원</span>
+            <span class="price__original">99,000원</span>
+            <span class="price__black">49,000원</span>
             
       </div>
     </div>
   </div>
 </div>
 
-<div class="price__button" id="goButton">1:1 멘토링 신청하기</div>
+<div class="price__button" id="goButton">1:1 온라인 멘토링 신청하기</div>
 </div>
 
 <div class="mentor__individual__wrap">
@@ -3100,27 +3100,11 @@ ${mentors[resultNum].introduce[0].detail}
   <div class="fifth__lower__left"></div>
   <div class="fifth__lower__right">
     내가 선택한 멘토님과 1:1로 멘토링을 진행합니다. 멘토링은 100분동안
-    진행되며 오프라인/온라인 중 원하시는 방법으로 진행하실 수
-    있습니다.
+    진행되며 온라인으로 진행됩니다.
   </div>
 </div>
 </div>
-<div class="main__fifth__content__column">
-<div class="fifth__content__upper">
-  <div class="fifth__upper__left">03</div>
-  <div class="fifth__upper__right">멘토링 결과지를 제공합니다.
-  <span class="fifth__resultSheet">
-                <a href="exResultSheet.html"> 결과지 예시 보기</a>
-              </span></div>
-</div>
-<div class="fifth__content__lower">
-  <div class="fifth__lower__left"></div>
-  <div class="fifth__lower__right">
-    학생의 질문, 멘토의 답변 등이 정리된 멘토링 내용과 앞으로의 학습
-    방향에 대한 조언이 담긴 멘토링 일지를 제공해드려요.
-  </div>
-</div>
-</div>
+
 </div>
 <div class="review__wrap">
 
@@ -3220,14 +3204,14 @@ ${
     <div class="price__price">
       <div class="price__price__left">1회 (100분)</div>
       <div class="price__price__right">
-            <span class="price__original">129,000원</span>
-            <span class="price__black">99,000원</span>
+            <span class="price__original">99,000원</span>
+            <span class="price__black">49,000원</span>
       </div>
     </div>
   </div>
 
 </div>
-<div class="price__button" id="goButton">1:1 멘토링 신청하기</div>
+<div class="price__button" id="goButton">1:1 온라인 멘토링 신청하기</div>
 
 </div>
 
@@ -3273,6 +3257,14 @@ function paintButton() {
       goResult.classList.remove("click__anim");
     }, 410);
     location.href = "result.html";
+  });
+  toringButton.addEventListener("click", function handleToringBtn() {
+    toringButton.classList.add("click__anim");
+    setTimeout(function () {
+      toringButton.classList.remove("click__anim");
+    }, 410);
+    var newWindow = window.open("about:blank");
+    newWindow.location.href = "http://pf.kakao.com/_WMMxgxb/chat";
   });
 }
 
